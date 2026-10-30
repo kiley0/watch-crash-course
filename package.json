@@ -13,7 +13,8 @@
     "preview": "vp preview"
   },
   "dependencies": {
-    "@alpinejs/csp": "3.17.5"
+    "@alpinejs/csp": "3.17.5",
+    "localforage": "1.10.0"
   },
   "devDependencies": {
     "@types/alpinejs": "3.17.0",

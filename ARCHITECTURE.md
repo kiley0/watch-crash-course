@@ -8,6 +8,7 @@ We use lightweight domain-driven organization: code lives beside the subject it 
 index.html                              Catalog page markup
 course.html                             Course page markup
 about.html                              About/privacy markup
+watch.html                              Playback, resume, and episode navigation
 src/
   catalog/                              Courses and their ordered episodes
     domain/
@@ -22,11 +23,21 @@ src/
       catalog-page.ts                   Catalog Alpine state and page entry
       course-page.ts                    Course Alpine state and page entry
       shelf-surprises.ts                Optional search discoveries and community copy
-      youtube-links.ts                  Links to the external watching destination
-      youtube-links.test.ts
+  learning/
+    domain/progress.ts                  Pure progress transitions and record validation
+    infrastructure/progress-store.ts    Serialized persistence and in-memory fallback
+    infrastructure/browser-progress.ts  localForage backend and browser instance
+    presentation/progress-labels.ts     Time labels
+  playback/
+    infrastructure/youtube-player.ts    Lazy IFrame API, events, sampling, lifecycle
+    presentation/watch-page.ts          Watch-page Alpine state and composition
+    presentation/watch-links.ts         Internal watch-page URLs
+    presentation/youtube-links.ts       External YouTube URLs
+    presentation/watch.css              Watch-page visual components
   site/                                 Shared site identity and informational UI
     styles.css                          Shared design tokens, components, responsive rules
     about-page.ts                       About-page entry and surprise toggle
+    reload-on-restore.ts                Refresh stale views restored by browser history
   types/
     alpine.d.ts                         External package type declarations
 public/
@@ -67,7 +78,9 @@ There is no application layer yet: loading a catalog and filtering it does not n
 | Add an icon                                                | Selected symbol in `public/icons.svg`; retain its license notice                   |
 | Add an interactive page                                    | Root HTML, an owning domain's presentation entry, and `vite.config.ts` build input |
 
-When implementing later milestones, add domains for real capabilities rather than technical buckets: `learning/` for progress/history/resume rules and browser persistence, `playback/` for player state and the YouTube adapter, and `quizzes/` for questions and answers. These are examples for future work, not folders to scaffold now. Keep course identity owned by catalog; don't copy its model into every feature. UI composition can call multiple capabilities. If domain coordination becomes necessary, document a narrow contract and keep dependencies acyclic.
+`learning/` owns video progress keyed by YouTube ID. `playback/` owns the official player adapter and watch-page experience. Catalog presentation composes these capabilities to link episodes and show saved status; neither capability imports catalog presentation. Pure learning rules remain independent of catalog membership, so shared videos retain one progress record. Quizzes should get their own domain when implemented. Document narrow contracts when domain coordination is necessary and keep dependencies acyclic.
+
+The watch page calls learning's storage adapter and playback's player adapter. The player only reports samples through a typed callback; it never knows how progress is stored. `createProgressStore` accepts a small backend boundary to test failure and ordering; `browser-progress.ts` alone imports localForage and creates the browser instance. Tests remain colocated, including beside the new modules.
 
 ## Tests and change checks
 

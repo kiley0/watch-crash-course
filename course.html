@@ -57,6 +57,7 @@
         ></a>
       </div>
       <div x-cloak x-show="ready">
+        <p class="notice" x-show="storageWarning" x-text="storageWarning" role="status"></p>
         <section class="course-hero">
           <div>
             <span class="eyebrow"><span x-text="course.subject"></span> · CRASH COURSE</span>
@@ -70,12 +71,14 @@
               <span x-text="episodeLabel"></span
               ><span>With <strong x-text="course.host"></strong></span><span>At your own pace</span>
             </div>
-            <a class="button button-orange" :href="firstVideoUrl"
+            <a class="button button-orange" :href="firstWatchUrl"
               >Start with episode 1
               <svg class="icon" aria-hidden="true" focusable="false">
-                <use href="./icons.svg#external-link"></use></svg
+                <use href="./icons.svg#arrow-right"></use></svg
             ></a>
-            <p class="external-note">Opens on YouTube. No sign-up needed here.</p>
+            <p class="external-note">
+              Watch here, with your place saved in this browser. No sign-up needed.
+            </p>
           </div>
           <div class="course-hero-art">
             <img
@@ -115,11 +118,12 @@
                       ><span class="episode-kicker"
                         >CRASH COURSE <span x-text="course.title"></span
                       ></span>
-                      <h3 x-text="episode.title"></h3></span
+                      <h3 x-text="episode.title"></h3>
+                      <span class="episode-progress" x-text="episode.status"></span></span
                     ><span class="episode-action"
                       >Watch
                       <svg class="icon" aria-hidden="true" focusable="false">
-                        <use href="./icons.svg#external-link"></use></svg></span
+                        <use href="./icons.svg#arrow-right"></use></svg></span
                   ></a></li
               ></template>
             </ol>
@@ -145,8 +149,8 @@
               <p>Explore note-taking, memory, organization, focus, exam prep, and more.</p>
               <div class="aside-divider"></div>
               <p class="small">
-                This first release is your course guide. In-site playback, saved progress, and
-                quizzes are on the way.
+                Watch here and pick up where you left off. Progress stays in this browser. Review
+                quizzes are coming in a later milestone.
               </p>
             </div>
             <details class="quiet-discovery">

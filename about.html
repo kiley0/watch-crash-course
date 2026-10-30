@@ -45,11 +45,12 @@
           <h2>Great videos. A clearer path.</h2>
           <p>
             We’re starting with Study Skills: ten episodes from Crash Course, organized in one
-            place. Pick a lesson and watch the original video on YouTube.
+            place. Pick a lesson and watch through YouTube’s official embedded player, with your
+            place saved in this browser.
           </p>
           <p>
-            Saved progress, embedded playback, and review quizzes are planned for future milestones.
-            They aren’t part of this first release.
+            Embedded playback, resume, and manual episode completion are available now. Review
+            quizzes, history, and progress backup tools are planned for later milestones.
           </p>
           <h2>Curiosity, with company.</h2>
           <p>
@@ -88,8 +89,17 @@
           </button>
           <h2>Your curiosity.<br />Your business.</h2>
           <p>
-            No accounts, analytics, or tracking SDKs. This release does not store learning history
-            or load YouTube players, thumbnails, or Google sign-in.
+            No accounts, analytics, or tracking SDKs. Progress is saved on this device using
+            IndexedDB, with a localStorage fallback. It belongs to this browser profile and site
+            address; private browsing, clearing site data, or changing devices can lose or separate
+            it. If saving fails, we show a warning and keep temporary progress in the current tab.
+            Multiple tabs use the last saved update. Backup and import tools are planned.
+          </p>
+          <p>
+            The watch page connects to YouTube only after you choose to load a video. YouTube’s
+            privacy practices apply to its player and to links you follow there. Watching on YouTube
+            does not update this site’s local progress. Our host also receives normal web requests
+            when you visit.
           </p>
           <p>
             Following a video link takes you to YouTube, where Google’s privacy practices apply. Our

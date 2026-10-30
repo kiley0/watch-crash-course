@@ -4,18 +4,18 @@
 
 Build a quiet, dependable place to work through Crash Course courses in playlist order, resume videos, see progress, and answer review questions. Favor files and browser standards that will remain understandable and inexpensive to host for years.
 
-Milestone 1 is implemented locally: responsive catalog/course pages, the complete Study Skills fixture, search/filtering, about/privacy, and a Vite+ multi-page static build. Playback currently opens on YouTube. Embedded playback, saved progress, history, quizzes, and backups remain future milestones. Deployment has not been performed.
+Milestones 1 and 2 are implemented locally: responsive catalog/course pages, the complete Study Skills fixture, search/filtering, about/privacy, embedded playback after a user action, resume, local video progress, completion/reset, and a Vite+ multi-page static build. Continue learning, course-level summaries/history, quizzes, and backups remain future milestones. Deployment has not been performed.
 
 ## Architectural decisions
 
 - Serve ordinary HTML, CSS, JavaScript, and JSON from any static HTTPS host.
 - No application server, database service, accounts, authentication, runtime secrets, or paid APIs.
 - Write all application logic, Alpine components, tests, and tooling configuration in TypeScript. Use Vite+ to transpile and build the static site; retain ordinary HTML and CSS.
-- Use one small, pinned, locally vendored storage library behind a tiny application-owned adapter. Start with localForage, using IndexedDB with a localStorage fallback. Preserve its license and record its version. Reconsider only if its size or maintenance status warrants a simpler alternative before implementation.
+- Use one small, pinned, locally bundled storage library behind a tiny application-owned adapter. Use pinned localForage 1.10.0 bundled into the site, using IndexedDB with a localStorage fallback. Preserve its license and record its version. Reconsider only if its size or maintenance status warrants a simpler alternative before implementation.
 - Use the official YouTube IFrame Player API for playback and position tracking. This is the unavoidable external runtime dependency alongside YouTube itself.
 - Keep the course catalog and quizzes in version-controlled JSON files.
 - Prefer Alpine.js over htmx for interactions: catalog filtering, expanded episode lists, quiz answers and explanations, progress displays, and confirmation dialogs. These are browser-local state changes rather than requests for server-rendered fragments. Do not include both libraries.
-- Bundle pinned application dependencies into the built site assets instead of loading them from a public CDN, and include their licenses. YouTube's future player remains externally hosted.
+- Bundle pinned application dependencies into the built site assets instead of loading them from a public CDN, and include their licenses. YouTube's player remains externally hosted.
 - Use a conventional multi-page site with query parameters, not a client-side router or custom URL-rewrite rules.
 - Use Vite+ (`vp`) as development tooling for local serving, formatting, and focused checks. It transpiles TypeScript at development/build time and adds no browser runtime dependency. The built output runs on any static HTTPS host.
 
@@ -258,4 +258,4 @@ The site shell and catalog should continue working if the storage library's upst
 - Whether localForage earns its dependency cost after testing storage failure and import/export behavior.
 - Which stable Vercel production URL or custom domain to use when deployment is requested.
 
-The first implementation milestone is one complete course that can be watched, resumed after closing the browser, reviewed with a quiz, and backed up to a file, using only static hosting.
+The complete pilot release spans these milestones: one course that can be watched, resumed after closing the browser, reviewed with a quiz, and backed up to a file, using only static hosting.
