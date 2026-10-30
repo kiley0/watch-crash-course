@@ -29,7 +29,7 @@ export function historyEntries(
     return {
       ...record,
       title: known?.title ?? `Saved video · ${record.videoId}`,
-      context: known?.context ?? "Course details unavailable · your saved record is still here.",
+      context: known?.context ?? "Course details unavailable",
       href: known?.href ?? videoUrl(record.videoId),
       linkLabel: known
         ? record.completed
@@ -39,7 +39,11 @@ export function historyEntries(
       dateLabel: dateFormat.format(record.lastWatchedAt),
       isoDate: new Date(record.lastWatchedAt).toISOString(),
       status: progressStatus(record),
-      positionLabel: `Saved position ${timeLabel(record.position)}`,
+      positionLabel: record.completed
+        ? record.completionSource === "manual"
+          ? "Marked complete by you"
+          : "Video finished"
+        : `Resume at ${timeLabel(record.position)}`,
     };
   });
 }

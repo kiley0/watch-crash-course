@@ -31,11 +31,15 @@
     </header>
 
     <main id="main" class="wrap watch-main" x-data="watchPage">
-      <a class="back-link" :href="courseUrl" @click="saveBeforeNavigation"
+      <a
+        class="back-link"
+        href="./index.html#courses"
+        :href="courseUrl"
+        @click="saveBeforeNavigation"
         ><svg class="icon" aria-hidden="true" focusable="false">
           <use href="./icons.svg#arrow-left"></use>
         </svg>
-        Back to the course</a
+        <span x-text="courseBackLabel">Back to the course shelf</span></a
       >
       <noscript
         ><p class="notice">
@@ -47,16 +51,13 @@
       <div class="notice" x-cloak x-show="error" role="alert">
         <h1>This lesson took a detour.</h1>
         <p x-text="error"></p>
-        <button class="button button-dark" @click="load">Try again</button
-        ><a href="./index.html#courses">Explore courses</a>
+        <a class="button button-dark" href="./index.html#courses">Explore courses</a>
+        <button class="text-button" x-show="canRetry" @click="load">Try again</button>
       </div>
       <div x-cloak x-show="ready">
         <header class="watch-heading">
-          <span class="eyebrow"
-            ><span x-text="course.title"></span> · EPISODE <span x-text="episode.number"></span
-          ></span>
+          <span class="eyebrow" x-text="episodeContextLabel"></span>
           <h1 x-text="episode.title"></h1>
-          <p>One idea at a time. At your own pace.</p>
           <p class="fan-disclosure">
             An unofficial, fan-made learning site. Not affiliated with or endorsed by Crash Course.
           </p>
@@ -67,8 +68,8 @@
             <span class="note-star" aria-hidden="true">✦</span>
             <h2>A little room for a new idea.</h2>
             <p>
-              Loading the video connects to YouTube. YouTube’s privacy practices apply. Your
-              learning progress stays in this browser.
+              Load YouTube’s player, then press play in the video. YouTube’s privacy practices
+              apply; your saved place stays in this browser.
             </p>
             <div class="player-actions">
               <button
@@ -103,16 +104,27 @@
             <button
               type="button"
               class="button button-dark"
-              :disabled="isCompleted"
+              id="mark-complete"
+              x-show="canMarkComplete"
               @click="markComplete"
             >
-              Mark as completed</button
-            ><button type="button" class="text-button" @click="requestReset">
+              Mark complete</button
+            ><button
+              type="button"
+              id="reset-episode"
+              class="text-button"
+              x-show="hasProgress"
+              :aria-expanded="resetPending"
+              aria-controls="reset-confirmation"
+              @click="requestReset"
+            >
               Reset this episode
             </button>
           </div>
         </section>
         <div
+          id="reset-confirmation"
+          @keydown.escape="cancelReset"
           class="watch-reset"
           x-show="resetPending"
           role="group"
@@ -123,10 +135,35 @@
             they are.
           </p>
           <div class="player-actions">
-            <button class="button button-dark" @click="reset">Yes, reset this episode</button
+            <button id="confirm-reset" class="button button-dark" @click="reset">
+              Yes, reset this episode</button
             ><button class="text-button" @click="cancelReset">Keep my place</button>
           </div>
         </div>
+        <section
+          id="lesson-complete"
+          tabindex="-1"
+          class="lesson-complete"
+          x-show="isCompleted"
+          aria-label="Episode completed"
+        >
+          <div>
+            <span class="eyebrow">ONE MORE IDEA TO CARRY</span>
+            <h2>Episode complete.</h2>
+            <p x-text="completionMessage"></p>
+          </div>
+          <a
+            class="button button-orange"
+            x-show="hasNext"
+            :href="nextUrl"
+            @click="saveBeforeNavigation"
+            ><span x-text="nextLabel"></span
+            ><svg class="icon" aria-hidden="true" focusable="false">
+              <use href="./icons.svg#arrow-right"></use></svg></a
+          ><a class="button button-dark" x-show="isLastEpisode" :href="courseUrl"
+            >See your course progress</a
+          >
+        </section>
         <nav class="episode-navigation" aria-label="Episode navigation">
           <a
             class="text-link"
@@ -135,7 +172,7 @@
             @click="saveBeforeNavigation"
             >Previous episode</a
           ><a class="text-link" :href="courseUrl" @click="saveBeforeNavigation">All episodes</a
-          ><a class="text-link" x-show="hasNext" :href="nextUrl" @click="saveBeforeNavigation"
+          ><a class="text-link" x-show="showNextLink" :href="nextUrl" @click="saveBeforeNavigation"
             >Next episode
             <svg class="icon" aria-hidden="true" focusable="false">
               <use href="./icons.svg#arrow-right"></use></svg
@@ -152,9 +189,8 @@
             complete yourself, even if the player is blocked.
           </p>
           <p>
-            Progress belongs to this browser and this site address. Clearing site data or using
-            another device can lose or separate it. Backup and transfer tools are coming in a later
-            milestone. Multiple tabs use the last saved update.
+            Saved only in this browser. Clearing site data or switching devices can lose or separate
+            your progress. <a href="./about.html#privacy">About progress &amp; privacy</a>.
           </p>
           <p>No grades. No deadlines. Just a little more understanding.</p>
         </div>

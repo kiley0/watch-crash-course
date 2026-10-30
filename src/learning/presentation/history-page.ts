@@ -28,6 +28,19 @@ Alpine.data("historyPage", () => {
           matchesQuery(this.query, entry.title, entry.context, entry.videoId),
       );
     },
+    get hasEntries(): boolean {
+      return !this.loading && this.entries.length > 0;
+    },
+    get emptyHeading(): string {
+      return this.storageWarning
+        ? "Your history couldn’t be opened."
+        : "A good place for a beginning.";
+    },
+    get emptyMessage(): string {
+      return this.storageWarning
+        ? "You can still explore the courses. Your existing saved data hasn’t been cleared."
+        : "No viewing history in this browser yet. Choose a lesson and we’ll save you a place.";
+    },
     get empty(): boolean {
       return !this.loading && this.entries.length === 0;
     },

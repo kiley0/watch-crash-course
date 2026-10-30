@@ -61,7 +61,7 @@
       <div x-cloak x-show="metadataLoading" class="history-note" role="status">
         Adding course names to your saved records…
       </div>
-      <div class="filter-bar">
+      <div class="filter-bar" x-cloak x-show="hasEntries">
         <label class="search-field"
           ><span aria-hidden="true"
             ><svg class="icon" aria-hidden="true" focusable="false">
@@ -80,11 +80,11 @@
           </select></label
         >
       </div>
-      <p x-cloak class="result-count" role="status" x-text="resultLabel"></p>
+      <p x-cloak x-show="hasEntries" class="result-count" role="status" x-text="resultLabel"></p>
       <div class="empty-state" x-cloak x-show="empty">
         <span aria-hidden="true">✦</span>
-        <h2>A good place for a beginning.</h2>
-        <p>No viewing history in this browser yet. Choose a lesson and we’ll save you a place.</p>
+        <h2 x-text="emptyHeading">A good place for a beginning.</h2>
+        <p x-text="emptyMessage"></p>
         <a class="button button-dark" href="./index.html#courses">Explore courses</a>
       </div>
       <div class="empty-state" x-cloak x-show="noMatches">
@@ -109,14 +109,17 @@
             <a class="button button-dark" :href="entry.href" x-text="entry.linkLabel"></a></li
         ></template>
       </ol>
+      <details class="quiet-discovery history-note" x-cloak x-show="hasEntries">
+        <summary>About this history</summary>
+        <p>
+          This is your latest saved place for each video, including episodes you marked complete
+          yourself. Resetting an episode removes it from this list. Watching directly on YouTube
+          won’t update your history here.
+        </p>
+      </details>
       <p class="history-note">
-        History includes watched episodes and episodes you marked complete here. Reset episodes
-        leave this list. Watching directly on YouTube won’t update it. One record is kept per video,
-        even when it appears in more than one course.
-      </p>
-      <p class="history-note">
-        Saved on this browser and site address. Clearing site data or changing devices can lose or
-        separate progress. Backup and transfer tools are coming in a later milestone.
+        Your progress stays in this browser.
+        <a href="./about.html#privacy">About progress &amp; privacy</a>.
       </p>
       <a class="text-link" href="./index.html#courses"
         >Back to the course shelf

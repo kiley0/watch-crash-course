@@ -23,6 +23,7 @@ Alpine.data("coursePage", () => {
     query: "",
     loading: true,
     error: "",
+    canRetry: false,
     storageWarning: "",
     summary: null as CourseSummary | null,
     get ready(): boolean {
@@ -92,6 +93,7 @@ Alpine.data("coursePage", () => {
     async load() {
       this.loading = true;
       this.error = "";
+      this.canRetry = false;
       try {
         const id = new URLSearchParams(window.location.search).get("id");
         if (!id || !isCourseId(id)) {
@@ -123,6 +125,7 @@ Alpine.data("coursePage", () => {
         this.storageWarning = progressStore.warning;
         document.title = `${course.title} · Crash Course University`;
       } catch {
+        this.canRetry = true;
         this.error = "We couldn’t load this course. Check your connection and try again.";
       } finally {
         this.loading = false;

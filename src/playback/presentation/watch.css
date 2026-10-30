@@ -1,9 +1,12 @@
 .watch-main {
   max-width: 1120px;
-  padding-block: 28px 72px;
+  padding-block: 24px 56px;
+}
+.watch-main .back-link {
+  margin: 0 0 18px;
 }
 .watch-heading {
-  margin: 32px 0 24px;
+  margin: 0 0 20px;
 }
 .watch-heading h1 {
   margin: 10px 0;
@@ -16,6 +19,7 @@
 }
 .watch-heading .fan-disclosure {
   font-size: 12px;
+  margin-top: 12px;
 }
 .player-shell {
   background: #203b35;
@@ -24,7 +28,7 @@
   border: 1px solid var(--line);
 }
 .player-choice {
-  padding: 44px 32px;
+  padding: 32px 28px;
   background: #e8edda;
   text-align: center;
 }
@@ -121,4 +125,33 @@
   .watch-progress {
     padding: 20px;
   }
+}
+
+.lesson-complete {
+  margin-top: 18px;
+  padding: 24px;
+  border-radius: 22px;
+  background: #e8edda;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.lesson-complete > div {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+.lesson-complete h2 {
+  margin: 6px 0;
+  font-size: 25px;
+}
+.lesson-complete p {
+  margin: 6px 0 0;
+}
+.lesson-complete .button {
+  max-width: 100%;
+  white-space: normal;
+  text-align: left;
 }

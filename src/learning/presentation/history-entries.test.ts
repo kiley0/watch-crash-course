@@ -34,5 +34,6 @@ it("preserves latest-first activity and completion when only some metadata loads
   expect(rows.map((row) => row.videoId)).toEqual([second.videoId, first.videoId]);
   expect(rows[0]?.linkLabel).toBe("Open on YouTube");
   expect(rows[1]?.linkLabel).toBe("Watch again");
+  expect(rows[1]?.positionLabel).toBe("Marked complete by you");
   expect(rows[0]?.completed).toBe(true);
 });

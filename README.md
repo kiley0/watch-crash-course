@@ -61,6 +61,10 @@ History search matches episode/course text and video IDs; status filters disting
 
 Milestone 1 also passed an HTTP portability check with all pages/data/assets served under a `/university/` subdirectory. There is no SPA rewrite. No deployment has been created.
 
+## Experience checks
+
+A full browser walkthrough covered the homepage, search/no-results, course overview, real playback and pause/reload/resume, manual completion and next-lesson navigation, the last episode, history, About/privacy, license access, broken lesson links, and mobile layouts. Product copy avoids development milestone terminology. Empty history hides unused filters; zero-progress bars have an explicit `value="0"` so they never animate as indeterminate loaders. Continue cards show the exact lesson and saved time; completion offers the next lesson by name or a return to course progress. Reset confirmation supports keyboard focus and Escape cancellation. The homepage and About page link to the public source repository and published MIT license.
+
 ## Community voice
 
 Copy includes small references to Nerdfighteria and the Green brothers’ projects: enthusiasm, complex thinking, a Thought Bubble note, and a quiet DFTBA sign-off. Optional search discoveries and an accessible about-page illustration tuck away deeper references. Ordinary navigation and factual course labels remain explicit; these references do not imply affiliation.

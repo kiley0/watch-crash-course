@@ -1709,3 +1709,37 @@ select {
   gap: 12px 24px;
   margin-top: 20px;
 }
+
+/* A determinate, rounded track: an unstarted course should never look like a loader. */
+.course-progress progress,
+.recent-course progress {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #dde4d4;
+}
+progress::-webkit-progress-bar {
+  background: #dde4d4;
+  border-radius: 999px;
+}
+progress::-webkit-progress-value {
+  background: #6b8759;
+  border-radius: 999px;
+}
+progress::-moz-progress-bar {
+  background: #6b8759;
+  border-radius: 999px;
+}
+.hero-footnote a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+#privacy {
+  scroll-margin-top: 24px;
+}
+
+.recent-course .continue-detail {
+  margin: 0 0 10px;
+  font-size: 14px;
+}

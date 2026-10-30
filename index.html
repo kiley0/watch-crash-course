@@ -56,7 +56,7 @@
                 <use href="./icons.svg#check"></use></svg
             ></span>
             100% free forever. <span aria-hidden="true">·</span>
-            100% open-source.
+            <a href="https://github.com/kiley0/crash-course-university">100% open-source.</a>
           </div>
         </div>
         <div class="hero-art">
@@ -99,8 +99,10 @@
                 <div>
                   <span class="eyebrow">RECENT COURSE</span>
                   <h3 x-text="recent.title"></h3>
+                  <p class="continue-detail" x-text="recent.continueDetail"></p>
                   <p x-text="recent.progressLabel"></p>
                   <progress
+                    value="0"
                     max="100"
                     :value="recent.percent"
                     :aria-label="recent.progressLabel"
@@ -203,6 +205,7 @@
                   <div class="course-progress">
                     <span x-text="course.progressLabel"></span
                     ><progress
+                      value="0"
                       max="100"
                       :value="course.percent"
                       :aria-label="course.progressLabel"
@@ -218,7 +221,7 @@
                   </div>
                 </div></article
             ></template>
-            <aside class="shelf-note">
+            <aside class="shelf-note" x-show="showShelfNote">
               <span class="note-star" aria-hidden="true">✳</span
               ><span class="eyebrow">A SMALL START. A BIG WORLD.</span>
               <h3>Learn how<br />you learn.</h3>
