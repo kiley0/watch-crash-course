@@ -1,0 +1,65 @@
+{
+  "courseId": "study-skills",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Taking Notes",
+      "videoId": "E7CwqNHn_Ns",
+      "sourceUrl": "https://thecrashcourse.com/courses/taking-notes-crash-course-study-skills-1/"
+    },
+    {
+      "number": 2,
+      "title": "Reading Assignments",
+      "videoId": "WAIUkjsZ5xQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/reading-assignments-crash-course-study-skills-2/"
+    },
+    {
+      "number": 3,
+      "title": "Memory",
+      "videoId": "SZbdK9e9bxs",
+      "sourceUrl": "https://thecrashcourse.com/courses/memory-crash-course-study-skills-3/"
+    },
+    {
+      "number": 4,
+      "title": "Planning & Organization",
+      "videoId": "0AKAuRby7n8",
+      "sourceUrl": "https://thecrashcourse.com/courses/planning-organization-crash-course-study-skills-4/"
+    },
+    {
+      "number": 5,
+      "title": "Focus & Concentration",
+      "videoId": "L_2JaFnkZ4o",
+      "sourceUrl": "https://thecrashcourse.com/courses/focus-concentration-crash-course-study-skills-5/"
+    },
+    {
+      "number": 6,
+      "title": "Procrastination",
+      "videoId": "x2y_SLOvOvw",
+      "sourceUrl": "https://thecrashcourse.com/courses/procrastination-crash-course-study-skills-6/"
+    },
+    {
+      "number": 7,
+      "title": "Studying for Exams",
+      "videoId": "mLhwdITTrfE",
+      "sourceUrl": "https://thecrashcourse.com/courses/studying-for-exams-crash-course-study-skills-7/"
+    },
+    {
+      "number": 8,
+      "title": "Test Anxiety",
+      "videoId": "t-9cqaRJMP4",
+      "sourceUrl": "https://thecrashcourse.com/courses/test-anxiety-crash-course-study-skills-8/"
+    },
+    {
+      "number": 9,
+      "title": "Papers & Essays",
+      "videoId": "KlgR1q3UQZE",
+      "sourceUrl": "https://thecrashcourse.com/courses/papers-essays-crash-course-study-skills-9/"
+    },
+    {
+      "number": 10,
+      "title": "Exercise",
+      "videoId": "SQONLdb1gow",
+      "sourceUrl": "https://thecrashcourse.com/courses/exercise-crash-course-study-skills-10/"
+    }
+  ]
+}

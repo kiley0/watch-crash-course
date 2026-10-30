@@ -1,0 +1,36 @@
+{
+  "name": "crash-course-university",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "fmt": "vp fmt",
+    "check": "vp check",
+    "test": "vp test run",
+    "build": "vp check && vp test run && vp build",
+    "preview": "vp preview"
+  },
+  "dependencies": {
+    "@alpinejs/csp": "3.17.5"
+  },
+  "devDependencies": {
+    "@types/alpinejs": "3.17.0",
+    "lucide-static": "1.64.0",
+    "typescript": "~7.0.2",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.16.1",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@12.16.1"
+}
