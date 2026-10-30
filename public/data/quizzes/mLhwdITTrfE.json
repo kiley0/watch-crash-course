@@ -1,0 +1,69 @@
+{
+  "videoId": "mLhwdITTrfE",
+  "revision": 1,
+  "questions": [
+    {
+      "id": "recall",
+      "prompt": "Which activity practices recall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Looking at highlighted words without testing yourself."
+        },
+        {
+          "id": "b",
+          "text": "Answering a question with your notes closed."
+        },
+        {
+          "id": "c",
+          "text": "Rearranging your stationery."
+        }
+      ],
+      "correctId": "b",
+      "explanation": "Self-quizzing makes you retrieve information instead of merely recognizing it.",
+      "seconds": 0
+    },
+    {
+      "id": "questions",
+      "prompt": "Without a practice test, where can you find question ideas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Turn study-guide concepts or lecture headings into questions."
+        },
+        {
+          "id": "b",
+          "text": "Wait until the exam begins."
+        },
+        {
+          "id": "c",
+          "text": "Only use unrelated trivia."
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Your course materials can become prompts for an original practice quiz.",
+      "seconds": 0
+    },
+    {
+      "id": "problems",
+      "prompt": "How should you prepare for problem-solving questions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Read solutions without trying problems."
+        },
+        {
+          "id": "b",
+          "text": "Only memorize the page layout."
+        },
+        {
+          "id": "c",
+          "text": "Spend substantial time working through problems yourself."
+        }
+      ],
+      "correctId": "c",
+      "explanation": "Practicing the operations shows what you can do and where you need help.",
+      "seconds": 0
+    }
+  ]
+}

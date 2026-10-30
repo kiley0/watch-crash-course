@@ -9,7 +9,7 @@ Use Node 22.12+ (Vite+ also supports newer compatible releases) and pnpm 12.16.1
 - `pnpm dev` — development server.
 - `pnpm fmt` — format source.
 - `pnpm check` — formatting, lint, and strict TypeScript checks.
-- `pnpm test` — catalog validation and discovery tests.
+- `pnpm test` — focused domain, data, persistence, and player tests.
 - `pnpm build` — checks, tests, then the multi-page build into `dist/`.
 - `pnpm preview` — serve the production build.
 
@@ -17,11 +17,11 @@ Use Node 22.12+ (Vite+ also supports newer compatible releases) and pnpm 12.16.1
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) for the domain map, dependency rules, and a “where new work goes” guide. Catalog rules, static JSON loading, and page interactions live together under `src/catalog/`, separated by responsibility. Shared visual identity lives in `src/site/`. Tests sit beside their modules.
 
-## Milestones 1–3
+## Milestones 1–4
 
 Catalog search and subject filtering, a complete Study Skills course page with all ten numbered episodes, episode search, official YouTube links, accessible responsive styling, and an about/privacy page. Catalog/network errors and unknown course IDs have useful recovery states. No fabricated course or viewing progress is shown.
 
-The watch page now loads YouTube’s official player after a user action, offers resume or replay, saves playback position, supports manual completion and confirmed episode reset, and links to previous/next lessons. Course episodes show saved status. Course completion summaries, a recent-course continue panel, and searchable learning history are also available. Quizzes and backup/import follow in later milestones. No account or API key is required.
+The watch page now loads YouTube’s official player after a user action, offers resume or replay, saves playback position, supports manual completion and confirmed episode reset, and links to previous/next lessons. Course episodes show saved status. Course completion summaries, a recent-course continue panel, and searchable learning history are also available. Each Study Skills lesson has three optional fan-made review questions, immediate explanations, video links, saved answers, retries, and a best score. Backup/import follows in milestone 5. No account or API key is required.
 
 ## Content maintenance
 
@@ -31,7 +31,7 @@ The checked-in files in `public/data/` are manually curated. The course index co
 
 Import the repository into Vercel as a Vite project. Enable Corepack in the Vercel project settings (`ENABLE_EXPERIMENTAL_COREPACK=1`) so the `packageManager` pin is used. Install with `pnpm install --frozen-lockfile`, set build command to `pnpm build`, and output directory to `dist`. Select a Node version satisfying `engines` and supported by the pinned pnpm release. No server functions, environment secrets, SPA fallback rewrite, or custom deployment workflow is required.
 
-All five HTML pages are explicit build entries. `public/` is copied unchanged. The relative base, page links, and JSON URLs support a subdirectory deployment. `dist/` can be served by any static HTTPS host without Node, Vite+, or Vercel. Test with `vp preview` or an ordinary static server rooted at `dist/`. Keep a stable production origin for local progress; preview URLs have separate browser storage.
+All five HTML pages are explicit build entries. Vite uses multi-page mode so missing JSON files return a real 404 instead of the homepage. `public/` is copied unchanged. The relative base, page links, and JSON URLs support a subdirectory deployment. `dist/` can be served by any static HTTPS host without Node, Vite+, or Vercel. Test with `vp preview` or an ordinary static server rooted at `dist/`. Keep a stable production origin for local progress; preview URLs have separate browser storage.
 
 ## Dependencies and design
 
@@ -98,3 +98,13 @@ The homepage’s three learning principles pair short attributed excerpts with o
 The descriptions under the quotations are our interpretations, not additional John Green quotations. The attributions are references, not endorsements; third-party excerpts remain outside our MIT license.
 
 The closing banner quotes Hank Green’s [MIT interview on science, communication, and curiosity](https://oge.mit.edu/oge_news/3-questions-hank-green-on-science-communication-and-curiosity/), published May 29, 2025. Its short quotation is reproduced as published in the interview’s introductory quotation, with visible attribution and a source link. Checked October 30, 2026.
+
+## Quizzes
+
+See [QUIZ_CONTENT.md](./QUIZ_CONTENT.md) for sources, revision rules, and content review guidance. Quiz code lives in `src/quizzes/`; static content lives in `public/data/quizzes/`. There are no new dependencies. Quiz data uses its own localForage store and never changes video progress or learning history. Answers are inspectable in the downloaded JSON: this is self-study, not secure assessment.
+
+Milestone 4 checks cover content for all ten lessons, validation, scoring, answer locking, retry and best-score retention, reload persistence, revision separation, serialized writes, corrupt-data preservation, storage failure, missing quizzes, network errors, and fetch timeout.
+
+Manual quiz checks confirmed correct and incorrect feedback, answer locking, reload persistence, retained best scores after retry, keyboard focus on feedback and the new round, 390px answer-card layout without horizontal overflow, and production-preview recovery after quiz content was temporarily unavailable. Watch progress stayed unchanged while answering.
+
+Quiz review added regression checks for inherited-property question IDs, inconsistent best scores, and revision records stored under the wrong key. The real missing-quiz state was verified in the browser with the quiz file temporarily moved and then restored.

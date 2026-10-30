@@ -1,0 +1,69 @@
+{
+  "videoId": "KlgR1q3UQZE",
+  "revision": 1,
+  "questions": [
+    {
+      "id": "prewrite",
+      "prompt": "What is the aim of a first brain dump?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A perfectly polished final paper."
+        },
+        {
+          "id": "b",
+          "text": "Getting ideas and questions out where you can work with them."
+        },
+        {
+          "id": "c",
+          "text": "Collecting sources forever before writing anything."
+        }
+      ],
+      "correctId": "b",
+      "explanation": "Early writing can be messy; it helps reveal what you know and what to investigate.",
+      "seconds": 113
+    },
+    {
+      "id": "research",
+      "prompt": "How can pre-writing guide research?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It gives you questions and tentative arguments to investigate."
+        },
+        {
+          "id": "b",
+          "text": "It eliminates the need for sources."
+        },
+        {
+          "id": "c",
+          "text": "It guarantees your first argument is correct."
+        }
+      ],
+      "correctId": "a",
+      "explanation": "A starting set of questions makes research more focused.",
+      "seconds": 0
+    },
+    {
+      "id": "sources",
+      "prompt": "How can Wikipedia help you begin research?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By replacing all original sources."
+        },
+        {
+          "id": "b",
+          "text": "By making source checking unnecessary."
+        },
+        {
+          "id": "c",
+          "text": "By pointing you toward sources in its citations."
+        }
+      ],
+      "correctId": "c",
+      "explanation": "The episode distinguishes using an article as a starting point from relying on it as your final source.",
+      "seconds": 147
+    }
+  ]
+}

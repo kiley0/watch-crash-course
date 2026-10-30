@@ -1,0 +1,69 @@
+{
+  "videoId": "E7CwqNHn_Ns",
+  "revision": 1,
+  "questions": [
+    {
+      "id": "meaning",
+      "prompt": "Why can word-for-word notes get in the way of learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They can use attention that could go toward understanding."
+        },
+        {
+          "id": "b",
+          "text": "They always leave out vocabulary."
+        },
+        {
+          "id": "c",
+          "text": "They make handwriting impossible."
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Copying every word can crowd out thinking about meaning.",
+      "seconds": 90
+    },
+    {
+      "id": "tools",
+      "prompt": "What matters when choosing paper or a laptop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always picking the fastest tool."
+        },
+        {
+          "id": "b",
+          "text": "Using the tool in a way that keeps you engaged with meaning."
+        },
+        {
+          "id": "c",
+          "text": "Using the same app as everyone else."
+        }
+      ],
+      "correctId": "b",
+      "explanation": "Either can work. The episode encourages processing ideas rather than transcribing.",
+      "seconds": 90
+    },
+    {
+      "id": "signal",
+      "prompt": "What should useful notes emphasize?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every sentence equally."
+        },
+        {
+          "id": "b",
+          "text": "Only the speaker\u2019s jokes."
+        },
+        {
+          "id": "c",
+          "text": "Main ideas, definitions, and useful examples."
+        }
+      ],
+      "correctId": "c",
+      "explanation": "Selective notes make the important material easier to find and review.",
+      "seconds": 201
+    }
+  ]
+}

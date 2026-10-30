@@ -2,6 +2,7 @@ import { defineConfig } from "vite-plus";
 
 export default defineConfig({
   base: "./",
+  appType: "mpa",
   build: {
     rolldownOptions: {
       input: ["index.html", "course.html", "about.html", "watch.html", "history.html"],

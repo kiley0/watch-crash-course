@@ -1,0 +1,69 @@
+{
+  "videoId": "SQONLdb1gow",
+  "revision": 1,
+  "questions": [
+    {
+      "id": "scope",
+      "prompt": "How does the episode frame exercise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only competitive sport counts."
+        },
+        {
+          "id": "b",
+          "text": "Movement has many forms beyond running or lifting."
+        },
+        {
+          "id": "c",
+          "text": "Only an expensive gym can help."
+        }
+      ],
+      "correctId": "b",
+      "explanation": "It introduces a broad view of activity rather than a single sport or routine.",
+      "seconds": 0
+    },
+    {
+      "id": "movement",
+      "prompt": "What connection does the sea squirt example illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning and nervous systems are tied to movement."
+        },
+        {
+          "id": "b",
+          "text": "All animals need the same exercise plan."
+        },
+        {
+          "id": "c",
+          "text": "Studying eliminates the need to move."
+        }
+      ],
+      "correctId": "a",
+      "explanation": "The example links the need to navigate an environment with the usefulness of a brain.",
+      "seconds": 94
+    },
+    {
+      "id": "whole",
+      "prompt": "What broader idea closes the course?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning is separate from the body."
+        },
+        {
+          "id": "b",
+          "text": "More desk time is always better."
+        },
+        {
+          "id": "c",
+          "text": "Caring for the body is part of supporting the brain."
+        }
+      ],
+      "correctId": "c",
+      "explanation": "The final episode places learning within whole-body care.",
+      "seconds": 0
+    }
+  ]
+}

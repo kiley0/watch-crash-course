@@ -178,6 +178,82 @@
               <use href="./icons.svg#arrow-right"></use></svg
           ></a>
         </nav>
+        <section class="quiz-panel" x-data="quizPanel" aria-labelledby="quiz-heading">
+          <span class="eyebrow">A LITTLE PRACTICE, A LITTLE POSSIBILITY</span>
+          <h2 id="quiz-heading" tabindex="-1">Make a few ideas stick.</h2>
+          <p class="quiz-intro" x-text="intro">
+            Optional review questions. No timer, no grades. These fan-made questions are a chance to
+            practice, and won’t change your episode completion.
+          </p>
+          <p x-show="loading" role="status">Finding a few good questions…</p>
+          <div x-show="error" x-cloak role="alert">
+            <p x-text="error"></p>
+            <button class="text-button" @click="load">Try the questions again</button>
+          </div>
+          <p x-show="missing" x-cloak>
+            There isn’t a quiz for this video yet. Keep following your curiosity.
+          </p>
+          <div x-show="available" x-cloak>
+            <p class="notice" x-show="warning" x-text="warning" role="status"></p>
+            <p class="quiz-summary" role="status">
+              <span x-text="summary"></span><br /><small x-text="bestLabel"></small>
+            </p>
+            <template x-for="question in questions" :key="question.id">
+              <fieldset class="quiz-question">
+                <legend x-text="question.prompt"></legend>
+                <div class="quiz-options">
+                  <template x-for="option in question.options" :key="option.id">
+                    <button
+                      type="button"
+                      class="quiz-option"
+                      :data-question="question.id"
+                      :data-option="option.id"
+                      :aria-pressed="option.selected"
+                      :disabled="question.answered || busy"
+                      @click="choose"
+                    >
+                      <span x-text="option.text"></span><small x-text="option.label"></small>
+                    </button>
+                  </template>
+                </div>
+                <div
+                  class="quiz-feedback"
+                  :id="'quiz-feedback-' + question.id"
+                  tabindex="-1"
+                  x-show="question.answered"
+                  role="status"
+                >
+                  <p x-text="question.feedback"></p>
+                  <a
+                    class="text-link"
+                    :href="question.reviewUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    x-text="question.reviewLabel"
+                  ></a>
+                </div>
+              </fieldset>
+            </template>
+            <p class="quiz-summary" x-show="roundComplete" role="status">
+              Round complete. A little more knowledge to carry. Revisit an idea or try another round
+              whenever you like.
+            </p>
+            <button
+              type="button"
+              class="button button-dark"
+              x-show="hasAnswers"
+              :disabled="busy"
+              @click="retry"
+            >
+              Try a fresh round
+            </button>
+            <p class="quiz-save" x-show="hasAnswers" x-text="saveLabel"></p>
+            <p class="quiz-save">
+              A fresh round clears this round’s answers and keeps your best score.
+            </p>
+          </div>
+        </section>
+
         <div class="watch-footnotes">
           <a class="text-link" :href="youtubeUrl" @click="saveBeforeNavigation"
             >Open on YouTube

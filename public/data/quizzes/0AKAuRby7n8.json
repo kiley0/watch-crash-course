@@ -1,0 +1,69 @@
+{
+  "videoId": "0AKAuRby7n8",
+  "revision": 1,
+  "questions": [
+    {
+      "id": "modes",
+      "prompt": "What is Planning Mode for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Doing tasks without deciding priorities."
+        },
+        {
+          "id": "b",
+          "text": "Preparing the work and environment so execution is easier."
+        },
+        {
+          "id": "c",
+          "text": "Avoiding a task until it is urgent."
+        }
+      ],
+      "correctId": "b",
+      "explanation": "Planning sets up the conditions and directions for doing the work in Robot Mode.",
+      "seconds": 0
+    },
+    {
+      "id": "calendar",
+      "prompt": "Where does a lecture at a fixed time belong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A calendar."
+        },
+        {
+          "id": "b",
+          "text": "Only in your memory."
+        },
+        {
+          "id": "c",
+          "text": "An unsorted pile of notes."
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Calendars suit events at particular times; task lists handle work with deadlines.",
+      "seconds": 43
+    },
+    {
+      "id": "tasks",
+      "prompt": "What should a useful task manager make easy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hiding due dates."
+        },
+        {
+          "id": "b",
+          "text": "Choosing the fanciest app."
+        },
+        {
+          "id": "c",
+          "text": "Recording details and seeing what is coming due."
+        }
+      ],
+      "correctId": "c",
+      "explanation": "A simple paper or digital system can work if it helps capture and find tasks.",
+      "seconds": 43
+    }
+  ]
+}

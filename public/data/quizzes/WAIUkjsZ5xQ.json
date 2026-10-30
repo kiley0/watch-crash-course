@@ -1,0 +1,69 @@
+{
+  "videoId": "WAIUkjsZ5xQ",
+  "revision": 1,
+  "questions": [
+    {
+      "id": "priorities",
+      "prompt": "How should you approach a large reading list?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat every page as equally important."
+        },
+        {
+          "id": "b",
+          "text": "Prioritize with attention to the course\u2019s needs."
+        },
+        {
+          "id": "c",
+          "text": "Skip the main textbook automatically."
+        }
+      ],
+      "correctId": "b",
+      "explanation": "The episode suggests assessing the class and distinguishing core from supplemental reading.",
+      "seconds": 0
+    },
+    {
+      "id": "speed",
+      "prompt": "Why be skeptical of extreme speed-reading promises?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comprehension and visual processing impose limits."
+        },
+        {
+          "id": "b",
+          "text": "Reading never gets faster with practice."
+        },
+        {
+          "id": "c",
+          "text": "Understanding is unrelated to reading."
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Recognizing text and understanding it both take processing time.",
+      "seconds": 117
+    },
+    {
+      "id": "context",
+      "prompt": "What helps decide whether to read closely or skim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The color of the book cover."
+        },
+        {
+          "id": "b",
+          "text": "How many pages your friends skip."
+        },
+        {
+          "id": "c",
+          "text": "How the reading fits the class and its main concepts."
+        }
+      ],
+      "correctId": "c",
+      "explanation": "Different courses make different demands; evaluate what the assignment contributes.",
+      "seconds": 0
+    }
+  ]
+}
