@@ -176,7 +176,7 @@ Alpine.data("watchPage", () => {
         this.nextTitle = next?.title ?? "";
         this.progress = await progressStore.load(videoId);
         this.storageWarning = progressStore.warning;
-        document.title = `${episode.title} · ${course.title} · Crash Course University`;
+        document.title = `${episode.title} · ${course.title} · Watch Crash Course`;
       } catch {
         this.canRetry = true;
         this.error =

@@ -45,8 +45,7 @@ const shelfSurprises: Record<string, { heading: string; message: string }> = {
   },
   "dave green": {
     heading: "Dave’s keeping a low profile.",
-    message:
-      "The imaginary third Green brother is quietly auditing this imaginary university. Naturally.",
+    message: "The imaginary third Green brother is quietly watching along. Naturally.",
   },
   "pumpkins and penguins": {
     heading: "An excellent sign-off.",

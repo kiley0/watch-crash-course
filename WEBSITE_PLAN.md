@@ -1,4 +1,6 @@
-# Crash Course University: implementation plan
+# Watch Crash Course: implementation plan
+
+Production domain: `watchcrashcourse.com`. Repository and local folder: `watch-crash-course`.
 
 ## Goal
 

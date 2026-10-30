@@ -48,6 +48,7 @@ src/
     presentation/quiz-questions.ts      Answer labels, feedback, and video review links
     presentation/quiz.css               Quiz cards and feedback styles
   site/                                 Shared site identity and informational UI
+    infrastructure/browser-storage.ts   Database identity and localForage store creation
     styles.css                          Shared design tokens, components, responsive rules
     about-page.ts                       About-page entry and surprise toggle
     reload-on-restore.ts                Refresh stale views restored by browser history
@@ -71,7 +72,7 @@ Root HTML files remain explicit Vite build entries. Keeping them at the root pre
 - **Domain** owns course terminology, data contracts, and pure rules. It uses TypeScript and standard JavaScript only. It never imports Alpine, page modules, CSS, `fetch`, or browser globals.
 - **Infrastructure** handles loading and external formats. It imports domain types and validators. Static JSON is untrusted at runtime until validated. Browser fetch details and recovery mechanics belong here.
 - **Presentation** handles Alpine, DOM-facing state, labels, navigation, and UI-only copy. It may call infrastructure and domain functions. It does not duplicate validation rules or fetch JSON itself.
-- **Site** owns shared visual identity and informational interactions. Catalog code can import its stylesheet. Site code does not own course rules.
+- **Site** owns shared visual identity, informational interactions, and browser storage configuration. Catalog code can import its stylesheet. Site code does not own course rules.
 
 Use explicit imports from the owning file. Avoid barrel exports, path aliases, catch-all `utils` folders, and a generic `shared` domain. Put a helper beside its first caller; move it only when its responsibility or reuse is clear. A small module can contain closely related types and functions, as `course.ts` does.
 
@@ -94,7 +95,7 @@ There is no application layer yet: loading a catalog and filtering it does not n
 
 `learning/` owns video progress keyed by YouTube ID. `playback/` owns the official player adapter and watch-page experience. Catalog presentation composes these capabilities to link episodes and show saved status; neither capability imports catalog presentation. Learning stores one progress record per video; course summaries receive the current episode IDs and derive membership-based counts without owning a copy of the catalog. Shared videos retain one record. Quizzes live in `quizzes/` and never write video progress. Document narrow contracts when domain coordination is necessary and keep dependencies acyclic.
 
-The watch page calls learning's storage adapter and playback's player adapter. The player only reports samples through a typed callback; it never knows how progress is stored. `createProgressStore` accepts a small backend boundary to test failure and ordering; `browser-progress.ts` alone imports localForage and creates the browser instance. Tests remain colocated, including beside the new modules. `progressStore.list()` reads all namespaced records without a catalog dependency. History presentation composes those records with optional catalog metadata; catalog failures cannot hide readable saved records. Catalog and course presentation reuse the pure summary rules, rather than storing percentages or course totals.
+The watch page calls learning's storage adapter and playback's player adapter. The player only reports samples through a typed callback; it never knows how progress is stored. `createProgressStore` accepts a small backend boundary to test failure and ordering; `browser-progress.ts` selects the video store through `site/infrastructure/browser-storage.ts`, which owns the project database name and localForage configuration. The quiz adapter selects its own store through the same factory. Tests remain colocated, including beside the new modules. `progressStore.list()` reads all namespaced records without a catalog dependency. History presentation composes those records with optional catalog metadata; catalog failures cannot hide readable saved records. Catalog and course presentation reuse the pure summary rules, rather than storing percentages or course totals.
 
 ## Tests and change checks
 
@@ -107,3 +108,7 @@ Run `pnpm fmt` and `pnpm build` after changing module locations, contracts, or e
 Each `public/data/quizzes/<video-id>.json` has a positive revision and stable question/option IDs. Increment the revision whenever answers or question meanings change. Attempts use separate `quiz:<video-id>:r<revision>` keys in the `quiz_attempts` localForage store; old revisions remain recoverable but are not applied to new content. First answers stay locked until a fresh round, which keeps the best score and increments the attempt count. Watch completion and history are independent.
 
 Authored content sources and review guidance live in [QUIZ_CONTENT.md](./QUIZ_CONTENT.md). A missing JSON file shows an explicit no-quiz state, while network/validation errors offer retry without blocking playback. Unreadable saved data is preserved; storage failure falls back to temporary answers with a warning.
+
+## Project identity and storage
+
+The site is Watch Crash Course (`watch-crash-course`), with intended production origin `https://watchcrashcourse.com`. The site infrastructure owns the database identity and creates localForage stores in `watch-crash-course`. Learning and quizzes use separate stores and validate their own records. Browser storage is scoped to the site origin.

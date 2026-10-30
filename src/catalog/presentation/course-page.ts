@@ -123,7 +123,7 @@ Alpine.data("coursePage", () => {
           status: progressStatus(records[index] ?? null),
         }));
         this.storageWarning = progressStore.warning;
-        document.title = `${course.title} · Crash Course University`;
+        document.title = `${course.title} · Watch Crash Course`;
       } catch {
         this.canRetry = true;
         this.error = "We couldn’t load this course. Check your connection and try again.";

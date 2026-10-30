@@ -1,4 +1,4 @@
-# Crash Course University
+# Watch Crash Course
 
 A bright, independent course guide for curious people. Ordinary HTML and CSS, TypeScript, Alpine's CSP build, and static JSON. Built with Vite+ and ready for static hosting on Vercel.
 
@@ -29,6 +29,8 @@ The checked-in files in `public/data/` are manually curated. The course index co
 
 ## Hosting
 
+The public name is **Watch Crash Course**. The repository and local folder use `watch-crash-course`. The intended production origin is `https://watchcrashcourse.com`; domain registration, DNS, and deployment are separate setup steps.
+
 Import the repository into Vercel as a Vite project. Enable Corepack in the Vercel project settings (`ENABLE_EXPERIMENTAL_COREPACK=1`) so the `packageManager` pin is used. Install with `pnpm install --frozen-lockfile`, set build command to `pnpm build`, and output directory to `dist`. Select a Node version satisfying `engines` and supported by the pinned pnpm release. No server functions, environment secrets, SPA fallback rewrite, or custom deployment workflow is required.
 
 All five HTML pages are explicit build entries. Vite uses multi-page mode so missing JSON files return a real 404 instead of the homepage. `public/` is copied unchanged. The relative base, page links, and JSON URLs support a subdirectory deployment. `dist/` can be served by any static HTTPS host without Node, Vite+, or Vercel. Test with `vp preview` or an ordinary static server rooted at `dist/`. Keep a stable production origin for local progress; preview URLs have separate browser storage.
@@ -37,11 +39,11 @@ All five HTML pages are explicit build entries. Vite uses multi-page mode so mis
 
 localForage 1.10.0 provides the storage adapter (IndexedDB with localStorage fallback), with full published licenses for it and its bundled dependencies. Alpine CSP 3.17.5 is pinned, installed from the registry, bundled into the local site assets, and never loaded from a CDN. Vite+ handles transpilation and checks. Lucide provides a small, checked-in SVG sprite of eight selected icons. No icon runtime, CSS framework, font, or animation library is used. The original SVG illustration and CSS artwork complement Crash Course's cream/teal/navy palette without reusing brand artwork. Motion respects reduced-motion preferences.
 
-See `WEBSITE_PLAN.md` for remaining milestones and `THIRD_PARTY_NOTICES.md` for attribution. This is not an official Crash Course service or an accredited university.
+See `WEBSITE_PLAN.md` for remaining milestones and `THIRD_PARTY_NOTICES.md` for attribution. This is an unofficial, unaffiliated fan-made project.
 
 ## Progress storage and playback
 
-`src/learning/domain/progress.ts` owns completion, clamping, resume, and record validation. `src/learning/infrastructure/progress-store.ts` serializes updates within a tab; `browser-progress.ts` wires the localForage backend. Records are keyed by video ID, never course ID, in database `crash-course-university`, store `video_progress`, keys `video:<id>`. Each record has `schemaVersion: 1`, position/duration in seconds, a millisecond timestamp, and completion/source. No migration is needed yet; unsupported schemas or malformed records disable writes for that page session and leave stored data untouched. Write failures retain temporary in-memory progress with a visible warning. No other module accesses browser storage directly.
+`src/learning/domain/progress.ts` owns completion, clamping, resume, and record validation. `src/learning/infrastructure/progress-store.ts` serializes updates within a tab; `browser-progress.ts` wires the localForage backend. Records are keyed by video ID, never course ID, in database `watch-crash-course`, store `video_progress`, keys `video:<id>`. Each record has `schemaVersion: 1`, position/duration in seconds, a millisecond timestamp, and completion/source. Unsupported schemas or malformed records disable writes for that page session and leave stored data untouched. Write failures retain temporary in-memory progress with a visible warning. No other module accesses browser storage directly.
 
 Playback samples every five seconds while playing, saves on pause/ended, and attempts a save on navigation and page hiding. Only an ended event or manual action marks completion; seeking alone does not. Rewatching preserves completion until an explicit reset. Completed videos and positions within five seconds of the end offer replay. Player listeners/timers are cleaned up on departure; a browser back/forward cache restore reloads the watch or course page to recover a fresh session and current episode statuses. Periodic saves are the durable baseline; a browser closing abruptly may lose the last few seconds.
 
@@ -59,7 +61,7 @@ History search matches episode/course text and video IDs; status filters disting
 
 `pnpm build` runs formatting, lint, strict type checks, colocated tests, and all five HTML build entries. Automated checks cover catalog contracts, query matching, course detail loading, progress transitions and persistence, blocked storage, preserving future-schema records, and player lifecycle/error behavior. Player tests use a boundary fake; they do not replace real browser playback verification. Local browser checks confirmed no YouTube frames/scripts before the load action, real playback with pause saving, a saved resume choice after reload, manual completion surviving reload and appearing on the course page, confirmed reset, next-episode navigation, and the watch layout at 390px without horizontal overflow. The built watch page also loaded correctly in the production preview. Milestone 3 browser checks also covered empty history, persisted history and resume links, status filters and reset, a 1-of-10 completion count, most-recent-first ordering, 390px mobile layout, tablet navigation bounds, and recovery while the catalog file was temporarily unavailable. Cross-browser Safari, Firefox, and mobile playback checks remain part of release validation.
 
-Milestone 1 also passed an HTTP portability check with all pages/data/assets served under a `/university/` subdirectory. There is no SPA rewrite. No deployment has been created.
+Milestone 1 also passed an HTTP portability check with all pages/data/assets served under a nested subdirectory. There is no SPA rewrite. No deployment has been created.
 
 ## Experience checks
 
@@ -79,7 +81,7 @@ MIT permits proprietary derivatives and does not require forks to remain free of
 
 Crash Course videos, third-party source text and quotations, logos, and branding are not relicensed by this repository. Factual video identifiers and source links do not imply ownership of the linked material. Referencing a community phrase does not give us exclusive rights to it. This project's license does not grant permission from Crash Course, Complexly, or YouTube to use their trademarks or imply endorsement.
 
-Dependencies retain their own licenses. See [third-party notices](./THIRD_PARTY_NOTICES.md). The standard license text is kept unchanged in `LICENSE`, identified as `MIT` in `package.json`, and also included in `public/licenses/Crash-Course-University-MIT.txt` for published builds. Keep that published copy in sync if the copyright notice changes.
+Dependencies retain their own licenses. See [third-party notices](./THIRD_PARTY_NOTICES.md). The standard license text is kept unchanged in `LICENSE`, identified as `MIT` in `package.json`, and also included in `public/licenses/Watch-Crash-Course-MIT.txt` for published builds. Keep that published copy in sync if the copyright notice changes.
 
 License reference: [Open Source Initiative: MIT](https://opensource.org/license/mit).
 
