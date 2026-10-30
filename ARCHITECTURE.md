@@ -9,6 +9,7 @@ index.html                              Catalog page markup
 course.html                             Course page markup
 about.html                              About/privacy markup
 watch.html                              Playback, resume, and episode navigation
+history.html                            Latest saved video activity and filters
 src/
   catalog/                              Courses and their ordered episodes
     domain/
@@ -25,9 +26,13 @@ src/
       shelf-surprises.ts                Optional search discoveries and community copy
   learning/
     domain/progress.ts                  Pure progress transitions and record validation
+    domain/course-summary.ts            Derived completion, continue selection, history order
     infrastructure/progress-store.ts    Serialized persistence and in-memory fallback
     infrastructure/browser-progress.ts  localForage backend and browser instance
     presentation/progress-labels.ts     Time labels
+    presentation/history-page.ts        Local history first, optional catalog enrichment
+    presentation/history-entries.ts     Rows rebuilt from records and current metadata
+    presentation/history.css            History-page visual components
   playback/
     infrastructure/youtube-player.ts    Lazy IFrame API, events, sampling, lifecycle
     presentation/watch-page.ts          Watch-page Alpine state and composition
@@ -78,9 +83,9 @@ There is no application layer yet: loading a catalog and filtering it does not n
 | Add an icon                                                | Selected symbol in `public/icons.svg`; retain its license notice                   |
 | Add an interactive page                                    | Root HTML, an owning domain's presentation entry, and `vite.config.ts` build input |
 
-`learning/` owns video progress keyed by YouTube ID. `playback/` owns the official player adapter and watch-page experience. Catalog presentation composes these capabilities to link episodes and show saved status; neither capability imports catalog presentation. Pure learning rules remain independent of catalog membership, so shared videos retain one progress record. Quizzes should get their own domain when implemented. Document narrow contracts when domain coordination is necessary and keep dependencies acyclic.
+`learning/` owns video progress keyed by YouTube ID. `playback/` owns the official player adapter and watch-page experience. Catalog presentation composes these capabilities to link episodes and show saved status; neither capability imports catalog presentation. Learning stores one progress record per video; course summaries receive the current episode IDs and derive membership-based counts without owning a copy of the catalog. Shared videos retain one record. Quizzes should get their own domain when implemented. Document narrow contracts when domain coordination is necessary and keep dependencies acyclic.
 
-The watch page calls learning's storage adapter and playback's player adapter. The player only reports samples through a typed callback; it never knows how progress is stored. `createProgressStore` accepts a small backend boundary to test failure and ordering; `browser-progress.ts` alone imports localForage and creates the browser instance. Tests remain colocated, including beside the new modules.
+The watch page calls learning's storage adapter and playback's player adapter. The player only reports samples through a typed callback; it never knows how progress is stored. `createProgressStore` accepts a small backend boundary to test failure and ordering; `browser-progress.ts` alone imports localForage and creates the browser instance. Tests remain colocated, including beside the new modules. `progressStore.list()` reads all namespaced records without a catalog dependency. History presentation composes those records with optional catalog metadata; catalog failures cannot hide readable saved records. Catalog and course presentation reuse the pure summary rules, rather than storing percentages or course totals.
 
 ## Tests and change checks
 

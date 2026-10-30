@@ -1,68 +1,138 @@
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
-import { loadCatalog } from "../infrastructure/static-catalog";
+import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
 import { matchesQuery } from "../domain/search";
 import { findShelfSurprise } from "./shelf-surprises";
 import type { Course } from "../domain/course";
+import { progressStore } from "../../learning/infrastructure/browser-progress";
+import { mostRecentUnfinished, summarizeCourse } from "../../learning/domain/course-summary";
+import type { CourseSummary } from "../../learning/domain/course-summary";
+import { watchUrl } from "../../playback/presentation/watch-links";
+import { reloadOnRestore } from "../../site/reload-on-restore";
 interface CourseCard extends Course {
   href: string;
   episodeLabel: string;
   linkLabel: string;
+  summary: CourseSummary | null;
+  progressLabel: string;
+  percent: number;
+  continueHref: string;
+  continueLabel: string;
 }
-Alpine.data("catalogPage", () => ({
-  courses: [] as CourseCard[],
-  query: "",
-  subject: "all",
-  loading: true,
-  error: "",
-  get ready(): boolean {
-    return !this.loading && !this.error;
-  },
-  get filteredCourses(): CourseCard[] {
-    return this.courses.filter(
-      (course) =>
-        (this.subject === "all" || course.subject === this.subject) &&
-        matchesQuery(this.query, course.title, course.subject, course.host, course.description),
-    );
-  },
-  get empty(): boolean {
-    return this.filteredCourses.length === 0;
-  },
-  get resultLabel(): string {
-    const count = this.filteredCourses.length;
-    return `${count} ${count === 1 ? "course" : "courses"} to explore`;
-  },
-  get emptyHeading(): string {
-    return findShelfSurprise(this.query)?.heading ?? "No courses found. Keep exploring!";
-  },
-  get emptyMessage(): string {
-    return (
-      findShelfSurprise(this.query)?.message ??
-      "Try “study,” “notes,” or “Thomas Frank.” We’re starting with one carefully curated course."
-    );
-  },
-  resetFilters() {
-    this.query = "";
-    this.subject = "all";
-  },
-  async init() {
-    await this.load();
-  },
-  async load() {
-    this.loading = true;
-    this.error = "";
-    try {
-      this.courses = (await loadCatalog()).map((course) => ({
-        ...course,
-        href: `./course.html?id=${encodeURIComponent(course.id)}`,
-        episodeLabel: `${course.episodeCount} episodes`,
-        linkLabel: `Explore ${course.title}`,
-      }));
-    } catch {
-      this.error = "The course shelf couldn’t load. Check your connection and try again.";
-    } finally {
-      this.loading = false;
-    }
-  },
-}));
+Alpine.data("catalogPage", () => {
+  let stopReloadOnRestore = () => {};
+  return {
+    courses: [] as CourseCard[],
+    query: "",
+    subject: "all",
+    loading: true,
+    error: "",
+    storageWarning: "",
+    resumeVideoId: null as string | null,
+    get ready(): boolean {
+      return !this.loading && !this.error;
+    },
+    get filteredCourses(): CourseCard[] {
+      return this.courses.filter(
+        (course) =>
+          (this.subject === "all" || course.subject === this.subject) &&
+          matchesQuery(this.query, course.title, course.subject, course.host, course.description),
+      );
+    },
+    get recentCourses(): CourseCard[] {
+      return this.courses
+        .filter((course) => course.summary && course.summary.lastActivityAt > 0)
+        .toSorted((a, b) => b.summary!.lastActivityAt - a.summary!.lastActivityAt)
+        .slice(0, 3);
+    },
+    get featuredCourses(): CourseCard[] {
+      const course = this.resumeVideoId
+        ? this.courses.find((item) => item.summary?.continueVideoId === this.resumeVideoId)
+        : undefined;
+      return course ? [course] : this.recentCourses.slice(0, 1);
+    },
+    get otherRecentCourses(): CourseCard[] {
+      return this.recentCourses.filter((course) => course.id !== this.featuredCourses[0]?.id);
+    },
+    get hasRecentCourses(): boolean {
+      return this.ready && this.recentCourses.length > 0;
+    },
+    get empty(): boolean {
+      return this.filteredCourses.length === 0;
+    },
+    get resultLabel(): string {
+      const count = this.filteredCourses.length;
+      return `${count} ${count === 1 ? "course" : "courses"} to explore`;
+    },
+    get emptyHeading(): string {
+      return findShelfSurprise(this.query)?.heading ?? "No courses found. Keep exploring!";
+    },
+    get emptyMessage(): string {
+      return (
+        findShelfSurprise(this.query)?.message ??
+        "Try “study,” “notes,” or “Thomas Frank.” We’re starting with one carefully curated course."
+      );
+    },
+    resetFilters() {
+      this.query = "";
+      this.subject = "all";
+    },
+    async init() {
+      stopReloadOnRestore = reloadOnRestore();
+      await this.load();
+    },
+    destroy() {
+      stopReloadOnRestore();
+    },
+    async load() {
+      this.loading = true;
+      this.error = "";
+      try {
+        const catalog = await loadCatalog();
+        const records = await progressStore.list();
+        this.courses = await Promise.all(
+          catalog.map(async (course) => {
+            let summary: CourseSummary | null = null;
+            try {
+              const detail = await loadDetail(course);
+              summary = summarizeCourse(
+                detail.episodes.map((episode) => episode.videoId),
+                records,
+              );
+            } catch {
+              /* An unavailable detail file must not hide the course shelf. */
+            }
+            const href = `./course.html?id=${encodeURIComponent(course.id)}`;
+            return {
+              ...course,
+              href,
+              episodeLabel: `${course.episodeCount} episodes`,
+              linkLabel: `Explore ${course.title}`,
+              summary,
+              percent: summary?.percent ?? 0,
+              progressLabel: summary
+                ? `${summary.completed} of ${summary.total} completed`
+                : "Progress unavailable",
+              continueHref: summary?.continueVideoId
+                ? watchUrl(course.id, summary.continueVideoId)
+                : href,
+              continueLabel: summary?.isComplete ? "Watch again" : "Continue learning",
+            };
+          }),
+        );
+        this.resumeVideoId = mostRecentUnfinished(
+          records,
+          this.courses.flatMap((course) =>
+            course.summary?.continueVideoId ? [course.summary.continueVideoId] : [],
+          ),
+        );
+        this.storageWarning = progressStore.warning;
+      } catch {
+        this.error = "The course shelf couldn’t load. Check your connection and try again.";
+      } finally {
+        this.loading = false;
+      }
+    },
+  };
+});
 Alpine.start();

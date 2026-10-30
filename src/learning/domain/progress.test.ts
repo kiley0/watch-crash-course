@@ -40,6 +40,7 @@ describe("watch progress", () => {
     for (const invalid of [
       { ...value, schemaVersion: 2 },
       { ...value, position: Infinity },
+      { ...value, lastWatchedAt: 1e20 },
       { ...value, completed: false },
       { ...value, videoId: "other" },
     ])

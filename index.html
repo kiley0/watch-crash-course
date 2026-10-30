@@ -20,8 +20,8 @@
           ><span>CRASH COURSE<span class="brand-sub">UNIVERSITY</span></span></a
         >
         <nav aria-label="Main navigation">
-          <a href="./index.html#courses" aria-current="page">Explore courses</a
-          ><a href="./about.html">About the project</a>
+          <a href="./index.html#courses" aria-current="page">Explore courses</a>
+          <a href="./history.html">Your history</a><a href="./about.html">About the project</a>
         </nav>
         <a class="fan-badge" href="./about.html"
           ><strong>Unofficial · Fan-made</strong><span>Unaffiliated with Crash Course</span></a
@@ -79,6 +79,47 @@
         </div>
       </div>
       <section id="courses" class="catalog-section wrap" x-data="catalogPage">
+        <p class="notice" x-cloak x-show="storageWarning" role="status" x-text="storageWarning"></p>
+        <section
+          class="continue-learning"
+          x-cloak
+          x-show="hasRecentCourses"
+          aria-label="Continue learning"
+        >
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">RIGHT WHERE YOU LEFT YOUR CURIOSITY</span>
+              <h2>Keep a good thing going.</h2>
+            </div>
+            <a class="text-link" href="./history.html">Your learning history</a>
+          </div>
+          <div class="recent-course-list">
+            <template x-for="recent in featuredCourses" :key="recent.id"
+              ><article class="recent-course">
+                <div>
+                  <span class="eyebrow">RECENT COURSE</span>
+                  <h3 x-text="recent.title"></h3>
+                  <p x-text="recent.progressLabel"></p>
+                  <progress
+                    max="100"
+                    :value="recent.percent"
+                    :aria-label="recent.progressLabel"
+                  ></progress>
+                </div>
+                <a
+                  class="button button-dark"
+                  :href="recent.continueHref"
+                  x-text="recent.continueLabel"
+                ></a></article
+            ></template>
+          </div>
+          <div class="other-recent-courses">
+            <template x-for="recent in otherRecentCourses" :key="recent.id"
+              ><a class="text-link" :href="recent.href"
+                >Recently active: <span x-text="recent.title"></span></a
+            ></template>
+          </div>
+        </section>
         <div class="section-heading">
           <div>
             <span class="eyebrow">THE COURSE SHELF</span>
@@ -159,6 +200,15 @@
                   </div>
                   <h3><a :href="course.href" x-text="course.title"></a></h3>
                   <p x-text="course.description"></p>
+                  <div class="course-progress">
+                    <span x-text="course.progressLabel"></span
+                    ><progress
+                      max="100"
+                      :value="course.percent"
+                      :aria-label="course.progressLabel"
+                      x-show="course.summary"
+                    ></progress>
+                  </div>
                   <div class="card-bottom">
                     <span>With <strong x-text="course.host"></strong></span
                     ><a :href="course.href" class="round-link" :aria-label="course.linkLabel"

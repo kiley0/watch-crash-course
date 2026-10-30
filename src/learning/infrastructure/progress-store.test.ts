@@ -7,6 +7,7 @@ function backend() {
   const values = new Map<string, VideoProgress>();
   return {
     values,
+    keys: vi.fn(async () => [...values.keys()]),
     getItem: vi.fn(async (key: string) => values.get(key) ?? null),
     setItem: vi.fn(async (key: string, value: VideoProgress) => {
       values.set(key, value);
@@ -26,6 +27,64 @@ describe("local progress adapter", () => {
     expect(restored?.position).toBe(30);
     expect(restored?.completed).toBe(true);
     expect(disk.setItem).toHaveBeenCalledTimes(3);
+  });
+  it("enumerates persisted and temporary records without knowing a catalog", async () => {
+    const disk = backend();
+    const saved = updateProgress(null, id, { type: "complete" }, 1);
+    disk.values.set(`video:${id}`, saved);
+    disk.values.set("unrelated", saved);
+    const store = createProgressStore(disk);
+    expect(await store.list()).toEqual([saved]);
+    disk.setItem.mockRejectedValue(new Error("quota"));
+    await store.update("WAIUkjsZ5xQ", { type: "complete" });
+    expect(await store.list()).toHaveLength(2);
+    expect(disk.getItem).not.toHaveBeenCalledWith("unrelated");
+  });
+  it("preserves good history when one stored record is invalid", async () => {
+    const disk = backend();
+    disk.values.set(`video:${id}`, updateProgress(null, id, { type: "complete" }, 1));
+    disk.getItem.mockImplementation(async (key) =>
+      key.endsWith("WAIUkjsZ5xQ")
+        ? ({ schemaVersion: 99 } as unknown as VideoProgress)
+        : (disk.values.get(key) ?? null),
+    );
+    disk.keys.mockResolvedValue([`video:${id}`, "video:WAIUkjsZ5xQ"]);
+    const store = createProgressStore(disk);
+    expect(await store.list()).toHaveLength(1);
+    expect(store.warning).toContain("not be overwritten");
+    expect(disk.setItem).not.toHaveBeenCalled();
+  });
+  it("retains in-memory progress if key enumeration fails", async () => {
+    const disk = backend();
+    const store = createProgressStore(disk);
+    await store.update(id, { type: "complete" });
+    disk.keys.mockRejectedValue(new Error("blocked"));
+    expect(await store.list()).toHaveLength(1);
+    expect(store.warning).toContain("history couldn’t be read");
+  });
+  it("queues updates behind a pending history read", async () => {
+    const disk = backend();
+    let release!: (value: VideoProgress | null) => void;
+    const pending = new Promise<VideoProgress | null>((resolve) => {
+      release = resolve;
+    });
+    disk.values.set(
+      `video:${id}`,
+      updateProgress(null, id, { type: "playback", position: 25, duration: 100 }, 1),
+    );
+    disk.getItem.mockImplementationOnce(() => pending);
+    const store = createProgressStore(disk);
+    const history = store.list();
+    await vi.waitFor(() => expect(disk.getItem).toHaveBeenCalledOnce());
+    const update = store.update(id, { type: "complete" });
+    await Promise.resolve();
+    expect(disk.getItem).toHaveBeenCalledOnce();
+    release(disk.values.get(`video:${id}`)!);
+    await history;
+    await update;
+    expect((await store.load(id))?.completed).toBe(true);
+    expect((await store.list())[0]?.completed).toBe(true);
+    expect(disk.values.get(`video:${id}`)?.completed).toBe(true);
   });
   it("shares a video's progress regardless of course membership", async () => {
     const disk = backend();

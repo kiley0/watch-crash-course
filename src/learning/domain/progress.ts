@@ -68,6 +68,7 @@ export function parseProgress(value: unknown, videoId: string): VideoProgress | 
     typeof data.lastWatchedAt !== "number" ||
     !Number.isFinite(data.lastWatchedAt) ||
     data.lastWatchedAt < 0 ||
+    data.lastWatchedAt > 8640000000000000 ||
     typeof data.completed !== "boolean" ||
     (data.completed
       ? data.completionSource !== "manual" && data.completionSource !== "ended"

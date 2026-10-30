@@ -5,6 +5,8 @@ import { isCourseId } from "../domain/course";
 import { matchesQuery } from "../domain/search";
 import { watchUrl } from "../../playback/presentation/watch-links";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
+import { summarizeCourse } from "../../learning/domain/course-summary";
+import type { CourseSummary } from "../../learning/domain/course-summary";
 import { progressStatus } from "../../learning/domain/progress";
 import { reloadOnRestore } from "../../site/reload-on-restore";
 import type { Course, Episode } from "../domain/course";
@@ -22,6 +24,7 @@ Alpine.data("coursePage", () => {
     loading: true,
     error: "",
     storageWarning: "",
+    summary: null as CourseSummary | null,
     get ready(): boolean {
       return !this.loading && !this.error;
     },
@@ -40,8 +43,24 @@ Alpine.data("coursePage", () => {
     get sourceDescription(): string {
       return `All ${this.course.episodeCount} numbered episodes, in order. The course preview is optional and isn’t counted as a lesson.`;
     },
-    get firstWatchUrl(): string {
-      return this.episodes[0]?.href ?? "https://www.youtube.com/user/crashcourse";
+    get continueUrl(): string {
+      const id = this.summary?.continueVideoId;
+      return id ? watchUrl(this.course.id, id) : "./index.html#courses";
+    },
+    get continueLabel(): string {
+      if (this.summary?.isComplete) return "Watch the course again";
+      return this.summary?.lastActivityAt ? "Continue learning" : "Start with episode 1";
+    },
+    get completionLabel(): string {
+      return this.summary
+        ? `${this.summary.completed} of ${this.summary.total} episodes completed`
+        : "";
+    },
+    get completionPercent(): number {
+      return this.summary?.percent ?? 0;
+    },
+    get courseComplete(): boolean {
+      return this.summary?.isComplete ?? false;
     },
     get playlistUrl(): string {
       return `https://www.youtube.com/playlist?list=${encodeURIComponent(this.course.playlistId ?? "")}`;
@@ -88,14 +107,19 @@ Alpine.data("coursePage", () => {
         }
         const detail = await loadDetail(course);
         this.course = course;
-        this.episodes = await Promise.all(
-          detail.episodes.map(async (episode) => ({
-            ...episode,
-            displayNumber: String(episode.number).padStart(2, "0"),
-            href: watchUrl(course.id, episode.videoId),
-            status: progressStatus(await progressStore.load(episode.videoId)),
-          })),
+        const records = await Promise.all(
+          detail.episodes.map((episode) => progressStore.load(episode.videoId)),
         );
+        this.summary = summarizeCourse(
+          detail.episodes.map((episode) => episode.videoId),
+          records.filter((record) => record !== null),
+        );
+        this.episodes = detail.episodes.map((episode, index) => ({
+          ...episode,
+          displayNumber: String(episode.number).padStart(2, "0"),
+          href: watchUrl(course.id, episode.videoId),
+          status: progressStatus(records[index] ?? null),
+        }));
         this.storageWarning = progressStore.warning;
         document.title = `${course.title} · Crash Course University`;
       } catch {

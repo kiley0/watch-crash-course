@@ -1,0 +1,65 @@
+.history-main {
+  max-width: 1100px;
+  padding-block: 48px 80px;
+}
+.history-main h1 {
+  font-size: clamp(34px, 5vw, 56px);
+  letter-spacing: -0.04em;
+  margin: 10px 0 16px;
+}
+.history-intro {
+  max-width: 720px;
+  margin-bottom: 30px;
+}
+.history-intro p {
+  color: var(--muted);
+}
+.history-list {
+  padding: 0;
+  margin: 20px 0 32px;
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+.history-entry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #fffdf8;
+  padding: 24px;
+}
+.history-entry > div {
+  min-width: 0;
+  flex: 1 1 320px;
+}
+.history-entry h2 {
+  margin: 5px 0 8px;
+  font-size: 22px;
+  overflow-wrap: anywhere;
+}
+.history-entry p {
+  margin: 5px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.history-entry time {
+  font-variant-numeric: tabular-nums;
+}
+.history-entry .tag {
+  margin-top: 10px;
+}
+.history-note {
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 760px;
+}
+@media (max-width: 650px) {
+  .history-entry {
+    padding: 20px;
+    gap: 16px;
+  }
+}

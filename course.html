@@ -20,8 +20,8 @@
           ><span>CRASH COURSE<span class="brand-sub">UNIVERSITY</span></span></a
         >
         <nav aria-label="Main navigation">
-          <a href="./index.html#courses">Explore courses</a
-          ><a href="./about.html">About the project</a>
+          <a href="./index.html#courses">Explore courses</a>
+          <a href="./history.html">Your history</a><a href="./about.html">About the project</a>
         </nav>
         <a class="fan-badge" href="./about.html"
           ><strong>Unofficial · Fan-made</strong><span>Unaffiliated with Crash Course</span></a
@@ -67,12 +67,23 @@
               An unofficial, fan-made course guide.<br />Not affiliated with or endorsed by Crash
               Course.
             </p>
+            <div class="course-progress course-progress-overview">
+              <span x-text="completionLabel"></span
+              ><progress
+                max="100"
+                :value="completionPercent"
+                :aria-label="completionLabel"
+              ></progress>
+              <p x-show="courseComplete">
+                Nice work. A whole course of ideas to carry. There’s always room for another look.
+              </p>
+            </div>
             <div class="course-facts">
               <span x-text="episodeLabel"></span
               ><span>With <strong x-text="course.host"></strong></span><span>At your own pace</span>
             </div>
-            <a class="button button-orange" :href="firstWatchUrl"
-              >Start with episode 1
+            <a class="button button-orange" :href="continueUrl"
+              ><span x-text="continueLabel"></span>
               <svg class="icon" aria-hidden="true" focusable="false">
                 <use href="./icons.svg#arrow-right"></use></svg
             ></a>
