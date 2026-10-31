@@ -1,0 +1,281 @@
+{
+  "courseId": "engineering",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What is Engineering?",
+      "videoId": "btGYcizV0iI",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-engineering-crash-course-engineering-1/"
+    },
+    {
+      "number": 2,
+      "title": "Civil Engineering",
+      "videoId": "-xbtnz4wdaA",
+      "sourceUrl": "https://thecrashcourse.com/courses/civil-engineering-crash-course-engineering-2/"
+    },
+    {
+      "number": 3,
+      "title": "Mechanical Engineering",
+      "videoId": "A1V-QQ5wFU4",
+      "sourceUrl": "https://thecrashcourse.com/courses/mechanical-engineering-crash-course-engineering-3/"
+    },
+    {
+      "number": 4,
+      "title": "The History of Electrical Engineering",
+      "videoId": "3nB1Ntku06w",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-electrical-engineering-crash-course-engineering-4/"
+    },
+    {
+      "number": 5,
+      "title": "The History of Chemical Engineering",
+      "videoId": "aRKyJRAxjpM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-chemical-engineering-crash-course-engineering-5/"
+    },
+    {
+      "number": 6,
+      "title": "Biomedical & Industrial Engineering",
+      "videoId": "O6lENrRANxY",
+      "sourceUrl": "https://thecrashcourse.com/courses/biomedical-industrial-engineering-crash-course-engineering-6/"
+    },
+    {
+      "number": 7,
+      "title": "The Law of Conservation",
+      "videoId": "VxCORJ8dN3Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-law-of-conservation-crash-course-engineering-7/"
+    },
+    {
+      "number": 8,
+      "title": "Reversibility & Irreversibility",
+      "videoId": "RKOPoJzqH94",
+      "sourceUrl": "https://thecrashcourse.com/courses/reversibility-irreversibility-crash-course-engineering-8/"
+    },
+    {
+      "number": 9,
+      "title": "The First & Zeroth Laws of Thermodynamics",
+      "videoId": "fSEFfWf2au0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-first-zeroth-laws-of-thermodynamics-crash-course-engineering-9/"
+    },
+    {
+      "number": 10,
+      "title": "Why We Can’t Invent a Perfect Engine",
+      "videoId": "2B81W6nNds0",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-we-cant-invent-a-perfect-engine-crash-course-engineering-10/"
+    },
+    {
+      "number": 11,
+      "title": "Heat Engines, Refrigerators, & Cycles",
+      "videoId": "iZOXW5aaCZg",
+      "sourceUrl": "https://thecrashcourse.com/courses/heat-engines-refrigerators-cycles-crash-course-engineering-11/"
+    },
+    {
+      "number": 12,
+      "title": "Stress, Strain & Quicksand",
+      "videoId": "ouTJkNLepF0",
+      "sourceUrl": "https://thecrashcourse.com/courses/stress-strain-quicksand-crash-course-engineering-12/"
+    },
+    {
+      "number": 13,
+      "title": "Fluid Flow & Equipment",
+      "videoId": "bRrfsv9hiX4",
+      "sourceUrl": "https://thecrashcourse.com/courses/fluid-flow-equipment-crash-course-engineering-13/"
+    },
+    {
+      "number": 14,
+      "title": "Heat Transfer",
+      "videoId": "YK7G6l_K6sA",
+      "sourceUrl": "https://thecrashcourse.com/courses/heat-transfer-crash-course-engineering-14/"
+    },
+    {
+      "number": 15,
+      "title": "How Not to Set Your Pizza on Fire",
+      "videoId": "B0CwRyBlt1s",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-not-to-set-your-pizza-on-fire-crash-course-engineering-15/"
+    },
+    {
+      "number": 16,
+      "title": "Drugs, Dyes, & Mass Transfer",
+      "videoId": "-YTC3A6dEGM",
+      "sourceUrl": "https://thecrashcourse.com/courses/drugs-dyes-mass-transfer-crash-course-engineering-16/"
+    },
+    {
+      "number": 17,
+      "title": "Mass Separation",
+      "videoId": "YjuZs8PFIEU",
+      "sourceUrl": "https://thecrashcourse.com/courses/mass-separation-crash-course-engineering-17/"
+    },
+    {
+      "number": 18,
+      "title": "Reaching Breaking Point – Materials, Stresses, & Toughness",
+      "videoId": "GpiBSFMFe-w",
+      "sourceUrl": "https://thecrashcourse.com/courses/reaching-breaking-point-materials-stresses-toughness-crash-course-engineering-18/"
+    },
+    {
+      "number": 19,
+      "title": "Metals & Ceramics",
+      "videoId": "NOK1nMiiTWU",
+      "sourceUrl": "https://thecrashcourse.com/courses/metals-ceramics-crash-course-engineering-19/"
+    },
+    {
+      "number": 20,
+      "title": "The Polymer Explosion",
+      "videoId": "XjDDHnByfuo",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-polymer-explosion-crash-course-engineering-20/"
+    },
+    {
+      "number": 21,
+      "title": "Electrical Power, Conductors, & Your Dream Home",
+      "videoId": "uTWHMchUlws",
+      "sourceUrl": "https://thecrashcourse.com/courses/electrical-power-conductors-your-dream-home-crash-course-engineering-21/"
+    },
+    {
+      "number": 22,
+      "title": "Silicon, Semiconductors, & Solar Cells",
+      "videoId": "ivWXuOd5SrI",
+      "sourceUrl": "https://thecrashcourse.com/courses/silicon-semiconductors-solar-cells-crash-course-engineering-22/"
+    },
+    {
+      "number": 23,
+      "title": "The Mighty Power of Nanomaterials",
+      "videoId": "IkYimZBzguw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-mighty-power-of-nanomaterials-crash-course-engineering-23/"
+    },
+    {
+      "number": 24,
+      "title": "Biomaterials",
+      "videoId": "-jw8osY5QJM",
+      "sourceUrl": "https://thecrashcourse.com/courses/biomaterials-crash-course-engineering-24/"
+    },
+    {
+      "number": 25,
+      "title": "Cheese, Catastrophes, & Process Control",
+      "videoId": "BT_JUbpZ1lQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/cheese-catastrophes-process-control-crash-course-engineering-25/"
+    },
+    {
+      "number": 26,
+      "title": "Skyscrapers, Statics, & Dynamics",
+      "videoId": "xOkJFrXg8V0",
+      "sourceUrl": "https://thecrashcourse.com/courses/skyscrapers-statics-dynamics-crash-course-engineering-26/"
+    },
+    {
+      "number": 27,
+      "title": "Engineering Ethics",
+      "videoId": "5KZx81crb48",
+      "sourceUrl": "https://thecrashcourse.com/courses/engineering-ethics-crash-course-engineering-27/"
+    },
+    {
+      "number": 28,
+      "title": "Flirting With Disaster – The Importance of Safety",
+      "videoId": "WavEcAsI2AY",
+      "sourceUrl": "https://thecrashcourse.com/courses/flirting-with-disaster-the-importance-of-safety-crash-course-engineering-28/"
+    },
+    {
+      "number": 29,
+      "title": "Preventing Flint – Environmental Engineering",
+      "videoId": "uHUO6PrsOzg",
+      "sourceUrl": "https://thecrashcourse.com/courses/preventing-flint-environmental-engineering-crash-course-engineering-29/"
+    },
+    {
+      "number": 30,
+      "title": "The Engineering Challenges of Renewable Energy",
+      "videoId": "4k5gyYAAEEU",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-engineering-challenges-of-renewable-energy-crash-course-engineering-30/"
+    },
+    {
+      "number": 31,
+      "title": "The Future of Clean Energy",
+      "videoId": "v6uRuNboy4A",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-clean-energy-crash-course-engineering-31/"
+    },
+    {
+      "number": 32,
+      "title": "Why It’s So Hard To Make Better Batteries",
+      "videoId": "A5GgBTFSUu4",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-its-so-hard-to-make-better-batteries-crash-course-engineering-32/"
+    },
+    {
+      "number": 33,
+      "title": "How Engineering Robots Works",
+      "videoId": "uNfUAJBuZ0s",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-engineering-robots-works-crash-course-engineering-33/"
+    },
+    {
+      "number": 34,
+      "title": "To The Moon & Mars – Aerospace Engineering",
+      "videoId": "UvtYn2j78gw",
+      "sourceUrl": "https://thecrashcourse.com/courses/to-the-moon-mars-aerospace-engineering-crash-course-engineering-34/"
+    },
+    {
+      "number": 35,
+      "title": "Computer Engineering & the End of Moore’s Law",
+      "videoId": "04ht0kSJ0I4",
+      "sourceUrl": "https://thecrashcourse.com/courses/computer-engineering-the-end-of-moores-law-crash-course-engineering-35/"
+    },
+    {
+      "number": 36,
+      "title": "How to Engineer Health – Drug Discovery & Delivery",
+      "videoId": "gIkMNn-A_Y4",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-engineer-health-drug-discovery-delivery-crash-course-engineering-36/"
+    },
+    {
+      "number": 37,
+      "title": "Smart Tattoos & Tiny Robots",
+      "videoId": "EyYdZYqTLFU",
+      "sourceUrl": "https://thecrashcourse.com/courses/smart-tattoos-tiny-robots-crash-course-engineering-37/"
+    },
+    {
+      "number": 38,
+      "title": "Changing the Blueprints of Life – Genetic Engineering",
+      "videoId": "FY_ZUEKWhBc",
+      "sourceUrl": "https://thecrashcourse.com/courses/changing-the-blueprints-of-life-genetic-engineering-crash-course-engineering-38/"
+    },
+    {
+      "number": 39,
+      "title": "Mass-Producing Ice Cream with Food Engineering",
+      "videoId": "MH4GgKsf7-U",
+      "sourceUrl": "https://thecrashcourse.com/courses/mass-producing-ice-cream-with-food-engineering-crash-course-engineering-39/"
+    },
+    {
+      "number": 40,
+      "title": "How the Leaning Tower of Pisa Was Saved",
+      "videoId": "5mkeoVpTaMA",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-the-leaning-tower-of-pisa-was-saved-crash-course-engineering-40/"
+    },
+    {
+      "number": 41,
+      "title": "Why Moving People is Complicated",
+      "videoId": "erYf6NNw8Ec",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-moving-people-is-complicated-crash-course-engineering-41/"
+    },
+    {
+      "number": 42,
+      "title": "YouTube Couldn’t Exist Without Communications & Signal Processing",
+      "videoId": "VjuFaPAIOHw",
+      "sourceUrl": "https://thecrashcourse.com/courses/youtube-couldnt-exist-without-communications-signal-processing-crash-course-engineering-42/"
+    },
+    {
+      "number": 43,
+      "title": "How Seawater Sabotages Ships",
+      "videoId": "J9A55q7AR6E",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-seawater-sabotages-ships-crash-course-engineering-43/"
+    },
+    {
+      "number": 44,
+      "title": "Building a Desalination Plant from Scratch",
+      "videoId": "ke5jUHe4fII",
+      "sourceUrl": "https://thecrashcourse.com/courses/building-a-desalination-plant-from-scratch-crash-course-engineering-44/"
+    },
+    {
+      "number": 45,
+      "title": "How To Become An Engineer",
+      "videoId": "77xMVKOEZ5g",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-become-an-engineer-crash-course-engineering-45/"
+    },
+    {
+      "number": 46,
+      "title": "The Biggest Problems We’re Facing Today & The Future of Engineering",
+      "videoId": "Fzq_yuj-oZM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-biggest-problems-were-facing-today-the-future-of-engineering-crash-course-engineering-46/"
+    }
+  ]
+}

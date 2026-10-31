@@ -1,6 +1,6 @@
 .watch-main {
-  max-width: 1120px;
-  padding-block: 24px 56px;
+  max-width: 1180px;
+  padding-block: 28px 64px;
 }
 .watch-main .back-link {
   margin: 0 0 18px;
@@ -10,8 +10,7 @@
 }
 .watch-heading h1 {
   margin: 10px 0;
-  font-size: clamp(30px, 4vw, 48px);
-  letter-spacing: -0.04em;
+  font-size: var(--page-title);
   line-height: 1.15;
 }
 .watch-heading > p {
@@ -48,6 +47,8 @@
   gap: 12px;
 }
 .player-container {
+  width: 100%;
+  min-width: 0;
   aspect-ratio: 16/9;
   min-height: 200px;
 }
@@ -113,6 +114,7 @@
 }
 .watch-footnotes p {
   max-width: 760px;
+  margin-top: 8px;
 }
 @media (max-width: 650px) {
   .player-choice {
@@ -128,7 +130,7 @@
 }
 
 .lesson-complete {
-  margin-top: 18px;
+  margin-top: 24px;
   padding: 24px;
   border-radius: 22px;
   background: #e8edda;

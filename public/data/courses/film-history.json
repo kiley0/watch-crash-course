@@ -1,0 +1,101 @@
+{
+  "courseId": "film-history",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Movies are Magic",
+      "videoId": "vsnB4iBb78o",
+      "sourceUrl": "https://thecrashcourse.com/courses/movies-are-magic-crash-course-film-history-1/"
+    },
+    {
+      "number": 2,
+      "title": "The First Movie Camera",
+      "videoId": "pKSmcmueTbA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-first-movie-camera-crash-course-film-history-2/"
+    },
+    {
+      "number": 3,
+      "title": "The Lumiere Brothers",
+      "videoId": "aFkSjdaqbyE",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-lumiere-brothers-crash-course-film-history-3/"
+    },
+    {
+      "number": 4,
+      "title": "Georges Melies – Master of Illusion",
+      "videoId": "L8is28gAOTc",
+      "sourceUrl": "https://thecrashcourse.com/courses/georges-melies-master-of-illusion-crash-course-film-history-4/"
+    },
+    {
+      "number": 5,
+      "title": "The Language of Film",
+      "videoId": "V7ZHd1xU2w8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-language-of-film-crash-course-film-history-5/"
+    },
+    {
+      "number": 6,
+      "title": "The Birth of the Feature Film",
+      "videoId": "HaBmjhmKWTs",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-birth-of-the-feature-film-crash-course-film-history-6/"
+    },
+    {
+      "number": 7,
+      "title": "German Expressionism",
+      "videoId": "K6XDyth0qxc",
+      "sourceUrl": "https://thecrashcourse.com/courses/german-expressionism-crash-course-film-history-7/"
+    },
+    {
+      "number": 8,
+      "title": "Soviet Montage",
+      "videoId": "-RtBAa4YCgo",
+      "sourceUrl": "https://thecrashcourse.com/courses/soviet-montage-crash-course-film-history-8/"
+    },
+    {
+      "number": 9,
+      "title": "The Silent Era",
+      "videoId": "ROOV9tucra0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-silent-era-crash-course-film-history-9/"
+    },
+    {
+      "number": 10,
+      "title": "Breaking the Silence",
+      "videoId": "lY_AilCb6gk",
+      "sourceUrl": "https://thecrashcourse.com/courses/breaking-the-silence-crash-course-film-history-10/"
+    },
+    {
+      "number": 11,
+      "title": "The Golden Age of Hollywood",
+      "videoId": "6KfBNrHU_SY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-golden-age-of-hollywood-crash-course-film-history-11/"
+    },
+    {
+      "number": 12,
+      "title": "Independent Cinema",
+      "videoId": "opQC45irmN8",
+      "sourceUrl": "https://thecrashcourse.com/courses/independent-cinema-crash-course-film-history-12/"
+    },
+    {
+      "number": 13,
+      "title": "Home Video",
+      "videoId": "VfJ-6nQAmtk",
+      "sourceUrl": "https://thecrashcourse.com/courses/home-video-crash-course-film-history-13/"
+    },
+    {
+      "number": 14,
+      "title": "World Cinema – Part 1",
+      "videoId": "mpQrcxfNl-o",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-cinema-part-1-crash-course-film-history-14/"
+    },
+    {
+      "number": 15,
+      "title": "World Cinema – Part 2",
+      "videoId": "qfu0lbsIGSs",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-cinema-part-2-crash-course-film-history-15/"
+    },
+    {
+      "number": 16,
+      "title": "Experimental and Documentary Films",
+      "videoId": "cCY-4NxXCU8",
+      "sourceUrl": "https://thecrashcourse.com/courses/experimental-and-documentary-films-crash-course-film-history-16/"
+    }
+  ]
+}

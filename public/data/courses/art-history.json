@@ -1,0 +1,137 @@
+{
+  "courseId": "art-history",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Why We Study Art",
+      "videoId": "t6Wc7OMks4U",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-we-study-art-crash-course-art-history-1/"
+    },
+    {
+      "number": 2,
+      "title": "How to Look at Art",
+      "videoId": "YHcX_nuyQPc",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-look-at-art-crash-course-art-history-2/"
+    },
+    {
+      "number": 3,
+      "title": "The History of Museums",
+      "videoId": "hfKymoH9XTc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-museums-crash-course-art-history-3/"
+    },
+    {
+      "number": 4,
+      "title": "What Makes an Artist “Great”?",
+      "videoId": "rT6QV0dWJG4",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-makes-an-artist-great-crash-course-art-history-4/"
+    },
+    {
+      "number": 5,
+      "title": "Should We Separate Art from the Artist?",
+      "videoId": "N5XU87zxTyk",
+      "sourceUrl": "https://thecrashcourse.com/courses/should-we-separate-art-from-the-artist-crash-course-art-history-5/"
+    },
+    {
+      "number": 6,
+      "title": "What Makes Art “Good”?",
+      "videoId": "PFEFBY-cQhE",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-makes-art-good-crash-course-art-history-6/"
+    },
+    {
+      "number": 7,
+      "title": "How Art Tells Stories",
+      "videoId": "IoHsju75rKc",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-art-tells-stories-crash-course-art-history-7/"
+    },
+    {
+      "number": 8,
+      "title": "What Counts as Religious Art?",
+      "videoId": "HCWzzZFCwag",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-counts-as-religious-art-crash-course-art-history-8/"
+    },
+    {
+      "number": 9,
+      "title": "The Hidden Meanings in Nature Art",
+      "videoId": "Z21elmpg-W0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-hidden-meanings-in-nature-art-crash-course-art-history-9/"
+    },
+    {
+      "number": 10,
+      "title": "How Communities Make Art",
+      "videoId": "KXjxN3t_BNY",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-communities-make-art-crash-course-art-history-10/"
+    },
+    {
+      "number": 11,
+      "title": "Bodies in Art",
+      "videoId": "-AKudjxdbQw",
+      "sourceUrl": "https://thecrashcourse.com/courses/bodies-in-art-crash-course-art-history-11/"
+    },
+    {
+      "number": 12,
+      "title": "Art’s History of Trade & Exchange",
+      "videoId": "WFO8iUyXlCQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/arts-history-of-trade-exchange-crash-course-art-history-12/"
+    },
+    {
+      "number": 13,
+      "title": "Who Gets to Be a “Real” Artist? (Amateur & Outsider Art)",
+      "videoId": "KGYy7UBf3mQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/who-gets-to-be-a-real-artist-amateur-outsider-art-crash-course-art-history-13/"
+    },
+    {
+      "number": 14,
+      "title": "What’s the Difference Between Art & Design?",
+      "videoId": "dZmkPmfW0XA",
+      "sourceUrl": "https://thecrashcourse.com/courses/whats-the-difference-between-art-design-crash-course-art-history-14/"
+    },
+    {
+      "number": 15,
+      "title": "What Even is Modern Art?",
+      "videoId": "VbfIGVhRups",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-even-is-modern-art-crash-course-art-history-15/"
+    },
+    {
+      "number": 16,
+      "title": "Why Is Everyone So Mad About Public Art?",
+      "videoId": "KHhM8WIlijc",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-is-everyone-so-mad-about-public-art-crash-course-art-history-16/"
+    },
+    {
+      "number": 17,
+      "title": "When Art is Illegal: Graffiti & Street Art",
+      "videoId": "zJbmhwVmh94",
+      "sourceUrl": "https://thecrashcourse.com/courses/when-art-is-illegal-graffiti-street-art-crash-course-art-history-17/"
+    },
+    {
+      "number": 18,
+      "title": "Is AI-Generated Art Original? (Authenticity & Originality)",
+      "videoId": "Rxms0gWUmMs",
+      "sourceUrl": "https://thecrashcourse.com/courses/is-ai-generated-art-original-authenticity-originality-crash-course-art-history-18/"
+    },
+    {
+      "number": 19,
+      "title": "Why Is Art So Expensive?",
+      "videoId": "AocmtHefhMI",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-is-art-so-expensive-crash-course-art-history-19/"
+    },
+    {
+      "number": 20,
+      "title": "When Art Meets Activism",
+      "videoId": "KmwQn-8nsyE",
+      "sourceUrl": "https://thecrashcourse.com/courses/when-art-meets-activism-crash-course-art-history-20/"
+    },
+    {
+      "number": 21,
+      "title": "The Importance of Preserving, Restoring, & Conserving Art",
+      "videoId": "ttlLyA-WEcc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-importance-of-preserving-restoring-conserving-art-crash-course-art-history-21/"
+    },
+    {
+      "number": 22,
+      "title": "What is the Future of Art?",
+      "videoId": "eTlGeL6Yeas",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-the-future-of-art-crash-course-art-history-22/"
+    }
+  ]
+}

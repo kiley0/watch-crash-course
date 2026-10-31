@@ -56,30 +56,36 @@
       ></p>
       <p x-cloak x-show="busy" role="status">Saving… Keep this page open.</p>
       <div x-cloak x-show="!loading">
-        <p x-text="summary"></p>
-        <button id="refresh-data" class="text-button" @click="checkData" :disabled="busy">
-          Refresh
-        </button>
+        <div class="data-summary">
+          <p x-text="summary"></p>
+          <button id="refresh-data" class="text-button" @click="checkData" :disabled="busy">
+            Refresh
+          </button>
+        </div>
         <p class="data-note">Close other site tabs before importing or clearing data.</p>
         <div class="settings-grid">
           <section class="data-card">
             <h2>Export data</h2>
             <p>Download your progress as a JSON file.</p>
-            <button class="button button-dark" @click="download" :disabled="!canExport">
-              Download backup
-            </button>
+            <div class="data-card-control">
+              <button class="button button-dark" @click="download" :disabled="!canExport">
+                Download backup
+              </button>
+            </div>
           </section>
           <section class="data-card">
             <h2>Import data</h2>
             <p>Restore a backup. JSON files only, up to 5 MB. Nothing is uploaded.</p>
-            <label for="backup-file">Choose a backup file</label
-            ><input
-              id="backup-file"
-              type="file"
-              accept=".json,application/json"
-              @change="chooseFile"
-              :disabled="busy"
-            />
+            <div class="data-card-control">
+              <label for="backup-file">Choose a backup file</label
+              ><input
+                id="backup-file"
+                type="file"
+                accept=".json,application/json"
+                @change="chooseFile"
+                :disabled="busy"
+              />
+            </div>
             <div
               class="data-confirm"
               x-show="pending"

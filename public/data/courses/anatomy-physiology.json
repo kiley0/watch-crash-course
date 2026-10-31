@@ -1,0 +1,287 @@
+{
+  "courseId": "anatomy-physiology",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Introduction to Anatomy & Physiology",
+      "videoId": "uBGl2BujkPQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-anatomy-physiology-crash-course-ap-1/"
+    },
+    {
+      "number": 2,
+      "title": "Tissues, Part 1",
+      "videoId": "i5tR3csCWYo",
+      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-1-crash-course-ap-2/"
+    },
+    {
+      "number": 3,
+      "title": "Tissues, Part 2 – Epithelial Tissue",
+      "videoId": "lUe_RI_m-Vg",
+      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-2-epithelial-tissue-crash-course-ap-3/"
+    },
+    {
+      "number": 4,
+      "title": "Tissues, Part 3 – Connective Tissues",
+      "videoId": "D-SzmURNBH0",
+      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-3-connective-tissues-crash-course-ap-4/"
+    },
+    {
+      "number": 5,
+      "title": "Tissues, Part 4 – Types of Connective Tissues",
+      "videoId": "Jvtb0a2RXaY",
+      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-4-types-of-connective-tissues-crash-course-ap-5/"
+    },
+    {
+      "number": 6,
+      "title": "The Integumentary System, Part 1 – Skin Deep",
+      "videoId": "Orumw-PyNjw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-integumentary-system-part-1-skin-deep-crash-course-ap-6/"
+    },
+    {
+      "number": 7,
+      "title": "The Integumentary System, Part 2 – Skin Deeper",
+      "videoId": "EN-x-zXXVwQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-integumentary-system-part-2-skin-deeper-crash-course-ap-7/"
+    },
+    {
+      "number": 8,
+      "title": "The Nervous System, Part 1",
+      "videoId": "qPix_X-9t7E",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-part-1-crash-course-ap-8/"
+    },
+    {
+      "number": 9,
+      "title": "The Nervous System, Part 2 – Action! Potential!",
+      "videoId": "OZG8M_ldA1M",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-part-2-action-potential-crash-course-ap-9/"
+    },
+    {
+      "number": 10,
+      "title": "The Nervous System, Part 3 – Synapses!",
+      "videoId": "VitFvNvRIIY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-part-3-synapses-crash-course-ap-10/"
+    },
+    {
+      "number": 11,
+      "title": "Central Nervous System",
+      "videoId": "q8NtmDrb_qo",
+      "sourceUrl": "https://thecrashcourse.com/courses/central-nervous-system-crash-course-ap-11/"
+    },
+    {
+      "number": 12,
+      "title": "Peripheral Nervous System",
+      "videoId": "QY9NTVh-Awo",
+      "sourceUrl": "https://thecrashcourse.com/courses/peripheral-nervous-system-crash-course-ap-12/"
+    },
+    {
+      "number": 13,
+      "title": "Autonomic Nervous System",
+      "videoId": "71pCilo8k4M",
+      "sourceUrl": "https://thecrashcourse.com/courses/autonomic-nervous-system-crash-course-ap-13/"
+    },
+    {
+      "number": 14,
+      "title": "Sympathetic Nervous System",
+      "videoId": "0IDgBlCHVsA",
+      "sourceUrl": "https://thecrashcourse.com/courses/sympathetic-nervous-system-crash-course-ap-14/"
+    },
+    {
+      "number": 15,
+      "title": "Parasympathetic Nervous System",
+      "videoId": "qqU-VjqjczE",
+      "sourceUrl": "https://thecrashcourse.com/courses/parasympathetic-nervous-system-crash-course-ap-15/"
+    },
+    {
+      "number": 16,
+      "title": "Taste & Smell",
+      "videoId": "mFm3yA1nslE",
+      "sourceUrl": "https://thecrashcourse.com/courses/taste-smell-crash-course-ap-16/"
+    },
+    {
+      "number": 17,
+      "title": "Hearing & Balance",
+      "videoId": "Ie2j7GpC4JU",
+      "sourceUrl": "https://thecrashcourse.com/courses/hearing-balance-crash-course-ap-17/"
+    },
+    {
+      "number": 18,
+      "title": "Vision",
+      "videoId": "o0DYP-u1rNM",
+      "sourceUrl": "https://thecrashcourse.com/courses/vision-crash-course-ap-18/"
+    },
+    {
+      "number": 19,
+      "title": "The Skeletal System",
+      "videoId": "rDGqkMHPDqE",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-skeletal-system-crash-course-ap-19/"
+    },
+    {
+      "number": 20,
+      "title": "Joints",
+      "videoId": "DLxYDoN634c",
+      "sourceUrl": "https://thecrashcourse.com/courses/joints-crash-course-ap-20/"
+    },
+    {
+      "number": 21,
+      "title": "Muscles, Part 1 – Muscle Cells",
+      "videoId": "Ktv-CaOt6UQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/muscles-part-1-muscle-cells-crash-course-ap-21/"
+    },
+    {
+      "number": 22,
+      "title": "Muscles, Part 2 – Organismal Level",
+      "videoId": "I80Xx7pA9hQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/muscles-part-2-organismal-level-crash-course-ap-22/"
+    },
+    {
+      "number": 23,
+      "title": "Endocrine System, Part 1 – Glands & Hormones",
+      "videoId": "eWHH9je2zG4",
+      "sourceUrl": "https://thecrashcourse.com/courses/endocrine-system-part-1-glands-hormones-crash-course-ap-23/"
+    },
+    {
+      "number": 24,
+      "title": "Endocrine System, Part 2 – Hormone Cascades",
+      "videoId": "SCV_m91mN-Q",
+      "sourceUrl": "https://thecrashcourse.com/courses/endocrine-system-part-2-hormone-cascades-crash-course-ap-24/"
+    },
+    {
+      "number": 25,
+      "title": "The Heart, Part 1 – Under Pressure",
+      "videoId": "X9ZZ6tcxArI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-heart-part-1-under-pressure-crash-course-ap-25/"
+    },
+    {
+      "number": 26,
+      "title": "The Heart, Part 2 – Heart Throbs",
+      "videoId": "FLBMwcvOaEo",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-heart-part-2-heart-throbs-crash-course-ap-26/"
+    },
+    {
+      "number": 27,
+      "title": "Blood Vessels, Part 1 – Form and Function",
+      "videoId": "v43ej5lCeBo",
+      "sourceUrl": "https://thecrashcourse.com/courses/blood-vessels-part-1-form-and-function-crash-course-ap-27/"
+    },
+    {
+      "number": 28,
+      "title": "Blood Vessels, Part 2",
+      "videoId": "ZVklPwGALpI",
+      "sourceUrl": "https://thecrashcourse.com/courses/blood-vessels-part-2-crash-course-ap-28/"
+    },
+    {
+      "number": 29,
+      "title": "Blood, Part 1 – True Blood",
+      "videoId": "HQWlcSp9Sls",
+      "sourceUrl": "https://thecrashcourse.com/courses/blood-part-1-true-blood-crash-course-ap-29/"
+    },
+    {
+      "number": 30,
+      "title": "Blood, Part 2 – There Will Be Blood",
+      "videoId": "9-XoM2144tk",
+      "sourceUrl": "https://thecrashcourse.com/courses/blood-part-2-there-will-be-blood-crash-course-ap-30/"
+    },
+    {
+      "number": 31,
+      "title": "Respiratory System, Part 1",
+      "videoId": "bHZsvBdUC2I",
+      "sourceUrl": "https://thecrashcourse.com/courses/respiratory-system-part-1-crash-course-ap-31/"
+    },
+    {
+      "number": 32,
+      "title": "Respiratory System, Part 2",
+      "videoId": "Cqt4LjHnMEA",
+      "sourceUrl": "https://thecrashcourse.com/courses/respiratory-system-part-2-crash-course-ap-32/"
+    },
+    {
+      "number": 33,
+      "title": "Digestive System, Part 1",
+      "videoId": "yIoTRGfcMqM",
+      "sourceUrl": "https://thecrashcourse.com/courses/digestive-system-part-1-crash-course-ap-33/"
+    },
+    {
+      "number": 34,
+      "title": "Digestive System, Part 2",
+      "videoId": "pqgcEIaXGME",
+      "sourceUrl": "https://thecrashcourse.com/courses/digestive-system-part-2-crash-course-ap-34/"
+    },
+    {
+      "number": 35,
+      "title": "Digestive System, Part 3",
+      "videoId": "jGme7BRkpuQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/digestive-system-part-3-crash-course-ap-35/"
+    },
+    {
+      "number": 36,
+      "title": "Metabolism & Nutrition, Part 1",
+      "videoId": "fR3NxCR9z2U",
+      "sourceUrl": "https://thecrashcourse.com/courses/metabolism-nutrition-part-1-crash-course-ap-36/"
+    },
+    {
+      "number": 37,
+      "title": "Metabolism & Nutrition, Part 2",
+      "videoId": "kb146Y1igTQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/metabolism-nutrition-part-2-crash-course-ap-37/"
+    },
+    {
+      "number": 38,
+      "title": "Urinary System, Part 1",
+      "videoId": "l128tW1H5a8",
+      "sourceUrl": "https://thecrashcourse.com/courses/urinary-system-part-1-crash-course-ap-38/"
+    },
+    {
+      "number": 39,
+      "title": "Urinary System, Part 2",
+      "videoId": "DlqyyyvTI3k",
+      "sourceUrl": "https://thecrashcourse.com/courses/urinary-system-part-2-crash-course-ap-39/"
+    },
+    {
+      "number": 40,
+      "title": "Reproductive System, Part 1 – Female Reproductive System",
+      "videoId": "RFDatCchpus",
+      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-1-female-reproductive-system-crash-course-ap-40/"
+    },
+    {
+      "number": 41,
+      "title": "Reproductive System, Part 2 – Male Reproductive System",
+      "videoId": "-XQcnO4iX_U",
+      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-2-male-reproductive-system-crash-course-ap-41/"
+    },
+    {
+      "number": 42,
+      "title": "Reproductive System, Part 3 – Sex & Fertilization",
+      "videoId": "SUdAEGXLO-8",
+      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-3-sex-fertilization-crash-course-ap-42/"
+    },
+    {
+      "number": 43,
+      "title": "Reproductive System, Part 4 – Pregnancy & Development",
+      "videoId": "BtsSbZ85yiQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-4-pregnancy-development-crash-course-ap-43/"
+    },
+    {
+      "number": 44,
+      "title": "Lymphatic System",
+      "videoId": "I7orwMgTQ5I",
+      "sourceUrl": "https://www.youtube.com/watch?v=I7orwMgTQ5I"
+    },
+    {
+      "number": 45,
+      "title": "Immune System, Part 1",
+      "videoId": "GIJK3dwCWCw",
+      "sourceUrl": "https://thecrashcourse.com/courses/immune-system-part-1-crash-course-ap-45/"
+    },
+    {
+      "number": 46,
+      "title": "Immune System, Part 2",
+      "videoId": "2DFN4IBZ3rI",
+      "sourceUrl": "https://thecrashcourse.com/courses/immune-system-part-2-crash-course-ap-46/"
+    },
+    {
+      "number": 47,
+      "title": "Immune System, Part 3",
+      "videoId": "rd2cf5hValM",
+      "sourceUrl": "https://thecrashcourse.com/courses/immune-system-part-3-crash-course-ap-47/"
+    }
+  ]
+}

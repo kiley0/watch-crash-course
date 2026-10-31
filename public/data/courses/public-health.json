@@ -1,0 +1,65 @@
+{
+  "courseId": "public-health",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What is Public Health?",
+      "videoId": "5aww-Bpgkf4",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-public-health-crash-course-public-health-1/"
+    },
+    {
+      "number": 2,
+      "title": "How Your Biology Affects Your Health",
+      "videoId": "SzsifG0UvTM",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-your-biology-affects-your-health-crash-course-public-health-2/"
+    },
+    {
+      "number": 3,
+      "title": "How the Environment Affects Your Health",
+      "videoId": "g3vf0I_j9kk",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-the-environment-affects-your-health-crash-course-public-health-3/"
+    },
+    {
+      "number": 4,
+      "title": "How Society Affects Your Health",
+      "videoId": "CcdSeqqMR5M",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-society-affects-your-health-crash-course-public-health-4/"
+    },
+    {
+      "number": 5,
+      "title": "Stress is Bad for Your Health",
+      "videoId": "rKaG9VaM0pw",
+      "sourceUrl": "https://thecrashcourse.com/courses/stress-is-bad-for-your-health-crash-course-public-health-5/"
+    },
+    {
+      "number": 6,
+      "title": "Intro to Epidemiology",
+      "videoId": "_luU3I03JwE",
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-epidemiology-crash-course-public-health-6/"
+    },
+    {
+      "number": 7,
+      "title": "Which Healthcare System is Best?",
+      "videoId": "vxvhGj9fA3g",
+      "sourceUrl": "https://thecrashcourse.com/courses/which-healthcare-system-is-best-crash-course-public-health-7/"
+    },
+    {
+      "number": 8,
+      "title": "Health and Policy",
+      "videoId": "Z08sh4PN8Lc",
+      "sourceUrl": "https://thecrashcourse.com/courses/health-and-policy-crash-course-public-health-8/"
+    },
+    {
+      "number": 9,
+      "title": "Global Health",
+      "videoId": "2rfRk_mTf7M",
+      "sourceUrl": "https://thecrashcourse.com/courses/global-health-crash-course-public-health-9/"
+    },
+    {
+      "number": 10,
+      "title": "The Future of Public Health",
+      "videoId": "VvRr0oL6s_E",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-public-health-crash-course-public-health-10/"
+    }
+  ]
+}

@@ -163,5 +163,104 @@
     "playlistId": "PL8dPuuaLjXtNdTKZkV_GiIYXpV9w4WxbX",
     "sourceUrl": "https://thecrashcourse.com/topic/ecology/",
     "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "art-history",
+    "title": "Art History",
+    "subject": "Humanities",
+    "host": "Sarah Urist Green",
+    "episodeCount": 22,
+    "description": "Learn to look closely at art and ask how it connects people, places, and ideas. Explore the stories behind objects, images, and the ways we value them.",
+    "playlistId": "PL8dPuuaLjXtMg4YXg6jCIDMbHUDaHDXXZ",
+    "sourceUrl": "https://thecrashcourse.com/topic/arthistory/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "anatomy-physiology",
+    "title": "Anatomy & Physiology",
+    "subject": "Science",
+    "host": "Hank Green",
+    "episodeCount": 47,
+    "description": "Explore the structures and systems that keep a human body working, from cells and tissues to movement, breathing, and immunity.",
+    "playlistId": "PL8dPuuaLjXtOAKed_MxxWBNaPno5h3Zs8",
+    "sourceUrl": "https://thecrashcourse.com/topic/anatomy/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "engineering",
+    "title": "Engineering",
+    "subject": "Technology",
+    "host": "Dr. Shini Somara",
+    "episodeCount": 46,
+    "description": "Explore how people turn scientific ideas into useful things. Follow the design choices behind materials, machines, infrastructure, and new technologies.",
+    "playlistId": "PL8dPuuaLjXtO4A_tL6DLZRotxEb114cMR",
+    "sourceUrl": "https://thecrashcourse.com/topic/engineering/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "artificial-intelligence",
+    "title": "Artificial Intelligence",
+    "subject": "Technology",
+    "host": "Jabril",
+    "episodeCount": 20,
+    "description": "Explore how machines learn, recognize patterns, and make decisions. Follow the ideas behind neural networks, robotics, and algorithmic fairness, with numbered coding labs along the way.",
+    "playlistId": "PL8dPuuaLjXtO65LeD2p4_Sb5XQ51par_b",
+    "sourceUrl": "https://thecrashcourse.com/topic/ai/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "navigating-digital-information",
+    "title": "Navigating Digital Information",
+    "subject": "Learning skills",
+    "host": "John Green",
+    "episodeCount": 10,
+    "description": "Build better habits for checking what you read online. Practice evaluating sources, looking for evidence, and finding context before sharing a claim.",
+    "playlistId": "PL8dPuuaLjXtN07XYqqWSKpPrtNDiCHTzU",
+    "sourceUrl": "https://thecrashcourse.com/topic/navigatingdigitalinfo/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "intellectual-property",
+    "title": "Intellectual Property",
+    "subject": "Social sciences",
+    "host": "Stan Muller",
+    "episodeCount": 7,
+    "description": "Explore copyright, patents, and trademarks, and the questions they raise about creativity, ownership, and sharing ideas.",
+    "playlistId": "PL8dPuuaLjXtMwV2btpcij8S3YohW9gUGN",
+    "sourceUrl": "https://thecrashcourse.com/topic/intellectualproperty/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "public-health",
+    "title": "Public Health",
+    "subject": "Science",
+    "host": "Vanessa Hill",
+    "episodeCount": 10,
+    "description": "Explore how communities protect and improve health. Connect biology, environments, social conditions, and policy with the health of whole populations.",
+    "playlistId": "PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF",
+    "sourceUrl": "https://thecrashcourse.com/topic/publichealth/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "film-history",
+    "title": "Film History",
+    "subject": "Humanities",
+    "host": "Craig Benzine",
+    "episodeCount": 16,
+    "description": "Follow the story of cinema, from early cameras and silent films to Hollywood, world cinema, and documentary. Discover how movies developed their own language.",
+    "playlistId": "PL8dPuuaLjXtN-Bd-H_TGq72CN50Fpv_JX",
+    "sourceUrl": "https://thecrashcourse.com/topic/filmhistory/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "entrepreneurship",
+    "title": "Business: Entrepreneurship",
+    "subject": "Social sciences",
+    "host": "Anna Akana",
+    "episodeCount": 17,
+    "description": "Explore how a business idea becomes something people can use. Learn about customers, testing products, building relationships, and deciding how to grow.",
+    "playlistId": "PL8dPuuaLjXtNamNKW5qlS-nKgA0on7Qze",
+    "sourceUrl": "https://thecrashcourse.com/topic/businessentrepreneurship/",
+    "reviewedAt": "2026-10-30"
   }
 ]

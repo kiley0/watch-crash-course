@@ -6,7 +6,7 @@ Production domain: `watchcrashcourse.com`. Repository and local folder: `watch-c
 
 Build a quiet, dependable place to work through Crash Course courses in playlist order, resume videos, and see progress. Favor files and browser standards that will remain understandable and inexpensive to host for years.
 
-The pilot is live on Vercel at `watchcrashcourse.com`, with playback, local progress, history, data controls, and completed release checks. The first catalog expansion added World History and Biology. The next expansion added Astronomy, Philosophy, and Computer Science. The current local expansions add Chemistry, Psychology, Economics, U.S. History, Physics, Linguistics, Statistics, Media Literacy, and Ecology using the same static data model; see the post-pilot milestones below.
+The pilot is live on Vercel at `watchcrashcourse.com`, with playback, local progress, history, data controls, and completed release checks. The first catalog expansion added World History and Biology. The next expansion added Astronomy, Philosophy, and Computer Science. The current local expansions add Chemistry, Psychology, Economics, U.S. History, Physics, Linguistics, Statistics, Media Literacy, Ecology, Art History, Anatomy & Physiology, Engineering, Artificial Intelligence, Navigating Digital Information, Intellectual Property, Public Health, Film History, and Business: Entrepreneurship using the same static data model; see the post-pilot milestones below.
 
 ## Architectural decisions
 
@@ -271,3 +271,15 @@ Add 47 numbered U.S. History lessons, 46 Physics lessons, and 16 Linguistics les
 ### 9. Statistics, Media Literacy, and Ecology
 
 Add 44 Statistics lessons, 12 Media Literacy lessons, and 12 Ecology lessons, bringing the catalog to fifteen courses and 532 lessons. Verify official episode embeds and playlists, exclude unnumbered extras, and sort Statistics lessons by number. Extend catalog contract checks, introduce the data-derived Mathematics subject, and verify filtering, playback, resume, final-lesson navigation, and narrow layouts. Keep static JSON and existing dependencies.
+
+### 10. Art History, Anatomy & Physiology, and Engineering
+
+Add 22 Art History lessons, 47 Anatomy & Physiology lessons, and 46 Engineering lessons, bringing the catalog to eighteen courses and 647 lessons. Verify official episode embeds and playlists, supply missing Anatomy metadata from official uploads, exclude related embeds and unnumbered extras, and preserve numerical order. Extend catalog checks and verify playback, resume, navigation boundaries, filtering, and long titles on narrow screens. Keep the existing static model and dependencies.
+
+### 11. Artificial Intelligence, Navigating Digital Information, and Intellectual Property
+
+Add 20 Artificial Intelligence lessons including numbered labs, 10 Navigating Digital Information lessons, and 7 Intellectual Property lessons, bringing the catalog to twenty-one courses and 684 lessons. Verify official sources and playlists, resolve the missing Robotics embed, exclude related embeds and unnumbered extras, and preserve numerical order. Extend existing catalog checks and verify search, playback, resume, navigation boundaries, and long course titles on narrow screens. Keep static JSON and existing dependencies.
+
+### 12. Public Health, Film History, and Business: Entrepreneurship
+
+Add 10 Public Health lessons, 16 Film History lessons, and 17 Business: Entrepreneurship lessons, bringing the catalog to twenty-four courses and 727 lessons. Verify official lesson embeds and playlists, exclude previews and related embeds, and preserve numerical order. Extend catalog checks and verify playback, resume, course boundaries, search, and the longer business title on narrow screens. Preserve static JSON and existing dependencies.

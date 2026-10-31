@@ -1,0 +1,125 @@
+{
+  "courseId": "artificial-intelligence",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What Is Artificial Intelligence?",
+      "videoId": "a0_lo_GDcFw",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-artificial-intelligence-crash-course-ai-1/"
+    },
+    {
+      "number": 2,
+      "title": "Supervised Learning",
+      "videoId": "4qVRBYAdLAo",
+      "sourceUrl": "https://thecrashcourse.com/courses/supervised-learning-crash-course-ai-2/"
+    },
+    {
+      "number": 3,
+      "title": "Neural Networks and Deep Learning",
+      "videoId": "oV3ZY6tJiA0",
+      "sourceUrl": "https://thecrashcourse.com/courses/neural-networks-and-deep-learning-crash-course-ai-3/"
+    },
+    {
+      "number": 4,
+      "title": "Training Neural Networks",
+      "videoId": "lgKrup5oi_A",
+      "sourceUrl": "https://thecrashcourse.com/courses/training-neural-networks-crash-course-ai-4/"
+    },
+    {
+      "number": 5,
+      "title": "How to make an AI read your handwriting (LAB)",
+      "videoId": "6nGCGYWMObE",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-make-an-ai-read-your-handwriting-lab-crash-course-ai-5/"
+    },
+    {
+      "number": 6,
+      "title": "Unsupervised Learning",
+      "videoId": "JnnaDNNb380",
+      "sourceUrl": "https://thecrashcourse.com/courses/unsupervised-learning-crash-course-ai-6/"
+    },
+    {
+      "number": 7,
+      "title": "Natural Language Processing",
+      "videoId": "oi0JXuL19TA",
+      "sourceUrl": "https://thecrashcourse.com/courses/natural-language-processing-crash-course-ai-7/"
+    },
+    {
+      "number": 8,
+      "title": "Make an AI sound like a YouTuber (LAB)",
+      "videoId": "kZWum5omEv4",
+      "sourceUrl": "https://thecrashcourse.com/courses/make-an-ai-sound-like-a-youtuber-lab-crash-course-ai-8/"
+    },
+    {
+      "number": 9,
+      "title": "Reinforcement Learning",
+      "videoId": "nIgIv4IfJ6s",
+      "sourceUrl": "https://thecrashcourse.com/courses/reinforcement-learning-crash-course-ai9/"
+    },
+    {
+      "number": 10,
+      "title": "Symbolic AI",
+      "videoId": "WHCo4m2VOws",
+      "sourceUrl": "https://thecrashcourse.com/courses/symbolic-ai-crash-course-ai-10/"
+    },
+    {
+      "number": 11,
+      "title": "Robotics",
+      "videoId": "_U21fT8VLp0",
+      "sourceUrl": "https://thecrashcourse.com/courses/robotics-crash-course-ai-11/"
+    },
+    {
+      "number": 12,
+      "title": "AI Playing Games",
+      "videoId": "nw7zmdBLQ6U",
+      "sourceUrl": "https://thecrashcourse.com/courses/ai-playing-games-crash-course-ai-12/"
+    },
+    {
+      "number": 13,
+      "title": "Let’s make an AI that destroys video games (LAB)",
+      "videoId": "osbmLJb2Tkc",
+      "sourceUrl": "https://thecrashcourse.com/courses/lets-make-an-ai-that-destroys-video-games-crash-course-ai-13/"
+    },
+    {
+      "number": 14,
+      "title": "Humans and AI working together",
+      "videoId": "PIAPzioNt9Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/humans-and-ai-working-together-crash-course-ai-14/"
+    },
+    {
+      "number": 15,
+      "title": "How YouTube knows what you should watch",
+      "videoId": "kiInh5STnyQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-youtube-knows-what-you-should-watch-crash-course-ai-15/"
+    },
+    {
+      "number": 16,
+      "title": "Let’s make a movie recommendation system (LAB)",
+      "videoId": "iaIW3CO4rcY",
+      "sourceUrl": "https://thecrashcourse.com/courses/lets-make-a-movie-recommendation-system-crash-course-ai-16-2/"
+    },
+    {
+      "number": 17,
+      "title": "Web Search",
+      "videoId": "PnFwdCGmVG0",
+      "sourceUrl": "https://thecrashcourse.com/courses/web-search-crash-course-ai-17/"
+    },
+    {
+      "number": 18,
+      "title": "Algorithmic Bias and Fairness",
+      "videoId": "gV0_raKR2UQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/algorithmic-bias-and-fairness-crash-course-ai-18/"
+    },
+    {
+      "number": 19,
+      "title": "Cats vs Dogs? Let’s make an AI to settle this",
+      "videoId": "_DZJV9ey1nE",
+      "sourceUrl": "https://thecrashcourse.com/courses/cats-vs-dogs-lets-make-an-ai-to-settle-this-crash-course-ai-19/"
+    },
+    {
+      "number": 20,
+      "title": "The Future of Artificial Intelligence",
+      "videoId": "T7Rv4tGRlfc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-artificial-intelligence-crash-course-ai-20/"
+    }
+  ]
+}

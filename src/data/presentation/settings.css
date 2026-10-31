@@ -3,18 +3,22 @@
 }
 .settings-heading {
   max-width: 760px;
-  margin: 24px 0 32px;
+  margin: 0 0 32px;
 }
 .settings-heading h1 {
-  font-size: clamp(32px, 5vw, 52px);
+  font-size: var(--page-title);
+  line-height: 1.15;
   margin: 12px 0;
 }
 .settings-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: var(--layout-gap);
 }
 .data-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   border: 1px solid var(--line, #d5dbcc);
   border-radius: 24px;
   padding: clamp(20px, 4vw, 32px);
@@ -24,7 +28,9 @@
   background: #eeedf8;
 }
 .data-card h2 {
-  margin: 10px 0;
+  font-size: 27px;
+  line-height: 1.2;
+  margin: 0 0 12px;
 }
 .data-card p {
   max-width: 62ch;
@@ -32,7 +38,7 @@
 .data-card input[type="file"] {
   display: block;
   width: 100%;
-  margin: 16px 0;
+  margin: 8px 0 0;
   font: inherit;
 }
 .data-card input::file-selector-button {
@@ -45,6 +51,7 @@
   cursor: pointer;
 }
 .data-confirm {
+  width: 100%;
   margin-top: 24px;
   background: #fffdf8;
   border: 2px solid #6b796e;
@@ -75,6 +82,25 @@
 .settings-main .back-link {
   margin: 0 0 24px;
 }
-.settings-heading {
-  margin-top: 0;
+
+.data-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.data-card-control {
+  width: 100%;
+  min-width: 0;
+  margin-top: auto;
+  padding-top: 20px;
+}
+.data-clear > .text-button {
+  margin-top: 20px;
+}
+
+.data-summary .text-button,
+.data-actions .text-button {
+  margin-right: 0;
 }

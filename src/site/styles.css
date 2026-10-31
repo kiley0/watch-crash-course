@@ -15,6 +15,9 @@
   --orange: #f45e32;
   --line: #dcded2;
   --teal: #cfdfd5;
+  --page-title: clamp(36px, 4.4vw, 60px);
+  --section-title: clamp(28px, 3vw, 36px);
+  --layout-gap: 24px;
 }
 * {
   box-sizing: border-box;
@@ -110,9 +113,9 @@ img {
   border-bottom: 1px solid var(--line);
 }
 .header-inner {
-  max-width: 1292px;
+  max-width: 1180px;
   min-height: 105px;
-  padding: 20px 40px;
+  padding: 20px 28px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -313,7 +316,7 @@ img {
   margin-bottom: 28px;
 }
 .section-heading h2 {
-  font-size: 36px;
+  font-size: var(--section-title);
   line-height: 1.2;
   margin-top: 9px;
   font-weight: 800;
@@ -389,11 +392,14 @@ select {
 }
 .catalog-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--layout-gap);
   align-items: stretch;
 }
 .course-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   background: #fffdf9;
   border: 1px solid #d3d7ca;
   border-radius: 21px;
@@ -407,6 +413,7 @@ select {
   box-shadow: 0 10px 28px #263c3210;
 }
 .course-art {
+  flex: 0 0 auto;
   display: block;
   position: relative;
   height: 266px;
@@ -440,6 +447,8 @@ select {
   text-transform: uppercase;
 }
 .art-course-title {
+  overflow-wrap: anywhere;
+  hyphens: auto;
   position: absolute;
   bottom: 21px;
   left: 25px;
@@ -455,6 +464,8 @@ select {
   top: 26px;
   width: 210px;
   height: 170px;
+  transform: scale(0.75);
+  transform-origin: top right;
 }
 .notebook {
   position: absolute;
@@ -544,7 +555,10 @@ select {
   font-weight: 900;
 }
 .course-card-content {
-  padding: 24px 26px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px;
 }
 .card-meta {
   display: flex;
@@ -569,6 +583,7 @@ select {
   text-decoration: none;
 }
 .course-card p {
+  flex: 1;
   font-size: 14px;
   color: #616c60;
   max-width: 430px;
@@ -799,13 +814,15 @@ select {
 }
 .course-hero {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 40px;
   padding: 20px 0 48px;
   border-bottom: 1px solid var(--line);
 }
 .course-hero h1 {
-  font-size: 70px;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  font-size: var(--page-title);
   line-height: 1.05;
   margin-top: 16px;
 }
@@ -985,7 +1002,7 @@ select {
   margin-top: 20px;
 }
 .about-main > h1 {
-  font-size: 70px;
+  font-size: var(--page-title);
   line-height: 1.1;
   margin: 20px 0;
 }
@@ -996,9 +1013,15 @@ select {
 }
 .about-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 70px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
   margin-block: 45px;
+}
+.about-grid > .learn-note {
+  align-self: start;
+}
+.about-grid .text-link {
+  margin-top: 0;
 }
 .about-grid h2 {
   font-size: 27px;
@@ -1041,9 +1064,6 @@ select {
   .hero-art {
     margin-right: -15px;
   }
-  .catalog-grid {
-    grid-template-columns: 1.1fr 1fr;
-  }
   .shelf-note {
     padding: 30px;
   }
@@ -1052,6 +1072,7 @@ select {
   }
   .book-stack {
     right: 45px;
+    transform: scale(0.65);
   }
   .how-grid {
     gap: 24px;
@@ -1062,9 +1083,6 @@ select {
   .course-layout {
     grid-template-columns: 1fr 250px;
     gap: 26px;
-  }
-  .course-hero h1 {
-    font-size: 58px;
   }
   .course-facts {
     gap: 12px;
@@ -1083,6 +1101,29 @@ select {
   }
   .about-grid {
     gap: 35px;
+  }
+}
+/* Keep the brand and disclosure intact before the compact phone navigation. */
+@media (min-width: 651px) and (max-width: 1100px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px 24px;
+  }
+  .site-header nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    font-size: 13px;
+  }
+  .site-header nav a {
+    justify-content: center;
+  }
+  .fan-badge {
+    grid-column: 2;
+    grid-row: 1;
   }
 }
 @media (max-width: 650px) {
@@ -1105,12 +1146,15 @@ select {
     font-size: 16px;
   }
   .site-header nav {
-    gap: 15px;
-    font-size: 11px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 0 16px;
+    text-align: center;
+    font-size: 12px;
   }
-  .site-header nav a:last-child {
-    max-width: 66px;
-    line-height: 1.4;
+  .site-header nav a {
+    justify-content: center;
   }
   .hero {
     grid-template-columns: 1fr;
@@ -1185,6 +1229,12 @@ select {
   }
   .course-art {
     height: 280px;
+  }
+  .art-course-title {
+    right: 25px;
+  }
+  .card-sticker {
+    display: none;
   }
   .course-card-content {
     padding: 22px;
@@ -1273,9 +1323,6 @@ select {
     padding-top: 5px;
     gap: 25px;
   }
-  .course-hero h1 {
-    font-size: 56px;
-  }
   .course-intro {
     font-size: 16px;
   }
@@ -1323,9 +1370,6 @@ select {
   .source-note {
     padding-inline: 10px;
   }
-  .about-main > h1 {
-    font-size: 52px;
-  }
   .about-main > .eyebrow {
     font-size: 9px;
   }
@@ -1342,6 +1386,20 @@ select {
   }
   .course-error h1 {
     font-size: 32px;
+  }
+}
+/* Leave room for three-line course titles on very narrow screens. */
+@media (max-width: 380px) {
+  :root {
+    --page-title: 32px;
+  }
+  .art-course-title {
+    font-size: 26px;
+  }
+  .book-stack {
+    top: 36px;
+    right: 36px;
+    transform: scale(0.7);
   }
 }
 @media (prefers-reduced-motion: reduce) {
