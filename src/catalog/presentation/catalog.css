@@ -4,38 +4,38 @@
 }
 .subject-shelf {
   --book-color: var(--theme-green, #c6d9b8);
-  --book-accent: var(--theme-muted, #476343);
+  --book-accent: var(--book-green-spine, #476343);
   min-width: 0;
 }
 .subject-shelf[data-subject="History"],
 .shelf-book[data-subject="History"] {
   --book-color: var(--theme-peach, #f2cfb8);
-  --book-accent: var(--theme-muted, #925333);
+  --book-accent: var(--book-history-spine, #925333);
 }
 .subject-shelf[data-subject="Science"],
 .shelf-book[data-subject="Science"] {
   --book-color: var(--theme-purple, #dcd7ef);
-  --book-accent: var(--theme-muted, #63528c);
+  --book-accent: var(--book-science-spine, #63528c);
 }
 .subject-shelf[data-subject="Humanities"],
 .shelf-book[data-subject="Humanities"] {
   --book-color: var(--theme-gold, #f2dfa9);
-  --book-accent: var(--theme-muted, #826226);
+  --book-accent: var(--book-humanities-spine, #826226);
 }
 .subject-shelf[data-subject="Mathematics"],
 .shelf-book[data-subject="Mathematics"] {
   --book-color: var(--theme-blue, #bfded7);
-  --book-accent: var(--theme-muted, #35695c);
+  --book-accent: var(--book-math-spine, #35695c);
 }
 .subject-shelf[data-subject="Social sciences"],
 .shelf-book[data-subject="Social sciences"] {
-  --book-color: var(--theme-peach, #f3cbd4);
-  --book-accent: var(--theme-muted, #8c4961);
+  --book-color: var(--book-social-cover, #f3cbd4);
+  --book-accent: var(--book-social-spine, #8c4961);
 }
 .subject-shelf[data-subject="Technology"],
 .shelf-book[data-subject="Technology"] {
   --book-color: var(--theme-blue, #c5dbe6);
-  --book-accent: var(--theme-muted, #3c637d);
+  --book-accent: var(--book-technology-spine, #3c637d);
 }
 .shelf-heading {
   display: flex;
@@ -76,7 +76,11 @@
   left: -24px;
   right: -24px;
   height: 22px;
-  background: linear-gradient(#c8aa81 0 5px, #a9855d 5px 16px, var(--theme-muted, #96754f) 16px);
+  background: linear-gradient(
+    var(--shelf-top, #c8aa81) 0 5px,
+    var(--shelf-front, #a9855d) 5px 16px,
+    var(--shelf-bottom, #96754f) 16px
+  );
   pointer-events: none;
 }
 .shelf-book:focus-within {
@@ -89,16 +93,17 @@
   min-height: 340px;
   height: 100%;
   padding: 22px 14px 20px 20px;
-  border: 1px solid #20392f30;
+  border: 1px solid var(--book-border, #20392f30);
   border-left: 9px solid var(--book-accent);
   border-radius: 4px 12px 12px 4px;
-  background: linear-gradient(90deg, #ffffff35, transparent 18%), var(--book-color);
+  background:
+    linear-gradient(90deg, var(--book-highlight, #ffffff35), transparent 18%), var(--book-color);
   color: var(--ink);
   text-decoration: none;
   box-shadow:
-    4px 0 0 -1px var(--theme-surface, #fffaf0),
-    7px 0 0 -2px #b8b3a5,
-    5px 7px 8px #263c3220;
+    4px 0 0 -1px var(--book-pages, #fffaf0),
+    7px 0 0 -2px var(--book-page-edge, #b8b3a5),
+    5px 7px 8px var(--book-shadow, #263c3220);
   transform-origin: bottom left;
   transition:
     transform 200ms ease,
@@ -108,12 +113,12 @@
 .book-cover:focus-visible {
   transform: translateY(-12px) rotate(-2deg);
   box-shadow:
-    6px 0 0 -1px var(--theme-surface, #fffaf0),
-    9px 0 0 -2px #b8b3a5,
-    10px 18px 16px #263c3225;
+    6px 0 0 -1px var(--book-pages, #fffaf0),
+    9px 0 0 -2px var(--book-page-edge, #b8b3a5),
+    10px 18px 16px var(--book-shadow, #263c3225);
 }
 .book-cover:focus-visible {
-  outline: 3px solid var(--book-accent);
+  outline: 3px solid var(--theme-focus, var(--book-accent));
   outline-offset: 5px;
 }
 .book-series {
@@ -144,7 +149,7 @@
   margin-top: 5px;
 }
 .book-progress {
-  border-top: 1px solid #20392f30;
+  border-top: 1px solid var(--book-border, #20392f30);
   padding-top: 12px;
   margin-top: 14px;
   font-size: 10px;
@@ -213,7 +218,11 @@
   right: 0;
   height: 22px;
   border-radius: 3px;
-  background: linear-gradient(#c8aa81 0 5px, #a9855d 5px 16px, var(--theme-muted, #96754f) 16px);
+  background: linear-gradient(
+    var(--shelf-top, #c8aa81) 0 5px,
+    var(--shelf-front, #a9855d) 5px 16px,
+    var(--shelf-bottom, #96754f) 16px
+  );
   box-shadow: 0 8px 9px -5px #49372040;
   pointer-events: none;
 }

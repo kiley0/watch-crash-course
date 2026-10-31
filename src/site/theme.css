@@ -13,6 +13,7 @@
   --theme-ink: #f1eee4;
   --theme-muted: #b9c4b9;
   --theme-surface: #252d28;
+  --theme-footer: #1d2420;
   --theme-green: #304236;
   --theme-purple: #363249;
   --theme-blue: #2b3e48;
@@ -20,6 +21,22 @@
   --theme-peach: #49352e;
   --theme-focus: #a9c9ff;
   --theme-shelf-backdrop: #252d2880;
+  --shelf-top: #6e573e;
+  --shelf-front: #4d3b2b;
+  --shelf-bottom: #34291f;
+  --book-highlight: #ffffff0a;
+  --book-border: #ffffff20;
+  --book-pages: #736f61;
+  --book-page-edge: #474b41;
+  --book-shadow: #00000050;
+  --book-green-spine: #8ea77c;
+  --book-history-spine: #c38a65;
+  --book-science-spine: #a69acb;
+  --book-humanities-spine: #bea566;
+  --book-math-spine: #80aaa1;
+  --book-social-spine: #bf8c9d;
+  --book-technology-spine: #85aabd;
+  --book-social-cover: #45313c;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]):not([data-theme="dark"]) {
@@ -32,6 +49,7 @@
     --theme-ink: #f1eee4;
     --theme-muted: #b9c4b9;
     --theme-surface: #252d28;
+    --theme-footer: #1d2420;
     --theme-green: #304236;
     --theme-purple: #363249;
     --theme-blue: #2b3e48;
@@ -39,5 +57,21 @@
     --theme-peach: #49352e;
     --theme-focus: #a9c9ff;
     --theme-shelf-backdrop: #252d2880;
+    --shelf-top: #6e573e;
+    --shelf-front: #4d3b2b;
+    --shelf-bottom: #34291f;
+    --book-highlight: #ffffff0a;
+    --book-border: #ffffff20;
+    --book-pages: #736f61;
+    --book-page-edge: #474b41;
+    --book-shadow: #00000050;
+    --book-green-spine: #8ea77c;
+    --book-history-spine: #c38a65;
+    --book-science-spine: #a69acb;
+    --book-humanities-spine: #bea566;
+    --book-math-spine: #80aaa1;
+    --book-social-spine: #bf8c9d;
+    --book-technology-spine: #85aabd;
+    --book-social-cover: #45313c;
   }
 }
