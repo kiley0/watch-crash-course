@@ -2,6 +2,7 @@ interface YouTubePlayer {
   getCurrentTime(): number;
   getDuration(): number;
   getVideoUrl(): string;
+  cueVideoById(options: { videoId: string; startSeconds: number }): void;
   seekTo(seconds: number, allowSeekAhead: boolean): void;
   pauseVideo(): void;
   destroy(): void;
@@ -109,7 +110,7 @@ export function createYouTubePlayer(
             if (disposed) return;
             clearTimeout(readyTimer);
             ready = true;
-            if (startAt > 0) event.target.seekTo(startAt, true);
+            event.target.cueVideoById({ videoId, startSeconds: startAt });
             onStatus("Ready when you are. Press play in the video.");
           },
           onStateChange(event) {

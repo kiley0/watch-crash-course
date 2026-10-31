@@ -11,6 +11,7 @@ function playerFixture() {
     getDuration: vi.fn(() => 100),
     getVideoUrl: vi.fn(() => "https://www.youtube.com/watch?v=E7CwqNHn_Ns"),
     seekTo: vi.fn(),
+    cueVideoById: vi.fn(),
     pauseVideo: vi.fn(),
     destroy: vi.fn(),
   };
@@ -47,13 +48,18 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 describe("YouTube player lifecycle", () => {
-  it("seeks only when ready, samples playing, and saves pause and ended events", async () => {
+  it("cues the saved position without seeking or sampling until playback starts", async () => {
     vi.useFakeTimers();
     const view = playerFixture();
     await view.session.start(42);
     expect(view.player.seekTo).not.toHaveBeenCalled();
     view.ready();
-    expect(view.player.seekTo).toHaveBeenCalledWith(42, true);
+    expect(view.player.cueVideoById).toHaveBeenCalledWith({
+      videoId: "E7CwqNHn_Ns",
+      startSeconds: 42,
+    });
+    expect(view.player.seekTo).not.toHaveBeenCalled();
+    view.state(5); // Cued is ready, but must never count as watched.
     await vi.advanceTimersByTimeAsync(5000);
     expect(view.sample).not.toHaveBeenCalled();
     view.state(1);
@@ -94,6 +100,10 @@ describe("YouTube player lifecycle", () => {
     await view.session.start(42);
     view.session.startOver();
     view.ready();
+    expect(view.player.cueVideoById).toHaveBeenCalledWith({
+      videoId: "E7CwqNHn_Ns",
+      startSeconds: 0,
+    });
     expect(view.player.seekTo).not.toHaveBeenCalled();
     view.session.destroy();
     expect(vi.getTimerCount()).toBe(0);

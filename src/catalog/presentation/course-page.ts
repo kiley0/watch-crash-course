@@ -1,5 +1,7 @@
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
+import "./course.css";
+import { progressPizza } from "./progress-pizza";
 import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
 import { isCourseId } from "../domain/course";
 import { matchesQuery } from "../domain/search";
@@ -56,6 +58,9 @@ Alpine.data("coursePage", () => {
       return this.summary
         ? `${this.summary.completed} of ${this.summary.total} episodes completed`
         : "";
+    },
+    get pizza() {
+      return progressPizza(this.episodes.map((episode) => episode.status === "Completed"));
     },
     get completionPercent(): number {
       return this.summary?.percent ?? 0;

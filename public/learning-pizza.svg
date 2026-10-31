@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450" fill="none">
+  <ellipse cx="305" cy="244" rx="222" ry="171" fill="#E7EDD7"/>
+  <ellipse cx="292" cy="353" rx="177" ry="24" fill="#304C3E" opacity=".09"/>
+  <g stroke="#304C3E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- A generous helping of curiosity, with one slice lifted from the pie. -->
+    <path d="M300 232 414 128a154 154 0 1 0 40 164Z" fill="#E8AC61"/>
+    <path d="M300 232 401 143a135 135 0 1 0 34 141Z" fill="#F18054"/>
+    <path d="M300 232 389 154c-30-27-68-40-110-34-72 9-119 74-113 139 6 63 65 116 129 111 49-4 93-33 124-91Z" fill="#F9D568"/>
+    <path d="m300 232-16-111m16 111-123-52m123 52-130 61m130-61-55 127m55-127 64 112" stroke="#D5A64D"/>
+    <path d="m337 210 99-100c26 25 42 57 46 94Z" fill="#E8AC61"/>
+    <path d="m337 210 86-87c22 19 36 43 40 68Z" fill="#F18054"/>
+    <path d="m337 210 77-77c18 16 31 35 35 51Z" fill="#F9D568"/>
+    <path d="m365 210 6 17 9-19m17-5 6 22 9-26" fill="#F9D568" stroke="#D5A64D"/>
+    <path d="M192 162c16-22 35-36 61-42m-84 115c-2 18 0 33 6 48m90 86c18 5 40 4 58-1" stroke="#FFF0C1" stroke-width="5"/>
+    <!-- Science: an atom. -->
+    <g transform="translate(255 164) rotate(-12)">
+      <ellipse rx="30" ry="11" fill="#D8D4F0"/>
+      <ellipse rx="30" ry="11" transform="rotate(60)"/>
+      <ellipse rx="30" ry="11" transform="rotate(120)"/>
+      <circle r="5" fill="#F36439" stroke="none"/>
+    </g>
+    <!-- Geography: a small globe. -->
+    <g transform="translate(203 245) rotate(-15)">
+      <circle r="24" fill="#BFDDE1"/>
+      <path d="m-18-15 12-4 7 6-5 10-10 2-5-7m23 8 14 3 2 11-10 10-4-9-8-4Z" fill="#8DAD88"/>
+    </g>
+    <!-- Literature: an open book. -->
+    <g transform="translate(260 310) rotate(12)">
+      <path d="M-31-19c12-3 23 0 31 6 10-6 20-9 31-6v38c-12-3-22 0-31 6-9-6-19-9-31-6Z" fill="#FFFDF4"/>
+      <path d="M0-13v38m-23-33 15 3m-15 7 15 3m16-10 15-3M8 7l15-3" stroke="#7E976E"/>
+    </g>
+    <!-- Mathematics: a few delicious constants. -->
+    <g transform="translate(327 303) rotate(-9)" stroke="#63528C" stroke-width="4">
+      <path d="M-15-14h30m-21 0v22c0 7-4 9-7 9m21-31v22c0 7 4 9 7 9"/>
+    </g>
+    <!-- Chemistry: a flask. -->
+    <g transform="translate(320 172) rotate(15)">
+      <path d="M-8-21H8M-5-21v16l-13 24c-2 5 0 8 5 8h26c5 0 7-3 5-8L5-5v-16" fill="#FFFDF4"/>
+      <path d="m-12 10-5 10c-1 3 1 5 4 5h26c3 0 5-2 4-5l-5-10c-8 5-16-4-24 0Z" fill="#9BB99D" stroke="none"/>
+      <circle cx="2" cy="13" r="2" fill="#FFFDF4" stroke="none"/>
+    </g>
+    <!-- Astronomy rides on the lifted slice. -->
+    <g transform="translate(412 167) rotate(-18)">
+      <circle r="18" fill="#B9B7DF"/>
+      <ellipse rx="30" ry="6" fill="#D8D4F0"/>
+    </g>
+    <!-- Art: a painter’s palette. -->
+    <g transform="translate(365 258) rotate(18)">
+      <path d="M-22-8c3-13 25-20 38-8 10 9 7 23-1 24-7 1-7-7-13-4s2 11-6 15c-10 5-25-11-18-27Z" fill="#FFF1C9"/>
+      <circle cx="-11" cy="-7" r="4" fill="#F36439" stroke="none"/>
+      <circle cx="1" cy="-12" r="4" fill="#8DAD88" stroke="none"/>
+      <circle cx="12" cy="-7" r="4" fill="#9996C4" stroke="none"/>
+    </g>
+    <!-- Basil, tomato, and the occasional bright idea. -->
+    <g fill="#F18054" stroke="none">
+      <circle cx="211" cy="194" r="6"/><circle cx="305" cy="263" r="7"/><circle cx="226" cy="288" r="5"/><circle cx="305" cy="341" r="5"/>
+    </g>
+    <path d="M233 220c-13-4-17 6-12 14 8 0 15-5 12-14Zm46 23c9-12 19-5 18 5-8 5-16 3-18-5Zm64 87c-10-2-14 6-10 13 8 0 13-5 10-13Z" fill="#7E976E" stroke="none"/>
+    <path d="m115 158 5 13 14 5-14 5-5 13-5-13-14-5 14-5Z" fill="#B9B7DF" stroke="none"/>
+    <path d="m470 281 6 16 17 6-17 6-6 16-6-16-17-6 17-6Z" fill="#F36439" stroke="none"/>
+    <path d="m376 70 5 13 14 5-14 5-5 13-5-13-14-5 14-5Z" fill="#F8CA59" stroke="none"/>
+    <path d="M439 82l7-13m18 32 15-5M119 303l-9 9m-1-13 12 3" stroke="#7E976E"/>
+    <circle cx="155" cy="337" r="4" fill="#F36439" stroke="none"/>
+    <circle cx="477" cy="155" r="4" fill="#708E78" stroke="none"/>
+  </g>
+</svg>

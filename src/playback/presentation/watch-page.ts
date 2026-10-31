@@ -98,21 +98,8 @@ Alpine.data("watchPage", () => {
     get hasNext(): boolean {
       return !!this.nextUrl;
     },
-    get showPlayerChoice(): boolean {
-      return !this.playerStarted;
-    },
     get canResume(): boolean {
       return resumePosition(this.progress) > 0;
-    },
-    get resumeLabel(): string {
-      return `Resume at ${timeLabel(resumePosition(this.progress))}`;
-    },
-    get loadLabel(): string {
-      return this.progress?.completed
-        ? "Watch again"
-        : this.canResume
-          ? "Watch from the start"
-          : "Load video";
     },
     get savedLabel(): string {
       if (this.storageWarning) return "Progress is temporary in this tab.";
@@ -182,6 +169,8 @@ Alpine.data("watchPage", () => {
       } finally {
         this.loading = false;
       }
+      await Alpine.nextTick();
+      if (this.ready && !disposed) await this.resume();
     },
     async record(event: ProgressEvent) {
       this.progress = await progressStore.update(this.episode.videoId, event);
@@ -194,7 +183,7 @@ Alpine.data("watchPage", () => {
       this.playerStatus = "Opening YouTube…";
       const container = document.querySelector<HTMLElement>("#player-container");
       if (!container) return;
-      session = createYouTubePlayer(
+      const currentSession = createYouTubePlayer(
         container,
         this.episode.videoId,
         (sample) => {
@@ -210,9 +199,11 @@ Alpine.data("watchPage", () => {
           }
         },
       );
+      session = currentSession;
       try {
-        await session.start(seconds);
+        await currentSession.start(seconds);
       } catch {
+        if (disposed || session !== currentSession) return;
         this.playerError = "YouTube couldn’t load. Try again or open the original video below.";
         this.playerStatus = "";
       }

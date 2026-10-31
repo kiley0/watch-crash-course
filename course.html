@@ -94,14 +94,33 @@
               Watch here, with your place saved in this browser. No sign-up needed.
             </p>
           </div>
-          <div class="course-hero-art">
-            <img
-              src="./illustration.svg"
-              width="600"
-              height="450"
-              alt="An open book and a constellation of bright ideas"
-            />
-          </div>
+          <figure class="course-pizza">
+            <svg
+              viewBox="0 0 400 400"
+              width="400"
+              height="400"
+              role="img"
+              :aria-label="completionLabel"
+            >
+              <ellipse cx="200" cy="364" rx="145" ry="18" fill="#304c3e" opacity=".1" />
+              <circle cx="200" cy="200" r="183" fill="#b8c3bf" stroke="#304c3e" stroke-width="3" />
+              <circle cx="200" cy="200" r="174" fill="#e0e6df" stroke="#8c9e94" stroke-width="2" />
+              <circle cx="200" cy="200" r="160" fill="#cbd5cc" />
+              <path :d="pizza.crust" fill="#e8ac61" />
+              <path :d="pizza.cheese" fill="#f9d568" />
+              <path :d="pizza.toppings" fill="#f18054" />
+              <path :d="pizza.divisions" fill="none" stroke="#7b8c7d" stroke-width="1.5" />
+              <circle cx="200" cy="200" r="160" fill="none" stroke="#7b8c7d" stroke-width="1.5" />
+              <path
+                d="M54 133a161 161 0 0 1 69-76"
+                fill="none"
+                stroke="#fffdf4"
+                stroke-width="5"
+                stroke-linecap="round"
+              />
+            </svg>
+            <figcaption>One slice per completed episode.</figcaption>
+          </figure>
         </section>
         <div class="course-layout">
           <section class="episodes-section">

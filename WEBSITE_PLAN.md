@@ -133,7 +133,7 @@ The official playlist-items endpoint is documented here: [YouTube playlistItems.
 
 ### Player behavior
 
-- Create only one player, on the watch page, after a clear user action; load the player API when needed.
+- Create only one player when the watch page opens; cue the saved position without autoplay and let the user press play.
 - Preserve standard YouTube controls, attribution, ads, fullscreen, captions, and links.
 - Configure the actual site origin and appropriate referrer behavior. Test on HTTPS and localhost; `file://` is not a supported development target.
 - Read position and duration through the player API; listen for ready, playing, paused, ended, and error states.

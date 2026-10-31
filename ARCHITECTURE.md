@@ -25,6 +25,9 @@ src/
       catalog-page.ts                   Catalog Alpine state and page entry
       catalog.css                       Subject bookshelves and course book covers
       course-page.ts                    Course Alpine state and page entry
+      course.css                        Course progress pizza layout
+      progress-pizza.ts                  Pure SVG geometry for episode completion
+      progress-pizza.test.ts
       shelf-surprises.ts                Optional search discoveries and community copy
   learning/
     domain/progress.ts                  Pure progress transitions and record validation
@@ -59,7 +62,8 @@ public/
     courses.json                        Curated course index
     courses/<course-id>.json            Ordered episode data
   icons.svg                             Selected, licensed icon sprite
-  illustration.svg                      Original shared artwork
+  illustration.svg                      Original learning artwork
+  learning-pizza.svg                    Homepage subject pizza artwork
   favicon.svg
   licenses/                             Published license copies
 ```

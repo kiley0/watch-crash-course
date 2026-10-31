@@ -603,16 +603,6 @@ select {
   margin-top: 12px;
   color: var(--muted);
 }
-.course-hero-art {
-  align-self: center;
-  background: #dce6c9;
-  border-radius: 38% 45% 42% 38%;
-  transform: rotate(2deg);
-}
-.course-hero-art img {
-  transform: rotate(-2deg);
-  height: auto;
-}
 .course-layout {
   display: grid;
   grid-template-columns: 1fr 290px;
@@ -1045,10 +1035,6 @@ select {
   }
   .course-facts span + span:before {
     margin-right: 10px;
-  }
-  .course-hero-art {
-    max-width: 350px;
-    margin: auto;
   }
   .course-layout {
     grid-template-columns: 1fr;
