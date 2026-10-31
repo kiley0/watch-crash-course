@@ -4,7 +4,7 @@ A bright, independent course guide for curious people. Ordinary HTML and CSS, Ty
 
 ## Local development
 
-Use Node 22.12+ (Vite+ also supports newer compatible releases) and pnpm 12.16.1, as recorded by the initializer in `package.json`. Run `vp install` if Vite+ is already installed, or `pnpm install --frozen-lockfile`. A global `vp` is optional; use `pnpm exec vp` for the local CLI.
+Use Node 22.12+ within the Node 22 release line and pnpm 12.16.1, as recorded by the initializer in `package.json`. Run `vp install` if Vite+ is already installed, or `pnpm install --frozen-lockfile`. A global `vp` is optional; use `pnpm exec vp` for the local CLI.
 
 - `pnpm dev` — development server.
 - `pnpm fmt` — format source.
@@ -55,13 +55,13 @@ Progress belongs to this browser profile and origin. Multiple tabs use last-save
 
 The adapter serializes reads as well as writes, so a delayed history read cannot replace newer in-memory progress. `progressStore.list()` enumerates namespaced video keys independently of the catalog, validates each record, and includes any in-memory fallback progress. History shows one latest record per video, sorted by last activity, and excludes reset records (zero position and no completion). Activity includes manual completion; it is not proof of viewing. The history page renders local records first, then adds current course/episode names. Each metadata retry rebuilds rows from the original saved records, so removed or unavailable metadata cannot leave stale internal lesson links. If catalog metadata cannot load or a video no longer belongs to a course, the saved ID, position, status, timestamp, and original YouTube link remain accessible. There is no cached remote metadata, event log, or new storage schema.
 
-History search matches episode/course text and video IDs; status filters distinguish unfinished and completed episodes. Navigation back/forward refreshes catalog, course, watch, and history pages to read current records. Backup/import remains a later milestone.
+History search matches episode/course text and video IDs; status filters distinguish unfinished and completed episodes. Navigation back/forward refreshes catalog, course, watch, and history pages to read current records. Backups can be exported and restored from the data settings page.
 
 ## Milestone verification
 
 `pnpm build` runs formatting, lint, strict type checks, colocated tests, and all six HTML build entries. Automated checks cover catalog contracts, query matching, course detail loading, progress transitions and persistence, blocked storage, preserving future-schema records, and player lifecycle/error behavior. Player tests use a boundary fake; they do not replace real browser playback verification. Local browser checks confirmed no YouTube frames/scripts before the load action, real playback with pause saving, a saved resume choice after reload, manual completion surviving reload and appearing on the course page, confirmed reset, next-episode navigation, and the watch layout at 390px without horizontal overflow. The built watch page also loaded correctly in the production preview. Milestone 3 browser checks also covered empty history, persisted history and resume links, status filters and reset, a 1-of-10 completion count, most-recent-first ordering, 390px mobile layout, tablet navigation bounds, and recovery while the catalog file was temporarily unavailable. Cross-browser Safari, Firefox, and mobile playback checks remain part of release validation.
 
-Milestone 1 also passed an HTTP portability check with all pages/data/assets served under a nested subdirectory. There is no SPA rewrite. No deployment has been created.
+Milestone 1 also passed an HTTP portability check with all pages/data/assets served under a nested subdirectory. There is no SPA rewrite. A protected Vercel preview is available; see [release checks](./RELEASE_CHECKLIST.md) for its status.
 
 ## Experience checks
 
@@ -114,3 +114,9 @@ Milestone 4 release work still includes the full browser matrix and deployment v
 Manual data-page verification confirmed a real JSON download, invalid-file rejection without changing record counts, explicit clear confirmation, and restoring the downloaded backup after clearing. The counts and saved watch progress returned after restoration.
 
 The data page also passed a 390px layout check without horizontal overflow. Cross-browser release testing remains outstanding.
+
+## Release checks
+
+See [RELEASE_CHECKLIST.md](./RELEASE_CHECKLIST.md) for the remaining browser and deployment checks. `vercel.json` builds this as a static multi-page site, installs the pinned pnpm version with a frozen lockfile, and publishes `dist/`. Keep HTML extensions and ordinary 404 responses; do not add a catch-all rewrite.
+
+To host elsewhere, run `pnpm install --frozen-lockfile` and `pnpm build`, then serve the contents of `dist/` with any static host. No Node process is needed after the build. Keep the production origin stable so existing browser progress remains available.
