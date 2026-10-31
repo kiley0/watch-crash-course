@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vite-plus/test";
 import catalog from "../../../public/data/courses.json";
 import detail from "../../../public/data/courses/study-skills.json";
-import { isCourseId, parseCatalog, parseDetail } from "./course";
+import { isCourseId, parseCatalog, parseDetail, playlistForEpisode } from "./course";
 
 const courseFiles = import.meta.glob("../../../public/data/courses/*.json", {
   eager: true,
@@ -59,6 +59,28 @@ describe("curated catalog contracts", () => {
       ["theater-drama", 50, "sNWrOuwzax8", "4kxzD4ASioI"],
       ["business-soft-skills", 17, "EFeEAtXdzFU", "DJq9zVLu5_Q"],
       ["history-of-science", 46, "YvtCLceNf30", "EhBhP-zk0_I"],
+      ["black-american-history", 51, "S72vvfBTQws", "i_OU4EcWQ6I"],
+      ["big-history", 16, "tq6be-CZJ3w", "1esRyRV8H2M"],
+      ["big-questions-us-government", 6, "dsGoS_M7AW8", "2b-H-rxQ8m8"],
+      ["biologia", 50, "tuXWE_U1qIQ", "q3rxrs57BEM"],
+      ["biology-2012", 40, "QnQe0xW_JY4", "izRvPaAWgyw"],
+      ["botany", 15, "2th5lAd-77A", "eLt9itd3KhA"],
+      ["climate-energy", 12, "9PFhrpyWV-w", "3p51wKUuwOU"],
+      ["film-production", 15, "TARsoxST0tQ", "02mqlmcZzVs"],
+      ["futures-of-ai", 5, "UFJQV5Jb0pY", "iNdZFKfExZ8"],
+      ["games", 29, "QPqR2wOs8WI", "bMQprYPlK54"],
+      ["geology", 23, "ypH6dR7YGfU", "y5RqfQvCaBY"],
+      ["latin-american-literature", 13, "hX6lzkQBmhc", "AA63Dd58fFc"],
+      ["literature", 45, "MSYw502dJNY", "dhgEpr87Yac"],
+      ["native-american-history", 24, "XHXC0uOLOkA", "2XWGxVuOwJQ"],
+      ["outbreak-science", 15, "_qAzXb7mA2g", "Dpah15G3LSA"],
+      ["political-theory", 13, "qz2-X1LrOPg", "A0z7Vs1tnZs"],
+      ["fundamentos-quimica", 11, "G7wUMpsB5k8", "4DKNv-8EUBI"],
+      ["religions", 24, "2RVSmLxyDpM", "KkWD6RsSAc0"],
+      ["scientific-thinking", 7, "d2r7Bk1NlgU", "NaMcw8_10Yg"],
+      ["sex-ed", 15, "SkSItIS_Xl0", "iNG9UYbZHws"],
+      ["world-history-2", 30, "wyzi9GNZFMU", "k7dTDjRnBqU"],
+      ["zoology", 14, "zgM0F6UmC70", "rH63obMflyo"],
     ] as const) {
       const course = parseCatalog(catalog).find((course) => course.id === id)!;
       const detail = parseDetail(courseFiles[`../../../public/data/courses/${id}.json`], course);
@@ -66,6 +88,20 @@ describe("curated catalog contracts", () => {
       expect(detail.episodes[0]?.videoId).toBe(first);
       expect(detail.episodes.at(-1)?.videoId).toBe(last);
     }
+  });
+  it("keeps the corrected Zoology lessons instead of the preceding website embeds", () => {
+    const course = parseCatalog(catalog).find((course) => course.id === "zoology")!;
+    const detail = parseDetail(courseFiles["../../../public/data/courses/zoology.json"], course);
+    expect(detail.episodes[8]).toMatchObject({
+      number: 9,
+      title: "Reproduction",
+      videoId: "poLyJDVjKlM",
+    });
+    expect(detail.episodes[10]).toMatchObject({
+      number: 11,
+      title: "Parasites",
+      videoId: "uliiNX1gni8",
+    });
   });
   it("accepts canonical episode upload sources only for the matching video", () => {
     const course = parseCatalog(catalog)[0]!;
@@ -123,5 +159,43 @@ describe("curated catalog contracts", () => {
     const duplicate = structuredClone(detail);
     duplicate.episodes[1]!.videoId = duplicate.episodes[0]!.videoId;
     expect(() => parseDetail(duplicate, course)).toThrow();
+  });
+});
+
+describe("multi-season playlists", () => {
+  it("uses each original playlist on both sides of season boundaries", () => {
+    for (const id of ["big-history", "literature"]) {
+      const course = parseCatalog(catalog).find((course) => course.id === id)!;
+      const detail = parseDetail(courseFiles[`../../../public/data/courses/${id}.json`], course);
+      for (const [index, part] of course.playlistParts!.entries()) {
+        expect(playlistForEpisode(course, detail.episodes[part.startEpisode - 1]!)).toBe(
+          part.playlistId,
+        );
+        if (index > 0)
+          expect(playlistForEpisode(course, detail.episodes[part.startEpisode - 2]!)).toBe(
+            course.playlistParts![index - 1]!.playlistId,
+          );
+      }
+    }
+  });
+  it("rejects gaps at the start, repeated boundaries, and parts outside the course", () => {
+    const course = catalog.find((course) => course.id === "big-history")!;
+    for (const starts of [
+      [2, 11],
+      [1, 1],
+      [1, 17],
+    ]) {
+      expect(() =>
+        parseCatalog([
+          {
+            ...course,
+            playlistParts: course.playlistParts!.map((part, index) => ({
+              ...part,
+              startEpisode: starts[index],
+            })),
+          },
+        ]),
+      ).toThrow();
+    }
   });
 });

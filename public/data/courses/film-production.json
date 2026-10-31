@@ -1,0 +1,95 @@
+{
+  "courseId": "film-production",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Screenplays",
+      "videoId": "TARsoxST0tQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/screenplays-crash-course-film-production-1/"
+    },
+    {
+      "number": 2,
+      "title": "Pitching and Pre-Production",
+      "videoId": "JE53JL60ihc",
+      "sourceUrl": "https://thecrashcourse.com/courses/pitching-and-pre-production-crash-course-film-production-2/"
+    },
+    {
+      "number": 3,
+      "title": "The Filmmaker’s Army",
+      "videoId": "TpAHZJc5In0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-filmmakers-army-crash-course-film-production-3/"
+    },
+    {
+      "number": 4,
+      "title": "Dissecting The Camera",
+      "videoId": "ivCBfJ1v_Qw",
+      "sourceUrl": "https://thecrashcourse.com/courses/dissecting-the-camera-crash-course-film-production-4/"
+    },
+    {
+      "number": 5,
+      "title": "Sound Production",
+      "videoId": "sgiZb8jJgF8",
+      "sourceUrl": "https://thecrashcourse.com/courses/sound-production-crash-course-film-production-5/"
+    },
+    {
+      "number": 6,
+      "title": "Producers",
+      "videoId": "zU_1ClPIOAg",
+      "sourceUrl": "https://thecrashcourse.com/courses/producers-crash-course-film-production-6/"
+    },
+    {
+      "number": 7,
+      "title": "The Director",
+      "videoId": "7lIpcJVbbSA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-director-crash-course-film-production-7/"
+    },
+    {
+      "number": 8,
+      "title": "The Cinematographer",
+      "videoId": "vR_l1vTfaNk",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-cinematographer-crash-course-film-production-8/"
+    },
+    {
+      "number": 9,
+      "title": "Designing the World of Film",
+      "videoId": "Q3BcS8Uwl9U",
+      "sourceUrl": "https://thecrashcourse.com/courses/designing-the-world-of-film-crash-course-film-production-9/"
+    },
+    {
+      "number": 10,
+      "title": "Grip and Electric",
+      "videoId": "jBoOpXpJhro",
+      "sourceUrl": "https://thecrashcourse.com/courses/grip-and-electric-crash-course-film-production-10/"
+    },
+    {
+      "number": 11,
+      "title": "Special Effects",
+      "videoId": "UFkVWnk26rA",
+      "sourceUrl": "https://thecrashcourse.com/courses/special-effects-crash-course-film-production-11/"
+    },
+    {
+      "number": 12,
+      "title": "The Editor",
+      "videoId": "esa0NeQI8oc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-editor-crash-course-film-production-12/"
+    },
+    {
+      "number": 13,
+      "title": "Marketing",
+      "videoId": "04C3B1Ztwf0",
+      "sourceUrl": "https://thecrashcourse.com/courses/marketing-crash-course-film-production-13/"
+    },
+    {
+      "number": 14,
+      "title": "To Film School or Not To Film School",
+      "videoId": "rIrLuqTRqr0",
+      "sourceUrl": "https://thecrashcourse.com/courses/to-film-school-or-not-to-film-school-crash-course-film-production-14/"
+    },
+    {
+      "number": 15,
+      "title": "Television Production",
+      "videoId": "02mqlmcZzVs",
+      "sourceUrl": "https://thecrashcourse.com/courses/television-production-crash-course-film-production-15/"
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "courseId": "black-american-history",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "The Transatlantic Slave Trade",
+      "videoId": "S72vvfBTQws",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-transatlantic-slave-trade-crash-course-black-american-history-1/"
+    },
+    {
+      "number": 2,
+      "title": "Slavery in the American Colonies",
+      "videoId": "G4syEkyOzmY",
+      "sourceUrl": "https://thecrashcourse.com/courses/slavery-in-the-american-colonies-crash-course-black-american-history-2/"
+    },
+    {
+      "number": 3,
+      "title": "Elizabeth Key",
+      "videoId": "hJUknOKAv1M",
+      "sourceUrl": "https://thecrashcourse.com/courses/elizabeth-key-crash-course-black-american-history-3/"
+    },
+    {
+      "number": 4,
+      "title": "Slave Codes",
+      "videoId": "gu9RIGGXeNo",
+      "sourceUrl": "https://thecrashcourse.com/courses/slave-codes-crash-course-black-american-history-4/"
+    },
+    {
+      "number": 5,
+      "title": "The Germantown Petition Against Slavery",
+      "videoId": "XT8q6cYsVpc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-germantown-petition-against-slavery-crash-course-black-american-history-5/"
+    },
+    {
+      "number": 6,
+      "title": "The Stono Rebellion",
+      "videoId": "pND-9KhM1Xw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-stono-rebellion-crash-course-black-american-history-6/"
+    },
+    {
+      "number": 7,
+      "title": "Phillis Wheatley",
+      "videoId": "a3l9Pmza7Gs",
+      "sourceUrl": "https://thecrashcourse.com/courses/phillis-wheatley-crash-course-black-american-history-7/"
+    },
+    {
+      "number": 8,
+      "title": "The American Revolution",
+      "videoId": "y75yPx9WKHY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-american-revolution-crash-course-black-american-history-8/"
+    },
+    {
+      "number": 9,
+      "title": "The US Constitution, 3/5, and the Slave Trade Clause",
+      "videoId": "57xUbch1viI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-us-constitution-3-5-and-the-slave-trade-clause-crash-course-black-american-history-9/"
+    },
+    {
+      "number": 10,
+      "title": "The Fugitive Slave Act of 1793",
+      "videoId": "AcdOWKiKgWU",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-fugitive-slave-act-of-1793-crash-course-black-american-history-10/"
+    },
+    {
+      "number": 11,
+      "title": "Women’s Experience Under Slavery",
+      "videoId": "eAe7ETfQ_aA",
+      "sourceUrl": "https://thecrashcourse.com/courses/womens-experience-under-slavery-crash-course-black-american-history-11/"
+    },
+    {
+      "number": 12,
+      "title": "The Louisiana Rebellion of 1811",
+      "videoId": "fYOA_sS5q-A",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-louisiana-rebellion-of-1811-crash-course-black-american-history-12/"
+    },
+    {
+      "number": 13,
+      "title": "The Rise of Cotton",
+      "videoId": "83eJfEFFZ74",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-rise-of-cotton-crash-course-black-american-history-13/"
+    },
+    {
+      "number": 14,
+      "title": "Maria Stewart",
+      "videoId": "nsVnWD5PrIg",
+      "sourceUrl": "https://thecrashcourse.com/courses/maria-stewart-crash-course-black-american-history-14/"
+    },
+    {
+      "number": 15,
+      "title": "The Underground Railroad",
+      "videoId": "Byh-HityBIM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-underground-railroad-crash-course-black-american-history-15/"
+    },
+    {
+      "number": 16,
+      "title": "The Dred Scott Decision",
+      "videoId": "9VffLWl8asY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-dred-scott-decision-crash-course-black-american-history-16/"
+    },
+    {
+      "number": 17,
+      "title": "Frederick Douglass",
+      "videoId": "7QOTexnD-NE",
+      "sourceUrl": "https://thecrashcourse.com/courses/frederick-douglass-crash-course-black-american-history-17/"
+    },
+    {
+      "number": 18,
+      "title": "Black Americans in the Civil War",
+      "videoId": "_NgdnsjPFNE",
+      "sourceUrl": "https://thecrashcourse.com/courses/black-americans-in-the-civil-war-crash-course-black-american-history-18/"
+    },
+    {
+      "number": 19,
+      "title": "Reconstruction",
+      "videoId": "NGPAnLDzQYY",
+      "sourceUrl": "https://thecrashcourse.com/courses/reconstruction-crash-course-black-american-history-19/"
+    },
+    {
+      "number": 20,
+      "title": "Ida B. Wells",
+      "videoId": "ocbAfpjibr4",
+      "sourceUrl": "https://thecrashcourse.com/courses/ida-b-wells-crash-course-black-american-history-20/"
+    },
+    {
+      "number": 21,
+      "title": "Plessy v Ferguson and Segregation",
+      "videoId": "nbZUQGPMTjk",
+      "sourceUrl": "https://thecrashcourse.com/courses/plessy-v-ferguson-and-segregation-crash-course-black-american-history-21/"
+    },
+    {
+      "number": 22,
+      "title": "Booker T. Washington and W.E.B. DuBois",
+      "videoId": "zHn-vSTMOWE",
+      "sourceUrl": "https://thecrashcourse.com/courses/booker-t-washington-and-w-e-b-dubois-crash-course-black-american-history-22/"
+    },
+    {
+      "number": 23,
+      "title": "The Black Women’s Club Movement",
+      "videoId": "Cy2ODAB8mJs",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-black-womens-club-movement-crash-course-black-american-history-23/"
+    },
+    {
+      "number": 24,
+      "title": "The Great Migration",
+      "videoId": "Woh63FlFDBk",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-great-migration-crash-course-black-american-history-24/"
+    },
+    {
+      "number": 25,
+      "title": "The Red Summer of 1919",
+      "videoId": "Q_1Zwm8N_vo",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-red-summer-of-1919-crash-course-black-american-history-25/"
+    },
+    {
+      "number": 26,
+      "title": "Arts and Letters of the Harlem Renaissance",
+      "videoId": "vKaegbtcE00",
+      "sourceUrl": "https://thecrashcourse.com/courses/arts-and-letters-of-the-harlem-renaissance-crash-course-black-american-history-26/"
+    },
+    {
+      "number": 27,
+      "title": "Political Thought in the Harlem Renaissance",
+      "videoId": "0HY8d4ABHQA",
+      "sourceUrl": "https://thecrashcourse.com/courses/political-thought-in-the-harlem-renaissance-crash-course-black-american-history-27/"
+    },
+    {
+      "number": 28,
+      "title": "The Great Depression",
+      "videoId": "f14kiGoexVg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-great-depression-crash-course-black-american-history-28/"
+    },
+    {
+      "number": 29,
+      "title": "The Tuskegee Experiment",
+      "videoId": "56gqCXlUCoE",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-tuskegee-experiment-crash-course-black-american-history-29/"
+    },
+    {
+      "number": 30,
+      "title": "Zora Neale Hurston",
+      "videoId": "72ABMa_PuHU",
+      "sourceUrl": "https://thecrashcourse.com/courses/zora-neale-hurston-crash-course-black-american-history-30/"
+    },
+    {
+      "number": 31,
+      "title": "World War II",
+      "videoId": "U7wrwPnQVg4",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-war-ii-crash-course-black-american-history-31/"
+    },
+    {
+      "number": 32,
+      "title": "Randolph, Rustin, and the Origins of the March on Washington",
+      "videoId": "vDNkw13NAA0",
+      "sourceUrl": "https://thecrashcourse.com/courses/randolph-rustin-and-the-origins-of-the-march-on-washington-crash-course-black-american-history-32/"
+    },
+    {
+      "number": 33,
+      "title": "School Segregation and Brown v Board",
+      "videoId": "NBlqcAEv4nk",
+      "sourceUrl": "https://thecrashcourse.com/courses/school-segregation-and-brown-v-board-crash-course-black-american-history-33/"
+    },
+    {
+      "number": 34,
+      "title": "Emmet Till",
+      "videoId": "4HljsKwpv3g",
+      "sourceUrl": "https://thecrashcourse.com/courses/emmet-till-crash-course-black-american-history-34/"
+    },
+    {
+      "number": 35,
+      "title": "The Montgomery Bus Boycott",
+      "videoId": "ylOpide9dus",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-montgomery-bus-boycott-crash-course-black-american-history-35/"
+    },
+    {
+      "number": 36,
+      "title": "Martin Luther King, Jr",
+      "videoId": "BmeUT7zH62E",
+      "sourceUrl": "https://thecrashcourse.com/courses/martin-luther-king-jr-crash-course-black-american-history-36/"
+    },
+    {
+      "number": 37,
+      "title": "Student Civil Rights Activism",
+      "videoId": "F624q1jBd0Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/student-civil-rights-activism-crash-course-black-american-history-37/"
+    },
+    {
+      "number": 38,
+      "title": "Malcolm X and the Black Power Movement",
+      "videoId": "8woU9Rq0cPI",
+      "sourceUrl": "https://thecrashcourse.com/courses/malcolm-x-and-the-black-power-movement-crash-course-black-american-history-38/"
+    },
+    {
+      "number": 39,
+      "title": "The Black Panther Party",
+      "videoId": "ao0Jozn_7HM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-black-panther-party-crash-course-black-american-history-39/"
+    },
+    {
+      "number": 40,
+      "title": "Women and the Black Power Movement",
+      "videoId": "j-OMR3h4Isw",
+      "sourceUrl": "https://thecrashcourse.com/courses/women-and-the-black-power-movement-crash-course-black-american-history-40/"
+    },
+    {
+      "number": 41,
+      "title": "Marsha P Johnson and the Stonewall Rebellion",
+      "videoId": "ftcvaJCKVjs",
+      "sourceUrl": "https://thecrashcourse.com/courses/marsha-p-johnson-and-the-stonewall-rebellion-crash-course-black-american-history-41/"
+    },
+    {
+      "number": 42,
+      "title": "War on Drugs",
+      "videoId": "shGpC_WVDQk",
+      "sourceUrl": "https://thecrashcourse.com/courses/war-on-drugs-crash-course-black-american-history-42/"
+    },
+    {
+      "number": 43,
+      "title": "Shirley Chisolm",
+      "videoId": "ATfkyVN7M5c",
+      "sourceUrl": "https://thecrashcourse.com/courses/shirley-chisolm-crash-course-black-american-history-43/"
+    },
+    {
+      "number": 44,
+      "title": "Jesse Jackson",
+      "videoId": "C2vl1mixqLU",
+      "sourceUrl": "https://thecrashcourse.com/courses/jesse-jackson-crash-course-black-american-history-44/"
+    },
+    {
+      "number": 45,
+      "title": "LA Uprisings",
+      "videoId": "prKS4YsSnmE",
+      "sourceUrl": "https://thecrashcourse.com/courses/la-uprisings-crash-course-black-american-history-45/"
+    },
+    {
+      "number": 46,
+      "title": "Anita Hill and Clarence Thomas",
+      "videoId": "t_uMce7lK94",
+      "sourceUrl": "https://thecrashcourse.com/courses/anita-hill-and-clarence-thomas-crash-course-black-american-history-46/"
+    },
+    {
+      "number": 47,
+      "title": "Rap and Hip Hop",
+      "videoId": "RHCA5b9TkVg",
+      "sourceUrl": "https://thecrashcourse.com/courses/rap-and-hip-hop-crash-course-black-american-history-47/"
+    },
+    {
+      "number": 48,
+      "title": "Toni Morrison",
+      "videoId": "CbzLFgW_Wgc",
+      "sourceUrl": "https://thecrashcourse.com/courses/toni-morrison-crash-course-black-american-history-48/"
+    },
+    {
+      "number": 49,
+      "title": "Hurricane Katrina",
+      "videoId": "VmqZvlj07-w",
+      "sourceUrl": "https://thecrashcourse.com/courses/hurricane-katrina-crash-course-black-american-history-49/"
+    },
+    {
+      "number": 50,
+      "title": "Barack Obama",
+      "videoId": "VKWEwBxDd9k",
+      "sourceUrl": "https://thecrashcourse.com/courses/barack-obama-crash-course-black-american-history-50/"
+    },
+    {
+      "number": 51,
+      "title": "Black Lives Matter",
+      "videoId": "i_OU4EcWQ6I",
+      "sourceUrl": "https://thecrashcourse.com/courses/black-lives-matter-crash-course-black-american-history-51/"
+    }
+  ]
+}

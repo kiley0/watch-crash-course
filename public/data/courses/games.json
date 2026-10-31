@@ -1,0 +1,179 @@
+{
+  "courseId": "games",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What is a Game?",
+      "videoId": "QPqR2wOs8WI",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-game-crash-course-games-1/"
+    },
+    {
+      "number": 2,
+      "title": "Ancient Games",
+      "videoId": "H1lv3cOmlzM",
+      "sourceUrl": "https://thecrashcourse.com/courses/ancient-games-crash-course-games-2/"
+    },
+    {
+      "number": 3,
+      "title": "The Dawn of Video Games",
+      "videoId": "IGLdlkZozpI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-dawn-of-video-games-crash-course-games-3/"
+    },
+    {
+      "number": 4,
+      "title": "Atari and the Business of Video Games",
+      "videoId": "r8gHnuv7U_o",
+      "sourceUrl": "https://thecrashcourse.com/courses/atari-and-the-business-of-video-games-crash-course-games-4/"
+    },
+    {
+      "number": 5,
+      "title": "The First Home Consoles",
+      "videoId": "npOPGrAcFLg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-first-home-consoles-crash-course-games-5/"
+    },
+    {
+      "number": 6,
+      "title": "The Video Game Crash of 1983",
+      "videoId": "x4F_sZiAl7s",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-video-game-crash-of-1983-crash-course-games-6/"
+    },
+    {
+      "number": 7,
+      "title": "Nintendo and a New Standard for Video Games",
+      "videoId": "34zvOgLZOY4",
+      "sourceUrl": "https://thecrashcourse.com/courses/nintendo-and-a-new-standard-for-video-games-crash-course-games-7/"
+    },
+    {
+      "number": 8,
+      "title": "Sega and More Mature Video Games",
+      "videoId": "MjWdhGRGL5E",
+      "sourceUrl": "https://thecrashcourse.com/courses/sega-and-more-mature-video-games-crash-course-games-8/"
+    },
+    {
+      "number": 9,
+      "title": "Playstation and More Immersive Video Games",
+      "videoId": "yq2n11aPvog",
+      "sourceUrl": "https://thecrashcourse.com/courses/playstation-and-more-immersive-video-games-crash-course-games-9/"
+    },
+    {
+      "number": 10,
+      "title": "Microsoft and Connected Consoles",
+      "videoId": "eE8Jac43RBo",
+      "sourceUrl": "https://thecrashcourse.com/courses/microsoft-and-connected-consoles-crash-course-games-10/"
+    },
+    {
+      "number": 11,
+      "title": "Casual Gaming",
+      "videoId": "fa-TFvPKpog",
+      "sourceUrl": "https://thecrashcourse.com/courses/casual-gaming-crash-course-games-11/"
+    },
+    {
+      "number": 12,
+      "title": "MMORPGs",
+      "videoId": "YZ5j5fy-LiQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/mmorpgs-crash-course-games-12/"
+    },
+    {
+      "number": 13,
+      "title": "Card Games",
+      "videoId": "FfC4LPYxTrs",
+      "sourceUrl": "https://thecrashcourse.com/courses/card-games-crash-course-games-13/"
+    },
+    {
+      "number": 14,
+      "title": "Board Games",
+      "videoId": "TVm4ckokD84",
+      "sourceUrl": "https://thecrashcourse.com/courses/board-games-crash-course-games-14/"
+    },
+    {
+      "number": 15,
+      "title": "Educational Games",
+      "videoId": "ORSUg0C8qR8",
+      "sourceUrl": "https://thecrashcourse.com/courses/educational-games-crash-course-games-15/"
+    },
+    {
+      "number": 16,
+      "title": "Psychology of Gaming",
+      "videoId": "MYJBRWT7JGU",
+      "sourceUrl": "https://thecrashcourse.com/courses/psychology-of-gaming-crash-course-games-16/"
+    },
+    {
+      "number": 17,
+      "title": "The Olympics, FIFA, and Why We Love Sports",
+      "videoId": "wWZIhgluQvw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-olympics-fifa-and-why-we-love-sports-crash-course-games-17/"
+    },
+    {
+      "number": 18,
+      "title": "Role-playing Games",
+      "videoId": "qqOQPv2rv_I",
+      "sourceUrl": "https://thecrashcourse.com/courses/role-playing-games-crash-course-games-18/"
+    },
+    {
+      "number": 19,
+      "title": "Game Design",
+      "videoId": "TOQTZ6N_eVg",
+      "sourceUrl": "https://thecrashcourse.com/courses/game-design-crash-course-games-19/"
+    },
+    {
+      "number": 20,
+      "title": "PC Gaming",
+      "videoId": "ADTTXRxVUcY",
+      "sourceUrl": "https://thecrashcourse.com/courses/pc-gaming-crash-course-games-20/"
+    },
+    {
+      "number": 21,
+      "title": "The Future of Virtual Reality",
+      "videoId": "BfcBjJ3c9lg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-virtual-reality-crash-course-games-21/"
+    },
+    {
+      "number": 22,
+      "title": "Open World Games",
+      "videoId": "0f6K1bzXCcs",
+      "sourceUrl": "https://thecrashcourse.com/courses/open-world-games-crash-course-games-22/"
+    },
+    {
+      "number": 23,
+      "title": "Handhelds",
+      "videoId": "ZEwbHWspFWY",
+      "sourceUrl": "https://thecrashcourse.com/courses/handhelds-crash-course-games-23/"
+    },
+    {
+      "number": 24,
+      "title": "Input Devices",
+      "videoId": "rR_mmsfIzzs",
+      "sourceUrl": "https://thecrashcourse.com/courses/input-devices-crash-course-games-24/"
+    },
+    {
+      "number": 25,
+      "title": "The History of Game Shows",
+      "videoId": "7EcjYQj23QE",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-game-shows-crash-course-games-25/"
+    },
+    {
+      "number": 26,
+      "title": "LARP",
+      "videoId": "SUYb29YV47w",
+      "sourceUrl": "https://thecrashcourse.com/courses/larp-crash-course-games-26/"
+    },
+    {
+      "number": 27,
+      "title": "Gambling",
+      "videoId": "DOhJX7SqJS8",
+      "sourceUrl": "https://thecrashcourse.com/courses/gambling-crash-course-games-27/"
+    },
+    {
+      "number": 28,
+      "title": "The Pokémon Phenomenon",
+      "videoId": "x4lPCUGxx5o",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-pokemon-phenomenon-crash-course-games-28/"
+    },
+    {
+      "number": 29,
+      "title": "The Future of Gaming",
+      "videoId": "bMQprYPlK54",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-gaming-crash-course-games-29/"
+    }
+  ]
+}

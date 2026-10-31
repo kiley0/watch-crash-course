@@ -1,0 +1,89 @@
+{
+  "courseId": "zoology",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What is an Animal?",
+      "videoId": "zgM0F6UmC70",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-an-animal-crash-course-zoology-1/"
+    },
+    {
+      "number": 2,
+      "title": "What's the Most \"Animal\" Animal?",
+      "videoId": "lDMfsb09Hw4",
+      "sourceUrl": "https://thecrashcourse.com/courses/whats-the-most-animal-animal-crash-course-zoology-2/"
+    },
+    {
+      "number": 3,
+      "title": "Diversity of Bodies & Sizes (but mostly crabs)",
+      "videoId": "C118ADYpEqo",
+      "sourceUrl": "https://thecrashcourse.com/courses/diversity-of-bodies-sizes-but-mostly-crabs-crash-course-zoology-3/"
+    },
+    {
+      "number": 4,
+      "title": "How & What Animals Eat",
+      "videoId": "aJKkUFR4eDA",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-what-animals-eat-crash-course-zoology-4/"
+    },
+    {
+      "number": 5,
+      "title": "Brainy & Brainless Animals",
+      "videoId": "_r9kSA3s2fQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/brainy-brainless-animals-crash-course-zoology-5/"
+    },
+    {
+      "number": 6,
+      "title": "How Animals See",
+      "videoId": "r4FT1YOjv6s",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-animals-see-crash-course-zoology-6/"
+    },
+    {
+      "number": 7,
+      "title": "How Animals Hear",
+      "videoId": "KN5Bjh54uB8",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-animals-hear-crash-course-zoology-7/"
+    },
+    {
+      "number": 8,
+      "title": "Ancestral & Weird Senses",
+      "videoId": "jszmqmOcrlM",
+      "sourceUrl": "https://thecrashcourse.com/courses/ancestral-weird-senses-crash-course-zoology-8/"
+    },
+    {
+      "number": 9,
+      "title": "Reproduction",
+      "videoId": "poLyJDVjKlM",
+      "sourceUrl": "https://thecrashcourse.com/courses/reproduction-crash-course-zoology-9/"
+    },
+    {
+      "number": 10,
+      "title": "Animals Working Together",
+      "videoId": "_1g9ip9Y7n4",
+      "sourceUrl": "https://thecrashcourse.com/courses/animals-working-together-crash-course-zoology-10/"
+    },
+    {
+      "number": 11,
+      "title": "Parasites",
+      "videoId": "uliiNX1gni8",
+      "sourceUrl": "https://thecrashcourse.com/courses/parasites-crash-course-zoology-11/"
+    },
+    {
+      "number": 12,
+      "title": "Phylogenetic Mysteries",
+      "videoId": "cVaw7nF72Aw",
+      "sourceUrl": "https://thecrashcourse.com/courses/phylogenic-mysteries-crash-course-zoology-12/"
+    },
+    {
+      "number": 13,
+      "title": "What is a Species?",
+      "videoId": "gmERYByX7_s",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-species-crash-course-zoology-13/"
+    },
+    {
+      "number": 14,
+      "title": "Frontiers in Zoology",
+      "videoId": "rH63obMflyo",
+      "sourceUrl": "https://thecrashcourse.com/courses/frontiers-in-zoology-crash-course-zoology-14/"
+    }
+  ]
+}

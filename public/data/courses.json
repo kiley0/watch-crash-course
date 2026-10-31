@@ -372,5 +372,281 @@
     "playlistId": "PL8dPuuaLjXtNppY8ZHMPDH5TKK2UpU8Ng",
     "sourceUrl": "https://thecrashcourse.com/topic/historyofscience/",
     "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "black-american-history",
+    "title": "Black American History",
+    "subject": "History",
+    "host": "Clint Smith",
+    "description": "Explore Black American experiences, resistance, culture, and political movements, from slavery and emancipation to the civil rights era and Black Lives Matter.",
+    "playlistId": "PL8dPuuaLjXtNYJO8JWpXO2JP0ezgxsrJJ",
+    "episodeCount": 51,
+    "sourceUrl": "https://thecrashcourse.com/topic/bah/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "big-history",
+    "title": "Big History",
+    "subject": "History",
+    "host": "John Green, Hank Green, and Emily Graslie",
+    "description": "Zoom out from the Big Bang to human civilization and the future of the universe. Includes both seasons of Crash Course Big History.",
+    "playlistId": "PL8dPuuaLjXtMczXZUmjb3mZSU1Roxnrey",
+    "episodeCount": 16,
+    "sourceUrl": "https://thecrashcourse.com/topic/bighistory/",
+    "reviewedAt": "2026-10-30",
+    "playlistParts": [
+      {
+        "title": "Season 1",
+        "playlistId": "PL8dPuuaLjXtMczXZUmjb3mZSU1Roxnrey",
+        "startEpisode": 1
+      },
+      {
+        "title": "Season 2",
+        "playlistId": "PL8dPuuaLjXtPmGl0BGvoYcS8_AAnPrC4p",
+        "startEpisode": 11
+      }
+    ]
+  },
+  {
+    "id": "big-questions-us-government",
+    "title": "Big Questions on U.S. Government",
+    "subject": "Social sciences",
+    "host": "Kousha Navidar",
+    "description": "An ongoing series exploring questions about U.S. elections, political divisions, campaign money, and government power. Includes all currently published lessons.",
+    "playlistId": "PLSIukYXNwJJQ",
+    "episodeCount": 6,
+    "sourceUrl": "https://thecrashcourse.com/topic/bigquestions-usgovernment/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "biologia",
+    "title": "Biología",
+    "subject": "Science",
+    "host": "Mini Contreras",
+    "description": "En español: explora la ciencia de la vida, desde las células y la genética hasta la evolución, los ecosistemas y las conexiones entre todos los seres vivos.",
+    "playlistId": "PLkcbA0DkuFjWQZzjwF6w_gUrE_5_d3vd3",
+    "episodeCount": 50,
+    "sourceUrl": "https://thecrashcourse.com/topic/biologia/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "biology-2012",
+    "title": "Biology (2012)",
+    "subject": "Science",
+    "host": "Hank Green",
+    "description": "Revisit the original 2012 Biology series, covering cells, genetics, evolution, anatomy, and the diversity of life. Distinct from the newer Biology course.",
+    "playlistId": "PL3EED4C1D684D3ADF",
+    "episodeCount": 40,
+    "sourceUrl": "https://thecrashcourse.com/topic/biology-2012/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "botany",
+    "title": "Botany",
+    "subject": "Science",
+    "host": "Alexis Nikole Nelson",
+    "description": "Get to know plants: how they evolved, grow, reproduce, and sustain ecosystems, food systems, and human societies.",
+    "playlistId": "PL8dPuuaLjXtOhFQOVdutRTxvUI1UeCcax",
+    "episodeCount": 15,
+    "sourceUrl": "https://thecrashcourse.com/topic/botany/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "climate-energy",
+    "title": "Climate & Energy",
+    "subject": "Science",
+    "host": "M Jackson",
+    "description": "Understand the evidence for climate change, the energy systems driving emissions, and the technologies and choices involved in responding.",
+    "playlistId": "PL8dPuuaLjXtMx8ZIQV9NduU_HFjDwykuj",
+    "episodeCount": 12,
+    "sourceUrl": "https://thecrashcourse.com/topic/climate/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "film-production",
+    "title": "Film Production",
+    "subject": "Humanities",
+    "host": "Lily Gladstone",
+    "description": "Follow a film from screenplay to screen, with a look at directing, cameras, lighting, sound, editing, and the people behind a production.",
+    "playlistId": "PL8dPuuaLjXtPnisE6CrrLO00Qoe67TDpx",
+    "episodeCount": 15,
+    "sourceUrl": "https://thecrashcourse.com/topic/filmproduction/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "futures-of-ai",
+    "title": "Futures of AI",
+    "subject": "Technology",
+    "host": "Kousha Navidar",
+    "description": "Explore possible futures for artificial intelligence, including its capabilities, social effects, risks, and approaches to governance.",
+    "playlistId": "PL8dPuuaLjXtMDCIyvFA5gbgd9AOsRGOr0",
+    "episodeCount": 5,
+    "sourceUrl": "https://thecrashcourse.com/topic/futuresofai/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "games",
+    "title": "Games",
+    "subject": "Humanities",
+    "host": "Andre Meadows",
+    "description": "Explore why people play, how games are designed, and the history of board games, role-playing games, video games, and gaming communities.",
+    "playlistId": "PL8dPuuaLjXtPTrc_yg73RghJEOdobAplG",
+    "episodeCount": 29,
+    "sourceUrl": "https://thecrashcourse.com/topic/games/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "geology",
+    "title": "Geology",
+    "subject": "Science",
+    "host": "Sage",
+    "description": "Explore rocks, plate tectonics, fossils, and the forces that shape Earth. Includes all 23 currently published lessons in this ongoing series.",
+    "playlistId": "PL8dPuuaLjXtMuxfQl-TBfSHokgpbLvKX9",
+    "episodeCount": 23,
+    "sourceUrl": "https://thecrashcourse.com/topic/geology/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "latin-american-literature",
+    "title": "Latin American Literature",
+    "subject": "Humanities",
+    "host": "Curly Velasquez",
+    "description": "Read across Latin America through stories, poetry, history, and the writers who connect them.",
+    "playlistId": "PL8dPuuaLjXtMK1IYcpCXJ7Eo_FVSKhpey",
+    "episodeCount": 13,
+    "sourceUrl": "https://thecrashcourse.com/topic/latinamericanliterature/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "literature",
+    "title": "Literature",
+    "subject": "Humanities",
+    "host": "John Green",
+    "description": "Explore novels, poetry, and plays across all four seasons of Crash Course Literature.",
+    "playlistId": "PL8dPuuaLjXtOeEc9ME62zTfqc0h6Pe8vb",
+    "episodeCount": 45,
+    "sourceUrl": "https://thecrashcourse.com/topic/literature/",
+    "reviewedAt": "2026-10-30",
+    "playlistParts": [
+      {
+        "title": "Season 1",
+        "playlistId": "PL8dPuuaLjXtOeEc9ME62zTfqc0h6Pe8vb",
+        "startEpisode": 1
+      },
+      {
+        "title": "Season 2",
+        "playlistId": "PL8dPuuaLjXtOv-sO3lOpVm54jhwWAf_jR",
+        "startEpisode": 9
+      },
+      {
+        "title": "Season 3",
+        "playlistId": "PL8dPuuaLjXtNEWbqDPdM8FrNHuyVxPQl_",
+        "startEpisode": 25
+      },
+      {
+        "title": "Season 4",
+        "playlistId": "PL8dPuuaLjXtPlnUoPa11EoTZbWZLsQVMs",
+        "startEpisode": 34
+      }
+    ]
+  },
+  {
+    "id": "native-american-history",
+    "title": "Native American History",
+    "subject": "History",
+    "host": "Che Jim",
+    "description": "Explore the histories, cultures, and contemporary lives of Indigenous peoples in North America.",
+    "playlistId": "PL8dPuuaLjXtNNaritQa7QqwEJeQHH0TxX",
+    "episodeCount": 24,
+    "sourceUrl": "https://thecrashcourse.com/topic/nativeamericanhistory/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "outbreak-science",
+    "title": "Outbreak Science",
+    "subject": "Science",
+    "host": "Dr. Pardis Sabeti",
+    "description": "Learn how diseases spread, how outbreaks are studied, and how communities can respond.",
+    "playlistId": "PL8dPuuaLjXtPkACD-BkU-oM6PUotjdCEk",
+    "episodeCount": 15,
+    "sourceUrl": "https://thecrashcourse.com/topic/outbreakscience/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "political-theory",
+    "title": "Political Theory",
+    "subject": "Social sciences",
+    "host": "Ellie Anderson",
+    "description": "Examine democracy, justice, power, and the ideas behind political life.",
+    "playlistId": "PL8dPuuaLjXtMLFBLgZgEDglkTrApbatwk",
+    "episodeCount": 13,
+    "sourceUrl": "https://thecrashcourse.com/topic/politicaltheory/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "fundamentos-quimica",
+    "title": "Fundamentos de Química",
+    "subject": "Science",
+    "host": "Corina",
+    "description": "En español: explora los átomos, la tabla periódica y las reacciones que explican nuestro mundo.",
+    "playlistId": "PLkcbA0DkuFjWck2p8pYgfmQSBzmvBmIHn",
+    "episodeCount": 11,
+    "sourceUrl": "https://thecrashcourse.com/topic/quimica/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "religions",
+    "title": "Religions",
+    "subject": "Humanities",
+    "host": "John Green",
+    "description": "Explore religious traditions, practices, and the many ways people make meaning.",
+    "playlistId": "PL8dPuuaLjXtNDV8GjzfScxgEe4OgIlh3c",
+    "episodeCount": 24,
+    "sourceUrl": "https://thecrashcourse.com/topic/religions/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "scientific-thinking",
+    "title": "Scientific Thinking",
+    "subject": "Science",
+    "host": "Hank Green",
+    "description": "Build a toolkit for evaluating evidence, recognizing bias, and asking better questions.",
+    "playlistId": "PL8dPuuaLjXtN6j3y85b7xbJDC8LTgdRJG",
+    "episodeCount": 7,
+    "sourceUrl": "https://thecrashcourse.com/topic/scientificthinking/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "sex-ed",
+    "title": "Sex Ed",
+    "subject": "Science",
+    "host": "Shan Boodram",
+    "description": "Learn about bodies, relationships, consent, and sexual health through evidence-based education.",
+    "playlistId": "PL8dPuuaLjXtMweg6Yx9MHP01n_yUyaf9H",
+    "episodeCount": 15,
+    "sourceUrl": "https://thecrashcourse.com/topic/sexed/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "world-history-2",
+    "title": "World History II",
+    "subject": "History",
+    "host": "John Green",
+    "description": "Revisit world history through big questions about societies, connections, and change.",
+    "playlistId": "PL8dPuuaLjXtNjasccl-WajpONGX3zoY4M",
+    "episodeCount": 30,
+    "sourceUrl": "https://thecrashcourse.com/topic/worldhistory2/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "zoology",
+    "title": "Zoology",
+    "subject": "Science",
+    "host": "Dr. Rae Wynn-Grant",
+    "description": "Meet the animal kingdom and explore evolution, behavior, biodiversity, and conservation.",
+    "playlistId": "PL8dPuuaLjXtNRgJI4gHRLFtOD_r4hfJaF",
+    "episodeCount": 14,
+    "sourceUrl": "https://thecrashcourse.com/topic/zoo/",
+    "reviewedAt": "2026-10-30"
   }
 ]

@@ -1,0 +1,95 @@
+{
+  "courseId": "sex-ed",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What is sex?",
+      "videoId": "SkSItIS_Xl0",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-sex-crash-course-sex-ed-1/"
+    },
+    {
+      "number": 2,
+      "title": "The Vulva & Vagina Explained",
+      "videoId": "WtfOaS_qZrM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-vulva-vagina-explained-crash-course-sex-ed-2/"
+    },
+    {
+      "number": 3,
+      "title": "The Penis Explained",
+      "videoId": "YPJKlPxMilo",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-penis-explained-crash-course-sex-ed-3/"
+    },
+    {
+      "number": 4,
+      "title": "What is gender identity?",
+      "videoId": "evUZ0MGseJY",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-gender-identity-crash-course-sex-ed-4/"
+    },
+    {
+      "number": 5,
+      "title": "Why do we like who we like?",
+      "videoId": "_wx8XooVlVs",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-do-we-like-who-we-like-crash-course-sex-ed-5/"
+    },
+    {
+      "number": 6,
+      "title": "Is virginity real?",
+      "videoId": "OUGdt2Ab0VM",
+      "sourceUrl": "https://thecrashcourse.com/courses/is-virginity-real-crash-course-sex-ed-6/"
+    },
+    {
+      "number": 7,
+      "title": "STI Myths Debunked",
+      "videoId": "b2Fon62HgOk",
+      "sourceUrl": "https://thecrashcourse.com/courses/sti-myths-debunked-crash-course-sex-ed-7/"
+    },
+    {
+      "number": 8,
+      "title": "Birth Control Explained",
+      "videoId": "elDPvihPN4k",
+      "sourceUrl": "https://thecrashcourse.com/courses/birth-control-explained-crash-course-sex-ed-8/"
+    },
+    {
+      "number": 9,
+      "title": "Pregnancy & Childbirth: What to know",
+      "videoId": "szwo6bqpwwE",
+      "sourceUrl": "https://thecrashcourse.com/courses/pregnancy-childbirth-what-to-know-sex-ed-9/"
+    },
+    {
+      "number": 10,
+      "title": "Understanding Abortion",
+      "videoId": "JDixrkU1pp4",
+      "sourceUrl": "https://thecrashcourse.com/courses/understanding-abortion-sex-ed-10/"
+    },
+    {
+      "number": 11,
+      "title": "What is consent?",
+      "videoId": "oPFP9SZnoRs",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-consent-sex-ed-11/"
+    },
+    {
+      "number": 12,
+      "title": "Let’s talk about porn literacy",
+      "videoId": "HvaUdCTMkkk",
+      "sourceUrl": "https://thecrashcourse.com/courses/lets-talk-about-porn-literacy-sex-ed-12/"
+    },
+    {
+      "number": 13,
+      "title": "What to know about orgasms",
+      "videoId": "edsqqXrIK1k",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-to-know-about-orgasms-sex-ed-13/"
+    },
+    {
+      "number": 14,
+      "title": "Unpacking masturbation",
+      "videoId": "27zUjzYG4gY",
+      "sourceUrl": "https://thecrashcourse.com/courses/unpacking-masturbation-sex-ed-14/"
+    },
+    {
+      "number": 15,
+      "title": "What is kink?",
+      "videoId": "iNG9UYbZHws",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-kink-sex-ed-15/"
+    }
+  ]
+}

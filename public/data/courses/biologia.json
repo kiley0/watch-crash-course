@@ -1,0 +1,305 @@
+{
+  "courseId": "biologia",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Introducción a la biología",
+      "videoId": "tuXWE_U1qIQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduccion-a-la-biologia-1/"
+    },
+    {
+      "number": 2,
+      "title": "El método científico",
+      "videoId": "lHtodB0S-zg",
+      "sourceUrl": "https://thecrashcourse.com/courses/el-metodo-cientifico-crash-course-biologia-2/"
+    },
+    {
+      "number": 3,
+      "title": "Qué hacen las personas que estudian biología",
+      "videoId": "-fqRjglVxQw",
+      "sourceUrl": "https://thecrashcourse.com/courses/que-hacen-las-personas-que-estudian-biologia-crash-course-biologia-3/"
+    },
+    {
+      "number": 4,
+      "title": "¿Cómo se organiza la vida?",
+      "videoId": "OwlCn56-E7U",
+      "sourceUrl": "https://thecrashcourse.com/courses/como-se-organiza-la-vida-crash-course-biologia-4/"
+    },
+    {
+      "number": 5,
+      "title": "Introducción a la ecología",
+      "videoId": "tPHXTO1OEL8",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduccion-a-la-ecologia-crash-course-biologia-5/"
+    },
+    {
+      "number": 6,
+      "title": "Ecología de comunidades",
+      "videoId": "HQaiNR6FIHk",
+      "sourceUrl": "https://thecrashcourse.com/courses/ecologia-de-comunidades-crash-course-biologia-6/"
+    },
+    {
+      "number": 7,
+      "title": "Ecología de poblaciones",
+      "videoId": "dyFF62B_OrM",
+      "sourceUrl": "https://thecrashcourse.com/courses/ecologia-de-poblaciones-crash-course-biologia-7/"
+    },
+    {
+      "number": 8,
+      "title": "¿Qué es el cambio climático?",
+      "videoId": "1i2Mz0bNV-I",
+      "sourceUrl": "https://thecrashcourse.com/courses/que-es-el-cambio-climatico-crash-course-biologia-8/"
+    },
+    {
+      "number": 9,
+      "title": "Los efectos del cambio climático",
+      "videoId": "mnQeXsUG79M",
+      "sourceUrl": "https://thecrashcourse.com/courses/los-efectos-del-cambio-climatico-crash-course-biologia-9/"
+    },
+    {
+      "number": 10,
+      "title": "Biología de conservación",
+      "videoId": "9ALJqp_T04s",
+      "sourceUrl": "https://thecrashcourse.com/courses/biologia-de-conservacion-crash-course-biologia-10/"
+    },
+    {
+      "number": 11,
+      "title": "¿Qué podemos aprender de los nervios extrañamente largos de las girafas?",
+      "videoId": "uGjhCtJpc-Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/que-podemos-aprender-de-los-nervios-extranamente-largos-de-las-girafas-crash-course-biologia-11/"
+    },
+    {
+      "number": 12,
+      "title": "Microevolución: ¿Qué tienen que ver los alelos?",
+      "videoId": "fbV65leF-JU",
+      "sourceUrl": "https://thecrashcourse.com/courses/microevolucion-que-tienen-que-ver-los-alelos-crash-course-biologia-12/"
+    },
+    {
+      "number": 13,
+      "title": "Selección natural: yo viviré",
+      "videoId": "qZ7Y92MRpno",
+      "sourceUrl": "https://thecrashcourse.com/courses/seleccion-natural-yo-vivire-crash-course-biologia-13/"
+    },
+    {
+      "number": 14,
+      "title": "Genética de poblaciones: ¿por qué tenemos distintos colores de piel?",
+      "videoId": "XQS_wQEsZkQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/genetica-de-poblaciones-por-que-tenemos-distintos-colores-de-piel-crash-course-biologia-14/"
+    },
+    {
+      "number": 15,
+      "title": "Especiación: ¿De dónde salen las especies?",
+      "videoId": "KYldDXWI0EY",
+      "sourceUrl": "https://thecrashcourse.com/courses/especiacion-de-donde-salen-las-especies-crash-course-biologia-15/"
+    },
+    {
+      "number": 16,
+      "title": "Historia evolutiva: ¿cómo surgió la vida?",
+      "videoId": "GCQVGXZGPcI",
+      "sourceUrl": "https://thecrashcourse.com/courses/historia-evolutiva-como-surgio-la-vida-crash-course-biologia-16/"
+    },
+    {
+      "number": 17,
+      "title": "Como todos estamos relacionados: Filogenia",
+      "videoId": "q9R0PX1oKWw",
+      "sourceUrl": "https://thecrashcourse.com/courses/como-todos-estamos-relacionados-filogenia-crash-course-biologia-17/"
+    },
+    {
+      "number": 18,
+      "title": "Diversidad biológica y el árbol de la vida",
+      "videoId": "2qFvCFTAPPQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/diversidad-biologica-y-el-arbol-de-la-vida-crash-course-biologia-18/"
+    },
+    {
+      "number": 19,
+      "title": "Los humanos no evolucionaron de los chimpancés: la evolución humana",
+      "videoId": "q-hK1OnJBh4",
+      "sourceUrl": "https://thecrashcourse.com/courses/los-humanos-no-evolucionaron-de-los-chimpances-la-evolucion-humana-crash-course-biologia-19/"
+    },
+    {
+      "number": 20,
+      "title": "¿De qué está hecha la vida? El carbono y las moléculas biológicas",
+      "videoId": "Ux5iIQwR2tI",
+      "sourceUrl": "https://thecrashcourse.com/courses/de-que-esta-hecha-la-vida-el-carbono-y-las-moleculas-biologicas-crash-course-biologia-20/"
+    },
+    {
+      "number": 21,
+      "title": "Carta de amor al H2O: agua y pH",
+      "videoId": "pIHEQ6zBNB0",
+      "sourceUrl": "https://thecrashcourse.com/courses/carta-de-amor-al-h2o-agua-y-ph-crash-course-biologia-21/"
+    },
+    {
+      "number": 22,
+      "title": "¿Cómo funcionan los microscopios?",
+      "videoId": "M5l42vKInJE",
+      "sourceUrl": "https://thecrashcourse.com/courses/como-funcionan-los-microscopios-crash-course-biologia-22/"
+    },
+    {
+      "number": 23,
+      "title": "Tus células son como ciudades",
+      "videoId": "0b6bdF3kwXY",
+      "sourceUrl": "https://thecrashcourse.com/courses/tus-celulas-son-como-ciudades-crash-course-biologia-23/"
+    },
+    {
+      "number": 24,
+      "title": "¿Cómo llegan las cosas a tus células?",
+      "videoId": "75ZL1bD8tnk",
+      "sourceUrl": "https://thecrashcourse.com/courses/como-llegan-las-cosas-a-tus-celulas-crash-course-biologia-24/"
+    },
+    {
+      "number": 25,
+      "title": "¿Cómo se comunican las células?",
+      "videoId": "sLGJNE8QFDk",
+      "sourceUrl": "https://thecrashcourse.com/courses/como-se-comunican-las-celulas-crash-course-biologia-25/"
+    },
+    {
+      "number": 26,
+      "title": "¿Cómo obtenemos energía? (Reacciones químicas)",
+      "videoId": "TxNHPIzmCDA",
+      "sourceUrl": "https://thecrashcourse.com/courses/como-obtenemos-energia-reacciones-quimicas-crash-course-biologia-26/"
+    },
+    {
+      "number": 27,
+      "title": "Respiración celular (Glucólisis, Ciclo de Krebs y la Cadena de Transporte de Electrones)",
+      "videoId": "YefwfJ8IpEI",
+      "sourceUrl": "https://thecrashcourse.com/courses/respiracion-celular-glucolisis-ciclo-de-krebs-y-la-cadena-de-transporte-de-electrones-crash-course-biologia-27/"
+    },
+    {
+      "number": 28,
+      "title": "Fotosíntesis: la energía solar original",
+      "videoId": "W-twI6OFMcg",
+      "sourceUrl": "https://thecrashcourse.com/courses/fotosintesis-la-energia-solar-original-crash-course-biologia-28/"
+    },
+    {
+      "number": 29,
+      "title": "Mitosis y el ciclo celular",
+      "videoId": "4VZkh5dVvVU",
+      "sourceUrl": "https://thecrashcourse.com/courses/mitosis-y-el-ciclo-celular-crash-course-biologia-29/"
+    },
+    {
+      "number": 30,
+      "title": "Meiosis: ¿Cómo se hacen las células sexuales?",
+      "videoId": "ZI6QV3ve8EM",
+      "sourceUrl": "https://thecrashcourse.com/courses/meiosis-como-se-hacen-las-celulas-sexuales-crash-course-biologia-30/"
+    },
+    {
+      "number": 31,
+      "title": "Por qué tu gato se ve así (Genética simple)",
+      "videoId": "FB0LXXmoFB8",
+      "sourceUrl": "https://thecrashcourse.com/courses/por-que-tu-gato-se-ve-asi-genetica-simple-crash-course-biologia-31/"
+    },
+    {
+      "number": 32,
+      "title": "¿Naturaleza o crianza? No es tan simple (Genética compleja)",
+      "videoId": "IdSraAJp9gE",
+      "sourceUrl": "https://thecrashcourse.com/courses/naturaleza-o-crianza-no-es-tan-simple-genetica-compleja-crash-course-biologia-32/"
+    },
+    {
+      "number": 33,
+      "title": "La escalera de caracol de la vida: Estructura y replicación del ADN",
+      "videoId": "pOiwcdL7W4U",
+      "sourceUrl": "https://thecrashcourse.com/courses/la-escalera-de-caracol-de-la-vida-estructura-y-replicacion-del-adn-crash-course-biologia-33/"
+    },
+    {
+      "number": 34,
+      "title": "¿Qué es el ARN? (transcripción del ADN)",
+      "videoId": "q2jjl2zMO8A",
+      "sourceUrl": "https://thecrashcourse.com/courses/que-es-el-arn-transcripcion-del-adn-crash-course-biologia-34/"
+    },
+    {
+      "number": 35,
+      "title": "Cómo se hacen las proteínas (traducción)",
+      "videoId": "NVH8NhGFfxE",
+      "sourceUrl": "https://thecrashcourse.com/courses/como-se-hacen-las-proteinas-traduccion-crash-course-biologia-35/"
+    },
+    {
+      "number": 36,
+      "title": "Expresión génica: es como seguir una receta",
+      "videoId": "TTh6B-JSi-Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/expresion-genica-es-como-seguir-una-receta-crash-course-biologia-36/"
+    },
+    {
+      "number": 37,
+      "title": "¿Beber leche es un superpoder? (Mutaciones)",
+      "videoId": "EDq0uCxcDoU",
+      "sourceUrl": "https://thecrashcourse.com/courses/beber-leche-es-un-superpoder-mutaciones-crash-course-biologia-37/"
+    },
+    {
+      "number": 38,
+      "title": "Eres 50% bacteria",
+      "videoId": "Q43lgozvFqI",
+      "sourceUrl": "https://thecrashcourse.com/courses/eres-50-bacteria-crash-course-biologia-38/"
+    },
+    {
+      "number": 39,
+      "title": "Como funcionan los vacunas?",
+      "videoId": "1g_hHrz3fQ8",
+      "sourceUrl": "https://thecrashcourse.com/courses/como-funcionan-los-vacunas-crash-course-biologia-39/"
+    },
+    {
+      "number": 40,
+      "title": "Algoritmos no solamente son para TikTok",
+      "videoId": "KMjxl34WFC4",
+      "sourceUrl": "https://thecrashcourse.com/courses/algoritmos-no-solamente-son-para-tiktok-crash-course-biologia-40/"
+    },
+    {
+      "number": 41,
+      "title": "Porque no somos una gran celula?",
+      "videoId": "6Ps8tKe4LJg",
+      "sourceUrl": "https://thecrashcourse.com/courses/porque-no-somos-una-gran-celula-crash-course-biologia-41/"
+    },
+    {
+      "number": 42,
+      "title": "Plantas son super fuertes",
+      "videoId": "5Hyf6m4h1w8",
+      "sourceUrl": "https://thecrashcourse.com/courses/plantas-son-super-fuertes-crash-course-biologia-42/"
+    },
+    {
+      "number": 43,
+      "title": "El episodio de popó",
+      "videoId": "ejzboK6Uewk",
+      "sourceUrl": "https://thecrashcourse.com/courses/el-episodio-de-popo-crash-course-biologia-43/"
+    },
+    {
+      "number": 44,
+      "title": "¿Por qué no somos masas amorfas?: Infraestructura animal",
+      "videoId": "sWixnQwJH2E",
+      "sourceUrl": "https://thecrashcourse.com/courses/por-que-no-somos-masas-amorfas-infraestructura-animal-crash-course-biologia-44/"
+    },
+    {
+      "number": 45,
+      "title": "Mocos, piel grasa y fiebres: Sistemas de defensa de los animales",
+      "videoId": "pwhLRga2pg4",
+      "sourceUrl": "https://thecrashcourse.com/courses/mocos-piel-grasa-y-fiebres-sistemas-de-defensa-de-los-animales-crash-course-biologia-45/"
+    },
+    {
+      "number": 46,
+      "title": "¿Qué pasa cuando pisas un LEGO?: Sistema nervioso y sistema endócrino",
+      "videoId": "DNrGtfKHkCc",
+      "sourceUrl": "https://thecrashcourse.com/courses/que-pasa-cuando-pisas-un-lego-sistema-nervioso-y-sistema-endocrino-crash-course-biologia-46/"
+    },
+    {
+      "number": 47,
+      "title": "La ciencia de *aquello*: Reproducción sexual y asexual",
+      "videoId": "WUEOFM8pzq0",
+      "sourceUrl": "https://thecrashcourse.com/courses/la-ciencia-de-aquello-reproduccion-sexual-y-asexual-crash-course-biologia-47/"
+    },
+    {
+      "number": 48,
+      "title": "Género, sexo y sexualidad: ¿cuál es la diferencia?",
+      "videoId": "VT14W3fXp24",
+      "sourceUrl": "https://thecrashcourse.com/courses/genero-sexo-y-sexualidad-cual-es-la-diferencia-crash-course-biologia-48/"
+    },
+    {
+      "number": 49,
+      "title": "¿Por qué esta rana es tan mala saltando? (y otros misterios del comportamiento animal)",
+      "videoId": "xniKxN8s8Q8",
+      "sourceUrl": "https://thecrashcourse.com/courses/por-que-esta-rana-es-tan-mala-saltando-y-otros-misterios-del-comportamiento-animal-crash-course-biologia-49/"
+    },
+    {
+      "number": 50,
+      "title": "La respuesta a la vida, tus problemas personales, y todo lo demás",
+      "videoId": "q3rxrs57BEM",
+      "sourceUrl": "https://thecrashcourse.com/courses/la-respuesta-a-la-vida-tus-problemas-personales-y-todo-lo-demas-crash-course-biologia-50/"
+    }
+  ]
+}

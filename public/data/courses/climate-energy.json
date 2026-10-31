@@ -1,0 +1,77 @@
+{
+  "courseId": "climate-energy",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What is Climate Change?",
+      "videoId": "9PFhrpyWV-w",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-climate-change-crash-course-climate-energy-1/"
+    },
+    {
+      "number": 2,
+      "title": "Why Do We Release So Much Gas?",
+      "videoId": "Q26Z4JWVZvk",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-do-we-release-so-much-gas-crash-course-climate-energy-2/"
+    },
+    {
+      "number": 3,
+      "title": "Can We Make Electricity Without Fossil Fuels?",
+      "videoId": "pT7vRUGeEtA",
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-make-electricity-without-fossil-fuels-crash-course-climate-energy-3/"
+    },
+    {
+      "number": 4,
+      "title": "How Can We Store Renewable Energy?",
+      "videoId": "rDkaZWirNME",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-can-we-store-renewable-energy-crash-course-climate-energy-4/"
+    },
+    {
+      "number": 5,
+      "title": "Can We Keep Warm and Stay Cool Without Fossil Fuels?",
+      "videoId": "3yH5TuLYRcs",
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-keep-warm-and-stay-cool-without-fossil-fuels-crash-course-climate-energy-5/"
+    },
+    {
+      "number": 6,
+      "title": "Can We Gas Up… Without Gas?",
+      "videoId": "1-YtC3nwWwU",
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-gas-up-without-gas-crash-course-climate-energy-6/"
+    },
+    {
+      "number": 7,
+      "title": "Can We Capture Greenhouse Gases?",
+      "videoId": "bjIXPPlg1TQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-capture-greenhouse-gases-crash-course-climate-energy-7/"
+    },
+    {
+      "number": 8,
+      "title": "How Will Climate Change Continue to Affect Us?",
+      "videoId": "eVUuwHGLIYo",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-will-climate-change-continue-to-affect-us-crash-course-climate-energy-8/"
+    },
+    {
+      "number": 9,
+      "title": "Are Natural Disasters Actually Natural?",
+      "videoId": "7ODrQW0vSmA",
+      "sourceUrl": "https://thecrashcourse.com/courses/are-natural-disasters-actually-natural-crash-course-climate-energy-9/"
+    },
+    {
+      "number": 10,
+      "title": "How Do Countries Work Together on Climate Change?",
+      "videoId": "Z5YvjG4lTpQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-countries-work-together-on-climate-change-crash-course-climate-energy-10/"
+    },
+    {
+      "number": 11,
+      "title": "The Hidden Price of Climate Change",
+      "videoId": "ML70W4O6F4E",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-hidden-price-of-climate-change-crash-course-climate-energy-11/"
+    },
+    {
+      "number": 12,
+      "title": "How Can We Respond to Climate Change?",
+      "videoId": "3p51wKUuwOU",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-can-we-respond-to-climate-change-crash-course-climate-energy-12/"
+    }
+  ]
+}

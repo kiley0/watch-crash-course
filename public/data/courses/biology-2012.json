@@ -1,0 +1,245 @@
+{
+  "courseId": "biology-2012",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Carbon… SO SIMPLE",
+      "videoId": "QnQe0xW_JY4",
+      "sourceUrl": "https://thecrashcourse.com/courses/thats-why-carbon-is-a-tramp-crash-course-biology-1/"
+    },
+    {
+      "number": 2,
+      "title": "Water – Liquid Awesome",
+      "videoId": "HVT3Y3_gHGg",
+      "sourceUrl": "https://thecrashcourse.com/courses/water-liquid-awesome-crash-course-biology-2/"
+    },
+    {
+      "number": 3,
+      "title": "Biological Molecules – You Are What You Eat",
+      "videoId": "H8WJ2KENlK0",
+      "sourceUrl": "https://thecrashcourse.com/courses/biological-molecules-you-are-what-you-eat-crash-course-biology-3/"
+    },
+    {
+      "number": 4,
+      "title": "Eukaryopolis – The City of Animal Cells",
+      "videoId": "cj8dDTHGJBY",
+      "sourceUrl": "https://thecrashcourse.com/courses/eukaryopolis-the-city-of-animal-cells-crash-course-biology-4/"
+    },
+    {
+      "number": 5,
+      "title": "In Da Club – Membranes & Transport",
+      "videoId": "dPKvHrD1eS4",
+      "sourceUrl": "https://thecrashcourse.com/courses/in-da-club-membranes-transport-crash-course-biology-5/"
+    },
+    {
+      "number": 6,
+      "title": "Plant Cells",
+      "videoId": "9UvlqAVCoqY",
+      "sourceUrl": "https://thecrashcourse.com/courses/plant-cells-crash-course-biology-6/"
+    },
+    {
+      "number": 7,
+      "title": "ATP & Respiration",
+      "videoId": "00jbG_cfGuQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/atp-respiration-crash-course-biology-7/"
+    },
+    {
+      "number": 8,
+      "title": "Photosynthesis",
+      "videoId": "sQK3Yr4Sc_k",
+      "sourceUrl": "https://thecrashcourse.com/courses/photosynthesis-crash-course-biology-8/"
+    },
+    {
+      "number": 9,
+      "title": "Heredity",
+      "videoId": "CBezq1fFUEA",
+      "sourceUrl": "https://thecrashcourse.com/courses/heredity-crash-course-biology-9/"
+    },
+    {
+      "number": 10,
+      "title": "DNA Structure and Replication",
+      "videoId": "8kK2zwjRV0M",
+      "sourceUrl": "https://thecrashcourse.com/courses/dna-structure-and-replication-crash-course-biology-10/"
+    },
+    {
+      "number": 11,
+      "title": "DNA, Hot Pockets, & The Longest Word Ever",
+      "videoId": "itsb2SqR-R0",
+      "sourceUrl": "https://thecrashcourse.com/courses/dna-hot-pockets-the-longest-word-ever-crash-course-biology-11/"
+    },
+    {
+      "number": 12,
+      "title": "Mitosis – Splitting Up is Complicated",
+      "videoId": "L0k-enzoeOM",
+      "sourceUrl": "https://thecrashcourse.com/courses/mitosis-splitting-up-is-complicated-crash-course-biology-12/"
+    },
+    {
+      "number": 13,
+      "title": "Meiosis – Where the Sex Starts",
+      "videoId": "qCLmR9-YY7o",
+      "sourceUrl": "https://thecrashcourse.com/courses/meiosis-where-the-sex-starts-crash-course-biology-13/"
+    },
+    {
+      "number": 14,
+      "title": "Natural Selection",
+      "videoId": "aTftyFboC_M",
+      "sourceUrl": "https://thecrashcourse.com/courses/natural-selection-crash-course-biology-14/"
+    },
+    {
+      "number": 15,
+      "title": "Speciation – Of Ligers & Men",
+      "videoId": "2oKlKmrbLoU",
+      "sourceUrl": "https://thecrashcourse.com/courses/speciation-of-ligers-men-crash-course-biology-15/"
+    },
+    {
+      "number": 16,
+      "title": "Animal Development – We’re Just Tubes!",
+      "videoId": "k_9MTZgAhv0",
+      "sourceUrl": "https://thecrashcourse.com/courses/animal-development-were-just-tubes-crash-course-biology-16/"
+    },
+    {
+      "number": 17,
+      "title": "Evolutionary Development – Chicken Teeth",
+      "videoId": "9sjwlxQ_6LI",
+      "sourceUrl": "https://thecrashcourse.com/courses/evolutionary-development-chicken-teeth-crash-course-biology-17/"
+    },
+    {
+      "number": 18,
+      "title": "Population Genetics – When Darwin Met Mendel",
+      "videoId": "WhFKPaRnTdQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/population-genetics-when-darwin-met-mendel-crash-course-biology-18/"
+    },
+    {
+      "number": 19,
+      "title": "Taxonomy – Life’s Filing System",
+      "videoId": "F38BmgPcZ_I",
+      "sourceUrl": "https://thecrashcourse.com/courses/taxonomy-lifes-filing-system-crash-course-biology-19/"
+    },
+    {
+      "number": 20,
+      "title": "Evolution – It’s a Thing",
+      "videoId": "P3GagfbA2vo",
+      "sourceUrl": "https://thecrashcourse.com/courses/evolution-its-a-thing-crash-course-biology-20/"
+    },
+    {
+      "number": 21,
+      "title": "Comparative Anatomy – What Makes Us Animals",
+      "videoId": "7ABSjKS0hic",
+      "sourceUrl": "https://thecrashcourse.com/courses/comparative-anatomy-what-makes-us-animals-crash-course-biology-21/"
+    },
+    {
+      "number": 22,
+      "title": "Simple Animals – Sponges, Jellies, & Octopuses",
+      "videoId": "tIfsHPpkSPs",
+      "sourceUrl": "https://thecrashcourse.com/courses/simple-animals-sponges-jellies-octopuses-crash-course-biology-22/"
+    },
+    {
+      "number": 23,
+      "title": "Complex Animals – Annelids & Arthropods",
+      "videoId": "YQb7Xq0enTI",
+      "sourceUrl": "https://thecrashcourse.com/courses/complex-animals-annelids-arthropods-crashcourse-biology-23/"
+    },
+    {
+      "number": 24,
+      "title": "Chordates",
+      "videoId": "kgZRZmEc9j4",
+      "sourceUrl": "https://thecrashcourse.com/courses/chordates-crashcourse-biology-24/"
+    },
+    {
+      "number": 25,
+      "title": "Animal Behavior",
+      "videoId": "EyyDq19Mi3A",
+      "sourceUrl": "https://thecrashcourse.com/courses/animal-behavior-crashcourse-biology-25/"
+    },
+    {
+      "number": 26,
+      "title": "The Nervous System",
+      "videoId": "x4PPZCLnVkA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-crashcourse-biology-26/"
+    },
+    {
+      "number": 27,
+      "title": "Circulatory & Respiratory Systems",
+      "videoId": "9fxm85Fy4sQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/circulatory-respiratory-systems-crashcourse-biology-27/"
+    },
+    {
+      "number": 28,
+      "title": "The Digestive System",
+      "videoId": "s06XzaKqELk",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-digestive-system-crashcourse-biology-28/"
+    },
+    {
+      "number": 29,
+      "title": "The Excretory System – From Your Heart to the Toilet",
+      "videoId": "WtrYotjYvtU",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-excretory-system-from-your-heart-to-the-toilet-crashcourse-biology-29/"
+    },
+    {
+      "number": 30,
+      "title": "The Skeletal System – It’s ALIVE!: CrashCourse Biology",
+      "videoId": "RW46rQKWa-g",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-skeletal-system-its-alive-crashcourse-biology-30/"
+    },
+    {
+      "number": 31,
+      "title": "Big Guns – The Muscular System",
+      "videoId": "jqy0i1KXUO4",
+      "sourceUrl": "https://thecrashcourse.com/courses/big-guns-the-muscular-system-crashcourse-biology-31/"
+    },
+    {
+      "number": 32,
+      "title": "Your Immune System – Natural Born Killer",
+      "videoId": "CeVtPDjJBPU",
+      "sourceUrl": "https://thecrashcourse.com/courses/your-immune-system-natural-born-killer-crash-course-biology-32/"
+    },
+    {
+      "number": 33,
+      "title": "Great Glands – Your Endocrine System",
+      "videoId": "WVrlHH14q3o",
+      "sourceUrl": "https://thecrashcourse.com/courses/great-glands-your-endocrine-system-crashcourse-biology-33/"
+    },
+    {
+      "number": 34,
+      "title": "The Reproductive System – How Gonads Go",
+      "videoId": "_7rsH2loIY8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-reproductive-system-how-gonads-go-crashcourse-biology-34/"
+    },
+    {
+      "number": 35,
+      "title": "Old & Odd – Archaea, Bacteria & Protists",
+      "videoId": "vAR47-g6tlA",
+      "sourceUrl": "https://thecrashcourse.com/courses/old-odd-archaea-bacteria-protists-crashcourse-biology-35/"
+    },
+    {
+      "number": 36,
+      "title": "The Reproductive Lives of Nonvascular Plants – Alternation of Generations",
+      "videoId": "iWaX97p6y9U",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-reproductive-lives-of-nonvascular-plants-alternation-of-generations-crash-course-biology-36/"
+    },
+    {
+      "number": 37,
+      "title": "Vascular Plants = Winning!",
+      "videoId": "h9oDTMXM7M8",
+      "sourceUrl": "https://thecrashcourse.com/courses/vascular-plants-winning-crash-course-biology-37/"
+    },
+    {
+      "number": 38,
+      "title": "The Plants & The Bees – Plant Reproduction",
+      "videoId": "ExaQ8shhkw8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-plants-the-bees-plant-reproduction-crashcourse-biology-38/"
+    },
+    {
+      "number": 39,
+      "title": "Fungi – Death Becomes Them",
+      "videoId": "m4DUZhnNo4s",
+      "sourceUrl": "https://thecrashcourse.com/courses/fungi-death-becomes-them-crashcourse-biology-39/"
+    },
+    {
+      "number": 40,
+      "title": "Ecology – Rules for Living on Earth",
+      "videoId": "izRvPaAWgyw",
+      "sourceUrl": "https://thecrashcourse.com/courses/ecology-rules-for-living-on-earth-crash-course-biology-40/"
+    }
+  ]
+}

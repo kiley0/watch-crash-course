@@ -1,0 +1,101 @@
+{
+  "courseId": "big-history",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Season 1: The Big Bang",
+      "videoId": "tq6be-CZJ3w",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-big-bang-crash-course-big-history-1/"
+    },
+    {
+      "number": 2,
+      "title": "Season 1: Exploring the Universe",
+      "videoId": "Fi30zjQhtWY",
+      "sourceUrl": "https://thecrashcourse.com/courses/exploring-the-universe-crash-course-big-history-2/"
+    },
+    {
+      "number": 3,
+      "title": "Season 1: The Sun & The Earth",
+      "videoId": "By6CkTN4wkI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-sun-the-earth-crash-course-big-history-3/"
+    },
+    {
+      "number": 4,
+      "title": "Season 1: Life Begins",
+      "videoId": "1WS712DHfmg",
+      "sourceUrl": "https://thecrashcourse.com/courses/life-begins-crash-course-big-history-4/"
+    },
+    {
+      "number": 5,
+      "title": "Season 1: The Evolutionary Epic",
+      "videoId": "92oHNd8vFwo",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-evolutionary-epic-crash-course-big-history-5/"
+    },
+    {
+      "number": 6,
+      "title": "Season 1: Human Evolution",
+      "videoId": "UPggkvB9_dc",
+      "sourceUrl": "https://thecrashcourse.com/courses/human-evolution-crash-course-big-history-6/"
+    },
+    {
+      "number": 7,
+      "title": "Season 1: Migrations and Intensification",
+      "videoId": "Oy2XJMczUNc",
+      "sourceUrl": "https://thecrashcourse.com/courses/migrations-and-intensification-crash-course-big-history-7/"
+    },
+    {
+      "number": 8,
+      "title": "Season 1: The Modern Revolution",
+      "videoId": "Q4Zdmd4J7TI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-modern-revolution-crash-course-big-history-8/"
+    },
+    {
+      "number": 9,
+      "title": "Season 1: The Anthropocene and the Near Future",
+      "videoId": "3WpaLt_Blr4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-anthropocene-and-the-near-future-crash-course-big-history-9/"
+    },
+    {
+      "number": 10,
+      "title": "Season 1: The Deep Future",
+      "videoId": "kq1HUTLtNW4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-deep-future-crash-course-big-history-10/"
+    },
+    {
+      "number": 11,
+      "title": "Season 2: Why Cosmic Evolution Matters",
+      "videoId": "L-T2SSsMREM",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-cosmic-evolution-matters-crash-course-big-history-201/"
+    },
+    {
+      "number": 12,
+      "title": "Season 2: Why Star Stuff Matters",
+      "videoId": "Vyq3YYFlzpQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-star-stuff-matters-crash-course-big-history-202/"
+    },
+    {
+      "number": 13,
+      "title": "Season 2: Why the Evolutionary Epic Matters",
+      "videoId": "IiP2y20e8Xc",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-the-evolutionary-epic-matters-crash-course-big-history-203/"
+    },
+    {
+      "number": 14,
+      "title": "Season 2: Why Human Evolution Matters",
+      "videoId": "AHz74SD0Nc0",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-human-evolution-matters-crash-course-big-history-204/"
+    },
+    {
+      "number": 15,
+      "title": "Season 2: Why Human Ancestry Matters",
+      "videoId": "atDL_KDHJ-c",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-human-ancestry-matters-crash-course-big-history-205/"
+    },
+    {
+      "number": 16,
+      "title": "Season 2: Why Early Globalization Matters",
+      "videoId": "1esRyRV8H2M",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-early-globalization-matters-crash-course-big-history-206/"
+    }
+  ]
+}

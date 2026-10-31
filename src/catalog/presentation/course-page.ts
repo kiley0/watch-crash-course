@@ -68,8 +68,14 @@ Alpine.data("coursePage", () => {
     get courseComplete(): boolean {
       return this.summary?.isComplete ?? false;
     },
-    get playlistUrl(): string {
-      return `https://www.youtube.com/playlist?list=${encodeURIComponent(this.course.playlistId ?? "")}`;
+    get playlists() {
+      const parts = this.course.playlistParts ?? [
+        { title: "Official YouTube playlist", playlistId: this.course.playlistId },
+      ];
+      return parts.map((part) => ({
+        title: part.title,
+        url: `https://www.youtube.com/playlist?list=${encodeURIComponent(part.playlistId ?? "")}`,
+      }));
     },
     get filteredEpisodes(): EpisodeLink[] {
       return this.episodes.filter((episode) =>

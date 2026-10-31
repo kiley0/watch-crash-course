@@ -1,0 +1,143 @@
+{
+  "courseId": "geology",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Intro to Geology",
+      "videoId": "ypH6dR7YGfU",
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-geology-crash-course-geology-1/"
+    },
+    {
+      "number": 2,
+      "title": "How did Earth form?",
+      "videoId": "3JdpD3X2Md8",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-did-earth-form-crash-course-geology-2/"
+    },
+    {
+      "number": 3,
+      "title": "Earth’s Crust and Mantle Explained",
+      "videoId": "bouvNyq8xCY",
+      "sourceUrl": "https://thecrashcourse.com/courses/earths-crust-and-mantle-explained-crash-course-geology-3/"
+    },
+    {
+      "number": 4,
+      "title": "What’s at the center of the earth?",
+      "videoId": "rm46SdVfB4I",
+      "sourceUrl": "https://thecrashcourse.com/courses/whats-at-the-center-of-the-earth-crash-course-geology-4/"
+    },
+    {
+      "number": 5,
+      "title": "How Do Minerals Form?",
+      "videoId": "jQvv7CskMuo",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-minerals-form-crash-course-geology-5/"
+    },
+    {
+      "number": 6,
+      "title": "Where do rocks come from?",
+      "videoId": "lT_QAkL6lj0",
+      "sourceUrl": "https://thecrashcourse.com/courses/where-do-rocks-come-from-crash-course-geology-6/"
+    },
+    {
+      "number": 7,
+      "title": "How do Gems form?",
+      "videoId": "eKnl_Jp8jsg",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-gems-form-crash-course-geology-7/"
+    },
+    {
+      "number": 8,
+      "title": "Where do diamonds come from?",
+      "videoId": "AF2eYuAKsao",
+      "sourceUrl": "https://thecrashcourse.com/courses/where-do-diamonds-come-from-crash-course-geology-8/"
+    },
+    {
+      "number": 9,
+      "title": "How Water Shapes the Land",
+      "videoId": "xDll-p5g2EQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-water-shapes-the-land-crash-course-geology-9/"
+    },
+    {
+      "number": 10,
+      "title": "What is Plate Tectonics",
+      "videoId": "krXXSCb_P9Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-plate-tectonics-crash-course-geology-10/"
+    },
+    {
+      "number": 11,
+      "title": "How do Mountains Form?",
+      "videoId": "r8uQVRVNV14",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-mountains-form-crash-course-geology-11/"
+    },
+    {
+      "number": 12,
+      "title": "The Deepest Point in the World",
+      "videoId": "mLQYGG3SjyQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-deepest-point-in-the-world-crash-course-geology-12/"
+    },
+    {
+      "number": 13,
+      "title": "Volcanoes Explained",
+      "videoId": "BMZbbewOLvU",
+      "sourceUrl": "https://thecrashcourse.com/courses/volcanoes-explained-crash-course-geology-13/"
+    },
+    {
+      "number": 14,
+      "title": "Earthquakes Explained",
+      "videoId": "WNvAic8KLb0",
+      "sourceUrl": "https://thecrashcourse.com/courses/earthquakes-explained-crash-course-geology-14/"
+    },
+    {
+      "number": 15,
+      "title": "Can You Prepare for an Earthquake",
+      "videoId": "xYKSKBcifaE",
+      "sourceUrl": "https://thecrashcourse.com/courses/can-you-prepare-for-an-earthquake-crash-course-geology-15/"
+    },
+    {
+      "number": 16,
+      "title": "The Mystery Behind Earth’s Missing Rocks",
+      "videoId": "ZLc9udbCaeI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-mystery-behind-earths-missing-rocks-crash-course-geology-16/"
+    },
+    {
+      "number": 17,
+      "title": "How old is the Earth?",
+      "videoId": "mIIJd66Ycr8",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-old-is-the-earth-crash-course-geology-17/"
+    },
+    {
+      "number": 18,
+      "title": "How Do Fossils Form?",
+      "videoId": "iWUp2kMCv6o",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-fossils-form-crash-course-geology-18/"
+    },
+    {
+      "number": 19,
+      "title": "The Future of Glaciers",
+      "videoId": "OgYSITk0fSM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-glaciers-crash-course-geology-19/"
+    },
+    {
+      "number": 20,
+      "title": "How Often do Asteroids Hit the Earth?",
+      "videoId": "0GGPe_Oum6c",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-often-do-asteroids-hit-the-earth-crash-course-geology-20/"
+    },
+    {
+      "number": 21,
+      "title": "Can We Break up with Fossil Fuels?",
+      "videoId": "9-JFgpMIb_I",
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-break-up-with-fossil-fuels-crash-course-geology-21/"
+    },
+    {
+      "number": 22,
+      "title": "How do we Mine Minerals?",
+      "videoId": "uJA1qZirWVc",
+      "sourceUrl": "https://www.youtube.com/watch?v=uJA1qZirWVc"
+    },
+    {
+      "number": 23,
+      "title": "How Geologists Can Tell if the World is Warming",
+      "videoId": "y5RqfQvCaBY",
+      "sourceUrl": "https://www.youtube.com/watch?v=y5RqfQvCaBY"
+    }
+  ]
+}

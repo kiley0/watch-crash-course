@@ -1,0 +1,71 @@
+{
+  "courseId": "fundamentos-quimica",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "El núcleo",
+      "videoId": "G7wUMpsB5k8",
+      "sourceUrl": "https://thecrashcourse.com/courses/el-nucleo-crash-course-fundamentos-de-quimica-1/"
+    },
+    {
+      "number": 2,
+      "title": "Conversión de unidades y cifras significativas",
+      "videoId": "aMrxhohbkVA",
+      "sourceUrl": "https://thecrashcourse.com/courses/conversion-de-unidades-y-cifras-significativas-crash-course-fundamentos-de-quimica-2/"
+    },
+    {
+      "number": 3,
+      "title": "La creación de la química",
+      "videoId": "Kp3rmne3xC8",
+      "sourceUrl": "https://thecrashcourse.com/courses/la-creacion-de-la-quimica-crash-course-fundamentos-de-quimica-3/"
+    },
+    {
+      "number": 4,
+      "title": "La tabla periódica",
+      "videoId": "AmOl0v_3jsc",
+      "sourceUrl": "https://thecrashcourse.com/courses/la-tabla-periodica-crash-course-fundamentos-de-quimica-4/"
+    },
+    {
+      "number": 5,
+      "title": "El electrón",
+      "videoId": "N5apS0tE67c",
+      "sourceUrl": "https://thecrashcourse.com/courses/el-electron-crash-course-fundamentos-de-quimica-5/"
+    },
+    {
+      "number": 6,
+      "title": "Estequiometría",
+      "videoId": "dZoMgEhNKKg",
+      "sourceUrl": "https://thecrashcourse.com/courses/estequiometria-crash-course-fundamentos-de-quimica-6/"
+    },
+    {
+      "number": 7,
+      "title": "Agua y soluciones",
+      "videoId": "g1QuPCaiXz8",
+      "sourceUrl": "https://thecrashcourse.com/courses/agua-y-soluciones-crash-course-fundamentos-de-quimica-7/"
+    },
+    {
+      "number": 8,
+      "title": "Reacciones ácido-base en solución",
+      "videoId": "Or2h02mqvD4",
+      "sourceUrl": "https://thecrashcourse.com/courses/reacciones-acido-base-en-solucion-crash-course-fundamentos-de-quimica-8/"
+    },
+    {
+      "number": 9,
+      "title": "Reacciones de precipitación",
+      "videoId": "w_EEk317jnk",
+      "sourceUrl": "https://thecrashcourse.com/courses/reacciones-de-precipitacion-crash-course-fundamentos-de-quimica-9/"
+    },
+    {
+      "number": 10,
+      "title": "Reacciones Rédox",
+      "videoId": "B-2h7u665AM",
+      "sourceUrl": "https://thecrashcourse.com/courses/reacciones-redox-crash-course-fundamentos-de-quimica-10/"
+    },
+    {
+      "number": 11,
+      "title": "Cómo hablar en quimiqués",
+      "videoId": "4DKNv-8EUBI",
+      "sourceUrl": "https://thecrashcourse.com/courses/como-hablar-en-quimiques-crash-course-fundamentos-de-quimica-11/"
+    }
+  ]
+}

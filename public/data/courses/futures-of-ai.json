@@ -1,0 +1,35 @@
+{
+  "courseId": "futures-of-ai",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "The History of AI Explained",
+      "videoId": "UFJQV5Jb0pY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-ai-explained-crash-course-futures-of-ai-1/"
+    },
+    {
+      "number": 2,
+      "title": "How could AI transform society?",
+      "videoId": "t6xLo1XYZZs",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-could-ai-transform-society-crash-course-futures-of-ai-2/"
+    },
+    {
+      "number": 3,
+      "title": "How close are we to the worst case scenario?",
+      "videoId": "KwHS2t2ML9g",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-close-are-we-to-the-worst-case-scenario-crash-course-futures-of-ai-3/"
+    },
+    {
+      "number": 4,
+      "title": "The Alignment Problem Explained",
+      "videoId": "Sp3aCsQUsDc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-alignment-problem-explained-crash-course-futures-of-ai-4/"
+    },
+    {
+      "number": 5,
+      "title": "How Should AI Be Governed?",
+      "videoId": "iNdZFKfExZ8",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-should-ai-be-governed-crash-course-futures-of-ai-5/"
+    }
+  ]
+}

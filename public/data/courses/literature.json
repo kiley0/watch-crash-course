@@ -1,0 +1,275 @@
+{
+  "courseId": "literature",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Season 1: How and Why We Read",
+      "videoId": "MSYw502dJNY",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-and-why-we-read-crash-course-english-literature-1/"
+    },
+    {
+      "number": 2,
+      "title": "Season 1: Of Pentameter & Bear Baiting – Romeo & Juliet Part 1",
+      "videoId": "I4kz-C7GryY",
+      "sourceUrl": "https://thecrashcourse.com/courses/of-pentameter-bear-baiting-romeo-juliet-part-i-crash-course-english-literature-2/"
+    },
+    {
+      "number": 3,
+      "title": "Season 1: Love or Lust? Romeo & Juliet Part 2",
+      "videoId": "9J4hoAatGRQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/love-or-lust-romeo-and-juliet-part-ii-crash-course-english-literature-3/"
+    },
+    {
+      "number": 4,
+      "title": "Season 1: Like Pale Gold – The Great Gatsby, Part 1",
+      "videoId": "xw9Au9OoN88",
+      "sourceUrl": "https://thecrashcourse.com/courses/like-pale-gold-the-great-gatsby-part-i-crash-course-english-literature-4/"
+    },
+    {
+      "number": 5,
+      "title": "Season 1: Was Gatsby Great? The Great Gatsby Part 2",
+      "videoId": "cn0WZ8-0Z1Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/was-gatsby-great-the-great-gatsby-part-2-crash-course-english-literature-5/"
+    },
+    {
+      "number": 6,
+      "title": "Season 1: Language, Voice, and Holden Caulfield – The Catcher in the Rye, Part 1",
+      "videoId": "R66eQLLOins",
+      "sourceUrl": "https://thecrashcourse.com/courses/language-voice-and-holden-caulfield-the-catcher-in-the-rye-part-1/"
+    },
+    {
+      "number": 7,
+      "title": "Season 1: Holden, JD, and the Red Cap – The Catcher in the Rye, Part 2",
+      "videoId": "LI1CusL7Ceo",
+      "sourceUrl": "https://thecrashcourse.com/courses/holden-jd-and-the-red-cap-the-catcher-in-the-rye-part-2-crash-course-english-literature-7/"
+    },
+    {
+      "number": 8,
+      "title": "Season 1: Before I Got My Eye Put Out – The Poetry of Emily Dickinson",
+      "videoId": "R4WwhOdk_Eg",
+      "sourceUrl": "https://thecrashcourse.com/courses/before-i-got-my-eye-put-out-the-poetry-of-emily-dickinson-crash-course-english-lit-8/"
+    },
+    {
+      "number": 9,
+      "title": "Season 2: A Long and Difficult Journey, or The Odyssey",
+      "videoId": "MS4jk5kavy4",
+      "sourceUrl": "https://thecrashcourse.com/courses/a-long-and-difficult-journey-or-the-odyssey-crash-course-literature-201/"
+    },
+    {
+      "number": 10,
+      "title": "Season 2: Fate, Family, and Oedipus Rex",
+      "videoId": "Cj7R36s4dbM",
+      "sourceUrl": "https://thecrashcourse.com/courses/fate-family-and-oedipus-rex-crash-course-literature-202/"
+    },
+    {
+      "number": 11,
+      "title": "Season 2: Ghosts, Murder, and More Murder – Hamlet, Part 1",
+      "videoId": "My14mZa-eq8",
+      "sourceUrl": "https://thecrashcourse.com/courses/ghosts-murder-and-more-murder-hamlet-part-i-crash-course-literature-203/"
+    },
+    {
+      "number": 12,
+      "title": "Season 2: Ophelia, Gertrude, and Regicide – Hamlet, Part 2",
+      "videoId": "nDCohlKUufs",
+      "sourceUrl": "https://thecrashcourse.com/courses/ophelia-gertrude-and-regicide-hamlet-ii-crash-course-literature-204/"
+    },
+    {
+      "number": 13,
+      "title": "Season 2: Don’t Reanimate Corpses! Frankenstein, Part 1",
+      "videoId": "SyyrwoCec1k",
+      "sourceUrl": "https://thecrashcourse.com/courses/dont-reanimate-corpses-frankenstein-part-1-crash-course-literature-205/"
+    },
+    {
+      "number": 14,
+      "title": "Season 2: Frankenstein, Part 2",
+      "videoId": "hRDjmyEvmBI",
+      "sourceUrl": "https://thecrashcourse.com/courses/frankenstein-part-ii-crash-course-literature-206/"
+    },
+    {
+      "number": 15,
+      "title": "Season 2: Reader, it’s Jane Eyre",
+      "videoId": "Z8tqY8fX0Ec",
+      "sourceUrl": "https://thecrashcourse.com/courses/reader-its-jane-eyre-crash-course-literature-207/"
+    },
+    {
+      "number": 16,
+      "title": "Season 2: If One Finger Brought Oil – Things Fall Apart, Part 1",
+      "videoId": "w1Kw94qjdQA",
+      "sourceUrl": "https://thecrashcourse.com/courses/if-one-finger-brought-oil-things-fall-apart-part-i-crash-course-literature-208/"
+    },
+    {
+      "number": 17,
+      "title": "Season 2: Things Fall Apart, Part 2",
+      "videoId": "oyvDYZ6hJNA",
+      "sourceUrl": "https://thecrashcourse.com/courses/things-fall-apart-part-2-crash-course-literature-209/"
+    },
+    {
+      "number": 18,
+      "title": "Season 2: To Kill a Mockingbird, Part 1",
+      "videoId": "3xM8hvEE2dI",
+      "sourceUrl": "https://thecrashcourse.com/courses/to-kill-a-mockingbird-part-i-crash-course-literature-210/"
+    },
+    {
+      "number": 19,
+      "title": "Season 2: Race, Class, and Gender in To Kill a Mockingbird",
+      "videoId": "mDS32LEe1Ss",
+      "sourceUrl": "https://thecrashcourse.com/courses/race-class-and-gender-in-to-kill-a-mockingbird-crash-course-literature-211/"
+    },
+    {
+      "number": 20,
+      "title": "Season 2: Aliens, Time Travel, and Dresden – Slaughterhouse-Five Part I",
+      "videoId": "F6g7S2W27Kc",
+      "sourceUrl": "https://thecrashcourse.com/courses/aliens-time-travel-and-dresden-slaughterhouse-five-part-i-crash-course-literature-212/"
+    },
+    {
+      "number": 21,
+      "title": "Season 2: PTSD and Alien Abduction – Slaughterhouse-Five Part 2",
+      "videoId": "HyKhIiGKq5M",
+      "sourceUrl": "https://thecrashcourse.com/courses/ptsd-and-alien-abduction-slaughterhouse-five-part-2-crash-course-literature-213/"
+    },
+    {
+      "number": 22,
+      "title": "Season 2: Slavery, Ghosts, and Beloved",
+      "videoId": "6lQyPgaakY4",
+      "sourceUrl": "https://thecrashcourse.com/courses/slavery-ghosts-and-beloved-crash-course-literature-214/"
+    },
+    {
+      "number": 23,
+      "title": "Season 2: Langston Hughes & the Harlem Renaissance",
+      "videoId": "ir0URpI9nKQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/langston-hughes-the-harlem-renaissance-crash-course-literature-215/"
+    },
+    {
+      "number": 24,
+      "title": "Season 2: The Poetry of Sylvia Plath",
+      "videoId": "iJn0ZPd6mYo",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-poetry-of-sylvia-plath-crash-course-literature-216/"
+    },
+    {
+      "number": 25,
+      "title": "Season 3: Their Eyes Were Watching God",
+      "videoId": "4kF0U8kIMp4",
+      "sourceUrl": "https://thecrashcourse.com/courses/their-eyes-were-watching-god-crash-course-literature-301/"
+    },
+    {
+      "number": 26,
+      "title": "Season 3: The Adventures of Huckleberry Finn Part 1",
+      "videoId": "WXKgBIiP8IA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-adventures-of-huckleberry-finn-part-1-crash-course-literature-302/"
+    },
+    {
+      "number": 27,
+      "title": "Season 3: The Raft, the River, and The Weird Ending of Huckleberry Finn",
+      "videoId": "ak8gydUl9gM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-raft-the-river-and-the-weird-ending-of-huckleberry-finn-crash-course-literature-303/"
+    },
+    {
+      "number": 28,
+      "title": "Season 3: Shakespeare’s Sonnets",
+      "videoId": "bDpW1sHrBaU",
+      "sourceUrl": "https://thecrashcourse.com/courses/shakespeares-sonnets-crash-course-literature-304/"
+    },
+    {
+      "number": 29,
+      "title": "Season 3: Lord of the Flies",
+      "videoId": "WfNiQBXmPw8",
+      "sourceUrl": "https://thecrashcourse.com/courses/lord-of-the-flies-crash-course-literature-305/"
+    },
+    {
+      "number": 30,
+      "title": "Season 3: 100 Years of Solitude Part 1",
+      "videoId": "YWNcCs__vQg",
+      "sourceUrl": "https://thecrashcourse.com/courses/100-years-of-solitude-part-1-crash-course-literature-306/"
+    },
+    {
+      "number": 31,
+      "title": "Season 3: 100 Years of Solitude Part 2",
+      "videoId": "Hlpv7nKt81A",
+      "sourceUrl": "https://thecrashcourse.com/courses/100-years-of-solitude-part-2-crash-course-literature-307/"
+    },
+    {
+      "number": 32,
+      "title": "Season 3: Invisible Man",
+      "videoId": "hvfs4jIYHrI",
+      "sourceUrl": "https://thecrashcourse.com/courses/invisible-man-crash-course-literature-308/"
+    },
+    {
+      "number": 33,
+      "title": "Season 3: Sula",
+      "videoId": "eAHYT5gIPZg",
+      "sourceUrl": "https://thecrashcourse.com/courses/sula-crash-course-literature-309/"
+    },
+    {
+      "number": 34,
+      "title": "Season 4: 1984 by George Orwell, Part 1",
+      "videoId": "H9ipRaLa4Jw",
+      "sourceUrl": "https://thecrashcourse.com/courses/1984-by-george-orwell-part-1-crash-course-literature-401/"
+    },
+    {
+      "number": 35,
+      "title": "Season 4: George Orwell’s 1984, Part 2",
+      "videoId": "JBYqV2sK918",
+      "sourceUrl": "https://thecrashcourse.com/courses/george-orwells-1984-part-2-crash-course-literature-402/"
+    },
+    {
+      "number": 36,
+      "title": "Season 4: The Handmaid’s Tale, Part 1",
+      "videoId": "PubyDwbNqYA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-handmaids-tale-part-1-crash-course-literature-403/"
+    },
+    {
+      "number": 37,
+      "title": "Season 4: The Handmaid’s Tale, Part 2",
+      "videoId": "zj05QxebnC4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-handmaids-tale-part-2-crash-course-literature-404/"
+    },
+    {
+      "number": 38,
+      "title": "Season 4: Candide",
+      "videoId": "XJc9iprkVzg",
+      "sourceUrl": "https://thecrashcourse.com/courses/candide-crash-course-literature-405/"
+    },
+    {
+      "number": 39,
+      "title": "Season 4: The Parable of the Sower",
+      "videoId": "6iVGuMyKFgA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-parable-of-the-sower-crash-course-literature-406/"
+    },
+    {
+      "number": 40,
+      "title": "Season 4: The Yellow Wallpaper",
+      "videoId": "rtepIKeNHPU",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-yellow-wallpaper-crash-course-literature-407/"
+    },
+    {
+      "number": 41,
+      "title": "Season 4: To the Lighthouse",
+      "videoId": "mtHilmUa69M",
+      "sourceUrl": "https://thecrashcourse.com/courses/to-the-lighthouse-crash-course-literature-408/"
+    },
+    {
+      "number": 42,
+      "title": "Season 4: Free Will, Witches, Murder, and Macbeth, Part 1",
+      "videoId": "VPYOs0EGgJk",
+      "sourceUrl": "https://thecrashcourse.com/courses/free-will-witches-murder-and-macbeth-part-1-crash-course-literature-409/"
+    },
+    {
+      "number": 43,
+      "title": "Season 4: Gender, Guilt, and Fate – Macbeth, Part 2",
+      "videoId": "4zdkun4xzOs",
+      "sourceUrl": "https://thecrashcourse.com/courses/gender-guilt-and-fate-macbeth-part-2-crash-course-literature-410/"
+    },
+    {
+      "number": 44,
+      "title": "Season 4: Pride and Prejudice, Part 1",
+      "videoId": "5xTh44G6RYs",
+      "sourceUrl": "https://thecrashcourse.com/courses/pride-and-prejudice-part-1-crash-course-literature-411/"
+    },
+    {
+      "number": 45,
+      "title": "Season 4: Liberals, Conservatives, and Pride and Prejudice, Part 2",
+      "videoId": "dhgEpr87Yac",
+      "sourceUrl": "https://thecrashcourse.com/courses/liberals-conservatives-and-pride-and-prejudice-part-2-crash-course-literature-412/"
+    }
+  ]
+}

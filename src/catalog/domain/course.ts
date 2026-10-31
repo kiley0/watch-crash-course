@@ -1,3 +1,8 @@
+export interface PlaylistPart {
+  title: string;
+  playlistId: string;
+  startEpisode: number;
+}
 export interface Course {
   id: string;
   title: string;
@@ -6,6 +11,7 @@ export interface Course {
   episodeCount: number;
   description: string;
   playlistId: string;
+  playlistParts?: PlaylistPart[];
   sourceUrl: string;
   reviewedAt: string;
 }
@@ -57,6 +63,31 @@ export function parseCatalog(value: unknown): Course[] {
       throw new Error("Invalid episode count.");
     const playlistId = string(data.playlistId);
     if (!/^[A-Za-z0-9_-]+$/.test(playlistId)) throw new Error("Invalid playlist ID.");
+    let playlistParts: PlaylistPart[] | undefined;
+    if (data.playlistParts !== undefined) {
+      if (!Array.isArray(data.playlistParts) || !data.playlistParts.length)
+        throw new Error("Invalid playlist parts.");
+      let previous = 0;
+      const playlists = new Set<string>();
+      playlistParts = data.playlistParts.map((value: unknown, index: number) => {
+        const part = record(value);
+        const partId = string(part.playlistId);
+        const start = part.startEpisode;
+        if (
+          !/^[A-Za-z0-9_-]+$/.test(partId) ||
+          playlists.has(partId) ||
+          typeof start !== "number" ||
+          !Number.isSafeInteger(start) ||
+          start <= previous ||
+          start > episodeCount ||
+          (index === 0 && (start !== 1 || partId !== playlistId))
+        )
+          throw new Error("Invalid playlist boundaries.");
+        previous = start;
+        playlists.add(partId);
+        return { title: string(part.title), playlistId: partId, startEpisode: start };
+      });
+    }
     const reviewedAt = string(data.reviewedAt);
     if (
       !/^\d{4}-\d{2}-\d{2}$/.test(reviewedAt) ||
@@ -72,6 +103,7 @@ export function parseCatalog(value: unknown): Course[] {
       description: string(data.description),
       episodeCount,
       playlistId,
+      ...(playlistParts ? { playlistParts } : {}),
       sourceUrl: source(data.sourceUrl),
       reviewedAt,
     };
@@ -104,4 +136,11 @@ export function parseDetail(value: unknown, course: Course): CourseDetail {
     };
   });
   return { courseId: course.id, episodes };
+}
+
+export function playlistForEpisode(course: Course, episode: Episode): string {
+  return (
+    course.playlistParts?.findLast((part) => part.startEpisode <= episode.number)?.playlistId ??
+    course.playlistId
+  );
 }

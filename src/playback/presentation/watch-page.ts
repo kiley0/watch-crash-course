@@ -2,7 +2,7 @@ import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
 import "./watch.css";
 import { loadCatalog, loadDetail } from "../../catalog/infrastructure/static-catalog";
-import { isCourseId } from "../../catalog/domain/course";
+import { isCourseId, playlistForEpisode } from "../../catalog/domain/course";
 import type { Course, Episode } from "../../catalog/domain/course";
 import { videoUrl } from "./youtube-links";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
@@ -80,7 +80,7 @@ Alpine.data("watchPage", () => {
     },
     get youtubeUrl(): string {
       return this.episode.videoId
-        ? videoUrl(this.episode.videoId, this.course.playlistId)
+        ? videoUrl(this.episode.videoId, playlistForEpisode(this.course, this.episode))
         : "https://www.youtube.com/user/crashcourse";
     },
     get statusLabel(): string {

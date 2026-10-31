@@ -1,0 +1,83 @@
+{
+  "courseId": "latin-american-literature",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Introduction to Latin American Literature",
+      "videoId": "hX6lzkQBmhc",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-latin-american-literature-crash-course-latin-american-literature-1/"
+    },
+    {
+      "number": 2,
+      "title": "The History of Latin American Literature",
+      "videoId": "oyv-eJRRozs",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-latin-american-literature-crash-course-latin-american-literature-2/"
+    },
+    {
+      "number": 3,
+      "title": "Nature in Latin American Literature",
+      "videoId": "3V78r1y2EHs",
+      "sourceUrl": "https://thecrashcourse.com/courses/nature-in-latin-american-literature-crash-course-latin-american-literature-3/"
+    },
+    {
+      "number": 4,
+      "title": "Tyrants, Dictators, & Strongmen",
+      "videoId": "Nh4I1hMvubU",
+      "sourceUrl": "https://thecrashcourse.com/courses/tyrants-dictators-strongmen-crash-course-latin-american-literature-4/"
+    },
+    {
+      "number": 5,
+      "title": "Life under a dictatorship",
+      "videoId": "fA7Y0tKlOFk",
+      "sourceUrl": "https://thecrashcourse.com/courses/life-under-a-dictatorship-crash-course-latin-american-literature-5/"
+    },
+    {
+      "number": 6,
+      "title": "Horror in Latin American literature",
+      "videoId": "1TmWZ5yIKx0",
+      "sourceUrl": "https://thecrashcourse.com/courses/horror-in-latin-american-literature-crash-course-latin-american-literature-6/"
+    },
+    {
+      "number": 7,
+      "title": "Borders & Identity",
+      "videoId": "8WDcUuz3TqI",
+      "sourceUrl": "https://thecrashcourse.com/courses/borders-identity-crash-course-latin-american-literature-7/"
+    },
+    {
+      "number": 8,
+      "title": "The Hidden Politics of Home",
+      "videoId": "_cjphE8S_Kk",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-hidden-politics-of-home-crash-course-latin-american-literature-8/"
+    },
+    {
+      "number": 9,
+      "title": "Family, Power, and Legacy",
+      "videoId": "ubrntCf-pEc",
+      "sourceUrl": "https://thecrashcourse.com/courses/family-power-and-legacy-crash-course-latin-american-literature-9/"
+    },
+    {
+      "number": 10,
+      "title": "Animals & Shapeshifters",
+      "videoId": "0ZpphjzNaGI",
+      "sourceUrl": "https://thecrashcourse.com/courses/animals-shapeshifters-crash-course-latin-american-literature-10/"
+    },
+    {
+      "number": 11,
+      "title": "How has technology influenced literature?",
+      "videoId": "89RdoqlOujQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-has-technology-influenced-literature-crash-course-latin-american-literature-11/"
+    },
+    {
+      "number": 12,
+      "title": "Film & Literature",
+      "videoId": "-Mewx3GjK2A",
+      "sourceUrl": "https://thecrashcourse.com/courses/film-literature-crash-course-latin-american-literature-12/"
+    },
+    {
+      "number": 13,
+      "title": "The importance of translation",
+      "videoId": "AA63Dd58fFc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-importance-of-translation-crash-course-latin-american-literature-13/"
+    }
+  ]
+}

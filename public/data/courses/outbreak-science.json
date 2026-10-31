@@ -1,0 +1,95 @@
+{
+  "courseId": "outbreak-science",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What Is Outbreak Science?",
+      "videoId": "_qAzXb7mA2g",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-outbreak-science-crash-course-outbreak-science-1/"
+    },
+    {
+      "number": 2,
+      "title": "How Do Outbreaks Start?",
+      "videoId": "40cyYqqQmJ4",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-outbreaks-start-crash-course-outbreak-science-2/"
+    },
+    {
+      "number": 3,
+      "title": "Why Do We Have Fewer Outbreaks? Epidemiological Transition",
+      "videoId": "ATK_qlg6tTY",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-do-we-have-fewer-outbreaks-epidemiological-transition-crash-course-outbreak-science-03/"
+    },
+    {
+      "number": 4,
+      "title": "Why Do Outbreaks Affect People Unequally?",
+      "videoId": "vc7xQs0MCLY",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-do-outbreaks-affect-people-unequally-crash-course-outbreak-science-4/"
+    },
+    {
+      "number": 5,
+      "title": "The Weaponization of Outbreaks",
+      "videoId": "JjIgNfURISY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-weaponization-of-outbreaks-crash-course-outbreak-science-5/"
+    },
+    {
+      "number": 6,
+      "title": "How Do We Know We’re Sick?",
+      "videoId": "toEnT4C2uNI",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-know-were-sick-crash-course-outbreak-science-6/"
+    },
+    {
+      "number": 7,
+      "title": "How Does the Healthcare System Work During Outbreaks?",
+      "videoId": "wbtpOhIP9Bc",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-the-healthcare-system-work-during-outbreaks-crash-course-outbreak-science-7/"
+    },
+    {
+      "number": 8,
+      "title": "How Do We Investigate Outbreaks? Epidemiology",
+      "videoId": "vk6e0pCbh1k",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-investigate-outbreaks-epidemiology-crash-course-outbreak-science-8/"
+    },
+    {
+      "number": 9,
+      "title": "Can We Predict An Outbreak’s Future? – Modeling",
+      "videoId": "0nLxb3ms28A",
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-predict-an-outbreaks-future-modeling-crash-course-outbreak-science-9/"
+    },
+    {
+      "number": 10,
+      "title": "How Does Public Health Tackle Outbreaks?",
+      "videoId": "zN58Uj1pxg4",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-public-health-tackle-outbreaks-crash-course-outbreak-science-10/"
+    },
+    {
+      "number": 11,
+      "title": "How Can Cooperation End an Outbreak?",
+      "videoId": "fXt42GzI1FU",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-can-cooperation-end-an-outbreak-crash-course-outbreak-science-11/"
+    },
+    {
+      "number": 12,
+      "title": "How Can Infrastructure Help Us Stop Outbreaks?",
+      "videoId": "k0WGXeWPb1M",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-can-infrastructure-help-us-stop-outbreaks-crash-course-outbreak-science-12/"
+    },
+    {
+      "number": 13,
+      "title": "What Is Outbreak Culture?",
+      "videoId": "EuSGImH2pG8",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-outbreak-culture-crash-course-outbreak-science-13/"
+    },
+    {
+      "number": 14,
+      "title": "How do Outbreaks End? Vaccines and Recovery",
+      "videoId": "0nSjN8GVJQM",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-outbreaks-end-vaccines-and-recovery-crash-course-outbreak-science-14/"
+    },
+    {
+      "number": 15,
+      "title": "How Are We All Part of Ending Outbreaks?",
+      "videoId": "Dpah15G3LSA",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-are-we-all-part-of-ending-outbreaks-crash-course-outbreak-science-15/"
+    }
+  ]
+}

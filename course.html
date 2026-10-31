@@ -203,11 +203,15 @@
             <div class="source-note">
               <h3>From the source.</h3>
               <p x-text="sourceDescription"></p>
-              <a :href="playlistUrl"
-                >Official YouTube playlist
-                <svg class="icon" aria-hidden="true" focusable="false">
-                  <use href="./icons.svg#external-link"></use></svg></a
-              ><a :href="course.sourceUrl"
+              <template x-for="playlist in playlists" :key="playlist.url">
+                <a :href="playlist.url"
+                  ><span x-text="playlist.title"></span>
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="./icons.svg#external-link"></use>
+                  </svg>
+                </a>
+              </template>
+              <a :href="course.sourceUrl"
                 >Course on Crash Course
                 <svg class="icon" aria-hidden="true" focusable="false">
                   <use href="./icons.svg#external-link"></use></svg></a

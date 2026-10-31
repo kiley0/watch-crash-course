@@ -291,3 +291,7 @@ Add Geography (50), Sociology (44), U.S. Government & Politics (50), Organic Che
 ### 14. European History, World Mythology, Theater & Drama, Business: Soft Skills, and History of Science
 
 Add European History (50), World Mythology (41), Theater & Drama (50), Business: Soft Skills (17), and History of Science (46): 204 lessons, bringing the catalog to 34 courses and 1,140 lessons. Verify official episode embeds and playlists, preserve numerical order, document missing heading numbers, and extend endpoint checks. Completed checks: inline playback and saved resume in all five courses, final-lesson boundaries, host search, and responsive layouts.
+
+### 15–19. Complete the official course index
+
+Completed the remaining 22 entries in batches of 5, 5, 5, 5, and 2. The library now covers all 56 official index entries with 1,613 numbered lessons. See `COURSES.md` for the complete inventory. Original editions, Spanish editions, and multi-season series are included. Big Questions on U.S. Government and Geology remain ongoing; the catalog includes their 6 and 23 currently published lessons respectively, reviewed October 30, 2026. Future maintenance is to add new published lessons and review availability.
