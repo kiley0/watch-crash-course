@@ -1,0 +1,245 @@
+{
+  "courseId": "computer-science",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Early Computing",
+      "videoId": "O5nskjZ_GoI",
+      "sourceUrl": "https://thecrashcourse.com/courses/early-computing-crash-course-computer-science-1/"
+    },
+    {
+      "number": 2,
+      "title": "Electronic Computing",
+      "videoId": "LN0ucKNX0hc",
+      "sourceUrl": "https://thecrashcourse.com/courses/electronic-computing-crash-course-computer-science-2/"
+    },
+    {
+      "number": 3,
+      "title": "Boolean Logic & Logic Gates",
+      "videoId": "gI-qXk7XojA",
+      "sourceUrl": "https://thecrashcourse.com/courses/boolean-logic-logic-gates-crash-course-computer-science-3/"
+    },
+    {
+      "number": 4,
+      "title": "Representing Numbers and Letters with Binary",
+      "videoId": "1GSjbWt0c9M",
+      "sourceUrl": "https://thecrashcourse.com/courses/representing-numbers-and-letters-with-binary-crash-course-computer-science-4/"
+    },
+    {
+      "number": 5,
+      "title": "How Computers Calculate – the ALU",
+      "videoId": "1I5ZMmrOfnA",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-computers-calculate-the-alu-crash-course-computer-science-5/"
+    },
+    {
+      "number": 6,
+      "title": "Registers and RAM",
+      "videoId": "fpnE6UAfbtU",
+      "sourceUrl": "https://thecrashcourse.com/courses/registers-and-ram-crash-course-computer-science-6/"
+    },
+    {
+      "number": 7,
+      "title": "The Central Processing Unit (CPU)",
+      "videoId": "FZGugFqdr60",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-central-processing-unit-cpu-crash-course-computer-science-7/"
+    },
+    {
+      "number": 8,
+      "title": "Instructions & Programs",
+      "videoId": "zltgXvg6r3k",
+      "sourceUrl": "https://thecrashcourse.com/courses/instructions-programs-crash-course-computer-science-8/"
+    },
+    {
+      "number": 9,
+      "title": "Advanced CPU Designs",
+      "videoId": "rtAlC5J1U40",
+      "sourceUrl": "https://thecrashcourse.com/courses/advanced-cpu-designs-crash-course-computer-science-9/"
+    },
+    {
+      "number": 10,
+      "title": "Early Programming",
+      "videoId": "nwDq4adJwzM",
+      "sourceUrl": "https://thecrashcourse.com/courses/early-programming-crash-course-computer-science-10/"
+    },
+    {
+      "number": 11,
+      "title": "The First Programming Languages",
+      "videoId": "RU1u-js7db8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-first-programming-languages-crash-course-computer-science-11/"
+    },
+    {
+      "number": 12,
+      "title": "Programming Basics – Statements & Functions",
+      "videoId": "l26oaHV7D40",
+      "sourceUrl": "https://thecrashcourse.com/courses/programming-basics-statements-functions-crash-course-computer-science-12/"
+    },
+    {
+      "number": 13,
+      "title": "Intro to Algorithms",
+      "videoId": "rL8X2mlNHPM",
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-algorithms-crash-course-computer-science-13/"
+    },
+    {
+      "number": 14,
+      "title": "Data Structures",
+      "videoId": "DuDz6B4cqVc",
+      "sourceUrl": "https://thecrashcourse.com/courses/data-structures-crash-course-computer-science-14/"
+    },
+    {
+      "number": 15,
+      "title": "Alan Turing",
+      "videoId": "7TycxwFmdB0",
+      "sourceUrl": "https://thecrashcourse.com/courses/alan-turing-crash-course-computer-science-15/"
+    },
+    {
+      "number": 16,
+      "title": "Software Engineering",
+      "videoId": "O753uuutqH8",
+      "sourceUrl": "https://thecrashcourse.com/courses/software-engineering-crash-course-computer-science-16/"
+    },
+    {
+      "number": 17,
+      "title": "Integrated Circuits & Moore’s Law",
+      "videoId": "6-tKOHICqrI",
+      "sourceUrl": "https://thecrashcourse.com/courses/integrated-circuits-moores-law-crash-course-computer-science-17/"
+    },
+    {
+      "number": 18,
+      "title": "Operating Systems",
+      "videoId": "26QPDBe-NB8",
+      "sourceUrl": "https://thecrashcourse.com/courses/operating-systems-crash-course-computer-science-18/"
+    },
+    {
+      "number": 19,
+      "title": "Memory & Storage",
+      "videoId": "TQCr9RV7twk",
+      "sourceUrl": "https://thecrashcourse.com/courses/memory-storage-crash-course-computer-science-19/"
+    },
+    {
+      "number": 20,
+      "title": "Files & File Systems",
+      "videoId": "KN8YgJnShPM",
+      "sourceUrl": "https://thecrashcourse.com/courses/files-file-systems-crash-course-computer-science-20/"
+    },
+    {
+      "number": 21,
+      "title": "Compression",
+      "videoId": "OtDxDvCpPL4",
+      "sourceUrl": "https://thecrashcourse.com/courses/compression-crash-course-computer-science-21/"
+    },
+    {
+      "number": 22,
+      "title": "Keyboards & Command Line Interfaces",
+      "videoId": "4RPtJ9UyHS0",
+      "sourceUrl": "https://thecrashcourse.com/courses/keyboards-command-line-interfaces-crash-course-computer-science-22/"
+    },
+    {
+      "number": 23,
+      "title": "Screens & 2D Graphics",
+      "videoId": "7Jr0SFMQ4Rs",
+      "sourceUrl": "https://thecrashcourse.com/courses/screens-2d-graphics-crash-course-computer-science-23/"
+    },
+    {
+      "number": 24,
+      "title": "The Cold War and Consumerism",
+      "videoId": "m8i38Yq1wX4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-cold-war-and-consumerism-crash-course-computer-science-24/"
+    },
+    {
+      "number": 25,
+      "title": "The Personal Computer Revolution",
+      "videoId": "M5BZou6C01w",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-personal-computer-revolution-crash-course-computer-science-25/"
+    },
+    {
+      "number": 26,
+      "title": "Graphical User Interfaces",
+      "videoId": "XIGSJshYb90",
+      "sourceUrl": "https://thecrashcourse.com/courses/graphical-user-interfaces-crash-course-computer-science-26/"
+    },
+    {
+      "number": 27,
+      "title": "3D Graphics",
+      "videoId": "TEAtmCYYKZA",
+      "sourceUrl": "https://thecrashcourse.com/courses/3d-graphics-crash-course-computer-science-27/"
+    },
+    {
+      "number": 28,
+      "title": "Computer Networks",
+      "videoId": "3QhU9jd03a0",
+      "sourceUrl": "https://thecrashcourse.com/courses/computer-networks-crash-course-computer-science-28/"
+    },
+    {
+      "number": 29,
+      "title": "The Internet",
+      "videoId": "AEaKrq3SpW8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-internet-crash-course-computer-science-29/"
+    },
+    {
+      "number": 30,
+      "title": "The World Wide Web",
+      "videoId": "guvsH5OFizE",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-world-wide-web-crash-course-computer-science-30/"
+    },
+    {
+      "number": 31,
+      "title": "Cybersecurity",
+      "videoId": "bPVaOlJ6ln0",
+      "sourceUrl": "https://thecrashcourse.com/courses/cybersecurity-crash-course-computer-science-31/"
+    },
+    {
+      "number": 32,
+      "title": "Hackers & Cyber Attacks",
+      "videoId": "_GzE99AmAQU",
+      "sourceUrl": "https://thecrashcourse.com/courses/hackers-cyber-attacks-crash-course-computer-science-32/"
+    },
+    {
+      "number": 33,
+      "title": "Cryptography",
+      "videoId": "jhXCTbFnK8o",
+      "sourceUrl": "https://thecrashcourse.com/courses/cryptography-crash-course-computer-science-33/"
+    },
+    {
+      "number": 34,
+      "title": "Machine Learning & Artificial Intelligence",
+      "videoId": "z-EtmaFJieY",
+      "sourceUrl": "https://thecrashcourse.com/courses/machine-learning-artificial-intelligence-crash-course-computer-science-34/"
+    },
+    {
+      "number": 35,
+      "title": "Computer Vision",
+      "videoId": "-4E2-0sxVUM",
+      "sourceUrl": "https://thecrashcourse.com/courses/computer-vision-crash-course-computer-science-35/"
+    },
+    {
+      "number": 36,
+      "title": "Natural Language Processing",
+      "videoId": "fOvTtapxa9c",
+      "sourceUrl": "https://thecrashcourse.com/courses/natural-language-processing-crash-course-computer-science-36/"
+    },
+    {
+      "number": 37,
+      "title": "Robots",
+      "videoId": "3XkL0qQ21Oo",
+      "sourceUrl": "https://thecrashcourse.com/courses/robots-crash-course-computer-science-37/"
+    },
+    {
+      "number": 38,
+      "title": "Psychology of Computing",
+      "videoId": "DEHsvQ3Ylwg",
+      "sourceUrl": "https://thecrashcourse.com/courses/psychology-of-computing-crash-course-computer-science-38/"
+    },
+    {
+      "number": 39,
+      "title": "Educational Technology",
+      "videoId": "zTi3_l5h5PQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/educational-technology-crash-course-computer-science-39/"
+    },
+    {
+      "number": 40,
+      "title": "The Singularity, Skynet, and the Future of Computing",
+      "videoId": "5TNAz1HYg18",
+      "sourceUrl": "https://www.youtube.com/watch?v=5TNAz1HYg18"
+    }
+  ]
+}

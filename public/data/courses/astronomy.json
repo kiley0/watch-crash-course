@@ -1,0 +1,281 @@
+{
+  "courseId": "astronomy",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Introduction to Astronomy",
+      "videoId": "0rHUDWjR5gg",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-astronomy-crash-course-astronomy-1/"
+    },
+    {
+      "number": 2,
+      "title": "Naked Eye Observations",
+      "videoId": "L-Wtlev6suc",
+      "sourceUrl": "https://thecrashcourse.com/courses/naked-eye-observations-crash-course-astronomy-2/"
+    },
+    {
+      "number": 3,
+      "title": "Cycles in the Sky",
+      "videoId": "01QWC-rZcfE",
+      "sourceUrl": "https://thecrashcourse.com/courses/cycles-in-the-sky-crash-course-astronomy-3/"
+    },
+    {
+      "number": 4,
+      "title": "Moon Phases",
+      "videoId": "AQ5vty8f9Xc",
+      "sourceUrl": "https://thecrashcourse.com/courses/moon-phases-crash-course-astronomy-4/"
+    },
+    {
+      "number": 5,
+      "title": "Eclipses",
+      "videoId": "PRgua7xceDA",
+      "sourceUrl": "https://thecrashcourse.com/courses/eclipses-crash-course-astronomy-5/"
+    },
+    {
+      "number": 6,
+      "title": "Telescopes",
+      "videoId": "mYhy7eaazIk",
+      "sourceUrl": "https://thecrashcourse.com/courses/telescopes-crash-course-astronomy-6/"
+    },
+    {
+      "number": 7,
+      "title": "The Gravity of the Situation",
+      "videoId": "TRAbZxQHlVw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-gravity-of-the-situation-crash-course-astronomy-7/"
+    },
+    {
+      "number": 8,
+      "title": "Tides",
+      "videoId": "KlWpFLfLFBI",
+      "sourceUrl": "https://thecrashcourse.com/courses/tides-crash-course-astronomy-8/"
+    },
+    {
+      "number": 9,
+      "title": "Introduction to the Solar System",
+      "videoId": "TKM0P3XlMNA",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-the-solar-system-crash-course-astronomy-9/"
+    },
+    {
+      "number": 10,
+      "title": "The Sun",
+      "videoId": "b22HKFMIfWo",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-sun-crash-course-astronomy-10/"
+    },
+    {
+      "number": 11,
+      "title": "The Earth",
+      "videoId": "w-9gDALvMF4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-earth-crash-course-astronomy-11/"
+    },
+    {
+      "number": 12,
+      "title": "The Moon",
+      "videoId": "mCzchPx3yF8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-moon-crash-course-astronomy-12/"
+    },
+    {
+      "number": 13,
+      "title": "Mercury",
+      "videoId": "P3GkZe3nRQ0",
+      "sourceUrl": "https://thecrashcourse.com/courses/mercury-crash-course-astronomy-13/"
+    },
+    {
+      "number": 14,
+      "title": "Venus",
+      "videoId": "ZFUgy3crCYY",
+      "sourceUrl": "https://thecrashcourse.com/courses/venus-crash-course-astronomy-14/"
+    },
+    {
+      "number": 15,
+      "title": "Mars",
+      "videoId": "I-88YWx71gE",
+      "sourceUrl": "https://thecrashcourse.com/courses/mars-crash-course-astronomy-15/"
+    },
+    {
+      "number": 16,
+      "title": "Jupiter",
+      "videoId": "Xwn8fQSW7-8",
+      "sourceUrl": "https://thecrashcourse.com/courses/jupiter-crash-course-astronomy-16/"
+    },
+    {
+      "number": 17,
+      "title": "Jupiter’s Moons",
+      "videoId": "HaFaf7vbgpE",
+      "sourceUrl": "https://thecrashcourse.com/courses/jupiters-moons-crash-course-astronomy-17/"
+    },
+    {
+      "number": 18,
+      "title": "Saturn",
+      "videoId": "E8GNde5nCSg",
+      "sourceUrl": "https://thecrashcourse.com/courses/saturn-crash-course-astronomy-18/"
+    },
+    {
+      "number": 19,
+      "title": "Uranus & Neptune",
+      "videoId": "1hIwD17Crko",
+      "sourceUrl": "https://thecrashcourse.com/courses/uranus-neptune-crash-course-astronomy-19/"
+    },
+    {
+      "number": 20,
+      "title": "Asteroids",
+      "videoId": "auxpcdQimCs",
+      "sourceUrl": "https://thecrashcourse.com/courses/asteroids-crash-course-astronomy-20/"
+    },
+    {
+      "number": 21,
+      "title": "Comets",
+      "videoId": "yB9HHyPpKds",
+      "sourceUrl": "https://thecrashcourse.com/courses/comets-crash-course-astronomy-21/"
+    },
+    {
+      "number": 22,
+      "title": "The Oort Cloud",
+      "videoId": "ZJscxTyI__s",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-oort-cloud-crash-course-astronomy-22/"
+    },
+    {
+      "number": 23,
+      "title": "Meteors",
+      "videoId": "TuDfZ2Md5x8",
+      "sourceUrl": "https://thecrashcourse.com/courses/meteors-crash-course-astronomy-23/"
+    },
+    {
+      "number": 24,
+      "title": "Light",
+      "videoId": "jjy-eqWM38g",
+      "sourceUrl": "https://thecrashcourse.com/courses/light-crash-course-astronomy-24/"
+    },
+    {
+      "number": 25,
+      "title": "Distances",
+      "videoId": "CWMh61yutjU",
+      "sourceUrl": "https://thecrashcourse.com/courses/distances-crash-course-astronomy-25/"
+    },
+    {
+      "number": 26,
+      "title": "Stars",
+      "videoId": "ld75W1dz-h0",
+      "sourceUrl": "https://thecrashcourse.com/courses/stars-crash-course-astronomy-26/"
+    },
+    {
+      "number": 27,
+      "title": "Exoplanets",
+      "videoId": "7ATtD8x7vV0",
+      "sourceUrl": "https://thecrashcourse.com/courses/exoplanets-crash-course-astronomy-27/"
+    },
+    {
+      "number": 28,
+      "title": "Brown Dwarfs",
+      "videoId": "4zKVx29_A1w",
+      "sourceUrl": "https://thecrashcourse.com/courses/brown-dwarfs-crash-course-astronomy-28/"
+    },
+    {
+      "number": 29,
+      "title": "Low Mass Stars",
+      "videoId": "jfvMtCHv1q4",
+      "sourceUrl": "https://thecrashcourse.com/courses/low-mass-stars-crash-course-astronomy-29/"
+    },
+    {
+      "number": 30,
+      "title": "White Dwarfs & Planetary Nebulae",
+      "videoId": "Mj06h8BeeOA",
+      "sourceUrl": "https://thecrashcourse.com/courses/white-dwarfs-planetary-nebulae-crash-course-astronomy-30/"
+    },
+    {
+      "number": 31,
+      "title": "High Mass Stars",
+      "videoId": "PWx9DurgPn8",
+      "sourceUrl": "https://thecrashcourse.com/courses/high-mass-stars-crash-course-astronomy-31/"
+    },
+    {
+      "number": 32,
+      "title": "Neutron Stars",
+      "videoId": "RrMvUL8HFlM",
+      "sourceUrl": "https://thecrashcourse.com/courses/neutron-stars-crash-course-astronomy-32/"
+    },
+    {
+      "number": 33,
+      "title": "Black Holes",
+      "videoId": "qZWPBKULkdQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/black-holes-crash-course-astronomy-33/"
+    },
+    {
+      "number": 34,
+      "title": "Binary and Multiple Stars",
+      "videoId": "pIFiCLhJmig",
+      "sourceUrl": "https://thecrashcourse.com/courses/binary-and-multiple-stars-crash-course-astronomy-34/"
+    },
+    {
+      "number": 35,
+      "title": "Star Clusters",
+      "videoId": "an4rgJ3O21A",
+      "sourceUrl": "https://thecrashcourse.com/courses/star-clusters-crash-course-astronomy-35/"
+    },
+    {
+      "number": 36,
+      "title": "Nebulae",
+      "videoId": "W8UI7F43_Yk",
+      "sourceUrl": "https://thecrashcourse.com/courses/nebulae-crash-course-astronomy-36/"
+    },
+    {
+      "number": 37,
+      "title": "The Milky Way",
+      "videoId": "tj_QPnO8vpQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-milky-way-crash-course-astronomy-37/"
+    },
+    {
+      "number": 38,
+      "title": "Galaxies, Part 1",
+      "videoId": "I82ADyJC7wE",
+      "sourceUrl": "https://thecrashcourse.com/courses/galaxies-part-1-crash-course-astronomy-38/"
+    },
+    {
+      "number": 39,
+      "title": "Galaxies, Part 2",
+      "videoId": "_O2sg-PGhEg",
+      "sourceUrl": "https://thecrashcourse.com/courses/galaxies-part-2-crash-course-astronomy-39/"
+    },
+    {
+      "number": 40,
+      "title": "Gamma-Ray Bursts",
+      "videoId": "Z2zA9nPFN5A",
+      "sourceUrl": "https://thecrashcourse.com/courses/gamma-ray-bursts-crash-course-astronomy-40/"
+    },
+    {
+      "number": 41,
+      "title": "Dark Matter",
+      "videoId": "9W3RsaWuCuE",
+      "sourceUrl": "https://thecrashcourse.com/courses/dark-matter-crash-course-astronomy-41/"
+    },
+    {
+      "number": 42,
+      "title": "The Big Bang, Cosmology Part 1",
+      "videoId": "9B7Ix2VQEGo",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-big-bang-cosmology-part-1-crash-course-astronomy-42/"
+    },
+    {
+      "number": 43,
+      "title": "Dark Energy & Cosmology, Part 2",
+      "videoId": "gzLM6ltw3l0",
+      "sourceUrl": "https://thecrashcourse.com/courses/dark-energy-cosmology-part-2-crash-course-astronomy-43/"
+    },
+    {
+      "number": 44,
+      "title": "A Brief History of the Universe",
+      "videoId": "IGCVTSQw7WU",
+      "sourceUrl": "https://thecrashcourse.com/courses/a-brief-history-of-the-universe-crash-course-astronomy-44/"
+    },
+    {
+      "number": 45,
+      "title": "Deep Time",
+      "videoId": "jDF-N3A60DE",
+      "sourceUrl": "https://thecrashcourse.com/courses/deep-time-crash-course-astronomy-45/"
+    },
+    {
+      "number": 46,
+      "title": "Everything, The Universe…And Life",
+      "videoId": "mgdq6DOTU3M",
+      "sourceUrl": "https://thecrashcourse.com/courses/everything-the-universe-and-life-crash-course-astronomy-46/"
+    }
+  ]
+}

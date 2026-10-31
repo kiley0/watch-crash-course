@@ -6,7 +6,7 @@ Production domain: `watchcrashcourse.com`. Repository and local folder: `watch-c
 
 Build a quiet, dependable place to work through Crash Course courses in playlist order, resume videos, and see progress. Favor files and browser standards that will remain understandable and inexpensive to host for years.
 
-Milestones 1–3 are implemented locally: responsive catalog/course pages, the complete Study Skills fixture, search/filtering, about/privacy, embedded playback after a user action, resume, local video progress, completion/reset, course completion summaries, continue learning, searchable history, and a Vite+ multi-page static build. Data controls are implemented locally: versioned export/import, validated replacement, confirmed clearing, and interruption recovery. Broader browser/release checks remain; deployment has not been performed.
+The pilot is live on Vercel at `watchcrashcourse.com`, with playback, local progress, history, data controls, and completed release checks. The first catalog expansion added World History and Biology. The current local expansion adds Astronomy, Philosophy, and Computer Science using the same static data model; see the post-pilot milestones below.
 
 ## Architectural decisions
 
@@ -255,3 +255,7 @@ The user confirmed the remaining pilot release checks complete on October 30, 20
 ### 5. World History and Biology
 
 Add the complete World History series (42 numbered episodes, John Green) and the current Biology series (50 numbered episodes, Dr. Sammy Ramsey). Keep the existing static JSON model and verify episode numbers, IDs, and source URLs against official course pages. Exclude previews and extras. Derive subject filters from the catalog and remove single-course copy from shared pages. Validate every detail file at build time and check filtering, first/last lesson navigation, playback, and independent progress across courses. No API keys, importer service, or runtime dependencies are needed.
+
+### 6. Astronomy, Philosophy, and Computer Science
+
+Add 46 numbered Astronomy episodes, 46 Philosophy episodes, and 40 Computer Science episodes. Preserve the static catalog and derive subject filters from data. Include Computer Science #40 from its verified official YouTube upload because it is absent from the website’s topic listing. Exclude previews, bonus tours, and related demonstration embeds. Validate all course files, verify first/last navigation, and check playback, independent progress, and long course titles at narrow widths. No new dependencies are needed.

@@ -38,6 +38,12 @@ function source(value: unknown): string {
     throw new Error("Invalid source link.");
   return url.href;
 }
+function episodeSource(value: unknown, videoId: string): string {
+  // Some official uploads have no episode page on the Crash Course website.
+  // Accept only the canonical YouTube link for this exact, curated video.
+  if (value === `https://www.youtube.com/watch?v=${videoId}`) return value;
+  return source(value);
+}
 export function parseCatalog(value: unknown): Course[] {
   if (!Array.isArray(value) || !value.length) throw new Error("The catalog is empty or invalid.");
   const ids = new Set<string>();
@@ -94,7 +100,7 @@ export function parseDetail(value: unknown, course: Course): CourseDetail {
       number: index + 1,
       title: string(episode.title),
       videoId,
-      sourceUrl: source(episode.sourceUrl),
+      sourceUrl: episodeSource(episode.sourceUrl, videoId),
     };
   });
   return { courseId: course.id, episodes };

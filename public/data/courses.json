@@ -31,5 +31,38 @@
     "playlistId": "PL8dPuuaLjXtPW_ofbxdHNciuLoTRLPMgB",
     "sourceUrl": "https://thecrashcourse.com/topic/biology/",
     "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "astronomy",
+    "title": "Astronomy",
+    "subject": "Science",
+    "host": "Phil Plait",
+    "episodeCount": 46,
+    "description": "Look up, then look closer. Explore planets, stars, galaxies, and the questions that help us understand our place in the universe.",
+    "playlistId": "PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL",
+    "sourceUrl": "https://thecrashcourse.com/topic/astronomy/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "philosophy",
+    "title": "Philosophy",
+    "subject": "Humanities",
+    "host": "Hank Green",
+    "episodeCount": 46,
+    "description": "Make room for big questions about knowledge, reality, and how to live. Practice following an argument and looking at an idea from another angle.",
+    "playlistId": "PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR",
+    "sourceUrl": "https://thecrashcourse.com/topic/philosophy/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "computer-science",
+    "title": "Computer Science",
+    "subject": "Technology",
+    "host": "Carrie Anne Philbin",
+    "episodeCount": 40,
+    "description": "Find out what happens beneath the screen. Follow the ideas behind computers, from logic gates and programs to networks and the web.",
+    "playlistId": "PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
+    "sourceUrl": "https://thecrashcourse.com/topic/computerscience/",
+    "reviewedAt": "2026-10-30"
   }
 ]

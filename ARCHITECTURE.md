@@ -110,3 +110,7 @@ The site is Watch Crash Course (`watch-crash-course`), with intended production 
 `data/domain/backup.ts` composes the learning record validator without importing presentation or infrastructure. `data/infrastructure/data-repository.ts` maps validated watch progress to namespaced storage keys. The settings page never reads localForage directly.
 
 All browser storage calls pass through the site infrastructure coordinator. A recovery journal records the raw watch progress store before a destructive operation. It is removed only after the store is replaced; startup recovery runs before ordinary reads/writes. The coordinator knows storage names and raw keys, not learning rules. Import/export and recovery tests are colocated. Other site tabs must be closed before replacement to avoid stale writes.
+
+## Catalog sources
+
+Course metadata uses official `thecrashcourse.com` source URLs. Episode records normally reference the corresponding official episode page. When the website omits a lesson, a canonical `https://www.youtube.com/watch?v=<videoId>` source is allowed only when it exactly matches the episode ID; maintainers verify that it is an official CrashCourse upload. This exception currently supplies Computer Science #40. The browser does not import playlists or scrape YouTube; visitors still load checked-in JSON only.

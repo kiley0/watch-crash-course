@@ -24,10 +24,13 @@ describe("curated catalog contracts", () => {
       expect(detail.episodes).toHaveLength(course.episodeCount);
     }
   });
-  it("keeps the complete original World History and current Biology series distinct", () => {
+  it("keeps complete curated series anchored to their verified endpoints", () => {
     for (const [id, count, first, last] of [
       ["world-history", 42, "Yocja_N5s1I", "s_iwrt7D5OA"],
       ["biology", 50, "tZE_fQFK8EY", "SyHM1gFyP8Y"],
+      ["astronomy", 46, "0rHUDWjR5gg", "mgdq6DOTU3M"],
+      ["philosophy", 46, "1A_CAkYt3GY", "Ra1Dmz-5HjU"],
+      ["computer-science", 40, "O5nskjZ_GoI", "5TNAz1HYg18"],
     ] as const) {
       const course = parseCatalog(catalog).find((course) => course.id === id)!;
       const detail = parseDetail(courseFiles[`../../../public/data/courses/${id}.json`], course);
@@ -35,6 +38,25 @@ describe("curated catalog contracts", () => {
       expect(detail.episodes[0]?.videoId).toBe(first);
       expect(detail.episodes.at(-1)?.videoId).toBe(last);
     }
+  });
+  it("accepts canonical episode upload sources only for the matching video", () => {
+    const course = parseCatalog(catalog)[0]!;
+    const copy = structuredClone(detail);
+    copy.episodes[0]!.sourceUrl = `https://www.youtube.com/watch?v=${copy.episodes[0]!.videoId}`;
+    expect(parseDetail(copy, course).episodes[0]?.sourceUrl).toBe(copy.episodes[0]!.sourceUrl);
+    for (const sourceUrl of [
+      "https://www.youtube.com/watch?v=WAIUkjsZ5xQ",
+      "https://www.youtube.com/watch?v=E7CwqNHn_Ns&list=unreviewed",
+      "https://www.youtube.com.evil.example/watch?v=E7CwqNHn_Ns",
+      "https://www.youtube.com/redirect?q=https://example.com",
+      "javascript:alert(1)",
+    ]) {
+      copy.episodes[0]!.sourceUrl = sourceUrl;
+      expect(() => parseDetail(copy, course)).toThrow("Invalid source link");
+    }
+    expect(() =>
+      parseCatalog([{ ...course, sourceUrl: "https://www.youtube.com/watch?v=E7CwqNHn_Ns" }]),
+    ).toThrow();
   });
   it("uses one course-ID rule for catalog records and navigation", () => {
     for (const id of ["study-skills", "biology", "history-2"]) expect(isCourseId(id)).toBe(true);
