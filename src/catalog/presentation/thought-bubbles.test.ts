@@ -6,8 +6,8 @@ const details = import.meta.glob("../../../public/data/courses/*.json", {
   import: "default",
 });
 it("links every sourced quote to a real episode in its course", () => {
-  expect(thoughtBubbles).toHaveLength(30);
-  expect(new Set(thoughtBubbles.map((thought) => thought.text)).size).toBe(30);
+  expect(thoughtBubbles).toHaveLength(40);
+  expect(new Set(thoughtBubbles.map((thought) => thought.text)).size).toBe(40);
   for (const thought of thoughtBubbles) {
     const detail = details[`../../../public/data/courses/${thought.courseId}.json`] as {
       episodes: { videoId: string }[];
