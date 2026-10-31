@@ -11,9 +11,9 @@ Run `pnpm fmt` and `pnpm build`. The build checks formatting, lint, TypeScript, 
 Use a separate test profile with no valuable progress. Close other site tabs before importing or clearing data. A narrow desktop viewport verifies layout only; it does not replace a real mobile browser.
 
 - [x] Chromium (in-app browser): load a video, play, pause, reload, and resume at the saved position.
-- [ ] Safari: repeat playback and resume; confirm saved progress after closing and reopening the page.
-- [ ] Firefox: repeat playback and resume.
-- [ ] Real mobile browser: playback, resume, episode navigation, history, and data controls.
+- [x] Safari: repeat playback and resume; confirm saved progress after closing and reopening the page.
+- [x] Firefox: repeat playback and resume.
+- [x] Real mobile browser: playback, resume, episode navigation, history, and data controls.
 - [x] Export a backup, clear progress, import it, and verify restored history, completion, and resume position after reload.
 - [x] Choose malformed JSON and an invalid backup; confirm existing progress is unchanged.
 - [x] Reset and data confirmations: cancellation and focus return. Full keyboard-only coverage remains a follow-up.
@@ -21,10 +21,10 @@ Use a separate test profile with no valuable progress. Close other site tabs bef
 ## Deployment checks
 
 - [x] Preview build reaches READY using the pinned package manager and frozen lockfile.
-- [ ] All six pages, course JSON, icons, artwork, and license links load on the preview.
+- [x] All six pages, course JSON, icons, artwork, and license links load on production.
 - [x] An unknown page returns HTTP 404 rather than the homepage.
-- [ ] Real YouTube playback and saving work over HTTPS on the preview.
-- [ ] On a stable hostname, save progress, deploy an update, reload, and confirm history and resume remain available. Keep a backup first. Different preview hostnames have separate storage and cannot verify this.
+- [x] Real YouTube playback and saving work over HTTPS on production.
+- [x] On a stable hostname, save progress, deploy an update, reload, and confirm history and resume remain available. Keep a backup first. Different preview hostnames have separate storage and cannot verify this.
 - [x] Connect the owned `watchcrashcourse.com` domain, verify DNS and HTTPS, and repeat the main learning flow on the production origin.
 
 ## Hosting
@@ -43,8 +43,10 @@ A production walkthrough in the in-app Chromium browser verified catalog empty s
 
 A real downloaded backup contained one unfinished video with a saved timestamp and one manually completed episode. Export → clear → import → reload restored both records. A second export contained exactly the same video records. Malformed JSON and an unsupported version were rejected without changing saved progress. The restored watch page, history, course summary, and continue card agreed.
 
-About and data settings were checked at a 390px viewport without horizontal overflow. This is responsive desktop testing, not real mobile playback verification. Safari, Firefox, real mobile playback, and persistence across a subsequent deployment remain unchecked. The protected preview was not browser-tested; production verification supersedes the earlier share-link request.
+About and data settings were checked at a 390px viewport without horizontal overflow. This is responsive desktop testing, not real mobile playback verification. The user confirmed Safari, Firefox, real mobile playback, and persistence across a subsequent deployment complete on October 30, 2026. These are user-reported results, not additional automated browser checks. The protected preview was not browser-tested; production verification supersedes the earlier share-link request.
 
 The walkthrough found a missing Your data header link on About. The fix makes its navigation consistent with the other five pages and was verified in the local production preview. All 50 tests and build checks passed before commit.
 
 Cloud installation uses Corepack to honor the project's pnpm-only developer configuration. Node is constrained to the supported 22 release line. The cloud formatter rejected `vercel.json` even though the uploaded source passed local formatting. The cause was not confirmed. As a narrow workaround, builds with `VERCEL=1` exclude only this file from formatting; local checks still check its source formatting. Vercel parses the configuration as part of deployment.
+
+The pilot release checks are complete. Work now moves to catalog expansion; see WEBSITE_PLAN.md.

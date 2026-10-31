@@ -415,10 +415,17 @@ select {
   text-decoration: none;
   padding: 22px 25px;
 }
+.course-art[data-subject="History"] {
+  background: #f2cfb8;
+}
+.course-art[data-subject="Science"] {
+  background: #dcd7ef;
+}
 .course-art-kicker {
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 .art-course-title {
   position: absolute;

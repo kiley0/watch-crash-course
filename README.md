@@ -19,13 +19,13 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for the domain map, dependency rules, a
 
 ## Implemented features
 
-Catalog search and subject filtering, a complete Study Skills course page with all ten numbered episodes, episode search, official YouTube links, accessible responsive styling, and an about/privacy page. Catalog/network errors and unknown course IDs have useful recovery states. No fabricated course or viewing progress is shown.
+Catalog search and subject filtering, complete Study Skills, World History, and Biology course pages with 102 numbered episodes, episode search, official YouTube links, accessible responsive styling, and an about/privacy page. Catalog/network errors and unknown course IDs have useful recovery states. No fabricated course or viewing progress is shown.
 
 The watch page now loads YouTube’s official player after a user action, offers resume or replay, saves playback position, supports manual completion and confirmed episode reset, and links to previous/next lessons. Course episodes show saved status. Course completion summaries, a recent-course continue panel, and searchable learning history are also available. The data settings page supports backup download, validated replacement import, and confirmed clearing. No account or API key is required.
 
 ## Content maintenance
 
-The checked-in files in `public/data/` are manually curated. The course index contains metadata; `courses/study-skills.json` contains the ordered numbered episodes. The optional preview is excluded. Source links point to Crash Course's official episode pages, which supplied the video IDs. Reviewed October 30, 2026 against [the official course](https://thecrashcourse.com/topic/studyskills/). Descriptions and illustrations are original. No scraping or live Data API is used by visitors. Run the tests after editing the catalog: they validate counts, ordering, IDs, and source URLs.
+The checked-in files in `public/data/` are manually curated. The course index contains metadata; `courses/<id>.json` contains each course’s ordered numbered episodes. Previews and extras are excluded. Source links point to Crash Course’s official episode pages, whose embedded videos supplied the IDs. Reviewed October 30, 2026 against [Study Skills](https://thecrashcourse.com/topic/studyskills/) (10 episodes), [World History](https://thecrashcourse.com/topic/worldhistory1/) (42 episodes), and [Biology](https://thecrashcourse.com/topic/biology/) (50 episodes). Biology is the current Dr. Sammy Ramsey series, distinct from Biology (2012); World History is the original numbered 1–42 series, distinct from World History II. Descriptions and illustrations are original. No scraping or live Data API is used by visitors. Run the tests after editing the catalog: they validate counts, ordering, IDs, and source URLs.
 
 ## Hosting
 
@@ -59,7 +59,7 @@ History search matches episode/course text and video IDs; status filters disting
 
 ## Milestone verification
 
-`pnpm build` runs formatting, lint, strict type checks, colocated tests, and all six HTML build entries. Automated checks cover catalog contracts, query matching, course detail loading, progress transitions and persistence, blocked storage, preserving future-schema records, and player lifecycle/error behavior. Player tests use a boundary fake; they do not replace real browser playback verification. Local browser checks confirmed no YouTube frames/scripts before the load action, real playback with pause saving, a saved resume choice after reload, manual completion surviving reload and appearing on the course page, confirmed reset, next-episode navigation, and the watch layout at 390px without horizontal overflow. The built watch page also loaded correctly in the production preview. Milestone 3 browser checks also covered empty history, persisted history and resume links, status filters and reset, a 1-of-10 completion count, most-recent-first ordering, 390px mobile layout, tablet navigation bounds, and recovery while the catalog file was temporarily unavailable. Cross-browser Safari, Firefox, and mobile playback checks remain part of release validation.
+`pnpm build` runs formatting, lint, strict type checks, colocated tests, and all six HTML build entries. Automated checks cover catalog contracts, query matching, course detail loading, progress transitions and persistence, blocked storage, preserving future-schema records, and player lifecycle/error behavior. Player tests use a boundary fake; they do not replace real browser playback verification. Local browser checks confirmed no YouTube frames/scripts before the load action, real playback with pause saving, a saved resume choice after reload, manual completion surviving reload and appearing on the course page, confirmed reset, next-episode navigation, and the watch layout at 390px without horizontal overflow. The built watch page also loaded correctly in the production preview. Milestone 3 browser checks also covered empty history, persisted history and resume links, status filters and reset, a 1-of-10 completion count, most-recent-first ordering, 390px mobile layout, tablet navigation bounds, and recovery while the catalog file was temporarily unavailable. The user subsequently confirmed Safari, Firefox, and real mobile playback checks complete; see the release checklist.
 
 Milestone 1 also passed an HTTP portability check with all pages/data/assets served under a nested subdirectory. There is no SPA rewrite. A protected Vercel preview is available; see [release checks](./RELEASE_CHECKLIST.md) for its status.
 
@@ -109,14 +109,20 @@ Before import or clearing, close other site tabs. An open player can otherwise s
 
 `data/` owns the backup contract and repository; `site/infrastructure/storage-coordinator.ts` owns serialized raw storage operations. It persists a recovery snapshot in `data_settings` before replacing the watch progress store. Removing the recovery entry commits the change. Failures attempt rollback; an interrupted operation rolls back before any page reads or writes after reload. Unknown recovery formats are preserved and block writes. If storage is unavailable, the usual temporary-progress warnings remain in place. No schema migrations are needed for this initial version; future versions must be explicitly supported.
 
-Milestone 4 release work still includes the full browser matrix and deployment validation.
+Milestone 4 release validation is complete; the user confirmed the remaining browser and deployment-update checks.
 
 Manual data-page verification confirmed a real JSON download, invalid-file rejection without changing record counts, explicit clear confirmation, and restoring the downloaded backup after clearing. The counts and saved watch progress returned after restoration.
 
-The data page also passed a 390px layout check without horizontal overflow. Cross-browser release testing remains outstanding.
+The data page also passed a 390px layout check without horizontal overflow. The user confirmed the remaining release checks complete on October 30, 2026.
 
 ## Release checks
 
 See [RELEASE_CHECKLIST.md](./RELEASE_CHECKLIST.md) for the remaining browser and deployment checks. `vercel.json` builds this as a static multi-page site, installs the pinned pnpm version with a frozen lockfile, and publishes `dist/`. Keep HTML extensions and ordinary 404 responses; do not add a catch-all rewrite.
 
 To host elsewhere, run `pnpm install --frozen-lockfile` and `pnpm build`, then serve the contents of `dist/` with any static host. No Node process is needed after the build. Keep the production origin stable so existing browser progress remains available.
+
+## Catalog expansion verification
+
+All 92 added episode IDs were checked against embedded videos on the official World History and Biology episode pages. The build validates a matching detail file for every catalog entry, contiguous episode numbering, counts, unique video IDs within each course, and known series endpoints. All 52 tests and build checks pass.
+
+The local production preview passed History and Science filtering, episode search, first/last lesson boundaries, last-episode completion, actual playback in both new courses, saved Biology resume after reload, and independent progress for all three courses. The catalog and 50-episode Biology page fit a 390px viewport without horizontal overflow. These are local preview checks; the expansion has not been deployed yet.

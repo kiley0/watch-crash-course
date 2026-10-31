@@ -247,3 +247,11 @@ The site shell and catalog should continue working if the storage library's upst
 - Which stable Vercel production URL or custom domain to use when deployment is requested.
 
 The complete pilot release spans these milestones: one course that can be watched, resumed after closing the browser, and backed up to a file, using only static hosting.
+
+## Post-pilot: catalog expansion
+
+The user confirmed the remaining pilot release checks complete on October 30, 2026. Milestones 1–4 are complete.
+
+### 5. World History and Biology
+
+Add the complete World History series (42 numbered episodes, John Green) and the current Biology series (50 numbered episodes, Dr. Sammy Ramsey). Keep the existing static JSON model and verify episode numbers, IDs, and source URLs against official course pages. Exclude previews and extras. Derive subject filters from the catalog and remove single-course copy from shared pages. Validate every detail file at build time and check filtering, first/last lesson navigation, playback, and independent progress across courses. No API keys, importer service, or runtime dependencies are needed.

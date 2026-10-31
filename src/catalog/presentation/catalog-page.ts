@@ -35,6 +35,9 @@ Alpine.data("catalogPage", () => {
     get ready(): boolean {
       return !this.loading && !this.error;
     },
+    get subjects(): string[] {
+      return [...new Set(this.courses.map((course) => course.subject))].toSorted();
+    },
     get filteredCourses(): CourseCard[] {
       return this.courses.filter(
         (course) =>
@@ -76,7 +79,7 @@ Alpine.data("catalogPage", () => {
     get emptyMessage(): string {
       return (
         findShelfSurprise(this.query)?.message ??
-        "Try “study,” “notes,” or “Thomas Frank.” We’re starting with one carefully curated course."
+        "Try a subject like “history” or “science,” a course title, or a host’s name."
       );
     },
     resetFilters() {

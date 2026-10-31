@@ -3,7 +3,39 @@ import catalog from "../../../public/data/courses.json";
 import detail from "../../../public/data/courses/study-skills.json";
 import { isCourseId, parseCatalog, parseDetail } from "./course";
 
+const courseFiles = import.meta.glob("../../../public/data/courses/*.json", {
+  eager: true,
+  import: "default",
+});
+
 describe("curated catalog contracts", () => {
+  it("publishes a validated detail file for every catalog course, with no orphan files", () => {
+    const courses = parseCatalog(catalog);
+    expect(
+      Object.keys(courseFiles)
+        .map((path) => path.split("/").at(-1)!)
+        .toSorted((a, b) => a.localeCompare(b)),
+    ).toEqual(courses.map((course) => `${course.id}.json`).toSorted((a, b) => a.localeCompare(b)));
+    for (const course of courses) {
+      const detail = parseDetail(
+        courseFiles[`../../../public/data/courses/${course.id}.json`],
+        course,
+      );
+      expect(detail.episodes).toHaveLength(course.episodeCount);
+    }
+  });
+  it("keeps the complete original World History and current Biology series distinct", () => {
+    for (const [id, count, first, last] of [
+      ["world-history", 42, "Yocja_N5s1I", "s_iwrt7D5OA"],
+      ["biology", 50, "tZE_fQFK8EY", "SyHM1gFyP8Y"],
+    ] as const) {
+      const course = parseCatalog(catalog).find((course) => course.id === id)!;
+      const detail = parseDetail(courseFiles[`../../../public/data/courses/${id}.json`], course);
+      expect(detail.episodes).toHaveLength(count);
+      expect(detail.episodes[0]?.videoId).toBe(first);
+      expect(detail.episodes.at(-1)?.videoId).toBe(last);
+    }
+  });
   it("uses one course-ID rule for catalog records and navigation", () => {
     for (const id of ["study-skills", "biology", "history-2"]) expect(isCourseId(id)).toBe(true);
     for (const id of ["", "../study-skills", "Study-Skills", "study--skills", "study/skills"])

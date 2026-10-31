@@ -1,0 +1,257 @@
+{
+  "courseId": "world-history",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "The Agricultural Revolution",
+      "videoId": "Yocja_N5s1I",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-agricultural-revolution-crash-course-world-history-1/"
+    },
+    {
+      "number": 2,
+      "title": "Indus Valley Civilization",
+      "videoId": "n7ndRwqJYDM",
+      "sourceUrl": "https://thecrashcourse.com/courses/indus-valley-civilization-crash-course-world-history-2/"
+    },
+    {
+      "number": 3,
+      "title": "Mesopotamia",
+      "videoId": "sohXPx_XZ6Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/mesopotamia-crash-course-world-history-3/"
+    },
+    {
+      "number": 4,
+      "title": "Ancient Egypt",
+      "videoId": "Z3Wvw6BivVI",
+      "sourceUrl": "https://thecrashcourse.com/courses/ancient-egypt-crash-course-world-history-4/"
+    },
+    {
+      "number": 5,
+      "title": "The Persians & Greeks",
+      "videoId": "Q-mkVSasZIM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-persians-greeks-crash-course-world-history-5/"
+    },
+    {
+      "number": 6,
+      "title": "Buddha and Ashoka",
+      "videoId": "8Nn5uqE3C9w",
+      "sourceUrl": "https://thecrashcourse.com/courses/buddha-and-ashoka-crash-course-world-history-6/"
+    },
+    {
+      "number": 7,
+      "title": "2,000 Years of Chinese History! The Mandate of Heaven and Confucius",
+      "videoId": "ylWORyToTo4",
+      "sourceUrl": "https://thecrashcourse.com/courses/%e2%80%8e2000-years-of-chinese-history-the-mandate-of-heaven-and-confucius-world-history-7/"
+    },
+    {
+      "number": 8,
+      "title": "Alexander the Great",
+      "videoId": "0LsrkWDCvxg",
+      "sourceUrl": "https://thecrashcourse.com/courses/alexander-the-great-and-the-situation-the-great-crash-course-world-history-8/"
+    },
+    {
+      "number": 9,
+      "title": "The Silk Road and Ancient Trade",
+      "videoId": "vfe-eNq-Qyg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-silk-road-and-ancient-trade-crash-course-world-history-9/"
+    },
+    {
+      "number": 10,
+      "title": "The Roman Empire. Or Republic. Or…Which Was It?",
+      "videoId": "oPf27gAup9U",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-roman-empire-or-republic-or-which-was-it-crash-course-world-history-10/"
+    },
+    {
+      "number": 11,
+      "title": "Christianity from Judaism to Constantine",
+      "videoId": "TG55ErfdaeY",
+      "sourceUrl": "https://thecrashcourse.com/courses/christianity-from-judaism-to-constantine-crash-course-world-history-11/"
+    },
+    {
+      "number": 12,
+      "title": "Fall of The Roman Empire…in the 15th Century",
+      "videoId": "3PszVWZNWVA",
+      "sourceUrl": "https://thecrashcourse.com/courses/fall-of-the-roman-empire-in-the-15th-century-crash-course-world-history-12/"
+    },
+    {
+      "number": 13,
+      "title": "Islam, the Quran, and the Five Pillars",
+      "videoId": "TpcbfxtdoI8",
+      "sourceUrl": "https://thecrashcourse.com/courses/islam-the-quran-and-the-five-pillars-all-without-a-flamewar-crash-course-world-history-13/"
+    },
+    {
+      "number": 14,
+      "title": "The Dark Ages…How Dark Were They, Really?",
+      "videoId": "QV7CanyzhZg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-dark-ages-how-dark-were-they-really-crash-course-world-history-14/"
+    },
+    {
+      "number": 15,
+      "title": "The Crusades – Pilgrimage or Holy War?",
+      "videoId": "X0zudTQelzI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-crusades-pilgrimage-or-holy-war-crash-course-world-history-15/"
+    },
+    {
+      "number": 16,
+      "title": "Mansa Musa and Islam in Africa",
+      "videoId": "jvnU0v6hcUo",
+      "sourceUrl": "https://thecrashcourse.com/courses/mansa-musa-and-islam-in-africa-crash-course-world-history-16/"
+    },
+    {
+      "number": 17,
+      "title": "Wait For It…The Mongols!",
+      "videoId": "szxPar0BcMo",
+      "sourceUrl": "https://thecrashcourse.com/courses/wait-for-it-the-mongols-crash-course-world-history-17/"
+    },
+    {
+      "number": 18,
+      "title": "Int’l Commerce, Snorkeling Camels, and The Indian Ocean Trade",
+      "videoId": "a6XtBLDmPA0",
+      "sourceUrl": "https://thecrashcourse.com/courses/intl-commerce-snorkeling-camels-and-the-indian-ocean-trade-crash-course-world-history-18/"
+    },
+    {
+      "number": 19,
+      "title": "Venice and the Ottoman Empire",
+      "videoId": "UN-II_jBzzo",
+      "sourceUrl": "https://thecrashcourse.com/courses/venice-and-the-ottoman-empire-crash-course-world-history-19/"
+    },
+    {
+      "number": 20,
+      "title": "Russia, the Kievan Rus, and the Mongols",
+      "videoId": "etmRI2_9Q_A",
+      "sourceUrl": "https://thecrashcourse.com/courses/russia-the-kievan-rus-and-the-mongols-crash-course-world-history-20/"
+    },
+    {
+      "number": 21,
+      "title": "Columbus, de Gama, and Zheng He! 15th Century Mariners",
+      "videoId": "NjEGncridoQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/columbus-de-gama-and-zheng-he-15th-century-mariners-crash-course-world-history-21/"
+    },
+    {
+      "number": 22,
+      "title": "The Renaissance – Was it a Thing?",
+      "videoId": "Vufba_ZcoR0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-renaissance-was-it-a-thing-crash-course-world-history-22/"
+    },
+    {
+      "number": 23,
+      "title": "The Columbian Exchange",
+      "videoId": "HQPA5oNpfM4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-columbian-exchange-crash-course-world-history-23/"
+    },
+    {
+      "number": 24,
+      "title": "The Atlantic Slave Trade",
+      "videoId": "dnV_MTFEGIY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-atlantic-slave-trade-crash-course-world-history-24/"
+    },
+    {
+      "number": 25,
+      "title": "The Spanish Empire, Silver, & Runaway Inflation",
+      "videoId": "rjhIzemLdos",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-spanish-empire-silver-runaway-inflation-crash-course-world-history-25/"
+    },
+    {
+      "number": 26,
+      "title": "The Seven Years War",
+      "videoId": "j0qbzNHmfW0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-seven-years-war-crash-course-world-history-26/"
+    },
+    {
+      "number": 27,
+      "title": "The Amazing Life and Strange Death of Captain Cook",
+      "videoId": "2yXNrLTddME",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-amazing-life-and-strange-death-of-captain-cook-crash-course-world-history-27/"
+    },
+    {
+      "number": 28,
+      "title": "Tea, Taxes, and The American Revolution",
+      "videoId": "HlUiSBXQHCw",
+      "sourceUrl": "https://thecrashcourse.com/courses/tea-taxes-and-the-american-revolution-crash-course-world-history-28/"
+    },
+    {
+      "number": 29,
+      "title": "The French Revolution",
+      "videoId": "lTTvKwCylFY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-french-revolution-crash-course-world-history-29/"
+    },
+    {
+      "number": 30,
+      "title": "Haitian Revolutions",
+      "videoId": "5A_o-nU5s2U",
+      "sourceUrl": "https://thecrashcourse.com/courses/haitian-revolutions-crash-course-world-history-30/"
+    },
+    {
+      "number": 31,
+      "title": "Latin American Revolutions",
+      "videoId": "ZBw35Ze3bg8",
+      "sourceUrl": "https://thecrashcourse.com/courses/latin-american-revolutions-crash-course-world-history-31/"
+    },
+    {
+      "number": 32,
+      "title": "Coal, Steam, and The Industrial Revolution",
+      "videoId": "zhL5DCizj5c",
+      "sourceUrl": "https://thecrashcourse.com/courses/coal-steam-and-the-industrial-revolution-crash-course-world-history-32/"
+    },
+    {
+      "number": 33,
+      "title": "Capitalism and Socialism",
+      "videoId": "B3u4EFTwprM",
+      "sourceUrl": "https://thecrashcourse.com/courses/capitalism-and-socialism-crash-course-world-history-33/"
+    },
+    {
+      "number": 34,
+      "title": "Samurai, Daimyo, Matthew Perry, and Nationalism",
+      "videoId": "Nosq94oCl_M",
+      "sourceUrl": "https://thecrashcourse.com/courses/samurai-daimyo-matthew-perry-and-nationalism-crash-course-world-history-34/"
+    },
+    {
+      "number": 35,
+      "title": "Imperialism",
+      "videoId": "alJaltUmrGo",
+      "sourceUrl": "https://thecrashcourse.com/courses/imperialism-crash-course-world-history-35/"
+    },
+    {
+      "number": 36,
+      "title": "Archdukes, Cynicism, and World War I",
+      "videoId": "_XPZQ0LAlR4",
+      "sourceUrl": "https://thecrashcourse.com/courses/archdukes-cynicism-and-world-war-i-crash-course-world-history-36/"
+    },
+    {
+      "number": 37,
+      "title": "Communists, Nationalists, and China’s Revolutions",
+      "videoId": "UUCEeC4f6ts",
+      "sourceUrl": "https://thecrashcourse.com/courses/communists-nationalists-and-chinas-revolutions-crash-course-world-history-37/"
+    },
+    {
+      "number": 38,
+      "title": "World War II",
+      "videoId": "Q78COTwT7nE",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-war-ii-crash-course-world-history-38/"
+    },
+    {
+      "number": 39,
+      "title": "USA vs USSR Fight! The Cold War",
+      "videoId": "y9HjvHZfCUI",
+      "sourceUrl": "https://thecrashcourse.com/courses/usa-vs-ussr-fight-the-cold-war-crash-course-world-history-39/"
+    },
+    {
+      "number": 40,
+      "title": "Decolonization and Nationalism Triumphant",
+      "videoId": "T_sGTspaF4Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/decolonization-and-nationalism-triumphant-crash-course-world-history-40/"
+    },
+    {
+      "number": 41,
+      "title": "Globalization, Part 1 – The Upside",
+      "videoId": "5SnR-e0S6Ic",
+      "sourceUrl": "https://thecrashcourse.com/courses/globalization-i-the-upside-crash-course-world-history-41/"
+    },
+    {
+      "number": 42,
+      "title": "Globalization, Part 2 – Good or Bad?",
+      "videoId": "s_iwrt7D5OA",
+      "sourceUrl": "https://thecrashcourse.com/courses/globalization-ii-good-or-bad-crash-course-world-history-42/"
+    }
+  ]
+}

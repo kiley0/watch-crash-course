@@ -9,5 +9,27 @@
     "playlistId": "PL8dPuuaLjXtNcAJRf3bE1IJU6nMfHj86W",
     "sourceUrl": "https://thecrashcourse.com/topic/studyskills/",
     "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "world-history",
+    "title": "World History",
+    "subject": "History",
+    "host": "John Green",
+    "episodeCount": 42,
+    "description": "Follow the connections between people, places, and ideas, from early farming communities to our global world.",
+    "playlistId": "PLBDA2E52FB1EF80C9",
+    "sourceUrl": "https://thecrashcourse.com/topic/worldhistory1/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "biology",
+    "title": "Biology",
+    "subject": "Science",
+    "host": "Dr. Sammy Ramsey",
+    "episodeCount": 50,
+    "description": "Explore the living world, from tiny cells to whole ecosystems. Discover how life works, changes, and connects us all.",
+    "playlistId": "PL8dPuuaLjXtPW_ofbxdHNciuLoTRLPMgB",
+    "sourceUrl": "https://thecrashcourse.com/topic/biology/",
+    "reviewedAt": "2026-10-30"
   }
 ]

@@ -42,7 +42,7 @@ Alpine.data("coursePage", () => {
       }).format(new Date(this.course.reviewedAt))}`;
     },
     get sourceDescription(): string {
-      return `All ${this.course.episodeCount} numbered episodes, in order. The course preview is optional and isn’t counted as a lesson.`;
+      return `All ${this.course.episodeCount} numbered episodes, in order. Previews and extras aren’t counted as lessons.`;
     },
     get continueUrl(): string {
       const id = this.summary?.continueVideoId;

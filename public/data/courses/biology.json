@@ -1,0 +1,305 @@
+{
+  "courseId": "biology",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Introduction to Biology",
+      "videoId": "tZE_fQFK8EY",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-biology-crash-course-biology-1/"
+    },
+    {
+      "number": 2,
+      "title": "The Scientific Method",
+      "videoId": "xOLcZMw0hd4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-scientific-method-crash-course-biology-2/"
+    },
+    {
+      "number": 3,
+      "title": "What Biologists Do",
+      "videoId": "rgZhDoPgzK8",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-biologists-do-crash-course-biology-3/"
+    },
+    {
+      "number": 4,
+      "title": "How Life is Organized",
+      "videoId": "cjR5zPrVjTc",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-life-is-organized-crash-course-biology-4/"
+    },
+    {
+      "number": 5,
+      "title": "Intro to Ecology: Why Did All These Elephants Die?",
+      "videoId": "aO3Yp45zmw8",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-ecology-crash-course-biology-5/"
+    },
+    {
+      "number": 6,
+      "title": "Community Ecology: Interspecies Interactions",
+      "videoId": "yGYnwMSflBU",
+      "sourceUrl": "https://thecrashcourse.com/courses/community-ecology-crash-course-biology-6/"
+    },
+    {
+      "number": 7,
+      "title": "Population Ecology",
+      "videoId": "KfHYN6tZnpU",
+      "sourceUrl": "https://thecrashcourse.com/courses/population-ecology-crash-course-biology-7/"
+    },
+    {
+      "number": 8,
+      "title": "What is Climate Change?",
+      "videoId": "Y1mPWVzaGQY",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-climate-change-crash-course-biology-8/"
+    },
+    {
+      "number": 9,
+      "title": "The Effects of Climate Change",
+      "videoId": "HsAUGbUgx6Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-effects-of-climate-change-crash-course-biology-9/"
+    },
+    {
+      "number": 10,
+      "title": "Conservation Biology: Sixth Mass Extinction?",
+      "videoId": "IALw687nswo",
+      "sourceUrl": "https://thecrashcourse.com/courses/conservation-biology-crash-course-biology-10/"
+    },
+    {
+      "number": 11,
+      "title": "Intro to Evolution: What We Can Learn From a Giraffe’s Neck",
+      "videoId": "2TSIUt-lHyo",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-a-weirdly-long-giraffe-nerve-can-teach-us-about-evolution-crash-course-biology-11/"
+    },
+    {
+      "number": 12,
+      "title": "Microevolution: What’s An Allele Got to Do With It?",
+      "videoId": "fBOrzQP423A",
+      "sourceUrl": "https://thecrashcourse.com/courses/microevolution-whats-an-allele-got-to-do-with-it-crash-course-biology-12/"
+    },
+    {
+      "number": 13,
+      "title": "Natural Selection: Life’s way of Stayin’ Alive",
+      "videoId": "i-VeKZeyHZs",
+      "sourceUrl": "https://thecrashcourse.com/courses/natural-selection-lifes-way-of-stayin-alive-crash-course-biology-13/"
+    },
+    {
+      "number": 14,
+      "title": "Population Genetics: Why Do We Have Different Skin Colors?",
+      "videoId": "4joZpdXeS4A",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-do-we-have-different-skin-colors-population-genetics-crash-course-biology-14/"
+    },
+    {
+      "number": 15,
+      "title": "Speciation: Where Do Species Come From?",
+      "videoId": "WAUX8dXu6aw",
+      "sourceUrl": "https://thecrashcourse.com/courses/where-do-species-come-from-speciation-crash-course-biology-15/"
+    },
+    {
+      "number": 16,
+      "title": "Evolutionary History: The Timeline of Life",
+      "videoId": "4mxJbgdiyIY",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-did-life-begin-evolutionary-history-crash-course-biology-16/"
+    },
+    {
+      "number": 17,
+      "title": "Phylogeny: How We’re All Related",
+      "videoId": "YM6Ekb5De2o",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-were-all-related-phylogeny-crash-course-biology-17/"
+    },
+    {
+      "number": 18,
+      "title": "Biological Diversity, Butts, and the Tree of Life",
+      "videoId": "Aa1dGBKgGVc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-tree-of-life-crash-course-biology-18/"
+    },
+    {
+      "number": 19,
+      "title": "Human Evolution: We Didn’t Evolve From Chimps",
+      "videoId": "TmNHk7kIxr8",
+      "sourceUrl": "https://thecrashcourse.com/courses/humans-didnt-evolve-from-chimps-human-evolution-crash-course-biology-19/"
+    },
+    {
+      "number": 20,
+      "title": "Carbon & Biological Molecules: What is Life Made Of?",
+      "videoId": "y7raEBOvLwU",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-tiny-stuff-that-makes-big-life-carbon-biological-molecules-crash-course-biology-20/"
+    },
+    {
+      "number": 21,
+      "title": "The Unexpected Truth About Water",
+      "videoId": "zheKWEkW94o",
+      "sourceUrl": "https://thecrashcourse.com/courses/a-love-letter-to-h2o-water-ph-crash-course-biology-21/"
+    },
+    {
+      "number": 22,
+      "title": "Microscopes: How We See What We Can’t See",
+      "videoId": "V66WBvI7Ufw",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-microscopes-work-crash-course-biology-22/"
+    },
+    {
+      "number": 23,
+      "title": "A Tour of the Cell",
+      "videoId": "jsDxw63QqK0",
+      "sourceUrl": "https://thecrashcourse.com/courses/a-tour-of-the-cell-crash-course-biology-23/"
+    },
+    {
+      "number": 24,
+      "title": "Cell Membranes: How Does Stuff Get Into Your Cells?",
+      "videoId": "9Ia8zH-qMZw",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-stuff-get-into-your-cells-cell-membranes-crash-course-biology-24/"
+    },
+    {
+      "number": 25,
+      "title": "Why Do Cells Need to Communicate?",
+      "videoId": "p15KSbNxb28",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-cells-communicate-crash-course-biology-25/"
+    },
+    {
+      "number": 26,
+      "title": "Chemical Reactions in Biology",
+      "videoId": "62cN8Z5Velo",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-get-energy-chemical-reactions-crash-course-biology-26/"
+    },
+    {
+      "number": 27,
+      "title": "Cellular Respiration: Do Cells Breathe?",
+      "videoId": "HeO3yagexTw",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-cells-get-their-energy-electron-transport-chain-crash-course-biology-27/"
+    },
+    {
+      "number": 28,
+      "title": "Photosynthesis: The Original Solar Power",
+      "videoId": "-ZRsLhaukn8",
+      "sourceUrl": "https://thecrashcourse.com/courses/photosynthesis-the-original-solar-power-crash-course-biology-28/"
+    },
+    {
+      "number": 29,
+      "title": "Mitosis & the Cell Cycle: How Cells Clone Themselves",
+      "videoId": "skPOXcVvS5c",
+      "sourceUrl": "https://thecrashcourse.com/courses/mitosis-and-the-cell-cycle-crash-course-biology-29/"
+    },
+    {
+      "number": 30,
+      "title": "Meiosis: Why Are All Humans Unique?",
+      "videoId": "pj1oFx42d48",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-are-all-humans-unique-meiosis-crash-course-biology-30/"
+    },
+    {
+      "number": 31,
+      "title": "Intro to Genetics: Why Your Cat Looks Like That",
+      "videoId": "YnJPbphsoMY",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-your-cat-looks-like-that-genetics-crash-course-biology-31/"
+    },
+    {
+      "number": 32,
+      "title": "Genetic Traits: Nature? Nurture? Not That Simple",
+      "videoId": "9zwq8N4Ufd8",
+      "sourceUrl": "https://thecrashcourse.com/courses/nature-nurture-not-so-simple-genetic-traits-crash-course-biology-32/"
+    },
+    {
+      "number": 33,
+      "title": "DNA Structure & Replication: Our Instruction Manual for Existing",
+      "videoId": "4YNDB_zSzfE",
+      "sourceUrl": "https://thecrashcourse.com/courses/our-instruction-manual-for-existing-dna-structure-replication-crash-course-biology-33/"
+    },
+    {
+      "number": 34,
+      "title": "Transcription: How mRNA Helped Save Lives",
+      "videoId": "j6YaOqKORYY",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-mrna-helped-save-lives-dna-transcription-crash-course-biology-34/"
+    },
+    {
+      "number": 35,
+      "title": "Translation: How RNA Gets Translated into Protein Power",
+      "videoId": "6ulXau2HyHg",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-rna-gets-translated-into-protein-power-crash-course-biology-35/"
+    },
+    {
+      "number": 36,
+      "title": "How Genes Express Themselves",
+      "videoId": "NeeaP8pp9HI",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-genes-express-themselves-crash-course-biology-36/"
+    },
+    {
+      "number": 37,
+      "title": "Genetic Mutations: Is Drinking Milk a Super Power?",
+      "videoId": "8HfzUgxumVE",
+      "sourceUrl": "https://thecrashcourse.com/courses/is-drinking-milk-a-superpower-genetic-mutations-crash-course-biology-37/"
+    },
+    {
+      "number": 38,
+      "title": "Bacterial DNA & Genetics",
+      "videoId": "Y1LKHx_GrsY",
+      "sourceUrl": "https://thecrashcourse.com/courses/were-full-of-bacteria-crash-course-biology-38/"
+    },
+    {
+      "number": 39,
+      "title": "Viruses & Vaccines: How Do Vaccines Work?",
+      "videoId": "xSbMX0MFJCY",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-vaccines-work-viruses-vaccines-crash-course-biology-39/"
+    },
+    {
+      "number": 40,
+      "title": "Bioinformatics: How Data Saves Lives",
+      "videoId": "o-WFU5ovaTc",
+      "sourceUrl": "https://thecrashcourse.com/courses/algorithms-arent-just-for-tiktok-bioinformatics-crash-course-biology-40/"
+    },
+    {
+      "number": 41,
+      "title": "Multicellular Function: Why We Aren’t Just One Big Cell",
+      "videoId": "5dF11sRMWo4",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-we-arent-just-one-big-cell-multicellular-function-crash-course-biology-41/"
+    },
+    {
+      "number": 42,
+      "title": "Plant Anatomy & Physiology: Plants Are Hardcore",
+      "videoId": "pvVvCt6Kdp8",
+      "sourceUrl": "https://thecrashcourse.com/courses/plants-are-hardcore-plant-anatomy-physiology-crash-course-biology-42/"
+    },
+    {
+      "number": 43,
+      "title": "How Animals Turn Resources Into Waste: The Poop Episode",
+      "videoId": "kjZAHBMMKoU",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-poop-episode-how-animals-turn-resources-into-waste-crash-course-biology-43/"
+    },
+    {
+      "number": 44,
+      "title": "Animal Infrastructure: Why You’re More Than Goo",
+      "videoId": "gAWYROgu4JU",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-youre-more-than-goo-animal-infrastructure-crash-course-biology-44/"
+    },
+    {
+      "number": 45,
+      "title": "Animal Defense Systems: How Skin, Snot, and Cells Keep Us Healthy",
+      "videoId": "Nb6oWRnvBDw",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-skin-snot-and-cells-keep-us-healthy-animal-defense-systems-crash-course-biology-45/"
+    },
+    {
+      "number": 46,
+      "title": "Nervous & Endocrine Systems: What Really Happens When You Step on a Lego",
+      "videoId": "NKpkU4-Sf9A",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-really-happens-when-you-step-on-a-lego-nervous-endocrine-systems-crash-course-biology-46/"
+    },
+    {
+      "number": 47,
+      "title": "Sexual & Asexual Reproduction: How Animals Do It",
+      "videoId": "ruZqnWHINWE",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-animals-do-it-sexual-asexual-reproduction-crash-course-biology-47/"
+    },
+    {
+      "number": 48,
+      "title": "Gender, Sex, & Sexuality: What’s the Difference?",
+      "videoId": "P8scg_XAgZQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/gender-sex-sexuality-whats-the-difference-crash-course-biology-48/"
+    },
+    {
+      "number": 49,
+      "title": "Animal Behavior: Why This Toad Is Bad at Jumping",
+      "videoId": "9R_6FoM1cog",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-this-toad-is-bad-at-jumping-and-other-mysterious-animal-behavior-crash-course-biology-49/"
+    },
+    {
+      "number": 50,
+      "title": "Biology and You: The Dr. Sammy Show",
+      "videoId": "SyHM1gFyP8Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-dr-sammy-show-crash-course-biology-50/"
+    }
+  ]
+}
