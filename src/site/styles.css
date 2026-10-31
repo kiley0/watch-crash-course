@@ -642,15 +642,6 @@ select {
   transform: rotate(-25deg);
   color: #b1afd9;
 }
-.shelf-caption {
-  margin-top: 19px;
-  font-size: 11px;
-  color: #6a7568;
-}
-.shelf-caption > span {
-  font-size: 20px;
-  margin-right: 5px;
-}
 /* Learning principles and closing invitation */
 .how-section {
   padding-top: 42px;
@@ -1210,10 +1201,6 @@ select {
   .note-doodle {
     right: 20px;
     font-size: 75px;
-  }
-  .shelf-caption {
-    font-size: 10px;
-    line-height: 1.6;
   }
   .how-section {
     padding-top: 30px;
