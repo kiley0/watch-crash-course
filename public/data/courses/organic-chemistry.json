@@ -1,0 +1,305 @@
+{
+  "courseId": "organic-chemistry",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What is Organic Chemistry?",
+      "videoId": "PmvLB5dIEp8",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-organic-chemistry-crash-course-organic-chemistry-1/"
+    },
+    {
+      "number": 2,
+      "title": "The Basics of Organic Nomenclature",
+      "videoId": "HhT2E7wuAgg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-basics-of-organic-nomenclature-crash-course-organic-chemistry-2/"
+    },
+    {
+      "number": 3,
+      "title": "More Organic Nomenclature: Heteroatom Functional Groups",
+      "videoId": "VAmVdxEksxY",
+      "sourceUrl": "https://thecrashcourse.com/courses/more-organic-nomenclature-heteroatom-functional-groups-crash-course-organic-chemistry-3/"
+    },
+    {
+      "number": 4,
+      "title": "3D Structure and Bonding",
+      "videoId": "cpWHgKgKxGk",
+      "sourceUrl": "https://thecrashcourse.com/courses/3d-structure-and-bonding-crash-course-organic-chemistry-4/"
+    },
+    {
+      "number": 5,
+      "title": "IR Spectroscopy and Mass Spectrometry",
+      "videoId": "xMa1BQ8z9C0",
+      "sourceUrl": "https://thecrashcourse.com/courses/ir-spectroscopy-and-mass-spectrometry-crash-course-organic-chemistry-5/"
+    },
+    {
+      "number": 6,
+      "title": "Alkanes",
+      "videoId": "ryHnC0wqTTo",
+      "sourceUrl": "https://thecrashcourse.com/courses/alkanes-crash-course-organic-chemistry-6/"
+    },
+    {
+      "number": 7,
+      "title": "Cyclohexanes",
+      "videoId": "GRVxDqhgOYo",
+      "sourceUrl": "https://thecrashcourse.com/courses/cyclohexanes-crash-course-organic-chemistry-7/"
+    },
+    {
+      "number": 8,
+      "title": "Stereochemistry",
+      "videoId": "Bw_cetheReo",
+      "sourceUrl": "https://thecrashcourse.com/courses/stereochemistry-crash-course-organic-chemistry-8/"
+    },
+    {
+      "number": 9,
+      "title": "More Stereochemical Relationships",
+      "videoId": "ofFEFywbJKA",
+      "sourceUrl": "https://thecrashcourse.com/courses/more-stereochemical-relationships-crash-course-organic-chemistry-9/"
+    },
+    {
+      "number": 10,
+      "title": "Polarity, Resonance, and Electron Pushing",
+      "videoId": "r83xGgfkxa8",
+      "sourceUrl": "https://thecrashcourse.com/courses/polarity-resonance-and-electron-pushing-crash-course-organic-chemistry-10/"
+    },
+    {
+      "number": 11,
+      "title": "Acidity",
+      "videoId": "BLKqbC_QIZA",
+      "sourceUrl": "https://thecrashcourse.com/courses/acidity-crash-course-organic-chemistry-11/"
+    },
+    {
+      "number": 12,
+      "title": "Nucleophiles and Electrophiles",
+      "videoId": "R3PLq3dOqv4",
+      "sourceUrl": "https://thecrashcourse.com/courses/nucleophiles-and-electrophiles-crash-course-organic-chemistry-12/"
+    },
+    {
+      "number": 13,
+      "title": "Intro to Reaction Mechanisms",
+      "videoId": "ORMUTUhYjvg",
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-reaction-mechanisms-crash-course-organic-chemistry-13/"
+    },
+    {
+      "number": 14,
+      "title": "E/Z Alkenes, Electrophilic Addition, & Carbocations",
+      "videoId": "B8qaENT_k0A",
+      "sourceUrl": "https://thecrashcourse.com/courses/e-z-alkenes-electrophilic-addition-carbocations-crash-course-organic-chemistry-14/"
+    },
+    {
+      "number": 15,
+      "title": "Thermodynamics and Energy Diagrams",
+      "videoId": "Ykhn2psFmEM",
+      "sourceUrl": "https://thecrashcourse.com/courses/thermodynamics-and-energy-diagrams-crash-course-organic-chemistry-15/"
+    },
+    {
+      "number": 16,
+      "title": "Alkene Addition Reactions",
+      "videoId": "3WbjKwRqOhk",
+      "sourceUrl": "https://thecrashcourse.com/courses/alkene-addition-reactions-crash-course-organic-chemistry-16/"
+    },
+    {
+      "number": 17,
+      "title": "Alkene Redox Reactions",
+      "videoId": "HYSRwaMo3tY",
+      "sourceUrl": "https://thecrashcourse.com/courses/alkene-redox-reactions-crash-course-organic-chemistry-17/"
+    },
+    {
+      "number": 18,
+      "title": "Alkyne Reactions & Tautomerization",
+      "videoId": "zFSHoaScfwY",
+      "sourceUrl": "https://thecrashcourse.com/courses/alkene-reactions-tautomerization-crash-course-organic-chemistry-18/"
+    },
+    {
+      "number": 19,
+      "title": "Radical Reactions & Hammond’s Postulate",
+      "videoId": "WsKWFoIMCQ0",
+      "sourceUrl": "https://thecrashcourse.com/courses/radical-reactions-hammonds-postulate-crash-course-organic-chemistry-19/"
+    },
+    {
+      "number": 20,
+      "title": "Intro to Substitution Reactions",
+      "videoId": "69-FZDJ_eoI",
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-substitution-reactions-crash-course-organic-chemistry-20/"
+    },
+    {
+      "number": 21,
+      "title": "Substitution Reactions – SN1 and SN2 Mechanisms",
+      "videoId": "Wxn5jvR-ffQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/substitution-reactions-sn1-and-sn2-mechanisms-crash-course-organic-chemistry-21/"
+    },
+    {
+      "number": 22,
+      "title": "E1 and E2 Reactions",
+      "videoId": "ZOUS0Q_B4fQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/e1-and-e2-reactions-crash-course-organic-chemistry-22/"
+    },
+    {
+      "number": 23,
+      "title": "Determining SN1, SN2, E1, and E2 Reactions",
+      "videoId": "2SWVieovfsQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/determining-sn1-sn2-e1-and-e2-reactions-crash-course-organic-chemistry-23/"
+    },
+    {
+      "number": 24,
+      "title": "Alcohols, Ethers, and Epoxides",
+      "videoId": "j04zMFwDeDU",
+      "sourceUrl": "https://thecrashcourse.com/courses/alcohols-ethers-and-epoxides-crash-course-organic-chemistry-24/"
+    },
+    {
+      "number": 25,
+      "title": "Synthesis and Column Chromatography",
+      "videoId": "IGC5J_7gkKg",
+      "sourceUrl": "https://thecrashcourse.com/courses/synthesis-and-column-chromatography-crash-course-organic-chemistry-25/"
+    },
+    {
+      "number": 26,
+      "title": "How to Identify Molecules – Proton NMR",
+      "videoId": "Liit4blsrqM",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-identify-molecules-proton-nmr-crash-course-organic-chemistry-26/"
+    },
+    {
+      "number": 27,
+      "title": "An Overview of Aldehydes and Ketones",
+      "videoId": "-fBPX-4kFlw",
+      "sourceUrl": "https://thecrashcourse.com/courses/an-overview-of-aldehydes-and-ketones-crash-course-organic-chemistry-27/"
+    },
+    {
+      "number": 28,
+      "title": "Organometallic Reagents and Carbanions",
+      "videoId": "oYddXjm6QRw",
+      "sourceUrl": "https://thecrashcourse.com/courses/organometallic-reagents-and-carbanions-crash-course-organic-chemistry-28/"
+    },
+    {
+      "number": 29,
+      "title": "Aldehyde and Ketone Reactions – Hydrates, Acetals, & Imines",
+      "videoId": "Sz8G97H27EE",
+      "sourceUrl": "https://thecrashcourse.com/courses/aldehyde-and-ketone-reactions-hydrates-acetals-imines-crash-course-organic-chemistry-29/"
+    },
+    {
+      "number": 30,
+      "title": "Carboxylic Acids",
+      "videoId": "cA0fGIfALxI",
+      "sourceUrl": "https://thecrashcourse.com/courses/carboxylic-acids-crash-course-organic-chemistry-30/"
+    },
+    {
+      "number": 31,
+      "title": "Carboxylic Acid Derivatives & Hydrolysis Reactions",
+      "videoId": "VfX2od-AwRo",
+      "sourceUrl": "https://thecrashcourse.com/courses/carboxylic-acid-derivatives-hydrolysis-reactions-crash-course-organic-chemistry-31/"
+    },
+    {
+      "number": 32,
+      "title": "Carboxylic Acid Derivatives – Interconversion & Organometallics",
+      "videoId": "XkvoUrdbtZA",
+      "sourceUrl": "https://thecrashcourse.com/courses/carboxylic-acid-derivatives-interconversion-organometallics-crash-course-organic-chemistry-32/"
+    },
+    {
+      "number": 33,
+      "title": "Chemoselectivity and Protecting Groups",
+      "videoId": "BUmdnJZcC88",
+      "sourceUrl": "https://thecrashcourse.com/courses/chemoselectivity-and-protecting-groups-crash-course-organic-chemistry-33/"
+    },
+    {
+      "number": 34,
+      "title": "Retrosynthesis and Liquid-Liquid Extraction",
+      "videoId": "oi3bcICQd40",
+      "sourceUrl": "https://thecrashcourse.com/courses/retrosynthesis-and-liquid-liquid-extraction-crash-course-organic-chemistry-34/"
+    },
+    {
+      "number": 35,
+      "title": "Polymer Chemistry",
+      "videoId": "dXaBkrS1HaM",
+      "sourceUrl": "https://thecrashcourse.com/courses/polymer-chemistry-crash-course-organic-chemistry-35/"
+    },
+    {
+      "number": 36,
+      "title": "Aromaticity, Hückel’s Rule, and Chemical Equivalence in NMR",
+      "videoId": "C0ZHrfTuCGk",
+      "sourceUrl": "https://thecrashcourse.com/courses/aromaticity-huckels-rule-and-chemical-equivalence-in-nmr-crash-course-organic-chemistry-36/"
+    },
+    {
+      "number": 37,
+      "title": "Intro to Electrophilic Aromatic Substitution",
+      "videoId": "vuSF5yhKRxA",
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-electrophilic-aromatic-substitution-crash-course-organic-chemistry-37/"
+    },
+    {
+      "number": 38,
+      "title": "More EAS - Electron Donating and Withdrawing Groups",
+      "videoId": "geIhhMml1W8",
+      "sourceUrl": "https://thecrashcourse.com/courses/more-eas-0-electron-donating-and-withdrawing-groups-crash-course-organic-chemistry-38/"
+    },
+    {
+      "number": 39,
+      "title": "More EAS & Benzylic Reactions",
+      "videoId": "eGp6vN2fZvI",
+      "sourceUrl": "https://thecrashcourse.com/courses/more-eas-benzylic-reactions-crash-course-organic-chemistry-39/"
+    },
+    {
+      "number": 40,
+      "title": "Synthesis, Distillation, & Recrystallization",
+      "videoId": "esBgihsV02A",
+      "sourceUrl": "https://thecrashcourse.com/courses/synthesis-distillation-recrystallization-crash-course-organic-chemistry-40/"
+    },
+    {
+      "number": 41,
+      "title": "Conjugation & UV-Vis Spectroscopy",
+      "videoId": "nolHg3FHJW4",
+      "sourceUrl": "https://thecrashcourse.com/courses/conjugation-uv-vis-spectroscopy-crash-course-organic-chemistry-41/"
+    },
+    {
+      "number": 42,
+      "title": "The Diels-Alder & Other Pericyclic Reactions",
+      "videoId": "3sLfG79NWOc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-diels-alder-other-pericyclic-reactions-crash-course-organic-chemistry-42/"
+    },
+    {
+      "number": 43,
+      "title": "Enols and Enolates - Reactivity, Halogenation, and Alkylation",
+      "videoId": "gZ7pMORZ6U0",
+      "sourceUrl": "https://thecrashcourse.com/courses/enols-and-enolates-crash-course-organic-chemistry-43/"
+    },
+    {
+      "number": 44,
+      "title": "The Aldol and Claisen Reactions",
+      "videoId": "eCBW1wlHt2k",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-adol-and-claisen-reactions-crash-course-organic-chemistry-44/"
+    },
+    {
+      "number": 45,
+      "title": "Crossed Aldol Reactions, Enones, and Conjugate Addition",
+      "videoId": "diM2D3SaPc4",
+      "sourceUrl": "https://thecrashcourse.com/courses/crossed-aldol-reactions-enones-and-conjugate-addition-crash-course-organic-chemistry-45/"
+    },
+    {
+      "number": 46,
+      "title": "Amines",
+      "videoId": "Kzm61ubVQmE",
+      "sourceUrl": "https://thecrashcourse.com/courses/amines-crash-course-organic-chemistry-46/"
+    },
+    {
+      "number": 47,
+      "title": "Diazonium Salts & Nucleophilic Aromatic Substitution",
+      "videoId": "aPdxwMJVwf4",
+      "sourceUrl": "https://thecrashcourse.com/courses/diazonium-salts-nucleophilic-aromatic-substitution-crash-course-organic-chemistry-47/"
+    },
+    {
+      "number": 48,
+      "title": "Biochemical Building Blocks & Fischer and Haworth Projections",
+      "videoId": "Ak7jp_VbX_A",
+      "sourceUrl": "https://thecrashcourse.com/courses/biochemical-building-blocks-fischer-and-hawthorn-projections-crash-course-organic-chemistry-48/"
+    },
+    {
+      "number": 49,
+      "title": "Biological Polymers",
+      "videoId": "3Pp1AY_lmR4",
+      "sourceUrl": "https://thecrashcourse.com/courses/biological-polymers-crash-course-organic-chemistry-49/"
+    },
+    {
+      "number": 50,
+      "title": "Medicinal Chemistry and Penicillin Total Synthesis",
+      "videoId": "qygFjt2_LG4",
+      "sourceUrl": "https://thecrashcourse.com/courses/medicinal-chemistry-and-penicillin-total-synthesis-crash-course-organic-chemistry-50/"
+    }
+  ]
+}

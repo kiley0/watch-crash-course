@@ -1,0 +1,305 @@
+{
+  "courseId": "us-government",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Introduction",
+      "videoId": "lrk4oY7UxpQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-crash-course-u-s-government-and-politics/"
+    },
+    {
+      "number": 2,
+      "title": "The Bicameral Congress",
+      "videoId": "n9defOwVWS8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-bicameral-congress-crash-course-government-and-politics-2/"
+    },
+    {
+      "number": 3,
+      "title": "Separation of Powers and Checks and Balances",
+      "videoId": "0bf3CwYCxXw",
+      "sourceUrl": "https://thecrashcourse.com/courses/separation-of-powers-and-checks-and-balances-crash-course-government-and-politics-3/"
+    },
+    {
+      "number": 4,
+      "title": "Federalism",
+      "videoId": "J0gosGXSgsI",
+      "sourceUrl": "https://thecrashcourse.com/courses/federalism-crash-course-government-and-politics-4/"
+    },
+    {
+      "number": 5,
+      "title": "Constitutional Compromises",
+      "videoId": "kCCmuftyj8A",
+      "sourceUrl": "https://thecrashcourse.com/courses/constitutional-compromises-crash-course-government-and-politics-5/"
+    },
+    {
+      "number": 6,
+      "title": "Congressional Elections",
+      "videoId": "qxiD9AEX4Hc",
+      "sourceUrl": "https://thecrashcourse.com/courses/congressional-elections-crash-course-government-and-politics-6/"
+    },
+    {
+      "number": 7,
+      "title": "Congressional Committees",
+      "videoId": "evLR90Dx79M",
+      "sourceUrl": "https://thecrashcourse.com/courses/congressional-committees-crash-course-government-and-politics-7/"
+    },
+    {
+      "number": 8,
+      "title": "Congressional Leadership",
+      "videoId": "L8urcMLGFyU",
+      "sourceUrl": "https://thecrashcourse.com/courses/congressional-leadership-crash-course-government-and-politics-8/"
+    },
+    {
+      "number": 9,
+      "title": "How a Bill Becomes a Law",
+      "videoId": "66f4-NKEYz4",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-a-bill-becomes-a-law-crash-course-government-and-politics-9/"
+    },
+    {
+      "number": 10,
+      "title": "Congressional Decisions",
+      "videoId": "ZT9ipQdYL-s",
+      "sourceUrl": "https://thecrashcourse.com/courses/congressional-decisions-crash-course-government-and-politics-10/"
+    },
+    {
+      "number": 11,
+      "title": "Presidential Power",
+      "videoId": "5l02sK5LovI",
+      "sourceUrl": "https://thecrashcourse.com/courses/presidential-power-crash-course-government-and-politics-11/"
+    },
+    {
+      "number": 12,
+      "title": "Presidential Powers 2",
+      "videoId": "fnHb-zyWh14",
+      "sourceUrl": "https://thecrashcourse.com/courses/presidential-powers-2-crash-course-government-and-politics-12/"
+    },
+    {
+      "number": 13,
+      "title": "Congressional Delegation",
+      "videoId": "UVboes68PkQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/congressional-delegation-crash-course-government-and-politics-13/"
+    },
+    {
+      "number": 14,
+      "title": "How Presidents Govern",
+      "videoId": "5vnuFJSMYkY",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-presidents-govern-crash-course-government-and-politics-14/"
+    },
+    {
+      "number": 15,
+      "title": "Bureaucracy Basics",
+      "videoId": "I8EQAnKntLs",
+      "sourceUrl": "https://thecrashcourse.com/courses/bureaucracy-basics-crash-course-government-and-politics-15/"
+    },
+    {
+      "number": 16,
+      "title": "Types of Bureaucracies",
+      "videoId": "tIvUo3bP4Eo",
+      "sourceUrl": "https://thecrashcourse.com/courses/types-of-bureaucracies-crash-course-government-and-politics-16/"
+    },
+    {
+      "number": 17,
+      "title": "Controlling Bureaucracies",
+      "videoId": "12MCVhfo4j4",
+      "sourceUrl": "https://thecrashcourse.com/courses/controlling-bureaucracies-crash-course-government-and-politics-17/"
+    },
+    {
+      "number": 18,
+      "title": "Legal System Basics",
+      "videoId": "mXw-hEB263k",
+      "sourceUrl": "https://thecrashcourse.com/courses/legal-system-basics-crash-course-government-and-politics-18/"
+    },
+    {
+      "number": 19,
+      "title": "Structure of the Court System",
+      "videoId": "IGyx5UEwgtA",
+      "sourceUrl": "https://thecrashcourse.com/courses/structure-of-the-court-system-crash-course-government-and-politics-19/"
+    },
+    {
+      "number": 20,
+      "title": "Supreme Court of the United States Procedures",
+      "videoId": "7sualy8OiKk",
+      "sourceUrl": "https://thecrashcourse.com/courses/supreme-court-of-the-united-states-procedures-crash-course-government-and-politics-20/"
+    },
+    {
+      "number": 21,
+      "title": "Judicial Review",
+      "videoId": "mWYFwl93uCM",
+      "sourceUrl": "https://thecrashcourse.com/courses/judicial-review-crash-course-government-and-politics-21/"
+    },
+    {
+      "number": 22,
+      "title": "Judicial Decisions",
+      "videoId": "QjLcLguoKC4",
+      "sourceUrl": "https://thecrashcourse.com/courses/judicial-decisions-crash-course-government-and-politics-22/"
+    },
+    {
+      "number": 23,
+      "title": "Civil Rights & Liberties",
+      "videoId": "kbwsF-A2sTg",
+      "sourceUrl": "https://thecrashcourse.com/courses/civil-rights-liberties-crash-course-government-23/"
+    },
+    {
+      "number": 24,
+      "title": "Freedom of Religion",
+      "videoId": "Y8dI1GTWCk4",
+      "sourceUrl": "https://thecrashcourse.com/courses/freedom-of-religion-crash-course-government-and-politics-24/"
+    },
+    {
+      "number": 25,
+      "title": "Freedom of Speech",
+      "videoId": "Zeeq0qaEaLw",
+      "sourceUrl": "https://thecrashcourse.com/courses/freedom-of-speech-crash-course-government-and-politics-25/"
+    },
+    {
+      "number": 26,
+      "title": "Freedom of the Press",
+      "videoId": "Vtpd0EbaFoQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/freedom-of-the-press-crash-course-government-and-politics-26/"
+    },
+    {
+      "number": 27,
+      "title": "Search and Seizure",
+      "videoId": "_4O1OlGyTuU",
+      "sourceUrl": "https://thecrashcourse.com/courses/search-and-seizure-crash-course-government-and-politics-27/"
+    },
+    {
+      "number": 28,
+      "title": "Due Process of Law",
+      "videoId": "UyHWRXAAgmQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/due-process-of-law-crash-course-government-and-politics-28/"
+    },
+    {
+      "number": 29,
+      "title": "Equal Protection",
+      "videoId": "qKK5KVI9_Q8",
+      "sourceUrl": "https://thecrashcourse.com/courses/equal-protection-crash-course-government-and-politics-29/"
+    },
+    {
+      "number": 30,
+      "title": "Sex Discrimination",
+      "videoId": "1uFh4GTZH-U",
+      "sourceUrl": "https://thecrashcourse.com/courses/sex-discrimination-crash-course-government-and-politics-30/"
+    },
+    {
+      "number": 31,
+      "title": "Discrimination",
+      "videoId": "P-yviKu8Odo",
+      "sourceUrl": "https://thecrashcourse.com/courses/discrimination-crash-course-government-and-politics-31/"
+    },
+    {
+      "number": 32,
+      "title": "Affirmative Action",
+      "videoId": "gJgQR6xiZGs",
+      "sourceUrl": "https://thecrashcourse.com/courses/affirmative-action-crash-course-government-and-politics-32/"
+    },
+    {
+      "number": 33,
+      "title": "Public Opinion",
+      "videoId": "WJLDgb8m3K0",
+      "sourceUrl": "https://thecrashcourse.com/courses/public-opinion-crash-course-government-and-politics-33/"
+    },
+    {
+      "number": 34,
+      "title": "Shaping Public Opinion",
+      "videoId": "NflULVECAFQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/shaping-public-opinion-crash-course-government-and-politics-34/"
+    },
+    {
+      "number": 35,
+      "title": "Political Ideology",
+      "videoId": "j_k_k-bHigM",
+      "sourceUrl": "https://thecrashcourse.com/courses/political-ideology-crash-course-government-and-politics-35/"
+    },
+    {
+      "number": 36,
+      "title": "Election Basics",
+      "videoId": "48EZKXweGDo",
+      "sourceUrl": "https://thecrashcourse.com/courses/election-basics-crash-course-government-and-politics-36/"
+    },
+    {
+      "number": 37,
+      "title": "Gerrymandering",
+      "videoId": "MnhFm5QVVTo",
+      "sourceUrl": "https://thecrashcourse.com/courses/gerrymandering-crash-course-government-and-politics-37/"
+    },
+    {
+      "number": 38,
+      "title": "How Voters Decide",
+      "videoId": "eermkiaFoWc",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-voters-decide-crash-course-government-and-politics-38/"
+    },
+    {
+      "number": 39,
+      "title": "Political Campaigns",
+      "videoId": "2A5QlpAyKSQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/political-campaigns-crash-course-government-and-politics-39/"
+    },
+    {
+      "number": 40,
+      "title": "Political Parties",
+      "videoId": "VEmOUHxessE",
+      "sourceUrl": "https://thecrashcourse.com/courses/political-parties-crash-course-government-and-politics-40/"
+    },
+    {
+      "number": 41,
+      "title": "Party Systems",
+      "videoId": "PkltAl_cO5Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/party-systems-crash-course-government-and-politics-41/"
+    },
+    {
+      "number": 42,
+      "title": "Interest Groups",
+      "videoId": "bOvBA7oIIgc",
+      "sourceUrl": "https://thecrashcourse.com/courses/interest-groups-crash-course-government-and-politics-42/"
+    },
+    {
+      "number": 43,
+      "title": "Interest Group Formation",
+      "videoId": "BGo9Asfwric",
+      "sourceUrl": "https://thecrashcourse.com/courses/interest-group-formation-crash-course-government-and-politics-43/"
+    },
+    {
+      "number": 44,
+      "title": "Media Institution",
+      "videoId": "6F0g4N415uw",
+      "sourceUrl": "https://thecrashcourse.com/courses/media-institution-crash-course-government-and-politics-44/"
+    },
+    {
+      "number": 45,
+      "title": "Media Regulation",
+      "videoId": "f6LKl4RKIew",
+      "sourceUrl": "https://thecrashcourse.com/courses/media-regulation-crash-course-government-and-politics-45/"
+    },
+    {
+      "number": 46,
+      "title": "Market Economy",
+      "videoId": "6yLY06tTQ1A",
+      "sourceUrl": "https://thecrashcourse.com/courses/market-economy-crash-course-government-and-politics-46/"
+    },
+    {
+      "number": 47,
+      "title": "Government Regulation",
+      "videoId": "sDqGzMdhL1M",
+      "sourceUrl": "https://thecrashcourse.com/courses/government-regulation-crash-course-government-and-politics-47/"
+    },
+    {
+      "number": 48,
+      "title": "Monetary and Fiscal Policy",
+      "videoId": "_tULRch1PRQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/monetary-and-fiscal-policy-crash-course-government-and-politics-48/"
+    },
+    {
+      "number": 49,
+      "title": "Social Policy",
+      "videoId": "mlxLX8Fto_A",
+      "sourceUrl": "https://thecrashcourse.com/courses/social-policy-crash-course-government-and-politics-49/"
+    },
+    {
+      "number": 50,
+      "title": "Foreign Policy",
+      "videoId": "PMhIQNkO_Y0",
+      "sourceUrl": "https://thecrashcourse.com/courses/foreign-policy-crash-course-government-and-politics-50/"
+    }
+  ]
+}

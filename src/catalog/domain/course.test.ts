@@ -49,6 +49,16 @@ describe("curated catalog contracts", () => {
       ["public-health", 10, "5aww-Bpgkf4", "VvRr0oL6s_E"],
       ["film-history", 16, "vsnB4iBb78o", "cCY-4NxXCU8"],
       ["entrepreneurship", 17, "aozlwC3XwfY", "pqPvwTvvnaY"],
+      ["geography", 50, "93LLwiMjDko", "T_vLXgj2pvo"],
+      ["sociology", 44, "YnCJU6PaCio", "KriEIJ0ubh0"],
+      ["us-government", 50, "lrk4oY7UxpQ", "PMhIQNkO_Y0"],
+      ["organic-chemistry", 50, "PmvLB5dIEp8", "qygFjt2_LG4"],
+      ["film-criticism", 15, "qk0-m_LARCY", "KEEnap_h8cs"],
+      ["european-history", 50, "rNCw2MOfnLQ", "1hAraGgEiAo"],
+      ["world-mythology", 41, "HeX6CX5LEj0", "qmpDK-8ib2Y"],
+      ["theater-drama", 50, "sNWrOuwzax8", "4kxzD4ASioI"],
+      ["business-soft-skills", 17, "EFeEAtXdzFU", "DJq9zVLu5_Q"],
+      ["history-of-science", 46, "YvtCLceNf30", "EhBhP-zk0_I"],
     ] as const) {
       const course = parseCatalog(catalog).find((course) => course.id === id)!;
       const detail = parseDetail(courseFiles[`../../../public/data/courses/${id}.json`], course);

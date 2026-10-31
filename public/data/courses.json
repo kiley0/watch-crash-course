@@ -262,5 +262,115 @@
     "playlistId": "PL8dPuuaLjXtNamNKW5qlS-nKgA0on7Qze",
     "sourceUrl": "https://thecrashcourse.com/topic/businessentrepreneurship/",
     "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "geography",
+    "title": "Geography",
+    "subject": "Social sciences",
+    "host": "Alizé Carrère",
+    "episodeCount": 50,
+    "description": "Explore how Earth works and how people shape it, from weather and oceans to migration, borders, and cities.",
+    "playlistId": "PL8dPuuaLjXtO85Sl24rSiVQ93q7vcntNF",
+    "sourceUrl": "https://thecrashcourse.com/topic/geo/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "sociology",
+    "title": "Sociology",
+    "subject": "Social sciences",
+    "host": "Nicole Sweeney",
+    "episodeCount": 44,
+    "description": "Look at the patterns behind everyday life: culture, social groups, inequality, institutions, and the societies we build together.",
+    "playlistId": "PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA",
+    "sourceUrl": "https://thecrashcourse.com/topic/sociology/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "us-government",
+    "title": "U.S. Government & Politics",
+    "subject": "Social sciences",
+    "host": "Craig Benzine",
+    "episodeCount": 50,
+    "description": "Understand the U.S. political system, from the Constitution and branches of government to elections, civil rights, and public policy.",
+    "playlistId": "PL8dPuuaLjXtOfse2ncvffeelTrqvhrz8H",
+    "sourceUrl": "https://thecrashcourse.com/topic/usgovernment/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "organic-chemistry",
+    "title": "Organic Chemistry",
+    "subject": "Science",
+    "host": "Dr. Deboki Chakravarti",
+    "episodeCount": 50,
+    "description": "Build on chemistry with carbon compounds, molecular structures, reaction mechanisms, and the chemistry behind materials and medicines.",
+    "playlistId": "PL8dPuuaLjXtONguuhLdVmq0HTKS0jksS4",
+    "sourceUrl": "https://thecrashcourse.com/topic/ochem/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "film-criticism",
+    "title": "Film Criticism",
+    "subject": "Humanities",
+    "host": "Michael Aranda",
+    "episodeCount": 15,
+    "description": "Look closely at fifteen films to explore how editing, sound, performance, and visual choices shape the stories we see on screen.",
+    "playlistId": "PL8dPuuaLjXtOCicti5dwLAKuesMQVi7hw",
+    "sourceUrl": "https://thecrashcourse.com/topic/filmcriticism/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "european-history",
+    "title": "European History",
+    "subject": "History",
+    "host": "John Green",
+    "episodeCount": 50,
+    "description": "Trace Europe’s changing societies, ideas, revolutions, and conflicts, from the medieval world to the modern era.",
+    "playlistId": "PL8dPuuaLjXtMsMTfmRomkVQG8AqrAmJFX",
+    "sourceUrl": "https://thecrashcourse.com/topic/europeanhistory/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "world-mythology",
+    "title": "World Mythology",
+    "subject": "Humanities",
+    "host": "Mike Rugnetta",
+    "episodeCount": 41,
+    "description": "Meet creation stories, heroes, tricksters, and monsters from around the world, and explore what myths reveal about the people who tell them.",
+    "playlistId": "PL8dPuuaLjXtNCG9Vq7vdvJytS-F-xGi7_",
+    "sourceUrl": "https://thecrashcourse.com/topic/mythology/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "theater-drama",
+    "title": "Theater & Drama",
+    "subject": "Humanities",
+    "host": "Mike Rugnetta",
+    "episodeCount": 50,
+    "description": "Explore the history and craft of live performance, from ancient stages and dramatic traditions to Shakespeare and Broadway musicals.",
+    "playlistId": "PL8dPuuaLjXtONXALkeh5uisZqrAcPKCee",
+    "sourceUrl": "https://thecrashcourse.com/topic/theaterdrama/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "business-soft-skills",
+    "title": "Business: Soft Skills",
+    "subject": "Social sciences",
+    "host": "Evelyn from the Internets",
+    "episodeCount": 17,
+    "description": "Practice the people side of work: communication, collaboration, negotiation, job interviews, time management, and avoiding burnout.",
+    "playlistId": "PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM",
+    "sourceUrl": "https://thecrashcourse.com/topic/businesssoftskills/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "history-of-science",
+    "title": "History of Science",
+    "subject": "History",
+    "host": "Hank Green",
+    "episodeCount": 46,
+    "description": "Follow how people across cultures have investigated the world, from ancient astronomy and medicine to genetics, computing, and climate science.",
+    "playlistId": "PL8dPuuaLjXtNppY8ZHMPDH5TKK2UpU8Ng",
+    "sourceUrl": "https://thecrashcourse.com/topic/historyofscience/",
+    "reviewedAt": "2026-10-30"
   }
 ]

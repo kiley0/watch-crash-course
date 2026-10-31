@@ -283,3 +283,11 @@ Add 20 Artificial Intelligence lessons including numbered labs, 10 Navigating Di
 ### 12. Public Health, Film History, and Business: Entrepreneurship
 
 Add 10 Public Health lessons, 16 Film History lessons, and 17 Business: Entrepreneurship lessons, bringing the catalog to twenty-four courses and 727 lessons. Verify official lesson embeds and playlists, exclude previews and related embeds, and preserve numerical order. Extend catalog checks and verify playback, resume, course boundaries, search, and the longer business title on narrow screens. Preserve static JSON and existing dependencies.
+
+### 13. Geography, Sociology, U.S. Government & Politics, Organic Chemistry, and Film Criticism
+
+Add Geography (50), Sociology (44), U.S. Government & Politics (50), Organic Chemistry (50), and Film Criticism (15): 209 lessons, bringing the catalog to 29 courses and 936 lessons. Verify official episode pages and playlists, preserve numerical order, document website omissions, and extend endpoint checks. Checks completed: playback, saved resume, final-episode boundaries, host search, and responsive shelves. Film Criticism #11 requires the existing YouTube fallback because its owner disables embedding.
+
+### 14. European History, World Mythology, Theater & Drama, Business: Soft Skills, and History of Science
+
+Add European History (50), World Mythology (41), Theater & Drama (50), Business: Soft Skills (17), and History of Science (46): 204 lessons, bringing the catalog to 34 courses and 1,140 lessons. Verify official episode embeds and playlists, preserve numerical order, document missing heading numbers, and extend endpoint checks. Completed checks: inline playback and saved resume in all five courses, final-lesson boundaries, host search, and responsive layouts.

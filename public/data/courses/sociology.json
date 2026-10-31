@@ -1,0 +1,269 @@
+{
+  "courseId": "sociology",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What Is Sociology?",
+      "videoId": "YnCJU6PaCio",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-sociology-crash-course-sociology-1/"
+    },
+    {
+      "number": 2,
+      "title": "Major Sociological Paradigms",
+      "videoId": "DbTt_ySTjaY",
+      "sourceUrl": "https://thecrashcourse.com/courses/major-sociological-paradigms-crash-course-sociology-2/"
+    },
+    {
+      "number": 3,
+      "title": "Sociology & the Scientific Method",
+      "videoId": "ZIwyNIdgJBE",
+      "sourceUrl": "https://thecrashcourse.com/courses/sociology-the-scientific-method-crash-course-sociology-3/"
+    },
+    {
+      "number": 4,
+      "title": "Sociology Research Methods",
+      "videoId": "QwhK-iEyXYA",
+      "sourceUrl": "https://thecrashcourse.com/courses/sociology-research-methods-crash-course-sociology-4/"
+    },
+    {
+      "number": 5,
+      "title": "Émile Durkheim on Suicide & Society",
+      "videoId": "IZfGGF-YYzY",
+      "sourceUrl": "https://thecrashcourse.com/courses/emile-durkheim-on-suicide-society-crash-course-sociology-5/"
+    },
+    {
+      "number": 6,
+      "title": "Karl Marx & Conflict Theory",
+      "videoId": "gR3igiwaeyc",
+      "sourceUrl": "https://thecrashcourse.com/courses/karl-marx-conflict-theory-crash-course-sociology-6/"
+    },
+    {
+      "number": 7,
+      "title": "Dubois & Race Conflict",
+      "videoId": "-wny0OAz3g8",
+      "sourceUrl": "https://thecrashcourse.com/courses/dubois-race-conflict-crash-course-sociology-7/"
+    },
+    {
+      "number": 8,
+      "title": "Harriet Martineau & Gender Conflict Theory",
+      "videoId": "Wg9FWxpZeJ8",
+      "sourceUrl": "https://thecrashcourse.com/courses/harriet-martineau-gender-conflict-theory-crash-course-sociology-8/"
+    },
+    {
+      "number": 9,
+      "title": "Max Weber & Modernity",
+      "videoId": "69VF7mT4nRU",
+      "sourceUrl": "https://thecrashcourse.com/courses/max-weber-modernity-crash-course-sociology-9/"
+    },
+    {
+      "number": 10,
+      "title": "Symbols, Values, & Norms",
+      "videoId": "kGrVhM_Gi8k",
+      "sourceUrl": "https://thecrashcourse.com/courses/symbols-values-norms-crash-course-sociology-10/"
+    },
+    {
+      "number": 11,
+      "title": "Cultures, Subcultures, and Countercultures",
+      "videoId": "RV50AV7-Iwc",
+      "sourceUrl": "https://thecrashcourse.com/courses/cultures-subcultures-and-countercultures-crash-course-sociology-11/"
+    },
+    {
+      "number": 12,
+      "title": "How We Got Here",
+      "videoId": "BsRSL3duSko",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-we-got-here-crash-course-sociology-12/"
+    },
+    {
+      "number": 13,
+      "title": "Social Development",
+      "videoId": "WbBm_YLwowc",
+      "sourceUrl": "https://thecrashcourse.com/courses/social-development-crash-course-sociology-13/"
+    },
+    {
+      "number": 14,
+      "title": "Socialization",
+      "videoId": "K-RvJQxqVQc",
+      "sourceUrl": "https://thecrashcourse.com/courses/socialization-crash-course-sociology-14/"
+    },
+    {
+      "number": 15,
+      "title": "Social Interaction & Performance",
+      "videoId": "UUukBV82P9A",
+      "sourceUrl": "https://thecrashcourse.com/courses/social-interaction-performance-crash-course-sociology-15/"
+    },
+    {
+      "number": 16,
+      "title": "Social Groups",
+      "videoId": "_wFZ5Dbj8DA",
+      "sourceUrl": "https://thecrashcourse.com/courses/social-groups-crash-course-sociology-16/"
+    },
+    {
+      "number": 17,
+      "title": "Formal Organizations",
+      "videoId": "YDuBh7VbGgU",
+      "sourceUrl": "https://thecrashcourse.com/courses/formal-organizations-crash-course-sociology-17/"
+    },
+    {
+      "number": 18,
+      "title": "Deviance",
+      "videoId": "BGq9zW9w3Fw",
+      "sourceUrl": "https://thecrashcourse.com/courses/deviance-crash-course-sociology-18/"
+    },
+    {
+      "number": 19,
+      "title": "Theory & Deviance",
+      "videoId": "06IS_X7hWWI",
+      "sourceUrl": "https://thecrashcourse.com/courses/theory-deviance-crash-course-sociology-19/"
+    },
+    {
+      "number": 20,
+      "title": "Crime",
+      "videoId": "zBodqwAlW3A",
+      "sourceUrl": "https://thecrashcourse.com/courses/crime-crash-course-sociology-20/"
+    },
+    {
+      "number": 21,
+      "title": "Social Stratification",
+      "videoId": "SlkIKCMt-Fs",
+      "sourceUrl": "https://thecrashcourse.com/courses/social-stratification-crash-course-sociology-21/"
+    },
+    {
+      "number": 22,
+      "title": "Why is there Social Stratification?",
+      "videoId": "RtxtI5IGrfw",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-is-there-social-stratification-crash-course-sociology-22/"
+    },
+    {
+      "number": 23,
+      "title": "Social Stratification in the US",
+      "videoId": "DeiHz5tzlws",
+      "sourceUrl": "https://thecrashcourse.com/courses/social-stratification-in-the-us-crash-course-sociology-23/"
+    },
+    {
+      "number": 24,
+      "title": "Social Class & Poverty in the US",
+      "videoId": "c8PEv5SV4sU",
+      "sourceUrl": "https://thecrashcourse.com/courses/social-class-poverty-in-the-us-crash-course-sociology-24/"
+    },
+    {
+      "number": 25,
+      "title": "The Impacts of Social Class",
+      "videoId": "0a21mndoORE",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-impacts-of-social-class-crash-course-sociology-25/"
+    },
+    {
+      "number": 26,
+      "title": "Social Mobility",
+      "videoId": "GjuV-XdYHhA",
+      "sourceUrl": "https://thecrashcourse.com/courses/social-mobility-crash-course-sociology-26/"
+    },
+    {
+      "number": 27,
+      "title": "Global Stratification & Poverty",
+      "videoId": "6rts_PWIVTU",
+      "sourceUrl": "https://thecrashcourse.com/courses/global-stratification-poverty-crash-course-sociology-27/"
+    },
+    {
+      "number": 28,
+      "title": "Theories of Global Stratification",
+      "videoId": "b350ljkYWrU",
+      "sourceUrl": "https://thecrashcourse.com/courses/theories-of-global-stratification-crash-course-sociology-28/"
+    },
+    {
+      "number": 29,
+      "title": "Economic Systems & the Labor Market",
+      "videoId": "wslCc0Di978",
+      "sourceUrl": "https://thecrashcourse.com/courses/economic-systems-the-labor-market-crash-course-sociology-29/"
+    },
+    {
+      "number": 30,
+      "title": "Politics",
+      "videoId": "TCs_hyI15R8",
+      "sourceUrl": "https://thecrashcourse.com/courses/politics-crash-course-sociology-30/"
+    },
+    {
+      "number": 31,
+      "title": "Sex & Sexuality",
+      "videoId": "Kqt-_ILgv5c",
+      "sourceUrl": "https://thecrashcourse.com/courses/sex-sexuality-crash-course-sociology-31/"
+    },
+    {
+      "number": 32,
+      "title": "Gender Stratification",
+      "videoId": "Yb1_4FPtzrI",
+      "sourceUrl": "https://thecrashcourse.com/courses/gender-stratification-crash-course-sociology-32/"
+    },
+    {
+      "number": 33,
+      "title": "Theories of Gender",
+      "videoId": "CquRz_cceH8",
+      "sourceUrl": "https://thecrashcourse.com/courses/theories-of-gender-crash-course-sociology-33/"
+    },
+    {
+      "number": 34,
+      "title": "Race & Ethnicity",
+      "videoId": "7myLgdZhzjo",
+      "sourceUrl": "https://thecrashcourse.com/courses/race-ethnicity-crash-course-sociology-34/"
+    },
+    {
+      "number": 35,
+      "title": "Racial/Ethnic Prejudice & Discrimination",
+      "videoId": "gSddUPkVD24",
+      "sourceUrl": "https://thecrashcourse.com/courses/racial-ethnic-prejudice-discrimination-crash-course-sociology-35/"
+    },
+    {
+      "number": 36,
+      "title": "Age & Aging",
+      "videoId": "kJ18whKduFo",
+      "sourceUrl": "https://thecrashcourse.com/courses/age-aging-crash-course-sociology-36/"
+    },
+    {
+      "number": 37,
+      "title": "Theories About Family & Marriage",
+      "videoId": "yaeiCEro0iU",
+      "sourceUrl": "https://thecrashcourse.com/courses/theories-about-family-marriage-crash-course-sociology-37/"
+    },
+    {
+      "number": 38,
+      "title": "Stages of Family Life",
+      "videoId": "eWTz3KBCxfg",
+      "sourceUrl": "https://www.youtube.com/watch?v=eWTz3KBCxfg"
+    },
+    {
+      "number": 39,
+      "title": "Religion",
+      "videoId": "pIgb-3e8CWA",
+      "sourceUrl": "https://www.youtube.com/watch?v=pIgb-3e8CWA"
+    },
+    {
+      "number": 40,
+      "title": "Education In Society",
+      "videoId": "S294zRodS_4",
+      "sourceUrl": "https://www.youtube.com/watch?v=S294zRodS_4"
+    },
+    {
+      "number": 41,
+      "title": "Schools & Social Inequality",
+      "videoId": "hYMk3Bk08NA",
+      "sourceUrl": "https://www.youtube.com/watch?v=hYMk3Bk08NA"
+    },
+    {
+      "number": 42,
+      "title": "Health & Medicine",
+      "videoId": "8NGlENS1qgo",
+      "sourceUrl": "https://www.youtube.com/watch?v=8NGlENS1qgo"
+    },
+    {
+      "number": 43,
+      "title": "Population Health",
+      "videoId": "D9SWRByzDSo",
+      "sourceUrl": "https://www.youtube.com/watch?v=D9SWRByzDSo"
+    },
+    {
+      "number": 44,
+      "title": "The Structure & Cost of US Health Care",
+      "videoId": "KriEIJ0ubh0",
+      "sourceUrl": "https://www.youtube.com/watch?v=KriEIJ0ubh0"
+    }
+  ]
+}

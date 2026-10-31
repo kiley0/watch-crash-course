@@ -1,0 +1,281 @@
+{
+  "courseId": "history-of-science",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Intro to History of Science",
+      "videoId": "YvtCLceNf30",
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-history-of-science-crash-course-history-of-science-1/"
+    },
+    {
+      "number": 2,
+      "title": "The Presocratics",
+      "videoId": "epCOGAa7tRQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-presocratics-crash-course-history-of-science-2/"
+    },
+    {
+      "number": 3,
+      "title": "Plato and Aristotle",
+      "videoId": "rh0fxJkvL44",
+      "sourceUrl": "https://thecrashcourse.com/courses/plato-and-aristotle-crash-course-history-of-science-3/"
+    },
+    {
+      "number": 4,
+      "title": "India",
+      "videoId": "bDQkpNbsly4",
+      "sourceUrl": "https://thecrashcourse.com/courses/india-crash-course-history-of-science-4/"
+    },
+    {
+      "number": 5,
+      "title": "The Americas and Time Keeping",
+      "videoId": "dCBDUDwaeCA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-americas-and-time-keeping-crash-course-history-of-science-5/"
+    },
+    {
+      "number": 6,
+      "title": "Roman Engineering",
+      "videoId": "GcReek3z_38",
+      "sourceUrl": "https://thecrashcourse.com/courses/roman-engineering-crash-course-history-of-science-6/"
+    },
+    {
+      "number": 7,
+      "title": "The Medieval Islamicate World",
+      "videoId": "bkVsus8Ehxs",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-medieval-islamicate-world-crash-course-history-of-science-7/"
+    },
+    {
+      "number": 8,
+      "title": "Medieval China",
+      "videoId": "F6Su3rBxea8",
+      "sourceUrl": "https://thecrashcourse.com/courses/medieval-china-crash-course-history-of-science-8/"
+    },
+    {
+      "number": 9,
+      "title": "Ancient & Medieval Medicine",
+      "videoId": "iGiZXQVGpbY",
+      "sourceUrl": "https://thecrashcourse.com/courses/ancient-medieval-medicine-crash-course-history-of-science-9/"
+    },
+    {
+      "number": 10,
+      "title": "Alchemy",
+      "videoId": "gxiLuz9kHi0",
+      "sourceUrl": "https://thecrashcourse.com/courses/alchemy-history-of-science-10/"
+    },
+    {
+      "number": 11,
+      "title": "Cathedrals and Universities",
+      "videoId": "0wDlLwLIFeI",
+      "sourceUrl": "https://thecrashcourse.com/courses/cathedrals-and-universities-crash-course-history-of-science-11/"
+    },
+    {
+      "number": 12,
+      "title": "The Scientific Revolution",
+      "videoId": "vzo8vnxSARg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-scientific-revolution-crash-course-history-of-science-12/"
+    },
+    {
+      "number": 13,
+      "title": "The New Astronomy",
+      "videoId": "-FYvy3_egHw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-new-astronomy-crash-course-history-of-science-13/"
+    },
+    {
+      "number": 14,
+      "title": "The Scientific Methods",
+      "videoId": "UdQreBq6MOY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-scientific-methods-crash-course-history-of-science-14/"
+    },
+    {
+      "number": 15,
+      "title": "The New Anatomy",
+      "videoId": "3FX07HzYyqI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-new-anatomy-crash-course-history-of-science-15/"
+    },
+    {
+      "number": 16,
+      "title": "The Columbian Exchange",
+      "videoId": "UC5km6-o2oM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-columbian-exchange-crash-course-history-of-science-16/"
+    },
+    {
+      "number": 17,
+      "title": "Newton and Leibniz",
+      "videoId": "9UKGPOwR-iw",
+      "sourceUrl": "https://thecrashcourse.com/courses/newton-and-leibniz-crash-course-history-of-science-17/"
+    },
+    {
+      "number": 18,
+      "title": "The New Chemistry",
+      "videoId": "_M694ED8GtI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-new-chemistry-crash-course-history-of-science-18/"
+    },
+    {
+      "number": 19,
+      "title": "Biology Before Darwin",
+      "videoId": "K4CKmYSMT_0",
+      "sourceUrl": "https://thecrashcourse.com/courses/biology-before-darwin-crash-course-history-of-science-19/"
+    },
+    {
+      "number": 20,
+      "title": "Earth Science",
+      "videoId": "V2381lUhqc0",
+      "sourceUrl": "https://thecrashcourse.com/courses/earth-science-crash-course-history-of-science-20/"
+    },
+    {
+      "number": 21,
+      "title": "The Industrial Revolution",
+      "videoId": "FCpqN7GmLYk",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-industrial-revolution-crash-course-history-of-science-21/"
+    },
+    {
+      "number": 22,
+      "title": "Darwin and Natural Selection",
+      "videoId": "dfsUz2O2jww",
+      "sourceUrl": "https://thecrashcourse.com/courses/darwin-and-natural-selection-crash-course-history-of-science-22/"
+    },
+    {
+      "number": 23,
+      "title": "Eugenics and Francis Galton",
+      "videoId": "JeCKftkNKJ0",
+      "sourceUrl": "https://thecrashcourse.com/courses/eugenics-and-francis-galton-crash-course-history-of-science-23/"
+    },
+    {
+      "number": 24,
+      "title": "Micro-Biology",
+      "videoId": "2JdBH2tys6M",
+      "sourceUrl": "https://thecrashcourse.com/courses/micro-biology-crash-course-history-of-science-24/"
+    },
+    {
+      "number": 25,
+      "title": "Genetics – Lost and Found",
+      "videoId": "QmiwQ0Kosa8",
+      "sourceUrl": "https://thecrashcourse.com/courses/genetics-lost-and-found-crash-course-history-of-science-25/"
+    },
+    {
+      "number": 26,
+      "title": "Thermodynamics",
+      "videoId": "VpiLucwH-AQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/thermodynamics-crash-course-history-of-science-26/"
+    },
+    {
+      "number": 27,
+      "title": "Electricity",
+      "videoId": "JoscDcbAjbY",
+      "sourceUrl": "https://thecrashcourse.com/courses/electricity-crash-course-history-of-science-27/"
+    },
+    {
+      "number": 28,
+      "title": "Ford, Cars, and a New Revolution",
+      "videoId": "UPvwpYeOJnI",
+      "sourceUrl": "https://thecrashcourse.com/courses/ford-cars-and-a-new-revolution-crash-course-history-of-science-28/"
+    },
+    {
+      "number": 29,
+      "title": "Cinema, Radio, and Television",
+      "videoId": "go3AwYghhdI",
+      "sourceUrl": "https://thecrashcourse.com/courses/cinema-radio-and-television-crash-course-history-of-science-29/"
+    },
+    {
+      "number": 30,
+      "title": "The Mind/Brain",
+      "videoId": "bmsTvIJamIs",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-mind-brain-crash-course-history-of-science-30/"
+    },
+    {
+      "number": 31,
+      "title": "Marie Curie and Spooky Rays",
+      "videoId": "7qlRjqUMX4E",
+      "sourceUrl": "https://thecrashcourse.com/courses/marie-curie-and-spooky-rays-crash-course-history-of-science-31/"
+    },
+    {
+      "number": 32,
+      "title": "Einstein’s Revolution",
+      "videoId": "NgVSHXOz3jI",
+      "sourceUrl": "https://thecrashcourse.com/courses/einsteins-revolution-crash-course-history-of-science-32/"
+    },
+    {
+      "number": 33,
+      "title": "The Atomic Bomb",
+      "videoId": "w4q1fG1vh5I",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-atomic-bomb-crash-course-history-of-science-33/"
+    },
+    {
+      "number": 34,
+      "title": "Biomedicine",
+      "videoId": "gQGWqA22s5s",
+      "sourceUrl": "https://thecrashcourse.com/courses/biomedicine-crash-course-history-of-science-34/"
+    },
+    {
+      "number": 35,
+      "title": "Genetics and The Modern Synthesis",
+      "videoId": "aax12eYKd4s",
+      "sourceUrl": "https://thecrashcourse.com/courses/genetics-and-the-modern-synthesis-crash-course-history-of-science-35/"
+    },
+    {
+      "number": 36,
+      "title": "The Computer and Turing",
+      "videoId": "3xdmEwTIsd0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-computer-and-turing-crash-course-history-of-science-36/"
+    },
+    {
+      "number": 37,
+      "title": "Air Travel and The Space Race",
+      "videoId": "QhULJr-LKbg",
+      "sourceUrl": "https://thecrashcourse.com/courses/air-travel-and-the-space-race-crash-course-history-of-science-37/"
+    },
+    {
+      "number": 38,
+      "title": "Ecology",
+      "videoId": "KrwtWKPAcRs",
+      "sourceUrl": "https://thecrashcourse.com/courses/ecology-crash-course-history-of-science-38/"
+    },
+    {
+      "number": 39,
+      "title": "Controlling the Environment",
+      "videoId": "b51G5sB2_hM",
+      "sourceUrl": "https://thecrashcourse.com/courses/controlling-the-environment-crash-course-history-of-science-39/"
+    },
+    {
+      "number": 40,
+      "title": "Biotechnology",
+      "videoId": "Qo9gcZ0r8k8",
+      "sourceUrl": "https://thecrashcourse.com/courses/biotechnology-crash-course-history-of-science-40/"
+    },
+    {
+      "number": 41,
+      "title": "Bodies and Dollars",
+      "videoId": "RZvvZslgEWk",
+      "sourceUrl": "https://thecrashcourse.com/courses/bodies-and-dollars-crash-course-history-of-science-41/"
+    },
+    {
+      "number": 42,
+      "title": "The Century of the Gene",
+      "videoId": "TUvquCOGs3U",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-century-of-the-gene-crash-course-history-of-science-42/"
+    },
+    {
+      "number": 43,
+      "title": "The Internet and Computing",
+      "videoId": "ur9aGqcmq8M",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-internet-and-computing-crash-course-history-of-science-43/"
+    },
+    {
+      "number": 44,
+      "title": "Life and Longevity",
+      "videoId": "JlfFcPYaJIc",
+      "sourceUrl": "https://thecrashcourse.com/courses/life-and-longevity-crash-course-history-of-science-44/"
+    },
+    {
+      "number": 45,
+      "title": "Climate Science",
+      "videoId": "LsFdROZ2OdA",
+      "sourceUrl": "https://thecrashcourse.com/courses/climate-science-crash-course-history-of-science-45/"
+    },
+    {
+      "number": 46,
+      "title": "The Limits of History",
+      "videoId": "EhBhP-zk0_I",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-limits-of-history-crash-course-history-of-science-46/"
+    }
+  ]
+}

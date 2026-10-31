@@ -1,0 +1,305 @@
+{
+  "courseId": "theater-drama",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What Is Theater?",
+      "videoId": "sNWrOuwzax8",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-theater-crash-course-theater-1/"
+    },
+    {
+      "number": 2,
+      "title": "Thespis, Athens, and The Origins of Greek Drama",
+      "videoId": "VeTeK9kvxyo",
+      "sourceUrl": "https://thecrashcourse.com/courses/thespis-athens-and-the-origins-of-greek-drama-crash-course-theater-2/"
+    },
+    {
+      "number": 3,
+      "title": "Tragedy Lessons from Aristotle",
+      "videoId": "nGlQkaoIfBI",
+      "sourceUrl": "https://thecrashcourse.com/courses/tragedy-lessons-from-aristotle-crash-course-theater-3/"
+    },
+    {
+      "number": 4,
+      "title": "Greek Comedy, Satyrs, and Aristophanes",
+      "videoId": "xLKUXI0enbg",
+      "sourceUrl": "https://thecrashcourse.com/courses/greek-comedy-satyrs-and-aristophanes-crash-course-theater-4/"
+    },
+    {
+      "number": 5,
+      "title": "Dances to Flute Music and Obscene Verse. It’s Roman Theater, Everybody",
+      "videoId": "P05G89hgrPI",
+      "sourceUrl": "https://thecrashcourse.com/courses/dances-to-flute-music-and-obscene-verse-its-roman-theater-everybody-crash-course-theater-5/"
+    },
+    {
+      "number": 6,
+      "title": "Roman Theater with Plautus, Terence, and Seneca",
+      "videoId": "jQpvph777Pg",
+      "sourceUrl": "https://thecrashcourse.com/courses/roman-theater-with-plautus-terence-and-seneca-crash-course-theater-6/"
+    },
+    {
+      "number": 7,
+      "title": "Nostrils, Harmony with the Universe, and Ancient Sanskrit Theater",
+      "videoId": "b3mj4QQH8TM",
+      "sourceUrl": "https://thecrashcourse.com/courses/nostrils-harmony-with-the-universe-and-ancient-sanskrit-theater-crash-course-theater-7/"
+    },
+    {
+      "number": 8,
+      "title": "The Death and Resurrection of Theater as…Liturgical Drama",
+      "videoId": "kX0jHv05FYM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-death-and-resurrection-of-theater-as-liturgical-drama-crash-course-theater-8/"
+    },
+    {
+      "number": 9,
+      "title": "Hrotsvitha, Hildegard, and the Nun who Resurrected Theater",
+      "videoId": "XdvIsJF9d9s",
+      "sourceUrl": "https://thecrashcourse.com/courses/hrotsvitha-hildegard-and-the-nun-who-resurrected-theater-crash-course-theater-9/"
+    },
+    {
+      "number": 10,
+      "title": "Get Outside and Have a (Mystery) Play",
+      "videoId": "5VI3qcSuUlk",
+      "sourceUrl": "https://thecrashcourse.com/courses/get-outside-and-have-a-mystery-play-crash-course-theater-10/"
+    },
+    {
+      "number": 11,
+      "title": "Just Say Noh. But Also Say Kyogen",
+      "videoId": "J1IyUPMXwS0",
+      "sourceUrl": "https://thecrashcourse.com/courses/just-say-noh-but-also-say-kyogen-crash-course-theater-11/"
+    },
+    {
+      "number": 12,
+      "title": "Pee Jokes, the Italian Renaissance, Commedia Dell’Arte",
+      "videoId": "U96m8inKt24",
+      "sourceUrl": "https://thecrashcourse.com/courses/pee-jokes-the-italian-renaissance-commedia-dellarte-crash-course-theater-12/"
+    },
+    {
+      "number": 13,
+      "title": "The English Renaissance and NOT Shakespeare",
+      "videoId": "snJpYLV7bYA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-english-renaissance-and-not-shakespeare-crash-course-theater-13/"
+    },
+    {
+      "number": 14,
+      "title": "Straight Outta Stratford-Upon-Avon – Shakespeare’s Early Days",
+      "videoId": "FS2ndY5WJXA",
+      "sourceUrl": "https://thecrashcourse.com/courses/straight-outta-stratford-upon-avon-shakespeares-early-days-crash-course-theater-14/"
+    },
+    {
+      "number": 15,
+      "title": "Shakespeare’s Tragedies and an Acting Lesson",
+      "videoId": "9m5I-HO3w8w",
+      "sourceUrl": "https://thecrashcourse.com/courses/shakespeares-tragedies-and-an-acting-lesson-crash-course-theater-15/"
+    },
+    {
+      "number": 16,
+      "title": "Comedies, Romances, and Shakespeare’s Heroines",
+      "videoId": "ZjAqfh9aY9Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/comedies-romances-and-shakespeares-heroines-crash-course-theater-16/"
+    },
+    {
+      "number": 17,
+      "title": "English Theater After Shakespeare",
+      "videoId": "2_ktCNGYbrU",
+      "sourceUrl": "https://thecrashcourse.com/courses/english-theater-after-shakespeare-crash-course-theater-17/"
+    },
+    {
+      "number": 18,
+      "title": "Where Did Theater Go?",
+      "videoId": "1xrcHQB5EEU",
+      "sourceUrl": "https://thecrashcourse.com/courses/where-did-theater-go-crash-course-theater-18/"
+    },
+    {
+      "number": 19,
+      "title": "The Spanish Golden Age",
+      "videoId": "pDFiY81TLIM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-spanish-golden-age-crash-course-theater-19/"
+    },
+    {
+      "number": 20,
+      "title": "Rules, Rule-Breaking, and French Neoclassicism",
+      "videoId": "fXRpTLvPdT0",
+      "sourceUrl": "https://thecrashcourse.com/courses/rules-rule-breaking-and-french-neoclassicism-crash-course-theater-20/"
+    },
+    {
+      "number": 21,
+      "title": "Moliere – Man of Satire and Many Burials",
+      "videoId": "mdvfXzCoqvA",
+      "sourceUrl": "https://thecrashcourse.com/courses/moliere-man-of-satire-and-many-burials-crash-course-theater-21/"
+    },
+    {
+      "number": 22,
+      "title": "Pre-Columbian Theater, Spanish Empire, and Sor Juana",
+      "videoId": "5gxHbYI0uy4",
+      "sourceUrl": "https://thecrashcourse.com/courses/pre-columbian-theater-spanish-empire-and-sor-juana-crash-course-theater-22/"
+    },
+    {
+      "number": 23,
+      "title": "Japan, Kabuki, and Bunraku",
+      "videoId": "oc3dWwbctw4",
+      "sourceUrl": "https://thecrashcourse.com/courses/japan-kabuki-and-bunraku-crash-course-theater-23/"
+    },
+    {
+      "number": 24,
+      "title": "All Night Demon Dance Party – Kathakali",
+      "videoId": "5lp-HBv-3bA",
+      "sourceUrl": "https://thecrashcourse.com/courses/all-night-demon-dance-party-kathakali-crash-course-theater-24/"
+    },
+    {
+      "number": 25,
+      "title": "China, Zaju, and Beijing Opera",
+      "videoId": "yzAdZDK4XKA",
+      "sourceUrl": "https://thecrashcourse.com/courses/china-zaju-and-beijing-opera-crash-course-theater-25/"
+    },
+    {
+      "number": 26,
+      "title": "England’s Sentimental Theater",
+      "videoId": "DenEXMVt0gU",
+      "sourceUrl": "https://thecrashcourse.com/courses/englands-sentimental-theater-crash-course-theater-26/"
+    },
+    {
+      "number": 27,
+      "title": "Why So Angry, German Theater?",
+      "videoId": "zMO258I-7uc",
+      "sourceUrl": "https://thecrashcourse.com/courses/why-so-angry-german-theater-crash-course-theater-27/"
+    },
+    {
+      "number": 28,
+      "title": "The Rise of Melodrama",
+      "videoId": "wxzz31ww4M4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-rise-of-melodrama-crash-course-theater-28/"
+    },
+    {
+      "number": 29,
+      "title": "North America Gets a Theater…Riot",
+      "videoId": "DA16n8ilUp8",
+      "sourceUrl": "https://thecrashcourse.com/courses/north-america-gets-a-theater-riot-crash-course-theater-29/"
+    },
+    {
+      "number": 30,
+      "title": "Race Melodrama and Minstrel Shows",
+      "videoId": "M3K9uKIMob0",
+      "sourceUrl": "https://thecrashcourse.com/courses/race-melodrama-and-minstrel-shows-crash-course-theater-30/"
+    },
+    {
+      "number": 31,
+      "title": "Zola, France, Realism, and Naturalism",
+      "videoId": "KMVnscTctqI",
+      "sourceUrl": "https://thecrashcourse.com/courses/zola-france-realism-and-naturalism-crash-course-theater-31/"
+    },
+    {
+      "number": 32,
+      "title": "Realism Gets Even More Real",
+      "videoId": "sDIvfEJ59XY",
+      "sourceUrl": "https://thecrashcourse.com/courses/realism-gets-even-more-real-crash-course-theater-32/"
+    },
+    {
+      "number": 33,
+      "title": "Symbolism, Realism, and a Nordic Playwright Grudge Match",
+      "videoId": "xiiaed3puhY",
+      "sourceUrl": "https://thecrashcourse.com/courses/symbolism-realism-and-a-nordic-playwright-grudge-match-crash-course-theater-33/"
+    },
+    {
+      "number": 34,
+      "title": "Chekhov and the Moscow Art Theater",
+      "videoId": "uMzuxuA1POU",
+      "sourceUrl": "https://thecrashcourse.com/courses/chekhov-and-the-moscow-art-theater-crash-course-theater-34/"
+    },
+    {
+      "number": 35,
+      "title": "The Horrors of the Grand Guignol",
+      "videoId": "jUM4RkZ1tuI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-horrors-of-the-grand-guignol-crash-course-theater-35/"
+    },
+    {
+      "number": 36,
+      "title": "Synge, Wilde, Shaw, and the Irish Renaissance",
+      "videoId": "K3SzObknn8I",
+      "sourceUrl": "https://thecrashcourse.com/courses/synge-wilde-shaw-and-the-irish-renaissance-crash-course-theater-36/"
+    },
+    {
+      "number": 37,
+      "title": "Dada, Surrealism, and Symbolism",
+      "videoId": "Fx0Z6y2HmlM",
+      "sourceUrl": "https://thecrashcourse.com/courses/dada-surrealism-and-symbolism-crash-course-theater-37/"
+    },
+    {
+      "number": 38,
+      "title": "Expressionist Theater",
+      "videoId": "B99H6Ygnzgw",
+      "sourceUrl": "https://thecrashcourse.com/courses/expressionist-theater-crash-course-theater-38/"
+    },
+    {
+      "number": 39,
+      "title": "Futurism and Constructivism",
+      "videoId": "u_JmkmPYpec",
+      "sourceUrl": "https://thecrashcourse.com/courses/futurism-and-constructivism-crash-course-theater-39/"
+    },
+    {
+      "number": 40,
+      "title": "Little Theater and American Avant Garde",
+      "videoId": "sYJosVHkwgo",
+      "sourceUrl": "https://thecrashcourse.com/courses/little-theater-and-american-avant-garde-crash-course-theater-40/"
+    },
+    {
+      "number": 41,
+      "title": "The Harlem Renaissance",
+      "videoId": "fDzVtXbtEow",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-harlem-renaissance-crash-course-theater-41/"
+    },
+    {
+      "number": 42,
+      "title": "Federal Theatre and Group Theater",
+      "videoId": "vGLZDFHnnwk",
+      "sourceUrl": "https://thecrashcourse.com/courses/federal-theatre-and-group-theater-crash-course-theater-42/"
+    },
+    {
+      "number": 43,
+      "title": "Antonin Artaud and the Theater of Cruelty",
+      "videoId": "DK_vZuLYHcw",
+      "sourceUrl": "https://thecrashcourse.com/courses/antonin-artaud-and-the-theater-of-cruelty-crash-course-theater-43/"
+    },
+    {
+      "number": 44,
+      "title": "Bertolt Brecht and Epic Theater",
+      "videoId": "c7fqMPDcKXM",
+      "sourceUrl": "https://thecrashcourse.com/courses/bertolt-brecht-and-epic-theater-crash-course-theater-44/"
+    },
+    {
+      "number": 45,
+      "title": "Beckett, Ionesco, and the Theater of the Absurd",
+      "videoId": "eJ7w2I83ba4",
+      "sourceUrl": "https://thecrashcourse.com/courses/beckett-ionesco-and-the-theater-of-the-absurd-crash-course-theater-45/"
+    },
+    {
+      "number": 46,
+      "title": "Broadway, Seriously",
+      "videoId": "qgajQD7PJp0",
+      "sourceUrl": "https://thecrashcourse.com/courses/broadway-seriously-crash-course-theater-46/"
+    },
+    {
+      "number": 47,
+      "title": "The Birth of Off Broadway",
+      "videoId": "ovSW1G7wrCg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-birth-of-off-broadway-crash-course-theater-47/"
+    },
+    {
+      "number": 48,
+      "title": "Poor Unfortunate Theater",
+      "videoId": "9sSLz5t7a5M",
+      "sourceUrl": "https://thecrashcourse.com/courses/poor-unfortunate-theater-crash-course-theater-48/"
+    },
+    {
+      "number": 49,
+      "title": "Into Africa and Wole Soyinka",
+      "videoId": "kn-ER4bL7f8",
+      "sourceUrl": "https://thecrashcourse.com/courses/into-africa-and-wole-soyinka-crash-course-theater-49/"
+    },
+    {
+      "number": 50,
+      "title": "Broadway Book Musicals",
+      "videoId": "4kxzD4ASioI",
+      "sourceUrl": "https://thecrashcourse.com/courses/broadway-book-musicals-crash-course-theater-50/"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "courseId": "film-criticism",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Citizen Kane",
+      "videoId": "qk0-m_LARCY",
+      "sourceUrl": "https://thecrashcourse.com/courses/citizen-kane-crash-course-film-criticism-1/"
+    },
+    {
+      "number": 2,
+      "title": "Aliens",
+      "videoId": "VoZMOmjXENU",
+      "sourceUrl": "https://thecrashcourse.com/courses/aliens-crash-course-film-criticism-2/"
+    },
+    {
+      "number": 3,
+      "title": "Selma",
+      "videoId": "tk4dIgIG5Qs",
+      "sourceUrl": "https://thecrashcourse.com/courses/selma-crash-course-film-criticism-3/"
+    },
+    {
+      "number": 4,
+      "title": "Where Are My Children",
+      "videoId": "gOp7tYFk-38",
+      "sourceUrl": "https://thecrashcourse.com/courses/where-are-my-children-crash-course-film-criticism-4/"
+    },
+    {
+      "number": 5,
+      "title": "In the Mood for Love",
+      "videoId": "98QmnyyIXsY",
+      "sourceUrl": "https://thecrashcourse.com/courses/in-the-mood-for-love-crash-course-film-criticism-5/"
+    },
+    {
+      "number": 6,
+      "title": "Do the Right Thing",
+      "videoId": "bZBmOd83Fds",
+      "sourceUrl": "https://thecrashcourse.com/courses/do-the-right-thing-crash-course-film-criticism-6/"
+    },
+    {
+      "number": 7,
+      "title": "Lost in Translation",
+      "videoId": "2wRcDM_5rjs",
+      "sourceUrl": "https://thecrashcourse.com/courses/lost-in-translation-crash-course-film-criticism-7/"
+    },
+    {
+      "number": 8,
+      "title": "Apocalypse Now",
+      "videoId": "bVMGyXnnoRM",
+      "sourceUrl": "https://thecrashcourse.com/courses/apocalypse-now-crash-course-film-criticism-8/"
+    },
+    {
+      "number": 9,
+      "title": "Pan’s Labyrinth",
+      "videoId": "NqDLB3JWfds",
+      "sourceUrl": "https://thecrashcourse.com/courses/pans-labyrinth-crash-course-film-criticism-9/"
+    },
+    {
+      "number": 10,
+      "title": "The Limey",
+      "videoId": "Uxeqt6dIziQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-limey-crash-course-film-criticism-10/"
+    },
+    {
+      "number": 11,
+      "title": "Three Colors – Blue",
+      "videoId": "GVNy3x_PwFk",
+      "sourceUrl": "https://thecrashcourse.com/courses/three-colors-blue-crash-course-film-criticism-11/"
+    },
+    {
+      "number": 12,
+      "title": "The Eagle Huntress",
+      "videoId": "if36bqHypqk",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-eagle-huntress-crash-course-film-criticism-12/"
+    },
+    {
+      "number": 13,
+      "title": "Moonlight",
+      "videoId": "Nlz9CCZSJ5I",
+      "sourceUrl": "https://thecrashcourse.com/courses/moonlight-crash-course-film-criticism-13/"
+    },
+    {
+      "number": 14,
+      "title": "Beasts of No Nation",
+      "videoId": "1xURt0maugI",
+      "sourceUrl": "https://thecrashcourse.com/courses/beasts-of-no-nation-crash-course-film-criticism-14/"
+    },
+    {
+      "number": 15,
+      "title": "2001: A Space Odyssey",
+      "videoId": "KEEnap_h8cs",
+      "sourceUrl": "https://thecrashcourse.com/courses/2001-a-space-odyssey-crash-course-film-criticism-15/"
+    }
+  ]
+}

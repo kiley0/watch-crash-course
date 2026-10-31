@@ -19,7 +19,7 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for the domain map, dependency rules, a
 
 ## Implemented features
 
-Catalog search and subject filtering, twenty-four complete course pages with 727 numbered episodes, episode search, official YouTube links, accessible responsive styling, and an about/privacy page. Catalog/network errors and unknown course IDs have useful recovery states. No fabricated course or viewing progress is shown.
+Catalog search and subject filtering, thirty-four complete course pages with 1,140 numbered episodes, episode search, official YouTube links, accessible responsive styling, and an about/privacy page. Catalog/network errors and unknown course IDs have useful recovery states. No fabricated course or viewing progress is shown.
 
 The watch page now loads YouTube’s official player when a lesson opens, waits for the user to press play, offers resume or replay, saves playback position, supports manual completion and confirmed episode reset, and links to previous/next lessons. Course episodes show saved status. Course completion summaries, a recent-course continue panel, and searchable learning history are also available. The data settings page supports backup download, validated replacement import, and confirmed clearing. No account or API key is required.
 
@@ -168,3 +168,19 @@ Seventh-batch verification: formatting, lint, strict types, all 53 tests, and th
 Added Public Health (10 numbered lessons, Vanessa Hill), Film History (16, Craig Benzine), and Business: Entrepreneurship (17, Anna Akana). All 43 official episode pages and lesson video IDs were checked on October 30, 2026; official CrashCourse playlists confirm the hosts and course counts. Entrepreneurship #2’s related demonstration and Complexly embed, and #3’s related article and Vimeo embeds, are excluded. Previews are excluded and lesson numbering remains contiguous. No dependencies or schema changes were needed.
 
 Eighth-batch verification: formatting, lint, strict types, all 53 tests, and the production build pass. Local production-preview checks confirmed host search, real playback and saved resume after reload for all three additions, and correct final-lesson boundaries. Business: Entrepreneurship fits on its card and course page at 320px without horizontal overflow. Mobile card names now use the full width with the decorative sticker hidden, and page titles scale down slightly below 381px to avoid awkward long-word breaks.
+
+### Ninth catalog batch
+
+Added [Geography](https://thecrashcourse.com/topic/geo/) (50 lessons, Alizé Carrère), [Sociology](https://thecrashcourse.com/topic/sociology/) (44, Nicole Sweeney), [U.S. Government & Politics](https://thecrashcourse.com/topic/usgovernment/) (50, Craig Benzine), [Organic Chemistry](https://thecrashcourse.com/topic/ochem/) (50, Dr. Deboki Chakravarti), and [Film Criticism](https://thecrashcourse.com/topic/filmcriticism/) (15, Michael Aranda). The catalog now contains 29 courses and 936 numbered lessons.
+
+Verified 202 official episode pages and the five official CrashCourse playlists on October 30, 2026. Sociology #38–44 are absent from the website topic index and use canonical official YouTube sources. Film Criticism #11 has no website embed; its ID comes from the official playlist while retaining the existing episode-page source. Related article/video embeds are excluded. Organic Chemistry #18, #38, #44, and #48 use corrected video-title wording; #43 uses its fuller video title. Geography #48’s redundant pipe separators are normalized. Previews and extras are excluded. The U.S. Government series follows its original AP curriculum; it is distinct from newer government collaborations. No runtime dependencies or schema changes were needed.
+
+Ninth-batch verification: formatting, lint, strict types, all 56 tests, and the production build pass. Local production-preview checks confirmed playback and saved resume for all five courses, including Sociology’s website-missing finale, and correct final-lesson navigation. Film Criticism #11 disables embedding; the error-only YouTube fallback works, and the lesson can still be marked complete manually. This limitation is controlled by the video owner. Host search and narrow course/shelf layouts were also checked.
+
+### Tenth catalog batch
+
+Added [European History](https://thecrashcourse.com/topic/europeanhistory/) (50 lessons, John Green), [World Mythology](https://thecrashcourse.com/topic/mythology/) (41, Mike Rugnetta), [Theater & Drama](https://thecrashcourse.com/topic/theaterdrama/) (50, Mike Rugnetta), [Business: Soft Skills](https://thecrashcourse.com/topic/businesssoftskills/) (17, Evelyn from the Internets), and [History of Science](https://thecrashcourse.com/topic/historyofscience/) (46, Hank Green). The catalog now contains 34 courses and 1,140 numbered lessons.
+
+Verified all 204 main lesson embeds against official episode pages and checked official CrashCourse playlist ownership, hosts, and series counts on October 30, 2026. World Mythology’s “Hermes and Loki and Tricksters, Part 2” page omits its number in the heading; the embedded video identifies it as #21. History of Science #10 omits “Crash Course” in its series suffix. Both are included in numerical order. Previews and unrelated embeds are excluded. No new source exceptions, schema changes, or runtime dependencies were required.
+
+Tenth-batch verification: all 56 tests, formatting, lint, strict types, and production build pass. Browser checks confirmed inline playback and saved resume after reload in each new course, correct final-lesson counts with no next link, Evelyn host search, and 390px bookshelf/course layouts without horizontal overflow. Existing course IDs and progress records remain unchanged.

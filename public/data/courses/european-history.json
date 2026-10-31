@@ -1,0 +1,305 @@
+{
+  "courseId": "european-history",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Medieval Europe",
+      "videoId": "rNCw2MOfnLQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/medieval-europe-crash-course-european-history-1/"
+    },
+    {
+      "number": 2,
+      "title": "Florence and the Renaissance",
+      "videoId": "tecocKSclwc",
+      "sourceUrl": "https://thecrashcourse.com/courses/florence-and-the-renaissance-crash-course-european-history-2/"
+    },
+    {
+      "number": 3,
+      "title": "The Northern Renaissance",
+      "videoId": "EuzAbE-kPkM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-northern-renaissance-crash-course-european-history-3/"
+    },
+    {
+      "number": 4,
+      "title": "The Age of Exploration",
+      "videoId": "wOclF9eP5uM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-age-of-exploration-crash-course-european-history-4/"
+    },
+    {
+      "number": 5,
+      "title": "Expansion and Consequences",
+      "videoId": "AcphphFoijY",
+      "sourceUrl": "https://thecrashcourse.com/courses/expansion-and-consequences-crash-course-european-history-5/"
+    },
+    {
+      "number": 6,
+      "title": "The Protestant Reformation",
+      "videoId": "0eO0pPrGi6o",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-protestant-reformation-crash-course-european-history-6/"
+    },
+    {
+      "number": 7,
+      "title": "Reformation and Consequences",
+      "videoId": "PbBDP1Elbbg",
+      "sourceUrl": "https://thecrashcourse.com/courses/reformation-and-consequences-crash-course-european-history-7/"
+    },
+    {
+      "number": 8,
+      "title": "Commerce, Agriculture, and Slavery",
+      "videoId": "mU2dhPlJWyY",
+      "sourceUrl": "https://thecrashcourse.com/courses/commerce-agriculture-and-slavery-crash-course-european-history-8/"
+    },
+    {
+      "number": 9,
+      "title": "Catholic Counter-Reformation",
+      "videoId": "xy_M4pDjafo",
+      "sourceUrl": "https://thecrashcourse.com/courses/catholic-counter-reformation-crash-course-european-history-9/"
+    },
+    {
+      "number": 10,
+      "title": "Witchcraft",
+      "videoId": "rW4XFiHUQAs",
+      "sourceUrl": "https://thecrashcourse.com/courses/witchcraft-crash-course-european-history-10/"
+    },
+    {
+      "number": 11,
+      "title": "The 17th Century Crisis",
+      "videoId": "cmKHYpC_jVs",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-17th-century-crisis-crash-course-european-history-11/"
+    },
+    {
+      "number": 12,
+      "title": "Scientific Revolution",
+      "videoId": "w70BkCqgyyI",
+      "sourceUrl": "https://thecrashcourse.com/courses/scientific-revolution-crash-course-european-history-12/"
+    },
+    {
+      "number": 13,
+      "title": "Absolute Monarchy",
+      "videoId": "YYPAFqQgbqE",
+      "sourceUrl": "https://thecrashcourse.com/courses/absolute-monarchy-crash-course-european-history-13/"
+    },
+    {
+      "number": 14,
+      "title": "English Civil War",
+      "videoId": "dyk3bI_Y68Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/english-civil-war-crash-course-european-history-14/"
+    },
+    {
+      "number": 15,
+      "title": "Dutch Golden Age",
+      "videoId": "35PinDPNPw0",
+      "sourceUrl": "https://thecrashcourse.com/courses/dutch-golden-age-crash-course-european-history-15/"
+    },
+    {
+      "number": 16,
+      "title": "Eastern Europe Consolidates",
+      "videoId": "VwlrvAvcO28",
+      "sourceUrl": "https://thecrashcourse.com/courses/eastern-europe-consolidates-crash-course-european-history-16/"
+    },
+    {
+      "number": 17,
+      "title": "The Rise of Russia and Prussia",
+      "videoId": "FBzRaxLdjZE",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-rise-of-russia-and-prussia-crash-course-european-history-17/"
+    },
+    {
+      "number": 18,
+      "title": "The Enlightenment",
+      "videoId": "NnoFj2cMRLY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-enlightenment-crash-course-european-history-18/"
+    },
+    {
+      "number": 19,
+      "title": "Enlightened Monarchs",
+      "videoId": "k108xCzJhbs",
+      "sourceUrl": "https://thecrashcourse.com/courses/enlightened-monarchs-crash-course-european-history-19/"
+    },
+    {
+      "number": 20,
+      "title": "18th Century Warfare",
+      "videoId": "xbbYCe2o1SI",
+      "sourceUrl": "https://thecrashcourse.com/courses/18th-century-warfare-crash-course-european-history-20/"
+    },
+    {
+      "number": 21,
+      "title": "The French Revolution",
+      "videoId": "5fJl_ZX91l0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-french-revolution-crash-course-european-history-21/"
+    },
+    {
+      "number": 22,
+      "title": "Napoleon Bonaparte",
+      "videoId": "Pd6E38FfuMg",
+      "sourceUrl": "https://thecrashcourse.com/courses/napoleon-bonaparte-crash-course-european-history-22/"
+    },
+    {
+      "number": 23,
+      "title": "The Congress of Vienna",
+      "videoId": "DuVw9sGpWUc",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-congress-of-vienna-crash-course-european-history-23/"
+    },
+    {
+      "number": 24,
+      "title": "The Industrial Revolution",
+      "videoId": "zjK7PWmRRyg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-industrial-revolution-crash-course-european-history-24/"
+    },
+    {
+      "number": 25,
+      "title": "Reform and Revolution 1815-1848",
+      "videoId": "_uKp4FHPjHU",
+      "sourceUrl": "https://thecrashcourse.com/courses/reform-and-revolution-1815-1848-crash-course-european-history-25/"
+    },
+    {
+      "number": 26,
+      "title": "Revolutions of 1848",
+      "videoId": "cXTaP1BD1YY",
+      "sourceUrl": "https://thecrashcourse.com/courses/revolutions-of-1848-crash-course-european-history-26/"
+    },
+    {
+      "number": 27,
+      "title": "Italian and German Unification",
+      "videoId": "KSjDe9_jZk8",
+      "sourceUrl": "https://thecrashcourse.com/courses/italian-and-german-unification-crash-course-european-history-27/"
+    },
+    {
+      "number": 28,
+      "title": "Expansion and Resistance",
+      "videoId": "eBA7P-zKbi8",
+      "sourceUrl": "https://thecrashcourse.com/courses/expansion-and-resistance-crash-course-european-history-28/"
+    },
+    {
+      "number": 29,
+      "title": "Migration",
+      "videoId": "MN8fjAjLLpg",
+      "sourceUrl": "https://thecrashcourse.com/courses/migration-crash-course-european-history-29/"
+    },
+    {
+      "number": 30,
+      "title": "Modern Life",
+      "videoId": "meC5Zl5PC1U",
+      "sourceUrl": "https://thecrashcourse.com/courses/modern-life-crash-course-european-history-30/"
+    },
+    {
+      "number": 31,
+      "title": "Modern Thought and Culture in 1900",
+      "videoId": "xGjpTjeGuZc",
+      "sourceUrl": "https://thecrashcourse.com/courses/modern-thought-and-culture-in-1900-crash-course-european-history-31/"
+    },
+    {
+      "number": 32,
+      "title": "The Roads to World War I",
+      "videoId": "KGlmlSTn-eM",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-roads-to-world-war-i-crash-course-european-history-32/"
+    },
+    {
+      "number": 33,
+      "title": "World War I Battlefields",
+      "videoId": "IIiDULrXaqQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-war-i-battlefields-crash-course-european-history-33/"
+    },
+    {
+      "number": 34,
+      "title": "WWI’s Civilians, the Homefront, and an Uneasy Peace",
+      "videoId": "dPXNZkGYJHM",
+      "sourceUrl": "https://thecrashcourse.com/courses/wwis-civilians-the-homefront-and-an-uneasy-peace-crash-course-european-history-34/"
+    },
+    {
+      "number": 35,
+      "title": "Russian Revolution and Civil War",
+      "videoId": "U6KR4cLLVzQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/russian-revolution-and-civil-war-crash-course-european-history-35/"
+    },
+    {
+      "number": 36,
+      "title": "Post-World War I Recovery",
+      "videoId": "xzWL2XPBHMk",
+      "sourceUrl": "https://thecrashcourse.com/courses/post-world-war-i-recovery-crash-course-european-history-36/"
+    },
+    {
+      "number": 37,
+      "title": "Economic Depression and Dictators",
+      "videoId": "Ojo8-GhhQcA",
+      "sourceUrl": "https://thecrashcourse.com/courses/economic-depression-and-dictators-crash-course-european-history-37/"
+    },
+    {
+      "number": 38,
+      "title": "World War II",
+      "videoId": "Hs_JMydrxZM",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-war-ii-crash-course-european-history-38/"
+    },
+    {
+      "number": 39,
+      "title": "World War II Civilians and Soldiers",
+      "videoId": "rlx6ur_D51s",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-war-ii-civilians-and-soldiers-crash-course-european-history-39/"
+    },
+    {
+      "number": 40,
+      "title": "The Holocaust, Genocides, and Mass Murder of WWII",
+      "videoId": "iQeDvnapdlg",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-holocaustgenocides-and-mass-murder-of-wwii-crash-course-european-history-40/"
+    },
+    {
+      "number": 41,
+      "title": "Post-War Rebuilding and the Cold War",
+      "videoId": "-rkIqtV07HE",
+      "sourceUrl": "https://thecrashcourse.com/courses/post-war-rebuilding-and-the-cold-war-crash-course-european-history-41/"
+    },
+    {
+      "number": 42,
+      "title": "Post-World War II Recovery",
+      "videoId": "nlp068CmQaE",
+      "sourceUrl": "https://thecrashcourse.com/courses/post-world-war-ii-recovery-crash-course-european-history-42/"
+    },
+    {
+      "number": 43,
+      "title": "Decolonization",
+      "videoId": "FlMKqRCNX9c",
+      "sourceUrl": "https://thecrashcourse.com/courses/decolonization-crash-course-european-history-43/"
+    },
+    {
+      "number": 44,
+      "title": "Revolutions in Science and Tech",
+      "videoId": "zDEmHQhGkBg",
+      "sourceUrl": "https://thecrashcourse.com/courses/revolutions-in-science-and-tech-crash-course-european-history-44/"
+    },
+    {
+      "number": 45,
+      "title": "Protests East and West",
+      "videoId": "fs_SvMr5IPE",
+      "sourceUrl": "https://thecrashcourse.com/courses/protests-east-and-west-crash-course-european-history-45/"
+    },
+    {
+      "number": 46,
+      "title": "The Soviet Bloc Unwinds",
+      "videoId": "aStaPgdvIdI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-soviet-bloc-unwinds-crash-course-european-history-46/"
+    },
+    {
+      "number": 47,
+      "title": "The Fall of Communism",
+      "videoId": "OfJ8Wzanhr4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-fall-of-communism-crash-course-european-history-47/"
+    },
+    {
+      "number": 48,
+      "title": "Europe in the Global Age",
+      "videoId": "UauE2FUQYH0",
+      "sourceUrl": "https://thecrashcourse.com/courses/europe-in-the-global-age-crash-course-european-history-48/"
+    },
+    {
+      "number": 49,
+      "title": "21st Century Challenges",
+      "videoId": "-_6978boAQ8",
+      "sourceUrl": "https://thecrashcourse.com/courses/21st-century-challenges-crash-course-european-history-49/"
+    },
+    {
+      "number": 50,
+      "title": "What History Was, Is, and Will Be",
+      "videoId": "1hAraGgEiAo",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-history-was-is-and-will-be-crash-course-european-history-50/"
+    }
+  ]
+}
