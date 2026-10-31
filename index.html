@@ -330,7 +330,7 @@
           </div>
         </div>
       </section>
-      <section class="closing-banner wrap">
+      <section class="closing-banner wrap" x-data="randomEpisode">
         <span aria-hidden="true">✦</span>
         <div class="closing-thought">
           <p><q>There’s no better use of a day than learning something new.</q></p>
@@ -345,11 +345,24 @@
             ></a>
           </p>
         </div>
-        <a href="#courses" class="button button-dark"
-          >Let’s learn something
-          <svg class="icon" aria-hidden="true" focusable="false">
-            <use href="./icons.svg#arrow-right"></use></svg
-        ></a>
+        <div>
+          <button
+            type="button"
+            class="button button-dark"
+            @click="discover"
+            :disabled="busy"
+            :aria-busy="busy"
+          >
+            <span x-text="label">Let’s learn something</span>
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="./icons.svg#arrow-right"></use>
+            </svg>
+          </button>
+          <p x-show="message" x-cloak role="status">
+            <span x-text="message"></span> <a href="#courses">Explore courses</a>
+          </p>
+          <noscript><a href="#courses">Explore courses</a></noscript>
+        </div>
       </section>
     </main>
     <footer class="site-footer">
