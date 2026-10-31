@@ -45,3 +45,11 @@ export function summarizeCourse(
     isComplete,
   };
 }
+
+export function courseProgressStatus(
+  summary: CourseSummary | null,
+): "not-started" | "in-progress" | "completed" | null {
+  if (!summary) return null;
+  if (summary.isComplete) return "completed";
+  return summary.lastActivityAt > 0 ? "in-progress" : "not-started";
+}

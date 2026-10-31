@@ -1,11 +1,13 @@
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
 import "./course.css";
+import { chooseThoughtBubble } from "./thought-bubbles";
 import { progressPizza } from "./progress-pizza";
 import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
 import { isCourseId } from "../domain/course";
 import { matchesQuery } from "../domain/search";
 import { watchUrl } from "../../playback/presentation/watch-links";
+import { completeCourse } from "../../learning/application/complete-course";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
 import { summarizeCourse } from "../../learning/domain/course-summary";
 import type { CourseSummary } from "../../learning/domain/course-summary";
@@ -20,6 +22,10 @@ interface EpisodeLink extends Episode {
 Alpine.data("coursePage", () => {
   let stopReloadOnRestore = () => {};
   return {
+    thought: chooseThoughtBubble(),
+    get thoughtUrl(): string {
+      return watchUrl(this.thought.courseId, this.thought.videoId);
+    },
     course: {} as Course,
     episodes: [] as EpisodeLink[],
     query: "",
@@ -27,6 +33,40 @@ Alpine.data("coursePage", () => {
     error: "",
     canRetry: false,
     storageWarning: "",
+    markingComplete: false,
+    completionMessage: "",
+    get markCompleteLabel(): string {
+      return this.markingComplete ? "Marking complete…" : "Mark course complete";
+    },
+    async markCourseComplete() {
+      if (this.markingComplete || this.courseComplete || !this.ready) return;
+      this.markingComplete = true;
+      this.completionMessage = "";
+      try {
+        const records = await completeCourse(
+          this.episodes.map((episode) => episode.videoId),
+          progressStore,
+        );
+        this.episodes = this.episodes.map((episode, index) => ({
+          ...episode,
+          status: progressStatus(records[index] ?? null),
+        }));
+        this.summary = summarizeCourse(
+          this.episodes.map((episode) => episode.videoId),
+          records,
+        );
+        this.storageWarning = progressStore.warning;
+        this.completionMessage = this.storageWarning
+          ? "Course marked complete in this tab."
+          : "Course marked complete.";
+      } catch {
+        this.completionMessage =
+          "We couldn’t finish marking the course complete. Please try again.";
+      } finally {
+        this.markingComplete = false;
+      }
+      await Alpine.nextTick(() => document.getElementById("course-completion-message")?.focus());
+    },
     summary: null as CourseSummary | null,
     get ready(): boolean {
       return !this.loading && !this.error;

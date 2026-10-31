@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vite-plus/test";
-import { mostRecentUnfinished, summarizeCourse, viewingHistory } from "./course-summary";
+import {
+  courseProgressStatus,
+  mostRecentUnfinished,
+  summarizeCourse,
+  viewingHistory,
+} from "./course-summary";
 import { updateProgress } from "./progress";
 const first = "E7CwqNHn_Ns",
   second = "WAIUkjsZ5xQ",
@@ -75,4 +80,28 @@ describe("derived course progress", () => {
     expect(summarizeCourse([first], records)).toMatchObject({ completed: 0, lastActivityAt: 0 });
     expect(records[0]?.videoId).toBe(second);
   });
+});
+
+it("classifies course progress using activity and full completion", () => {
+  expect(courseProgressStatus(null)).toBeNull();
+  expect(courseProgressStatus(summarizeCourse([first, second], []))).toBe("not-started");
+  expect(courseProgressStatus(summarizeCourse([first, second], [watching(first, 1)]))).toBe(
+    "in-progress",
+  );
+  expect(courseProgressStatus(summarizeCourse([first, second], [complete(first, 1)]))).toBe(
+    "in-progress",
+  );
+  expect(
+    courseProgressStatus(
+      summarizeCourse([first, second], [complete(first, 1), complete(second, 2)]),
+    ),
+  ).toBe("completed");
+  expect(
+    courseProgressStatus(
+      summarizeCourse(
+        [first, second],
+        [updateProgress(watching(first, 1), first, { type: "reset" }, 2)],
+      ),
+    ),
+  ).toBe("not-started");
 });

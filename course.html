@@ -85,21 +85,38 @@
                 :aria-label="completionLabel"
               ></progress>
               <p x-show="courseComplete">
-                Nice work. A whole course of ideas to carry. There’s always room for another look.
+                Nice work. Now what will you do with all the knowledge you just gained?
               </p>
             </div>
             <div class="course-facts">
               <span x-text="episodeLabel"></span
-              ><span>With <strong x-text="course.host"></strong></span><span>At your own pace</span>
+              ><span>With <strong x-text="course.host"></strong></span>
             </div>
             <a class="button button-orange" :href="continueUrl"
               ><span x-text="continueLabel"></span>
               <svg class="icon" aria-hidden="true" focusable="false">
                 <use href="./icons.svg#arrow-right"></use></svg
             ></a>
-            <p class="external-note">
-              Watch here, with your place saved in this browser. No sign-up needed.
-            </p>
+            <div class="course-complete-action">
+              <button
+                type="button"
+                class="text-button"
+                @click="markCourseComplete"
+                :disabled="markingComplete"
+                x-show="!courseComplete"
+                :aria-busy="markingComplete"
+                x-text="markCompleteLabel"
+              >
+                Mark course complete
+              </button>
+              <p
+                id="course-completion-message"
+                tabindex="-1"
+                role="status"
+                x-show="completionMessage"
+                x-text="completionMessage"
+              ></p>
+            </div>
           </div>
           <figure class="course-pizza">
             <svg
@@ -185,18 +202,28 @@
             <div class="learn-note">
               <span class="note-star" aria-hidden="true">✦</span
               ><span class="eyebrow">A THOUGHT BUBBLE</span>
-              <h3>One course.<br />Many connections.</h3>
-              <p>Follow each idea in order, or revisit a lesson whenever you need a fresh look.</p>
-              <div class="aside-divider"></div>
+              <blockquote class="thought-quote">
+                <p><q x-text="thought.text"></q></p>
+              </blockquote>
+              <p class="thought-speaker">— <span x-text="thought.speaker"></span></p>
+              <a class="thought-episode" :href="thoughtUrl" x-text="thought.episodeLabel"></a>
               <p class="small">
-                Watch here and pick up where you left off. Progress stays in this browser.
+                <a :href="thought.transcriptUrl"
+                  >Source transcript
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="./icons.svg#external-link"></use></svg
+                ></a>
               </p>
             </div>
             <details class="quiet-discovery">
               <summary>Is this going to be on the test?</summary>
               <p>
-                For now, it’s you, your curiosity, and the next good question. Learning something is
-                worth doing even when nobody is grading it.
+                As John Green puts it: <q>The test will last your entire life.</q>
+                <a
+                  href="https://www.oerproject.com/-/media/WHP/PDF/Transcripts/CC_The_Agricultural_Revolution_CCWH_1.ashx"
+                  aria-label="Source transcript: John Green, Crash Course World History 1"
+                  >Crash Course World History #1</a
+                >.
               </p>
             </details>
             <details class="quiet-discovery">

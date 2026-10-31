@@ -23,3 +23,32 @@
     max-width: 330px;
   }
 }
+
+.course-complete-action {
+  margin-top: 16px;
+}
+.course-complete-action .text-button {
+  font-size: 12px;
+}
+.course-complete-action p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.thought-quote {
+  margin: 20px 0 16px;
+}
+.learn-note .thought-quote p {
+  color: var(--ink);
+  font-size: 21px;
+  line-height: 1.45;
+  font-weight: 700;
+  margin: 0;
+}
+.learn-note .thought-speaker {
+  margin: 0 0 16px;
+}
+.thought-episode {
+  font-size: 13px;
+  line-height: 1.6;
+}

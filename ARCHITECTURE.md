@@ -79,7 +79,7 @@ Root HTML files remain explicit Vite build entries. Keeping them at the root pre
 
 Use explicit imports from the owning file. Avoid barrel exports, path aliases, catch-all `utils` folders, and a generic `shared` domain. Put a helper beside its first caller; move it only when its responsibility or reuse is clear. A small module can contain closely related types and functions, as `course.ts` does.
 
-There is no application layer yet: loading a catalog and filtering it does not need one. If a future workflow coordinates several domain operations, put that workflow in its domain's `application/` folder at that point. Introduce an interface only when an actual alternate adapter or test boundary needs it.
+`learning/application/complete-course.ts` coordinates per-episode reads and completion updates for the whole-course action. It preserves already-complete records and uses the existing progress store. Put other workflows that coordinate several domain operations in their owning domain’s `application/` folder when needed. Introduce an interface only when an actual alternate adapter or test boundary needs it.
 
 ## Where new work goes
 

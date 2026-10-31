@@ -7,7 +7,11 @@ import { matchesQuery } from "../domain/search";
 import { findShelfSurprise } from "./shelf-surprises";
 import type { Course } from "../domain/course";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
-import { mostRecentUnfinished, summarizeCourse } from "../../learning/domain/course-summary";
+import {
+  courseProgressStatus,
+  mostRecentUnfinished,
+  summarizeCourse,
+} from "../../learning/domain/course-summary";
 import { resumePosition } from "../../learning/domain/progress";
 import { timeLabel } from "../../learning/presentation/progress-labels";
 import type { CourseSummary } from "../../learning/domain/course-summary";
@@ -29,6 +33,7 @@ Alpine.data("catalogPage", () => {
     courses: [] as CourseCard[],
     query: "",
     subject: "all",
+    progress: "all",
     loading: true,
     error: "",
     storageWarning: "",
@@ -43,6 +48,7 @@ Alpine.data("catalogPage", () => {
       return this.courses.filter(
         (course) =>
           (this.subject === "all" || course.subject === this.subject) &&
+          (this.progress === "all" || courseProgressStatus(course.summary) === this.progress) &&
           matchesQuery(this.query, course.title, course.subject, course.host, course.description),
       );
     },
@@ -93,6 +99,7 @@ Alpine.data("catalogPage", () => {
     resetFilters() {
       this.query = "";
       this.subject = "all";
+      this.progress = "all";
     },
     async init() {
       stopReloadOnRestore = reloadOnRestore();
