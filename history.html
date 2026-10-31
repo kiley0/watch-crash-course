@@ -2,6 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      try {
+        const theme = localStorage.getItem("watch-crash-course-theme");
+        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
+    <script type="module" src="./src/site/theme.ts"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#fbf7ee" />
     <meta
@@ -22,7 +29,7 @@
         <nav aria-label="Main navigation">
           <a href="./index.html#courses">Explore courses</a>
           <a href="./history.html" aria-current="page">Your history</a
-          ><a href="./settings.html">Your data</a><a href="./about.html">About the project</a>
+          ><a href="./settings.html">Settings</a><a href="./about.html">About the project</a>
         </nav>
         <a class="fan-badge" href="./about.html"
           ><strong>Unofficial · Fan-made</strong><span>Unaffiliated with Crash Course</span></a
@@ -140,7 +147,7 @@
           >.<br />No accounts. Just curiosity.
           <abbr title="Don’t forget to be awesome">DFTBA.</abbr>
         </p>
-        <a href="./settings.html">Your data</a>
+        <a href="./settings.html">Settings</a>
         <a href="./about.html">About &amp; privacy</a>
       </div>
     </footer>

@@ -51,7 +51,7 @@
 }
 .player-feedback {
   padding: 16px 22px;
-  background: #eff0e6;
+  background: var(--theme-gold, #eff0e6);
 }
 .player-feedback p {
   margin: 0;
@@ -68,7 +68,7 @@
   margin-top: 24px;
   padding: 24px;
   border-radius: 22px;
-  background: #e8e7f5;
+  background: var(--theme-purple, #e8e7f5);
 }
 .watch-progress p {
   margin: 8px 0 0;
@@ -107,7 +107,7 @@
   margin-top: 24px;
   padding: 24px;
   border-radius: 22px;
-  background: #e8edda;
+  background: var(--theme-green, #e8edda);
   border: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;

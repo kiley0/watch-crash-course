@@ -1,0 +1,43 @@
+/* System is the default; explicit preferences take precedence. Color-scheme also
+   themes native form controls. The head bootstrap reads the saved choice before paint. */
+:root {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #191e1c;
+  --ink: #f1eee4;
+  --muted: #b9c4b9;
+  --line: #46534b;
+  --teal: #30473d;
+  --theme-ink: #f1eee4;
+  --theme-muted: #b9c4b9;
+  --theme-surface: #252d28;
+  --theme-green: #304236;
+  --theme-purple: #363249;
+  --theme-blue: #2b3e48;
+  --theme-gold: #49402b;
+  --theme-peach: #49352e;
+  --theme-focus: #a9c9ff;
+  --theme-shelf-backdrop: #252d2880;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    color-scheme: dark;
+    --paper: #191e1c;
+    --ink: #f1eee4;
+    --muted: #b9c4b9;
+    --line: #46534b;
+    --teal: #30473d;
+    --theme-ink: #f1eee4;
+    --theme-muted: #b9c4b9;
+    --theme-surface: #252d28;
+    --theme-green: #304236;
+    --theme-purple: #363249;
+    --theme-blue: #2b3e48;
+    --theme-gold: #49402b;
+    --theme-peach: #49352e;
+    --theme-focus: #a9c9ff;
+    --theme-shelf-backdrop: #252d2880;
+  }
+}

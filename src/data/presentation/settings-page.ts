@@ -1,4 +1,5 @@
 import Alpine from "@alpinejs/csp";
+import { parseTheme, readTheme, saveTheme } from "../../site/theme";
 import "../../site/styles.css";
 import "./settings.css";
 import { MAX_BACKUP_BYTES, readBackup } from "../domain/backup";
@@ -22,6 +23,17 @@ Alpine.data("settingsPage", () => {
     );
   }
   return {
+    theme: readTheme(),
+    themeWarning: "",
+    syncTheme() {
+      this.theme = readTheme();
+    },
+    changeTheme() {
+      const saved = saveTheme(parseTheme(this.theme));
+      this.themeWarning = saved
+        ? ""
+        : "This choice applies here, but couldn’t be saved in this browser.";
+    },
     busy: false,
     loading: true,
     error: "",

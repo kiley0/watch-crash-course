@@ -125,3 +125,7 @@ Multi-season courses may declare `playlistParts` with a title, playlist ID, and 
 ## Shelf ordering
 
 Within each subject, `public/data/courses.json` is deliberately ordered for browsing: broad introductions first, related topics together, sequels after their original course, and specialized applications later. Translated and older editions sit beside their current English counterpart. This is an editorial browsing order, not a prerequisite system. The catalog presentation preserves this order when filtering; subject shelves remain alphabetical and the recent shelf remains ordered by activity. When adding a course, place it beside related courses rather than appending it automatically.
+
+## Appearance
+
+`src/site/theme.ts` owns the System/Light/Dark preference and cross-tab synchronization. The small inline head bootstrap on all six pages reads the same `watch-crash-course-theme` localStorage key before rendering; keep that key aligned with `THEME_KEY`. Missing or unavailable storage uses the system preference. CSS media queries follow system changes live. `src/site/theme.css` defines the dark palette and native control color scheme; component styles retain their original light colors as token fallbacks. Appearance is separate from progress backups and clearing watch history. Settings presentation owns the selector.

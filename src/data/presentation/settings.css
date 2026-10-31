@@ -22,10 +22,10 @@
   border: 1px solid var(--line, #d5dbcc);
   border-radius: 24px;
   padding: clamp(20px, 4vw, 32px);
-  background: #eef1df;
+  background: var(--theme-gold, #eef1df);
 }
 .data-card:nth-child(2) {
-  background: #eeedf8;
+  background: var(--theme-purple, #eeedf8);
 }
 .data-card h2 {
   font-size: 27px;
@@ -44,17 +44,17 @@
 .data-card input::file-selector-button {
   padding: 12px;
   border-radius: 12px;
-  border: 1px solid #6b796e;
+  border: 1px solid var(--theme-muted, #6b796e);
   margin-right: 8px;
-  background: #fffdf8;
-  color: #203631;
+  background: var(--theme-surface, #fffdf8);
+  color: var(--theme-ink, #203631);
   cursor: pointer;
 }
 .data-confirm {
   width: 100%;
   margin-top: 24px;
-  background: #fffdf8;
-  border: 2px solid #6b796e;
+  background: var(--theme-surface, #fffdf8);
+  border: 2px solid var(--theme-muted, #6b796e);
   padding: 20px;
   border-radius: 18px;
 }
@@ -67,7 +67,7 @@
 }
 .data-clear {
   margin-top: 24px;
-  background: #fbede3;
+  background: var(--theme-peach, #fbede3);
 }
 .data-note {
   margin-block: 24px;
@@ -103,4 +103,23 @@
 .data-summary .text-button,
 .data-actions .text-button {
   margin-right: 0;
+}
+
+.appearance-setting {
+  margin-bottom: 32px;
+  max-width: 760px;
+}
+.appearance-setting label {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.appearance-setting select {
+  font: inherit;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 16px;
+  min-width: 180px;
 }
