@@ -8,7 +8,8 @@
     "description": "Make room for your next big idea. Build better habits for taking notes, finding focus, and making what you learn stick.",
     "playlistId": "PL8dPuuaLjXtNcAJRf3bE1IJU6nMfHj86W",
     "sourceUrl": "https://thecrashcourse.com/topic/studyskills/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "big-history",
@@ -31,7 +32,8 @@
         "playlistId": "PL8dPuuaLjXtPmGl0BGvoYcS8_AAnPrC4p",
         "startEpisode": 11
       }
-    ]
+    ],
+    "collection": "crash-course"
   },
   {
     "id": "scientific-thinking",
@@ -42,7 +44,8 @@
     "playlistId": "PL8dPuuaLjXtN6j3y85b7xbJDC8LTgdRJG",
     "episodeCount": 7,
     "sourceUrl": "https://thecrashcourse.com/topic/scientificthinking/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "physics",
@@ -53,7 +56,8 @@
     "description": "Explore motion, energy, waves, and electricity. Connect everyday observations with the laws that describe our physical world.",
     "playlistId": "PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV",
     "sourceUrl": "https://thecrashcourse.com/topic/physics/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "philosophy",
@@ -64,7 +68,8 @@
     "description": "Make room for big questions about knowledge, reality, and how to live. Practice following an argument and looking at an idea from another angle.",
     "playlistId": "PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR",
     "sourceUrl": "https://thecrashcourse.com/topic/philosophy/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "computer-science",
@@ -75,7 +80,8 @@
     "description": "Find out what happens beneath the screen. Follow the ideas behind computers, from logic gates and programs to networks and the web.",
     "playlistId": "PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
     "sourceUrl": "https://thecrashcourse.com/topic/computerscience/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "astronomy",
@@ -86,7 +92,8 @@
     "description": "Look up, then look closer. Explore planets, stars, galaxies, and the questions that help us understand our place in the universe.",
     "playlistId": "PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL",
     "sourceUrl": "https://thecrashcourse.com/topic/astronomy/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "psychology",
@@ -97,7 +104,8 @@
     "description": "Explore how we think, learn, and relate to one another, from the workings of the brain to the influence of a group.",
     "playlistId": "PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6",
     "sourceUrl": "https://thecrashcourse.com/topic/psychology/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "sociology",
@@ -108,7 +116,8 @@
     "description": "Look at the patterns behind everyday life: culture, social groups, inequality, institutions, and the societies we build together.",
     "playlistId": "PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA",
     "sourceUrl": "https://thecrashcourse.com/topic/sociology/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "world-history",
@@ -119,7 +128,8 @@
     "description": "Follow the connections between people, places, and ideas, from early farming communities to our global world.",
     "playlistId": "PLBDA2E52FB1EF80C9",
     "sourceUrl": "https://thecrashcourse.com/topic/worldhistory1/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "geology",
@@ -130,7 +140,8 @@
     "playlistId": "PL8dPuuaLjXtMuxfQl-TBfSHokgpbLvKX9",
     "episodeCount": 23,
     "sourceUrl": "https://thecrashcourse.com/topic/geology/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "religions",
@@ -141,7 +152,8 @@
     "playlistId": "PL8dPuuaLjXtNDV8GjzfScxgEe4OgIlh3c",
     "episodeCount": 24,
     "sourceUrl": "https://thecrashcourse.com/topic/religions/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "statistics",
@@ -152,7 +164,8 @@
     "description": "Make sense of data, chance, and uncertainty. Learn how to ask better questions about numbers, studies, and predictions.",
     "playlistId": "PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr",
     "sourceUrl": "https://thecrashcourse.com/topic/statistics/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "geography",
@@ -163,7 +176,8 @@
     "description": "Explore how Earth works and how people shape it, from weather and oceans to migration, borders, and cities.",
     "playlistId": "PL8dPuuaLjXtO85Sl24rSiVQ93q7vcntNF",
     "sourceUrl": "https://thecrashcourse.com/topic/geo/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "climate-energy",
@@ -174,7 +188,8 @@
     "playlistId": "PL8dPuuaLjXtMx8ZIQV9NduU_HFjDwykuj",
     "episodeCount": 12,
     "sourceUrl": "https://thecrashcourse.com/topic/climate/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "world-mythology",
@@ -185,7 +200,8 @@
     "description": "Meet creation stories, heroes, tricksters, and monsters from around the world, and explore what myths reveal about the people who tell them.",
     "playlistId": "PL8dPuuaLjXtNCG9Vq7vdvJytS-F-xGi7_",
     "sourceUrl": "https://thecrashcourse.com/topic/mythology/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "chemistry",
@@ -196,7 +212,8 @@
     "description": "Explore atoms, bonds, and reactions to understand what matter is made of and how it changes.",
     "playlistId": "PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr",
     "sourceUrl": "https://thecrashcourse.com/topic/chemistry/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "engineering",
@@ -207,7 +224,8 @@
     "description": "Explore how people turn scientific ideas into useful things. Follow the design choices behind materials, machines, infrastructure, and new technologies.",
     "playlistId": "PL8dPuuaLjXtO4A_tL6DLZRotxEb114cMR",
     "sourceUrl": "https://thecrashcourse.com/topic/engineering/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "artificial-intelligence",
@@ -218,7 +236,8 @@
     "description": "Explore how machines learn, recognize patterns, and make decisions. Follow the ideas behind neural networks, robotics, and algorithmic fairness, with numbered coding labs along the way.",
     "playlistId": "PL8dPuuaLjXtO65LeD2p4_Sb5XQ51par_b",
     "sourceUrl": "https://thecrashcourse.com/topic/ai/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "navigating-digital-information",
@@ -229,7 +248,8 @@
     "description": "Build better habits for checking what you read online. Practice evaluating sources, looking for evidence, and finding context before sharing a claim.",
     "playlistId": "PL8dPuuaLjXtN07XYqqWSKpPrtNDiCHTzU",
     "sourceUrl": "https://thecrashcourse.com/topic/navigatingdigitalinfo/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "economics",
@@ -240,7 +260,8 @@
     "description": "Follow the choices behind markets, money, and public policy. Connect everyday decisions with the forces shaping an economy.",
     "playlistId": "PL8dPuuaLjXtPNZwz5_o_5uirJ8gQXnhEO",
     "sourceUrl": "https://thecrashcourse.com/topic/economics/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "fundamentos-quimica",
@@ -251,7 +272,8 @@
     "playlistId": "PLkcbA0DkuFjWck2p8pYgfmQSBzmvBmIHn",
     "episodeCount": 11,
     "sourceUrl": "https://thecrashcourse.com/topic/quimica/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "linguistics",
@@ -262,7 +284,8 @@
     "description": "Discover how languages work, from sounds and sentence structure to meaning, social connections, and the ways language changes.",
     "playlistId": "PL8dPuuaLjXtP5mp25nStsuDzk2blncJDW",
     "sourceUrl": "https://thecrashcourse.com/topic/linguistics/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "us-government",
@@ -273,7 +296,8 @@
     "description": "Understand the U.S. political system, from the Constitution and branches of government to elections, civil rights, and public policy.",
     "playlistId": "PL8dPuuaLjXtOfse2ncvffeelTrqvhrz8H",
     "sourceUrl": "https://thecrashcourse.com/topic/usgovernment/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "big-questions-us-government",
@@ -284,7 +308,8 @@
     "playlistId": "PLSIukYXNwJJQ",
     "episodeCount": 6,
     "sourceUrl": "https://thecrashcourse.com/topic/bigquestions-usgovernment/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "political-theory",
@@ -295,7 +320,8 @@
     "playlistId": "PL8dPuuaLjXtMLFBLgZgEDglkTrApbatwk",
     "episodeCount": 13,
     "sourceUrl": "https://thecrashcourse.com/topic/politicaltheory/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "media-literacy",
@@ -306,7 +332,8 @@
     "description": "Look closely at the messages around you. Explore who makes media, how it influences us, and how to participate thoughtfully.",
     "playlistId": "PL8dPuuaLjXtM6jSpzb5gMNsx9kdmqBfmY",
     "sourceUrl": "https://thecrashcourse.com/topic/medialiteracy/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "organic-chemistry",
@@ -317,7 +344,8 @@
     "description": "Build on chemistry with carbon compounds, molecular structures, reaction mechanisms, and the chemistry behind materials and medicines.",
     "playlistId": "PL8dPuuaLjXtONguuhLdVmq0HTKS0jksS4",
     "sourceUrl": "https://thecrashcourse.com/topic/ochem/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "literature",
@@ -350,7 +378,8 @@
         "playlistId": "PL8dPuuaLjXtPlnUoPa11EoTZbWZLsQVMs",
         "startEpisode": 34
       }
-    ]
+    ],
+    "collection": "crash-course"
   },
   {
     "id": "world-history-2",
@@ -361,7 +390,8 @@
     "playlistId": "PL8dPuuaLjXtNjasccl-WajpONGX3zoY4M",
     "episodeCount": 30,
     "sourceUrl": "https://thecrashcourse.com/topic/worldhistory2/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "latin-american-literature",
@@ -372,7 +402,8 @@
     "playlistId": "PL8dPuuaLjXtMK1IYcpCXJ7Eo_FVSKhpey",
     "episodeCount": 13,
     "sourceUrl": "https://thecrashcourse.com/topic/latinamericanliterature/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "art-history",
@@ -383,7 +414,8 @@
     "description": "Learn to look closely at art and ask how it connects people, places, and ideas. Explore the stories behind objects, images, and the ways we value them.",
     "playlistId": "PL8dPuuaLjXtMg4YXg6jCIDMbHUDaHDXXZ",
     "sourceUrl": "https://thecrashcourse.com/topic/arthistory/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "intellectual-property",
@@ -394,7 +426,8 @@
     "description": "Explore copyright, patents, and trademarks, and the questions they raise about creativity, ownership, and sharing ideas.",
     "playlistId": "PL8dPuuaLjXtMwV2btpcij8S3YohW9gUGN",
     "sourceUrl": "https://thecrashcourse.com/topic/intellectualproperty/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "european-history",
@@ -405,7 +438,8 @@
     "description": "Trace Europe’s changing societies, ideas, revolutions, and conflicts, from the medieval world to the modern era.",
     "playlistId": "PL8dPuuaLjXtMsMTfmRomkVQG8AqrAmJFX",
     "sourceUrl": "https://thecrashcourse.com/topic/europeanhistory/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "native-american-history",
@@ -416,7 +450,8 @@
     "playlistId": "PL8dPuuaLjXtNNaritQa7QqwEJeQHH0TxX",
     "episodeCount": 24,
     "sourceUrl": "https://thecrashcourse.com/topic/nativeamericanhistory/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "us-history",
@@ -427,7 +462,8 @@
     "description": "Trace the people, conflicts, and ideas that shaped the United States, from early encounters through the Obama presidency.",
     "playlistId": "PL8dPuuaLjXtMwmepBjTSG593eG7ObzO7s",
     "sourceUrl": "https://thecrashcourse.com/topic/ushistory/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "business-soft-skills",
@@ -438,7 +474,8 @@
     "description": "Practice the people side of work: communication, collaboration, negotiation, job interviews, time management, and avoiding burnout.",
     "playlistId": "PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM",
     "sourceUrl": "https://thecrashcourse.com/topic/businesssoftskills/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "biology",
@@ -449,7 +486,8 @@
     "description": "Explore the living world, from tiny cells to whole ecosystems. Discover how life works, changes, and connects us all.",
     "playlistId": "PL8dPuuaLjXtPW_ofbxdHNciuLoTRLPMgB",
     "sourceUrl": "https://thecrashcourse.com/topic/biology/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "biology-2012",
@@ -460,7 +498,8 @@
     "playlistId": "PL3EED4C1D684D3ADF",
     "episodeCount": 40,
     "sourceUrl": "https://thecrashcourse.com/topic/biology-2012/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "biologia",
@@ -471,7 +510,8 @@
     "playlistId": "PLkcbA0DkuFjWQZzjwF6w_gUrE_5_d3vd3",
     "episodeCount": 50,
     "sourceUrl": "https://thecrashcourse.com/topic/biologia/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "anatomy-physiology",
@@ -482,7 +522,8 @@
     "description": "Explore the structures and systems that keep a human body working, from cells and tissues to movement, breathing, and immunity.",
     "playlistId": "PL8dPuuaLjXtOAKed_MxxWBNaPno5h3Zs8",
     "sourceUrl": "https://thecrashcourse.com/topic/anatomy/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "theater-drama",
@@ -493,7 +534,8 @@
     "description": "Explore the history and craft of live performance, from ancient stages and dramatic traditions to Shakespeare and Broadway musicals.",
     "playlistId": "PL8dPuuaLjXtONXALkeh5uisZqrAcPKCee",
     "sourceUrl": "https://thecrashcourse.com/topic/theaterdrama/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "futures-of-ai",
@@ -504,7 +546,8 @@
     "playlistId": "PL8dPuuaLjXtMDCIyvFA5gbgd9AOsRGOr0",
     "episodeCount": 5,
     "sourceUrl": "https://thecrashcourse.com/topic/futuresofai/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "film-history",
@@ -515,7 +558,8 @@
     "description": "Follow the story of cinema, from early cameras and silent films to Hollywood, world cinema, and documentary. Discover how movies developed their own language.",
     "playlistId": "PL8dPuuaLjXtN-Bd-H_TGq72CN50Fpv_JX",
     "sourceUrl": "https://thecrashcourse.com/topic/filmhistory/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "sex-ed",
@@ -526,7 +570,8 @@
     "playlistId": "PL8dPuuaLjXtMweg6Yx9MHP01n_yUyaf9H",
     "episodeCount": 15,
     "sourceUrl": "https://thecrashcourse.com/topic/sexed/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "film-production",
@@ -537,7 +582,8 @@
     "playlistId": "PL8dPuuaLjXtPnisE6CrrLO00Qoe67TDpx",
     "episodeCount": 15,
     "sourceUrl": "https://thecrashcourse.com/topic/filmproduction/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "film-criticism",
@@ -548,7 +594,8 @@
     "description": "Look closely at fifteen films to explore how editing, sound, performance, and visual choices shape the stories we see on screen.",
     "playlistId": "PL8dPuuaLjXtOCicti5dwLAKuesMQVi7hw",
     "sourceUrl": "https://thecrashcourse.com/topic/filmcriticism/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "black-american-history",
@@ -559,7 +606,8 @@
     "playlistId": "PL8dPuuaLjXtNYJO8JWpXO2JP0ezgxsrJJ",
     "episodeCount": 51,
     "sourceUrl": "https://thecrashcourse.com/topic/bah/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "botany",
@@ -570,7 +618,8 @@
     "playlistId": "PL8dPuuaLjXtOhFQOVdutRTxvUI1UeCcax",
     "episodeCount": 15,
     "sourceUrl": "https://thecrashcourse.com/topic/botany/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "entrepreneurship",
@@ -581,7 +630,8 @@
     "description": "Explore how a business idea becomes something people can use. Learn about customers, testing products, building relationships, and deciding how to grow.",
     "playlistId": "PL8dPuuaLjXtNamNKW5qlS-nKgA0on7Qze",
     "sourceUrl": "https://thecrashcourse.com/topic/businessentrepreneurship/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "zoology",
@@ -592,7 +642,8 @@
     "playlistId": "PL8dPuuaLjXtNRgJI4gHRLFtOD_r4hfJaF",
     "episodeCount": 14,
     "sourceUrl": "https://thecrashcourse.com/topic/zoo/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "games",
@@ -603,7 +654,8 @@
     "playlistId": "PL8dPuuaLjXtPTrc_yg73RghJEOdobAplG",
     "episodeCount": 29,
     "sourceUrl": "https://thecrashcourse.com/topic/games/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "ecology",
@@ -614,7 +666,8 @@
     "description": "Follow the connections between organisms and their environments, from growing populations to ecosystems and conservation.",
     "playlistId": "PL8dPuuaLjXtNdTKZkV_GiIYXpV9w4WxbX",
     "sourceUrl": "https://thecrashcourse.com/topic/ecology/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "outbreak-science",
@@ -625,7 +678,8 @@
     "playlistId": "PL8dPuuaLjXtPkACD-BkU-oM6PUotjdCEk",
     "episodeCount": 15,
     "sourceUrl": "https://thecrashcourse.com/topic/outbreakscience/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "history-of-science",
@@ -636,7 +690,8 @@
     "description": "Follow how people across cultures have investigated the world, from ancient astronomy and medicine to genetics, computing, and climate science.",
     "playlistId": "PL8dPuuaLjXtNppY8ZHMPDH5TKK2UpU8Ng",
     "sourceUrl": "https://thecrashcourse.com/topic/historyofscience/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
   },
   {
     "id": "public-health",
@@ -647,6 +702,202 @@
     "description": "Explore how communities protect and improve health. Connect biology, environments, social conditions, and policy with the health of whole populations.",
     "playlistId": "PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF",
     "sourceUrl": "https://thecrashcourse.com/topic/publichealth/",
-    "reviewedAt": "2026-10-30"
+    "reviewedAt": "2026-10-30",
+    "collection": "crash-course"
+  },
+  {
+    "id": "study-hall-composition",
+    "title": "Composition",
+    "subject": "Humanities",
+    "host": "Yumna Samie",
+    "description": "Practice the writing process, from finding an idea to revising and presenting your work.",
+    "playlistId": "PLID58IQe16nHLmRaPC--eXaRja6MJdQWd",
+    "episodeCount": 15,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nHLmRaPC--eXaRja6MJdQWd",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "Original series"
+  },
+  {
+    "id": "study-hall-rhetoric-composition",
+    "title": "Rhetoric and Composition",
+    "subject": "Humanities",
+    "host": "Emily Zarka",
+    "description": "Explore how writing works, consider your audience, and build stronger arguments.",
+    "playlistId": "PLID58IQe16nG0VmxA0JBY8NG_b4OrF63f",
+    "episodeCount": 29,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nG0VmxA0JBY8NG_b4OrF63f",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-algebra",
+    "title": "Algebra",
+    "subject": "Mathematics",
+    "host": "James Tanton",
+    "description": "Build confidence with equations, word problems, functions, and mathematical patterns.",
+    "playlistId": "PLID58IQe16nEsm56-Mq2HK8qpwOXVEA7T",
+    "episodeCount": 15,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nEsm56-Mq2HK8qpwOXVEA7T",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "Original series"
+  },
+  {
+    "id": "study-hall-college-math",
+    "title": "Real World College Math",
+    "subject": "Mathematics",
+    "host": "Jason Guglielmo",
+    "description": "Explore practical mathematics, from logic and probability to geometry and trigonometry.",
+    "playlistId": "PLID58IQe16nEx_-AWPOr74PBz00LAdymM",
+    "episodeCount": 30,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nEx_-AWPOr74PBz00LAdymM",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-data-literacy",
+    "title": "Data Literacy",
+    "subject": "Mathematics",
+    "host": "Jessica Pucci",
+    "description": "Learn to interpret, question, visualize, and find data in everyday life.",
+    "playlistId": "PLID58IQe16nE-1980HOGDWsvf0skE2jvS",
+    "episodeCount": 15,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nE-1980HOGDWsvf0skE2jvS",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "Original series"
+  },
+  {
+    "id": "study-hall-statistics",
+    "title": "Real World Statistics",
+    "subject": "Mathematics",
+    "host": "Sabrina Cruz",
+    "description": "Make sense of data with probability, statistical tests, and regression.",
+    "playlistId": "PLID58IQe16nE_tF2tM_DFJNotgbbG1obu",
+    "episodeCount": 31,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nE_tF2tM_DFJNotgbbG1obu",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-chemistry",
+    "title": "Chemistry",
+    "subject": "Science",
+    "host": "Will Comar",
+    "description": "Explore chemical changes, reactions, energy, equilibrium, acids, and bases.",
+    "playlistId": "PLID58IQe16nGYp3EY8VUs-j2jHVzPQmfL",
+    "episodeCount": 15,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nGYp3EY8VUs-j2jHVzPQmfL",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "Original series"
+  },
+  {
+    "id": "study-hall-sustainability",
+    "title": "Sustainability",
+    "subject": "Science",
+    "host": "Miriam Nielsen",
+    "description": "Explore the connections between the environment, society, and a sustainable future.",
+    "playlistId": "PLID58IQe16nHaihk2KksEyKby91-KIWRF",
+    "episodeCount": 31,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nHaihk2KksEyKby91-KIWRF",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-psychology",
+    "title": "Intro to Psychology",
+    "subject": "Social sciences",
+    "host": "Déja Fitzgerald",
+    "description": "Study the science of minds and behavior, from learning and memory to social psychology.",
+    "playlistId": "PLID58IQe16nF0d4qQuf-qGbhuqcRpiQi4",
+    "episodeCount": 30,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nF0d4qQuf-qGbhuqcRpiQi4",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-macroeconomics",
+    "title": "Macroeconomics",
+    "subject": "Social sciences",
+    "host": "Matt Sopha",
+    "description": "Understand economic systems, growth, inflation, and fiscal and monetary policy.",
+    "playlistId": "PLID58IQe16nFZ9h16Y_dHM7rcZthWypsj",
+    "episodeCount": 31,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nFZ9h16Y_dHM7rcZthWypsj",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-us-government",
+    "title": "Power and Politics in US Government",
+    "subject": "Social sciences",
+    "host": "Dave Jorgenson, Carmella Boykin, and Chris Vasquez",
+    "description": "Explore political power, government institutions, and ways to participate in civic life.",
+    "playlistId": "PLID58IQe16nEd6FICOoEk8uoqNueJvwcS",
+    "episodeCount": 30,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nEd6FICOoEk8uoqNueJvwcS",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-modern-world-history",
+    "title": "Modern World History",
+    "subject": "History",
+    "host": "Rob Fuller",
+    "description": "Trace the connections that shaped our modern world, from the Mongols to globalization.",
+    "playlistId": "PLID58IQe16nGgx0__R3MEiDDSBGgicOjG",
+    "episodeCount": 30,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nGgx0__R3MEiDDSBGgicOjG",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-us-history",
+    "title": "US History to 1865",
+    "subject": "History",
+    "host": "Danielle Bainbridge",
+    "description": "Explore American history from Indigenous societies through the Civil War.",
+    "playlistId": "PLID58IQe16nFcW_yD2TdcEv4_pqWeDs_A",
+    "episodeCount": 30,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nFcW_yD2TdcEv4_pqWeDs_A",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-programming",
+    "title": "Code and Programming for Beginners",
+    "subject": "Technology",
+    "host": "Sabrina Cruz",
+    "description": "Learn Java fundamentals and solve problems with code, from variables to complex programs.",
+    "playlistId": "PLID58IQe16nFgbHGRCj5QEXKUpVIilpDN",
+    "episodeCount": 28,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nFgbHGRCj5QEXKUpVIilpDN",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
+  },
+  {
+    "id": "study-hall-communication",
+    "title": "Intro to Human Communication",
+    "subject": "Humanities",
+    "host": "Cassandra Ryder",
+    "description": "Explore how we make meaning, communicate with each other, and navigate media.",
+    "playlistId": "PLID58IQe16nFcsed5sqo0VfQUZ7EF8rqY",
+    "episodeCount": 29,
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLID58IQe16nFcsed5sqo0VfQUZ7EF8rqY",
+    "reviewedAt": "2026-10-30",
+    "collection": "study-hall",
+    "series": "College Foundations"
   }
 ]

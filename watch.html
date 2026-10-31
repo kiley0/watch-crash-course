@@ -28,12 +28,14 @@
           ><span>WATCH<span class="brand-sub">CRASH COURSE</span></span></a
         >
         <nav aria-label="Main navigation">
-          <a href="./index.html#courses">Explore courses</a>
+          <a href="./index.html#courses">Crash Course</a>
+          <a href="./study-hall.html">Study Hall</a>
           <a href="./history.html">Your history</a>
           <a href="./settings.html">Settings</a><a href="./about.html">About the project</a>
         </nav>
         <a class="fan-badge" href="./about.html"
-          ><strong>Unofficial · Fan-made</strong><span>Unaffiliated with Crash Course</span></a
+          ><strong>Unofficial · Fan-made</strong
+          ><span>Unaffiliated with Crash Course or ASU</span></a
         >
       </div>
     </header>
@@ -52,14 +54,17 @@
       <noscript
         ><p class="notice">
           Enable JavaScript to watch and save your place, or
-          <a href="https://www.youtube.com/user/crashcourse">visit Crash Course on YouTube</a>.
+          <a href="https://www.youtube.com/user/crashcourse">visit Crash Course on YouTube</a> or
+          <a href="https://www.youtube.com/@studyhall">Study Hall</a>.
         </p></noscript
       >
       <p class="load-message" x-show="loading" role="status">Finding your place…</p>
       <div class="notice" x-cloak x-show="error" role="alert">
         <h1>This lesson took a detour.</h1>
         <p x-text="error"></p>
-        <a class="button button-dark" href="./index.html#courses">Explore courses</a>
+        <a class="button button-dark" href="./index.html#courses" :href="libraryHref"
+          >Explore courses</a
+        >
         <button class="text-button" x-show="canRetry" @click="load">Try again</button>
       </div>
       <div x-cloak x-show="ready">
@@ -182,8 +187,10 @@
           <a href="https://www.youtube.com/user/crashcourse"
             >Crash Course
             <svg class="icon" aria-hidden="true" focusable="false">
-              <use href="./icons.svg#external-link"></use></svg></a
-          >.<br />No accounts. Just curiosity.
+              <use href="./icons.svg#external-link"></use></svg
+          ></a>
+          and <a href="https://www.youtube.com/@studyhall">Study Hall</a>.<br />No accounts. Just
+          curiosity.
           <abbr title="Don’t forget to be awesome">DFTBA.</abbr>
         </p>
         <a href="./settings.html">Settings</a>

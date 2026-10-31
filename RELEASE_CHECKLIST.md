@@ -18,3 +18,5 @@ Run `pnpm fmt` and `pnpm build` before submitting changes. Check affected flows 
 After deployment, verify page and asset links, playback, and saved progress on the production origin. Unknown pages should return 404. Preview hostnames have separate browser storage.
 
 Keep storage keys and supported backup formats stable. Before a storage change, export a backup and verify existing records survive an update. Roll back to a known-good deployment if needed.
+
+- Study Hall: all 15 courses appear separately from Crash Course; check search, subject/progress filters, course return links, saved progress, and a backup containing videos from both libraries.

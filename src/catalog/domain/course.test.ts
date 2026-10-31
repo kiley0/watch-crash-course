@@ -1,7 +1,15 @@
 import { describe, expect, it } from "vite-plus/test";
 import catalog from "../../../public/data/courses.json";
 import detail from "../../../public/data/courses/study-skills.json";
-import { isCourseId, parseCatalog, parseDetail, playlistForEpisode } from "./course";
+import {
+  isCourseId,
+  parseCatalog,
+  parseDetail,
+  playlistForEpisode,
+  coursesInCollection,
+  collectionLabel,
+  libraryUrl,
+} from "./course";
 
 const courseFiles = import.meta.glob("../../../public/data/courses/*.json", {
   eager: true,
@@ -198,4 +206,88 @@ describe("multi-season playlists", () => {
       ).toThrow();
     }
   });
+});
+
+describe("library collections", () => {
+  const courses = parseCatalog(catalog);
+  it("keeps the two libraries separate and retains all fifteen Study Hall series", () => {
+    const crash = coursesInCollection(courses, "crash-course");
+    const studyHall = coursesInCollection(courses, "study-hall");
+    expect(crash).toHaveLength(56);
+    expect(studyHall).toHaveLength(15);
+    expect(studyHall.filter((course) => course.series === "College Foundations")).toHaveLength(11);
+    expect(studyHall.filter((course) => course.series === "Original series")).toHaveLength(4);
+    expect(studyHall.reduce((sum, course) => sum + course.episodeCount, 0)).toBe(389);
+    expect(crash.every((course) => !course.id.startsWith("study-hall-"))).toBe(true);
+    for (const course of studyHall) {
+      const detail = parseDetail(
+        courseFiles[`../../../public/data/courses/${course.id}.json`],
+        course,
+      );
+      expect(detail.episodes.every((episode) => !/preview|trailer/i.test(episode.title))).toBe(
+        true,
+      );
+      expect(collectionLabel(course)).toBe("Study Hall");
+      expect(libraryUrl(course)).toBe("./study-hall.html#courses");
+    }
+    expect(libraryUrl(crash[0]!)).toBe("./index.html#courses");
+    expect(collectionLabel(crash[0]!)).toBe("Crash Course");
+  });
+  it("requires known collections, Study Hall series labels and matching canonical sources", () => {
+    const studyHall = coursesInCollection(courses, "study-hall")[0]!;
+    expect(() => parseCatalog([{ ...studyHall, collection: "other" }])).toThrow();
+    expect(() => parseCatalog([{ ...studyHall, series: "other" }])).toThrow();
+    expect(() => parseCatalog([{ ...studyHall, series: undefined }])).toThrow();
+    for (const sourceUrl of [
+      "https://evil.example/",
+      "https://www.youtube.com/playlist?list=wrong",
+      studyHall.sourceUrl + "&extra=true",
+    ]) {
+      expect(() => parseCatalog([{ ...studyHall, sourceUrl }])).toThrow();
+    }
+  });
+});
+
+it("retains each Study Hall course’s verified playlist endpoints", () => {
+  const courses = parseCatalog(catalog);
+  for (const [id, count, first, last] of [
+    ["study-hall-statistics", 31, "CJbEOMuMWUM", "SLiYq7OZ8jc"],
+    ["study-hall-sustainability", 31, "7eiiMrj6VYU", "rCe-Xdyivjw"],
+    ["study-hall-macroeconomics", 31, "NJcjgcifdIg", "nsj6AfbnpZk"],
+    ["study-hall-psychology", 30, "sYO7f2WozAY", "PRzkyHyhekA"],
+    ["study-hall-modern-world-history", 30, "r-n_NR_uwCs", "0xKL0Z4rRyM"],
+    ["study-hall-programming", 28, "zDsD5s3GO-A", "yTzuRFjFivg"],
+    ["study-hall-us-government", 30, "nJzJ9eAvKSI", "RbswqbHzIqs"],
+    ["study-hall-us-history", 30, "Gnv6mQC0sQY", "7q9xGQja4To"],
+    ["study-hall-communication", 29, "pb_7CakHevo", "V2hSG06Nmjs"],
+    ["study-hall-college-math", 30, "ovu51n3qjeU", "GltOrM94EtA"],
+    ["study-hall-rhetoric-composition", 29, "UeGesJgnNH4", "t6ECrgO_YKg"],
+    ["study-hall-composition", 15, "AXa22Csh7oE", "-Cx_DL43JgI"],
+    ["study-hall-algebra", 15, "A_QINscHY3Q", "FWAiaCOSevY"],
+    ["study-hall-chemistry", 15, "VWSqD2L8BLs", "IBb5J0tmKP8"],
+    ["study-hall-data-literacy", 15, "yhO_t-c3yJY", "HMYpfwItUiY"],
+  ] as const) {
+    const course = courses.find((course) => course.id === id)!;
+    const detail = parseDetail(
+      courseFiles[`../../../public/data/courses/${course.id}.json`],
+      course,
+    );
+    expect(detail.episodes).toHaveLength(count);
+    expect(detail.episodes[0]?.videoId).toBe(first);
+    expect(detail.episodes.at(-1)?.videoId).toBe(last);
+  }
+});
+
+it("requires a matching canonical YouTube source for Study Hall lessons", () => {
+  const course = parseCatalog(catalog).find((course) => course.id === "study-hall-algebra")!;
+  const detail = parseDetail(courseFiles[`../../../public/data/courses/${course.id}.json`], course);
+  for (const sourceUrl of [
+    "https://thecrashcourse.com/courses/not-a-study-hall-lesson/",
+    "https://www.youtube.com/watch?v=wrongvideo1",
+    `${detail.episodes[0]!.sourceUrl}&extra=true`,
+  ]) {
+    const copy = structuredClone(detail);
+    copy.episodes[0]!.sourceUrl = sourceUrl;
+    expect(() => parseDetail(copy, course)).toThrow("Study Hall episode source");
+  }
 });

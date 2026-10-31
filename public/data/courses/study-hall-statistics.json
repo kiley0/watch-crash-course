@@ -1,0 +1,191 @@
+{
+  "courseId": "study-hall-statistics",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Monty Hall Problem Explained",
+      "videoId": "CJbEOMuMWUM",
+      "sourceUrl": "https://www.youtube.com/watch?v=CJbEOMuMWUM"
+    },
+    {
+      "number": 2,
+      "title": "Introduction to Statistics",
+      "videoId": "TVARPjU4tyw",
+      "sourceUrl": "https://www.youtube.com/watch?v=TVARPjU4tyw"
+    },
+    {
+      "number": 3,
+      "title": "Why Are There So Many Data Types?",
+      "videoId": "Sxi5-D2fd50",
+      "sourceUrl": "https://www.youtube.com/watch?v=Sxi5-D2fd50"
+    },
+    {
+      "number": 4,
+      "title": "How to Identify Dependent & Independent Variables",
+      "videoId": "_EWbZbSIqXc",
+      "sourceUrl": "https://www.youtube.com/watch?v=_EWbZbSIqXc"
+    },
+    {
+      "number": 5,
+      "title": "What Kind of Data Do You Really Need?",
+      "videoId": "tqX8Xxo-UE0",
+      "sourceUrl": "https://www.youtube.com/watch?v=tqX8Xxo-UE0"
+    },
+    {
+      "number": 6,
+      "title": "How to Organize Data in a Table",
+      "videoId": "6-jjT-JnAP8",
+      "sourceUrl": "https://www.youtube.com/watch?v=6-jjT-JnAP8"
+    },
+    {
+      "number": 7,
+      "title": "What Is A Histogram?",
+      "videoId": "rzQAcMJ5DHY",
+      "sourceUrl": "https://www.youtube.com/watch?v=rzQAcMJ5DHY"
+    },
+    {
+      "number": 8,
+      "title": "How to Tell a Story with Data",
+      "videoId": "n_NDPcWWI-0",
+      "sourceUrl": "https://www.youtube.com/watch?v=n_NDPcWWI-0"
+    },
+    {
+      "number": 9,
+      "title": "What is a Central Tendency?",
+      "videoId": "t4NK4rWthU4",
+      "sourceUrl": "https://www.youtube.com/watch?v=t4NK4rWthU4"
+    },
+    {
+      "number": 10,
+      "title": "Descriptive Statistics and Outliers",
+      "videoId": "fy4XVSx5Aqc",
+      "sourceUrl": "https://www.youtube.com/watch?v=fy4XVSx5Aqc"
+    },
+    {
+      "number": 11,
+      "title": "Why Normal Distributions Are So Common",
+      "videoId": "XFX0aQiPVfo",
+      "sourceUrl": "https://www.youtube.com/watch?v=XFX0aQiPVfo"
+    },
+    {
+      "number": 12,
+      "title": "What is the Empirical Rule?",
+      "videoId": "hKq58idz_Oo",
+      "sourceUrl": "https://www.youtube.com/watch?v=hKq58idz_Oo"
+    },
+    {
+      "number": 13,
+      "title": "How to calculate Z-Scores",
+      "videoId": "R36y-XJE1u0",
+      "sourceUrl": "https://www.youtube.com/watch?v=R36y-XJE1u0"
+    },
+    {
+      "number": 14,
+      "title": "The guardrails of statistics: Confidence Intervals",
+      "videoId": "xEAFokqTgKI",
+      "sourceUrl": "https://www.youtube.com/watch?v=xEAFokqTgKI"
+    },
+    {
+      "number": 15,
+      "title": "Types of Probability Distributions",
+      "videoId": "e3htNFuIzVA",
+      "sourceUrl": "https://www.youtube.com/watch?v=e3htNFuIzVA"
+    },
+    {
+      "number": 16,
+      "title": "What is Conditional Probability?",
+      "videoId": "toxX5L3CJx0",
+      "sourceUrl": "https://www.youtube.com/watch?v=toxX5L3CJx0"
+    },
+    {
+      "number": 17,
+      "title": "How To Use Probability Distributions",
+      "videoId": "To4DAZjDzCQ",
+      "sourceUrl": "https://www.youtube.com/watch?v=To4DAZjDzCQ"
+    },
+    {
+      "number": 18,
+      "title": "What Is Hypothesis Testing? ",
+      "videoId": "Yq8v9VJUe58",
+      "sourceUrl": "https://www.youtube.com/watch?v=Yq8v9VJUe58"
+    },
+    {
+      "number": 19,
+      "title": "P-value Hypothesis Testing",
+      "videoId": "hiRwA4WAxd0",
+      "sourceUrl": "https://www.youtube.com/watch?v=hiRwA4WAxd0"
+    },
+    {
+      "number": 20,
+      "title": "One and Two Tailed Tests Explained",
+      "videoId": "XfYTry4SnT0",
+      "sourceUrl": "https://www.youtube.com/watch?v=XfYTry4SnT0"
+    },
+    {
+      "number": 21,
+      "title": "How to Run an Independent t-Test",
+      "videoId": "CBY7u99yZYc",
+      "sourceUrl": "https://www.youtube.com/watch?v=CBY7u99yZYc"
+    },
+    {
+      "number": 22,
+      "title": "How to Calculate Cohen’s D",
+      "videoId": "cyPKyIwmgvA",
+      "sourceUrl": "https://www.youtube.com/watch?v=cyPKyIwmgvA"
+    },
+    {
+      "number": 23,
+      "title": "What is a Chi-Square test?",
+      "videoId": "hgcQBEOd8yk",
+      "sourceUrl": "https://www.youtube.com/watch?v=hgcQBEOd8yk"
+    },
+    {
+      "number": 24,
+      "title": "Chi Square: Independence and Homogeneity",
+      "videoId": "gm_Tr72bwDw",
+      "sourceUrl": "https://www.youtube.com/watch?v=gm_Tr72bwDw"
+    },
+    {
+      "number": 25,
+      "title": "F Distribution and the Sum of Squares",
+      "videoId": "1W1X5vVHrSY",
+      "sourceUrl": "https://www.youtube.com/watch?v=1W1X5vVHrSY"
+    },
+    {
+      "number": 26,
+      "title": "What is ANOVA?",
+      "videoId": "qP7rqPeQGBI",
+      "sourceUrl": "https://www.youtube.com/watch?v=qP7rqPeQGBI"
+    },
+    {
+      "number": 27,
+      "title": "How to Use Repeated Measures ANOVA",
+      "videoId": "O7IhKY4fTks",
+      "sourceUrl": "https://www.youtube.com/watch?v=O7IhKY4fTks"
+    },
+    {
+      "number": 28,
+      "title": "Understanding the Correlation Coefficient",
+      "videoId": "oLkx0S0b1R4",
+      "sourceUrl": "https://www.youtube.com/watch?v=oLkx0S0b1R4"
+    },
+    {
+      "number": 29,
+      "title": "Intro to Simple Linear Regression",
+      "videoId": "eS-i_HgLNjE",
+      "sourceUrl": "https://www.youtube.com/watch?v=eS-i_HgLNjE"
+    },
+    {
+      "number": 30,
+      "title": "How to Use Multiple Linear Regression",
+      "videoId": "AaTgBtBnEXw",
+      "sourceUrl": "https://www.youtube.com/watch?v=AaTgBtBnEXw"
+    },
+    {
+      "number": 31,
+      "title": "Which Stats Can You Trust?",
+      "videoId": "SLiYq7OZ8jc",
+      "sourceUrl": "https://www.youtube.com/watch?v=SLiYq7OZ8jc"
+    }
+  ]
+}

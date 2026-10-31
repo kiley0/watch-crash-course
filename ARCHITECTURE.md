@@ -5,7 +5,8 @@ We use lightweight domain-driven organization: code lives beside the subject it 
 ## Current map
 
 ```text
-index.html                              Catalog page markup
+index.html                              Crash Course catalog page markup
+study-hall.html                         Study Hall catalog page markup
 course.html                             Course page markup
 about.html                              About/privacy markup
 watch.html                              Playback, resume, and episode navigation
@@ -22,7 +23,9 @@ src/
       static-catalog.ts                 Fetch static JSON, timeouts, parse responses
       static-catalog.test.ts
     presentation/
-      catalog-page.ts                   Catalog Alpine state and page entry
+      catalog-component.ts              Shared bookshelf and filter state
+      catalog-page.ts                   Crash Course entry and random lesson
+      study-hall-page.ts                Study Hall entry
       catalog.css                       Subject bookshelves and course book covers
       course-page.ts                    Course Alpine state and page entry
       course.css                        Course progress pizza layout
@@ -118,7 +121,7 @@ All browser storage calls pass through the site infrastructure coordinator. A re
 
 ## Catalog sources
 
-Course metadata uses official `thecrashcourse.com` source URLs. Episode records normally reference the corresponding official episode page. When the website omits a lesson, a canonical `https://www.youtube.com/watch?v=<videoId>` source is allowed only when it exactly matches the episode ID; maintainers verify that it is an official CrashCourse upload. This exception currently supplies Computer Science #40, Anatomy & Physiology #44, Sociology #38–44, Big Questions on U.S. Government #5–6, and Geology #22–23. The browser does not import playlists or scrape YouTube; visitors still load checked-in JSON only.
+Crash Course metadata uses official `thecrashcourse.com` source URLs. Episode records normally reference the corresponding official episode page. When the website omits a lesson, a canonical `https://www.youtube.com/watch?v=<videoId>` source is allowed only when it exactly matches the episode ID; maintainers verify that it is an official CrashCourse upload. This exception currently supplies Computer Science #40, Anatomy & Physiology #44, Sociology #38–44, Big Questions on U.S. Government #5–6, and Geology #22–23. The browser does not import playlists or scrape YouTube; visitors still load checked-in JSON only.
 
 Multi-season courses may declare `playlistParts` with a title, playlist ID, and first local episode number. Parts begin at episode 1, agree with the primary playlist, and have strictly increasing boundaries. Course pages link each season; outbound video links use the playlist for the selected episode. Local episode numbers stay consecutive; original season labels remain in lesson titles.
 
@@ -128,4 +131,12 @@ Within each subject, `public/data/courses.json` is deliberately ordered for brow
 
 ## Appearance
 
-`src/site/theme.ts` owns the System/Light/Dark preference and cross-tab synchronization. The small inline head bootstrap on all six pages reads the same `watch-crash-course-theme` localStorage key before rendering; keep that key aligned with `THEME_KEY`. Missing or unavailable storage uses the system preference. CSS media queries follow system changes live. `src/site/theme.css` defines the dark palette and native control color scheme; component styles retain their original light colors as token fallbacks. Appearance is separate from progress backups and clearing watch history. Settings presentation owns the selector.
+`src/site/theme.ts` owns the System/Light/Dark preference and cross-tab synchronization. The small inline head bootstrap on all seven pages reads the same `watch-crash-course-theme` localStorage key before rendering; keep that key aligned with `THEME_KEY`. Missing or unavailable storage uses the system preference. CSS media queries follow system changes live. `src/site/theme.css` defines the dark palette and native control color scheme; component styles retain their original light colors as token fallbacks. Appearance is separate from progress backups and clearing watch history. Settings presentation owns the selector.
+
+## Study Hall library
+
+`study-hall.html` is a separate static entry for the Study Hall collection. `Course.collection` distinguishes `crash-course` and `study-hall`; Study Hall also declares `series` (College Foundations or Original series). Both live in the same checked-in catalog and course detail directory. Existing IDs and video-keyed progress are unchanged. History and backups include both collections.
+
+`catalog-component.ts` owns the shared catalog UI state; the home and Study Hall page entries select their collection. Collection selection, labels, and library URLs belong to catalog domain rules. Course and watch pages share the existing playback and learning workflows. Study Hall metadata uses the exact official YouTube playlist URL; episodes use their canonical YouTube video URL. Playlist membership and hosts are curated, not inferred at runtime. Exclude previews while retaining numbered introductory lessons.
+
+When adding a page, retain the appearance bootstrap and add it to Vite’s explicit inputs. Navigation remains explicit in every HTML entry.

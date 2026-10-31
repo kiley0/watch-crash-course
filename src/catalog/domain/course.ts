@@ -3,7 +3,10 @@ export interface PlaylistPart {
   playlistId: string;
   startEpisode: number;
 }
+export type Collection = "crash-course" | "study-hall";
 export interface Course {
+  collection: Collection;
+  series?: "College Foundations" | "Original series";
   id: string;
   title: string;
   subject: string;
@@ -44,10 +47,16 @@ function source(value: unknown): string {
     throw new Error("Invalid source link.");
   return url.href;
 }
-function episodeSource(value: unknown, videoId: string): string {
-  // Some official uploads have no episode page on the Crash Course website.
+function studyHallSource(value: unknown, playlistId: string): string {
+  const expected = `https://www.youtube.com/playlist?list=${playlistId}`;
+  if (value !== expected) throw new Error("Invalid Study Hall source link.");
+  return expected;
+}
+function episodeSource(value: unknown, videoId: string, collection: Collection): string {
+  // Study Hall uses canonical video URLs; some Crash Course uploads also lack episode pages.
   // Accept only the canonical YouTube link for this exact, curated video.
   if (value === `https://www.youtube.com/watch?v=${videoId}`) return value;
+  if (collection === "study-hall") throw new Error("Invalid Study Hall episode source.");
   return source(value);
 }
 export function parseCatalog(value: unknown): Course[] {
@@ -58,6 +67,18 @@ export function parseCatalog(value: unknown): Course[] {
     const id = string(data.id);
     if (!isCourseId(id) || ids.has(id)) throw new Error("Invalid or duplicate course ID.");
     ids.add(id);
+    const collection = data.collection;
+    if (collection !== "crash-course" && collection !== "study-hall")
+      throw new Error("Invalid course collection.");
+    const series = data.series;
+    if (
+      collection === "study-hall" &&
+      series !== "College Foundations" &&
+      series !== "Original series"
+    )
+      throw new Error("Invalid Study Hall series.");
+    if (collection === "crash-course" && series !== undefined)
+      throw new Error("Invalid course series.");
     const episodeCount = data.episodeCount;
     if (typeof episodeCount !== "number" || !Number.isSafeInteger(episodeCount) || episodeCount < 1)
       throw new Error("Invalid episode count.");
@@ -97,6 +118,10 @@ export function parseCatalog(value: unknown): Course[] {
       throw new Error("Invalid review date.");
     return {
       id,
+      collection,
+      ...(collection === "study-hall"
+        ? { series: series as "College Foundations" | "Original series" }
+        : {}),
       title: string(data.title),
       subject: string(data.subject),
       host: string(data.host),
@@ -104,7 +129,10 @@ export function parseCatalog(value: unknown): Course[] {
       episodeCount,
       playlistId,
       ...(playlistParts ? { playlistParts } : {}),
-      sourceUrl: source(data.sourceUrl),
+      sourceUrl:
+        collection === "study-hall"
+          ? studyHallSource(data.sourceUrl, playlistId)
+          : source(data.sourceUrl),
       reviewedAt,
     };
   });
@@ -132,7 +160,7 @@ export function parseDetail(value: unknown, course: Course): CourseDetail {
       number: index + 1,
       title: string(episode.title),
       videoId,
-      sourceUrl: episodeSource(episode.sourceUrl, videoId),
+      sourceUrl: episodeSource(episode.sourceUrl, videoId, course.collection),
     };
   });
   return { courseId: course.id, episodes };
@@ -143,4 +171,14 @@ export function playlistForEpisode(course: Course, episode: Episode): string {
     course.playlistParts?.findLast((part) => part.startEpisode <= episode.number)?.playlistId ??
     course.playlistId
   );
+}
+
+export function coursesInCollection(courses: readonly Course[], collection: Collection): Course[] {
+  return courses.filter((course) => course.collection === collection);
+}
+export function collectionLabel(course: Pick<Course, "collection">): string {
+  return course.collection === "study-hall" ? "Study Hall" : "Crash Course";
+}
+export function libraryUrl(course: Pick<Course, "collection">): string {
+  return course.collection === "study-hall" ? "./study-hall.html#courses" : "./index.html#courses";
 }

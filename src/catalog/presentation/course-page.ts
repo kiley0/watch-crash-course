@@ -4,7 +4,7 @@ import "./course.css";
 import { chooseThoughtBubble } from "./thought-bubbles";
 import { progressPizza } from "./progress-pizza";
 import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
-import { isCourseId } from "../domain/course";
+import { isCourseId, collectionLabel, libraryUrl } from "../domain/course";
 import { matchesQuery } from "../domain/search";
 import { watchUrl } from "../../playback/presentation/watch-links";
 import { completeCourse } from "../../learning/application/complete-course";
@@ -27,6 +27,25 @@ Alpine.data("coursePage", () => {
       return watchUrl(this.thought.courseId, this.thought.videoId);
     },
     course: {} as Course,
+    get collectionName(): string {
+      return collectionLabel(this.course);
+    },
+    get libraryHref(): string {
+      return libraryUrl(this.course);
+    },
+    get libraryBackLabel(): string {
+      return `Back to ${this.collectionName} courses`;
+    },
+    get sourceLinkLabel(): string {
+      return this.course.collection === "study-hall"
+        ? "Study Hall course playlist"
+        : "Course on Crash Course";
+    },
+    get fanDisclosure(): string {
+      return this.course.collection === "study-hall"
+        ? "An unofficial, fan-made course guide. Not affiliated with or endorsed by Study Hall, ASU, or Crash Course."
+        : "An unofficial, fan-made course guide. Not affiliated with or endorsed by Crash Course.";
+    },
     episodes: [] as EpisodeLink[],
     query: "",
     loading: true,
@@ -88,7 +107,7 @@ Alpine.data("coursePage", () => {
     },
     get continueUrl(): string {
       const id = this.summary?.continueVideoId;
-      return id ? watchUrl(this.course.id, id) : "./index.html#courses";
+      return id ? watchUrl(this.course.id, id) : libraryUrl(this.course);
     },
     get continueLabel(): string {
       if (this.summary?.isComplete) return "Watch the course again";

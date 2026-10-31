@@ -2,7 +2,12 @@ import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
 import "./watch.css";
 import { loadCatalog, loadDetail } from "../../catalog/infrastructure/static-catalog";
-import { isCourseId, playlistForEpisode } from "../../catalog/domain/course";
+import {
+  isCourseId,
+  playlistForEpisode,
+  collectionLabel,
+  libraryUrl,
+} from "../../catalog/domain/course";
 import type { Course, Episode } from "../../catalog/domain/course";
 import { videoUrl } from "./youtube-links";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
@@ -32,6 +37,12 @@ Alpine.data("watchPage", () => {
   }
   return {
     course: {} as Course,
+    get libraryHref(): string {
+      return libraryUrl(this.course);
+    },
+    get collectionName(): string {
+      return collectionLabel(this.course);
+    },
     episode: {} as Episode,
     previousUrl: "",
     nextUrl: "",
@@ -67,7 +78,7 @@ Alpine.data("watchPage", () => {
     },
     get episodeContextLabel(): string {
       return this.episode.number
-        ? `${this.course.title} · EPISODE ${this.episode.number} OF ${this.course.episodeCount}`
+        ? `${this.collectionName} · ${this.course.title} · EPISODE ${this.episode.number} OF ${this.course.episodeCount}`
         : "";
     },
     get showNextLink(): boolean {

@@ -258,3 +258,21 @@
     font-size: 22px;
   }
 }
+
+.study-hall-intro {
+  padding-top: 64px;
+}
+.study-hall-intro h1 {
+  font-size: var(--page-title);
+  margin: 16px 0 20px;
+}
+.study-hall-intro p {
+  max-width: 720px;
+}
+.study-hall-intro > p:first-of-type {
+  font-size: 22px;
+}
+.study-hall-intro .small {
+  font-size: 13px;
+  color: var(--muted);
+}

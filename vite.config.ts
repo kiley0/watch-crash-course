@@ -7,6 +7,7 @@ export default defineConfig({
     rolldownOptions: {
       input: [
         "index.html",
+        "study-hall.html",
         "course.html",
         "about.html",
         "watch.html",

@@ -1,10 +1,10 @@
 # Watch Crash Course
 
-A fan-made home for watching [Crash Course](https://thecrashcourse.com/), one course at a time. Browse subject bookshelves, watch lessons, and pick up where you left off—with progress, history, and backup export/import saved in your browser. No account needed.
+A fan-made home for watching [Crash Course](https://thecrashcourse.com/), one course at a time. Explore [Study Hall](https://gostudyhall.com/) in its own library. Browse subject bookshelves, watch lessons, and pick up where you left off—with progress, history, and backup export/import saved in your browser. No account needed.
 
 **[Watch and learn →](https://watchcrashcourse.com)**
 
-100% free forever. Open-source. Unofficial and unaffiliated with Crash Course, Complexly, or YouTube.
+100% free forever. Open-source. Unofficial and unaffiliated with Crash Course, Study Hall, ASU, Complexly, or YouTube.
 
 ## Simple by design
 

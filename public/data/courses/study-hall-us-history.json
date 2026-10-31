@@ -1,0 +1,185 @@
+{
+  "courseId": "study-hall-us-history",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Introduction to Historical Thinking",
+      "videoId": "Gnv6mQC0sQY",
+      "sourceUrl": "https://www.youtube.com/watch?v=Gnv6mQC0sQY"
+    },
+    {
+      "number": 2,
+      "title": "Southwest Borderlands",
+      "videoId": "NJPihBZ0r6s",
+      "sourceUrl": "https://www.youtube.com/watch?v=NJPihBZ0r6s"
+    },
+    {
+      "number": 3,
+      "title": "Southeast and Plains",
+      "videoId": "tFfgN7VyeXk",
+      "sourceUrl": "https://www.youtube.com/watch?v=tFfgN7VyeXk"
+    },
+    {
+      "number": 4,
+      "title": "Northeast Region",
+      "videoId": "aTsqMTnYOHo",
+      "sourceUrl": "https://www.youtube.com/watch?v=aTsqMTnYOHo"
+    },
+    {
+      "number": 5,
+      "title": "West Africa and Western Europe",
+      "videoId": "R9O4qUcYQe0",
+      "sourceUrl": "https://www.youtube.com/watch?v=R9O4qUcYQe0"
+    },
+    {
+      "number": 6,
+      "title": "French and Dutch Colonies",
+      "videoId": "nVaS0FaDqZw",
+      "sourceUrl": "https://www.youtube.com/watch?v=nVaS0FaDqZw"
+    },
+    {
+      "number": 7,
+      "title": "Early Spanish and English Colonization",
+      "videoId": "s_16dHUpk4A",
+      "sourceUrl": "https://www.youtube.com/watch?v=s_16dHUpk4A"
+    },
+    {
+      "number": 8,
+      "title": "Puritans & Pilgrims in New England",
+      "videoId": "clQFlBDRbxY",
+      "sourceUrl": "https://www.youtube.com/watch?v=clQFlBDRbxY"
+    },
+    {
+      "number": 9,
+      "title": "England's Growing Empire",
+      "videoId": "WbtWrxMJQL4",
+      "sourceUrl": "https://www.youtube.com/watch?v=WbtWrxMJQL4"
+    },
+    {
+      "number": 10,
+      "title": "Proprietary Colonies",
+      "videoId": "eOS4zUcj8QM",
+      "sourceUrl": "https://www.youtube.com/watch?v=eOS4zUcj8QM"
+    },
+    {
+      "number": 11,
+      "title": "Rebellions",
+      "videoId": "xkZGDkzF-r8",
+      "sourceUrl": "https://www.youtube.com/watch?v=xkZGDkzF-r8"
+    },
+    {
+      "number": 12,
+      "title": "Power, Enslavement, and Resistance",
+      "videoId": "kUGvS-MQyag",
+      "sourceUrl": "https://www.youtube.com/watch?v=kUGvS-MQyag"
+    },
+    {
+      "number": 13,
+      "title": "Indigenous Power",
+      "videoId": "4S547as38Oc",
+      "sourceUrl": "https://www.youtube.com/watch?v=4S547as38Oc"
+    },
+    {
+      "number": 14,
+      "title": "Anglicization, Enlightenment, and Republicanism",
+      "videoId": "PBAqgBrDHE0",
+      "sourceUrl": "https://www.youtube.com/watch?v=PBAqgBrDHE0"
+    },
+    {
+      "number": 15,
+      "title": "Imperial Wars, Imperial Crisis",
+      "videoId": "GQulPbTIcAc",
+      "sourceUrl": "https://www.youtube.com/watch?v=GQulPbTIcAc"
+    },
+    {
+      "number": 16,
+      "title": "The American Revolution",
+      "videoId": "Qsk5_gWusuo",
+      "sourceUrl": "https://www.youtube.com/watch?v=Qsk5_gWusuo"
+    },
+    {
+      "number": 17,
+      "title": "Articles of Confederation and Constitution",
+      "videoId": "ZyRJlZSYuhk",
+      "sourceUrl": "https://www.youtube.com/watch?v=ZyRJlZSYuhk"
+    },
+    {
+      "number": 18,
+      "title": "The New Nation in the World",
+      "videoId": "Yl7nKRzE7YY",
+      "sourceUrl": "https://www.youtube.com/watch?v=Yl7nKRzE7YY"
+    },
+    {
+      "number": 19,
+      "title": "Life In the New Nation",
+      "videoId": "Y4qLxSWm7J0",
+      "sourceUrl": "https://www.youtube.com/watch?v=Y4qLxSWm7J0"
+    },
+    {
+      "number": 20,
+      "title": "Slavery, Freedom, Resistance",
+      "videoId": "esuCiJT6gjw",
+      "sourceUrl": "https://www.youtube.com/watch?v=esuCiJT6gjw"
+    },
+    {
+      "number": 21,
+      "title": "Growth, Conquest, War",
+      "videoId": "vLpA1N08KlM",
+      "sourceUrl": "https://www.youtube.com/watch?v=vLpA1N08KlM"
+    },
+    {
+      "number": 22,
+      "title": "Capitalism in Early America",
+      "videoId": "nCSarn8kB5M",
+      "sourceUrl": "https://www.youtube.com/watch?v=nCSarn8kB5M"
+    },
+    {
+      "number": 23,
+      "title": "Politics and Print",
+      "videoId": "M3b1s3Z8RaQ",
+      "sourceUrl": "https://www.youtube.com/watch?v=M3b1s3Z8RaQ"
+    },
+    {
+      "number": 24,
+      "title": "Religion in the New Nation",
+      "videoId": "NyMOCM9Z150",
+      "sourceUrl": "https://www.youtube.com/watch?v=NyMOCM9Z150"
+    },
+    {
+      "number": 25,
+      "title": "German and Irish Immigration",
+      "videoId": "40I1U4Hlsjk",
+      "sourceUrl": "https://www.youtube.com/watch?v=40I1U4Hlsjk"
+    },
+    {
+      "number": 26,
+      "title": "Going West, Facing East",
+      "videoId": "1dRxX0JS9uk",
+      "sourceUrl": "https://www.youtube.com/watch?v=1dRxX0JS9uk"
+    },
+    {
+      "number": 27,
+      "title": "Crisis Approaches",
+      "videoId": "6fAWNDU2iQg",
+      "sourceUrl": "https://www.youtube.com/watch?v=6fAWNDU2iQg"
+    },
+    {
+      "number": 28,
+      "title": "Crisis, Secession, and War",
+      "videoId": "EMPhe1sel2w",
+      "sourceUrl": "https://www.youtube.com/watch?v=EMPhe1sel2w"
+    },
+    {
+      "number": 29,
+      "title": "Civil War, Pt. 1: Causes and Battles",
+      "videoId": "zMfbs75pTyo",
+      "sourceUrl": "https://www.youtube.com/watch?v=zMfbs75pTyo"
+    },
+    {
+      "number": 30,
+      "title": "Civil War, Pt.2: Victory and Unfinished Victory",
+      "videoId": "7q9xGQja4To",
+      "sourceUrl": "https://www.youtube.com/watch?v=7q9xGQja4To"
+    }
+  ]
+}

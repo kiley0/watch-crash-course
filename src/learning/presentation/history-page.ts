@@ -6,6 +6,7 @@ import type { VideoProgress } from "../domain/progress";
 import { historyEntries } from "./history-entries";
 import type { HistoryEntry, HistoryMetadata } from "./history-entries";
 import { loadCatalog, loadDetail } from "../../catalog/infrastructure/static-catalog";
+import { collectionLabel } from "../../catalog/domain/course";
 import { matchesQuery } from "../../catalog/domain/search";
 import { watchUrl } from "../../playback/presentation/watch-links";
 import { reloadOnRestore } from "../../site/reload-on-restore";
@@ -81,7 +82,7 @@ Alpine.data("historyPage", () => {
             if (!known.has(episode.videoId))
               known.set(episode.videoId, {
                 title: episode.title,
-                context: course.title,
+                context: `${collectionLabel(course)} · ${course.title}`,
                 href: watchUrl(course.id, episode.videoId),
               });
           }

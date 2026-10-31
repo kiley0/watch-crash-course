@@ -124,6 +124,8 @@ img {
   gap: 28px;
 }
 .brand {
+  white-space: nowrap;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -146,7 +148,8 @@ img {
 }
 .site-header nav {
   display: flex;
-  gap: 35px;
+  gap: 20px;
+  flex-shrink: 0;
   font-size: 14px;
   font-weight: 700;
 }
@@ -838,7 +841,7 @@ select {
   }
 }
 /* Keep the brand and disclosure intact before the compact phone navigation. */
-@media (min-width: 651px) and (max-width: 1100px) {
+@media (min-width: 651px) and (max-width: 1200px) {
   .header-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
@@ -848,7 +851,7 @@ select {
     grid-column: 1 / -1;
     grid-row: 2;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 16px;
     font-size: 13px;
   }
@@ -1476,4 +1479,10 @@ progress::-moz-progress-bar {
 .recent-course .continue-detail {
   margin: 0 0 10px;
   font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .site-header nav a:last-child {
+    grid-column: 1 / -1;
+  }
 }

@@ -1,0 +1,95 @@
+{
+  "courseId": "study-hall-composition",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "The Writing Process",
+      "videoId": "AXa22Csh7oE",
+      "sourceUrl": "https://www.youtube.com/watch?v=AXa22Csh7oE"
+    },
+    {
+      "number": 2,
+      "title": "Invention and the Writing Process",
+      "videoId": "4BCr4hXdrUw",
+      "sourceUrl": "https://www.youtube.com/watch?v=4BCr4hXdrUw"
+    },
+    {
+      "number": 3,
+      "title": "How to Plan Your Writing Project",
+      "videoId": "IlnabMCWtY4",
+      "sourceUrl": "https://www.youtube.com/watch?v=IlnabMCWtY4"
+    },
+    {
+      "number": 4,
+      "title": "What is Drafting",
+      "videoId": "GH5bvGLmb_M",
+      "sourceUrl": "https://www.youtube.com/watch?v=GH5bvGLmb_M"
+    },
+    {
+      "number": 5,
+      "title": "How to Revise",
+      "videoId": "b3v9UKKStqk",
+      "sourceUrl": "https://www.youtube.com/watch?v=b3v9UKKStqk"
+    },
+    {
+      "number": 6,
+      "title": "What is Editing",
+      "videoId": "bvFNk9qx5Lo",
+      "sourceUrl": "https://www.youtube.com/watch?v=bvFNk9qx5Lo"
+    },
+    {
+      "number": 7,
+      "title": "Citations and Quotes",
+      "videoId": "02XdhmeFgH4",
+      "sourceUrl": "https://www.youtube.com/watch?v=02XdhmeFgH4"
+    },
+    {
+      "number": 8,
+      "title": "Critical Thinking and Arguing",
+      "videoId": "LNkibDGjQq8",
+      "sourceUrl": "https://www.youtube.com/watch?v=LNkibDGjQq8"
+    },
+    {
+      "number": 9,
+      "title": "Evaluating Arguments",
+      "videoId": "PgZj4Li00_4",
+      "sourceUrl": "https://www.youtube.com/watch?v=PgZj4Li00_4"
+    },
+    {
+      "number": 10,
+      "title": "What Is Rhetoric?",
+      "videoId": "xpooxL-i5UI",
+      "sourceUrl": "https://www.youtube.com/watch?v=xpooxL-i5UI"
+    },
+    {
+      "number": 11,
+      "title": "Connecting With an Audience",
+      "videoId": "chZN09Qg8L4",
+      "sourceUrl": "https://www.youtube.com/watch?v=chZN09Qg8L4"
+    },
+    {
+      "number": 12,
+      "title": "When and Where? Context Part 1",
+      "videoId": "tsCIN-jfwQ8",
+      "sourceUrl": "https://www.youtube.com/watch?v=tsCIN-jfwQ8"
+    },
+    {
+      "number": 13,
+      "title": "Remediation! Context Part 2",
+      "videoId": "T169ogVcN9Q",
+      "sourceUrl": "https://www.youtube.com/watch?v=T169ogVcN9Q"
+    },
+    {
+      "number": 14,
+      "title": "Purpose and Rhetorical Appeals",
+      "videoId": "wm3b437AXCU",
+      "sourceUrl": "https://www.youtube.com/watch?v=wm3b437AXCU"
+    },
+    {
+      "number": 15,
+      "title": "Presentation and Persuasion in Writing",
+      "videoId": "-Cx_DL43JgI",
+      "sourceUrl": "https://www.youtube.com/watch?v=-Cx_DL43JgI"
+    }
+  ]
+}

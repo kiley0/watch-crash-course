@@ -1,0 +1,95 @@
+{
+  "courseId": "study-hall-data-literacy",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What are Data and Data Literacy",
+      "videoId": "yhO_t-c3yJY",
+      "sourceUrl": "https://www.youtube.com/watch?v=yhO_t-c3yJY"
+    },
+    {
+      "number": 2,
+      "title": "Misconceptions in Data Analysis",
+      "videoId": "nd_oOOXeN3A",
+      "sourceUrl": "https://www.youtube.com/watch?v=nd_oOOXeN3A"
+    },
+    {
+      "number": 3,
+      "title": "Visualizing Data",
+      "videoId": "YDT5ZPcMZWM",
+      "sourceUrl": "https://www.youtube.com/watch?v=YDT5ZPcMZWM"
+    },
+    {
+      "number": 4,
+      "title": "How to Collect Data",
+      "videoId": "zGFuj9tF33Q",
+      "sourceUrl": "https://www.youtube.com/watch?v=zGFuj9tF33Q"
+    },
+    {
+      "number": 5,
+      "title": "Data in the News",
+      "videoId": "3Vt6K-hx09A",
+      "sourceUrl": "https://www.youtube.com/watch?v=3Vt6K-hx09A"
+    },
+    {
+      "number": 6,
+      "title": "Data in Sports",
+      "videoId": "rUjpCXCkJig",
+      "sourceUrl": "https://www.youtube.com/watch?v=rUjpCXCkJig"
+    },
+    {
+      "number": 7,
+      "title": "Election Data",
+      "videoId": "IQSzVGM13Mo",
+      "sourceUrl": "https://www.youtube.com/watch?v=IQSzVGM13Mo"
+    },
+    {
+      "number": 8,
+      "title": "Health Data",
+      "videoId": "gaiTBQIppXk",
+      "sourceUrl": "https://www.youtube.com/watch?v=gaiTBQIppXk"
+    },
+    {
+      "number": 9,
+      "title": "Social Media Data",
+      "videoId": "qjLpTovhKEw",
+      "sourceUrl": "https://www.youtube.com/watch?v=qjLpTovhKEw"
+    },
+    {
+      "number": 10,
+      "title": "Data Privacy",
+      "videoId": "N9I7smAOspM",
+      "sourceUrl": "https://www.youtube.com/watch?v=N9I7smAOspM"
+    },
+    {
+      "number": 11,
+      "title": "Securing Data",
+      "videoId": "AO3PB9vezUw",
+      "sourceUrl": "https://www.youtube.com/watch?v=AO3PB9vezUw"
+    },
+    {
+      "number": 12,
+      "title": "Credible Research",
+      "videoId": "16X2ZUacmDw",
+      "sourceUrl": "https://www.youtube.com/watch?v=16X2ZUacmDw"
+    },
+    {
+      "number": 13,
+      "title": "Data Mistakes",
+      "videoId": "HQ4dboRW7tM",
+      "sourceUrl": "https://www.youtube.com/watch?v=HQ4dboRW7tM"
+    },
+    {
+      "number": 14,
+      "title": "Data Context - Why It Matters",
+      "videoId": "oYcG5OxkMZU",
+      "sourceUrl": "https://www.youtube.com/watch?v=oYcG5OxkMZU"
+    },
+    {
+      "number": 15,
+      "title": "Finding Your Own Data",
+      "videoId": "HMYpfwItUiY",
+      "sourceUrl": "https://www.youtube.com/watch?v=HMYpfwItUiY"
+    }
+  ]
+}

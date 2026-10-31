@@ -1,0 +1,185 @@
+{
+  "courseId": "study-hall-college-math",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "The Building Blocks of Math: Sets",
+      "videoId": "ovu51n3qjeU",
+      "sourceUrl": "https://www.youtube.com/watch?v=ovu51n3qjeU"
+    },
+    {
+      "number": 2,
+      "title": "Sets and Subsets",
+      "videoId": "ZcfEh0gtFIs",
+      "sourceUrl": "https://www.youtube.com/watch?v=ZcfEh0gtFIs"
+    },
+    {
+      "number": 3,
+      "title": "Set Operations",
+      "videoId": "Dzn2vGNUfZI",
+      "sourceUrl": "https://www.youtube.com/watch?v=Dzn2vGNUfZI"
+    },
+    {
+      "number": 4,
+      "title": "Visualizing Sets with Venn Diagrams",
+      "videoId": "aCuQCCG4chs",
+      "sourceUrl": "https://www.youtube.com/watch?v=aCuQCCG4chs"
+    },
+    {
+      "number": 5,
+      "title": "The Fundamental Counting Principle",
+      "videoId": "shxAos6JqG4",
+      "sourceUrl": "https://www.youtube.com/watch?v=shxAos6JqG4"
+    },
+    {
+      "number": 6,
+      "title": "Permutations and Factorials!",
+      "videoId": "e28WnaMQ0ts",
+      "sourceUrl": "https://www.youtube.com/watch?v=e28WnaMQ0ts"
+    },
+    {
+      "number": 7,
+      "title": "Combinations: The Math of Picking and Choosing",
+      "videoId": "T7zVU3dbMgw",
+      "sourceUrl": "https://www.youtube.com/watch?v=T7zVU3dbMgw"
+    },
+    {
+      "number": 8,
+      "title": "Basic Probability",
+      "videoId": "GoN_Y12L2yE",
+      "sourceUrl": "https://www.youtube.com/watch?v=GoN_Y12L2yE"
+    },
+    {
+      "number": 9,
+      "title": "Probability Rules",
+      "videoId": "ZRtk8qyxgP8",
+      "sourceUrl": "https://www.youtube.com/watch?v=ZRtk8qyxgP8"
+    },
+    {
+      "number": 10,
+      "title": "Dependent and Independent Probabilities",
+      "videoId": "k0HX5tx5hHI",
+      "sourceUrl": "https://www.youtube.com/watch?v=k0HX5tx5hHI"
+    },
+    {
+      "number": 11,
+      "title": "Adjusting Your Expectations",
+      "videoId": "hS0zpwQxEho",
+      "sourceUrl": "https://www.youtube.com/watch?v=hS0zpwQxEho"
+    },
+    {
+      "number": 12,
+      "title": "Data Visualization",
+      "videoId": "NOmvFSvSsoQ",
+      "sourceUrl": "https://www.youtube.com/watch?v=NOmvFSvSsoQ"
+    },
+    {
+      "number": 13,
+      "title": "Measure of Central Tendency",
+      "videoId": "MF6ij7tckI0",
+      "sourceUrl": "https://www.youtube.com/watch?v=MF6ij7tckI0"
+    },
+    {
+      "number": 14,
+      "title": "Measures of Dispersion",
+      "videoId": "mLu3LqEyqdU",
+      "sourceUrl": "https://www.youtube.com/watch?v=mLu3LqEyqdU"
+    },
+    {
+      "number": 15,
+      "title": "Theory Theater",
+      "videoId": "zUnyPc5vpqU",
+      "sourceUrl": "https://www.youtube.com/watch?v=zUnyPc5vpqU"
+    },
+    {
+      "number": 16,
+      "title": "Not-so Normal: Non-Standard Normal Distributions",
+      "videoId": "WNKNb0poOqs",
+      "sourceUrl": "https://www.youtube.com/watch?v=WNKNb0poOqs"
+    },
+    {
+      "number": 17,
+      "title": "What do I Owe? - Calculating Interest in Finance",
+      "videoId": "MsP2cThksio",
+      "sourceUrl": "https://www.youtube.com/watch?v=MsP2cThksio"
+    },
+    {
+      "number": 18,
+      "title": "How Money Reproduces: Compound Interest",
+      "videoId": "eObdtFOCBBk",
+      "sourceUrl": "https://www.youtube.com/watch?v=eObdtFOCBBk"
+    },
+    {
+      "number": 19,
+      "title": "Compound Interest on Different Timescales",
+      "videoId": "6ezGO0kN6yM",
+      "sourceUrl": "https://www.youtube.com/watch?v=6ezGO0kN6yM"
+    },
+    {
+      "number": 20,
+      "title": "How to Save Money with Annuities",
+      "videoId": "Hqrcidm7sQs",
+      "sourceUrl": "https://www.youtube.com/watch?v=Hqrcidm7sQs"
+    },
+    {
+      "number": 21,
+      "title": "Amortized Loans",
+      "videoId": "s2GvWyXVkE4",
+      "sourceUrl": "https://www.youtube.com/watch?v=s2GvWyXVkE4"
+    },
+    {
+      "number": 22,
+      "title": "Amortized Loans, Down Payments, and Amortization Schedules",
+      "videoId": "OH_FqX6y-XU",
+      "sourceUrl": "https://www.youtube.com/watch?v=OH_FqX6y-XU"
+    },
+    {
+      "number": 23,
+      "title": "Changing Units with Dimensional Analysis",
+      "videoId": "xduM9WX88zg",
+      "sourceUrl": "https://www.youtube.com/watch?v=xduM9WX88zg"
+    },
+    {
+      "number": 24,
+      "title": "Finding Your Way Around Perimeter",
+      "videoId": "sRW1LvzyVzk",
+      "sourceUrl": "https://www.youtube.com/watch?v=sRW1LvzyVzk"
+    },
+    {
+      "number": 25,
+      "title": "Tackling Complex Shapes",
+      "videoId": "zwV9mMqlgzY",
+      "sourceUrl": "https://www.youtube.com/watch?v=zwV9mMqlgzY"
+    },
+    {
+      "number": 26,
+      "title": "From Soda Cans to Spheres - Surface Areas",
+      "videoId": "9vVZyiQtmNI",
+      "sourceUrl": "https://www.youtube.com/watch?v=9vVZyiQtmNI"
+    },
+    {
+      "number": 27,
+      "title": "Cutting the Carbon From Building Blocks - Volumes",
+      "videoId": "QRSSlyJWm58",
+      "sourceUrl": "https://www.youtube.com/watch?v=QRSSlyJWm58"
+    },
+    {
+      "number": 28,
+      "title": "All About Similar Triangles",
+      "videoId": "EWhG4OV_MvY",
+      "sourceUrl": "https://www.youtube.com/watch?v=EWhG4OV_MvY"
+    },
+    {
+      "number": 29,
+      "title": "Right Angled Triangles and Pythagoras",
+      "videoId": "U0vjR6Fxesk",
+      "sourceUrl": "https://www.youtube.com/watch?v=U0vjR6Fxesk"
+    },
+    {
+      "number": 30,
+      "title": "Trigonometry",
+      "videoId": "GltOrM94EtA",
+      "sourceUrl": "https://www.youtube.com/watch?v=GltOrM94EtA"
+    }
+  ]
+}

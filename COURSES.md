@@ -1,6 +1,8 @@
 # Course catalog
 
-56 courses · 1,613 numbered lessons.
+71 courses · 2,002 lessons across two libraries.
+
+Crash Course: 56 courses · 1,613 lessons. Study Hall: 15 courses · 389 lessons.
 
 All 56 courses listed in the [official Crash Course index](https://thecrashcourse.com/courses/) are included, reviewed October 30, 2026. Previews and extras are excluded.
 
@@ -102,3 +104,25 @@ None from the current official index. Big Questions on U.S. Government (6 publis
 ## Editions and numbering
 
 Biology and Biology (2012) are separate courses. Biología and Fundamentos de Química are Spanish-language courses from the official Crash Course en Español channel. Big History combines two seasons; Literature combines four. Their lesson titles retain season labels, while local lesson numbers run consecutively. World History II uses local numbers 1–30 for original episodes 201–230.
+
+## Study Hall
+
+15 courses · 389 lessons. Reviewed October 30, 2026 against the [official Study Hall playlists](https://www.youtube.com/@studyhall/playlists). Preview videos are excluded; numbered opening lessons are retained.
+
+| Course                              | Series              | Lessons | Playlist                                                                                      |
+| ----------------------------------- | ------------------- | ------: | --------------------------------------------------------------------------------------------- |
+| Composition                         | Original series     |      15 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nHLmRaPC--eXaRja6MJdQWd) |
+| Rhetoric and Composition            | College Foundations |      29 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nG0VmxA0JBY8NG_b4OrF63f) |
+| Algebra                             | Original series     |      15 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nEsm56-Mq2HK8qpwOXVEA7T) |
+| Real World College Math             | College Foundations |      30 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nEx_-AWPOr74PBz00LAdymM) |
+| Data Literacy                       | Original series     |      15 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nE-1980HOGDWsvf0skE2jvS) |
+| Real World Statistics               | College Foundations |      31 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nE_tF2tM_DFJNotgbbG1obu) |
+| Chemistry                           | Original series     |      15 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nGYp3EY8VUs-j2jHVzPQmfL) |
+| Sustainability                      | College Foundations |      31 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nHaihk2KksEyKby91-KIWRF) |
+| Intro to Psychology                 | College Foundations |      30 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nF0d4qQuf-qGbhuqcRpiQi4) |
+| Macroeconomics                      | College Foundations |      31 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nFZ9h16Y_dHM7rcZthWypsj) |
+| Power and Politics in US Government | College Foundations |      30 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nEd6FICOoEk8uoqNueJvwcS) |
+| Modern World History                | College Foundations |      30 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nGgx0__R3MEiDDSBGgicOjG) |
+| US History to 1865                  | College Foundations |      30 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nFcW_yD2TdcEv4_pqWeDs_A) |
+| Code and Programming for Beginners  | College Foundations |      28 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nFgbHGRCj5QEXKUpVIilpDN) |
+| Intro to Human Communication        | College Foundations |      29 | [Official playlist](https://www.youtube.com/playlist?list=PLID58IQe16nFcsed5sqo0VfQUZ7EF8rqY) |

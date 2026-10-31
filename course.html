@@ -27,21 +27,23 @@
           ><span>WATCH<span class="brand-sub">CRASH COURSE</span></span></a
         >
         <nav aria-label="Main navigation">
-          <a href="./index.html#courses">Explore courses</a>
+          <a href="./index.html#courses">Crash Course</a>
+          <a href="./study-hall.html">Study Hall</a>
           <a href="./history.html">Your history</a>
           <a href="./settings.html">Settings</a><a href="./about.html">About the project</a>
         </nav>
         <a class="fan-badge" href="./about.html"
-          ><strong>Unofficial · Fan-made</strong><span>Unaffiliated with Crash Course</span></a
+          ><strong>Unofficial · Fan-made</strong
+          ><span>Unaffiliated with Crash Course or ASU</span></a
         >
       </div>
     </header>
     <main id="main" class="wrap course-main" x-data="coursePage">
-      <a class="back-link" href="./index.html#courses"
+      <a class="back-link" href="./index.html#courses" :href="libraryHref"
         ><svg class="icon" aria-hidden="true" focusable="false">
           <use href="./icons.svg#arrow-left"></use>
         </svg>
-        Back to the course shelf</a
+        <span x-text="libraryBackLabel">Back to the course shelf</span></a
       ><noscript
         ><div class="notice">
           Enable JavaScript to browse the course catalog. You can also visit
@@ -69,13 +71,13 @@
         <p class="notice" x-show="storageWarning" x-text="storageWarning" role="status"></p>
         <section class="course-hero">
           <div>
-            <span class="eyebrow"><span x-text="course.subject"></span> · CRASH COURSE</span>
+            <span class="eyebrow"
+              ><span x-text="course.subject"></span> · <span x-text="collectionName"></span
+              ><span x-show="course.series"> · <span x-text="course.series"></span></span
+            ></span>
             <h1 x-text="course.title"></h1>
             <p class="course-intro" x-text="course.description"></p>
-            <p class="fan-disclosure">
-              An unofficial, fan-made course guide.<br />Not affiliated with or endorsed by Crash
-              Course.
-            </p>
+            <p class="fan-disclosure" x-text="fanDisclosure"></p>
             <div class="course-progress course-progress-overview">
               <span x-text="completionLabel"></span
               ><progress
@@ -173,7 +175,7 @@
                     ><span class="episode-number" x-text="episode.displayNumber"></span
                     ><span class="episode-copy"
                       ><span class="episode-kicker"
-                        >CRASH COURSE <span x-text="course.title"></span
+                        ><span x-text="collectionName"></span> <span x-text="course.title"></span
                       ></span>
                       <h3 x-text="episode.title"></h3>
                       <span class="episode-progress" x-text="episode.status"></span></span
@@ -246,7 +248,7 @@
                 </a>
               </template>
               <a :href="course.sourceUrl"
-                >Course on Crash Course
+                ><span x-text="sourceLinkLabel"></span>
                 <svg class="icon" aria-hidden="true" focusable="false">
                   <use href="./icons.svg#external-link"></use></svg></a
               ><span x-text="reviewLabel"></span>
@@ -263,8 +265,10 @@
           <a href="https://www.youtube.com/user/crashcourse"
             >Crash Course
             <svg class="icon" aria-hidden="true" focusable="false">
-              <use href="./icons.svg#external-link"></use></svg></a
-          >.<br />No accounts. Just curiosity.
+              <use href="./icons.svg#external-link"></use></svg
+          ></a>
+          and <a href="https://www.youtube.com/@studyhall">Study Hall</a>.<br />No accounts. Just
+          curiosity.
           <abbr title="Don’t forget to be awesome">DFTBA.</abbr>
         </p>
         <a href="./settings.html">Settings</a>
