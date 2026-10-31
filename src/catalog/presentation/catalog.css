@@ -7,27 +7,33 @@
   --book-accent: #476343;
   min-width: 0;
 }
-.subject-shelf[data-subject="History"] {
+.subject-shelf[data-subject="History"],
+.shelf-book[data-subject="History"] {
   --book-color: #f2cfb8;
   --book-accent: #925333;
 }
-.subject-shelf[data-subject="Science"] {
+.subject-shelf[data-subject="Science"],
+.shelf-book[data-subject="Science"] {
   --book-color: #dcd7ef;
   --book-accent: #63528c;
 }
-.subject-shelf[data-subject="Humanities"] {
+.subject-shelf[data-subject="Humanities"],
+.shelf-book[data-subject="Humanities"] {
   --book-color: #f2dfa9;
   --book-accent: #826226;
 }
-.subject-shelf[data-subject="Mathematics"] {
+.subject-shelf[data-subject="Mathematics"],
+.shelf-book[data-subject="Mathematics"] {
   --book-color: #bfded7;
   --book-accent: #35695c;
 }
-.subject-shelf[data-subject="Social sciences"] {
+.subject-shelf[data-subject="Social sciences"],
+.shelf-book[data-subject="Social sciences"] {
   --book-color: #f3cbd4;
   --book-accent: #8c4961;
 }
-.subject-shelf[data-subject="Technology"] {
+.subject-shelf[data-subject="Technology"],
+.shelf-book[data-subject="Technology"] {
   --book-color: #c5dbe6;
   --book-accent: #3c637d;
 }
@@ -115,7 +121,7 @@
   letter-spacing: 1.8px;
   font-weight: 800;
 }
-.book-cover h4 {
+.book-cover .book-title {
   font-size: 25px;
   line-height: 1.15;
   margin: 22px 0 12px;
@@ -168,7 +174,7 @@
     padding: 18px 12px 16px 14px;
     border-left-width: 6px;
   }
-  .book-cover h4 {
+  .book-cover .book-title {
     font-size: 21px;
   }
   .book-series {
@@ -186,7 +192,7 @@
   .book-cover {
     min-height: 290px;
   }
-  .book-cover h4 {
+  .book-cover .book-title {
     font-size: 26px;
   }
 }
@@ -210,4 +216,36 @@
   background: linear-gradient(#c8aa81 0 5px, #a9855d 5px 16px, #96754f 16px);
   box-shadow: 0 8px 9px -5px #49372040;
   pointer-events: none;
+}
+
+.recent-shelf {
+  margin-bottom: 48px;
+}
+.recent-shelf .shelf-heading h2 {
+  margin: 0;
+  font-size: 26px;
+}
+.recent-shelf .shelf-heading a {
+  font-size: 13px;
+  font-weight: 700;
+  padding-block: 12px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.book-cover .book-title-long {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+@media (max-width: 650px) {
+  .recent-shelf .shelf-heading h2 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 380px) {
+  .book-cover .book-title-long {
+    font-size: 26px;
+  }
 }

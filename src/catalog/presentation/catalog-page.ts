@@ -49,16 +49,13 @@ Alpine.data("catalogPage", () => {
       return this.courses
         .filter((course) => course.summary && course.summary.lastActivityAt > 0)
         .toSorted((a, b) => b.summary!.lastActivityAt - a.summary!.lastActivityAt)
-        .slice(0, 3);
+        .slice(0, 5);
     },
     get featuredCourses(): CourseCard[] {
       const course = this.resumeVideoId
         ? this.courses.find((item) => item.summary?.continueVideoId === this.resumeVideoId)
         : undefined;
       return course ? [course] : this.recentCourses.slice(0, 1);
-    },
-    get otherRecentCourses(): CourseCard[] {
-      return this.recentCourses.filter((course) => course.id !== this.featuredCourses[0]?.id);
     },
     get hasRecentCourses(): boolean {
       return this.ready && this.recentCourses.length > 0;

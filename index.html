@@ -118,12 +118,44 @@
                 ></a></article
             ></template>
           </div>
-          <div class="other-recent-courses">
-            <template x-for="recent in otherRecentCourses" :key="recent.id"
-              ><a class="text-link" :href="recent.href"
-                >Recently active: <span x-text="recent.title"></span></a
-            ></template>
-          </div>
+        </section>
+        <section
+          class="subject-shelf recent-shelf"
+          x-cloak
+          x-show="hasRecentCourses"
+          aria-labelledby="recent-shelf-heading"
+        >
+          <header class="shelf-heading">
+            <h2 id="recent-shelf-heading">Recently watched</h2>
+            <a href="./history.html">View history</a>
+          </header>
+          <ul class="shelf-books">
+            <template x-for="course in recentCourses" :key="course.id">
+              <li class="shelf-book" :data-subject="course.subject">
+                <a class="book-cover" :href="course.href">
+                  <span class="book-series">CRASH COURSE</span>
+                  <h3
+                    class="book-title"
+                    :class="course.title.length > 24 ? 'book-title-long' : ''"
+                    x-text="course.title"
+                  ></h3>
+                  <span class="book-ornament" aria-hidden="true">✳</span>
+                  <span class="book-author">With <span x-text="course.host"></span></span>
+                  <span class="book-episodes" x-text="course.episodeLabel"></span>
+                  <span class="book-progress">
+                    <span x-text="course.progressLabel"></span>
+                    <progress
+                      value="0"
+                      max="100"
+                      :value="course.percent"
+                      :aria-label="course.progressLabel"
+                      x-show="course.summary"
+                    ></progress>
+                  </span>
+                </a>
+              </li>
+            </template>
+          </ul>
         </section>
         <div class="section-heading">
           <div>
@@ -194,7 +226,11 @@
                     <li class="shelf-book">
                       <a class="book-cover" :href="course.href">
                         <span class="book-series">CRASH COURSE</span>
-                        <h4 x-text="course.title"></h4>
+                        <h4
+                          class="book-title"
+                          :class="course.title.length > 24 ? 'book-title-long' : ''"
+                          x-text="course.title"
+                        ></h4>
                         <span class="book-ornament" aria-hidden="true">✳</span>
                         <span class="book-author">With <span x-text="course.host"></span></span>
                         <span class="book-episodes" x-text="course.episodeLabel"></span>

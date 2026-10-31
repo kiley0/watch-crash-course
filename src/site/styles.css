@@ -1443,12 +1443,6 @@ select {
   color: var(--muted);
   font-size: 13px;
 }
-.other-recent-courses {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 24px;
-  margin-top: 20px;
-}
 
 /* A determinate, rounded track: an unstarted course should never look like a loader. */
 .course-progress progress,
