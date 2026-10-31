@@ -1,5 +1,6 @@
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
+import "./catalog.css";
 import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
 import { matchesQuery } from "../domain/search";
 import { findShelfSurprise } from "./shelf-surprises";
@@ -14,7 +15,6 @@ import { reloadOnRestore } from "../../site/reload-on-restore";
 interface CourseCard extends Course {
   href: string;
   episodeLabel: string;
-  linkLabel: string;
   summary: CourseSummary | null;
   progressLabel: string;
   percent: number;
@@ -63,8 +63,18 @@ Alpine.data("catalogPage", () => {
     get hasRecentCourses(): boolean {
       return this.ready && this.recentCourses.length > 0;
     },
-    get showShelfNote(): boolean {
-      return !this.query.trim() && this.subject === "all";
+    get shelves(): { subject: string; courses: CourseCard[]; label: string }[] {
+      const courses = this.filteredCourses;
+      return this.subjects
+        .map((subject) => {
+          const books = courses.filter((course) => course.subject === subject);
+          return {
+            subject,
+            courses: books,
+            label: `${books.length} ${books.length === 1 ? "course" : "courses"}`,
+          };
+        })
+        .filter((shelf) => shelf.courses.length > 0);
     },
     get empty(): boolean {
       return this.filteredCourses.length === 0;
@@ -130,7 +140,6 @@ Alpine.data("catalogPage", () => {
               ...course,
               href,
               episodeLabel: `${course.episodeCount} episodes`,
-              linkLabel: `Explore ${course.title}`,
               summary,
               percent: summary?.percent ?? 0,
               progressLabel: summary

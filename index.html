@@ -127,7 +127,7 @@
         </section>
         <div class="section-heading">
           <div>
-            <span class="eyebrow">THE COURSE SHELF</span>
+            <span class="eyebrow">THE COURSE LIBRARY</span>
             <h2>Where will you start?</h2>
           </div>
           <p>One good question can take you anywhere.</p>
@@ -178,71 +178,42 @@
         </div>
         <div x-cloak x-show="ready">
           <p class="result-count" role="status" aria-live="polite" x-text="resultLabel"></p>
-          <div class="catalog-grid">
-            <template x-for="course in filteredCourses" :key="course.id"
-              ><article class="course-card">
-                <a
-                  class="course-art"
-                  :data-subject="course.subject"
-                  :href="course.href"
-                  :aria-label="course.linkLabel"
-                  ><span class="course-art-kicker" x-text="course.subject"></span>
-                  <div class="book-stack" aria-hidden="true">
-                    <span class="spark s1">✦</span><span class="spark s2">✳</span>
-                    <div
-                      class="notebook"
-                      title="Puff levels: sufficient. Curiosity levels: excellent."
-                    >
-                      <span>LET’S<br />FIGURE<br />IT OUT.</span><i></i>
-                    </div>
-                    <span class="pencil"></span><span class="orbit-doodle">◎</span>
-                  </div>
-                  <span class="art-course-title" x-text="course.title"></span
-                  ><span class="card-sticker"
-                    >START<br />HERE
-                    <svg class="icon" aria-hidden="true" focusable="false">
-                      <use href="./icons.svg#arrow-up-right"></use></svg></span
-                ></a>
-                <div class="course-card-content">
-                  <div class="card-meta">
-                    <span class="tag" x-text="course.subject"></span
-                    ><span x-text="course.episodeLabel"></span>
-                  </div>
-                  <h3><a :href="course.href" x-text="course.title"></a></h3>
-                  <p x-text="course.description"></p>
-                  <div class="course-progress">
-                    <span x-text="course.progressLabel"></span
-                    ><progress
-                      value="0"
-                      max="100"
-                      :value="course.percent"
-                      :aria-label="course.progressLabel"
-                      x-show="course.summary"
-                    ></progress>
-                  </div>
-                  <div class="card-bottom">
-                    <span>With <strong x-text="course.host"></strong></span
-                    ><a :href="course.href" class="round-link" :aria-label="course.linkLabel"
-                      ><svg class="icon" aria-hidden="true" focusable="false">
-                        <use href="./icons.svg#arrow-right"></use></svg
-                    ></a>
-                  </div>
-                </div></article
-            ></template>
-            <aside class="shelf-note" x-show="showShelfNote">
-              <span class="note-star" aria-hidden="true">✳</span
-              ><span class="eyebrow">A SMALL START. A BIG WORLD.</span>
-              <h3>Learn how<br />you learn.</h3>
-              <p>
-                Study Skills is a toolkit for every subject on the shelf. Ten little lessons. A
-                whole new way to approach learning.
-              </p>
-              <a class="text-link" href="./course.html?id=study-skills"
-                >Meet Study Skills
-                <svg class="icon" aria-hidden="true" focusable="false">
-                  <use href="./icons.svg#arrow-right"></use></svg></a
-              ><span class="note-doodle" aria-hidden="true">↝</span>
-            </aside>
+          <div class="library-shelves">
+            <template x-for="shelf in shelves" :key="shelf.subject">
+              <section
+                class="subject-shelf"
+                :aria-label="shelf.subject"
+                :data-subject="shelf.subject"
+              >
+                <header class="shelf-heading">
+                  <h3 x-text="shelf.subject"></h3>
+                  <span x-text="shelf.label"></span>
+                </header>
+                <ul class="shelf-books">
+                  <template x-for="course in shelf.courses" :key="course.id">
+                    <li class="shelf-book">
+                      <a class="book-cover" :href="course.href">
+                        <span class="book-series">CRASH COURSE</span>
+                        <h4 x-text="course.title"></h4>
+                        <span class="book-ornament" aria-hidden="true">✳</span>
+                        <span class="book-author">With <span x-text="course.host"></span></span>
+                        <span class="book-episodes" x-text="course.episodeLabel"></span>
+                        <span class="book-progress">
+                          <span x-text="course.progressLabel"></span>
+                          <progress
+                            value="0"
+                            max="100"
+                            :value="course.percent"
+                            :aria-label="course.progressLabel"
+                            x-show="course.summary"
+                          ></progress>
+                        </span>
+                      </a>
+                    </li>
+                  </template>
+                </ul>
+              </section>
+            </template>
           </div>
           <div class="empty-state" x-show="empty">
             <span aria-hidden="true"

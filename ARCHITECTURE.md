@@ -23,6 +23,7 @@ src/
       static-catalog.test.ts
     presentation/
       catalog-page.ts                   Catalog Alpine state and page entry
+      catalog.css                       Subject bookshelves and course book covers
       course-page.ts                    Course Alpine state and page entry
       shelf-surprises.ts                Optional search discoveries and community copy
   learning/

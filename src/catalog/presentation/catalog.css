@@ -1,0 +1,213 @@
+.library-shelves {
+  display: grid;
+  gap: 44px;
+}
+.subject-shelf {
+  --book-color: #c6d9b8;
+  --book-accent: #476343;
+  min-width: 0;
+}
+.subject-shelf[data-subject="History"] {
+  --book-color: #f2cfb8;
+  --book-accent: #925333;
+}
+.subject-shelf[data-subject="Science"] {
+  --book-color: #dcd7ef;
+  --book-accent: #63528c;
+}
+.subject-shelf[data-subject="Humanities"] {
+  --book-color: #f2dfa9;
+  --book-accent: #826226;
+}
+.subject-shelf[data-subject="Mathematics"] {
+  --book-color: #bfded7;
+  --book-accent: #35695c;
+}
+.subject-shelf[data-subject="Social sciences"] {
+  --book-color: #f3cbd4;
+  --book-accent: #8c4961;
+}
+.subject-shelf[data-subject="Technology"] {
+  --book-color: #c5dbe6;
+  --book-accent: #3c637d;
+}
+.shelf-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.shelf-heading h3 {
+  margin: 0;
+  font-size: 26px;
+}
+.shelf-heading > span {
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+.shelf-books {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 16px 24px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(174px, 1fr));
+  gap: 32px 18px;
+  background: linear-gradient(#eee9dc80, #eee9dc00);
+  border-radius: 16px 16px 0 0;
+}
+.shelf-book {
+  position: relative;
+  padding-bottom: 22px;
+  min-width: 0;
+}
+.shelf-book::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -24px;
+  right: -24px;
+  height: 22px;
+  background: linear-gradient(#c8aa81 0 5px, #a9855d 5px 16px, #96754f 16px);
+  pointer-events: none;
+}
+.shelf-book:focus-within {
+  z-index: 1;
+}
+.book-cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
+  height: 100%;
+  padding: 22px 17px 20px 24px;
+  border: 1px solid #20392f30;
+  border-left: 9px solid var(--book-accent);
+  border-radius: 4px 12px 12px 4px;
+  background: linear-gradient(90deg, #ffffff35, transparent 18%), var(--book-color);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow:
+    4px 0 0 -1px #fffaf0,
+    7px 0 0 -2px #b8b3a5,
+    5px 7px 8px #263c3220;
+  transform-origin: bottom left;
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+.book-cover:hover,
+.book-cover:focus-visible {
+  transform: translateY(-12px) rotate(-2deg);
+  box-shadow:
+    6px 0 0 -1px #fffaf0,
+    9px 0 0 -2px #b8b3a5,
+    10px 18px 16px #263c3225;
+}
+.book-cover:focus-visible {
+  outline: 3px solid var(--book-accent);
+  outline-offset: 5px;
+}
+.book-series {
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  font-weight: 800;
+}
+.book-cover h4 {
+  font-size: 25px;
+  line-height: 1.15;
+  margin: 22px 0 12px;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+.book-ornament {
+  font-size: 40px;
+  line-height: 1;
+  color: var(--book-accent);
+  margin: auto 0 20px;
+}
+.book-author {
+  min-height: 36px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.book-episodes {
+  font-size: 11px;
+  margin-top: 5px;
+}
+.book-progress {
+  border-top: 1px solid #20392f30;
+  padding-top: 12px;
+  margin-top: 14px;
+  font-size: 10px;
+}
+.book-progress progress {
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-top: 7px;
+  accent-color: var(--book-accent);
+}
+@media (max-width: 650px) {
+  .library-shelves {
+    gap: 32px;
+  }
+  .shelf-books {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 12px 12px 0;
+    gap: 22px 14px;
+  }
+  .shelf-book::after {
+    left: -12px;
+    right: -12px;
+  }
+  .book-cover {
+    min-height: 320px;
+    padding: 18px 12px 16px 14px;
+    border-left-width: 6px;
+  }
+  .book-cover h4 {
+    font-size: 21px;
+  }
+  .book-series {
+    letter-spacing: 1px;
+    font-size: 8px;
+  }
+  .shelf-heading h3 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 380px) {
+  .shelf-books {
+    grid-template-columns: 1fr;
+  }
+  .book-cover {
+    min-height: 290px;
+  }
+  .book-cover h4 {
+    font-size: 26px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .book-cover {
+    transition: none;
+  }
+  .book-cover:hover,
+  .book-cover:focus-visible {
+    transform: none;
+  }
+}
+.shelf-books::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  border-radius: 3px;
+  background: linear-gradient(#c8aa81 0 5px, #a9855d 5px 16px, #96754f 16px);
+  box-shadow: 0 8px 9px -5px #49372040;
+  pointer-events: none;
+}

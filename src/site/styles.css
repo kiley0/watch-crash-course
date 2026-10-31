@@ -390,183 +390,6 @@ select {
   color: var(--muted);
   margin-bottom: 17px;
 }
-.catalog-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--layout-gap);
-  align-items: stretch;
-}
-.course-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  background: #fffdf9;
-  border: 1px solid #d3d7ca;
-  border-radius: 21px;
-  overflow: hidden;
-  transition:
-    transform 0.25s,
-    box-shadow 0.25s;
-}
-.course-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px #263c3210;
-}
-.course-art {
-  flex: 0 0 auto;
-  display: block;
-  position: relative;
-  height: 266px;
-  background: #b4cdbb;
-  overflow: hidden;
-  text-decoration: none;
-  padding: 22px 25px;
-}
-.course-art[data-subject="History"] {
-  background: #f2cfb8;
-}
-.course-art[data-subject="Science"] {
-  background: #dcd7ef;
-}
-.course-art[data-subject="Humanities"] {
-  background: #f2dfa9;
-}
-.course-art[data-subject="Mathematics"] {
-  background: #bfded7;
-}
-.course-art[data-subject="Social sciences"] {
-  background: #f3cbd4;
-}
-.course-art[data-subject="Technology"] {
-  background: #c5dbe6;
-}
-.course-art-kicker {
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-.art-course-title {
-  overflow-wrap: anywhere;
-  hyphens: auto;
-  position: absolute;
-  bottom: 21px;
-  left: 25px;
-  right: 100px;
-  font-size: clamp(28px, 3.2vw, 37px);
-  line-height: 1.1;
-  font-weight: 900;
-  letter-spacing: -0.06em;
-}
-.book-stack {
-  position: absolute;
-  right: 60px;
-  top: 26px;
-  width: 210px;
-  height: 170px;
-  transform: scale(0.75);
-  transform-origin: top right;
-}
-.notebook {
-  position: absolute;
-  left: 20px;
-  top: 10px;
-  width: 121px;
-  height: 145px;
-  transform: rotate(-13deg);
-  background: #fcf3db;
-  border: 2px solid var(--ink);
-  border-radius: 4px 10px 10px 4px;
-  box-shadow: 7px 7px 0 #294a3d;
-}
-.notebook span {
-  display: block;
-  font-size: 23px;
-  font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -0.05em;
-  padding: 24px 13px;
-}
-.notebook i {
-  display: block;
-  position: absolute;
-  left: 8px;
-  top: 0;
-  height: 100%;
-  border-left: 1px solid #bbc1a8;
-}
-.pencil {
-  position: absolute;
-  width: 16px;
-  height: 138px;
-  background: #f37b49;
-  border: 2px solid var(--ink);
-  border-radius: 5px;
-  right: 30px;
-  top: 30px;
-  transform: rotate(22deg);
-}
-.pencil:after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: -2px;
-  border: 8px solid transparent;
-  border-top: 18px solid var(--ink);
-}
-.spark {
-  position: absolute;
-  font-size: 34px;
-  color: #fcf7db;
-  z-index: 1;
-}
-.s1 {
-  left: -24px;
-  top: 30px;
-}
-.s2 {
-  right: -14px;
-  top: -6px;
-  color: #345c49;
-}
-.orbit-doodle {
-  position: absolute;
-  font-size: 66px;
-  right: -47px;
-  bottom: -35px;
-  color: #668570;
-  transform: rotate(-30deg);
-}
-.card-sticker {
-  position: absolute;
-  right: 19px;
-  bottom: 19px;
-  background: #f9cf5d;
-  border: 1px solid #c7a847;
-  border-radius: 50%;
-  width: 67px;
-  height: 67px;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  transform: rotate(12deg);
-  font-size: 10px;
-  line-height: 1.25;
-  font-weight: 900;
-}
-.course-card-content {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 24px;
-}
-.card-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 11px;
-  color: #667163;
-}
 .tag {
   background: #e7eddc;
   padding: 6px 10px;
@@ -575,74 +398,12 @@ select {
   font-size: 10px;
   font-weight: 700;
 }
-.course-card h3 {
-  font-size: 27px;
-  margin-top: 16px;
-}
-.course-card h3 a {
-  text-decoration: none;
-}
-.course-card p {
-  flex: 1;
-  font-size: 14px;
-  color: #616c60;
-  max-width: 430px;
-  margin-top: 10px;
-}
-.card-bottom {
-  margin-top: 20px;
-  padding-top: 17px;
-  border-top: 1px solid #e8e8df;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 11px;
-}
-.card-bottom strong {
-  font-weight: 700;
-}
-.round-link {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #e8eddf;
-  font-size: 23px;
-  text-decoration: none;
-}
-.round-link:hover {
-  background: #dbe8b9;
-  transform: rotate(10deg);
-}
-.shelf-note {
-  padding: 33px 37px;
-  background: #e7e9f6;
-  border-radius: 21px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
 .note-star {
   font-size: 50px;
   line-height: 1;
   color: #7976b7;
   display: block;
   margin-bottom: 25px;
-}
-.shelf-note h3 {
-  font-size: 43px;
-  line-height: 1.08;
-  margin-top: 16px;
-  font-weight: 800;
-}
-.shelf-note p {
-  max-width: 290px;
-  font-size: 14px;
-  color: #596074;
-  margin-top: 18px;
 }
 .text-link {
   display: inline-block;
@@ -653,16 +414,7 @@ select {
   margin-top: 25px;
   padding-bottom: 5px;
 }
-.note-doodle {
-  position: absolute;
-  right: 25px;
-  bottom: 20px;
-  font-family: Georgia, serif;
-  font-size: 100px;
-  line-height: 1;
-  transform: rotate(-25deg);
-  color: #b1afd9;
-}
+
 /* Learning principles and closing invitation */
 .how-section {
   padding-top: 42px;
@@ -1064,16 +816,7 @@ select {
   .hero-art {
     margin-right: -15px;
   }
-  .shelf-note {
-    padding: 30px;
-  }
-  .shelf-note h3 {
-    font-size: 36px;
-  }
-  .book-stack {
-    right: 45px;
-    transform: scale(0.65);
-  }
+
   .how-grid {
     gap: 24px;
   }
@@ -1223,41 +966,11 @@ select {
   .search-field input {
     font-size: 13px;
   }
-  .catalog-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .course-art {
-    height: 280px;
-  }
-  .art-course-title {
-    right: 25px;
-  }
-  .card-sticker {
-    display: none;
-  }
-  .course-card-content {
-    padding: 22px;
-  }
-  .shelf-note {
-    padding: 28px;
-  }
-  .shelf-note h3 {
-    font-size: 37px;
-  }
-  .shelf-note h3 br {
-    display: none;
-  }
+
   .note-star {
     margin-bottom: 20px;
   }
-  .shelf-note p {
-    max-width: 90%;
-  }
-  .note-doodle {
-    right: 20px;
-    font-size: 75px;
-  }
+
   .how-section {
     padding-top: 30px;
     padding-bottom: 35px;
@@ -1393,14 +1106,6 @@ select {
   :root {
     --page-title: 32px;
   }
-  .art-course-title {
-    font-size: 26px;
-  }
-  .book-stack {
-    top: 36px;
-    right: 36px;
-    transform: scale(0.7);
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -1412,10 +1117,8 @@ select {
     transition: none !important;
     animation: none !important;
   }
-  .course-card:hover,
   .episode-link:hover,
-  .button:hover,
-  .round-link:hover {
+  .button:hover {
     transform: none;
   }
 }
@@ -1425,10 +1128,6 @@ select {
   min-height: 44px;
   display: inline-flex;
   align-items: center;
-}
-.round-link {
-  width: 44px;
-  height: 44px;
 }
 .source-note a {
   min-height: 44px;
@@ -1643,15 +1342,6 @@ select {
   width: 20px;
   height: 20px;
 }
-.round-link .icon {
-  width: 20px;
-  height: 20px;
-}
-.card-sticker .icon {
-  width: 12px;
-  height: 12px;
-  vertical-align: -2px;
-}
 .episode-action {
   display: inline-flex;
   align-items: center;
@@ -1685,7 +1375,6 @@ select {
   gap: 4px;
   text-underline-offset: 3px;
 }
-
 .closing-thought {
   flex: 1;
   min-width: 0;
@@ -1768,7 +1457,6 @@ select {
   color: var(--muted);
   font-size: 13px;
 }
-
 .other-recent-courses {
   display: flex;
   flex-wrap: wrap;
@@ -1804,7 +1492,6 @@ progress::-moz-progress-bar {
 #privacy {
   scroll-margin-top: 24px;
 }
-
 .recent-course .continue-detail {
   margin: 0 0 10px;
   font-size: 14px;
