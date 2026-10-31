@@ -9,8 +9,7 @@ import { reloadOnRestore } from "../../site/reload-on-restore";
 const repository = createDataRepository(browserStorage);
 function recordCounts(backup: Backup): string {
   const videos = backup.videos.length;
-  const quizzes = backup.quizzes.length;
-  return `${videos} saved ${videos === 1 ? "video" : "videos"} · ${quizzes} saved ${quizzes === 1 ? "quiz" : "quizzes"}`;
+  return `${videos} saved ${videos === 1 ? "video" : "videos"}`;
 }
 Alpine.data("settingsPage", () => {
   let stopRestore = () => {};

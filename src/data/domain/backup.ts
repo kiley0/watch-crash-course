@@ -1,7 +1,5 @@
 import { parseProgress } from "../../learning/domain/progress";
 import type { VideoProgress } from "../../learning/domain/progress";
-import { parseSavedAttempt } from "../../quizzes/domain/quiz";
-import type { QuizAttempt } from "../../quizzes/domain/quiz";
 export const MAX_BACKUP_BYTES = 5 * 1024 * 1024;
 export const MAX_BACKUP_RECORDS = 10000;
 export interface Backup {
@@ -9,7 +7,6 @@ export interface Backup {
   version: 1;
   exportedAt: number;
   videos: VideoProgress[];
-  quizzes: QuizAttempt[];
 }
 function fields(value: unknown, allowed: string[]): Record<string, unknown> {
   if (!value || typeof value !== "object" || Array.isArray(value))
@@ -23,7 +20,7 @@ function fields(value: unknown, allowed: string[]): Record<string, unknown> {
   return data;
 }
 export function parseBackup(value: unknown): Backup {
-  const data = fields(value, ["format", "version", "exportedAt", "videos", "quizzes"]);
+  const data = fields(value, ["format", "version", "exportedAt", "videos"]);
   if (data.format !== "watch-crash-course" || data.version !== 1)
     throw new Error("This backup format or version is not supported.");
   if (
@@ -33,11 +30,7 @@ export function parseBackup(value: unknown): Backup {
     data.exportedAt > 8640000000000000
   )
     throw new Error("Invalid backup date.");
-  if (
-    !Array.isArray(data.videos) ||
-    !Array.isArray(data.quizzes) ||
-    data.videos.length + data.quizzes.length > MAX_BACKUP_RECORDS
-  )
+  if (!Array.isArray(data.videos) || data.videos.length > MAX_BACKUP_RECORDS)
     throw new Error("The backup contains too many records or invalid lists.");
   const ids = new Set<string>();
   const videos = data.videos.map((item: unknown) => {
@@ -55,24 +48,7 @@ export function parseBackup(value: unknown): Backup {
     ids.add(record.videoId);
     return parseProgress(record, record.videoId)!;
   });
-  ids.clear();
-  const quizzes = data.quizzes.map((item: unknown) => {
-    fields(item, [
-      "version",
-      "videoId",
-      "revision",
-      "answers",
-      "attemptCount",
-      "bestScore",
-      "updatedAt",
-    ]);
-    const record = parseSavedAttempt(item);
-    const key = record.videoId + ":r" + record.revision;
-    if (ids.has(key)) throw new Error("Duplicate quiz record.");
-    ids.add(key);
-    return record;
-  });
-  return { format: "watch-crash-course", version: 1, exportedAt: data.exportedAt, videos, quizzes };
+  return { format: "watch-crash-course", version: 1, exportedAt: data.exportedAt, videos };
 }
 export function readBackup(text: string): Backup {
   if (new TextEncoder().encode(text).length > MAX_BACKUP_BYTES)

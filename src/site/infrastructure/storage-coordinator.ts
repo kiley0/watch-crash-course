@@ -1,5 +1,4 @@
-export type StoreName = "video_progress" | "quiz_attempts";
-export type StorageSnapshot = Record<StoreName, [string, unknown][]>;
+export type StorageSnapshot = [string, unknown][];
 export interface StorageBackend {
   keys(): Promise<string[]>;
   getItem<T>(key: string): Promise<T | null>;
@@ -7,40 +6,30 @@ export interface StorageBackend {
   clear(): Promise<void>;
   removeItem(key: string): Promise<void>;
 }
-const names: StoreName[] = ["video_progress", "quiz_attempts"];
 function recoverySnapshot(value: unknown): StorageSnapshot {
   if (!value || typeof value !== "object") throw new Error("Invalid recovery copy.");
   const data = value as Record<string, unknown>;
-  if (data.version !== 1 || !data.snapshot || typeof data.snapshot !== "object")
+  if (data.version !== 1 || !Array.isArray(data.snapshot))
     throw new Error("Unsupported recovery copy.");
-  const snapshot = data.snapshot as StorageSnapshot;
-  for (const name of names) {
-    if (!Array.isArray(snapshot[name])) throw new Error("Invalid recovery copy.");
-    const keys = new Set<string>();
-    for (const entry of snapshot[name]) {
-      if (
-        !Array.isArray(entry) ||
-        entry.length !== 2 ||
-        typeof entry[0] !== "string" ||
-        keys.has(entry[0])
-      )
-        throw new Error("Invalid recovery record.");
-      keys.add(entry[0]);
-    }
+  const keys = new Set<string>();
+  for (const entry of data.snapshot) {
+    if (
+      !Array.isArray(entry) ||
+      entry.length !== 2 ||
+      typeof entry[0] !== "string" ||
+      keys.has(entry[0])
+    )
+      throw new Error("Invalid recovery record.");
+    keys.add(entry[0]);
   }
-  return snapshot;
+  return data.snapshot as StorageSnapshot;
 }
-export function createStorageCoordinator(
-  stores: Record<StoreName, StorageBackend>,
-  journal: StorageBackend,
-) {
+export function createStorageCoordinator(store: StorageBackend, journal: StorageBackend) {
   let queue = Promise.resolve();
   let initialized = false;
   async function apply(snapshot: StorageSnapshot) {
-    for (const name of names) {
-      await stores[name].clear();
-      for (const [key, value] of snapshot[name]) await stores[name].setItem(key, value);
-    }
+    await store.clear();
+    for (const [key, value] of snapshot) await store.setItem(key, value);
   }
   async function initialize() {
     if (initialized) return;
@@ -63,23 +52,21 @@ export function createStorageCoordinator(
     return result;
   }
   async function snapshot(): Promise<StorageSnapshot> {
-    const result: StorageSnapshot = { video_progress: [], quiz_attempts: [] };
-    for (const name of names)
-      for (const key of await stores[name].keys())
-        result[name].push([key, await stores[name].getItem(key)]);
+    const result: StorageSnapshot = [];
+    for (const key of await store.keys()) result.push([key, await store.getItem(key)]);
     return result;
   }
   return {
-    store(name: StoreName) {
+    store() {
       return {
         keys() {
-          return run(() => stores[name].keys());
+          return run(() => store.keys());
         },
         getItem<T>(key: string) {
-          return run(() => stores[name].getItem<T>(key));
+          return run(() => store.getItem<T>(key));
         },
         setItem<T>(key: string, value: T) {
-          return run(() => stores[name].setItem(key, value));
+          return run(() => store.setItem(key, value));
         },
       };
     },
@@ -89,7 +76,7 @@ export function createStorageCoordinator(
     replace(next: StorageSnapshot) {
       return run(async () => {
         const previous = await snapshot();
-        // Recovery is saved before destructive writes. Removing it is the commit point.
+        // Persist recovery before destructive writes; removing it commits the replacement.
         await journal.setItem("pending-replacement", { version: 1, snapshot: previous });
         try {
           await apply(next);

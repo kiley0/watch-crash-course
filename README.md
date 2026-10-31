@@ -17,11 +17,11 @@ Use Node 22.12+ (Vite+ also supports newer compatible releases) and pnpm 12.16.1
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) for the domain map, dependency rules, and a “where new work goes” guide. Catalog rules, static JSON loading, and page interactions live together under `src/catalog/`, separated by responsibility. Shared visual identity lives in `src/site/`. Tests sit beside their modules.
 
-## Milestones 1–4 and data portability
+## Implemented features
 
 Catalog search and subject filtering, a complete Study Skills course page with all ten numbered episodes, episode search, official YouTube links, accessible responsive styling, and an about/privacy page. Catalog/network errors and unknown course IDs have useful recovery states. No fabricated course or viewing progress is shown.
 
-The watch page now loads YouTube’s official player after a user action, offers resume or replay, saves playback position, supports manual completion and confirmed episode reset, and links to previous/next lessons. Course episodes show saved status. Course completion summaries, a recent-course continue panel, and searchable learning history are also available. Each Study Skills lesson has three optional fan-made review questions, immediate explanations, video links, saved answers, retries, and a best score. The data settings page supports backup download, validated replacement import, and confirmed clearing. No account or API key is required.
+The watch page now loads YouTube’s official player after a user action, offers resume or replay, saves playback position, supports manual completion and confirmed episode reset, and links to previous/next lessons. Course episodes show saved status. Course completion summaries, a recent-course continue panel, and searchable learning history are also available. The data settings page supports backup download, validated replacement import, and confirmed clearing. No account or API key is required.
 
 ## Content maintenance
 
@@ -47,7 +47,7 @@ See `WEBSITE_PLAN.md` for remaining milestones and `THIRD_PARTY_NOTICES.md` for 
 
 Playback samples every five seconds while playing, saves on pause/ended, and attempts a save on navigation and page hiding. Only an ended event or manual action marks completion; seeking alone does not. Rewatching preserves completion until an explicit reset. Completed videos and positions within five seconds of the end offer replay. Player listeners/timers are cleaned up on departure; a browser back/forward cache restore reloads the watch or course page to recover a fresh session and current episode statuses. Periodic saves are the durable baseline; a browser closing abruptly may lose the last few seconds.
 
-Progress belongs to this browser profile and origin. Multiple tabs use last-save-wins; there is no cloud synchronization. Clearing site data, private browsing, browser eviction, and changing origins/devices may lose or separate progress. Backup/import is planned for milestone 5. No YouTube script, player, or thumbnail is loaded until the viewer chooses to load a video. The adapter also checks the player’s current video URL before saving, so selecting a different video inside YouTube cannot overwrite this lesson’s progress. The watch page sets an origin-preserving referrer policy and actual origin for the official IFrame API. Its privacy-enhanced embed retains standard YouTube controls; no video or ad is proxied or hidden.
+Progress belongs to this browser profile and origin. Multiple tabs use last-save-wins; there is no cloud synchronization. Clearing site data, private browsing, browser eviction, and changing origins/devices may lose or separate progress. Use the data settings page to export or import a backup. No YouTube script, player, or thumbnail is loaded until the viewer chooses to load a video. The adapter also checks the player’s current video URL before saving, so selecting a different video inside YouTube cannot overwrite this lesson’s progress. The watch page sets an origin-preserving referrer policy and actual origin for the official IFrame API. Its privacy-enhanced embed retains standard YouTube controls; no video or ad is proxied or hidden.
 
 ## Course summaries and history
 
@@ -101,26 +101,16 @@ The descriptions under the quotations are our interpretations, not additional Jo
 
 The closing banner quotes Hank Green’s [MIT interview on science, communication, and curiosity](https://oge.mit.edu/oge_news/3-questions-hank-green-on-science-communication-and-curiosity/), published May 29, 2025. Its short quotation is reproduced as published in the interview’s introductory quotation, with visible attribution and a source link. Checked October 30, 2026.
 
-## Quizzes
-
-See [QUIZ_CONTENT.md](./QUIZ_CONTENT.md) for sources, revision rules, and content review guidance. Quiz code lives in `src/quizzes/`; static content lives in `public/data/quizzes/`. There are no new dependencies. Quiz data uses its own localForage store and never changes video progress or learning history. Answers are inspectable in the downloaded JSON: this is self-study, not secure assessment.
-
-Milestone 4 checks cover content for all ten lessons, validation, scoring, answer locking, retry and best-score retention, reload persistence, revision separation, serialized writes, corrupt-data preservation, storage failure, missing quizzes, network errors, and fetch timeout.
-
-Manual quiz checks confirmed correct and incorrect feedback, answer locking, reload persistence, retained best scores after retry, keyboard focus on feedback and the new round, 390px answer-card layout without horizontal overflow, and production-preview recovery after quiz content was temporarily unavailable. Watch progress stayed unchanged while answering.
-
-Quiz review added regression checks for inherited-property question IDs, inconsistent best scores, and revision records stored under the wrong key. The real missing-quiz state was verified in the browser with the quiz file temporarily moved and then restored.
-
 ## Data backups
 
-`settings.html` manages version-1 JSON backups containing video records and quiz attempts across all revisions, independent of catalog availability. Files are limited to 5 MiB and 10,000 total records. Unknown fields, unsupported versions, duplicates, invalid IDs, and non-finite/out-of-range values are rejected before any write. Imports replace rather than merge. No file is uploaded. Unknown or unreadable saved records block export instead of being silently omitted.
+`settings.html` manages version-1 JSON backups containing watch progress records, independent of catalog availability. Files are limited to 5 MiB and 10,000 total records. Unknown fields, unsupported versions, duplicates, invalid IDs, and non-finite/out-of-range values are rejected before any write. Imports replace rather than merge. No file is uploaded. Unknown or unreadable saved records block export instead of being silently omitted.
 
 Before import or clearing, close other site tabs. An open player can otherwise save stale progress; multi-tab coordination is intentionally not promised. Download a current backup before replacing data. A backup can be empty; restoring it clears current records.
 
-`data/` owns the backup contract and repository; `site/infrastructure/storage-coordinator.ts` owns serialized raw storage operations. It persists a recovery snapshot in `data_settings` before replacing the two data stores. Removing the recovery entry commits the change. Failures attempt rollback; an interrupted operation rolls back before any page reads or writes after reload. Unknown recovery formats are preserved and block writes. If storage is unavailable, the usual temporary-progress warnings remain in place. No schema migrations are needed for this initial version; future versions must be explicitly supported.
+`data/` owns the backup contract and repository; `site/infrastructure/storage-coordinator.ts` owns serialized raw storage operations. It persists a recovery snapshot in `data_settings` before replacing the watch progress store. Removing the recovery entry commits the change. Failures attempt rollback; an interrupted operation rolls back before any page reads or writes after reload. Unknown recovery formats are preserved and block writes. If storage is unavailable, the usual temporary-progress warnings remain in place. No schema migrations are needed for this initial version; future versions must be explicitly supported.
 
-Milestone 5 release work still includes the full browser matrix and deployment validation.
+Milestone 4 release work still includes the full browser matrix and deployment validation.
 
-Manual data-page verification confirmed a real JSON download, invalid-file rejection without changing record counts, explicit clear confirmation, and restoring the downloaded backup after clearing. The counts and saved watch/quiz records returned after restoration.
+Manual data-page verification confirmed a real JSON download, invalid-file rejection without changing record counts, explicit clear confirmation, and restoring the downloaded backup after clearing. The counts and saved watch progress returned after restoration.
 
 The data page also passed a 390px layout check without horizontal overflow. Cross-browser release testing remains outstanding.

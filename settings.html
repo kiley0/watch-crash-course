@@ -35,7 +35,7 @@
       <a class="back-link" href="./index.html#courses">Back to the course shelf</a>
       <header class="settings-heading">
         <h1>Your data</h1>
-        <p>Your watch progress and quiz answers are saved in this browser.</p>
+        <p>Your watch progress is saved in this browser.</p>
       </header>
       <noscript
         ><p class="notice">
@@ -64,7 +64,7 @@
         <div class="settings-grid">
           <section class="data-card">
             <h2>Export data</h2>
-            <p>Download your progress and quiz answers as a JSON file.</p>
+            <p>Download your progress as a JSON file.</p>
             <button class="button button-dark" @click="download" :disabled="!canExport">
               Download backup
             </button>
@@ -89,10 +89,7 @@
             >
               <h3>Replace current data?</h3>
               <p x-text="importSummary"></p>
-              <p>
-                This replaces all saved progress and quiz answers. Export a backup first to keep
-                them.
-              </p>
+              <p>This replaces all saved progress. Export a backup first to keep it.</p>
               <div class="data-actions">
                 <button
                   id="confirm-import"
@@ -108,7 +105,7 @@
         </div>
         <section class="data-card data-clear">
           <h2>Clear data</h2>
-          <p>Delete all progress and quiz answers saved in this browser.</p>
+          <p>Delete all progress saved in this browser.</p>
           <button
             id="clear-data"
             class="text-button"

@@ -40,17 +40,9 @@ src/
     presentation/watch-links.ts         Internal watch-page URLs
     presentation/youtube-links.ts       External YouTube URLs
     presentation/watch.css              Watch-page visual components
-  quizzes/
-    domain/quiz.ts                      Content validation, scoring, attempts, revisions
-    infrastructure/static-quizzes.ts    Validated static JSON loading and missing quizzes
-    infrastructure/quiz-store.ts        Serialized quiz persistence and temporary fallback
-    infrastructure/browser-quizzes.ts   Separate localForage quiz store
-    presentation/quiz-panel.ts          Watch-page Alpine state and interactions
-    presentation/quiz-questions.ts      Answer labels, feedback, and video review links
-    presentation/quiz.css               Quiz cards and feedback styles
   data/
     domain/backup.ts                    Versioned backup validation and limits
-    infrastructure/data-repository.ts   Export and replacement workflows across both domains
+    infrastructure/data-repository.ts   Export and replacement of watch progress
     presentation/settings-page.ts       File choice, download, confirmations, feedback
     presentation/settings.css           Data settings cards and responsive layout
   site/                                 Shared site identity and informational UI
@@ -65,7 +57,6 @@ public/
   data/
     courses.json                        Curated course index
     courses/<course-id>.json            Ordered episode data
-    quizzes/<video-id>.json             Original review questions, one versioned quiz per video
   icons.svg                             Selected, licensed icon sprite
   illustration.svg                      Original shared artwork
   favicon.svg
@@ -100,9 +91,9 @@ There is no application layer yet: loading a catalog and filtering it does not n
 | Add an icon                                                | Selected symbol in `public/icons.svg`; retain its license notice                   |
 | Add an interactive page                                    | Root HTML, an owning domain's presentation entry, and `vite.config.ts` build input |
 
-`learning/` owns video progress keyed by YouTube ID. `playback/` owns the official player adapter and watch-page experience. Catalog presentation composes these capabilities to link episodes and show saved status; neither capability imports catalog presentation. Learning stores one progress record per video; course summaries receive the current episode IDs and derive membership-based counts without owning a copy of the catalog. Shared videos retain one record. Quizzes live in `quizzes/` and never write video progress. Document narrow contracts when domain coordination is necessary and keep dependencies acyclic.
+`learning/` owns video progress keyed by YouTube ID. `playback/` owns the official player adapter and watch-page experience. Catalog presentation composes these capabilities to link episodes and show saved status; neither capability imports catalog presentation. Learning stores one progress record per video; course summaries receive the current episode IDs and derive membership-based counts without owning a copy of the catalog. Shared videos retain one record. Document narrow contracts when domain coordination is necessary and keep dependencies acyclic.
 
-The watch page calls learning's storage adapter and playback's player adapter. The player only reports samples through a typed callback; it never knows how progress is stored. `createProgressStore` accepts a small backend boundary to test failure and ordering; `browser-progress.ts` selects the video store through `site/infrastructure/browser-storage.ts`, which owns the project database name and localForage configuration. The quiz adapter selects its own store through the same factory. Tests remain colocated, including beside the new modules. `progressStore.list()` reads all namespaced records without a catalog dependency. History presentation composes those records with optional catalog metadata; catalog failures cannot hide readable saved records. Catalog and course presentation reuse the pure summary rules, rather than storing percentages or course totals.
+The watch page calls learning's storage adapter and playback's player adapter. The player only reports samples through a typed callback; it never knows how progress is stored. `createProgressStore` accepts a small backend boundary to test failure and ordering; `browser-progress.ts` selects the video store through `site/infrastructure/browser-storage.ts`, which owns the project database name and localForage configuration. Tests remain colocated, including beside the new modules. `progressStore.list()` reads all namespaced records without a catalog dependency. History presentation composes those records with optional catalog metadata; catalog failures cannot hide readable saved records. Catalog and course presentation reuse the pure summary rules, rather than storing percentages or course totals.
 
 ## Tests and change checks
 
@@ -110,18 +101,12 @@ Tests are colocated as `*.test.ts` beside the module they protect. Domain tests 
 
 Run `pnpm fmt` and `pnpm build` after changing module locations, contracts, or entries. The build runs formatting, lint, strict type checks, tests, and all HTML entries. For interactive changes, also verify the affected page in the browser. Do not add a dependency just to enforce these few folder rules.
 
-## Quiz content and persistence
-
-Each `public/data/quizzes/<video-id>.json` has a positive revision and stable question/option IDs. Increment the revision whenever answers or question meanings change. Attempts use separate `quiz:<video-id>:r<revision>` keys in the `quiz_attempts` localForage store; old revisions remain recoverable but are not applied to new content. First answers stay locked until a fresh round, which keeps the best score and increments the attempt count. Watch completion and history are independent.
-
-Authored content sources and review guidance live in [QUIZ_CONTENT.md](./QUIZ_CONTENT.md). A missing JSON file shows an explicit no-quiz state, while network/validation errors offer retry without blocking playback. Unreadable saved data is preserved; storage failure falls back to temporary answers with a warning.
-
 ## Project identity and storage
 
-The site is Watch Crash Course (`watch-crash-course`), with intended production origin `https://watchcrashcourse.com`. The site infrastructure owns the database identity and creates localForage stores in `watch-crash-course`. Learning and quizzes use separate stores and validate their own records. Browser storage is scoped to the site origin.
+The site is Watch Crash Course (`watch-crash-course`), with intended production origin `https://watchcrashcourse.com`. The site infrastructure owns the database identity and creates localForage stores in `watch-crash-course`. Learning validates watch progress records. Browser storage is scoped to the site origin.
 
 ## Data portability
 
-`data/domain/backup.ts` composes learning and quiz record validators without importing their presentation or infrastructure. Structural quiz record validation lives in `quizzes/domain/quiz.ts` so backups do not require the currently published questions. `data/infrastructure/data-repository.ts` maps validated records to namespaced storage keys. The settings page never reads localForage directly.
+`data/domain/backup.ts` composes the learning record validator without importing presentation or infrastructure. `data/infrastructure/data-repository.ts` maps validated watch progress to namespaced storage keys. The settings page never reads localForage directly.
 
-All browser storage calls pass through the site infrastructure coordinator. A recovery journal records both raw stores before a destructive operation. It is removed only after both stores are replaced; startup recovery runs before ordinary reads/writes. The coordinator knows storage names and raw keys, not learning rules. Import/export and recovery tests are colocated. Other site tabs must be closed before replacement to avoid stale writes.
+All browser storage calls pass through the site infrastructure coordinator. A recovery journal records the raw watch progress store before a destructive operation. It is removed only after the store is replaced; startup recovery runs before ordinary reads/writes. The coordinator knows storage names and raw keys, not learning rules. Import/export and recovery tests are colocated. Other site tabs must be closed before replacement to avoid stale writes.

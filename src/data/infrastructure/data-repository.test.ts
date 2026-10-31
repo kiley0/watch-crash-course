@@ -5,10 +5,7 @@ import type { StorageSnapshot } from "../../site/infrastructure/storage-coordina
 describe("data repository", () => {
   it("exports, clears, and restores the complete snapshot without catalog metadata", async () => {
     const record = updateProgress(null, "E7CwqNHn_Ns", { type: "complete" }, 1);
-    let data: StorageSnapshot = {
-      video_progress: [["video:E7CwqNHn_Ns", record]],
-      quiz_attempts: [],
-    };
+    let data: StorageSnapshot = [["video:E7CwqNHn_Ns", record]];
     const repository = createDataRepository({
       async snapshot() {
         return data;
@@ -19,7 +16,7 @@ describe("data repository", () => {
     });
     const backup = await repository.export();
     await repository.clear();
-    expect(data.video_progress).toEqual([]);
+    expect(data).toEqual([]);
     await repository.import(backup);
     expect((await repository.export()).videos).toEqual([record]);
   });
@@ -27,7 +24,7 @@ describe("data repository", () => {
     let writes = 0;
     const repository = createDataRepository({
       async snapshot() {
-        return { video_progress: [["unknown", {}]], quiz_attempts: [] };
+        return [["unknown", {}]];
       },
       async replace() {
         writes++;

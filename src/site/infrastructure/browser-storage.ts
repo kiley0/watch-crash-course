@@ -1,6 +1,5 @@
 import localforage from "localforage";
 import { createStorageCoordinator } from "./storage-coordinator";
-import type { StoreName } from "./storage-coordinator";
 function database(storeName: string) {
   return localforage.createInstance({
     name: "watch-crash-course",
@@ -9,12 +8,9 @@ function database(storeName: string) {
   });
 }
 export const browserStorage = createStorageCoordinator(
-  {
-    video_progress: database("video_progress"),
-    quiz_attempts: database("quiz_attempts"),
-  },
+  database("video_progress"),
   database("data_settings"),
 );
-export function createBrowserStore(storeName: StoreName) {
-  return browserStorage.store(storeName);
+export function createBrowserStore() {
+  return browserStorage.store();
 }

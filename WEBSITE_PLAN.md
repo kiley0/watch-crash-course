@@ -4,9 +4,9 @@ Production domain: `watchcrashcourse.com`. Repository and local folder: `watch-c
 
 ## Goal
 
-Build a quiet, dependable place to work through Crash Course courses in playlist order, resume videos, see progress, and answer review questions. Favor files and browser standards that will remain understandable and inexpensive to host for years.
+Build a quiet, dependable place to work through Crash Course courses in playlist order, resume videos, and see progress. Favor files and browser standards that will remain understandable and inexpensive to host for years.
 
-Milestones 1–4 are implemented locally: responsive catalog/course pages, the complete Study Skills fixture, search/filtering, about/privacy, embedded playback after a user action, resume, local video progress, completion/reset, course completion summaries, continue learning, searchable history, and a Vite+ multi-page static build. Optional fan-made quizzes now cover all ten Study Skills episodes, with explanations, retries, saved answers, best scores, and video review links. Milestone 5 data controls are implemented locally: versioned export/import, validated replacement, confirmed clearing, and interruption recovery. Broader browser/release checks remain; deployment has not been performed.
+Milestones 1–3 are implemented locally: responsive catalog/course pages, the complete Study Skills fixture, search/filtering, about/privacy, embedded playback after a user action, resume, local video progress, completion/reset, course completion summaries, continue learning, searchable history, and a Vite+ multi-page static build. Data controls are implemented locally: versioned export/import, validated replacement, confirmed clearing, and interruption recovery. Broader browser/release checks remain; deployment has not been performed.
 
 ## Architectural decisions
 
@@ -15,8 +15,8 @@ Milestones 1–4 are implemented locally: responsive catalog/course pages, the c
 - Write all application logic, Alpine components, tests, and tooling configuration in TypeScript. Use Vite+ to transpile and build the static site; retain ordinary HTML and CSS.
 - Use one small, pinned, locally bundled storage library behind a tiny application-owned adapter. Use pinned localForage 1.10.0 bundled into the site, using IndexedDB with a localStorage fallback. Preserve its license and record its version. Reconsider only if its size or maintenance status warrants a simpler alternative before implementation.
 - Use the official YouTube IFrame Player API for playback and position tracking. This is the unavoidable external runtime dependency alongside YouTube itself.
-- Keep the course catalog and quizzes in version-controlled JSON files.
-- Prefer Alpine.js over htmx for interactions: catalog filtering, expanded episode lists, quiz answers and explanations, progress displays, and confirmation dialogs. These are browser-local state changes rather than requests for server-rendered fragments. Do not include both libraries.
+- Keep the course catalog in version-controlled JSON files.
+- Prefer Alpine.js over htmx for interactions: catalog filtering, expanded episode lists, progress displays, and confirmation dialogs. These are browser-local state changes rather than requests for server-rendered fragments. Do not include both libraries.
 - Bundle pinned application dependencies into the built site assets instead of loading them from a public CDN, and include their licenses. YouTube's player remains externally hosted.
 - Use a conventional multi-page site with query parameters, not a client-side router or custom URL-rewrite rules.
 - Use Vite+ (`vp`) as development tooling for local serving, formatting, and focused checks. It transpiles TypeScript at development/build time and adds no browser runtime dependency. The built output runs on any static HTTPS host.
@@ -38,11 +38,11 @@ Use a single-project, vanilla HTML/CSS/TypeScript setup with a pinned project-lo
 | `vp build`   | Transpile TypeScript and build the static site into `dist/` |
 | `vp preview` | Serve the production output locally for verification        |
 
-Use default formatter conventions, minimal lint configuration, and a strict `tsconfig.json` with DOM types and no emitted output from the type checker. Enable Vite+'s documented `lint.options.typeAware` and `typeCheck` options so `vp check` actually checks types. Transpilation alone does not validate types. Type catalog records, stored progress, quizzes, and the player boundary; still validate imported and fetched data at runtime.
+Use default formatter conventions, minimal lint configuration, and a strict `tsconfig.json` with DOM types and no emitted output from the type checker. Enable Vite+'s documented `lint.options.typeAware` and `typeCheck` options so `vp check` actually checks types. Transpilation alone does not validate types. Type catalog records, stored progress, and the player boundary; still validate imported and fetched data at runtime.
 
 Exclude vendored distributions, lockfiles, and generated output from source formatting/linting as appropriate. Do not introduce framework plugins, workspaces, task caching configuration, Git hooks, or separate formatter/linter/test-runner packages. Keep TypeScript straightforward: functions, interfaces, and small modules, without decorators, code generation, or a type-heavy abstraction layer. Third-party vendored JavaScript remains unchanged.
 
-Production builds are required. Configure every HTML page as a multi-page entry in `vite.config.ts`. Keep fetched catalog/quiz JSON and vendored distributions in `public/` so Vite copies them unchanged into `dist/`. Reference source TypeScript through HTML module entry points; load and register Alpine components in a deterministic order before starting Alpine. Keep substantive behavior in TypeScript methods rather than inline HTML expressions. Verify navigation, JSON URLs, and assets in `vp preview` against the actual build output.
+Production builds are required. Configure every HTML page as a multi-page entry in `vite.config.ts`. Keep fetched catalog JSON and vendored distributions in `public/` so Vite copies them unchanged into `dist/`. Reference source TypeScript through HTML module entry points; load and register Alpine components in a deterministic order before starting Alpine. Keep substantive behavior in TypeScript methods rather than inline HTML expressions. Verify navigation, JSON URLs, and assets in `vp preview` against the actual build output.
 
 Define a package `build` script that runs `vp check`, non-watch tests (`vp test run`), and `vp build` in sequence. Vercel runs that script using the project-local CLI after installing locked dependencies. No global `vp` installation is required on the build machine. The deployed `dist/` contains HTML, CSS, JavaScript, JSON, and static assets; no TypeScript execution or Vite server is needed in production.
 
@@ -56,11 +56,11 @@ Alpine is the preferred lightweight interaction layer. Its HTML directives suppo
 
 - Pin and locally bundle one Alpine distribution with its license. Prefer its [official CSP build](https://alpinejs.dev/advanced/csp) so the site does not need `unsafe-eval`; verify the chosen directive syntax against that build during the pilot.
 - Register named components with `Alpine.data()` in external page scripts. Keep HTML expressions short and put calculations, asynchronous loading, and error handling in named methods.
-- Keep storage, progress rules, quiz scoring, and YouTube integration in ordinary TypeScript modules that can be tested independently of Alpine. Components call those modules and expose their results to the template.
+- Keep storage, progress rules, and YouTube integration in ordinary TypeScript modules that can be tested independently of Alpine. Components call those modules and expose their results to the template.
 - Treat component state as the current screen's view of persisted data. Do not create a second persistence system with Alpine's Persist plugin or introduce a global state framework.
 - Use native `fetch()` for static JSON. No AJAX helper library or Alpine plugins initially.
 - Give the player a stable DOM container outside Alpine-managed conditional/list rendering. UI updates must not recreate the iframe and interrupt playback. Clean up player listeners and timers when leaving the page.
-- Use text bindings for catalog, quiz, and imported data; avoid `x-html`. Use `x-cloak` for initially hidden interactive regions, with accessible loading/error states if initialization fails.
+- Use text bindings for catalog and imported data; avoid `x-html`. Use `x-cloak` for initially hidden interactive regions, with accessible loading/error states if initialization fails.
 
 Direct DOM code written in TypeScript remains a reasonable fallback if the pilot has too little reactive UI to justify Alpine. Do not evaluate a collection of similar frameworks unless Alpine presents a concrete problem: the priority is one familiar, modest dependency and understandable code.
 
@@ -73,8 +73,7 @@ Direct DOM code written in TypeScript remains a reasonable fallback if the pilot
 3. **Watch page:** embed one video, show its course context, resume position, offer previous/next episodes, and allow manual completion or reset.
 4. **Continue learning:** surface recently active courses and the most recently watched unfinished video.
 5. **History:** show each video's most recent viewing time and status, with links back into its course. Avoid an unbounded event log.
-6. **Quizzes:** offer optional authored multiple-choice questions, immediate explanations, retries, and links to relevant timestamps.
-7. **Data controls:** export, import, and clear local progress, with a clear explanation that progress lives in this browser.
+6. **Data controls:** export, import, and clear local progress, with a clear explanation that progress lives in this browser.
 
 Start with one complete course as a vertical slice, then expand to a small curated selection before attempting the entire channel catalog. Scope the initial content to the official Crash Course channel; support additional explicitly approved Crash Course channels later through configuration.
 
@@ -88,25 +87,24 @@ The site should feel at home alongside Crash Course: playful, fun, educational, 
 
 ### Design direction
 
-- **Color:** use a warm, light background with bold, saturated accents. Give course subjects distinct accent colors, repeated consistently on course cards, episode headings, progress indicators, and quiz details. Balance bright areas with generous quiet space so the catalog remains easy to scan.
+- **Color:** use a warm, light background with bold, saturated accents. Give course subjects distinct accent colors, repeated consistently on course cards, episode headings, and progress indicators. Balance bright areas with generous quiet space so the catalog remains easy to scan.
 - **Shapes:** use generous rounded corners, pill-shaped labels, chunky progress bars, and friendly circular details. Add occasional simple CSS or SVG doodles inspired by learning—stars, atoms, books, speech bubbles, and little celebratory bursts—without crowding the content.
 - **Typography:** choose a friendly, rounded system-font stack where available, with bold, expressive headings and highly readable body text. Start without downloaded fonts. If system fonts cannot deliver the intended personality, consider one locally hosted, openly licensed font as a deliberate later addition.
-- **Layout:** make course cards inviting and easy to browse, episode lists orderly, and the watch page focused on the video. Use comfortable spacing and clear hierarchy. Carry the same visual language through empty states, errors, settings, and quizzes.
-- **Controls:** use substantial rounded buttons with clear labels and a tactile pressed state. Favor short, encouraging copy, such as “Keep learning,” “Try again,” and “Nice work!” Keep feedback helpful and avoid guilt about unfinished courses or incorrect answers.
-- **Progress:** make progress visible and satisfying with colorful bars, completion checkmarks, and a small celebratory moment when a course is finished. Keep watch progress and quiz results clearly distinguishable.
-- **Quizzes:** present answers as large, friendly selectable cards. Explain correct and incorrect choices with text and icons as well as color. Encourage another attempt without making mistakes feel punitive.
+- **Layout:** make course cards inviting and easy to browse, episode lists orderly, and the watch page focused on the video. Use comfortable spacing and clear hierarchy. Carry the same visual language through empty states, errors, and settings.
+- **Controls:** use substantial rounded buttons with clear labels and a tactile pressed state. Favor short, encouraging copy, such as “Keep learning,” “Try again,” and “Nice work!” Keep feedback helpful and avoid guilt about unfinished courses.
+- **Progress:** make progress visible and satisfying with colorful bars, completion checkmarks, and a small celebratory moment when a course is finished.
 
 ### Motion and accessibility
 
 Use small CSS transitions for a gentle button bounce, card lift, progress change, or completion flourish. Keep motion brief and tied to an action; avoid perpetual bouncing, flashing decoration, or animation that distracts from a video. Honor `prefers-reduced-motion`, and make all interactions understandable with animation disabled. No animation library is needed.
 
-Preserve strong text contrast, visible keyboard focus, comfortable touch targets, semantic controls, and readable text sizes. Bright colors are accents, not a reason to sacrifice legibility. Never rely on color alone for subject labels, playback status, or quiz feedback. Hover effects must have equivalent keyboard and touch behavior.
+Preserve strong text contrast, visible keyboard focus, comfortable touch targets, semantic controls, and readable text sizes. Bright colors are accents, not a reason to sacrifice legibility. Never rely on color alone for subject labels, playback status. Hover effects must have equivalent keyboard and touch behavior.
 
 ### Relationship to Crash Course
 
 Before implementation, review the official channel and a representative selection of course artwork to ground the palette and visual rhythm in real references. Build a complementary original interface rather than assuming permission to reuse logos, mascots, illustrations, or other brand assets. Attribute the videos, link to their official sources, and make the site's independent status clear. Use official artwork only where its use is permitted.
 
-Create a small set of CSS custom properties for colors, spacing, corner radii, shadows, and motion so the look stays consistent without a design-system dependency. Validate the direction on a catalog card, course episode list, watch page, and quiz before expanding it across the site.
+Create a small set of CSS custom properties for colors, spacing, corner radii, shadows, and motion so the look stays consistent without a design-system dependency. Validate the direction on a catalog card, course episode list, watch page before expanding it across the site.
 
 ## Pages and navigation
 
@@ -114,7 +112,7 @@ Create a small set of CSS custom properties for colors, spacing, corner radii, s
 | ------------------------------------------ | --------------------------------------------------------------------------------- |
 | `index.html`                               | Continue learning, course catalog, simple search/filter                           |
 | `course.html?id=biology`                   | Course overview and ordered episode list                                          |
-| `watch.html?course=biology&video=VIDEO_ID` | Player, progress, next episode, video quiz                                        |
+| `watch.html?course=biology&video=VIDEO_ID` | Player, progress, next episode                                                    |
 | `history.html`                             | Recent viewing and course links                                                   |
 | `settings.html`                            | Export/import/reset, storage status, preferences                                  |
 | `about.html`                               | Independent-project disclosure, content attribution, privacy and data limitations |
@@ -163,7 +161,7 @@ Researched October 30, 2026. Keep the initial site account-free; optional Google
 
 Sign-in on our site and sign-in inside YouTube's cross-origin player are separate. The documented IFrame API has no OAuth-token/account-selection interface for binding the player to the account a visitor chooses in our app. Do not advertise “Connect YouTube” as a way to force player identity, enable Premium, or synchronize viewing history.
 
-Recommendation: use the official standard embed if compatibility with existing YouTube sessions is the desired priority, retain local course/quiz progress, and always offer “Open on YouTube.” Test signed-in/out playback, Premium, blocked cookies, and multiple-account browsers during the pilot. Watching on YouTube itself uses YouTube's own account experience but cannot report completion back to this site. Any recording of embedded views in YouTube history should be treated as YouTube-controlled behavior, not a promised integration.
+Recommendation: use the official standard embed if compatibility with existing YouTube sessions is the desired priority, retain local course progress, and always offer “Open on YouTube.” Test signed-in/out playback, Premium, blocked cookies, and multiple-account browsers during the pilot. Watching on YouTube itself uses YouTube's own account experience but cannot report completion back to this site. Any recording of embedded views in YouTube history should be treated as YouTube-controlled behavior, not a promised integration.
 
 Privacy-enhanced embeds are a separate product choice: YouTube documents that views through that mode do not personalize the viewer's YouTube browsing experience. Do not assume standard and privacy-enhanced embeds have identical account behavior. Decide the default after testing and clearly explain the choice.
 
@@ -184,13 +182,12 @@ Suggested records:
 
 - **Video progress, keyed by YouTube video ID:** resume position, observed duration, last watched timestamp, completed flag, and completion source (manual or player ended).
 - **Course activity, keyed by course ID:** most recent video and activity timestamp. Derive completion counts from the current course membership and video progress.
-- **Quiz results, keyed by video ID and quiz revision:** latest answers, best score, attempt count, and timestamp.
 - **Preferences:** only options the interface actually needs.
 - **Export envelope:** schema version, export timestamp, and the records above.
 
 A video reused in two courses shares viewing progress. Course completion is completed required episodes divided by currently available required episodes. Display unavailable episode counts separately; preserve their historical progress. Catalog changes can change the denominator, so do not store course percentages as authoritative data.
 
-Mark a video complete on the player's ended event or an explicit user action. Playback position alone is not evidence of watching: seeking near the end should not immediately mark completion. Completion is a learning convenience, not proof of attendance. Keep quiz completion separate from video completion. Rewatching does not silently clear completion; provide an explicit reset action.
+Mark a video complete on the player's ended event or an explicit user action. Playback position alone is not evidence of watching: seeking near the end should not immediately mark completion. Completion is a learning convenience, not proof of attendance. Rewatching does not silently clear completion; provide an explicit reset action.
 
 Clamp invalid positions and handle unknown/zero duration. If a saved position is at the end, offer replay instead of resuming into the ending. Serialize saves within a tab to avoid out-of-order writes. For the initial release, document last-save-wins behavior if the same video is played in multiple tabs; avoid a complicated synchronization layer.
 
@@ -204,17 +201,11 @@ Clamp invalid positions and handle unknown/zero duration. If a saved position is
 - Version migrations, preserve recoverable data on failure, and never silently reset a store that cannot be read.
 - No analytics or tracking SDKs. Explain that loading a YouTube player sends requests to YouTube; local progress storage does not make playback private from YouTube.
 
-## Quiz content
-
-Quizzes are static, authored learning material. Each question has a stable ID, revision, prompt, answer options with stable IDs, correct answer, explanation, and an optional relevant video timestamp. Begin with three to five carefully reviewed questions for each video in the pilot course; explicitly show when a video has no quiz.
-
-Show explanations after answering, allow retry/reset, and restore saved attempts. Quiz answers are shipped to the browser and are inspectable; this is self-study, not secure assessment. Check questions against the actual video, write original wording, and avoid inventing official affiliation or reproducing third-party quiz material without permission. Quiz revisions invalidate incompatible saved answers without deleting watch progress.
-
 ## Repository organization
 
 The implemented source layout follows lightweight domain-driven organization. See [ARCHITECTURE.md](./ARCHITECTURE.md) for the authoritative file map and placement rules. Catalog types and validation live in `src/catalog/domain/`, JSON loading in `src/catalog/infrastructure/`, and Alpine page entries in `src/catalog/presentation/`. Shared site styles and about-page behavior live in `src/site/`. Tests are colocated.
 
-Root HTML files remain Vite's explicit multi-page entries, and `public/data/` remains the curated static content source. Alpine is bundled from its pinned package. Future learning progress, playback, and quizzes should get their own domain folders when implemented, rather than growing a collection of unrelated top-level modules. Do not scaffold empty domains or layers.
+Root HTML files remain Vite's explicit multi-page entries, and `public/data/` remains the curated static content source. Alpine is bundled from its pinned package. Learning progress and playback have their own domain folders, rather than growing a collection of unrelated top-level modules. Do not scaffold empty domains or layers.
 
 Use system fonts, semantic HTML, ordinary CSS, and a small consistent set of layout rules. Alpine is the only UI library. Allow a pinned static icon package for a small selected SVG sprite; no icon runtime, CSS framework, font service, dependency container, or additional application state framework. Duplicate modest shared page markup until maintaining it becomes an actual problem; do not create a template system preemptively.
 
@@ -232,15 +223,11 @@ Integrate the player and storage adapter. Verify play → pause → reload → r
 
 Derive course progress, recent courses, and viewing history from saved records. Test a new browser profile, fully completed courses, replay, catalog reorder/addition/removal, and missing video IDs. Never require a network catalog refresh to recover local records.
 
-### 4. Quiz experience and content
-
-Implement one complete reviewed quiz flow, then author the pilot course's questions. Verify scoring, explanations, persistence, retry, timestamps, quiz revisions, and independence from watch completion.
-
-### 5. Data portability and release
+### 4. Data portability and release
 
 Implement validated export/import and confirmed resets. Test export → clear → import round trips, malformed imports, storage failure, schema migration, and progress across a deployment update on the same origin. Check current Safari, Firefox, Chromium, and a mobile browser with actual YouTube playback.
 
-Use Vite+'s included Vitest runner for focused automated tests of progress calculations, import validation, migrations, and quiz scoring. Run formatting/lint checks through `vp`; do not add a separate tooling stack. Keep browser verification manual initially; add a browser-testing dependency only if repeated regressions justify it. Development tooling is never a production dependency.
+Use Vite+'s included Vitest runner for focused automated tests of progress calculations, import validation, and recovery. Run formatting/lint checks through `vp`; do not add a separate tooling stack. Keep browser verification manual initially; add a browser-testing dependency only if repeated regressions justify it. Development tooling is never a production dependency.
 
 ## Hosting and ongoing maintenance
 
@@ -250,14 +237,13 @@ Use branch previews to check the built site and the production branch for normal
 
 Keep a stable production origin: each preview hostname has separate browser storage, and preview progress does not transfer automatically to production. Document how to build and host `dist/` elsewhere and how to export progress before changing origins. A custom domain is optional and creates a recurring cost.
 
-The site shell and catalog should continue working if the storage library's upstream disappears because a licensed copy is included. Playback still depends on YouTube, the videos remaining available, embedding permission, network access, and browser support. Self-authored quizzes and catalog updates require editorial work. Review links, video availability, dependency advisories, and YouTube integration requirements periodically; do not assume free hosting means zero maintenance.
+The site shell and catalog should continue working if the storage library's upstream disappears because a licensed copy is included. Playback still depends on YouTube, the videos remaining available, embedding permission, network access, and browser support. Catalog updates require editorial work. Review links, video availability, dependency advisories, and YouTube integration requirements periodically; do not assume free hosting means zero maintenance.
 
 ## Decisions to revisit after the pilot
 
-- Which courses to include first, and how many have fully authored quizzes at launch.
-- Whether the user expects fixed review questions or a future open-ended tutoring feature; this plan implements fixed questions and explanations.
+- Which courses to include next.
 - Whether catalog maintenance warrants an official API importer and its associated refresh obligations.
 - Whether localForage earns its dependency cost after testing storage failure and import/export behavior.
 - Which stable Vercel production URL or custom domain to use when deployment is requested.
 
-The complete pilot release spans these milestones: one course that can be watched, resumed after closing the browser, reviewed with a quiz, and backed up to a file, using only static hosting.
+The complete pilot release spans these milestones: one course that can be watched, resumed after closing the browser, and backed up to a file, using only static hosting.

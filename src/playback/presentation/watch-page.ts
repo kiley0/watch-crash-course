@@ -14,8 +14,6 @@ import type { PlayerSession } from "../infrastructure/youtube-player";
 import { reloadOnRestore } from "../../site/reload-on-restore";
 import { watchUrl } from "./watch-links";
 
-import "../../quizzes/presentation/quiz-panel";
-
 Alpine.data("watchPage", () => {
   let session: PlayerSession | undefined;
   let disposed = false;
