@@ -75,34 +75,52 @@ export function parseQuiz(value: unknown, videoId: string): Quiz {
 export function scoreQuiz(quiz: Quiz, answers: Record<string, string>): number {
   return quiz.questions.filter((q) => answers[q.id] === q.correctId).length;
 }
-export function parseAttempt(value: unknown, quiz: Quiz): QuizAttempt | null {
-  if (value === null || value === undefined) return null;
+// Backups validate saved attempts without requiring current quiz content.
+export function parseSavedAttempt(value: unknown): QuizAttempt {
   const data = object(value);
-  if (data.version !== 1 || data.videoId !== quiz.videoId)
+  if (
+    data.version !== 1 ||
+    typeof data.videoId !== "string" ||
+    !/^[A-Za-z0-9_-]{11}$/.test(data.videoId)
+  )
     throw new Error("Unsupported quiz record.");
-  integer(data.revision, 1);
-  // Older revisions stay in storage, but their answers do not apply to new questions.
-  if (data.revision !== quiz.revision) return null;
   const answers = object(data.answers);
+  if (Object.keys(answers).length > 20) throw new Error("Too many saved answers.");
   const clean: Record<string, string> = {};
   for (const [id, answer] of Object.entries(answers)) {
+    if (
+      !/^[a-z0-9-]{1,200}$/.test(id) ||
+      typeof answer !== "string" ||
+      !/^[a-z0-9-]{1,200}$/.test(answer)
+    )
+      throw new Error("Invalid saved answer.");
+    clean[id] = answer;
+  }
+  return {
+    version: 1,
+    videoId: data.videoId,
+    revision: integer(data.revision, 1),
+    answers: clean,
+    attemptCount: integer(data.attemptCount, 1),
+    bestScore: integer(data.bestScore, 0, 20),
+    updatedAt: integer(data.updatedAt, 0, 8640000000000000),
+  };
+}
+export function parseAttempt(value: unknown, quiz: Quiz): QuizAttempt | null {
+  if (value === null || value === undefined) return null;
+  const data = parseSavedAttempt(value);
+  if (data.videoId !== quiz.videoId) throw new Error("Unsupported quiz record.");
+  if (data.revision !== quiz.revision) return null;
+  for (const [id, answer] of Object.entries(data.answers)) {
     const question = quiz.questions.find((q) => q.id === id);
     if (!question || !question.options.some((option) => option.id === answer))
       throw new Error("Invalid saved answer.");
-    clean[id] = answer as string;
   }
-  const bestScore = integer(data.bestScore, 0, quiz.questions.length);
-  if (bestScore < scoreQuiz(quiz, clean)) throw new Error("Inconsistent best score.");
-  return {
-    version: 1,
-    videoId: quiz.videoId,
-    revision: quiz.revision,
-    answers: clean,
-    attemptCount: integer(data.attemptCount, 1),
-    bestScore,
-    updatedAt: integer(data.updatedAt, 0),
-  };
+  if (data.bestScore > quiz.questions.length || data.bestScore < scoreQuiz(quiz, data.answers))
+    throw new Error("Inconsistent best score.");
+  return data;
 }
+
 export function answerQuestion(
   quiz: Quiz,
   previous: QuizAttempt | null,

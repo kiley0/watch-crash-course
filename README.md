@@ -17,11 +17,11 @@ Use Node 22.12+ (Vite+ also supports newer compatible releases) and pnpm 12.16.1
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) for the domain map, dependency rules, and a “where new work goes” guide. Catalog rules, static JSON loading, and page interactions live together under `src/catalog/`, separated by responsibility. Shared visual identity lives in `src/site/`. Tests sit beside their modules.
 
-## Milestones 1–4
+## Milestones 1–4 and data portability
 
 Catalog search and subject filtering, a complete Study Skills course page with all ten numbered episodes, episode search, official YouTube links, accessible responsive styling, and an about/privacy page. Catalog/network errors and unknown course IDs have useful recovery states. No fabricated course or viewing progress is shown.
 
-The watch page now loads YouTube’s official player after a user action, offers resume or replay, saves playback position, supports manual completion and confirmed episode reset, and links to previous/next lessons. Course episodes show saved status. Course completion summaries, a recent-course continue panel, and searchable learning history are also available. Each Study Skills lesson has three optional fan-made review questions, immediate explanations, video links, saved answers, retries, and a best score. Backup/import follows in milestone 5. No account or API key is required.
+The watch page now loads YouTube’s official player after a user action, offers resume or replay, saves playback position, supports manual completion and confirmed episode reset, and links to previous/next lessons. Course episodes show saved status. Course completion summaries, a recent-course continue panel, and searchable learning history are also available. Each Study Skills lesson has three optional fan-made review questions, immediate explanations, video links, saved answers, retries, and a best score. The data settings page supports backup download, validated replacement import, and confirmed clearing. No account or API key is required.
 
 ## Content maintenance
 
@@ -33,7 +33,7 @@ The public name is **Watch Crash Course**. The repository and local folder use `
 
 Import the repository into Vercel as a Vite project. Enable Corepack in the Vercel project settings (`ENABLE_EXPERIMENTAL_COREPACK=1`) so the `packageManager` pin is used. Install with `pnpm install --frozen-lockfile`, set build command to `pnpm build`, and output directory to `dist`. Select a Node version satisfying `engines` and supported by the pinned pnpm release. No server functions, environment secrets, SPA fallback rewrite, or custom deployment workflow is required.
 
-All five HTML pages are explicit build entries. Vite uses multi-page mode so missing JSON files return a real 404 instead of the homepage. `public/` is copied unchanged. The relative base, page links, and JSON URLs support a subdirectory deployment. `dist/` can be served by any static HTTPS host without Node, Vite+, or Vercel. Test with `vp preview` or an ordinary static server rooted at `dist/`. Keep a stable production origin for local progress; preview URLs have separate browser storage.
+All six HTML pages are explicit build entries. Vite uses multi-page mode so missing JSON files return a real 404 instead of the homepage. `public/` is copied unchanged. The relative base, page links, and JSON URLs support a subdirectory deployment. `dist/` can be served by any static HTTPS host without Node, Vite+, or Vercel. Test with `vp preview` or an ordinary static server rooted at `dist/`. Keep a stable production origin for local progress; preview URLs have separate browser storage.
 
 ## Dependencies and design
 
@@ -59,7 +59,7 @@ History search matches episode/course text and video IDs; status filters disting
 
 ## Milestone verification
 
-`pnpm build` runs formatting, lint, strict type checks, colocated tests, and all five HTML build entries. Automated checks cover catalog contracts, query matching, course detail loading, progress transitions and persistence, blocked storage, preserving future-schema records, and player lifecycle/error behavior. Player tests use a boundary fake; they do not replace real browser playback verification. Local browser checks confirmed no YouTube frames/scripts before the load action, real playback with pause saving, a saved resume choice after reload, manual completion surviving reload and appearing on the course page, confirmed reset, next-episode navigation, and the watch layout at 390px without horizontal overflow. The built watch page also loaded correctly in the production preview. Milestone 3 browser checks also covered empty history, persisted history and resume links, status filters and reset, a 1-of-10 completion count, most-recent-first ordering, 390px mobile layout, tablet navigation bounds, and recovery while the catalog file was temporarily unavailable. Cross-browser Safari, Firefox, and mobile playback checks remain part of release validation.
+`pnpm build` runs formatting, lint, strict type checks, colocated tests, and all six HTML build entries. Automated checks cover catalog contracts, query matching, course detail loading, progress transitions and persistence, blocked storage, preserving future-schema records, and player lifecycle/error behavior. Player tests use a boundary fake; they do not replace real browser playback verification. Local browser checks confirmed no YouTube frames/scripts before the load action, real playback with pause saving, a saved resume choice after reload, manual completion surviving reload and appearing on the course page, confirmed reset, next-episode navigation, and the watch layout at 390px without horizontal overflow. The built watch page also loaded correctly in the production preview. Milestone 3 browser checks also covered empty history, persisted history and resume links, status filters and reset, a 1-of-10 completion count, most-recent-first ordering, 390px mobile layout, tablet navigation bounds, and recovery while the catalog file was temporarily unavailable. Cross-browser Safari, Firefox, and mobile playback checks remain part of release validation.
 
 Milestone 1 also passed an HTTP portability check with all pages/data/assets served under a nested subdirectory. There is no SPA rewrite. No deployment has been created.
 
@@ -110,3 +110,17 @@ Milestone 4 checks cover content for all ten lessons, validation, scoring, answe
 Manual quiz checks confirmed correct and incorrect feedback, answer locking, reload persistence, retained best scores after retry, keyboard focus on feedback and the new round, 390px answer-card layout without horizontal overflow, and production-preview recovery after quiz content was temporarily unavailable. Watch progress stayed unchanged while answering.
 
 Quiz review added regression checks for inherited-property question IDs, inconsistent best scores, and revision records stored under the wrong key. The real missing-quiz state was verified in the browser with the quiz file temporarily moved and then restored.
+
+## Data backups
+
+`settings.html` manages version-1 JSON backups containing video records and quiz attempts across all revisions, independent of catalog availability. Files are limited to 5 MiB and 10,000 total records. Unknown fields, unsupported versions, duplicates, invalid IDs, and non-finite/out-of-range values are rejected before any write. Imports replace rather than merge. No file is uploaded. Unknown or unreadable saved records block export instead of being silently omitted.
+
+Before import or clearing, close other site tabs. An open player can otherwise save stale progress; multi-tab coordination is intentionally not promised. Download a current backup before replacing data. A backup can be empty; restoring it clears current records.
+
+`data/` owns the backup contract and repository; `site/infrastructure/storage-coordinator.ts` owns serialized raw storage operations. It persists a recovery snapshot in `data_settings` before replacing the two data stores. Removing the recovery entry commits the change. Failures attempt rollback; an interrupted operation rolls back before any page reads or writes after reload. Unknown recovery formats are preserved and block writes. If storage is unavailable, the usual temporary-progress warnings remain in place. No schema migrations are needed for this initial version; future versions must be explicitly supported.
+
+Milestone 5 release work still includes the full browser matrix and deployment validation.
+
+Manual data-page verification confirmed a real JSON download, invalid-file rejection without changing record counts, explicit clear confirmation, and restoring the downloaded backup after clearing. The counts and saved watch/quiz records returned after restoration.
+
+The data page also passed a 390px layout check without horizontal overflow. Cross-browser release testing remains outstanding.

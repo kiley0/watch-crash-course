@@ -6,7 +6,7 @@ Production domain: `watchcrashcourse.com`. Repository and local folder: `watch-c
 
 Build a quiet, dependable place to work through Crash Course courses in playlist order, resume videos, see progress, and answer review questions. Favor files and browser standards that will remain understandable and inexpensive to host for years.
 
-Milestones 1–4 are implemented locally: responsive catalog/course pages, the complete Study Skills fixture, search/filtering, about/privacy, embedded playback after a user action, resume, local video progress, completion/reset, course completion summaries, continue learning, searchable history, and a Vite+ multi-page static build. Optional fan-made quizzes now cover all ten Study Skills episodes, with explanations, retries, saved answers, best scores, and video review links. Backups remain the next milestone. Deployment has not been performed.
+Milestones 1–4 are implemented locally: responsive catalog/course pages, the complete Study Skills fixture, search/filtering, about/privacy, embedded playback after a user action, resume, local video progress, completion/reset, course completion summaries, continue learning, searchable history, and a Vite+ multi-page static build. Optional fan-made quizzes now cover all ten Study Skills episodes, with explanations, retries, saved answers, best scores, and video review links. Milestone 5 data controls are implemented locally: versioned export/import, validated replacement, confirmed clearing, and interruption recovery. Broader browser/release checks remain; deployment has not been performed.
 
 ## Architectural decisions
 

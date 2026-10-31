@@ -5,7 +5,14 @@ export default defineConfig({
   appType: "mpa",
   build: {
     rolldownOptions: {
-      input: ["index.html", "course.html", "about.html", "watch.html", "history.html"],
+      input: [
+        "index.html",
+        "course.html",
+        "about.html",
+        "watch.html",
+        "history.html",
+        "settings.html",
+      ],
     },
   },
   fmt: {},

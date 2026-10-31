@@ -10,6 +10,7 @@ course.html                             Course page markup
 about.html                              About/privacy markup
 watch.html                              Playback, resume, and episode navigation
 history.html                            Latest saved video activity and filters
+settings.html                           Backup download, replacement import, clear confirmation
 src/
   catalog/                              Courses and their ordered episodes
     domain/
@@ -47,8 +48,14 @@ src/
     presentation/quiz-panel.ts          Watch-page Alpine state and interactions
     presentation/quiz-questions.ts      Answer labels, feedback, and video review links
     presentation/quiz.css               Quiz cards and feedback styles
+  data/
+    domain/backup.ts                    Versioned backup validation and limits
+    infrastructure/data-repository.ts   Export and replacement workflows across both domains
+    presentation/settings-page.ts       File choice, download, confirmations, feedback
+    presentation/settings.css           Data settings cards and responsive layout
   site/                                 Shared site identity and informational UI
-    infrastructure/browser-storage.ts   Database identity and localForage store creation
+    infrastructure/browser-storage.ts   Database identity and coordinated store creation
+    infrastructure/storage-coordinator.ts Serialized reads/writes and recoverable replacement
     styles.css                          Shared design tokens, components, responsive rules
     about-page.ts                       About-page entry and surprise toggle
     reload-on-restore.ts                Refresh stale views restored by browser history
@@ -112,3 +119,9 @@ Authored content sources and review guidance live in [QUIZ_CONTENT.md](./QUIZ_CO
 ## Project identity and storage
 
 The site is Watch Crash Course (`watch-crash-course`), with intended production origin `https://watchcrashcourse.com`. The site infrastructure owns the database identity and creates localForage stores in `watch-crash-course`. Learning and quizzes use separate stores and validate their own records. Browser storage is scoped to the site origin.
+
+## Data portability
+
+`data/domain/backup.ts` composes learning and quiz record validators without importing their presentation or infrastructure. Structural quiz record validation lives in `quizzes/domain/quiz.ts` so backups do not require the currently published questions. `data/infrastructure/data-repository.ts` maps validated records to namespaced storage keys. The settings page never reads localForage directly.
+
+All browser storage calls pass through the site infrastructure coordinator. A recovery journal records both raw stores before a destructive operation. It is removed only after both stores are replaced; startup recovery runs before ordinary reads/writes. The coordinator knows storage names and raw keys, not learning rules. Import/export and recovery tests are colocated. Other site tabs must be closed before replacement to avoid stale writes.

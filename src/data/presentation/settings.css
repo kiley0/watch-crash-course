@@ -1,0 +1,80 @@
+.settings-main {
+  padding-block: 28px 64px;
+}
+.settings-heading {
+  max-width: 760px;
+  margin: 24px 0 32px;
+}
+.settings-heading h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin: 12px 0;
+}
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.data-card {
+  border: 1px solid var(--line, #d5dbcc);
+  border-radius: 24px;
+  padding: clamp(20px, 4vw, 32px);
+  background: #eef1df;
+}
+.data-card:nth-child(2) {
+  background: #eeedf8;
+}
+.data-card h2 {
+  margin: 10px 0;
+}
+.data-card p {
+  max-width: 62ch;
+}
+.data-card input[type="file"] {
+  display: block;
+  width: 100%;
+  margin: 16px 0;
+  font: inherit;
+}
+.data-card input::file-selector-button {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #6b796e;
+  margin-right: 8px;
+  background: #fffdf8;
+  color: #203631;
+  cursor: pointer;
+}
+.data-confirm {
+  margin-top: 24px;
+  background: #fffdf8;
+  border: 2px solid #6b796e;
+  padding: 20px;
+  border-radius: 18px;
+}
+.data-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+.data-clear {
+  margin-top: 24px;
+  background: #fbede3;
+}
+.data-note {
+  margin-block: 24px;
+  max-width: 80ch;
+}
+@media (max-width: 680px) {
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.settings-main .back-link {
+  margin: 0 0 24px;
+}
+.settings-heading {
+  margin-top: 0;
+}

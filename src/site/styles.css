@@ -724,7 +724,7 @@ select {
   font-size: 10px;
   color: #64705f;
 }
-.footer-inner > a:last-child {
+.footer-inner > a:not(.footer-brand) {
   font-size: 11px;
 }
 /* Loading, error, and empty states */
@@ -1257,7 +1257,7 @@ select {
   .footer-brand {
     font-size: 12px;
   }
-  .footer-inner > a:last-child {
+  .footer-inner > a:not(.footer-brand) {
     font-size: 10px;
   }
   .course-hero {

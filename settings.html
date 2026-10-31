@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fbf7ee" />
+    <meta
+      name="description"
+      content="Download, restore, or clear your saved Watch Crash Course learning data."
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Your data · Watch Crash Course</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./index.html" aria-label="Watch Crash Course home"
+          ><span class="brand-mark" aria-hidden="true">✳</span
+          ><span>WATCH<span class="brand-sub">CRASH COURSE</span></span></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="./index.html#courses">Explore courses</a>
+          <a href="./history.html">Your history</a>
+          <a href="./settings.html" aria-current="page">Your data</a
+          ><a href="./about.html">About the project</a>
+        </nav>
+        <a class="fan-badge" href="./about.html"
+          ><strong>Unofficial · Fan-made</strong><span>Unaffiliated with Crash Course</span></a
+        >
+      </div>
+    </header>
+
+    <main id="main" class="wrap settings-main" x-data="settingsPage">
+      <a class="back-link" href="./index.html#courses">Back to the course shelf</a>
+      <header class="settings-heading">
+        <h1>Your data</h1>
+        <p>Your watch progress and quiz answers are saved in this browser.</p>
+      </header>
+      <noscript
+        ><p class="notice">
+          Enable JavaScript to manage saved data.
+          <a href="https://www.youtube.com/user/crashcourse">Visit Crash Course on YouTube</a>.
+        </p></noscript
+      >
+      <p x-show="loading" role="status">Checking your saved data…</p>
+      <p x-cloak x-show="error" class="notice" role="alert" x-text="error"></p>
+      <p
+        id="data-message"
+        tabindex="-1"
+        x-cloak
+        x-show="message"
+        class="notice"
+        role="status"
+        x-text="message"
+      ></p>
+      <p x-cloak x-show="busy" role="status">Saving… Keep this page open.</p>
+      <div x-cloak x-show="!loading">
+        <p x-text="summary"></p>
+        <button id="refresh-data" class="text-button" @click="checkData" :disabled="busy">
+          Refresh
+        </button>
+        <p class="data-note">Close other site tabs before importing or clearing data.</p>
+        <div class="settings-grid">
+          <section class="data-card">
+            <h2>Export data</h2>
+            <p>Download your progress and quiz answers as a JSON file.</p>
+            <button class="button button-dark" @click="download" :disabled="!canExport">
+              Download backup
+            </button>
+          </section>
+          <section class="data-card">
+            <h2>Import data</h2>
+            <p>Restore a backup. JSON files only, up to 5 MB. Nothing is uploaded.</p>
+            <label for="backup-file">Choose a backup file</label
+            ><input
+              id="backup-file"
+              type="file"
+              accept=".json,application/json"
+              @change="chooseFile"
+              :disabled="busy"
+            />
+            <div
+              class="data-confirm"
+              x-show="pending"
+              @keydown.escape="cancelImport"
+              role="group"
+              aria-label="Confirm backup replacement"
+            >
+              <h3>Replace current data?</h3>
+              <p x-text="importSummary"></p>
+              <p>
+                This replaces all saved progress and quiz answers. Export a backup first to keep
+                them.
+              </p>
+              <div class="data-actions">
+                <button
+                  id="confirm-import"
+                  class="button button-dark"
+                  @click="confirmImport"
+                  :disabled="busy"
+                >
+                  Replace data</button
+                ><button class="text-button" @click="cancelImport" :disabled="busy">Cancel</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="data-card data-clear">
+          <h2>Clear data</h2>
+          <p>Delete all progress and quiz answers saved in this browser.</p>
+          <button
+            id="clear-data"
+            class="text-button"
+            @click="requestClear"
+            :disabled="busy"
+            :aria-expanded="clearPending"
+            aria-controls="clear-confirmation"
+          >
+            Clear data…
+          </button>
+          <div
+            id="clear-confirmation"
+            class="data-confirm"
+            x-show="clearPending"
+            @keydown.escape="cancelClear"
+            role="group"
+            aria-label="Confirm clearing saved data"
+          >
+            <h3>Clear all saved data?</h3>
+            <p>You’ll need a backup to restore it.</p>
+            <div class="data-actions">
+              <button class="text-button" @click="download" :disabled="!canExport">
+                Export backup first</button
+              ><button
+                id="confirm-clear"
+                class="button button-dark"
+                @click="clear"
+                :disabled="busy"
+              >
+                Clear data</button
+              ><button class="text-button" @click="cancelClear" :disabled="busy">Cancel</button>
+            </div>
+          </div>
+        </section>
+        <p class="data-note">
+          <a href="./about.html#privacy">Privacy</a> ·
+          <a href="./history.html">History</a>
+        </p>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="footer-brand" href="./index.html">✳ &nbsp; Watch Crash Course</a>
+        <p>
+          An unofficial, unaffiliated fan-made website. Videos by
+          <a href="https://www.youtube.com/user/crashcourse"
+            >Crash Course
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="./icons.svg#external-link"></use></svg></a
+          >.<br />No accounts. Just curiosity.
+          <abbr title="Don’t forget to be awesome">DFTBA.</abbr>
+        </p>
+        <a href="./settings.html">Your data</a>
+        <a href="./about.html">About &amp; privacy</a>
+      </div>
+    </footer>
+    <script type="module" src="./src/data/presentation/settings-page.ts"></script>
+  </body>
+</html>
