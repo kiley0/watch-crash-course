@@ -1,0 +1,77 @@
+{
+  "courseId": "ecology",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "The History of Life on Earth",
+      "videoId": "sjE-Pkjp3u4",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-life-on-earth-crash-course-ecology-1/"
+    },
+    {
+      "number": 2,
+      "title": "Population Ecology – The Texas Mosquito Mystery",
+      "videoId": "RBOsqmBQBQk",
+      "sourceUrl": "https://thecrashcourse.com/courses/population-ecology-the-texas-mosquito-mystery-crash-course-ecology-2/"
+    },
+    {
+      "number": 3,
+      "title": "Human Population Growth",
+      "videoId": "E8dkWQVFAoA",
+      "sourceUrl": "https://thecrashcourse.com/courses/human-population-growth-crash-course-ecology-3/"
+    },
+    {
+      "number": 4,
+      "title": "Community Ecology – Feel the Love",
+      "videoId": "GxE1SSqbSn4",
+      "sourceUrl": "https://thecrashcourse.com/courses/community-ecology-feel-the-love-crash-course-ecology-4/"
+    },
+    {
+      "number": 5,
+      "title": "Community Ecology II – Predators",
+      "videoId": "mFDiiSqGB7M",
+      "sourceUrl": "https://thecrashcourse.com/courses/community-ecology-ii-predators-crash-course-ecology-5/"
+    },
+    {
+      "number": 6,
+      "title": "Ecological Succession – Change is Good",
+      "videoId": "jZKIHe2LDP8",
+      "sourceUrl": "https://thecrashcourse.com/courses/ecological-succession-change-is-good-crash-course-ecology-6/"
+    },
+    {
+      "number": 7,
+      "title": "Ecosystem Ecology – Links in the Chain",
+      "videoId": "v6ubvEJ3KGM",
+      "sourceUrl": "https://thecrashcourse.com/courses/ecosystem-ecology-links-in-the-chain-crash-course-ecology-7/"
+    },
+    {
+      "number": 8,
+      "title": "The Hydrologic and Carbon Cycles – Always Recycle!",
+      "videoId": "2D7hZpIYlCA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-hydrologic-and-carbon-cycles-always-recycle-crash-course-ecology-8/"
+    },
+    {
+      "number": 9,
+      "title": "Nitrogen & Phosphorus Cycles – Always Recycle! Part 2",
+      "videoId": "leHy-Y_8nRs",
+      "sourceUrl": "https://thecrashcourse.com/courses/nitrogen-phosphorus-cycles-always-recycle-part-2-crash-course-ecology-9/"
+    },
+    {
+      "number": 10,
+      "title": "5 Human Impacts on the Environment",
+      "videoId": "5eTCZ9L834s",
+      "sourceUrl": "https://thecrashcourse.com/courses/5-human-impacts-on-the-environment-crash-course-ecology-10/"
+    },
+    {
+      "number": 11,
+      "title": "Pollution",
+      "videoId": "kdDSRRCKMiI",
+      "sourceUrl": "https://thecrashcourse.com/courses/pollution-crash-course-ecology-11/"
+    },
+    {
+      "number": 12,
+      "title": "Conservation and Restoration Ecology",
+      "videoId": "Kaeyr5-O2eU",
+      "sourceUrl": "https://thecrashcourse.com/courses/conservation-and-restoration-ecology-crash-course-ecology-12/"
+    }
+  ]
+}

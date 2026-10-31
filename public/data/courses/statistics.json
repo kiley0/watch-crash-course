@@ -1,0 +1,269 @@
+{
+  "courseId": "statistics",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What Is Statistics?",
+      "videoId": "sxQaBpKfDRk",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-statistics-crash-course-statistics-1/"
+    },
+    {
+      "number": 2,
+      "title": "Mathematical Thinking",
+      "videoId": "tN9Xl1AcSv8",
+      "sourceUrl": "https://thecrashcourse.com/courses/mathematical-thinking-crash-course-statistics-2/"
+    },
+    {
+      "number": 3,
+      "title": "Mean, Median, and Mode: Measures of Central Tendency",
+      "videoId": "kn83BA7cRNM",
+      "sourceUrl": "https://thecrashcourse.com/courses/mean-median-and-mode-measures-of-central-tendency-crash-course-statistics-3/"
+    },
+    {
+      "number": 4,
+      "title": "Measures of Spread",
+      "videoId": "R4yfNi_8Kqw",
+      "sourceUrl": "https://thecrashcourse.com/courses/measures-of-spread-crash-course-statistics-4/"
+    },
+    {
+      "number": 5,
+      "title": "Charts Are Like Pasta – Data Visualization Part 1",
+      "videoId": "hEWY6kkBdpo",
+      "sourceUrl": "https://thecrashcourse.com/courses/charts-are-like-pasta-data-visualization-part-1-crash-course-statistics-5/"
+    },
+    {
+      "number": 6,
+      "title": "Plots, Outliers, and Justin Timberlake: Data Visualization, Part 2",
+      "videoId": "HMkllhBI91Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/plots-outliers-and-justin-timberlake-data-visualization-part-2-crash-course-statistics-6/"
+    },
+    {
+      "number": 7,
+      "title": "The Shape of Data: Distributions",
+      "videoId": "bPFNxD3Yg6U",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-shape-of-data-distributions-crash-course-statistics-7/"
+    },
+    {
+      "number": 8,
+      "title": "Correlation Doesn’t Equal Causation",
+      "videoId": "GtV-VYdNt_g",
+      "sourceUrl": "https://thecrashcourse.com/courses/correlation-doesnt-equal-causation-crash-course-statistics-8/"
+    },
+    {
+      "number": 9,
+      "title": "Controlled Experiments",
+      "videoId": "kkBDa-ICvyY",
+      "sourceUrl": "https://thecrashcourse.com/courses/controlled-experiments-crash-course-statistics-9/"
+    },
+    {
+      "number": 10,
+      "title": "Sampling Methods and Bias with Surveys",
+      "videoId": "Rf-fIpB4D50",
+      "sourceUrl": "https://thecrashcourse.com/courses/sampling-methods-and-bias-with-surveys-crash-course-statistics-10/"
+    },
+    {
+      "number": 11,
+      "title": "Science Journalism",
+      "videoId": "ZwqOoD17_LU",
+      "sourceUrl": "https://thecrashcourse.com/courses/science-journalism-crash-course-statistics-11/"
+    },
+    {
+      "number": 12,
+      "title": "Henrietta Lacks, the Tuskegee Experiment, and Ethical Data Collection",
+      "videoId": "CzNANZnoiRs",
+      "sourceUrl": "https://thecrashcourse.com/courses/henrietta-lacks-the-tuskegee-experiment-and-ethical-data-collection-crash-course-statistics-12/"
+    },
+    {
+      "number": 13,
+      "title": "Probability, Part 1 – Rules and Patterns",
+      "videoId": "OyddY7DlV58",
+      "sourceUrl": "https://thecrashcourse.com/courses/probability-part-1-rules-and-patterns-crash-course-statistics-13/"
+    },
+    {
+      "number": 14,
+      "title": "Probability, Part 2 – Updating Your Beliefs with Bayes",
+      "videoId": "oZCskBpHWyk",
+      "sourceUrl": "https://thecrashcourse.com/courses/probability-part-2-updating-your-beliefs-with-bayes-crash-course-statistics-14/"
+    },
+    {
+      "number": 15,
+      "title": "The Binomial Distribution",
+      "videoId": "WR0nMTr6uOo",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-binomial-distribution-crash-course-statistics-15/"
+    },
+    {
+      "number": 16,
+      "title": "Geometric Distributions and The Birthday Paradox",
+      "videoId": "5VMTeBoEcQg",
+      "sourceUrl": "https://thecrashcourse.com/courses/geometric-distributions-and-the-birthday-paradox-crash-course-statistics-16/"
+    },
+    {
+      "number": 17,
+      "title": "Randomness",
+      "videoId": "jL9en6NvQfk",
+      "sourceUrl": "https://thecrashcourse.com/courses/randomness-crash-course-statistics-17/"
+    },
+    {
+      "number": 18,
+      "title": "Z-Scores and Percentiles",
+      "videoId": "uAxyI_XfqXk",
+      "sourceUrl": "https://thecrashcourse.com/courses/z-scores-and-percentiles-crash-course-statistics-18/"
+    },
+    {
+      "number": 19,
+      "title": "The Normal Distribution",
+      "videoId": "rBjft49MAO8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-normal-distribution-crash-course-statistics-19/"
+    },
+    {
+      "number": 20,
+      "title": "Confidence Intervals",
+      "videoId": "yDEvXB6ApWc",
+      "sourceUrl": "https://thecrashcourse.com/courses/confidence-intervals-crash-course-statistics-20/"
+    },
+    {
+      "number": 21,
+      "title": "How P-Values Help Us Test Hypotheses",
+      "videoId": "bf3egy7TQ2Q",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-p-values-help-us-test-hypotheses-crash-course-statistics-21/"
+    },
+    {
+      "number": 22,
+      "title": "P-Value Problems",
+      "videoId": "PPD8lER8ju4",
+      "sourceUrl": "https://thecrashcourse.com/courses/p-value-problems-crash-course-statistics-22/"
+    },
+    {
+      "number": 23,
+      "title": "Playing with Power: P-Values, Part 3",
+      "videoId": "WWagtGT1zH4",
+      "sourceUrl": "https://thecrashcourse.com/courses/playing-with-power-p-values-pt-3-crash-course-statistics-23/"
+    },
+    {
+      "number": 24,
+      "title": "You Know I’m All About that Bayes",
+      "videoId": "9TDjifpGj-k",
+      "sourceUrl": "https://thecrashcourse.com/courses/you-know-im-all-about-that-bayes-crash-course-statistics-24/"
+    },
+    {
+      "number": 25,
+      "title": "Bayes in Science and Everyday Life",
+      "videoId": "51bLRF02b4w",
+      "sourceUrl": "https://thecrashcourse.com/courses/bayes-in-science-and-everyday-life-crash-course-statistics-25/"
+    },
+    {
+      "number": 26,
+      "title": "Test Statistics",
+      "videoId": "QZ7kgmhdIwA",
+      "sourceUrl": "https://thecrashcourse.com/courses/test-statistics-crash-course-statistics-26/"
+    },
+    {
+      "number": 27,
+      "title": "T-Tests – A Matched Pair Made in Heaven",
+      "videoId": "AGh66ZPpOSQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/t-tests-a-matched-pair-made-in-heaven-crash-course-statistics-27/"
+    },
+    {
+      "number": 28,
+      "title": "Degrees of Freedom and Effect Sizes",
+      "videoId": "Cm0vFoGVMB8",
+      "sourceUrl": "https://thecrashcourse.com/courses/degrees-of-freedom-and-effect-sizes-crash-course-statistics-28/"
+    },
+    {
+      "number": 29,
+      "title": "Chi-Square Tests",
+      "videoId": "7_cs1YlZoug",
+      "sourceUrl": "https://thecrashcourse.com/courses/chi-square-tests-crash-course-statistics-29/"
+    },
+    {
+      "number": 30,
+      "title": "P-Hacking",
+      "videoId": "Gx0fAjNHb1M",
+      "sourceUrl": "https://thecrashcourse.com/courses/p-hacking-crash-course-statistics-30/"
+    },
+    {
+      "number": 31,
+      "title": "The Replication Crisis",
+      "videoId": "vBzEGSm23y8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-replication-crisis-crash-course-statistics-31/"
+    },
+    {
+      "number": 32,
+      "title": "Regression",
+      "videoId": "WWqE7YHR4Jc",
+      "sourceUrl": "https://thecrashcourse.com/courses/regression-crash-course-statistics-32/"
+    },
+    {
+      "number": 33,
+      "title": "ANOVA",
+      "videoId": "oOuu8IBd-yo",
+      "sourceUrl": "https://thecrashcourse.com/courses/anova-crash-course-statistics-33/"
+    },
+    {
+      "number": 34,
+      "title": "ANOVA Part 2: Dealing with Intersectional Groups",
+      "videoId": "wo1xlefg5KI",
+      "sourceUrl": "https://thecrashcourse.com/courses/anova-part-2-dealing-with-intersectional-groups-crash-course-statistics-34/"
+    },
+    {
+      "number": 35,
+      "title": "Fitting Models is Like Tetris",
+      "videoId": "QdmG6uUtB4o",
+      "sourceUrl": "https://thecrashcourse.com/courses/fitting-models-is-like-tetris-crash-course-statistics-35/"
+    },
+    {
+      "number": 36,
+      "title": "Supervised Machine Learning",
+      "videoId": "jmLid2x9eKg",
+      "sourceUrl": "https://thecrashcourse.com/courses/supervised-machine-learning-crash-course-statistics-36/"
+    },
+    {
+      "number": 37,
+      "title": "Unsupervised Machine Learning",
+      "videoId": "IUn8k5zSI6g",
+      "sourceUrl": "https://thecrashcourse.com/courses/unsupervised-machine-learning-crash-course-statistics-37/"
+    },
+    {
+      "number": 38,
+      "title": "Intro to Big Data",
+      "videoId": "vku2Bw7Vkfs",
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-big-data-crash-course-statistics-38/"
+    },
+    {
+      "number": 39,
+      "title": "Big Data Problems",
+      "videoId": "Im3GkAYUivE",
+      "sourceUrl": "https://thecrashcourse.com/courses/big-data-problems-crash-course-statistics-39/"
+    },
+    {
+      "number": 40,
+      "title": "Statistics in the Courts",
+      "videoId": "HqH-6yw60m0",
+      "sourceUrl": "https://thecrashcourse.com/courses/statistics-in-the-courts-crash-course-statistics-40/"
+    },
+    {
+      "number": 41,
+      "title": "Neural Networks",
+      "videoId": "JBlm4wnjNMY",
+      "sourceUrl": "https://thecrashcourse.com/courses/neural-networks-crash-course-statistics-41/"
+    },
+    {
+      "number": 42,
+      "title": "War",
+      "videoId": "rRhHY7Mh5T0",
+      "sourceUrl": "https://thecrashcourse.com/courses/war-crash-course-statistics-42/"
+    },
+    {
+      "number": 43,
+      "title": "When Predictions Fail",
+      "videoId": "5l60dMUhY5o",
+      "sourceUrl": "https://thecrashcourse.com/courses/when-predictions-fail-crash-course-statistics-43/"
+    },
+    {
+      "number": 44,
+      "title": "When Predictions Succeed",
+      "videoId": "uJFdLKkuYc4",
+      "sourceUrl": "https://thecrashcourse.com/courses/when-predictions-succeed-crash-course-statistics-44/"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "courseId": "linguistics",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "What is Linguistics?",
+      "videoId": "3yLXNzDUH58",
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-linguistics-crash-course-linguistics-1/"
+    },
+    {
+      "number": 2,
+      "title": "Morphology",
+      "videoId": "93sK4jTGrss",
+      "sourceUrl": "https://thecrashcourse.com/courses/morphology-crash-course-linguistics-2/"
+    },
+    {
+      "number": 3,
+      "title": "Syntax – Morphosyntax",
+      "videoId": "B1r1grQiLdk",
+      "sourceUrl": "https://thecrashcourse.com/courses/syntax-morphosyntax-crash-course-linguistics-3/"
+    },
+    {
+      "number": 4,
+      "title": "Syntax – Trees",
+      "videoId": "n1zpnN-6pZQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/syntax-trees-crash-course-linguistics-4/"
+    },
+    {
+      "number": 5,
+      "title": "Semantics",
+      "videoId": "6geQjY8b7sA",
+      "sourceUrl": "https://thecrashcourse.com/courses/semantics-crash-course-linguistics-5/"
+    },
+    {
+      "number": 6,
+      "title": "Pragmatics",
+      "videoId": "MPwpk-YgvjQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/pragmatics-crash-course-linguistics-6/"
+    },
+    {
+      "number": 7,
+      "title": "Sociolinguistics",
+      "videoId": "of4XzrbkknM",
+      "sourceUrl": "https://thecrashcourse.com/courses/sociolinguistics-crash-course-linguistics-7/"
+    },
+    {
+      "number": 8,
+      "title": "Phonetics – Consonants",
+      "videoId": "vyea8Ph9BOM",
+      "sourceUrl": "https://thecrashcourse.com/courses/phonetics-consonants-crash-course-linguistics-8/"
+    },
+    {
+      "number": 9,
+      "title": "Phonetics – Vowels",
+      "videoId": "qPTL5x0QW-Y",
+      "sourceUrl": "https://thecrashcourse.com/courses/phonetics-vowels-crash-course-linguistics-9/"
+    },
+    {
+      "number": 10,
+      "title": "Phonology",
+      "videoId": "imH7hdOgxrU",
+      "sourceUrl": "https://thecrashcourse.com/courses/phonology-crash-course-linguistics-10/"
+    },
+    {
+      "number": 11,
+      "title": "Psycholinguistics",
+      "videoId": "A5uNFKEn4_A",
+      "sourceUrl": "https://thecrashcourse.com/courses/psycholinguistics-crash-course-linguistics-11/"
+    },
+    {
+      "number": 12,
+      "title": "Language Acquisition",
+      "videoId": "Ccsf0yX7ECg",
+      "sourceUrl": "https://thecrashcourse.com/courses/language-acquisition-crash-course-linguistics-12/"
+    },
+    {
+      "number": 13,
+      "title": "Language Change and Historical Linguistics",
+      "videoId": "dNkMC92kFLA",
+      "sourceUrl": "https://thecrashcourse.com/courses/language-change-and-historical-linguistics-crash-course-linguistics-13/"
+    },
+    {
+      "number": 14,
+      "title": "World Languages",
+      "videoId": "Nxyo83cQjhI",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-languages-crash-course-linguistics-14/"
+    },
+    {
+      "number": 15,
+      "title": "Computational Linguistics",
+      "videoId": "3npuPXvA_g8",
+      "sourceUrl": "https://thecrashcourse.com/courses/computational-linguistics-crash-course-linguistics-15/"
+    },
+    {
+      "number": 16,
+      "title": "Writing Systems",
+      "videoId": "-sUUWyo4RZQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/writing-systems-crash-course-linguistics-16/"
+    }
+  ]
+}

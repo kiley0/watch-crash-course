@@ -6,7 +6,7 @@ Production domain: `watchcrashcourse.com`. Repository and local folder: `watch-c
 
 Build a quiet, dependable place to work through Crash Course courses in playlist order, resume videos, and see progress. Favor files and browser standards that will remain understandable and inexpensive to host for years.
 
-The pilot is live on Vercel at `watchcrashcourse.com`, with playback, local progress, history, data controls, and completed release checks. The first catalog expansion added World History and Biology. The current local expansion adds Astronomy, Philosophy, and Computer Science using the same static data model; see the post-pilot milestones below.
+The pilot is live on Vercel at `watchcrashcourse.com`, with playback, local progress, history, data controls, and completed release checks. The first catalog expansion added World History and Biology. The next expansion added Astronomy, Philosophy, and Computer Science. The current local expansions add Chemistry, Psychology, Economics, U.S. History, Physics, Linguistics, Statistics, Media Literacy, and Ecology using the same static data model; see the post-pilot milestones below.
 
 ## Architectural decisions
 
@@ -259,3 +259,15 @@ Add the complete World History series (42 numbered episodes, John Green) and the
 ### 6. Astronomy, Philosophy, and Computer Science
 
 Add 46 numbered Astronomy episodes, 46 Philosophy episodes, and 40 Computer Science episodes. Preserve the static catalog and derive subject filters from data. Include Computer Science #40 from its verified official YouTube upload because it is absent from the website’s topic listing. Exclude previews, bonus tours, and related demonstration embeds. Validate all course files, verify first/last navigation, and check playback, independent progress, and long course titles at narrow widths. No new dependencies are needed.
+
+### 7. Chemistry, Psychology, and Economics
+
+Add 46 Chemistry lessons, 40 Psychology lessons, and 35 Economics lessons, bringing the catalog to nine courses and 355 numbered episodes. Verify every official lesson embed and playlist, exclude unnumbered introductions, extend the catalog contract checks, and check subject filters, first/last navigation, playback, saved resume, and narrow layouts. Keep the static JSON structure and existing runtime dependencies.
+
+### 8. U.S. History, Physics, and Linguistics
+
+Add 47 numbered U.S. History lessons, 46 Physics lessons, and 16 Linguistics lessons, bringing the catalog to twelve courses and 464 lessons. Verify official lesson embeds and playlists, exclude previews and the unnumbered U.S. History special, and sort episode 25 into its numbered position. Extend existing catalog contract checks and verify search, course boundaries, playback, resume, and narrow layouts. Preserve static JSON and existing dependencies.
+
+### 9. Statistics, Media Literacy, and Ecology
+
+Add 44 Statistics lessons, 12 Media Literacy lessons, and 12 Ecology lessons, bringing the catalog to fifteen courses and 532 lessons. Verify official episode embeds and playlists, exclude unnumbered extras, and sort Statistics lessons by number. Extend catalog contract checks, introduce the data-derived Mathematics subject, and verify filtering, playback, resume, final-lesson navigation, and narrow layouts. Keep static JSON and existing dependencies.

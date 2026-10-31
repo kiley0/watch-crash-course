@@ -1,0 +1,77 @@
+{
+  "courseId": "media-literacy",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Introduction to Media Literacy",
+      "videoId": "AD7N-1Mj-DU",
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-media-literacy-crash-course-media-literacy-1/"
+    },
+    {
+      "number": 2,
+      "title": "History of Media Literacy, Part 1",
+      "videoId": "oXf0F4GYzWQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/history-of-media-literacy-part-1-crash-course-media-literacy-2/"
+    },
+    {
+      "number": 3,
+      "title": "History of Media Literacy, Part 2",
+      "videoId": "9iUjvNtgWAs",
+      "sourceUrl": "https://thecrashcourse.com/courses/history-of-media-literacy-part-2-crash-course-media-literacy-3/"
+    },
+    {
+      "number": 4,
+      "title": "Media & the Mind",
+      "videoId": "TAdkzxB4WFo",
+      "sourceUrl": "https://thecrashcourse.com/courses/media-the-mind-crash-course-media-literacy-4/"
+    },
+    {
+      "number": 5,
+      "title": "Media & Money",
+      "videoId": "QpYrSLiIoKo",
+      "sourceUrl": "https://thecrashcourse.com/courses/media-money-crash-course-media-literacy-5/"
+    },
+    {
+      "number": 6,
+      "title": "Influence & Persuasion",
+      "videoId": "VXhLmkrN0-I",
+      "sourceUrl": "https://thecrashcourse.com/courses/influence-persuasion-crash-course-media-literacy-6/"
+    },
+    {
+      "number": 7,
+      "title": "Online Advertising",
+      "videoId": "cmRcoJZRXEY",
+      "sourceUrl": "https://thecrashcourse.com/courses/online-advertising-crash-course-media-literacy-7/"
+    },
+    {
+      "number": 8,
+      "title": "Media Ownership",
+      "videoId": "DvSTlxJsKzE",
+      "sourceUrl": "https://thecrashcourse.com/courses/media-ownership-crash-course-media-literacy-8/"
+    },
+    {
+      "number": 9,
+      "title": "Media Policy & You",
+      "videoId": "TVaZnxYKKdM",
+      "sourceUrl": "https://thecrashcourse.com/courses/media-policy-you-crash-course-media-literacy-9/"
+    },
+    {
+      "number": 10,
+      "title": "The Dark(er) Side of Media",
+      "videoId": "rR7j11Wpjiw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-darker-side-of-media-crash-course-media-literacy-10/"
+    },
+    {
+      "number": 11,
+      "title": "Media Skills",
+      "videoId": "Be-A-sCIMpg",
+      "sourceUrl": "https://thecrashcourse.com/courses/media-skills-crash-course-media-literacy-11/"
+    },
+    {
+      "number": 12,
+      "title": "Future Literacies",
+      "videoId": "Q_aXzpeam0s",
+      "sourceUrl": "https://thecrashcourse.com/courses/future-literacies-crash-course-media-literacy-12/"
+    }
+  ]
+}

@@ -424,6 +424,12 @@ select {
 .course-art[data-subject="Humanities"] {
   background: #f2dfa9;
 }
+.course-art[data-subject="Mathematics"] {
+  background: #bfded7;
+}
+.course-art[data-subject="Social sciences"] {
+  background: #f3cbd4;
+}
 .course-art[data-subject="Technology"] {
   background: #c5dbe6;
 }

@@ -1,0 +1,281 @@
+{
+  "courseId": "physics",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Motion in a Straight Line",
+      "videoId": "ZM8ECpBuQYE",
+      "sourceUrl": "https://thecrashcourse.com/courses/motion-in-a-straight-line-crash-course-physics-1/"
+    },
+    {
+      "number": 2,
+      "title": "Derivatives",
+      "videoId": "ObHJJYvu3RE",
+      "sourceUrl": "https://thecrashcourse.com/courses/derivatives-crash-course-physics-2/"
+    },
+    {
+      "number": 3,
+      "title": "Integrals",
+      "videoId": "jLJLXka2wEM",
+      "sourceUrl": "https://thecrashcourse.com/courses/integrals-crash-course-physics-3/"
+    },
+    {
+      "number": 4,
+      "title": "Vectors and 2D Motion",
+      "videoId": "w3BhzYI6zXU",
+      "sourceUrl": "https://thecrashcourse.com/courses/vectors-and-2d-motion-crash-course-physics-4/"
+    },
+    {
+      "number": 5,
+      "title": "Newton’s Laws",
+      "videoId": "kKKM8Y-u7ds",
+      "sourceUrl": "https://thecrashcourse.com/courses/newtons-laws-crash-course-physics-5/"
+    },
+    {
+      "number": 6,
+      "title": "Friction",
+      "videoId": "fo_pmp5rtzo",
+      "sourceUrl": "https://thecrashcourse.com/courses/friction-crash-course-physics-6/"
+    },
+    {
+      "number": 7,
+      "title": "Uniform Circular Motion",
+      "videoId": "bpFK2VCRHUs",
+      "sourceUrl": "https://thecrashcourse.com/courses/uniform-circular-motion-crash-course-physics-7/"
+    },
+    {
+      "number": 8,
+      "title": "Newtonian Gravity",
+      "videoId": "7gf6YpdvtE0",
+      "sourceUrl": "https://thecrashcourse.com/courses/newtonian-gravity-crash-course-physics-8/"
+    },
+    {
+      "number": 9,
+      "title": "Work, Energy, and Power",
+      "videoId": "w4QFJb9a8vo",
+      "sourceUrl": "https://thecrashcourse.com/courses/work-energy-and-power-crash-course-physics-9/"
+    },
+    {
+      "number": 10,
+      "title": "Collisions",
+      "videoId": "Y-QOfc2XqOk",
+      "sourceUrl": "https://thecrashcourse.com/courses/collisions-crash-course-physics-10/"
+    },
+    {
+      "number": 11,
+      "title": "Rotational Motion",
+      "videoId": "fmXFWi-WfyU",
+      "sourceUrl": "https://thecrashcourse.com/courses/rotational-motion-crash-course-physics-11/"
+    },
+    {
+      "number": 12,
+      "title": "Torque",
+      "videoId": "b-HZ1SZPaQw",
+      "sourceUrl": "https://thecrashcourse.com/courses/torque-crash-course-physics-12/"
+    },
+    {
+      "number": 13,
+      "title": "Statics",
+      "videoId": "9cbF9A6eQNA",
+      "sourceUrl": "https://thecrashcourse.com/courses/statics-crash-course-physics-13/"
+    },
+    {
+      "number": 14,
+      "title": "Fluids at Rest",
+      "videoId": "b5SqYuWT4-4",
+      "sourceUrl": "https://thecrashcourse.com/courses/fluids-at-rest-crash-course-physics-14/"
+    },
+    {
+      "number": 15,
+      "title": "Fluids in Motion",
+      "videoId": "fJefjG3xhW0",
+      "sourceUrl": "https://thecrashcourse.com/courses/fluids-in-motion-crash-course-physics-15/"
+    },
+    {
+      "number": 16,
+      "title": "Simple Harmonic Motion",
+      "videoId": "jxstE6A_CYQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/simple-harmonic-motion-crash-course-physics-16/"
+    },
+    {
+      "number": 17,
+      "title": "Traveling Waves",
+      "videoId": "TfYCnOvNnFU",
+      "sourceUrl": "https://thecrashcourse.com/courses/traveling-waves-crash-course-physics-17/"
+    },
+    {
+      "number": 18,
+      "title": "Sound",
+      "videoId": "qV4lR9EWGlY",
+      "sourceUrl": "https://thecrashcourse.com/courses/sound-crash-course-physics-18/"
+    },
+    {
+      "number": 19,
+      "title": "The Physics of Music",
+      "videoId": "XDsk6tZX55g",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-physics-of-music-crash-course-physics-19/"
+    },
+    {
+      "number": 20,
+      "title": "Temperature",
+      "videoId": "6BHbJ_gBOk0",
+      "sourceUrl": "https://thecrashcourse.com/courses/temperature-crash-course-physics-20/"
+    },
+    {
+      "number": 21,
+      "title": "Kinetic Theory and Phase Changes",
+      "videoId": "WOEvvHbc240",
+      "sourceUrl": "https://thecrashcourse.com/courses/kinetic-theory-and-phase-changes-crash-course-physics-21/"
+    },
+    {
+      "number": 22,
+      "title": "The Physics of Heat",
+      "videoId": "tuSC0ObB-qY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-physics-of-heat-crash-course-physics-22/"
+    },
+    {
+      "number": 23,
+      "title": "Thermodynamics",
+      "videoId": "4i1MUWJoI0U",
+      "sourceUrl": "https://thecrashcourse.com/courses/thermodynamics-crash-course-physics-23/"
+    },
+    {
+      "number": 24,
+      "title": "Engines",
+      "videoId": "p1woKh2mdVQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/engines-crash-course-physics-24/"
+    },
+    {
+      "number": 25,
+      "title": "Electric Charge",
+      "videoId": "TFlVWf8JX4A",
+      "sourceUrl": "https://thecrashcourse.com/courses/electric-charge-crash-course-physics-25/"
+    },
+    {
+      "number": 26,
+      "title": "Electric Fields",
+      "videoId": "mdulzEfQXDE",
+      "sourceUrl": "https://thecrashcourse.com/courses/electric-fields-crash-course-physics-26/"
+    },
+    {
+      "number": 27,
+      "title": "Voltage, Electric Energy, and Capacitors",
+      "videoId": "ZrMltpK6iAw",
+      "sourceUrl": "https://thecrashcourse.com/courses/voltage-electric-energy-and-capacitors-crash-course-physics-27/"
+    },
+    {
+      "number": 28,
+      "title": "Electric Current",
+      "videoId": "HXOok3mfMLM",
+      "sourceUrl": "https://thecrashcourse.com/courses/electric-current-crash-course-physics-28/"
+    },
+    {
+      "number": 29,
+      "title": "DC Resistors & Batteries",
+      "videoId": "g-wjP1otQWI",
+      "sourceUrl": "https://thecrashcourse.com/courses/dc-resistors-batteries-crash-course-physics-29/"
+    },
+    {
+      "number": 30,
+      "title": "Circuit Analysis",
+      "videoId": "-w-VTw0tQlE",
+      "sourceUrl": "https://thecrashcourse.com/courses/circuit-analysis-crash-course-physics-30/"
+    },
+    {
+      "number": 31,
+      "title": "Capacitors and Kirchhoff",
+      "videoId": "vuCJP_5KOlI",
+      "sourceUrl": "https://thecrashcourse.com/courses/capacitors-and-kirchhoff-crash-course-physics-31/"
+    },
+    {
+      "number": 32,
+      "title": "Magnetism",
+      "videoId": "s94suB5uLWw",
+      "sourceUrl": "https://thecrashcourse.com/courses/magnetism-crash-course-physics-32/"
+    },
+    {
+      "number": 33,
+      "title": "Ampère’s Law",
+      "videoId": "5fqwJyt4Lus",
+      "sourceUrl": "https://thecrashcourse.com/courses/amperes-law-crash-course-physics-33/"
+    },
+    {
+      "number": 34,
+      "title": "Induction – An Introduction",
+      "videoId": "pQp6bmJPU_0",
+      "sourceUrl": "https://thecrashcourse.com/courses/induction-an-introduction-crash-course-physics-34/"
+    },
+    {
+      "number": 35,
+      "title": "How Power Gets to Your Home",
+      "videoId": "9kgzA0Vd8S8",
+      "sourceUrl": "https://thecrashcourse.com/courses/how-power-gets-to-your-home-crash-course-physics-35/"
+    },
+    {
+      "number": 36,
+      "title": "AC Circuits",
+      "videoId": "Jveer7vhjGo",
+      "sourceUrl": "https://thecrashcourse.com/courses/ac-circuits-crash-course-physics-36/"
+    },
+    {
+      "number": 37,
+      "title": "Maxwell’s Equations",
+      "videoId": "K40lNL3KsJ4",
+      "sourceUrl": "https://thecrashcourse.com/courses/maxwells-equations-crash-course-physics-37/"
+    },
+    {
+      "number": 38,
+      "title": "Geometric Optics",
+      "videoId": "Oh4m8Ees-3Q",
+      "sourceUrl": "https://thecrashcourse.com/courses/geometric-optics-crash-course-physics-38/"
+    },
+    {
+      "number": 39,
+      "title": "Light Is Waves",
+      "videoId": "IRBfpBPELmE",
+      "sourceUrl": "https://thecrashcourse.com/courses/light-is-waves-crash-course-physics-39/"
+    },
+    {
+      "number": 40,
+      "title": "Spectra Interference",
+      "videoId": "-ob7foUzXaY",
+      "sourceUrl": "https://thecrashcourse.com/courses/spectra-interference-crash-course-physics-40/"
+    },
+    {
+      "number": 41,
+      "title": "Optical Instruments",
+      "videoId": "SddBPTcmqOk",
+      "sourceUrl": "https://thecrashcourse.com/courses/optical-instruments-crash-course-physics-41/"
+    },
+    {
+      "number": 42,
+      "title": "Special Relativity",
+      "videoId": "AInCqm5nCzw",
+      "sourceUrl": "https://thecrashcourse.com/courses/special-relativity-crash-course-physics-42/"
+    },
+    {
+      "number": 43,
+      "title": "Quantum Mechanics – Part 1",
+      "videoId": "7kb1VT0J3DE",
+      "sourceUrl": "https://thecrashcourse.com/courses/quantum-mechanics-part-1-crash-course-physics-43/"
+    },
+    {
+      "number": 44,
+      "title": "Quantum Mechanics – Part 2",
+      "videoId": "qO_W70VegbQ",
+      "sourceUrl": "https://thecrashcourse.com/courses/quantum-mechanics-part-2-crash-course-physics-44/"
+    },
+    {
+      "number": 45,
+      "title": "Nuclear Physics",
+      "videoId": "lUhJL7o6_cA",
+      "sourceUrl": "https://thecrashcourse.com/courses/nuclear-physics-crash-course-physics-45/"
+    },
+    {
+      "number": 46,
+      "title": "Astrophysics and Cosmology",
+      "videoId": "VYxYuaDvdM0",
+      "sourceUrl": "https://thecrashcourse.com/courses/astrophysics-and-cosmology-crash-course-physics-46/"
+    }
+  ]
+}

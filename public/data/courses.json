@@ -64,5 +64,104 @@
     "playlistId": "PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
     "sourceUrl": "https://thecrashcourse.com/topic/computerscience/",
     "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "chemistry",
+    "title": "Chemistry",
+    "subject": "Science",
+    "host": "Hank Green",
+    "episodeCount": 46,
+    "description": "Explore atoms, bonds, and reactions to understand what matter is made of and how it changes.",
+    "playlistId": "PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr",
+    "sourceUrl": "https://thecrashcourse.com/topic/chemistry/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "psychology",
+    "title": "Psychology",
+    "subject": "Social sciences",
+    "host": "Hank Green",
+    "episodeCount": 40,
+    "description": "Explore how we think, learn, and relate to one another, from the workings of the brain to the influence of a group.",
+    "playlistId": "PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6",
+    "sourceUrl": "https://thecrashcourse.com/topic/psychology/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "economics",
+    "title": "Economics",
+    "subject": "Social sciences",
+    "host": "Adriene Hill and Jacob Clifford",
+    "episodeCount": 35,
+    "description": "Follow the choices behind markets, money, and public policy. Connect everyday decisions with the forces shaping an economy.",
+    "playlistId": "PL8dPuuaLjXtPNZwz5_o_5uirJ8gQXnhEO",
+    "sourceUrl": "https://thecrashcourse.com/topic/economics/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "us-history",
+    "title": "U.S. History",
+    "subject": "History",
+    "host": "John Green",
+    "episodeCount": 47,
+    "description": "Trace the people, conflicts, and ideas that shaped the United States, from early encounters through the Obama presidency.",
+    "playlistId": "PL8dPuuaLjXtMwmepBjTSG593eG7ObzO7s",
+    "sourceUrl": "https://thecrashcourse.com/topic/ushistory/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "physics",
+    "title": "Physics",
+    "subject": "Science",
+    "host": "Dr. Shini Somara",
+    "episodeCount": 46,
+    "description": "Explore motion, energy, waves, and electricity. Connect everyday observations with the laws that describe our physical world.",
+    "playlistId": "PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV",
+    "sourceUrl": "https://thecrashcourse.com/topic/physics/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "linguistics",
+    "title": "Linguistics",
+    "subject": "Humanities",
+    "host": "Taylor Behnke",
+    "episodeCount": 16,
+    "description": "Discover how languages work, from sounds and sentence structure to meaning, social connections, and the ways language changes.",
+    "playlistId": "PL8dPuuaLjXtP5mp25nStsuDzk2blncJDW",
+    "sourceUrl": "https://thecrashcourse.com/topic/linguistics/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "statistics",
+    "title": "Statistics",
+    "subject": "Mathematics",
+    "host": "Adriene Hill",
+    "episodeCount": 44,
+    "description": "Make sense of data, chance, and uncertainty. Learn how to ask better questions about numbers, studies, and predictions.",
+    "playlistId": "PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr",
+    "sourceUrl": "https://thecrashcourse.com/topic/statistics/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "media-literacy",
+    "title": "Media Literacy",
+    "subject": "Social sciences",
+    "host": "Jay Smooth",
+    "episodeCount": 12,
+    "description": "Look closely at the messages around you. Explore who makes media, how it influences us, and how to participate thoughtfully.",
+    "playlistId": "PL8dPuuaLjXtM6jSpzb5gMNsx9kdmqBfmY",
+    "sourceUrl": "https://thecrashcourse.com/topic/medialiteracy/",
+    "reviewedAt": "2026-10-30"
+  },
+  {
+    "id": "ecology",
+    "title": "Ecology",
+    "subject": "Science",
+    "host": "Hank Green",
+    "episodeCount": 12,
+    "description": "Follow the connections between organisms and their environments, from growing populations to ecosystems and conservation.",
+    "playlistId": "PL8dPuuaLjXtNdTKZkV_GiIYXpV9w4WxbX",
+    "sourceUrl": "https://thecrashcourse.com/topic/ecology/",
+    "reviewedAt": "2026-10-30"
   }
 ]

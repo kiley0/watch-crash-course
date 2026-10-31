@@ -1,0 +1,215 @@
+{
+  "courseId": "economics",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Intro to Economics",
+      "videoId": "3ez10ADR_gM",
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-economics-crash-course-econ-1/"
+    },
+    {
+      "number": 2,
+      "title": "Specialization and Trade",
+      "videoId": "NI9TLDIPVcs",
+      "sourceUrl": "https://thecrashcourse.com/courses/specialization-and-trade-crash-course-economics-2/"
+    },
+    {
+      "number": 3,
+      "title": "Economic Systems and Macroeconomics",
+      "videoId": "B43YEW2FvDs",
+      "sourceUrl": "https://thecrashcourse.com/courses/economic-systems-and-macroeconomics-crash-course-economics-3/"
+    },
+    {
+      "number": 4,
+      "title": "Supply and Demand",
+      "videoId": "g9aDizJpd_s",
+      "sourceUrl": "https://thecrashcourse.com/courses/supply-and-demand-crash-course-economics-4/"
+    },
+    {
+      "number": 5,
+      "title": "Macroeconomics",
+      "videoId": "d8uTB5XorBw",
+      "sourceUrl": "https://thecrashcourse.com/courses/macroeconomics-crash-course-economics-5/"
+    },
+    {
+      "number": 6,
+      "title": "Productivity and Growth",
+      "videoId": "UHiUYj5EA0w",
+      "sourceUrl": "https://thecrashcourse.com/courses/productivity-and-growth-crash-course-economics-6/"
+    },
+    {
+      "number": 7,
+      "title": "Inflation and Bubbles and Tulips",
+      "videoId": "T8-85cZRI9o",
+      "sourceUrl": "https://thecrashcourse.com/courses/inflation-and-bubbles-and-tulips-crash-course-economics-7/"
+    },
+    {
+      "number": 8,
+      "title": "Fiscal Policy and Stimulus",
+      "videoId": "otmgFQHbaDo",
+      "sourceUrl": "https://thecrashcourse.com/courses/fiscal-policy-and-stimulus-crash-course-economics-8/"
+    },
+    {
+      "number": 9,
+      "title": "Deficits & Debts",
+      "videoId": "3sUCSGVYzI0",
+      "sourceUrl": "https://thecrashcourse.com/courses/deficits-debts-crash-course-economics-9/"
+    },
+    {
+      "number": 10,
+      "title": "What’s all the Yellen About? Monetary Policy and the Federal Reserve",
+      "videoId": "1dq7mMort9o",
+      "sourceUrl": "https://thecrashcourse.com/courses/whats-all-the-yellen-about-monetary-policy-and-the-federal-reserve-crash-course-economics-10/"
+    },
+    {
+      "number": 11,
+      "title": "Money and Finance",
+      "videoId": "Dugn51K_6WA",
+      "sourceUrl": "https://thecrashcourse.com/courses/money-and-finance-crash-course-economics-11/"
+    },
+    {
+      "number": 12,
+      "title": "The 2008 Financial Crisis",
+      "videoId": "GPOv72Awo68",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-2008-financial-crisis-crash-course-economics-12/"
+    },
+    {
+      "number": 13,
+      "title": "Recession, Hyperinflation, and Stagflation",
+      "videoId": "BHw4NStQsT8",
+      "sourceUrl": "https://thecrashcourse.com/courses/recession-hyperinflation-and-stagflation-crash-course-econ-13/"
+    },
+    {
+      "number": 14,
+      "title": "Economic Schools of Thought",
+      "videoId": "tZvjh1dxz08",
+      "sourceUrl": "https://thecrashcourse.com/courses/economic-schools-of-thought-crash-course-economics-14/"
+    },
+    {
+      "number": 15,
+      "title": "Imports, Exports, and Exchange Rates",
+      "videoId": "geoe-6NBy10",
+      "sourceUrl": "https://thecrashcourse.com/courses/imports-exports-and-exchange-rates-crash-course-economics-15/"
+    },
+    {
+      "number": 16,
+      "title": "Globalization and Trade and Poverty",
+      "videoId": "9MpVjxxpExM",
+      "sourceUrl": "https://thecrashcourse.com/courses/globalization-and-trade-and-poverty-crash-course-economics-16/"
+    },
+    {
+      "number": 17,
+      "title": "Income and Wealth Inequality",
+      "videoId": "0xMCWr0O3Hs",
+      "sourceUrl": "https://thecrashcourse.com/courses/income-and-wealth-inequality-crash-course-economics/"
+    },
+    {
+      "number": 18,
+      "title": "Marginal Analysis, Roller Coasters, Elasticity, and Van Gogh",
+      "videoId": "3midaQqm7NM",
+      "sourceUrl": "https://thecrashcourse.com/courses/marginal-analysis-roller-coasters-elasticity-and-van-gogh-crash-course-econ-18/"
+    },
+    {
+      "number": 19,
+      "title": "Markets, Efficiency, and Price Signals",
+      "videoId": "eNxk5-EJFrY",
+      "sourceUrl": "https://thecrashcourse.com/courses/markets-efficiency-and-price-signals-crash-course-economics-19/"
+    },
+    {
+      "number": 20,
+      "title": "Price Controls, Subsidies, and the Risks of Good Intentions",
+      "videoId": "01lKDkYSFDg",
+      "sourceUrl": "https://thecrashcourse.com/courses/price-controls-subsidies-and-the-risks-of-good-intentions-crash-course-economics-20/"
+    },
+    {
+      "number": 21,
+      "title": "Market Failures, Taxes, and Subsidies",
+      "videoId": "13JOGWzY8kE",
+      "sourceUrl": "https://thecrashcourse.com/courses/market-failures-taxes-and-subsidies-crash-course-economics-21/"
+    },
+    {
+      "number": 22,
+      "title": "Environmental Econ",
+      "videoId": "BlAfFgKQ5r8",
+      "sourceUrl": "https://thecrashcourse.com/courses/environmental-econ-crash-course-economics-22/"
+    },
+    {
+      "number": 23,
+      "title": "Economics of Education",
+      "videoId": "8lPbkHVxenU",
+      "sourceUrl": "https://thecrashcourse.com/courses/economics-of-education-crash-course-economics-23/"
+    },
+    {
+      "number": 24,
+      "title": "Revenue, Profits, and Price",
+      "videoId": "UWImfFax8Ew",
+      "sourceUrl": "https://thecrashcourse.com/courses/revenue-profits-and-price-crash-course-economics-24/"
+    },
+    {
+      "number": 25,
+      "title": "Monopolies and Anti-Competitive Markets",
+      "videoId": "Sb_-wfmJnHA",
+      "sourceUrl": "https://thecrashcourse.com/courses/monopolies-and-anti-competitive-markets-crash-course-economics-25/"
+    },
+    {
+      "number": 26,
+      "title": "Game Theory and Oligopoly",
+      "videoId": "PCcVODWm-oY",
+      "sourceUrl": "https://thecrashcourse.com/courses/game-theory-and-oligopoly-crash-course-economics-26/"
+    },
+    {
+      "number": 27,
+      "title": "Behavioral Economics",
+      "videoId": "dqxQ3E1bubI",
+      "sourceUrl": "https://thecrashcourse.com/courses/behavioral-economics-crash-course-econ-27/"
+    },
+    {
+      "number": 28,
+      "title": "Labor Markets and Minimum Wage",
+      "videoId": "mWwXmH-n5Bo",
+      "sourceUrl": "https://thecrashcourse.com/courses/labor-markets-and-minimum-wage-crash-course-economics-28/"
+    },
+    {
+      "number": 29,
+      "title": "The Economics of Healthcare",
+      "videoId": "cbBKoyjFLUY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-economics-of-healthcare-crash-course-econ-29/"
+    },
+    {
+      "number": 30,
+      "title": "The Economics of Death",
+      "videoId": "AecowUb79Xk",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-economics-of-death-crash-course-econ-30/"
+    },
+    {
+      "number": 31,
+      "title": "Taxes",
+      "videoId": "7Qtr_vA3Prw",
+      "sourceUrl": "https://thecrashcourse.com/courses/taxes-crash-course-economics-31/"
+    },
+    {
+      "number": 32,
+      "title": "The Underground Economy",
+      "videoId": "joG6-QZc-fw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-underground-economy-crash-course-econ-32/"
+    },
+    {
+      "number": 33,
+      "title": "The Economics of Immigration",
+      "videoId": "4XQXiCLzyAw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-economics-of-immigration-crash-course-econ-33/"
+    },
+    {
+      "number": 34,
+      "title": "Foreign Aid and Remittance",
+      "videoId": "tAvA_cOeeOI",
+      "sourceUrl": "https://thecrashcourse.com/courses/foreign-aid-and-remittance-crash-course-econ-34/"
+    },
+    {
+      "number": 35,
+      "title": "The Economics of Happiness",
+      "videoId": "O-t8-Vq0HO0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-economics-of-happiness-crash-course-econ-35/"
+    }
+  ]
+}

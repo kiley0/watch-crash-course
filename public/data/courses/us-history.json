@@ -1,0 +1,287 @@
+{
+  "courseId": "us-history",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "The Black Legend, Native Americans, and Spaniards",
+      "videoId": "6E9WU9TGrec",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-black-legend-native-americans-and-spaniards-crash-course-us-history-1/"
+    },
+    {
+      "number": 2,
+      "title": "When is Thanksgiving? Colonizing America",
+      "videoId": "o69TvQqyGdg",
+      "sourceUrl": "https://thecrashcourse.com/courses/when-is-thanksgiving-colonizing-america-crash-course-us-history-2/"
+    },
+    {
+      "number": 3,
+      "title": "The Natives and the English",
+      "videoId": "TTYOQ05oDOI",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-natives-and-the-english-crash-course-us-history-3/"
+    },
+    {
+      "number": 4,
+      "title": "The Quakers, the Dutch, and the Ladies",
+      "videoId": "p47tZLJbdag",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-quakers-the-dutch-and-the-ladies-crash-course-us-history-4/"
+    },
+    {
+      "number": 5,
+      "title": "The Seven Years War and the Great Awakening",
+      "videoId": "5vKGU3aEGss",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-seven-years-war-and-the-great-awakening-crash-course-us-history-5/"
+    },
+    {
+      "number": 6,
+      "title": "Taxes & Smuggling – Prelude to Revolution",
+      "videoId": "Eytc9ZaNWyc",
+      "sourceUrl": "https://thecrashcourse.com/courses/taxes-smuggling-prelude-to-revolution-crash-course-us-history-6/"
+    },
+    {
+      "number": 7,
+      "title": "Who Won the American Revolution?",
+      "videoId": "3EiSymRrKI4",
+      "sourceUrl": "https://thecrashcourse.com/courses/who-won-the-american-revolution-crash-course-us-history-7/"
+    },
+    {
+      "number": 8,
+      "title": "The Constitution, the Articles, and Federalism",
+      "videoId": "bO7FQsCcbD8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-constitution-the-articles-and-federalism-crash-course-us-history-8/"
+    },
+    {
+      "number": 9,
+      "title": "Where US Politics Came From",
+      "videoId": "r161cLYzuDI",
+      "sourceUrl": "https://thecrashcourse.com/courses/where-us-politics-came-from-crash-course-us-history-9/"
+    },
+    {
+      "number": 10,
+      "title": "Thomas Jefferson & His Democracy",
+      "videoId": "_3Ox6vGteek",
+      "sourceUrl": "https://thecrashcourse.com/courses/thomas-jefferson-his-democracy-crash-course-us-history-10/"
+    },
+    {
+      "number": 11,
+      "title": "The War of 1812",
+      "videoId": "qMXqg2PKJZU",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-war-of-1812-crash-course-us-history-11/"
+    },
+    {
+      "number": 12,
+      "title": "The Market Revolution",
+      "videoId": "RNftCCwAol0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-market-revolution-crash-course-us-history-12/"
+    },
+    {
+      "number": 13,
+      "title": "Slavery",
+      "videoId": "Ajn9g5Gsv98",
+      "sourceUrl": "https://thecrashcourse.com/courses/slavery-crash-course-us-history-13/"
+    },
+    {
+      "number": 14,
+      "title": "Age of Jackson",
+      "videoId": "beN4qE-e5O8",
+      "sourceUrl": "https://thecrashcourse.com/courses/age-of-jackson-crash-course-us-history-14/"
+    },
+    {
+      "number": 15,
+      "title": "19th Century Reforms",
+      "videoId": "t62fUZJvjOs",
+      "sourceUrl": "https://thecrashcourse.com/courses/19th-century-reforms-crash-course-us-history-15/"
+    },
+    {
+      "number": 16,
+      "title": "Women in the 19th Century",
+      "videoId": "fM1czS_VYDI",
+      "sourceUrl": "https://thecrashcourse.com/courses/women-in-the-19th-century-crash-course-us-history-16/"
+    },
+    {
+      "number": 17,
+      "title": "War & Expansion",
+      "videoId": "tkdF8pOFUfI",
+      "sourceUrl": "https://thecrashcourse.com/courses/war-expansion-crash-course-us-history-17/"
+    },
+    {
+      "number": 18,
+      "title": "The Election of 1860 & the Road to Disunion",
+      "videoId": "roNmeOOJCDY",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-election-of-1860-the-road-to-disunion-crash-course-us-history-18/"
+    },
+    {
+      "number": 19,
+      "title": "Battles of the Civil War",
+      "videoId": "25HHVDOaGeE",
+      "sourceUrl": "https://thecrashcourse.com/courses/battles-of-the-civil-war-crash-course-us-history-19/"
+    },
+    {
+      "number": 20,
+      "title": "The Civil War, Part 1",
+      "videoId": "rY9zHNOjGrs",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-civil-war-part-i-crash-course-us-history-20/"
+    },
+    {
+      "number": 21,
+      "title": "The Civil War, Part 2",
+      "videoId": "GzTrKccmj_I",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-civil-war-part-2-crash-course-us-history-21/"
+    },
+    {
+      "number": 22,
+      "title": "Reconstruction and 1876",
+      "videoId": "nowsS7pMApI",
+      "sourceUrl": "https://thecrashcourse.com/courses/reconstruction-and-1876-crash-course-us-history-22/"
+    },
+    {
+      "number": 23,
+      "title": "The Industrial Economy",
+      "videoId": "r6tRp-zRUJs",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-industrial-economy-crash-course-us-history-23/"
+    },
+    {
+      "number": 24,
+      "title": "Westward Expansion",
+      "videoId": "Q16OZkgSXfM",
+      "sourceUrl": "https://thecrashcourse.com/courses/westward-expansion-crash-course-us-history-24/"
+    },
+    {
+      "number": 25,
+      "title": "Growth, Cities, and Immigration",
+      "videoId": "RRhjqqe750A",
+      "sourceUrl": "https://thecrashcourse.com/courses/growth-cities-and-immigration-crash-course-us-history-25/"
+    },
+    {
+      "number": 26,
+      "title": "Gilded Age Politics",
+      "videoId": "Spgdy3HkcSs",
+      "sourceUrl": "https://thecrashcourse.com/courses/gilded-age-politicscrash-course-us-history-26/"
+    },
+    {
+      "number": 27,
+      "title": "The Progressive Era",
+      "videoId": "i0Q4zPR4G7M",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-progressive-era-crash-course-us-history-27/"
+    },
+    {
+      "number": 28,
+      "title": "American Imperialism",
+      "videoId": "QfsfoFqsFk4",
+      "sourceUrl": "https://thecrashcourse.com/courses/american-imperialism-crash-course-us-history-28/"
+    },
+    {
+      "number": 29,
+      "title": "Progressive Presidents",
+      "videoId": "F7flSW1PGsA",
+      "sourceUrl": "https://thecrashcourse.com/courses/progressive-presidents-crash-course-us-history-29/"
+    },
+    {
+      "number": 30,
+      "title": "America in World War I",
+      "videoId": "y59wErqg4Xg",
+      "sourceUrl": "https://thecrashcourse.com/courses/america-in-world-war-i-crash-course-us-history-30/"
+    },
+    {
+      "number": 31,
+      "title": "Women’s Suffrage",
+      "videoId": "HGEMscZE5dY",
+      "sourceUrl": "https://thecrashcourse.com/courses/womens-suffrage-crash-course-us-history-31/"
+    },
+    {
+      "number": 32,
+      "title": "The Roaring 20’s",
+      "videoId": "VfOR1XCMf7A",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-roaring-20s-crash-course-us-history-32/"
+    },
+    {
+      "number": 33,
+      "title": "The Great Depression",
+      "videoId": "GCQfMWAikyU",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-great-depression-crash-course-us-history-33/"
+    },
+    {
+      "number": 34,
+      "title": "The New Deal",
+      "videoId": "6bMq9Ek6jnA",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-new-deal-crash-course-us-history-34/"
+    },
+    {
+      "number": 35,
+      "title": "World War II, Part 1",
+      "videoId": "Objoad6rG6U",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-war-ii-part-1-crash-course-us-history-35/"
+    },
+    {
+      "number": 36,
+      "title": "World War II, Part 2 – The Homefront",
+      "videoId": "HofnGQwPgqs",
+      "sourceUrl": "https://thecrashcourse.com/courses/world-war-ii-part-2-the-homefront-crash-course-us-history-36/"
+    },
+    {
+      "number": 37,
+      "title": "The Cold War",
+      "videoId": "9C72ISMF_D0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-cold-war-crash-course-us-history-37/"
+    },
+    {
+      "number": 38,
+      "title": "The Cold War in Asia",
+      "videoId": "Y2IcmLkuhG0",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-cold-war-in-asia-crash-course-us-history-38/"
+    },
+    {
+      "number": 39,
+      "title": "Civil Rights and the 1950s",
+      "videoId": "S64zRnnn4Po",
+      "sourceUrl": "https://thecrashcourse.com/courses/civil-rights-and-the-1950s-crash-course-us-history-39/"
+    },
+    {
+      "number": 40,
+      "title": "The 1960s in America",
+      "videoId": "lkXFb1sMa38",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-1960s-in-america-crash-course-us-history-40/"
+    },
+    {
+      "number": 41,
+      "title": "The Rise of Conservatism",
+      "videoId": "OCrxD19DHA8",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-rise-of-conservatism-crash-course-us-history-41/"
+    },
+    {
+      "number": 42,
+      "title": "Ford, Carter, and the Economic Malaise",
+      "videoId": "pyN5LPHEQ_0",
+      "sourceUrl": "https://thecrashcourse.com/courses/ford-carter-and-the-economic-malaise-crash-course-us-history-42/"
+    },
+    {
+      "number": 43,
+      "title": "The Reagan Revolution",
+      "videoId": "2h4DkpFP_aw",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-reagan-revolution-crash-course-us-history-43/"
+    },
+    {
+      "number": 44,
+      "title": "George HW Bush and the End of the Cold War",
+      "videoId": "L-K19rVDxoM",
+      "sourceUrl": "https://thecrashcourse.com/courses/george-hw-bush-and-the-end-of-the-cold-war-crash-course-us-history-44/"
+    },
+    {
+      "number": 45,
+      "title": "The Clinton Years, or the 1990s",
+      "videoId": "-rboN6F2g-k",
+      "sourceUrl": "https://thecrashcourse.com/courses/the-clinton-years-or-the-1990s-crash-course-us-history-45/"
+    },
+    {
+      "number": 46,
+      "title": "Terrorism, War, and Bush 43",
+      "videoId": "nlsnnhn3VWE",
+      "sourceUrl": "https://thecrashcourse.com/courses/terrorism-war-and-bush-43-crash-course-us-history-46/"
+    },
+    {
+      "number": 47,
+      "title": "Obamanation",
+      "videoId": "lUfh2ebjLOg",
+      "sourceUrl": "https://thecrashcourse.com/courses/obamanation-crash-course-us-history-47/"
+    }
+  ]
+}
