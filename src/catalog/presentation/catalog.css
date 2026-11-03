@@ -166,7 +166,7 @@
     gap: 32px;
   }
   .shelf-books {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 190px));
     padding: 12px 12px 0;
     gap: 22px 14px;
   }
@@ -180,7 +180,7 @@
     border-left-width: 6px;
   }
   .book-cover .book-title {
-    font-size: 21px;
+    font-size: 18px;
   }
   .book-series {
     letter-spacing: 1px;
@@ -188,17 +188,6 @@
   }
   .shelf-heading h3 {
     font-size: 23px;
-  }
-}
-@media (max-width: 480px) {
-  .shelf-books {
-    grid-template-columns: 1fr;
-  }
-  .book-cover {
-    min-height: 290px;
-  }
-  .book-cover .book-title {
-    font-size: 26px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -251,11 +240,6 @@
 @media (max-width: 650px) {
   .recent-shelf .shelf-heading h2 {
     font-size: 23px;
-  }
-}
-@media (max-width: 480px) {
-  .book-cover .book-title-long {
-    font-size: 22px;
   }
 }
 
