@@ -1,3 +1,4 @@
+import { readPlayerMode } from "../infrastructure/player-preference";
 import { trackVideoPlay } from "../../site/infrastructure/analytics";
 import { setIdleBeanPlayback } from "../../site/presentation/idle-bean";
 import { createWatchingMode } from "./watching-mode";
@@ -23,6 +24,8 @@ import { reloadOnRestore } from "../../site/reload-on-restore";
 import { watchUrl } from "./watch-links";
 
 Alpine.data("watchPage", () => {
+  // Snapshot once per page visit; settings in another tab must not interrupt playback.
+  const playerMode = readPlayerMode();
   let session: PlayerSession | undefined;
   let watchingMode: ReturnType<typeof createWatchingMode> | undefined;
   let disposed = false;
@@ -234,6 +237,7 @@ Alpine.data("watchPage", () => {
           // Buffering preserves the current appearance; only actual play starts dimming.
           if (!playing) watchingMode?.setPlaying(false);
         },
+        playerMode,
       );
       session = currentSession;
       try {

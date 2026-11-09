@@ -152,3 +152,7 @@ All HTML entries load `src/site/idle-bean.ts`. The decorative idle timer and ani
 ## Watching mode
 
 `playback/presentation/watching-mode.ts` owns the watch-page dimming timer and activity listeners. Watch presentation starts it only on actual playback and restores it on pause, end, errors, or navigation; buffering preserves its current state. A pointer-transparent CSS scrim dims the surrounding UI while the player container stays above it. Focus outside the player, reduced motion, and background tabs prevent dimming. The controller has no player, persistence, or analytics dependency.
+
+## YouTube player preference
+
+`playback/domain/player-mode.ts` owns the two allowed modes and their embed hosts. `playback/infrastructure/player-preference.ts` stores the choice under a separate localStorage key, defaulting to privacy-enhanced mode when missing, invalid, or unavailable. Watch presentation snapshots the mode once per page visit and passes it to the player adapter; retries use that same choice. Settings changes never replace an active player in another tab. This preference is independent of progress backups, progress clearing, and analytics. Standard YouTube can use account-connected viewing when browser and YouTube settings allow it; history updates are not guaranteed.

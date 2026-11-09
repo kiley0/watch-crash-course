@@ -1,3 +1,6 @@
+import { playerHost } from "../domain/player-mode";
+import type { PlayerMode } from "../domain/player-mode";
+
 interface YouTubePlayer {
   getCurrentTime(): number;
   getDuration(): number;
@@ -69,6 +72,7 @@ export function createYouTubePlayer(
   onError: (message: string) => void,
   onPlay: () => void = () => {},
   onPlayingChange: (playing: boolean) => void = () => {},
+  mode: PlayerMode = "privacy-enhanced",
 ): PlayerSession {
   let player: YouTubePlayer | undefined;
   let timer: ReturnType<typeof setInterval> | undefined;
@@ -105,7 +109,7 @@ export function createYouTubePlayer(
       );
       player = new api.Player(target, {
         videoId,
-        host: "https://www.youtube-nocookie.com",
+        host: playerHost(mode),
         playerVars: { origin: window.location.origin, playsinline: 1, autoplay: 0 },
         events: {
           onReady(event) {

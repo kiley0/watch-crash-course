@@ -55,7 +55,7 @@
         <p>Your watch progress is saved in this browser.</p>
       </header>
       <section class="appearance-setting" aria-labelledby="appearance-label">
-        <label id="appearance-label" for="theme-preference">Appearance</label>
+        <label id="appearance-label" for="theme-preference">Appearance (Light / Dark)</label>
         <select id="theme-preference" x-model="theme" @change="changeTheme">
           <option value="system">System</option>
           <option value="light">Light</option>
@@ -63,21 +63,38 @@
         </select>
         <p x-show="themeWarning" x-cloak role="status" x-text="themeWarning"></p>
       </section>
-      <section class="appearance-setting" aria-labelledby="analytics-label">
-        <strong id="analytics-label">Basic analytics</strong>
-        <label
-          ><input
-            id="analytics-preference"
-            type="checkbox"
-            x-model="analytics"
-            @change="changeAnalytics"
-          />
-          Share basic usage counts</label
+      <section class="appearance-setting" aria-labelledby="player-mode-label">
+        <label id="player-mode-label" for="player-mode">YouTube player</label>
+        <select
+          id="player-mode"
+          x-model="playerMode"
+          @change="changePlayerMode"
+          aria-describedby="player-mode-note"
         >
-        <p>
-          Send anonymous page views and video starts so I know if anyone out there is using this. As
-          long as people use it, I’ll keep it up and running. Your saved progress stays in this
-          browser.
+          <option value="privacy-enhanced">Privacy-enhanced (default)</option>
+          <option value="standard">Standard YouTube</option>
+        </select>
+        <p id="player-mode-note">
+          Choose Standard YouTube to let videos appear in your YouTube watch history. You’ll need to
+          be signed in to YouTube in this browser. Reload the video page after changing this
+          setting.
+        </p>
+        <p x-show="playerModeWarning" x-cloak role="status" x-text="playerModeWarning"></p>
+      </section>
+      <section class="appearance-setting" aria-labelledby="analytics-label">
+        <label id="analytics-label" for="analytics-preference">Analytics</label>
+        <select
+          id="analytics-preference"
+          x-model="analytics"
+          @change="changeAnalytics"
+          aria-describedby="analytics-note"
+        >
+          <option value="basic">Basic (anonymous page views and video plays)</option>
+          <option value="none">None</option>
+        </select>
+        <p id="analytics-note">
+          Analytics are anonymous and just let me know if anyone out there is using this site. Sent
+          to <a href="https://www.goatcounter.com/">GoatCounter</a> (open source).
         </p>
         <p x-show="analyticsWarning" x-cloak role="status" x-text="analyticsWarning"></p>
       </section>
@@ -99,17 +116,25 @@
         x-text="message"
       ></p>
       <p x-cloak x-show="busy" role="status">Saving… Keep this page open.</p>
-      <div x-cloak x-show="!loading">
+      <section
+        class="progress-settings"
+        aria-labelledby="progress-settings-title"
+        x-cloak
+        x-show="!loading"
+      >
         <div class="data-summary">
-          <p x-text="summary"></p>
+          <div>
+            <h2 id="progress-settings-title">Your watch progress</h2>
+            <p x-text="summary"></p>
+          </div>
           <button id="refresh-data" class="text-button" @click="checkData" :disabled="busy">
-            Refresh
+            Refresh count
           </button>
         </div>
         <p class="data-note">Close other site tabs before importing or clearing data.</p>
         <div class="settings-grid">
           <section class="data-card">
-            <h2>Export data</h2>
+            <h3>Export data</h3>
             <p>Download your progress as a JSON file.</p>
             <div class="data-card-control">
               <button class="button button-dark" @click="download" :disabled="!canExport">
@@ -118,7 +143,7 @@
             </div>
           </section>
           <section class="data-card">
-            <h2>Import data</h2>
+            <h3>Import data</h3>
             <p>Restore a backup. JSON files only, up to 5 MB. Nothing is uploaded.</p>
             <div class="data-card-control">
               <label for="backup-file">Choose a backup file</label
@@ -154,7 +179,7 @@
           </section>
         </div>
         <section class="data-card data-clear">
-          <h2>Clear data</h2>
+          <h3>Clear data</h3>
           <p>Delete all progress saved in this browser.</p>
           <button
             id="clear-data"
@@ -174,7 +199,7 @@
             role="group"
             aria-label="Confirm clearing saved data"
           >
-            <h3>Clear all saved data?</h3>
+            <h4>Clear all saved data?</h4>
             <p>You’ll need a backup to restore it.</p>
             <div class="data-actions">
               <button class="text-button" @click="download" :disabled="!canExport">
@@ -194,7 +219,7 @@
           <a href="./about.html#privacy">Privacy</a> ·
           <a href="./history.html">History</a>
         </p>
-      </div>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="footer-inner">

@@ -1,3 +1,5 @@
+import { readPlayerMode, savePlayerMode } from "../../playback/infrastructure/player-preference";
+import { parsePlayerMode } from "../../playback/domain/player-mode";
 import { analyticsEnabled, saveAnalyticsPreference } from "../../site/infrastructure/analytics";
 import Alpine from "@alpinejs/csp";
 import { parseTheme, readTheme, saveTheme } from "../../site/theme";
@@ -11,7 +13,7 @@ import { reloadOnRestore } from "../../site/reload-on-restore";
 const repository = createDataRepository(browserStorage);
 function recordCounts(backup: Backup): string {
   const videos = backup.videos.length;
-  return `${videos} saved ${videos === 1 ? "video" : "videos"}`;
+  return `${videos} ${videos === 1 ? "video" : "videos"}`;
 }
 Alpine.data("settingsPage", () => {
   let stopRestore = () => {};
@@ -24,17 +26,24 @@ Alpine.data("settingsPage", () => {
     );
   }
   return {
-    analytics: analyticsEnabled(),
+    playerMode: readPlayerMode(),
+    playerModeWarning: "",
+    changePlayerMode() {
+      const saved = savePlayerMode(parsePlayerMode(this.playerMode));
+      this.playerModeWarning = saved ? "" : "This choice couldn’t be saved. Try again.";
+    },
+    analytics: analyticsEnabled() ? "basic" : "none",
     analyticsWarning: "",
     changeAnalytics() {
-      const saved = saveAnalyticsPreference(this.analytics);
+      const saved = saveAnalyticsPreference(this.analytics === "basic");
       this.analyticsWarning = saved ? "" : "This choice couldn’t be saved in this browser.";
     },
     theme: readTheme(),
     themeWarning: "",
     syncTheme() {
       this.theme = readTheme();
-      this.analytics = analyticsEnabled();
+      this.analytics = analyticsEnabled() ? "basic" : "none";
+      this.playerMode = readPlayerMode();
     },
     changeTheme() {
       const saved = saveTheme(parseTheme(this.theme));
@@ -51,11 +60,13 @@ Alpine.data("settingsPage", () => {
     clearPending: false,
     get summary(): string {
       if (!this.current) return "Saved data couldn’t be read. Try refreshing.";
-      return recordCounts(this.current);
+      return this.current.videos.length
+        ? `Progress saved for ${recordCounts(this.current)} in this browser.`
+        : "No watch progress saved in this browser yet.";
     },
     get importSummary(): string {
       if (!this.pending) return "";
-      return `${recordCounts(this.pending)} · Backed up ${new Date(this.pending.exportedAt).toLocaleString()}.`;
+      return `Progress for ${recordCounts(this.pending)} · Backed up ${new Date(this.pending.exportedAt).toLocaleString()}.`;
     },
     get canExport(): boolean {
       return !this.busy && !this.loading && !!this.current;

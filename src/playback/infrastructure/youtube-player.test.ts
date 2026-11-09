@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vite-plus/test";
 import { createYouTubePlayer } from "./youtube-player";
-function playerFixture() {
+function playerFixture(mode?: "standard" | "privacy-enhanced") {
   let callbacks: {
     onReady: (event: { target: typeof player }) => void;
     onStateChange: (event: { data: number }) => void;
@@ -41,6 +41,7 @@ function playerFixture() {
     error,
     play,
     playingChange,
+    mode,
   );
   return {
     session,
@@ -214,3 +215,32 @@ it("suppresses the bean during initial buffering without recording a play", asyn
   expect(view.play).not.toHaveBeenCalled();
   view.session.destroy();
 });
+
+it.each([
+  [undefined, "https://www.youtube-nocookie.com"],
+  ["privacy-enhanced", "https://www.youtube-nocookie.com"],
+  ["standard", "https://www.youtube.com"],
+] as const)(
+  "creates the selected %s player without changing resume behavior",
+  async (mode, host) => {
+    vi.useFakeTimers();
+    const view = playerFixture(mode);
+    await view.session.start(42);
+    expect(view.constructor).toHaveBeenCalledWith(
+      expect.anything(),
+      expect.objectContaining({
+        host,
+        playerVars: { origin: "https://example.com", playsinline: 1, autoplay: 0 },
+      }),
+    );
+    view.ready();
+    expect(view.player.cueVideoById).toHaveBeenCalledWith({
+      videoId: "E7CwqNHn_Ns",
+      startSeconds: 42,
+    });
+    view.state(1);
+    vi.advanceTimersByTime(5000);
+    expect(view.sample).toHaveBeenCalled();
+    view.session.destroy();
+  },
+);
