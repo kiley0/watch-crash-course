@@ -9,6 +9,7 @@
       } catch {}
     </script>
     <script type="module" src="./src/site/theme.ts"></script>
+    <script type="module" src="./src/site/analytics.ts"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#fbf7ee" />
     <meta
@@ -60,6 +61,20 @@
           <option value="dark">Dark</option>
         </select>
         <p x-show="themeWarning" x-cloak role="status" x-text="themeWarning"></p>
+      </section>
+      <section class="appearance-setting" aria-labelledby="analytics-label">
+        <strong id="analytics-label">Basic analytics</strong>
+        <label
+          ><input
+            id="analytics-preference"
+            type="checkbox"
+            x-model="analytics"
+            @change="changeAnalytics"
+          />
+          Share basic usage counts</label
+        >
+        <p>Counts page views and video starts. Your saved progress stays in this browser.</p>
+        <p x-show="analyticsWarning" x-cloak role="status" x-text="analyticsWarning"></p>
       </section>
       <noscript
         ><p class="notice">

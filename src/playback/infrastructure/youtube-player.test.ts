@@ -31,9 +31,11 @@ function playerFixture() {
   const sample = vi.fn();
   const status = vi.fn();
   const error = vi.fn();
-  const session = createYouTubePlayer(container, "E7CwqNHn_Ns", sample, status, error);
+  const play = vi.fn();
+  const session = createYouTubePlayer(container, "E7CwqNHn_Ns", sample, status, error, play);
   return {
     session,
+    play,
     player,
     sample,
     error,
@@ -147,4 +149,22 @@ describe("YouTube player lifecycle", () => {
     view.session.destroy();
     expect(vi.getTimerCount()).toBe(0);
   });
+});
+
+it("reports actual playback only after ready and for the expected video", async () => {
+  vi.useFakeTimers();
+  const view = playerFixture();
+  await view.session.start(0);
+  view.state(1);
+  expect(view.play).not.toHaveBeenCalled();
+  view.ready();
+  view.state(5);
+  view.state(2);
+  expect(view.play).not.toHaveBeenCalled();
+  view.state(1);
+  expect(view.play).toHaveBeenCalledTimes(1);
+  view.player.getVideoUrl.mockReturnValue("https://www.youtube.com/watch?v=other");
+  view.state(1);
+  expect(view.play).toHaveBeenCalledTimes(1);
+  view.session.destroy();
 });

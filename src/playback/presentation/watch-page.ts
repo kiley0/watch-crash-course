@@ -1,3 +1,4 @@
+import { trackVideoPlay } from "../../site/infrastructure/analytics";
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
 import "./watch.css";
@@ -22,6 +23,7 @@ import { watchUrl } from "./watch-links";
 Alpine.data("watchPage", () => {
   let session: PlayerSession | undefined;
   let disposed = false;
+  let playCounted = false;
   const visibility = () => {
     if (document.hidden) session?.save();
   };
@@ -207,6 +209,12 @@ Alpine.data("watchPage", () => {
           if (!disposed) {
             this.playerError = message;
             this.playerStatus = "";
+          }
+        },
+        () => {
+          if (!disposed && !playCounted) {
+            playCounted = true;
+            trackVideoPlay(this.course.id, this.episode.videoId);
           }
         },
       );

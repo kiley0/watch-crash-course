@@ -67,6 +67,7 @@ export function createYouTubePlayer(
   onSample: (sample: PlaybackSample) => void,
   onStatus: (message: string) => void,
   onError: (message: string) => void,
+  onPlay: () => void = () => {},
 ): PlayerSession {
   let player: YouTubePlayer | undefined;
   let timer: ReturnType<typeof setInterval> | undefined;
@@ -125,6 +126,7 @@ export function createYouTubePlayer(
                 return;
               }
               active = true;
+              onPlay();
               onStatus("Playing · your place is saved every few seconds.");
               timer = setInterval(() => save(), 5000);
             } else if (event.data === 0 || event.data === 2) {

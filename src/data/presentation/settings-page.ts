@@ -1,3 +1,4 @@
+import { analyticsEnabled, saveAnalyticsPreference } from "../../site/infrastructure/analytics";
 import Alpine from "@alpinejs/csp";
 import { parseTheme, readTheme, saveTheme } from "../../site/theme";
 import "../../site/styles.css";
@@ -23,10 +24,17 @@ Alpine.data("settingsPage", () => {
     );
   }
   return {
+    analytics: analyticsEnabled(),
+    analyticsWarning: "",
+    changeAnalytics() {
+      const saved = saveAnalyticsPreference(this.analytics);
+      this.analyticsWarning = saved ? "" : "This choice couldn’t be saved in this browser.";
+    },
     theme: readTheme(),
     themeWarning: "",
     syncTheme() {
       this.theme = readTheme();
+      this.analytics = analyticsEnabled();
     },
     changeTheme() {
       const saved = saveTheme(parseTheme(this.theme));
