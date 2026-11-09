@@ -96,25 +96,50 @@
             >
           </div>
         </section>
-        <section class="watch-progress" aria-label="Your progress">
+        <div class="episode-actions" x-show="canMarkComplete">
+          <button type="button" class="button button-dark" id="mark-complete" @click="markComplete">
+            Mark complete
+          </button>
+          <button
+            type="button"
+            id="reset-episode"
+            class="text-button"
+            x-show="hasProgress"
+            :aria-expanded="resetPending"
+            aria-controls="reset-confirmation"
+            @click="requestReset"
+          >
+            Reset this episode
+          </button>
+        </div>
+        <section
+          id="lesson-complete"
+          tabindex="-1"
+          class="lesson-complete"
+          x-show="isCompleted"
+          aria-label="Episode completed"
+        >
           <div>
-            <span class="watch-status" x-text="statusLabel"></span>
-            <p role="status" x-text="savedLabel"></p>
+            <span class="eyebrow">ONE MORE IDEA TO CARRY</span>
+            <h2>Episode complete.</h2>
+            <p x-text="completionMessage"></p>
           </div>
-          <div class="player-actions">
+          <a
+            class="button button-orange"
+            x-show="hasNext"
+            :href="nextUrl"
+            @click="saveBeforeNavigation"
+            ><span x-text="nextLabel"></span
+            ><svg class="icon" aria-hidden="true" focusable="false">
+              <use href="./icons.svg#arrow-right"></use></svg></a
+          ><a class="button button-dark" x-show="isLastEpisode" :href="courseUrl"
+            >See your course progress</a
+          >
+          <div class="completion-reset">
             <button
               type="button"
-              class="button button-dark"
-              id="mark-complete"
-              x-show="canMarkComplete"
-              @click="markComplete"
-            >
-              Mark complete</button
-            ><button
-              type="button"
-              id="reset-episode"
+              id="reset-completed-episode"
               class="text-button"
-              x-show="hasProgress"
               :aria-expanded="resetPending"
               aria-controls="reset-confirmation"
               @click="requestReset"
@@ -141,30 +166,6 @@
             ><button class="text-button" @click="cancelReset">Keep my place</button>
           </div>
         </div>
-        <section
-          id="lesson-complete"
-          tabindex="-1"
-          class="lesson-complete"
-          x-show="isCompleted"
-          aria-label="Episode completed"
-        >
-          <div>
-            <span class="eyebrow">ONE MORE IDEA TO CARRY</span>
-            <h2>Episode complete.</h2>
-            <p x-text="completionMessage"></p>
-          </div>
-          <a
-            class="button button-orange"
-            x-show="hasNext"
-            :href="nextUrl"
-            @click="saveBeforeNavigation"
-            ><span x-text="nextLabel"></span
-            ><svg class="icon" aria-hidden="true" focusable="false">
-              <use href="./icons.svg#arrow-right"></use></svg></a
-          ><a class="button button-dark" x-show="isLastEpisode" :href="courseUrl"
-            >See your course progress</a
-          >
-        </section>
         <nav class="episode-navigation" aria-label="Episode navigation">
           <a
             class="text-link"

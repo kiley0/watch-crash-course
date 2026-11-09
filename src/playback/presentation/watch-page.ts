@@ -15,9 +15,8 @@ import {
 import type { Course, Episode } from "../../catalog/domain/course";
 import { videoUrl } from "./youtube-links";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
-import { progressStatus, resumePosition } from "../../learning/domain/progress";
+import { resumePosition } from "../../learning/domain/progress";
 import type { ProgressEvent, VideoProgress } from "../../learning/domain/progress";
-import { timeLabel } from "../../learning/presentation/progress-labels";
 import { createYouTubePlayer } from "../infrastructure/youtube-player";
 import type { PlayerSession } from "../infrastructure/youtube-player";
 import { reloadOnRestore } from "../../site/reload-on-restore";
@@ -105,9 +104,6 @@ Alpine.data("watchPage", () => {
         ? videoUrl(this.episode.videoId, playlistForEpisode(this.course, this.episode))
         : "https://www.youtube.com/user/crashcourse";
     },
-    get statusLabel(): string {
-      return progressStatus(this.progress);
-    },
     get isCompleted(): boolean {
       return this.progress?.completed ?? false;
     },
@@ -122,13 +118,6 @@ Alpine.data("watchPage", () => {
     },
     get canResume(): boolean {
       return resumePosition(this.progress) > 0;
-    },
-    get savedLabel(): string {
-      if (this.storageWarning) return "Progress is temporary in this tab.";
-      if (!this.hasProgress) return "Your place will be saved as you watch.";
-      return this.isCompleted
-        ? "Saved in this browser."
-        : `Your place: ${timeLabel(this.progress?.position ?? 0)} · saved in this browser.`;
     },
     get canRetryPlayer(): boolean {
       return !!this.playerError;
@@ -265,7 +254,7 @@ Alpine.data("watchPage", () => {
     },
     cancelReset() {
       this.resetPending = false;
-      focusAfterUpdate("reset-episode");
+      focusAfterUpdate(this.isCompleted ? "reset-completed-episode" : "reset-episode");
     },
     async reset() {
       session?.startOver();

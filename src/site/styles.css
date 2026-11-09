@@ -246,8 +246,15 @@ img {
   transform: translateY(1px);
 }
 .button-orange {
-  background: var(--orange);
-  color: #1c3028;
+  background: #b83a1b;
+  color: #fff;
+  border: 1px solid #c04422;
+}
+.button-orange:hover {
+  background: #9f2f15;
+}
+.button-orange:active {
+  background: #8c2812;
 }
 .button-dark {
   background: var(--ink);
