@@ -1,4 +1,5 @@
 import { trackVideoPlay } from "../../site/infrastructure/analytics";
+import { setIdleBeanPlayback } from "../../site/presentation/idle-bean";
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
 import "./watch.css";
@@ -217,6 +218,7 @@ Alpine.data("watchPage", () => {
             trackVideoPlay(this.course.id, this.episode.videoId);
           }
         },
+        setIdleBeanPlayback,
       );
       session = currentSession;
       try {

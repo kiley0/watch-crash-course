@@ -1,0 +1,48 @@
+.idle-bean {
+  position: fixed;
+  left: max(16px, env(safe-area-inset-left));
+  bottom: -4px;
+  width: 70px;
+  height: 84px;
+  z-index: 10;
+  pointer-events: none;
+  user-select: none;
+  transform: translateY(115%);
+}
+.idle-bean.is-peeking {
+  animation: bean-peek 4s both;
+}
+@keyframes bean-peek {
+  0%,
+  100% {
+    transform: translateY(115%) rotate(-8deg);
+  }
+  18% {
+    transform: translateY(-8%) rotate(5deg);
+  }
+  28%,
+  65% {
+    transform: translateY(0) rotate(0);
+  }
+  42% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  52% {
+    transform: translateY(0) rotate(4deg);
+  }
+  78% {
+    transform: translateY(-3%) rotate(-5deg);
+  }
+}
+@media (max-width: 650px) {
+  .idle-bean {
+    width: 50px;
+    height: 60px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .idle-bean {
+    display: none;
+    animation: none;
+  }
+}

@@ -144,3 +144,7 @@ When adding a page, retain the appearance bootstrap and add it to Vite’s expli
 ## Basic analytics
 
 `src/site/analytics.ts` is the explicit startup entry loaded by all HTML pages. `src/site/infrastructure/analytics.ts` owns the optional GoatCounter adapter; importing its preference and playback functions does not start collection. It sends normalized page paths and public course/video IDs only, suppresses referrers, strips the vendor client’s separate raw query and screen-size fields, and loads only on the production domain. The Settings preference uses a separate localStorage key; progress backups and clearing progress do not change it. Analytics never reads progress storage. The player adapter reports actual playback through a callback; watch presentation sends at most one play event per page instance, across retries and restarts. Failures are ignored. Keep individual pageview storage disabled in the hosted dashboard and disable unnecessary dimensions there.
+
+## Idle bean
+
+All HTML entries load `src/site/idle-bean.ts`. The decorative idle timer and animation live in `src/site/presentation/idle-bean.ts` and its stylesheet; artwork is `public/curious-bean.svg`. It appears once per page visit after 30 visible, inactive seconds, skips reduced motion, and resets after backgrounding. The playback adapter reports playing/paused lifecycle changes through a callback; watch presentation forwards them to suppress the bean while watching, including buffering. No progress storage or analytics events are involved.

@@ -68,6 +68,7 @@ export function createYouTubePlayer(
   onStatus: (message: string) => void,
   onError: (message: string) => void,
   onPlay: () => void = () => {},
+  onPlayingChange: (playing: boolean) => void = () => {},
 ): PlayerSession {
   let player: YouTubePlayer | undefined;
   let timer: ReturnType<typeof setInterval> | undefined;
@@ -117,6 +118,7 @@ export function createYouTubePlayer(
           onStateChange(event) {
             if (disposed || !ready) return;
             stopTimer();
+            if (event.data === 1 || event.data === 3) onPlayingChange(true);
             if (event.data === 1) {
               if (!isCurrentVideo()) {
                 active = false;
@@ -137,6 +139,7 @@ export function createYouTubePlayer(
                   : "Paused · a good place to pick up later.",
               );
               active = false;
+              onPlayingChange(false);
             }
           },
           onError(event) {
@@ -144,6 +147,7 @@ export function createYouTubePlayer(
             stopTimer();
             clearTimeout(readyTimer);
             active = false;
+            onPlayingChange(false);
             onError(
               event.data === 101 || event.data === 150
                 ? "This video doesn’t allow embedded playback. Open it on YouTube below."
@@ -156,6 +160,7 @@ export function createYouTubePlayer(
     startOver() {
       startAt = 0;
       active = false;
+      onPlayingChange(false);
       stopTimer();
       if (ready && player) {
         player.pauseVideo();
@@ -170,6 +175,7 @@ export function createYouTubePlayer(
       save();
       disposed = true;
       active = false;
+      onPlayingChange(false);
       stopTimer();
       clearTimeout(readyTimer);
       player?.destroy();

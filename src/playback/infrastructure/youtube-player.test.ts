@@ -32,10 +32,20 @@ function playerFixture() {
   const status = vi.fn();
   const error = vi.fn();
   const play = vi.fn();
-  const session = createYouTubePlayer(container, "E7CwqNHn_Ns", sample, status, error, play);
+  const playingChange = vi.fn();
+  const session = createYouTubePlayer(
+    container,
+    "E7CwqNHn_Ns",
+    sample,
+    status,
+    error,
+    play,
+    playingChange,
+  );
   return {
     session,
     play,
+    playingChange,
     player,
     sample,
     error,
@@ -166,5 +176,41 @@ it("reports actual playback only after ready and for the expected video", async 
   view.player.getVideoUrl.mockReturnValue("https://www.youtube.com/watch?v=other");
   view.state(1);
   expect(view.play).toHaveBeenCalledTimes(1);
+  view.session.destroy();
+});
+
+it("keeps playback suppression through buffering and releases it on pause, end, error, reset and disposal", async () => {
+  vi.useFakeTimers();
+  const view = playerFixture();
+  await view.session.start(0);
+  view.ready();
+  view.state(1);
+  expect(view.playingChange).toHaveBeenLastCalledWith(true);
+  view.state(3);
+  expect(view.playingChange).toHaveBeenLastCalledWith(true);
+  for (const state of [2, 0]) {
+    view.state(1);
+    view.state(state);
+    expect(view.playingChange).toHaveBeenLastCalledWith(false);
+  }
+  view.state(1);
+  view.fail(100);
+  expect(view.playingChange).toHaveBeenLastCalledWith(false);
+  view.state(1);
+  view.session.startOver();
+  expect(view.playingChange).toHaveBeenLastCalledWith(false);
+  view.state(1);
+  view.session.destroy();
+  expect(view.playingChange).toHaveBeenLastCalledWith(false);
+});
+
+it("suppresses the bean during initial buffering without recording a play", async () => {
+  vi.useFakeTimers();
+  const view = playerFixture();
+  await view.session.start(0);
+  view.ready();
+  view.state(3);
+  expect(view.playingChange).toHaveBeenLastCalledWith(true);
+  expect(view.play).not.toHaveBeenCalled();
   view.session.destroy();
 });
