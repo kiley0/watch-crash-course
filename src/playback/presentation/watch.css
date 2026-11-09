@@ -131,3 +131,28 @@
   white-space: normal;
   text-align: left;
 }
+
+/* One non-interactive scrim dims everything except the embedded video. */
+.watch-page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: #080d0b;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 650ms ease;
+}
+.watch-page.is-watching::after {
+  opacity: 0.72;
+}
+.watch-page .player-container {
+  position: relative;
+  z-index: 21;
+}
+@media (prefers-reduced-motion: reduce), (forced-colors: active) {
+  .watch-page::after {
+    display: none;
+    transition: none;
+  }
+}

@@ -1,5 +1,6 @@
 import { trackVideoPlay } from "../../site/infrastructure/analytics";
 import { setIdleBeanPlayback } from "../../site/presentation/idle-bean";
+import { createWatchingMode } from "./watching-mode";
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
 import "./watch.css";
@@ -23,12 +24,16 @@ import { watchUrl } from "./watch-links";
 
 Alpine.data("watchPage", () => {
   let session: PlayerSession | undefined;
+  let watchingMode: ReturnType<typeof createWatchingMode> | undefined;
   let disposed = false;
   let playCounted = false;
   const visibility = () => {
     if (document.hidden) session?.save();
   };
-  const pageHide = () => session?.destroy();
+  const pageHide = () => {
+    session?.destroy();
+    watchingMode?.destroy();
+  };
   let stopReloadOnRestore = () => {};
   function focusAfterUpdate(id: string) {
     // x-show reveals new controls on its next frame; focus after that reveal.
@@ -126,6 +131,8 @@ Alpine.data("watchPage", () => {
       return !!this.playerError;
     },
     async init() {
+      const player = document.querySelector<HTMLElement>("#player-container");
+      if (player) watchingMode = createWatchingMode(player);
       document.addEventListener("visibilitychange", visibility);
       window.addEventListener("pagehide", pageHide);
       stopReloadOnRestore = reloadOnRestore();
@@ -133,6 +140,7 @@ Alpine.data("watchPage", () => {
     },
     destroy() {
       disposed = true;
+      watchingMode?.destroy();
       session?.destroy();
       document.removeEventListener("visibilitychange", visibility);
       window.removeEventListener("pagehide", pageHide);
@@ -192,6 +200,7 @@ Alpine.data("watchPage", () => {
     },
     async startPlayer(seconds: number) {
       session?.destroy();
+      watchingMode?.setPlaying(false);
       this.playerStarted = true;
       this.playerError = "";
       this.playerStatus = "Opening YouTube…";
@@ -207,24 +216,31 @@ Alpine.data("watchPage", () => {
           if (!disposed) this.playerStatus = message;
         },
         (message) => {
+          watchingMode?.setPlaying(false);
           if (!disposed) {
             this.playerError = message;
             this.playerStatus = "";
           }
         },
         () => {
+          if (!disposed) watchingMode?.setPlaying(true);
           if (!disposed && !playCounted) {
             playCounted = true;
             trackVideoPlay(this.course.id, this.episode.videoId);
           }
         },
-        setIdleBeanPlayback,
+        (playing) => {
+          setIdleBeanPlayback(playing);
+          // Buffering preserves the current appearance; only actual play starts dimming.
+          if (!playing) watchingMode?.setPlaying(false);
+        },
       );
       session = currentSession;
       try {
         await currentSession.start(seconds);
       } catch {
         if (disposed || session !== currentSession) return;
+        watchingMode?.setPlaying(false);
         this.playerError = "YouTube couldn’t load. Try again or open the original video below.";
         this.playerStatus = "";
       }

@@ -148,3 +148,7 @@ When adding a page, retain the appearance bootstrap and add it to Vite’s expli
 ## Idle bean
 
 All HTML entries load `src/site/idle-bean.ts`. The decorative idle timer and animation live in `src/site/presentation/idle-bean.ts` and its stylesheet; artwork is `public/curious-bean.svg`. It appears once per page visit after 30 visible, inactive seconds, skips reduced motion, and resets after backgrounding. The playback adapter reports playing/paused lifecycle changes through a callback; watch presentation forwards them to suppress the bean while watching, including buffering. No progress storage or analytics events are involved.
+
+## Watching mode
+
+`playback/presentation/watching-mode.ts` owns the watch-page dimming timer and activity listeners. Watch presentation starts it only on actual playback and restores it on pause, end, errors, or navigation; buffering preserves its current state. A pointer-transparent CSS scrim dims the surrounding UI while the player container stays above it. Focus outside the player, reduced motion, and background tabs prevent dimming. The controller has no player, persistence, or analytics dependency.
