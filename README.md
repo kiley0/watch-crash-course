@@ -10,13 +10,13 @@ A fan-made home for watching [Crash Course](https://thecrashcourse.com/), one co
 
 A static, multi-page site built with HTML, CSS, TypeScript, Alpine.js (CSP), and localForage. Vite+ handles development, formatting, checks, tests, and production builds; Vercel serves the static output. No application server, database service, authentication, or runtime YouTube Data API.
 
-- `public/data/` — curated course metadata and ordered lessons. See [the course inventory](COURSES.md).
+- `public/data/` — curated course metadata and ordered lessons.
 - `src/catalog/` — course rules, loading, search, and shelves.
 - `src/playback/` — YouTube’s embedded player and watch pages.
 - `src/learning/` and `src/data/` — local progress, history, and backups.
 - `src/site/` — shared styles, identity, and browser storage.
 
-Each domain keeps pure rules, infrastructure, and presentation together. See [ARCHITECTURE.md](ARCHITECTURE.md) for the placement guide.
+Each domain keeps pure rules, infrastructure, and presentation together.
 
 Progress stays in this browser and does not sync between devices. Back it up before clearing site data. Playback depends on YouTube and each video’s availability and embedding permissions.
 
@@ -33,7 +33,7 @@ pnpm dev
 
 ## Help make it better
 
-Found a broken video, incorrect course detail, accessibility problem, or bug? [Open an issue](https://github.com/kiley0/watch-crash-course/issues). Pull requests to fix issues are welcome—keep changes focused, preserve the simple architecture, and run `pnpm fmt` and `pnpm build`. Check affected pages in the browser; [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md) covers the main flows.
+Found a broken video, incorrect course detail, accessibility problem, or bug? [Open an issue](https://github.com/kiley0/watch-crash-course/issues). Pull requests to fix issues are welcome—keep changes focused, preserve the simple architecture, and run `pnpm fmt` and `pnpm build`. Check affected flows in the browser, including keyboard use and mobile layouts. For playback changes, check play, pause, and resume after reloading. Test backup changes in a disposable browser profile. See [the contributor guide](ARCHITECTURE.md) for code placement and data conventions.
 
 ## Keep learning, together
 
@@ -45,4 +45,4 @@ DFTBA.
 
 ## License
 
-Original code and artwork are [MIT licensed](LICENSE). Crash Course videos, names, and other third-party materials belong to their respective owners and are not covered by this license.
+Original code and artwork are [MIT licensed](LICENSE). Third-party material retains its own rights; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

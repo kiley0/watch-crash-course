@@ -1,158 +1,50 @@
-# Code organization
+# Contributor guide
 
-We use lightweight domain-driven organization: code lives beside the subject it serves, and business rules stay independent of browser libraries and data access. This is one static application, one package, and one build. Folders express responsibilities; they do not require classes, services, dependency injection, or a framework.
+This is a static, multi-page HTML/CSS/TypeScript site using Alpine CSP and localForage. Keep dependencies and abstractions small. Root HTML files are explicit entries in `vite.config.ts`; navigation uses ordinary links. Shared headers and footers are deliberately repeated in each HTML entry.
 
-## Current map
+## Where code goes
 
-```text
-index.html                              Crash Course catalog page markup
-study-hall.html                         Study Hall catalog page markup
-course.html                             Course page markup
-about.html                              About/privacy markup
-watch.html                              Playback, resume, and episode navigation
-history.html                            Latest saved video activity and filters
-settings.html                           Backup download, replacement import, clear confirmation
-src/
-  catalog/                              Courses and their ordered episodes
-    domain/
-      course.ts                         Types and catalog/episode validation rules
-      course.test.ts
-      search.ts                         Course and episode query matching
-      search.test.ts
-    infrastructure/
-      static-catalog.ts                 Fetch static JSON, timeouts, parse responses
-      static-catalog.test.ts
-    presentation/
-      catalog-component.ts              Shared bookshelf and filter state
-      catalog-page.ts                   Crash Course entry and random lesson
-      study-hall-page.ts                Study Hall entry
-      catalog.css                       Subject bookshelves and course book covers
-      course-page.ts                    Course Alpine state and page entry
-      course.css                        Course progress pizza layout
-      progress-pizza.ts                  Pure SVG geometry for episode completion
-      progress-pizza.test.ts
-      shelf-surprises.ts                Optional search discoveries and community copy
-  learning/
-    domain/progress.ts                  Pure progress transitions and record validation
-    domain/course-summary.ts            Derived completion, continue selection, history order
-    infrastructure/progress-store.ts    Serialized persistence and in-memory fallback
-    infrastructure/browser-progress.ts  localForage backend and browser instance
-    presentation/progress-labels.ts     Time labels
-    presentation/history-page.ts        Local history first, optional catalog enrichment
-    presentation/history-entries.ts     Rows rebuilt from records and current metadata
-    presentation/history.css            History-page visual components
-  playback/
-    infrastructure/youtube-player.ts    Lazy IFrame API, events, sampling, lifecycle
-    presentation/watch-page.ts          Watch-page Alpine state and composition
-    presentation/watch-links.ts         Internal watch-page URLs
-    presentation/youtube-links.ts       External YouTube URLs
-    presentation/watch.css              Watch-page visual components
-  data/
-    domain/backup.ts                    Versioned backup validation and limits
-    infrastructure/data-repository.ts   Export and replacement of watch progress
-    presentation/settings-page.ts       File choice, download, confirmations, feedback
-    presentation/settings.css           Data settings cards and responsive layout
-  site/                                 Shared site identity and informational UI
-    infrastructure/browser-storage.ts   Database identity and coordinated store creation
-    infrastructure/storage-coordinator.ts Serialized reads/writes and recoverable replacement
-    styles.css                          Shared design tokens, components, responsive rules
-    about-page.ts                       About-page entry and surprise toggle
-    reload-on-restore.ts                Refresh stale views restored by browser history
-  types/
-    alpine.d.ts                         External package type declarations
-public/
-  data/
-    courses.json                        Curated course index
-    courses/<course-id>.json            Ordered episode data
-  icons.svg                             Selected, licensed icon sprite
-  illustration.svg                      Original learning artwork
-  learning-pizza.svg                    Homepage subject pizza artwork
-  favicon.svg
-  licenses/                             Published license copies
-```
+| Area               | Owns                                                                                      |
+| ------------------ | ----------------------------------------------------------------------------------------- |
+| `src/catalog/`     | Course and episode validation, static JSON loading, search, bookshelves, and course pages |
+| `src/learning/`    | Video progress, course summaries, history, and whole-course completion                    |
+| `src/playback/`    | YouTube player, player preference, watch-page controls, and watching mode                 |
+| `src/data/`        | Backup validation, export/import, clear-data workflow, and Settings                       |
+| `src/site/`        | Shared styles, theme, storage setup, analytics, and decorative interactions               |
+| `public/data/`     | Checked-in course index and episode lists                                                 |
+| `public/licenses/` | License texts published with the site                                                     |
 
-Root HTML files remain explicit Vite build entries. Keeping them at the root preserves simple static URLs and ordinary relative links. Their scripts initialize one page each. We deliberately duplicate the small header/footer rather than adding a template engine.
+Within each area:
 
-## Dependency direction
+- `domain/` contains pure types, validation, and rules, without browser or UI dependencies.
+- `infrastructure/` handles persistence, JSON loading, and external APIs.
+- `presentation/` contains Alpine state, DOM behavior, labels, and page-specific CSS. It calls domain rules and adapters rather than duplicating them.
+- `application/` is used for workflows coordinating domain operations, such as completing a whole course.
 
-- **Domain** owns course terminology, data contracts, and pure rules. It uses TypeScript and standard JavaScript only. It never imports Alpine, page modules, CSS, `fetch`, or browser globals.
-- **Infrastructure** handles loading and external formats. It imports domain types and validators. Static JSON is untrusted at runtime until validated. Browser fetch details and recovery mechanics belong here.
-- **Presentation** handles Alpine, DOM-facing state, labels, navigation, and UI-only copy. It may call infrastructure and domain functions. It does not duplicate validation rules or fetch JSON itself.
-- **Site** owns shared visual identity, informational interactions, and browser storage configuration. Catalog code can import its stylesheet. Site code does not own course rules.
+Use explicit imports and colocate meaningful `*.test.ts` files with their modules. Avoid barrel exports, catch-all utility folders, and speculative interfaces. Shared CSS lives in `src/site/styles.css`; dark colors live in `src/site/theme.css`. Add page-specific styles beside their presentation entry.
 
-Use explicit imports from the owning file. Avoid barrel exports, path aliases, catch-all `utils` folders, and a generic `shared` domain. Put a helper beside its first caller; move it only when its responsibility or reuse is clear. A small module can contain closely related types and functions, as `course.ts` does.
+## Updating the catalog
 
-`learning/application/complete-course.ts` coordinates per-episode reads and completion updates for the whole-course action. It preserves already-complete records and uses the existing progress store. Put other workflows that coordinate several domain operations in their owning domain’s `application/` folder when needed. Introduce an interface only when an actual alternate adapter or test boundary needs it.
+Edit `public/data/courses.json` and `public/data/courses/<id>.json`. These files are the course inventory and test fixtures; do not maintain a separate list. Keep existing course IDs, video IDs, and public URLs stable.
 
-## Where new work goes
+- Verify titles, hosts, playlist membership, and lesson order against official sources. Exclude previews and extras; retain numbered introductions. Set `reviewedAt` when checking a course.
+- Crash Course metadata links to official course pages; lesson sources use official episode pages, or an exact canonical YouTube watch URL when the website omits a lesson. Study Hall course sources use their exact official playlist URL; episode sources use their exact YouTube watch URL.
+- Set `collection` to `crash-course` or `study-hall`; Study Hall also declares its series. Both libraries share the same course/watch pages and progress store.
+- Within each subject, place broad introductions first, related courses together, and sequels after originals. Catalog order controls shelf order; subjects are alphabetical and recent courses follow activity.
+- Keep local episode numbers consecutive. Multi-season courses use `playlistParts`, starting at episode 1 with increasing boundaries, while titles retain original season labels.
 
-| Change                                                     | Location                                                                           |
-| ---------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Add or correct a course                                    | `public/data/courses.json` and `public/data/courses/<id>.json`                     |
-| Change valid course or episode rules                       | `src/catalog/domain/course.ts` and its test                                        |
-| Change JSON loading, caching, or timeouts                  | `src/catalog/infrastructure/static-catalog.ts`                                     |
-| Change catalog filters, loading UI, or course labels       | Corresponding `src/catalog/presentation/*-page.ts`                                 |
-| Change visible page structure or static copy               | Root HTML for that page                                                            |
-| Add a search Easter egg                                    | `src/catalog/presentation/shelf-surprises.ts`                                      |
-| Change colors, spacing, shared controls, responsive layout | `src/site/styles.css`                                                              |
-| Add a distinct page-only visual component                  | A CSS file beside that page's presentation module, imported there                  |
-| Add an icon                                                | Selected symbol in `public/icons.svg`; retain its license notice                   |
-| Add an interactive page                                    | Root HTML, an owning domain's presentation entry, and `vite.config.ts` build input |
+## Progress, preferences, and privacy
 
-`learning/` owns video progress keyed by YouTube ID. `playback/` owns the official player adapter and watch-page experience. Catalog presentation composes these capabilities to link episodes and show saved status; neither capability imports catalog presentation. Learning stores one progress record per video; course summaries receive the current episode IDs and derive membership-based counts without owning a copy of the catalog. Shared videos retain one record. Document narrow contracts when domain coordination is necessary and keep dependencies acyclic.
+Progress is keyed by YouTube video ID, not course ID. Course totals are derived from episode membership; shared videos have one progress record. Use the progress store and data repository, not direct localForage access. The site storage coordinator serializes operations and journals backup replacement for recovery. Preserve storage keys and supported backup formats; test storage changes against existing records and backups. Verify that valid imports restore progress and invalid imports leave existing data intact. Close other site tabs before importing or clearing data.
 
-The watch page calls learning's storage adapter and playback's player adapter. The player only reports samples through a typed callback; it never knows how progress is stored. `createProgressStore` accepts a small backend boundary to test failure and ordering; `browser-progress.ts` selects the video store through `site/infrastructure/browser-storage.ts`, which owns the project database name and localForage configuration. Tests remain colocated, including beside the new modules. `progressStore.list()` reads all namespaced records without a catalog dependency. History presentation composes those records with optional catalog metadata; catalog failures cannot hide readable saved records. Catalog and course presentation reuse the pure summary rules, rather than storing percentages or course totals.
+Theme, analytics, and player preferences use separate localStorage keys and are not part of progress backups. Keep the inline theme bootstrap in every HTML page aligned with `src/site/theme.ts`. Watch pages snapshot the player preference once per visit; changes in another tab must not interrupt playback. Privacy-enhanced YouTube is the default; Standard YouTube does not guarantee account-history updates.
 
-## Tests and change checks
+GoatCounter is optional and production-only. `src/site/analytics.ts` starts the infrastructure adapter; importing the adapter must not collect data. Send normalized public page/course/video identifiers only, never progress records or search text. Preserve the filter that strips the vendor client’s raw query and screen-size fields. Count actual video starts once per page visit. Keep individual pageview storage disabled in the hosted dashboard. Analytics failures must not affect playback or saved progress.
 
-Tests are colocated as `*.test.ts` beside the module they protect. Domain tests run without DOM mocks; infrastructure tests may mock browser boundaries. The curated JSON doubles as a real fixture, so content mistakes fail the build. Avoid testing trivial markup or mirroring implementation details.
+Decorative animations and watching mode must respect reduced motion. Keep controls keyboard-accessible, preserve focus after confirmations, and retain the independent fan-project attribution.
 
-Run `pnpm fmt` and `pnpm build` after changing module locations, contracts, or entries. The build runs formatting, lint, strict type checks, tests, and all HTML entries. For interactive changes, also verify the affected page in the browser. Do not add a dependency just to enforce these few folder rules.
+## Validation and hosting
 
-## Project identity and storage
+Run `pnpm fmt` and `pnpm build`; the build checks formatting, lint, types, tests, catalog fixtures, and all HTML entries. Verify affected browser flows as described in the [README](README.md#help-make-it-better).
 
-The site is Watch Crash Course (`watch-crash-course`), with intended production origin `https://watchcrashcourse.com`. The site infrastructure owns the database identity and creates localForage stores in `watch-crash-course`. Learning validates watch progress records. Browser storage is scoped to the site origin.
-
-## Data portability
-
-`data/domain/backup.ts` composes the learning record validator without importing presentation or infrastructure. `data/infrastructure/data-repository.ts` maps validated watch progress to namespaced storage keys. The settings page never reads localForage directly.
-
-All browser storage calls pass through the site infrastructure coordinator. A recovery journal records the raw watch progress store before a destructive operation. It is removed only after the store is replaced; startup recovery runs before ordinary reads/writes. The coordinator knows storage names and raw keys, not learning rules. Import/export and recovery tests are colocated. Other site tabs must be closed before replacement to avoid stale writes.
-
-## Catalog sources
-
-Crash Course metadata uses official `thecrashcourse.com` source URLs. Episode records normally reference the corresponding official episode page. When the website omits a lesson, a canonical `https://www.youtube.com/watch?v=<videoId>` source is allowed only when it exactly matches the episode ID; maintainers verify that it is an official CrashCourse upload. This exception currently supplies Computer Science #40, Anatomy & Physiology #44, Sociology #38–44, Big Questions on U.S. Government #5–6, and Geology #22–23. The browser does not import playlists or scrape YouTube; visitors still load checked-in JSON only.
-
-Multi-season courses may declare `playlistParts` with a title, playlist ID, and first local episode number. Parts begin at episode 1, agree with the primary playlist, and have strictly increasing boundaries. Course pages link each season; outbound video links use the playlist for the selected episode. Local episode numbers stay consecutive; original season labels remain in lesson titles.
-
-## Shelf ordering
-
-Within each subject, `public/data/courses.json` is deliberately ordered for browsing: broad introductions first, related topics together, sequels after their original course, and specialized applications later. Translated and older editions sit beside their current English counterpart. This is an editorial browsing order, not a prerequisite system. The catalog presentation preserves this order when filtering; subject shelves remain alphabetical and the recent shelf remains ordered by activity. When adding a course, place it beside related courses rather than appending it automatically.
-
-## Appearance
-
-`src/site/theme.ts` owns the System/Light/Dark preference and cross-tab synchronization. The small inline head bootstrap on all seven pages reads the same `watch-crash-course-theme` localStorage key before rendering; keep that key aligned with `THEME_KEY`. Missing or unavailable storage uses the system preference. CSS media queries follow system changes live. `src/site/theme.css` defines the dark palette and native control color scheme; component styles retain their original light colors as token fallbacks. Appearance is separate from progress backups and clearing watch history. Settings presentation owns the selector.
-
-## Study Hall library
-
-`study-hall.html` is a separate static entry for the Study Hall collection. `Course.collection` distinguishes `crash-course` and `study-hall`; Study Hall also declares `series` (College Foundations or Original series). Both live in the same checked-in catalog and course detail directory. Existing IDs and video-keyed progress are unchanged. History and backups include both collections.
-
-`catalog-component.ts` owns the shared catalog UI state; the home and Study Hall page entries select their collection. Collection selection, labels, and library URLs belong to catalog domain rules. Course and watch pages share the existing playback and learning workflows. Study Hall metadata uses the exact official YouTube playlist URL; episodes use their canonical YouTube video URL. Playlist membership and hosts are curated, not inferred at runtime. Exclude previews while retaining numbered introductory lessons.
-
-When adding a page, retain the appearance bootstrap and add it to Vite’s explicit inputs. Navigation remains explicit in every HTML entry.
-
-## Basic analytics
-
-`src/site/analytics.ts` is the explicit startup entry loaded by all HTML pages. `src/site/infrastructure/analytics.ts` owns the optional GoatCounter adapter; importing its preference and playback functions does not start collection. It sends normalized page paths and public course/video IDs only, suppresses referrers, strips the vendor client’s separate raw query and screen-size fields, and loads only on the production domain. The Settings preference uses a separate localStorage key; progress backups and clearing progress do not change it. Analytics never reads progress storage. The player adapter reports actual playback through a callback; watch presentation sends at most one play event per page instance, across retries and restarts. Failures are ignored. Keep individual pageview storage disabled in the hosted dashboard and disable unnecessary dimensions there.
-
-## Idle bean
-
-All HTML entries load `src/site/idle-bean.ts`. The decorative idle timer and animation live in `src/site/presentation/idle-bean.ts` and its stylesheet; artwork is `public/curious-bean.svg`. It appears once per page visit after 30 visible, inactive seconds, skips reduced motion, and resets after backgrounding. The playback adapter reports playing/paused lifecycle changes through a callback; watch presentation forwards them to suppress the bean while watching, including buffering. No progress storage or analytics events are involved.
-
-## Watching mode
-
-`playback/presentation/watching-mode.ts` owns the watch-page dimming timer and activity listeners. Watch presentation starts it only on actual playback and restores it on pause, end, errors, or navigation; buffering preserves its current state. A pointer-transparent CSS scrim dims the surrounding UI while the player container stays above it. Focus outside the player, reduced motion, and background tabs prevent dimming. The controller has no player, persistence, or analytics dependency.
-
-## YouTube player preference
-
-`playback/domain/player-mode.ts` owns the two allowed modes and their embed hosts. `playback/infrastructure/player-preference.ts` stores the choice under a separate localStorage key, defaulting to privacy-enhanced mode when missing, invalid, or unavailable. Watch presentation snapshots the mode once per page visit and passes it to the player adapter; retries use that same choice. Settings changes never replace an active player in another tab. This preference is independent of progress backups, progress clearing, and analytics. Standard YouTube can use account-connected viewing when browser and YouTube settings allow it; history updates are not guaranteed.
+The build output is `dist/`. `vercel.json` configures static HTTPS hosting without SPA rewrites or application services. After deployment, check page/asset links, playback, and saved progress on the production origin. Unknown pages should return 404; preview origins have separate browser storage. When adding a page, register its Vite entry and retain the shared startup scripts, theme bootstrap, and navigation.
