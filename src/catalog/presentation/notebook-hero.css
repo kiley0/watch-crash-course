@@ -327,7 +327,7 @@
   align-items: center;
   gap: 7px;
   padding-block: 6px;
-  margin-block-start: auto;
+  margin-block-start: 0;
   font-size: 0.7rem;
   font-weight: 700;
   text-decoration: underline;
