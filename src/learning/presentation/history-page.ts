@@ -9,10 +9,11 @@ import { loadCatalog, loadDetail } from "../../catalog/infrastructure/static-cat
 import { collectionLabel } from "../../catalog/domain/course";
 import { matchesQuery } from "../../catalog/domain/search";
 import { watchUrl } from "../../playback/presentation/watch-links";
-import { reloadOnRestore } from "../../site/reload-on-restore";
+import { refreshOnRestore } from "../../site/reload-on-restore";
 Alpine.data("historyPage", () => {
-  let stopReloadOnRestore = () => {};
+  let stopRefreshOnRestore = () => {};
   let records: VideoProgress[] = [];
+  let known = new Map<string, HistoryMetadata>();
   return {
     entries: [] as HistoryEntry[],
     query: "",
@@ -56,7 +57,7 @@ Alpine.data("historyPage", () => {
       this.status = "all";
     },
     async init() {
-      stopReloadOnRestore = reloadOnRestore();
+      stopRefreshOnRestore = refreshOnRestore(() => this.refreshProgress());
       records = await progressStore.list();
       this.storageWarning = progressStore.warning;
       this.entries = historyEntries(records);
@@ -64,7 +65,13 @@ Alpine.data("historyPage", () => {
       if (this.entries.length) await this.loadMetadata();
     },
     destroy() {
-      stopReloadOnRestore();
+      stopRefreshOnRestore();
+    },
+    async refreshProgress() {
+      records = await progressStore.refresh();
+      this.storageWarning = progressStore.warning;
+      this.entries = historyEntries(records, known);
+      if (records.length && !known.size && !this.metadataLoading) await this.loadMetadata();
     },
     async loadMetadata() {
       this.metadataLoading = true;
@@ -74,7 +81,7 @@ Alpine.data("historyPage", () => {
         const details = await Promise.allSettled(
           courses.map(async (course) => ({ course, detail: await loadDetail(course) })),
         );
-        const known = new Map<string, HistoryMetadata>();
+        known = new Map<string, HistoryMetadata>();
         for (const result of details) {
           if (result.status !== "fulfilled") continue;
           const { course, detail } = result.value;

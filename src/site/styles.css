@@ -16,8 +16,8 @@
   --orange: #f45e32;
   --line: var(--theme-surface, #dcded2);
   --teal: var(--theme-surface, #cfdfd5);
-  --page-title: clamp(36px, 4.4vw, 60px);
-  --section-title: clamp(28px, 3vw, 36px);
+  --page-title: clamp(2.25rem, 1rem + 3vw, 3.75rem);
+  --section-title: clamp(1.75rem, 1rem + 1.5vw, 2.25rem);
   --layout-gap: 24px;
 }
 * {
@@ -81,6 +81,7 @@ h1,
 h2,
 h3 {
   letter-spacing: -0.045em;
+  overflow-wrap: anywhere;
 }
 p {
   line-height: 1.65;
@@ -125,24 +126,29 @@ img {
 }
 .brand {
   white-space: nowrap;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 900;
   letter-spacing: 0.015em;
   line-height: 1.05;
 }
 .brand-mark {
-  font-size: 53px;
+  font-size: 3.3125rem;
   color: var(--orange);
   line-height: 1;
 }
+.brand > span:last-child {
+  min-width: 0;
+}
 .brand-sub {
   display: block;
-  font-size: 23px;
+  white-space: normal;
+  font-size: 1.4375rem;
   letter-spacing: 0.08em;
   margin-top: 4px;
 }
@@ -150,7 +156,7 @@ img {
   display: flex;
   gap: 20px;
   flex-shrink: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
 }
 .site-header nav a {
@@ -161,26 +167,27 @@ img {
   border-bottom: 2px solid var(--orange);
 }
 .header-note {
-  font-size: 14px;
+  font-size: 0.875rem;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .header-note span {
-  font-size: 26px;
+  font-size: 1.625rem;
   color: var(--orange);
 }
 /* Catalog hero */
 .hero {
+  overflow-wrap: anywhere;
   min-height: 526px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
   padding-block: 56px 50px;
   gap: 16px;
 }
 .eyebrow {
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 800;
   letter-spacing: 0.16em;
   display: block;
@@ -193,10 +200,10 @@ img {
 }
 .little-sun {
   color: var(--orange);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .hero h1 {
-  font-size: clamp(56px, 5.5vw, 78px);
+  font-size: clamp(3.5rem, 1.5rem + 3.3vw, 4.875rem);
   line-height: 1.03;
   margin-top: 19px;
   font-weight: 900;
@@ -220,7 +227,7 @@ img {
   z-index: -1;
 }
 .hero-copy > p {
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: var(--theme-muted, #536056);
   margin-top: 24px;
 }
@@ -234,7 +241,7 @@ img {
   border-radius: 100px;
   text-decoration: none;
   padding: 13px 23px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 800;
   line-height: 1.4;
 }
@@ -265,8 +272,9 @@ img {
 }
 .hero-footnote {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  font-size: 11px;
+  font-size: 0.6875rem;
   color: var(--theme-muted, #57685a);
   margin-top: 18px;
 }
@@ -288,7 +296,7 @@ img {
   transform: rotate(-5deg);
   font-family: Georgia, serif;
   font-style: italic;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--theme-muted, #48634b);
   margin-top: -12px;
 }
@@ -297,7 +305,7 @@ img {
   border-block: 1px solid var(--line, #c9d6ab);
   overflow: hidden;
   padding: 16px 0;
-  font-size: 11px;
+  font-size: 0.6875rem;
   letter-spacing: 0.16em;
   font-weight: 800;
 }
@@ -311,7 +319,7 @@ img {
   min-width: 100%;
 }
 .curiosity-strip span {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--theme-muted, #63815a);
 }
 /* Course shelf and discovery controls */
@@ -333,12 +341,13 @@ img {
   font-weight: 800;
 }
 .section-heading > p {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--muted);
   padding-bottom: 4px;
 }
 .filter-bar {
   display: flex;
+  flex-wrap: wrap;
   gap: 14px;
   margin-bottom: 20px;
 }
@@ -355,7 +364,7 @@ img {
 }
 .search-field > span {
   font-family: Arial, sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1;
   color: var(--theme-muted, #526856);
 }
@@ -366,7 +375,7 @@ img {
   min-width: 0;
   outline-offset: 2px;
   padding: 14px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--ink);
 }
 input::placeholder {
@@ -375,6 +384,8 @@ input::placeholder {
 }
 .subject-field {
   display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
   gap: 12px;
   align-items: center;
   border: 1px solid var(--line, #cdd2c4);
@@ -383,12 +394,13 @@ input::placeholder {
   background: var(--theme-surface, #fffdf8);
 }
 .subject-field > span {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.09em;
   color: var(--muted);
 }
 select {
+  max-width: 100%;
   appearance: none;
   background-color: transparent;
   background-image: var(
@@ -399,13 +411,13 @@ select {
   background-position: right 14px center;
   background-size: 16px;
   border: 0;
-  font-size: 13px;
+  font-size: 0.8125rem;
   min-height: 48px;
   color: var(--ink);
   padding-right: 40px;
 }
 .result-count {
-  font-size: 11px;
+  font-size: 0.6875rem;
   color: var(--muted);
   margin-bottom: 17px;
 }
@@ -414,11 +426,11 @@ select {
   padding: 6px 10px;
   border-radius: 30px;
   color: var(--theme-muted, #3f5c44);
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 700;
 }
 .note-star {
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1;
   color: #7976b7;
   display: block;
@@ -427,7 +439,7 @@ select {
 .text-link {
   display: inline-block;
   font-weight: 800;
-  font-size: 13px;
+  font-size: 0.8125rem;
   text-decoration: none;
   border-bottom: 1px solid;
   margin-top: 25px;
@@ -449,11 +461,11 @@ select {
 .step-number {
   display: grid;
   place-items: center;
-  width: 43px;
-  height: 43px;
+  width: 2.6875rem;
+  min-height: 2.6875rem;
   border-radius: 14px;
   transform: rotate(-8deg);
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 800;
 }
 .peach {
@@ -466,11 +478,11 @@ select {
   background: var(--theme-purple, #e3def4);
 }
 .how-grid h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 18px;
 }
 .how-grid p {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--theme-muted, #657061);
   margin-top: 11px;
   max-width: 290px;
@@ -488,10 +500,10 @@ select {
 }
 .closing-banner > span {
   color: var(--theme-muted, #6f885b);
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 .closing-banner p {
-  font-size: 22px;
+  font-size: 1.375rem;
   letter-spacing: -0.03em;
   line-height: 1.35;
   flex: 1;
@@ -516,14 +528,14 @@ select {
 .footer-brand {
   text-decoration: none;
   font-weight: 800;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .footer-inner p {
-  font-size: 10px;
+  font-size: 0.625rem;
   color: var(--theme-muted, #64705f);
 }
 .footer-inner > a:not(.footer-brand) {
-  font-size: 11px;
+  font-size: 0.6875rem;
 }
 /* Loading, error, and empty states */
 .load-message {
@@ -536,7 +548,7 @@ select {
   background: var(--theme-gold, #fff0dd);
   padding: 24px;
   margin-block: 20px;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 .notice a {
@@ -560,14 +572,14 @@ select {
   margin-top: 20px;
 }
 .empty-state > span {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .empty-state h3 {
-  font-size: 23px;
+  font-size: 1.4375rem;
   margin: 10px 0;
 }
 .empty-state p {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--muted);
   max-width: 460px;
   margin: auto;
@@ -578,7 +590,7 @@ select {
 /* Course detail and episode list */
 .back-link {
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-decoration: none;
   color: var(--theme-muted, #5d6f60);
   margin: 28px 0 30px;
@@ -598,7 +610,7 @@ select {
   margin-top: 16px;
 }
 .course-intro {
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: var(--theme-muted, #586757);
   margin-top: 22px;
   max-width: 550px;
@@ -607,7 +619,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  font-size: 11px;
+  font-size: 0.6875rem;
   margin-top: 23px;
 }
 .course-facts span + span:before {
@@ -618,13 +630,13 @@ select {
   margin-top: 30px;
 }
 .external-note {
-  font-size: 10px;
+  font-size: 0.625rem;
   margin-top: 12px;
   color: var(--muted);
 }
 .course-layout {
   display: grid;
-  grid-template-columns: 1fr 290px;
+  grid-template-columns: minmax(0, 1fr) 290px;
   gap: 48px;
   padding-block: 46px 70px;
 }
@@ -633,7 +645,7 @@ select {
   align-items: center;
 }
 .episode-total {
-  font-size: 11px;
+  font-size: 0.6875rem;
   white-space: nowrap;
 }
 .episode-search {
@@ -664,16 +676,16 @@ select {
   display: grid;
   place-items: center;
   flex-shrink: 0;
-  width: 40px;
-  height: 43px;
+  min-width: 2.5rem;
+  min-height: 2.6875rem;
   border: 1px solid var(--line, #c7d3bb);
   border-radius: 12px;
   background: var(--theme-green, #e7eddb);
   font-weight: 800;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .episode-kicker {
-  font-size: 8px;
+  font-size: 0.5rem;
   letter-spacing: 0.12em;
   font-weight: 700;
   color: var(--theme-muted, #667a63);
@@ -682,18 +694,20 @@ select {
 }
 .episode-copy {
   flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .episode-copy h3 {
-  font-size: 19px;
+  font-size: 1.1875rem;
   letter-spacing: -0.025em;
 }
 .episode-action {
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 700;
   white-space: nowrap;
 }
 .episode-action span {
-  font-size: 19px;
+  font-size: 1.1875rem;
   margin-left: 8px;
 }
 .learn-note {
@@ -702,17 +716,17 @@ select {
   padding: 28px;
 }
 .learn-note h3 {
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 1.15;
   margin-top: 15px;
 }
 .learn-note p {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--theme-muted, #5c6477);
   margin-top: 17px;
 }
 .learn-note .small {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .aside-divider {
   border-top: 1px solid var(--line, #cfd1e2);
@@ -722,20 +736,20 @@ select {
   padding: 27px 7px;
 }
 .source-note h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .source-note p {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--muted);
   margin-block: 12px 18px;
 }
 .source-note a {
-  font-size: 11px;
+  font-size: 0.6875rem;
   display: block;
   margin-top: 14px;
 }
 .source-note > span {
-  font-size: 10px;
+  font-size: 0.625rem;
   color: var(--muted);
   display: block;
   margin-top: 22px;
@@ -745,11 +759,11 @@ select {
   min-height: 300px;
 }
 .course-error > span {
-  font-size: 55px;
+  font-size: 3.4375rem;
   color: var(--orange);
 }
 .course-error h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin: 20px 0 12px;
 }
 .course-error .button {
@@ -768,7 +782,7 @@ select {
   margin: 20px 0;
 }
 .about-lead {
-  font-size: 20px;
+  font-size: 1.25rem;
   max-width: 740px;
   color: var(--theme-muted, #536856);
 }
@@ -785,28 +799,28 @@ select {
   margin-top: 0;
 }
 .about-grid h2 {
-  font-size: 27px;
+  font-size: 1.6875rem;
   margin-top: 22px;
 }
 .about-grid h2:first-child {
   margin-top: 0;
 }
 .about-grid section p {
-  font-size: 15px;
+  font-size: 0.9375rem;
   margin: 16px 0;
   color: var(--theme-muted, #536856);
 }
 .about-grid .learn-note p {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 /* Responsive layout */
-@media (min-width: 1450px) {
+@media (min-width: 90.625em) {
   .hero {
     padding-block: 74px;
     min-height: 590px;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 59.375em) {
   .header-inner {
     padding-inline: 28px;
   }
@@ -814,13 +828,13 @@ select {
     display: none;
   }
   .hero h1 {
-    font-size: 64px;
+    font-size: 4rem;
   }
   .hero {
     gap: 0;
   }
   .hero-copy > p {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .hero-art {
     margin-right: -15px;
@@ -833,7 +847,7 @@ select {
     flex-wrap: wrap;
   }
   .course-layout {
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: minmax(0, 1fr) 250px;
     gap: 26px;
   }
   .course-facts {
@@ -849,14 +863,14 @@ select {
     font-size: 0;
   }
   .episode-action span {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .about-grid {
     gap: 35px;
   }
 }
 /* Keep the brand and disclosure intact before the compact phone navigation. */
-@media (min-width: 651px) and (max-width: 1200px) {
+@media (min-width: 40.6875em) and (max-width: 75em) {
   .header-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
@@ -868,7 +882,7 @@ select {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 16px;
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
   .site-header nav a {
     justify-content: center;
@@ -878,7 +892,7 @@ select {
     grid-row: 1;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 40.625em) {
   .wrap {
     padding-inline: 22px;
   }
@@ -888,14 +902,14 @@ select {
     gap: 15px;
   }
   .brand {
-    font-size: 10px;
+    font-size: 0.625rem;
     gap: 7px;
   }
   .brand-mark {
-    font-size: 39px;
+    font-size: 2.4375rem;
   }
   .brand-sub {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .site-header nav {
     display: grid;
@@ -903,7 +917,7 @@ select {
     width: 100%;
     gap: 0 16px;
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .site-header nav a {
     justify-content: center;
@@ -915,15 +929,15 @@ select {
     gap: 5px;
   }
   .hero h1 {
-    font-size: 61px;
+    font-size: 3.8125rem;
     margin-top: 15px;
   }
   .hero-copy > p {
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 22px;
   }
   .hero .eyebrow {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
   .hero-art {
     max-width: 400px;
@@ -934,18 +948,18 @@ select {
     max-height: 260px;
   }
   .art-label {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: -12px;
   }
   .hero-footnote {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .hero .button {
     margin-top: 24px;
   }
   .curiosity-strip {
     padding: 12px 0;
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
   .curiosity-strip > div {
     gap: 25px;
@@ -959,11 +973,11 @@ select {
     margin-bottom: 22px;
   }
   .section-heading h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .section-heading > p {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .filter-bar {
     flex-direction: column;
@@ -973,7 +987,7 @@ select {
     justify-content: space-between;
   }
   .search-field input {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 
   .note-star {
@@ -991,7 +1005,7 @@ select {
   }
   .how-grid > div {
     position: relative;
-    padding-left: 62px;
+    padding-left: calc(2.6875rem + 19px);
   }
   .step-number {
     position: absolute;
@@ -1000,11 +1014,11 @@ select {
   }
   .how-grid h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .how-grid p {
     max-width: none;
-    font-size: 13px;
+    font-size: 0.8125rem;
     margin-top: 8px;
   }
   .closing-banner {
@@ -1015,14 +1029,14 @@ select {
     gap: 15px;
   }
   .closing-banner > span {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
   .closing-banner p {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
   .closing-banner .button {
     margin-left: 57px;
-    font-size: 12px;
+    font-size: 0.75rem;
     min-height: 44px;
   }
   .footer-inner {
@@ -1032,13 +1046,13 @@ select {
   .footer-inner p {
     order: 3;
     flex-basis: 100%;
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .footer-brand {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .footer-inner > a:not(.footer-brand) {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .course-hero {
     grid-template-columns: 1fr;
@@ -1046,11 +1060,11 @@ select {
     gap: 25px;
   }
   .course-intro {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .course-facts {
     gap: 10px;
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .course-facts span + span:before {
     margin-right: 10px;
@@ -1068,15 +1082,15 @@ select {
     gap: 12px;
   }
   .episode-copy h3 {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .episode-kicker {
-    font-size: 7px;
+    font-size: 0.4375rem;
   }
   .episode-number {
-    width: 34px;
-    height: 38px;
-    font-size: 12px;
+    min-width: 2.125rem;
+    min-height: 2.375rem;
+    font-size: 0.75rem;
   }
   .episode-action span {
     margin-left: 0;
@@ -1089,10 +1103,10 @@ select {
     padding-inline: 10px;
   }
   .about-main > .eyebrow {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
   .about-lead {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
   .about-grid {
     grid-template-columns: 1fr;
@@ -1103,13 +1117,13 @@ select {
     padding: 25px;
   }
   .course-error h1 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 /* Leave room for three-line course titles on very narrow screens. */
-@media (max-width: 380px) {
+@media (max-width: 23.75em) {
   :root {
-    --page-title: 32px;
+    --page-title: 2rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1148,7 +1162,7 @@ select {
 .review-note {
   margin-top: 22px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .surprise-button {
   border: 0;
@@ -1177,7 +1191,7 @@ select {
   margin: auto;
 }
 .tiny-surprise p {
-  font-size: 12px;
+  font-size: 0.75rem;
   margin-top: 6px;
 }
 .tiny-surprise .surprise-signoff {
@@ -1194,12 +1208,12 @@ select {
 
 /* The coin motto is the welcome, with room to breathe on small screens. */
 .hero h1.motto {
-  font-size: clamp(34px, 4.4vw, 60px);
+  font-size: clamp(2.125rem, 1rem + 3vw, 3.75rem);
   line-height: 1.1;
 }
-@media (max-width: 650px) {
+@media (max-width: 40.625em) {
   .hero h1.motto {
-    font-size: clamp(34px, 10.5vw, 44px);
+    font-size: clamp(2.125rem, 1rem + 6vw, 2.75rem);
   }
 }
 
@@ -1213,11 +1227,11 @@ select {
   border-radius: 12px;
   background: var(--theme-gold, #edf0df);
   text-decoration: none;
-  font-size: 11px;
+  font-size: 0.6875rem;
   line-height: 1.4;
 }
 .fan-badge strong {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .fan-badge span {
   color: var(--theme-muted, #526448);
@@ -1228,11 +1242,11 @@ select {
   padding-left: 12px;
   border-left: 3px solid #d99b32;
   color: var(--theme-muted, #485941);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.65;
 }
-@media (max-width: 650px) {
+@media (max-width: 40.625em) {
   .header-inner {
     flex-wrap: wrap;
   }
@@ -1244,10 +1258,10 @@ select {
     justify-content: center;
     gap: 4px 8px;
     padding: 7px 9px;
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .fan-badge strong {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 }
 
@@ -1258,13 +1272,13 @@ select {
 }
 .quiet-discovery summary {
   cursor: pointer;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.7;
   padding: 5px 0;
 }
 .quiet-discovery p {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--muted);
   margin-top: 12px;
 }
@@ -1294,7 +1308,7 @@ select {
 .art-discovery p {
   max-width: 270px;
   margin: 12px auto 0;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--theme-muted, #526448);
 }
 .tiny-surprise:not([hidden]) svg {
@@ -1370,7 +1384,7 @@ select {
   quotes: "“" "”" "‘" "’";
 }
 .how-grid .quote-source {
-  font-size: 10px;
+  font-size: 0.625rem;
   margin-top: 16px;
   line-height: 1.6;
 }
@@ -1389,7 +1403,7 @@ select {
   font-weight: 700;
 }
 .closing-banner .quote-source {
-  font-size: 11px;
+  font-size: 0.6875rem;
   letter-spacing: 0;
   margin-top: 9px;
 }
@@ -1398,7 +1412,7 @@ select {
 .episode-progress {
   display: block;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--muted);
 }
 .button:disabled {
@@ -1410,7 +1424,7 @@ select {
 /* Derived course completion and recently active courses. */
 .course-progress {
   margin-top: 18px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--muted);
 }
@@ -1426,7 +1440,7 @@ select {
   max-width: 430px;
 }
 .course-progress-overview p {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 .continue-learning {
@@ -1455,12 +1469,12 @@ select {
 }
 .recent-course h3 {
   margin: 6px 0 8px;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 .recent-course p {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 /* A determinate, rounded track: an unstarted course should never look like a loader. */
@@ -1493,10 +1507,10 @@ progress::-moz-progress-bar {
 }
 .recent-course .continue-detail {
   margin: 0 0 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.625em) {
   .site-header nav a:last-child {
     grid-column: 1 / -1;
   }
@@ -1506,5 +1520,29 @@ progress::-moz-progress-bar {
   select {
     appearance: auto;
     background-image: none;
+  }
+}
+
+/* Keep the search purpose visible after the placeholder disappears. */
+.search-control {
+  display: grid;
+  align-content: start;
+  gap: 0.375rem;
+  flex: 1;
+  min-width: 0;
+}
+.search-control-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.search-control .search-field {
+  min-width: 0;
+}
+.episode-search {
+  margin-bottom: 1rem;
+}
+@media (min-width: 651px) {
+  .filter-bar > .subject-field {
+    align-self: end;
   }
 }

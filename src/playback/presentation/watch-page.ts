@@ -19,7 +19,7 @@ import { resumePosition } from "../../learning/domain/progress";
 import type { ProgressEvent, VideoProgress } from "../../learning/domain/progress";
 import { createYouTubePlayer } from "../infrastructure/youtube-player";
 import type { PlayerSession } from "../infrastructure/youtube-player";
-import { reloadOnRestore } from "../../site/reload-on-restore";
+import { refreshOnRestore } from "../../site/reload-on-restore";
 import { watchUrl } from "./watch-links";
 
 Alpine.data("watchPage", () => {
@@ -28,15 +28,19 @@ Alpine.data("watchPage", () => {
   let session: PlayerSession | undefined;
   let watchingMode: ReturnType<typeof createWatchingMode> | undefined;
   let disposed = false;
+  let suspended = false;
   let playCounted = false;
   const visibility = () => {
     if (document.hidden) session?.save();
   };
   const pageHide = () => {
+    suspended = true;
     session?.destroy();
+    session = undefined;
     watchingMode?.destroy();
+    watchingMode = undefined;
   };
-  let stopReloadOnRestore = () => {};
+  let stopRefreshOnRestore = () => {};
   function focusAfterUpdate(id: string) {
     // x-show reveals new controls on its next frame; focus after that reveal.
     void Alpine.nextTick(() =>
@@ -127,7 +131,7 @@ Alpine.data("watchPage", () => {
       if (player) watchingMode = createWatchingMode(player);
       document.addEventListener("visibilitychange", visibility);
       window.addEventListener("pagehide", pageHide);
-      stopReloadOnRestore = reloadOnRestore();
+      stopRefreshOnRestore = refreshOnRestore(() => this.restore());
       await this.load();
     },
     destroy() {
@@ -136,7 +140,20 @@ Alpine.data("watchPage", () => {
       session?.destroy();
       document.removeEventListener("visibilitychange", visibility);
       window.removeEventListener("pagehide", pageHide);
-      stopReloadOnRestore();
+      stopRefreshOnRestore();
+    },
+    async restore() {
+      if (disposed) return;
+      suspended = false;
+      const player = document.querySelector<HTMLElement>("#player-container");
+      if (player) watchingMode = createWatchingMode(player);
+      if (!this.ready) return;
+      const records = await progressStore.refresh();
+      if (disposed || suspended) return;
+      this.progress = records.find((record) => record.videoId === this.episode.videoId) ?? null;
+      this.storageWarning = progressStore.warning;
+      this.resetPending = false;
+      await this.resume();
     },
     async load() {
       this.loading = true;
@@ -184,7 +201,7 @@ Alpine.data("watchPage", () => {
         this.loading = false;
       }
       await Alpine.nextTick();
-      if (this.ready && !disposed) await this.resume();
+      if (this.ready && !disposed && !suspended) await this.resume();
     },
     async record(event: ProgressEvent) {
       this.progress = await progressStore.update(this.episode.videoId, event);

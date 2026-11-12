@@ -34,7 +34,7 @@
     transform: translateY(-3%) rotate(-5deg);
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 40.625em) {
   .idle-bean {
     width: 50px;
     height: 60px;

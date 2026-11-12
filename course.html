@@ -159,16 +159,19 @@
               </div>
               <span class="episode-total" x-text="episodeLabel"></span>
             </div>
-            <label class="search-field episode-search"
-              ><span aria-hidden="true"
-                ><svg class="icon" aria-hidden="true" focusable="false">
-                  <use href="./icons.svg#search"></use></svg></span
-              ><input
-                type="search"
-                aria-label="Search episodes"
-                placeholder="Find an episode…"
-                x-model="query"
-            /></label>
+            <search aria-label="Course episodes">
+              <label class="search-control episode-search"
+                ><span class="search-control-label">Search episodes</span
+                ><span class="search-field"
+                  ><span aria-hidden="true"
+                    ><svg class="icon" aria-hidden="true" focusable="false">
+                      <use href="./icons.svg#search"></use></svg></span
+                  ><input
+                    type="search"
+                    placeholder="Find an episode…"
+                    x-model.debounce.250ms="query" /></span
+              ></label>
+            </search>
             <p class="result-count" role="status" aria-live="polite" x-text="resultLabel"></p>
             <ol class="episode-list">
               <template x-for="episode in filteredEpisodes" :key="episode.videoId"

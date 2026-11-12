@@ -2,7 +2,7 @@ import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
 import { matchesQuery } from "../domain/search";
 import { findShelfSurprise } from "./shelf-surprises";
 import { coursesInCollection } from "../domain/course";
-import type { Collection, Course } from "../domain/course";
+import type { Collection, Course, CourseDetail } from "../domain/course";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
 import {
   courseProgressStatus,
@@ -13,7 +13,7 @@ import { resumePosition } from "../../learning/domain/progress";
 import { timeLabel } from "../../learning/presentation/progress-labels";
 import type { CourseSummary } from "../../learning/domain/course-summary";
 import { watchUrl } from "../../playback/presentation/watch-links";
-import { reloadOnRestore } from "../../site/reload-on-restore";
+import { refreshOnRestore } from "../../site/reload-on-restore";
 interface CourseCard extends Course {
   href: string;
   episodeLabel: string;
@@ -25,7 +25,9 @@ interface CourseCard extends Course {
   continueDetail: string;
 }
 export function createCatalogPage(collection: Collection) {
-  let stopReloadOnRestore = () => {};
+  let stopRefreshOnRestore = () => {};
+  let refreshVersion = 0;
+  const details = new Map<string, CourseDetail>();
   return {
     courses: [] as CourseCard[],
     query: "",
@@ -106,24 +108,63 @@ export function createCatalogPage(collection: Collection) {
       this.progress = "all";
     },
     async init() {
-      stopReloadOnRestore = reloadOnRestore();
+      stopRefreshOnRestore = refreshOnRestore(() => this.refreshProgress());
       await this.load();
     },
     destroy() {
-      stopReloadOnRestore();
+      stopRefreshOnRestore();
+      refreshVersion++;
     },
     async load() {
       this.loading = true;
       this.error = "";
       try {
         const catalog = coursesInCollection(await loadCatalog(), collection);
-        const records = await progressStore.list();
-        this.courses = await Promise.all(
-          catalog.map(async (course) => {
-            let summary: CourseSummary | null = null;
-            let continueDetail = "";
-            try {
-              const detail = await loadDetail(course);
+        this.courses = catalog.map((course) => ({
+          ...course,
+          href: `./course.html?id=${encodeURIComponent(course.id)}`,
+          episodeLabel: `${course.episodeCount} episodes`,
+          summary: null,
+          progressLabel: "Loading progress…",
+          percent: 0,
+          continueHref: `./course.html?id=${encodeURIComponent(course.id)}`,
+          continueLabel: "Continue learning",
+          continueDetail: "",
+        }));
+        // The shelf is usable while saved progress and episode memberships load.
+        this.loading = false;
+        await this.refreshProgress();
+      } catch {
+        this.error = "The course shelf couldn’t load. Check your connection and try again.";
+      } finally {
+        this.loading = false;
+      }
+    },
+    async refreshProgress() {
+      const version = ++refreshVersion;
+      const records = await progressStore.refresh();
+      if (version !== refreshVersion) return;
+      this.storageWarning = progressStore.warning;
+      this.resumeVideoId = null;
+      await Promise.all(
+        this.courses.map(async (course, index) => {
+          let summary: CourseSummary | null = null;
+          let continueDetail = "";
+          try {
+            if (records.length === 0) {
+              // With no records, every course is unstarted regardless of membership.
+              summary = {
+                total: course.episodeCount,
+                completed: 0,
+                percent: 0,
+                lastActivityAt: 0,
+                continueVideoId: null,
+                isComplete: false,
+              };
+            } else {
+              // Check every membership: a video can belong to more than one course.
+              const detail = details.get(course.id) ?? (await loadDetail(course));
+              details.set(course.id, detail);
               summary = summarizeCourse(
                 detail.episodes.map((episode) => episode.videoId),
                 records,
@@ -141,39 +182,32 @@ export function createCatalogPage(collection: Collection) {
                     ? `Resume ${episode.title} at ${timeLabel(position)}.`
                     : `Up next: ${episode.title}.`
                   : "";
-            } catch {
-              /* An unavailable detail file must not hide the course shelf. */
             }
-            const href = `./course.html?id=${encodeURIComponent(course.id)}`;
-            return {
-              ...course,
-              href,
-              episodeLabel: `${course.episodeCount} episodes`,
-              summary,
-              percent: summary?.percent ?? 0,
-              progressLabel: summary
-                ? `${summary.completed} of ${summary.total} completed`
-                : "Progress unavailable",
-              continueHref: summary?.continueVideoId
-                ? watchUrl(course.id, summary.continueVideoId)
-                : href,
-              continueLabel: summary?.isComplete ? "Watch again" : "Continue learning",
-              continueDetail,
-            };
-          }),
-        );
-        this.resumeVideoId = mostRecentUnfinished(
-          records,
-          this.courses.flatMap((course) =>
-            course.summary?.continueVideoId ? [course.summary.continueVideoId] : [],
-          ),
-        );
-        this.storageWarning = progressStore.warning;
-      } catch {
-        this.error = "The course shelf couldn’t load. Check your connection and try again.";
-      } finally {
-        this.loading = false;
-      }
+          } catch {
+            /* An unavailable detail file must not hide the course shelf. */
+          }
+          if (version !== refreshVersion) return;
+          this.courses[index] = {
+            ...course,
+            summary,
+            percent: summary?.percent ?? 0,
+            progressLabel: summary
+              ? `${summary.completed} of ${summary.total} completed`
+              : "Progress unavailable",
+            continueHref: summary?.continueVideoId
+              ? watchUrl(course.id, summary.continueVideoId)
+              : course.href,
+            continueLabel: summary?.isComplete ? "Watch again" : "Continue learning",
+            continueDetail,
+          };
+          this.resumeVideoId = mostRecentUnfinished(
+            records,
+            this.courses.flatMap((item) =>
+              item.summary?.continueVideoId ? [item.summary.continueVideoId] : [],
+            ),
+          );
+        }),
+      );
     },
   };
 }

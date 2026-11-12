@@ -175,16 +175,17 @@
           </div>
           <p>For your unironic enthusiasm.</p>
         </div>
-        <div class="filter-bar">
-          <label class="search-field"
-            ><span aria-hidden="true"
-              ><svg class="icon" aria-hidden="true" focusable="false">
-                <use href="./icons.svg#search"></use></svg></span
-            ><input
-              type="search"
-              placeholder="Find a course, topic, or host…"
-              aria-label="Search courses"
-              x-model="query" /></label
+        <search aria-label="Crash Course courses" class="filter-bar">
+          <label class="search-control"
+            ><span class="search-control-label">Search courses</span
+            ><span class="search-field"
+              ><span aria-hidden="true"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="./icons.svg#search"></use></svg></span
+              ><input
+                type="search"
+                placeholder="Find a course, topic, or host…"
+                x-model.debounce.250ms="query" /></span></label
           ><label class="subject-field"
             ><span>Subject</span
             ><select aria-label="Filter by subject" x-model="subject">
@@ -202,7 +203,7 @@
               <option value="completed">Completed</option>
             </select>
           </label>
-        </div>
+        </search>
         <noscript
           ><div class="notice">
             Enable JavaScript to browse the course catalog. You can also visit

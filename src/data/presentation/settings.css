@@ -12,7 +12,7 @@
 }
 .settings-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: var(--layout-gap);
 }
 .data-card {
@@ -28,7 +28,7 @@
   background: var(--theme-purple, #eeedf8);
 }
 .data-card > h3 {
-  font-size: 27px;
+  font-size: 1.6875rem;
   line-height: 1.2;
   margin: 0 0 12px;
 }
@@ -73,7 +73,7 @@
   margin-block: 24px;
   max-width: 80ch;
 }
-@media (max-width: 680px) {
+@media (max-width: 42.5em) {
   .settings-grid {
     grid-template-columns: 1fr;
   }
@@ -139,7 +139,7 @@
   margin-top: 40px;
 }
 .data-summary h2 {
-  font-size: 27px;
+  font-size: 1.6875rem;
   line-height: 1.2;
   margin: 0 0 10px;
 }

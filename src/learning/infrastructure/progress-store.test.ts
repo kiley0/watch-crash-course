@@ -86,6 +86,35 @@ describe("local progress adapter", () => {
     expect((await store.list())[0]?.completed).toBe(true);
     expect(disk.values.get(`video:${id}`)?.completed).toBe(true);
   });
+  it("refreshes changed and deleted cached records after another page writes", async () => {
+    const disk = backend();
+    const store = createProgressStore(disk);
+    await store.update(id, { type: "playback", position: 20, duration: 100 });
+    disk.values.set(`video:${id}`, updateProgress(null, id, { type: "complete" }, 2));
+    expect((await store.refresh())[0]?.completed).toBe(true);
+    expect((await store.load(id))?.completed).toBe(true);
+    disk.values.clear();
+    expect(await store.refresh()).toEqual([]);
+    expect(await store.load(id)).toBeNull();
+  });
+  it("retains temporary records and cached records if refresh fails", async () => {
+    const disk = backend();
+    const store = createProgressStore(disk);
+    await store.update(id, { type: "complete" });
+    disk.keys.mockRejectedValue(new Error("blocked"));
+    expect((await store.refresh())[0]?.completed).toBe(true);
+    expect(store.warning).toContain("retained");
+    disk.keys.mockResolvedValue([]);
+    expect(await store.refresh()).toHaveLength(1);
+    const temporary = createProgressStore({
+      ...disk,
+      setItem: async () => {
+        throw new Error("quota");
+      },
+    });
+    await temporary.update(id, { type: "complete" });
+    expect(await temporary.refresh()).toHaveLength(1);
+  });
   it("shares a video's progress regardless of course membership", async () => {
     const disk = backend();
     const store = createProgressStore(disk);

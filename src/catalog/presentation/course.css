@@ -15,10 +15,10 @@
 }
 .course-pizza figcaption {
   padding: 0 12px 20px;
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--muted);
 }
-@media (max-width: 650px) {
+@media (max-width: 40.625em) {
   .course-pizza {
     max-width: 330px;
   }
@@ -28,10 +28,10 @@
   margin-top: 16px;
 }
 .course-complete-action .text-button {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .course-complete-action p {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--muted);
 }
 
@@ -40,7 +40,7 @@
 }
 .learn-note .thought-quote p {
   color: var(--ink);
-  font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 1.45;
   font-weight: 700;
   margin: 0;
@@ -49,6 +49,6 @@
   margin: 0 0 16px;
 }
 .thought-episode {
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 1.6;
 }

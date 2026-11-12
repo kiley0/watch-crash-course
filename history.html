@@ -72,16 +72,17 @@
       <div x-cloak x-show="metadataLoading" class="history-note" role="status">
         Adding course names to your saved records…
       </div>
-      <div class="filter-bar" x-cloak x-show="hasEntries">
-        <label class="search-field"
-          ><span aria-hidden="true"
-            ><svg class="icon" aria-hidden="true" focusable="false">
-              <use href="./icons.svg#search"></use></svg></span
-          ><input
-            type="search"
-            aria-label="Search history"
-            placeholder="Find an episode or course…"
-            x-model="query" /></label
+      <search aria-label="Learning history" class="filter-bar" x-cloak x-show="hasEntries">
+        <label class="search-control"
+          ><span class="search-control-label">Search history</span
+          ><span class="search-field"
+            ><span aria-hidden="true"
+              ><svg class="icon" aria-hidden="true" focusable="false">
+                <use href="./icons.svg#search"></use></svg></span
+            ><input
+              type="search"
+              placeholder="Find an episode or course…"
+              x-model.debounce.250ms="query" /></span></label
         ><label class="subject-field"
           ><span>Status</span
           ><select aria-label="Filter history by status" x-model="status">
@@ -90,7 +91,7 @@
             <option value="completed">Completed</option>
           </select></label
         >
-      </div>
+      </search>
       <p x-cloak x-show="hasEntries" class="result-count" role="status" x-text="resultLabel"></p>
       <div class="empty-state" x-cloak x-show="empty">
         <span aria-hidden="true">✦</span>

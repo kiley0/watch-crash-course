@@ -12,7 +12,7 @@ import { progressStore } from "../../learning/infrastructure/browser-progress";
 import { summarizeCourse } from "../../learning/domain/course-summary";
 import type { CourseSummary } from "../../learning/domain/course-summary";
 import { progressStatus } from "../../learning/domain/progress";
-import { reloadOnRestore } from "../../site/reload-on-restore";
+import { refreshOnRestore } from "../../site/reload-on-restore";
 import type { Course, Episode } from "../domain/course";
 interface EpisodeLink extends Episode {
   href: string;
@@ -20,7 +20,7 @@ interface EpisodeLink extends Episode {
   status: string;
 }
 Alpine.data("coursePage", () => {
-  let stopReloadOnRestore = () => {};
+  let stopRefreshOnRestore = () => {};
   return {
     thought: chooseThoughtBubble(),
     get thoughtUrl(): string {
@@ -154,11 +154,26 @@ Alpine.data("coursePage", () => {
       this.query = "";
     },
     async init() {
-      stopReloadOnRestore = reloadOnRestore();
+      stopRefreshOnRestore = refreshOnRestore(() => this.refreshProgress());
       await this.load();
     },
     destroy() {
-      stopReloadOnRestore();
+      stopRefreshOnRestore();
+    },
+    async refreshProgress() {
+      if (!this.ready) return;
+      const records = await progressStore.refresh();
+      const byId = new Map(records.map((record) => [record.videoId, record]));
+      this.episodes = this.episodes.map((episode) => ({
+        ...episode,
+        status: progressStatus(byId.get(episode.videoId) ?? null),
+      }));
+      this.summary = summarizeCourse(
+        this.episodes.map((episode) => episode.videoId),
+        records,
+      );
+      this.storageWarning = progressStore.warning;
+      this.completionMessage = "";
     },
     async load() {
       this.loading = true;

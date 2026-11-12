@@ -40,18 +40,19 @@
 .shelf-heading {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 22px;
 }
 .shelf-heading h3 {
   margin: 0;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 .shelf-heading > span {
   color: var(--muted);
-  font-size: 13px;
-  white-space: nowrap;
+  font-size: 0.8125rem;
+  white-space: normal;
 }
 .shelf-books {
   position: relative;
@@ -59,7 +60,7 @@
   margin: 0;
   padding: 16px 24px 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11.875rem), 1fr));
   gap: 32px 18px;
   background: linear-gradient(var(--theme-shelf-backdrop, #eee9dc80), transparent);
   border-radius: 16px 16px 0 0;
@@ -122,37 +123,37 @@
   outline-offset: 5px;
 }
 .book-series {
-  font-size: 9px;
+  font-size: 0.5625rem;
   letter-spacing: 1.8px;
   font-weight: 800;
 }
 .book-cover .book-title {
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 1.2;
   margin: 22px 0 12px;
   overflow-wrap: normal;
   hyphens: none;
 }
 .book-ornament {
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1;
   color: var(--book-accent);
   margin: auto 0 20px;
 }
 .book-author {
   min-height: 36px;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 .book-episodes {
-  font-size: 11px;
+  font-size: 0.6875rem;
   margin-top: 5px;
 }
 .book-progress {
   border-top: 1px solid var(--book-border, #20392f30);
   padding-top: 12px;
   margin-top: 14px;
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 .book-progress progress {
   display: block;
@@ -161,7 +162,7 @@
   margin-top: 7px;
   accent-color: var(--book-accent);
 }
-@media (max-width: 650px) {
+@media (max-width: 40.625em) {
   .library-shelves {
     gap: 32px;
   }
@@ -180,16 +181,16 @@
     border-left-width: 6px;
   }
   .book-cover .book-title {
-    font-size: clamp(14px, 4vw, 18px);
+    font-size: clamp(0.875rem, 0.5rem + 2vw, 1.125rem);
     overflow-wrap: anywhere;
     hyphens: auto;
   }
   .book-series {
     letter-spacing: 1px;
-    font-size: 8px;
+    font-size: 0.5rem;
   }
   .shelf-heading h3 {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -223,10 +224,10 @@
 }
 .recent-shelf .shelf-heading h2 {
   margin: 0;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 .recent-shelf .shelf-heading a {
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 700;
   padding-block: 12px;
   min-height: 44px;
@@ -235,13 +236,13 @@
 }
 
 .book-cover .book-title-long {
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.25;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.625em) {
   .recent-shelf .shelf-heading h2 {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
 }
 
@@ -256,15 +257,30 @@
   max-width: 720px;
 }
 .study-hall-intro > p:first-of-type {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .study-hall-intro .small {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--muted);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.625em) {
   .book-cover .book-title-long {
-    font-size: clamp(14px, 3.6vw, 16px);
+    font-size: clamp(0.875rem, 0.5rem + 1.6vw, 1rem);
+  }
+}
+
+/* Later shelves retain their grid layout while the browser skips offscreen card contents.
+   The estimates are each cover's minimum height minus its padding and two borders;
+   row counts remain content-driven, and auto remembers measured card heights. */
+@supports (content-visibility: auto) {
+  .library-shelves > .subject-shelf:nth-of-type(n + 3) .book-cover {
+    content-visibility: auto;
+    contain-intrinsic-size: auto none auto calc(340px - 42px - 2px);
+  }
+  @media (max-width: 40.625em) {
+    .library-shelves > .subject-shelf:nth-of-type(n + 3) .book-cover {
+      contain-intrinsic-size: auto none auto calc(280px - 30px - 2px);
+    }
   }
 }

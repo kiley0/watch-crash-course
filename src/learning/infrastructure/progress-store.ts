@@ -56,6 +56,28 @@ export function createProgressStore(backend: ProgressBackend) {
         return records.filter((record): record is VideoProgress => record !== null);
       });
     },
+    refresh(): Promise<VideoProgress[]> {
+      return enqueue(async () => {
+        // Temporary records are the only safe copy after a storage failure.
+        if (!warning) {
+          try {
+            const keys = await backend.keys();
+            const fresh = new Map<string, VideoProgress | null>();
+            for (const key of keys) {
+              if (!/^video:[A-Za-z0-9_-]{11}$/.test(key)) continue;
+              const id = key.slice(6);
+              fresh.set(id, parseProgress(await backend.getItem(key), id));
+            }
+            memory.clear();
+            for (const [id, record] of fresh) memory.set(id, record);
+          } catch {
+            warning =
+              "Saved history couldn’t be refreshed. Your current progress is retained in this tab; existing saved data will not be overwritten.";
+          }
+        }
+        return [...memory.values()].filter((record): record is VideoProgress => record !== null);
+      });
+    },
     update(videoId: string, event: ProgressEvent): Promise<VideoProgress> {
       return enqueue(async () => {
         const next = updateProgress(await read(videoId), videoId, event, Date.now());
