@@ -1,8 +1,10 @@
 import { defineConfig, loadEnv } from "vite-plus";
+import { sharingMetadata } from "./src/site/infrastructure/sharing-build";
 
 export default defineConfig({
   base: "./",
   appType: "mpa",
+  plugins: [sharingMetadata()],
   build: {
     rolldownOptions: {
       input: [

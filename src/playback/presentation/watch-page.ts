@@ -1,3 +1,4 @@
+import { pageTitle } from "../../site/presentation/page-title";
 import { readPlayerMode } from "../infrastructure/player-preference";
 import { trackVideoPlay } from "../../site/infrastructure/analytics";
 import { setIdleBeanPlayback } from "../../site/presentation/idle-bean";
@@ -192,7 +193,7 @@ Alpine.data("watchPage", () => {
         this.nextTitle = next?.title ?? "";
         this.progress = await progressStore.load(videoId);
         this.storageWarning = progressStore.warning;
-        document.title = `${episode.title} · ${course.title} · Watch Crash Course`;
+        document.title = pageTitle(`${episode.title} · ${course.title}`);
       } catch {
         this.canRetry = true;
         this.error =

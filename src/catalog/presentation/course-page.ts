@@ -1,3 +1,4 @@
+import { pageTitle } from "../../site/presentation/page-title";
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
 import "./course.css";
@@ -208,7 +209,7 @@ Alpine.data("coursePage", () => {
           status: progressStatus(records[index] ?? null),
         }));
         this.storageWarning = progressStore.warning;
-        document.title = `${course.title} · Watch Crash Course`;
+        document.title = pageTitle(course.title);
       } catch {
         this.canRetry = true;
         this.error = "We couldn’t load this course. Check your connection and try again.";

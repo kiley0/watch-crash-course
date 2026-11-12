@@ -4,5 +4,42 @@
   "installCommand": "corepack pnpm install --frozen-lockfile",
   "buildCommand": "corepack pnpm build",
   "outputDirectory": "dist",
-  "cleanUrls": false
+  "cleanUrls": false,
+  "rewrites": [
+    {
+      "source": "/course.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<courseId>[a-z0-9]+(?:-[a-z0-9]+)*)"
+        }
+      ],
+      "destination": "/_course-:courseId.html"
+    },
+    {
+      "source": "/watch.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "course",
+          "value": "(?<courseId>[a-z0-9]+(?:-[a-z0-9]+)*)"
+        },
+        {
+          "type": "query",
+          "key": "video",
+          "value": "(?<videoId>[A-Za-z0-9_-]{11})"
+        }
+      ],
+      "destination": "/_watch-:courseId-:videoId.html"
+    },
+    {
+      "source": "/course.html",
+      "destination": "/_course.html"
+    },
+    {
+      "source": "/watch.html",
+      "destination": "/_watch.html"
+    }
+  ]
 }

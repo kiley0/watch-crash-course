@@ -31,6 +31,14 @@ pnpm dev
 
 `pnpm fmt` formats the project. `pnpm build` runs formatting checks, lint, TypeScript, tests, and the production build. `pnpm preview` serves the built site.
 
+## Link sharing and discovery
+
+`src/site/presentation/sharing-metadata.ts` defines Open Graph, large-image social cards, canonical URLs, and descriptions. Its build adapter in `src/site/infrastructure/sharing-build.ts` renders them into the HTML at build time. Course and lesson previews come from the checked-in catalog, so sharing crawlers do not need JavaScript. The homepage also identifies this independent fan site with `WebSite` structured data. History, settings, and incomplete course/lesson links use `noindex`.
+
+The build generates a sitemap and static `_course-*.html` / `_watch-*.html` variants. `vercel.json` rewrites the existing public query URLs to these files; the generic templates are emitted as `_course.html` and `_watch.html` to avoid Vercel filesystem precedence. Keep these rules and the generator aligned. Other static hosts need equivalent query routing. `pnpm preview` mirrors it locally; unknown course/video pairs return 404 on Vercel.
+
+The sharing image is `public/social/book-preview.png` (1200 × 630), with an editable SVG beside it. Update the PNG when editing the SVG, and change the image filename in the generator when replacing an already shared image to avoid stale platform caches. Canonical URLs use `https://www.watchcrashcourse.com`, the production hostname. After deployment, verify raw HTML with a sharing crawler user agent, check the image response, and use platform inspection tools to refresh existing previews. Platform caches may delay changes.
+
 ## Help make it better
 
 Found a broken video, incorrect course detail, accessibility problem, or bug? [Open an issue](https://github.com/kiley0/watch-crash-course/issues). Pull requests to fix issues are welcome—keep changes focused, preserve the simple architecture, and run `pnpm fmt` and `pnpm build`. Check affected flows in the browser, including keyboard use and mobile layouts. For playback changes, check play, pause, and resume after reloading. Test backup changes in a disposable browser profile. See [the contributor guide](ARCHITECTURE.md) for code placement and data conventions.
