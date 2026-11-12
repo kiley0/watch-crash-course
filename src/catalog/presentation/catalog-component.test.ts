@@ -174,3 +174,96 @@ it("does not let an older enrichment overwrite refreshed progress", async () => 
   expect(page.courses.every((course) => course.summary?.lastActivityAt === 0)).toBe(true);
   expect(page.recentCourses).toEqual([]);
 });
+
+it("shows up to three unfinished courses in the hero, newest first, independent of catalog filters", async () => {
+  const ids = ["world-history", "psychology", "astronomy", "philosophy", "botany", "study-skills"];
+  const courses = parseCatalog(catalog);
+  const records = ids.map((id, index) => {
+    const course = courses.find((item) => item.id === id)!;
+    const detail = parseDetail(files[`../../../public/data/courses/${id}.json`], course);
+    return updateProgress(null, detail.episodes[0]!.videoId, { type: "complete" }, 100 + index);
+  });
+  vi.spyOn(progressStore, "refresh").mockResolvedValue(records);
+  const page = createCatalogPage("crash-course");
+  await page.load();
+  page.query = "no matching course";
+  expect(page.heroCourses.map((course) => course.id)).toEqual([
+    "study-skills",
+    "botany",
+    "philosophy",
+  ]);
+  const botany = page.heroCourses[1]!;
+  expect(botany.nextEpisodeTitle).toBe("What Are Plants Made Of?");
+  expect(botany.nextEpisodeLabel).toBe("Watch episode 2");
+  expect(botany.continueHref).toContain("video=9AEzixu_xZk");
+  expect(page.hasHeroCourses).toBe(true);
+  vi.spyOn(progressStore, "refresh").mockResolvedValue([]);
+  await page.refreshProgress();
+  expect(page.hasHeroCourses).toBe(false);
+});
+
+it("excludes completed courses from hero suggestions", async () => {
+  const course = parseCatalog(catalog).find((item) => item.id === "botany")!;
+  const detail = parseDetail(files["../../../public/data/courses/botany.json"], course);
+  vi.spyOn(progressStore, "refresh").mockResolvedValue(
+    detail.episodes.map((episode) =>
+      updateProgress(null, episode.videoId, { type: "complete" }, 100),
+    ),
+  );
+  const page = createCatalogPage("crash-course");
+  await page.load();
+  expect(page.heroCourses).toEqual([]);
+});
+
+it("resumes a partly watched episode even with no completed lessons", async () => {
+  vi.spyOn(progressStore, "refresh").mockResolvedValue([
+    updateProgress(null, "9AEzixu_xZk", { type: "playback", position: 42, duration: 600 }, 200),
+  ]);
+  const page = createCatalogPage("crash-course");
+  await page.load();
+  expect(page.heroCourses).toHaveLength(1);
+  expect(page.heroCourses[0]).toEqual(
+    expect.objectContaining({
+      id: "botany",
+      nextEpisodeTitle: "What Are Plants Made Of?",
+      nextEpisodeLabel: "Resume episode 2",
+      continueHref: "./watch.html?course=botany&video=9AEzixu_xZk",
+    }),
+  );
+});
+
+it("fills remaining hero slots with starters without repeating an active course", async () => {
+  const page = createCatalogPage("crash-course");
+  await page.load();
+  expect(page.heroStarterIds).toEqual(["astronomy", "philosophy", "botany"]);
+  const records = [
+    updateProgress(null, "0rHUDWjR5gg", { type: "complete" }, 100),
+    updateProgress(null, "1A_CAkYt3GY", { type: "complete" }, 200),
+    updateProgress(null, "2th5lAd-77A", { type: "complete" }, 300),
+  ];
+  for (const count of [1, 2, 3]) {
+    vi.spyOn(progressStore, "refresh").mockResolvedValue(records.slice(0, count));
+    await page.refreshProgress();
+    expect(page.heroCourses.length + page.heroStarterIds.length).toBe(3);
+    expect(page.heroStarterIds).toEqual(["astronomy", "philosophy", "botany"].slice(count));
+  }
+});
+
+it("keeps static starter lesson titles and watch URLs aligned with the catalog", async () => {
+  const { default: html } = await import("../../../index.html?raw");
+  const starters = [
+    ...html.matchAll(
+      /<article\s+class="chapter-entry"\s+x-show="show\w+Starter"[\s\S]*?<\/article>/g,
+    ),
+  ];
+  expect(starters).toHaveLength(3);
+  for (const [article] of starters) {
+    const link = article.match(/href="\.\/watch\.html\?course=([^&]+)&amp;video=([^"]+)"/)!;
+    const course = parseCatalog(catalog).find((item) => item.id === link[1])!;
+    const detail = parseDetail(files[`../../../public/data/courses/${course.id}.json`], course);
+    const first = detail.episodes[0]!;
+    expect(link[2]).toBe(first.videoId);
+    expect(article).toContain(first.title);
+    expect(article.match(/href="\.\/watch\.html[^"]+"/g)).toEqual([link[0], link[0]]);
+  }
+});

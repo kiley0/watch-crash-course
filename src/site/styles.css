@@ -458,15 +458,31 @@ select {
   gap: 50px;
   margin-top: 35px;
 }
-.step-number {
-  display: grid;
-  place-items: center;
-  width: 2.6875rem;
-  min-height: 2.6875rem;
-  border-radius: 14px;
-  transform: rotate(-8deg);
-  font-size: 0.8125rem;
-  font-weight: 800;
+.quote-book {
+  display: block;
+  position: relative;
+  width: 29px;
+  height: 36px;
+  margin-inline: 4px;
+  border: 1px solid var(--muted);
+  border-radius: 2px 4px 4px 2px;
+  box-shadow: 1px 2px 0 var(--line);
+}
+.quote-book::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 4px;
+  border-left: 1px solid var(--muted);
+  box-shadow: 1px 0 0 #ffffff40;
+}
+.quote-book::after {
+  content: "";
+  position: absolute;
+  inset: auto 1px 2px 5px;
+  height: 4px;
+  border-block: 1px solid var(--muted);
+  background: var(--paper);
+  border-radius: 1px;
 }
 .peach {
   background: var(--theme-peach, #f7d1bb);
@@ -1007,7 +1023,7 @@ select {
     position: relative;
     padding-left: calc(2.6875rem + 19px);
   }
-  .step-number {
+  .quote-book {
     position: absolute;
     left: 0;
     top: 1px;

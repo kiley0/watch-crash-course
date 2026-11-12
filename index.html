@@ -41,58 +41,204 @@
         >
       </div>
     </header>
-    <main id="main">
-      <section class="hero wrap">
-        <div class="hero-copy">
-          <span class="eyebrow"
-            ><span class="little-sun" aria-hidden="true">✳</span> You’re here because you’re
-            here.</span
-          >
-          <h1 class="motto">
-            Knowledge<br />weighs nothing,<br /><span class="underlined">carry all you can.</span>
-          </h1>
-          <p class="fan-disclosure">
-            An unofficial, fan-made learning site.<br />Not affiliated with or endorsed by Crash
-            Course.
-          </p>
-          <p>
-            Made by a Nerdfighter and lifelong learner who has watched a lot of Crash Course. Now I
-            pulled a Hank and started yet another side project.
-          </p>
-          <a class="button button-orange" href="#courses"
-            >Find your next rabbit hole
-            <svg class="icon" aria-hidden="true" focusable="false">
-              <use href="./icons.svg#arrow-down-right"></use></svg
-          ></a>
-          <div class="hero-footnote">
-            <span aria-hidden="true"
-              ><svg class="icon" aria-hidden="true" focusable="false">
-                <use href="./icons.svg#check"></use></svg
-            ></span>
-            100% free forever. <span aria-hidden="true">·</span>
-            <a href="https://github.com/kiley0/watch-crash-course">100% open-source.</a>
+    <main id="main" x-data="catalogPage">
+      <section class="notebook-hero wrap" aria-labelledby="notebook-title">
+        <div class="notebook-caption">
+          <span>You’re here because you’re here.</span>
+        </div>
+        <div class="curiosity-notebook">
+          <div class="notebook-page notebook-intro">
+            <p class="notebook-running-head">WATCH CRASH COURSE <span>01 / ABOUT</span></p>
+            <h1 id="notebook-title">Knowledge weighs nothing,<br /><em>carry all you can.</em></h1>
+            <p class="notebook-citation">
+              — From the <a href="https://crashcoursecoin.com/">Crash Course Coin</a>
+            </p>
+            <p class="notebook-description">
+              Hey! Did you know there's an official Crash Course website? Check it out here:
+              <a href="https://thecrashcourse.com/">thecrashcourse.com</a>
+            </p>
+            <p class="notebook-description">
+              This is an unofficial, fan-made site. I made it so that I could track my progress as I
+              watch Crash Course videos. And for my kids, so they can track their progress and pick
+              up where they left off.
+            </p>
+            <p class="notebook-description">
+              And for you, if you want to track your progress. It's free, there's no user accounts,
+              everything is saved locally in your web browser only.
+            </p>
+            <a class="notebook-cta" href="#courses"
+              >Browse courses
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="./icons.svg#arrow-up-right"></use></svg
+            ></a>
+            <p class="notebook-maker">Made by a Nerdfighter who watches a lot of Crash Course.</p>
+            <div class="notebook-page-footer">
+              <span>No account. Free forever.</span><span aria-hidden="true">01</span>
+            </div>
+          </div>
+          <div class="notebook-page notebook-discoveries">
+            <p class="notebook-running-head">
+              <span
+                x-text="hasHeroCourses ? 'CONTINUE WATCHING & EXPLORE' : 'A FEW COURSES TO START WITH'"
+                >A FEW COURSES TO START WITH</span
+              >
+              <span>02 / COURSES</span>
+            </p>
+            <div class="notebook-episode-entries">
+              <template x-for="(course, index) in heroCourses" :key="course.id">
+                <article class="chapter-entry" :data-hero-slot="index + 1">
+                  <p class="chapter-kicker">
+                    Continue watching · <span x-text="course.title"></span>
+                  </p>
+                  <h2 class="chapter-title">
+                    <a :href="course.continueHref" x-text="course.nextEpisodeTitle"></a>
+                  </h2>
+                  <p class="chapter-prose" x-text="course.description"></p>
+                  <p class="chapter-progress" x-text="course.progressLabel"></p>
+                  <a
+                    class="chapter-watch"
+                    :href="course.continueHref"
+                    :aria-label="course.nextEpisodeLabel + ' of ' + course.title"
+                    ><svg class="icon" aria-hidden="true" focusable="false">
+                      <use href="./icons.svg#play"></use></svg
+                    ><span x-text="course.nextEpisodeLabel"></span
+                  ></a>
+                </article>
+              </template>
+              <article
+                class="chapter-entry"
+                x-show="showAstronomyStarter"
+                :data-hero-slot="starterSlot('astronomy')"
+              >
+                <p class="chapter-kicker">Explore · Astronomy</p>
+                <h2 class="chapter-title">
+                  <a href="./watch.html?course=astronomy&amp;video=0rHUDWjR5gg"
+                    >Introduction to Astronomy</a
+                  >
+                </h2>
+                <figure class="chapter-figure">
+                  <svg
+                    class="orbit-sketch"
+                    viewBox="0 0 260 130"
+                    fill="none"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <ellipse
+                      cx="130"
+                      cy="65"
+                      rx="112"
+                      ry="38"
+                      transform="rotate(-17 130 65)"
+                      stroke-width="1.4"
+                    />
+                    <ellipse
+                      cx="130"
+                      cy="65"
+                      rx="75"
+                      ry="25"
+                      transform="rotate(-17 130 65)"
+                      stroke-dasharray="3 5"
+                    />
+                    <circle cx="130" cy="65" r="19" stroke-width="1.8" />
+                    <path d="m130 35 1-8m-1 76v-8m29-30h9m-76 0h9m8-22-6-6m48 50 6 6" />
+                    <circle cx="225" cy="29" r="7" fill="currentColor" />
+                    <circle cx="61" cy="89" r="4" fill="currentColor" />
+                  </svg>
+                  <figcaption>Fig. 1 — Orbits</figcaption>
+                </figure>
+                <p class="chapter-prose">
+                  The night sky is a view into our universe. Begin with planets, stars, and the
+                  distances between them.
+                </p>
+                <a
+                  class="chapter-watch"
+                  aria-label="Watch episode 1 of Astronomy"
+                  href="./watch.html?course=astronomy&amp;video=0rHUDWjR5gg"
+                  ><svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="./icons.svg#play"></use></svg
+                  ><span>Watch episode 1</span></a
+                >
+              </article>
+              <article
+                class="chapter-entry"
+                x-show="showPhilosophyStarter"
+                :data-hero-slot="starterSlot('philosophy')"
+              >
+                <p class="chapter-kicker">Explore · Philosophy</p>
+                <h2 class="chapter-title">
+                  <a href="./watch.html?course=philosophy&amp;video=1A_CAkYt3GY"
+                    >What is Philosophy?</a
+                  >
+                </h2>
+                <p class="chapter-prose">
+                  Knowledge, reality, and how to live: philosophy begins by asking what we mean and
+                  examining our reasons.
+                </p>
+                <a
+                  class="chapter-watch"
+                  aria-label="Watch episode 1 of Philosophy"
+                  href="./watch.html?course=philosophy&amp;video=1A_CAkYt3GY"
+                  ><svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="./icons.svg#play"></use></svg
+                  ><span>Watch episode 1</span></a
+                >
+              </article>
+              <article
+                class="chapter-entry"
+                x-show="showBotanyStarter"
+                :data-hero-slot="starterSlot('botany')"
+              >
+                <p class="chapter-kicker">Explore · Botany</p>
+                <h2 class="chapter-title">
+                  <a href="./watch.html?course=botany&amp;video=2th5lAd-77A">What is Botany?</a>
+                </h2>
+                <figure class="chapter-figure">
+                  <svg
+                    class="plant-sketch"
+                    viewBox="0 0 120 110"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M58 106Q65 55 56 12M60 77Q23 80 22 49Q52 47 60 77ZM61 58Q96 57 100 29Q70 29 61 58ZM58 36Q31 30 39 5Q60 16 58 36Z"
+                    />
+                    <path d="m60 77-29-20m30 1 30-22M58 36 43 14" />
+                  </svg>
+                  <figcaption>Fig. 2 — Leaves &amp; stem</figcaption>
+                </figure>
+                <p class="chapter-prose">
+                  Plants turn sunlight into food. Learn how they grow, reproduce, and sustain the
+                  ecosystems around us.
+                </p>
+                <a
+                  class="chapter-watch"
+                  aria-label="Watch episode 1 of Botany"
+                  href="./watch.html?course=botany&amp;video=2th5lAd-77A"
+                  ><svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="./icons.svg#play"></use></svg
+                  ><span>Watch episode 1</span></a
+                >
+              </article>
+            </div>
+            <div class="notebook-page-footer">
+              <span
+                x-text="hasHeroCourses ? 'Progress saved in this browser' : 'Explore a new course'"
+                >Explore a new course</span
+              ><span aria-hidden="true">02</span>
+            </div>
           </div>
         </div>
-        <div class="hero-art">
-          <img
-            src="./learning-pizza.svg"
-            width="600"
-            height="450"
-            alt="A pizza topped with an atom, globe, book, pi symbol, chemistry flask, artist’s palette, and a ringed planet on a lifted slice"
-          />
-          <details class="art-discovery">
-            <summary class="art-label">the universe is weird. let’s explore.</summary>
-            <p>Dude. No edge.<br />The questions keep going. So can your curiosity.</p>
-          </details>
+        <div class="notebook-colophon">
+          <p>Unofficial &amp; fan-made. Not affiliated with or endorsed by Crash Course.</p>
+          <a href="https://github.com/kiley0/watch-crash-course">Source code on GitHub</a>
         </div>
       </section>
-      <div class="curiosity-strip" aria-hidden="true">
-        <div>
-          FOLLOW A QUESTION <span>✳</span> CONNECT THE DOTS <span>✳</span> MAKE A LITTLE PROGRESS
-          <span>✳</span> FOLLOW A QUESTION <span>✳</span> CONNECT THE DOTS
-        </div>
-      </div>
-      <section id="courses" class="catalog-section wrap" x-data="catalogPage">
+      <section id="courses" class="catalog-section wrap">
         <p class="notice" x-cloak x-show="storageWarning" role="status" x-text="storageWarning"></p>
         <section
           class="continue-learning"
@@ -102,8 +248,7 @@
         >
           <div class="section-heading">
             <div>
-              <span class="eyebrow">RIGHT WHERE YOU LEFT YOUR CURIOSITY</span>
-              <h2>Keep a good thing going.</h2>
+              <h2>Pick up where you left off</h2>
             </div>
             <a class="text-link" href="./history.html">Your learning history</a>
           </div>
@@ -287,10 +432,13 @@
           </div>
         </div>
       </section>
+      <figure class="learning-inscription wrap">
+        <blockquote><p>Everything we know is something we figured out.</p></blockquote>
+        <figcaption>— Hank Green</figcaption>
+      </figure>
       <section class="how-section wrap">
         <div class="section-heading">
           <div>
-            <span class="eyebrow">A LITTLE ATTENTION. A LITTLE WONDER.</span>
             <h2><q>Pay attention. Be astonished. Tell about it.</q></h2>
             <p class="quote-source">
               — Mary Oliver ·
@@ -306,12 +454,8 @@
         </div>
         <div class="how-grid">
           <div>
-            <span class="step-number peach">01</span>
+            <span class="quote-book peach" aria-hidden="true"></span>
             <h3><q>Nerds are allowed to love stuff.</q></h3>
-            <p>
-              Follow the subject you light up about. Caring deeply is a good reason to start
-              learning.
-            </p>
             <p class="quote-source">
               — John Green ·
               <a
@@ -324,30 +468,22 @@
             </p>
           </div>
           <div>
-            <span class="step-number mint">02</span>
-            <h3><q>The truth resists simplicity.</q></h3>
-            <p>
-              Look for context. Make room for nuance. Let what you learn change how you see a
-              person, an idea, or the world.
-            </p>
+            <span class="quote-book mint" aria-hidden="true"></span>
+            <h3><q>The unknown is still here.</q></h3>
             <p class="quote-source">
-              — John Green ·
+              — Hank Green ·
               <a
-                href="https://www.youtube.com/watch?v=8w4Ku6l7OEI"
-                aria-label="Source: John Green, Iran’s Revolutions, Crash Course World History 226"
-                >Crash Course
+                href="https://youtu.be/TiCpzkQcbdc"
+                aria-label="Source: Hank Green, The unknown is still here"
+                >YouTube
                 <svg class="icon" aria-hidden="true" focusable="false">
                   <use href="./icons.svg#external-link"></use></svg
               ></a>
             </p>
           </div>
           <div>
-            <span class="step-number lilac">03</span>
+            <span class="quote-book lilac" aria-hidden="true"></span>
             <h3><q>The test will last your entire life.</q></h3>
-            <p>
-              Learn for the decisions, conversations, and everyday moments ahead. Understanding
-              travels well beyond the classroom.
-            </p>
             <p class="quote-source">
               — John Green ·
               <a
@@ -384,7 +520,7 @@
             :disabled="busy"
             :aria-busy="busy"
           >
-            <span x-text="label">Let’s learn something</span>
+            <span x-text="label">Take me to a random video</span>
             <svg class="icon" aria-hidden="true" focusable="false">
               <use href="./icons.svg#arrow-right"></use>
             </svg>

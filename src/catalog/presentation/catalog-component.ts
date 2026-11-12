@@ -23,6 +23,8 @@ interface CourseCard extends Course {
   continueHref: string;
   continueLabel: string;
   continueDetail: string;
+  nextEpisodeTitle: string;
+  nextEpisodeLabel: string;
 }
 export function createCatalogPage(collection: Collection) {
   let stopRefreshOnRestore = () => {};
@@ -63,6 +65,37 @@ export function createCatalogPage(collection: Collection) {
         .filter((course) => course.summary && course.summary.lastActivityAt > 0)
         .toSorted((a, b) => b.summary!.lastActivityAt - a.summary!.lastActivityAt)
         .slice(0, 5);
+    },
+    get heroCourses(): CourseCard[] {
+      return this.courses
+        .filter(
+          (course) =>
+            courseProgressStatus(course.summary) === "in-progress" &&
+            course.summary?.continueVideoId,
+        )
+        .toSorted((a, b) => b.summary!.lastActivityAt - a.summary!.lastActivityAt)
+        .slice(0, 3);
+    },
+    get heroStarterIds(): string[] {
+      const active = this.heroCourses;
+      return ["astronomy", "philosophy", "botany"]
+        .filter((id) => !active.some((course) => course.id === id))
+        .slice(0, 3 - active.length);
+    },
+    get showAstronomyStarter(): boolean {
+      return this.heroStarterIds.includes("astronomy");
+    },
+    get showPhilosophyStarter(): boolean {
+      return this.heroStarterIds.includes("philosophy");
+    },
+    get showBotanyStarter(): boolean {
+      return this.heroStarterIds.includes("botany");
+    },
+    starterSlot(id: string): number {
+      return this.heroCourses.length + this.heroStarterIds.indexOf(id) + 1;
+    },
+    get hasHeroCourses(): boolean {
+      return this.heroCourses.length > 0;
     },
     get featuredCourses(): CourseCard[] {
       const course = this.resumeVideoId
@@ -130,6 +163,8 @@ export function createCatalogPage(collection: Collection) {
           continueHref: `./course.html?id=${encodeURIComponent(course.id)}`,
           continueLabel: "Continue learning",
           continueDetail: "",
+          nextEpisodeTitle: "",
+          nextEpisodeLabel: "",
         }));
         // The shelf is usable while saved progress and episode memberships load.
         this.loading = false;
@@ -150,6 +185,8 @@ export function createCatalogPage(collection: Collection) {
         this.courses.map(async (course, index) => {
           let summary: CourseSummary | null = null;
           let continueDetail = "";
+          let nextEpisodeTitle = "";
+          let nextEpisodeLabel = "";
           try {
             if (records.length === 0) {
               // With no records, every course is unstarted regardless of membership.
@@ -175,6 +212,10 @@ export function createCatalogPage(collection: Collection) {
               const position = resumePosition(
                 records.find((record) => record.videoId === episode?.videoId) ?? null,
               );
+              nextEpisodeTitle = episode?.title ?? "";
+              nextEpisodeLabel = episode
+                ? `${position > 0 ? "Resume" : "Watch"} episode ${episode.number}`
+                : "";
               continueDetail = summary.isComplete
                 ? "Revisit the course from the beginning."
                 : episode
@@ -199,6 +240,8 @@ export function createCatalogPage(collection: Collection) {
               : course.href,
             continueLabel: summary?.isComplete ? "Watch again" : "Continue learning",
             continueDetail,
+            nextEpisodeTitle,
+            nextEpisodeLabel,
           };
           this.resumeVideoId = mostRecentUnfinished(
             records,

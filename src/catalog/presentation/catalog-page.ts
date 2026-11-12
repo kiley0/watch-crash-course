@@ -1,6 +1,7 @@
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
 import "./catalog.css";
+import "./notebook-hero.css";
 import { createCatalogPage } from "./catalog-component";
 import { pickUnseenEpisode } from "../domain/random-episode";
 import { coursesInCollection } from "../domain/course";
@@ -13,7 +14,7 @@ Alpine.data("randomEpisode", () => ({
   busy: false,
   message: "",
   get label(): string {
-    return this.busy ? "Finding an episode…" : "Let’s learn something";
+    return this.busy ? "Finding an episode…" : "Take me to a random video";
   },
   async discover() {
     if (this.busy) return;
