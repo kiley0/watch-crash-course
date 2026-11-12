@@ -4,9 +4,9 @@ import { pageTitle } from "./page-title";
 
 export const siteOrigin = "https://www.watchcrashcourse.com";
 const siteName = "Watch Crash Course";
-const image = `${siteOrigin}/social/book-preview.png`;
+const image = `${siteOrigin}/social/book-preview.png?v=3`;
 const imageAlt =
-  "An open book: Watch Crash Course. Your next chapter starts here. Explore, watch, and keep your place. An unofficial, fan-made site.";
+  "An open book: Watch Crash Course. Knowledge weighs nothing, carry all you can. From the Crash Course Coin. Browse courses: Astronomy, Philosophy, World History, Biology, and Computer Science. No account. Free forever. Unofficial and fan-made.";
 
 interface Metadata {
   detail: string;

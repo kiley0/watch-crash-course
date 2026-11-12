@@ -15,16 +15,24 @@
     <text x="143" y="106" font-size="15" font-weight="700" letter-spacing="2">WATCH</text>
     <text x="143" y="129" font-size="22" font-weight="700" letter-spacing="2">CRASH COURSE</text>
     <path d="M103 154H553M647 154H1097" stroke="#dcded2"/>
-    <text x="647" y="122" font-size="12" letter-spacing="2" fill="#626e64">A LITTLE STRUCTURE FOR YOUR BIG CURIOSITY.</text>
-    <g font-family="Georgia, serif" font-size="61" letter-spacing="-2">
-      <text x="101" y="249">Your next</text><text x="101" y="317">chapter</text>
-      <text x="101" y="385" fill="#925333" font-style="italic">starts here.</text>
+    <text x="647" y="122" font-size="12" letter-spacing="2" fill="#626e64">A FEW COURSES TO START WITH</text>
+    <g font-family="Georgia, serif" font-size="53" letter-spacing="-1.5">
+      <text x="101" y="226">Knowledge weighs</text>
+      <text x="101" y="286">nothing,</text>
+      <text x="101" y="346" fill="#925333" font-style="italic">carry all you can.</text>
     </g>
+    <text x="105" y="389" font-size="15" fill="#626e64">— From the Crash Course Coin</text>
     <text x="105" y="479" font-size="15" letter-spacing="1">WATCHCRASHCOURSE.COM</text>
-    <g font-family="Georgia, serif" font-size="48" letter-spacing="-1">
-      <text x="647" y="238">Explore.</text><text x="647" y="303">Watch.</text><text x="647" y="368" font-style="italic" fill="#925333">Keep your place.</text>
+    <text x="647" y="235" font-family="Georgia, serif" font-size="48" letter-spacing="-1">Browse courses</text>
+    <g font-size="23" fill="#626e64">
+      <text x="649" y="298">This is an unofficial, fan-made site.</text>
+      <text x="649" y="346">• Astronomy</text>
+      <text x="880" y="346">• Philosophy</text>
+      <text x="649" y="384">• World History</text>
+      <text x="880" y="384">• Biology</text>
+      <text x="649" y="422">• Computer Science</text>
     </g>
-    <g font-size="18" fill="#626e64"><text x="649" y="432">Crash Course + Study Hall</text><text x="649" y="466">Free. No account. Just curiosity.</text></g>
-    <text x="600" y="595" text-anchor="middle" font-size="15" fill="#626e64">An independent, unofficial fan-made site. Not affiliated with Crash Course, Study Hall, or ASU.</text>
+    <text x="649" y="490" font-size="21" fill="#223631">No account. Free forever.</text>
+    <text x="600" y="595" text-anchor="middle" font-size="15" fill="#626e64">Unofficial &amp; fan-made. Not affiliated with or endorsed by Crash Course.</text>
   </g>
 </svg>

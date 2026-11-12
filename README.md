@@ -37,7 +37,7 @@ pnpm dev
 
 The build generates a sitemap and static `_course-*.html` / `_watch-*.html` variants. `vercel.json` rewrites the existing public query URLs to these files; the generic templates are emitted as `_course.html` and `_watch.html` to avoid Vercel filesystem precedence. Keep these rules and the generator aligned. Other static hosts need equivalent query routing. `pnpm preview` mirrors it locally; unknown course/video pairs return 404 on Vercel.
 
-The sharing image is `public/social/book-preview.png` (1200 × 630), with an editable SVG beside it. Update the PNG when editing the SVG, and change the image filename in the generator when replacing an already shared image to avoid stale platform caches. Canonical URLs use `https://www.watchcrashcourse.com`, the production hostname. After deployment, verify raw HTML with a sharing crawler user agent, check the image response, and use platform inspection tools to refresh existing previews. Platform caches may delay changes.
+The sharing image is `public/social/book-preview.png` (1200 × 630), with an editable SVG beside it. Update the PNG when editing the SVG, and increment the image version query in the generator when replacing an already shared image to avoid stale platform caches. Canonical URLs use `https://www.watchcrashcourse.com`, the production hostname. After deployment, verify raw HTML with a sharing crawler user agent, check the image response, and use platform inspection tools to refresh existing previews. Platform caches may delay changes.
 
 ## Help make it better
 
