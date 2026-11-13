@@ -5,6 +5,8 @@ import Alpine from "@alpinejs/csp";
 import { parseTheme, readTheme, saveTheme } from "../../site/theme";
 import "../../site/styles.css";
 import "./settings.css";
+import { progressCsv } from "../domain/progress-csv";
+import { csvCatalog } from "../infrastructure/csv-catalog";
 import { MAX_BACKUP_BYTES, readBackup } from "../domain/backup";
 import type { Backup } from "../domain/backup";
 import { createDataRepository } from "../infrastructure/data-repository";
@@ -58,12 +60,6 @@ Alpine.data("settingsPage", () => {
     current: null as Backup | null,
     pending: null as Backup | null,
     clearPending: false,
-    get summary(): string {
-      if (!this.current) return "Saved data couldn’t be read. Try refreshing.";
-      return this.current.videos.length
-        ? `Progress saved for ${recordCounts(this.current)} in this browser.`
-        : "No watch progress saved in this browser yet.";
-    },
     get importSummary(): string {
       if (!this.pending) return "";
       return `Progress for ${recordCounts(this.pending)} · Backed up ${new Date(this.pending.exportedAt).toLocaleString()}.`;
@@ -79,11 +75,6 @@ Alpine.data("settingsPage", () => {
       disposed = true;
       stopRestore();
     },
-    async checkData() {
-      if (this.busy || this.loading) return;
-      await this.refresh();
-      focus("refresh-data");
-    },
     async refresh() {
       this.loading = true;
       this.error = "";
@@ -96,31 +87,48 @@ Alpine.data("settingsPage", () => {
         this.loading = false;
       }
     },
-    async download() {
-      if (this.busy) return;
+    download() {
+      return this.downloadProgress("json");
+    },
+    downloadCsv() {
+      return this.downloadProgress("csv");
+    },
+    async downloadProgress(format: "json" | "csv") {
+      if (!this.canExport) return;
       this.busy = true;
       this.error = "";
       this.message = "";
       try {
         const backup = await repository.export();
-        const blob = new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" });
-        if (blob.size > MAX_BACKUP_BYTES)
+        const catalog =
+          format === "csv" ? await csvCatalog(backup.videos.map((record) => record.videoId)) : null;
+        const blob =
+          format === "csv"
+            ? new Blob([progressCsv(backup, catalog!.episodes)], { type: "text/csv;charset=utf-8" })
+            : new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" });
+        if (format === "json" && blob.size > MAX_BACKUP_BYTES)
           throw new Error(
             "This backup is larger than the supported 5 MB limit. Nothing was changed.",
           );
         const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
-        link.download = `watch-crash-course-backup-${new Date(backup.exportedAt).toISOString().slice(0, 10)}.json`;
+        link.download = `watch-crash-course-${format === "json" ? "backup" : "progress"}-${new Date(backup.exportedAt).toISOString().slice(0, 10)}.${format}`;
         document.body.append(link);
         link.click();
         link.remove();
         // Allow the browser to begin the download before releasing the object URL.
         setTimeout(() => URL.revokeObjectURL(url), 60000);
         this.current = backup;
-        this.message = "Backup download started.";
+        this.message =
+          format === "json"
+            ? "JSON backup download started."
+            : catalog?.incomplete
+              ? "CSV download started. Some course or episode names were unavailable; all saved progress is included."
+              : "CSV download started.";
       } catch (error) {
-        this.error = error instanceof Error ? error.message : "The backup couldn’t be downloaded.";
+        this.error =
+          error instanceof Error ? error.message : "Your progress couldn’t be downloaded.";
       } finally {
         this.busy = false;
       }

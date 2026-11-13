@@ -27,7 +27,7 @@
 .data-card:nth-child(2) {
   background: var(--theme-purple, #eeedf8);
 }
-.data-card > h3 {
+.data-card > h2 {
   font-size: 1.6875rem;
   line-height: 1.2;
   margin: 0 0 12px;
@@ -83,13 +83,6 @@
   margin: 0 0 24px;
 }
 
-.data-summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-}
 .data-card-control {
   width: 100%;
   min-width: 0;
@@ -100,7 +93,6 @@
   margin-top: 20px;
 }
 
-.data-summary .text-button,
 .data-actions .text-button {
   margin-right: 0;
 }
@@ -138,12 +130,8 @@
   padding-top: 32px;
   margin-top: 40px;
 }
-.data-summary h2 {
-  font-size: 1.6875rem;
-  line-height: 1.2;
-  margin: 0 0 10px;
-}
-.data-summary p {
-  font-weight: 400;
-  color: var(--muted);
+.export-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }

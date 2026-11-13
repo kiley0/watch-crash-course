@@ -117,34 +117,36 @@
         x-text="message"
       ></p>
       <p x-cloak x-show="busy" role="status">Saving… Keep this page open.</p>
-      <section
-        class="progress-settings"
-        aria-labelledby="progress-settings-title"
-        x-cloak
-        x-show="!loading"
-      >
-        <div class="data-summary">
-          <div>
-            <h2 id="progress-settings-title">Your watch progress</h2>
-            <p x-text="summary"></p>
-          </div>
-          <button id="refresh-data" class="text-button" @click="checkData" :disabled="busy">
-            Refresh count
-          </button>
-        </div>
+      <section class="progress-settings" x-cloak x-show="!loading">
         <p class="data-note">Close other site tabs before importing or clearing data.</p>
         <div class="settings-grid">
           <section class="data-card">
-            <h3>Export data</h3>
-            <p>Download your progress as a JSON file.</p>
-            <div class="data-card-control">
-              <button class="button button-dark" @click="download" :disabled="!canExport">
-                Download backup
+            <h2>Export data</h2>
+            <p>
+              Download your progress as JSON or CSV. Only JSON can be re-imported. CSV is useful for
+              viewing your progress in a spreadsheet.
+            </p>
+            <div class="data-card-control export-options">
+              <button
+                type="button"
+                class="button button-dark"
+                @click="download"
+                :disabled="!canExport"
+              >
+                Download JSON
+              </button>
+              <button
+                type="button"
+                class="button button-dark"
+                @click="downloadCsv"
+                :disabled="!canExport"
+              >
+                Download CSV
               </button>
             </div>
           </section>
           <section class="data-card">
-            <h3>Import data</h3>
+            <h2>Import data</h2>
             <p>Restore a backup. JSON files only, up to 5 MB. Nothing is uploaded.</p>
             <div class="data-card-control">
               <label for="backup-file">Choose a backup file</label
@@ -180,7 +182,7 @@
           </section>
         </div>
         <section class="data-card data-clear">
-          <h3>Clear data</h3>
+          <h2>Clear data</h2>
           <p>Delete all progress saved in this browser.</p>
           <button
             id="clear-data"
