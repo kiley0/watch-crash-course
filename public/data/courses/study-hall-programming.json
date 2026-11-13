@@ -5,169 +5,197 @@
       "number": 1,
       "title": "What is computer programming?",
       "videoId": "zDsD5s3GO-A",
-      "sourceUrl": "https://www.youtube.com/watch?v=zDsD5s3GO-A"
+      "sourceUrl": "https://www.youtube.com/watch?v=zDsD5s3GO-A",
+      "description": "This episode takes us through the main functions of a computer and some of the core concepts in the programming process."
     },
     {
       "number": 2,
       "title": "Computer Memory & Variables",
       "videoId": "9FlYzK8rPFs",
-      "sourceUrl": "https://www.youtube.com/watch?v=9FlYzK8rPFs"
+      "sourceUrl": "https://www.youtube.com/watch?v=9FlYzK8rPFs",
+      "description": "Explore systems of computer memory and how variables let programs store and use information."
     },
     {
       "number": 3,
       "title": "Manipulating Data with Expressions",
       "videoId": "xPk0VgPQvmw",
-      "sourceUrl": "https://www.youtube.com/watch?v=xPk0VgPQvmw"
+      "sourceUrl": "https://www.youtube.com/watch?v=xPk0VgPQvmw",
+      "description": "Use expressions as the basic tools for processing data and getting computers to perform useful calculations."
     },
     {
       "number": 4,
       "title": "Basic Output & Formatting",
       "videoId": "mp6KjJqGHEc",
-      "sourceUrl": "https://www.youtube.com/watch?v=mp6KjJqGHEc"
+      "sourceUrl": "https://www.youtube.com/watch?v=mp6KjJqGHEc",
+      "description": "Explore text output and formatting as a first step toward producing useful results from Java programs."
     },
     {
       "number": 5,
       "title": "Programs that Gather Input",
       "videoId": "OE0zAJLhZlM",
-      "sourceUrl": "https://www.youtube.com/watch?v=OE0zAJLhZlM"
+      "sourceUrl": "https://www.youtube.com/watch?v=OE0zAJLhZlM",
+      "description": "In this episode, we learn how to communicate with our digital devices via standard input and Scanner objects."
     },
     {
       "number": 6,
       "title": "Using Java to Create a Simple Program",
       "videoId": "GzrChaXwjXY",
-      "sourceUrl": "https://www.youtube.com/watch?v=GzrChaXwjXY"
+      "sourceUrl": "https://www.youtube.com/watch?v=GzrChaXwjXY",
+      "description": "Combine variables, expressions, input, and printed output to build complete Java programs."
     },
     {
       "number": 7,
       "title": "If-Else Statements and Decision Trees",
       "videoId": "LwvWMffPb6I",
-      "sourceUrl": "https://www.youtube.com/watch?v=LwvWMffPb6I"
+      "sourceUrl": "https://www.youtube.com/watch?v=LwvWMffPb6I",
+      "description": "Examine how computer programs make decisions using information and specified criteria."
     },
     {
       "number": 8,
       "title": "Conditional Statements & Yes/No Questions",
       "videoId": "zAMsVG6Gp38",
-      "sourceUrl": "https://www.youtube.com/watch?v=zAMsVG6Gp38"
+      "sourceUrl": "https://www.youtube.com/watch?v=zAMsVG6Gp38",
+      "description": "Explore how conditional logic lets programs handle different scenarios and make decisions."
     },
     {
       "number": 9,
       "title": "Using Methods to Make Your Life Easier",
       "videoId": "FQBULgL8onk",
-      "sourceUrl": "https://www.youtube.com/watch?v=FQBULgL8onk"
+      "sourceUrl": "https://www.youtube.com/watch?v=FQBULgL8onk",
+      "description": "Use methods to divide complex programming problems into simpler parts."
     },
     {
       "number": 10,
       "title": "How to Fix Programming Errors",
       "videoId": "sNiggEEDeXU",
-      "sourceUrl": "https://www.youtube.com/watch?v=sNiggEEDeXU"
+      "sourceUrl": "https://www.youtube.com/watch?v=sNiggEEDeXU",
+      "description": "Identify and debug Java problems, from syntax mistakes to exceptions that occur while a program runs."
     },
     {
       "number": 11,
       "title": "Of Mice and Methods…and If/Else Statements",
       "videoId": "ddK4Qt77QaI",
-      "sourceUrl": "https://www.youtube.com/watch?v=ddK4Qt77QaI"
+      "sourceUrl": "https://www.youtube.com/watch?v=ddK4Qt77QaI",
+      "description": "Combine Java methods and conditional logic to build more capable programs."
     },
     {
       "number": 12,
       "title": "What is Recursion?",
       "videoId": "6fvHMvJ2ZLg",
-      "sourceUrl": "https://www.youtube.com/watch?v=6fvHMvJ2ZLg"
+      "sourceUrl": "https://www.youtube.com/watch?v=6fvHMvJ2ZLg",
+      "description": "As weird as it sounds, recursion can actually help keep our code readable, manageable and easier to change down the line!"
     },
     {
       "number": 13,
       "title": "Method Madness: Nesting & Call Stacks",
       "videoId": "rDKplDACpnI",
-      "sourceUrl": "https://www.youtube.com/watch?v=rDKplDACpnI"
+      "sourceUrl": "https://www.youtube.com/watch?v=rDKplDACpnI",
+      "description": "Use a cafe example to explore Java methods and the behind-the-scenes organization of data during method calls."
     },
     {
       "number": 14,
       "title": "The Repetitive Power of While Loops",
       "videoId": "WQwlfBvF164",
-      "sourceUrl": "https://www.youtube.com/watch?v=WQwlfBvF164"
+      "sourceUrl": "https://www.youtube.com/watch?v=WQwlfBvF164",
+      "description": "Use while loops and conditional statements to repeat tasks and stop flexibly when a condition is met."
     },
     {
       "number": 15,
       "title": "For Loops vs. While Loops",
       "videoId": "pyOAWCNJL4k",
-      "sourceUrl": "https://www.youtube.com/watch?v=pyOAWCNJL4k"
+      "sourceUrl": "https://www.youtube.com/watch?v=pyOAWCNJL4k",
+      "description": "Compare while loops with for loops and choose an approach based on whether the number of repetitions is known."
     },
     {
       "number": 16,
       "title": "Modeling Mice With For Loops in Java",
       "videoId": "FNvGn2mIkaI",
-      "sourceUrl": "https://www.youtube.com/watch?v=FNvGn2mIkaI"
+      "sourceUrl": "https://www.youtube.com/watch?v=FNvGn2mIkaI",
+      "description": "Apply for loops in Java to model radioactive mice and simulate movement using Brownian motion."
     },
     {
       "number": 17,
       "title": "How to Clean Up Your Code",
       "videoId": "Po0eLYJXWyA",
-      "sourceUrl": "https://www.youtube.com/watch?v=Po0eLYJXWyA"
+      "sourceUrl": "https://www.youtube.com/watch?v=Po0eLYJXWyA",
+      "description": "Learn strategies for writing readable code and collaborating effectively with other programmers."
     },
     {
       "number": 18,
       "title": "Organize Your Data with an ArrayList",
       "videoId": "u4ayRqxG6kc",
-      "sourceUrl": "https://www.youtube.com/watch?v=u4ayRqxG6kc"
+      "sourceUrl": "https://www.youtube.com/watch?v=u4ayRqxG6kc",
+      "description": "Store and retrieve data with ArrayLists, then combine lists with loops to process large collections efficiently."
     },
     {
       "number": 19,
       "title": "Computer Memory & Reference Types",
       "videoId": "HwZPaRAfX6c",
-      "sourceUrl": "https://www.youtube.com/watch?v=HwZPaRAfX6c"
+      "sourceUrl": "https://www.youtube.com/watch?v=HwZPaRAfX6c",
+      "description": "Explore how Java variables and method calls use memory, including how references and values are stored and updated."
     },
     {
       "number": 20,
       "title": "Is my Algorithm Broken?",
       "videoId": "CE1HkJCn9xs",
-      "sourceUrl": "https://www.youtube.com/watch?v=CE1HkJCn9xs"
+      "sourceUrl": "https://www.youtube.com/watch?v=CE1HkJCn9xs",
+      "description": "Clarify what algorithms are and explore how human bias can become algorithmic bias with ethical consequences."
     },
     {
       "number": 21,
       "title": "Teaching a Computer to Read & Write Files",
       "videoId": "XI_-VwO1MG4",
-      "sourceUrl": "https://www.youtube.com/watch?v=XI_-VwO1MG4"
+      "sourceUrl": "https://www.youtube.com/watch?v=XI_-VwO1MG4",
+      "description": "In this episode, we’ll learn about how our computers read and write files!"
     },
     {
       "number": 22,
       "title": "The Magic of Bubble Sort",
       "videoId": "DKHVGVgov1A",
-      "sourceUrl": "https://www.youtube.com/watch?v=DKHVGVgov1A"
+      "sourceUrl": "https://www.youtube.com/watch?v=DKHVGVgov1A",
+      "description": "Explore bubble sort as a way to organize ArrayLists, including the algorithm’s advantages and limitations."
     },
     {
       "number": 23,
       "title": "What’s the point of a Java Class?",
       "videoId": "ZqxYLSio46c",
-      "sourceUrl": "https://www.youtube.com/watch?v=ZqxYLSio46c"
+      "sourceUrl": "https://www.youtube.com/watch?v=ZqxYLSio46c",
+      "description": "Use Java classes to group related information containing different data types."
     },
     {
       "number": 24,
       "title": "Herding Cats with Java Encapsulation",
       "videoId": "4OMKK3EaEmk",
-      "sourceUrl": "https://www.youtube.com/watch?v=4OMKK3EaEmk"
+      "sourceUrl": "https://www.youtube.com/watch?v=4OMKK3EaEmk",
+      "description": "Combine instance variables and methods inside Java classes to model data and behavior together."
     },
     {
       "number": 25,
       "title": "Object Oriented Programming",
       "videoId": "n3egiMIpv7c",
-      "sourceUrl": "https://www.youtube.com/watch?v=n3egiMIpv7c"
+      "sourceUrl": "https://www.youtube.com/watch?v=n3egiMIpv7c",
+      "description": "Explore encapsulation and object-oriented programming techniques that help protect a program’s data."
     },
     {
       "number": 26,
       "title": "Simulating Race Cars with OOP",
       "videoId": "TpQ_v5sN5Ko",
-      "sourceUrl": "https://www.youtube.com/watch?v=TpQ_v5sN5Ko"
+      "sourceUrl": "https://www.youtube.com/watch?v=TpQ_v5sN5Ko",
+      "description": "Plan classes and write Java code for an object-oriented simulation of racing cars."
     },
     {
       "number": 27,
       "title": "Chaining Class Constructors Is Like Lego",
       "videoId": "yBFu9HxiD88",
-      "sourceUrl": "https://www.youtube.com/watch?v=yBFu9HxiD88"
+      "sourceUrl": "https://www.youtube.com/watch?v=yBFu9HxiD88",
+      "description": "Combine Java classes and chained constructors to model complex interactions in a monster-fighting game."
     },
     {
       "number": 28,
       "title": "Will they live? Radioactive Mouse Finale",
       "videoId": "yTzuRFjFivg",
-      "sourceUrl": "https://www.youtube.com/watch?v=yTzuRFjFivg"
+      "sourceUrl": "https://www.youtube.com/watch?v=yTzuRFjFivg",
+      "description": "Build an object-oriented radioactive-mouse simulation in Java and export the resulting data to a CSV file."
     }
   ]
 }

@@ -1,0 +1,23 @@
+.chapter-watch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-block-size: 32px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.chapter-watch:hover,
+.chapter-watch:focus-visible {
+  color: var(--book-history-spine, #925333);
+}
+.chapter-play-icon {
+  display: grid;
+  place-items: center;
+  inline-size: 28px;
+  block-size: 28px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 0.65rem;
+  padding-inline-start: 2px;
+}

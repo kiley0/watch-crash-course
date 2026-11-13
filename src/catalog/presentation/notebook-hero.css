@@ -77,18 +77,65 @@
 .notebook-cta {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 25px;
+  justify-content: start;
+  gap: 12px;
   align-self: start;
   padding-block: 12px;
-  border-block: 1px solid var(--ink);
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
 }
-.notebook-cta .icon {
-  inline-size: 22px;
-  block-size: 22px;
+.mini-bookshelf {
+  display: flex;
+  align-items: end;
+  gap: 2px;
+  inline-size: 65px;
+  block-size: 34px;
+  padding-inline: 4px;
+  border-bottom: 3px solid var(--book-history-spine, #925333);
+  box-shadow: 0 2px 0 var(--line);
+  flex-shrink: 0;
+}
+.mini-bookshelf > span {
+  display: block;
+  inline-size: 9px;
+  block-size: 26px;
+  border: 1px solid var(--book-green-spine, #476343);
+  border-radius: 2px 2px 0 0;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 12%,
+      #fff8 13% 16%,
+      transparent 17% 76%,
+      #fff8 77% 80%,
+      transparent 81%
+    ),
+    var(--theme-green, #c6d9b8);
+  box-shadow: inset 2px 0 0 #0002;
+}
+.mini-bookshelf > span:nth-child(2) {
+  block-size: 30px;
+  background-color: var(--theme-peach, #f2cfb8);
+  border-color: var(--book-history-spine, #925333);
+}
+.mini-bookshelf > span:nth-child(3) {
+  block-size: 24px;
+  background-color: var(--theme-purple, #dcd7ef);
+  border-color: var(--book-science-spine, #63528c);
+}
+.mini-bookshelf > span:nth-child(4) {
+  block-size: 28px;
+  background-color: var(--theme-gold, #f2dfa9);
+  border-color: var(--book-humanities-spine, #826226);
+}
+.mini-bookshelf > span:nth-child(5) {
+  block-size: 25px;
+  background-color: var(--theme-blue, #bfded7);
+  border-color: var(--book-math-spine, #35695c);
+  transform: rotate(-9deg);
+  transform-origin: bottom left;
+  margin-inline-start: 3px;
 }
 .notebook-cta:hover,
 .notebook-cta:focus-visible {
@@ -324,24 +371,7 @@
   clear: both;
 }
 .chapter-watch {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding-block: 6px;
-  margin-block-start: 0;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-color: var(--line);
-  text-underline-offset: 4px;
   clear: both;
-}
-.chapter-watch:hover {
-  text-decoration-color: currentColor;
-}
-.chapter-watch .icon {
-  inline-size: 15px;
-  block-size: 15px;
 }
 .chapter-figure {
   align-self: center;

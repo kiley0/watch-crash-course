@@ -5,97 +5,113 @@
       "number": 1,
       "title": "What is Linguistics?",
       "videoId": "3yLXNzDUH58",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-linguistics-crash-course-linguistics-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-linguistics-crash-course-linguistics-1/",
+      "description": "Introduce the study of language through its features, structural levels, and central questions."
     },
     {
       "number": 2,
       "title": "Morphology",
       "videoId": "93sK4jTGrss",
-      "sourceUrl": "https://thecrashcourse.com/courses/morphology-crash-course-linguistics-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/morphology-crash-course-linguistics-2/",
+      "description": "Examine the building blocks within words and why linguists distinguish morphemes from everyday word categories."
     },
     {
       "number": 3,
       "title": "Syntax – Morphosyntax",
       "videoId": "B1r1grQiLdk",
-      "sourceUrl": "https://thecrashcourse.com/courses/syntax-morphosyntax-crash-course-linguistics-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/syntax-morphosyntax-crash-course-linguistics-3/",
+      "description": "Explore how words and morphemes combine into larger grammatical expressions."
     },
     {
       "number": 4,
       "title": "Syntax – Trees",
       "videoId": "n1zpnN-6pZQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/syntax-trees-crash-course-linguistics-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/syntax-trees-crash-course-linguistics-4/",
+      "description": "Use branching diagrams to represent sentence structure and the roles of different phrases."
     },
     {
       "number": 5,
       "title": "Semantics",
       "videoId": "6geQjY8b7sA",
-      "sourceUrl": "https://thecrashcourse.com/courses/semantics-crash-course-linguistics-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/semantics-crash-course-linguistics-5/",
+      "description": "Investigate linguistic meaning, semantic relationships, and the limitations of dictionary definitions."
     },
     {
       "number": 6,
       "title": "Pragmatics",
       "videoId": "MPwpk-YgvjQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/pragmatics-crash-course-linguistics-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/pragmatics-crash-course-linguistics-6/",
+      "description": "Explore how context, conversational expectations, and grammatical politeness help convey intended meanings."
     },
     {
       "number": 7,
       "title": "Sociolinguistics",
       "videoId": "of4XzrbkknM",
-      "sourceUrl": "https://thecrashcourse.com/courses/sociolinguistics-crash-course-linguistics-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/sociolinguistics-crash-course-linguistics-7/",
+      "description": "Connect language variation and judgments about speech with social identities and inequalities."
     },
     {
       "number": 8,
       "title": "Phonetics – Consonants",
       "videoId": "vyea8Ph9BOM",
-      "sourceUrl": "https://thecrashcourse.com/courses/phonetics-consonants-crash-course-linguistics-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/phonetics-consonants-crash-course-linguistics-8/",
+      "description": "Study consonant sounds and learn how phonetic notation represents pronunciation beyond ordinary spelling."
     },
     {
       "number": 9,
       "title": "Phonetics – Vowels",
       "videoId": "qPTL5x0QW-Y",
-      "sourceUrl": "https://thecrashcourse.com/courses/phonetics-vowels-crash-course-linguistics-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/phonetics-vowels-crash-course-linguistics-9/",
+      "description": "Explore vowel sounds and their representation using the International Phonetic Alphabet."
     },
     {
       "number": 10,
       "title": "Phonology",
       "videoId": "imH7hdOgxrU",
-      "sourceUrl": "https://thecrashcourse.com/courses/phonology-crash-course-linguistics-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/phonology-crash-course-linguistics-10/",
+      "description": "Compare languages' systems of sound patterns and practice recognizing unfamiliar distinctions."
     },
     {
       "number": 11,
       "title": "Psycholinguistics",
       "videoId": "A5uNFKEn4_A",
-      "sourceUrl": "https://thecrashcourse.com/courses/psycholinguistics-crash-course-linguistics-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/psycholinguistics-crash-course-linguistics-11/",
+      "description": "Explore research methods and discoveries connecting language processing with the brain."
     },
     {
       "number": 12,
       "title": "Language Acquisition",
       "videoId": "Ccsf0yX7ECg",
-      "sourceUrl": "https://thecrashcourse.com/courses/language-acquisition-crash-course-linguistics-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/language-acquisition-crash-course-linguistics-12/",
+      "description": "Compare how children and adults develop knowledge of a language."
     },
     {
       "number": 13,
       "title": "Language Change and Historical Linguistics",
       "videoId": "dNkMC92kFLA",
-      "sourceUrl": "https://thecrashcourse.com/courses/language-change-and-historical-linguistics-crash-course-linguistics-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/language-change-and-historical-linguistics-crash-course-linguistics-13/",
+      "description": "Investigate language contact, processes of change, and methods for reconstructing linguistic history."
     },
     {
       "number": 14,
       "title": "World Languages",
       "videoId": "Nxyo83cQjhI",
-      "sourceUrl": "https://thecrashcourse.com/courses/world-languages-crash-course-linguistics-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/world-languages-crash-course-linguistics-14/",
+      "description": "Question language boundaries and explore how politics and unequal documentation affect linguistic diversity."
     },
     {
       "number": 15,
       "title": "Computational Linguistics",
       "videoId": "3npuPXvA_g8",
-      "sourceUrl": "https://thecrashcourse.com/courses/computational-linguistics-crash-course-linguistics-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/computational-linguistics-crash-course-linguistics-15/",
+      "description": "Examine computational language tasks, natural-language processing, and biases in learned systems."
     },
     {
       "number": 16,
       "title": "Writing Systems",
       "videoId": "-sUUWyo4RZQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/writing-systems-crash-course-linguistics-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/writing-systems-crash-course-linguistics-16/",
+      "description": "Compare components of writing systems and trace their development over time."
     }
   ]
 }

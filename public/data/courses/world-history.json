@@ -5,253 +5,295 @@
       "number": 1,
       "title": "The Agricultural Revolution",
       "videoId": "Yocja_N5s1I",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-agricultural-revolution-crash-course-world-history-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-agricultural-revolution-crash-course-world-history-1/",
+      "description": "Explore the shift from hunting and gathering to farming and its lasting effects on civilization."
     },
     {
       "number": 2,
       "title": "Indus Valley Civilization",
       "videoId": "n7ndRwqJYDM",
-      "sourceUrl": "https://thecrashcourse.com/courses/indus-valley-civilization-crash-course-world-history-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/indus-valley-civilization-crash-course-world-history-2/",
+      "description": "Investigate the people, places, development, and significance of the ancient Indus Valley civilization."
     },
     {
       "number": 3,
       "title": "Mesopotamia",
       "videoId": "sohXPx_XZ6Y",
-      "sourceUrl": "https://thecrashcourse.com/courses/mesopotamia-crash-course-world-history-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/mesopotamia-crash-course-world-history-3/",
+      "description": "Explore Fertile Crescent societies, early kingdoms, labor systems, and the beginnings of written law."
     },
     {
       "number": 4,
       "title": "Ancient Egypt",
       "videoId": "Z3Wvw6BivVI",
-      "sourceUrl": "https://thecrashcourse.com/courses/ancient-egypt-crash-course-world-history-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/ancient-egypt-crash-course-world-history-4/",
+      "description": "Trace Egypt's kingdoms through the Nile, pyramids, pharaohs, and burial practices."
     },
     {
       "number": 5,
       "title": "The Persians & Greeks",
       "videoId": "Q-mkVSasZIM",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-persians-greeks-crash-course-world-history-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-persians-greeks-crash-course-world-history-5/",
+      "description": "Compare ancient Greek society with Persia and question familiar stories about their historical importance."
     },
     {
       "number": 6,
       "title": "Buddha and Ashoka",
       "videoId": "8Nn5uqE3C9w",
-      "sourceUrl": "https://thecrashcourse.com/courses/buddha-and-ashoka-crash-course-world-history-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/buddha-and-ashoka-crash-course-world-history-6/",
+      "description": "Explore post-Indus Indian history through Hinduism, Buddhism, and the rule of Ashoka."
     },
     {
       "number": 7,
       "title": "2,000 Years of Chinese History! The Mandate of Heaven and Confucius",
       "videoId": "ylWORyToTo4",
-      "sourceUrl": "https://thecrashcourse.com/courses/%e2%80%8e2000-years-of-chinese-history-the-mandate-of-heaven-and-confucius-world-history-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/%e2%80%8e2000-years-of-chinese-history-the-mandate-of-heaven-and-confucius-world-history-7/",
+      "description": "Examine Chinese rulers and the Confucian scholars whose writings shaped accounts of their reigns."
     },
     {
       "number": 8,
       "title": "Alexander the Great",
       "videoId": "0LsrkWDCvxg",
-      "sourceUrl": "https://thecrashcourse.com/courses/alexander-the-great-and-the-situation-the-great-crash-course-world-history-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/alexander-the-great-and-the-situation-the-great-crash-course-world-history-8/",
+      "description": "Explore Alexander's conquests, successor empires, and the historical idea of greatness."
     },
     {
       "number": 9,
       "title": "The Silk Road and Ancient Trade",
       "videoId": "vfe-eNq-Qyg",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-silk-road-and-ancient-trade-crash-course-world-history-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-silk-road-and-ancient-trade-crash-course-world-history-9/",
+      "description": "Follow ancient trade routes carrying merchandise, ideas, and disease between China and the West."
     },
     {
       "number": 10,
       "title": "The Roman Empire. Or Republic. Or…Which Was It?",
       "videoId": "oPf27gAup9U",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-roman-empire-or-republic-or-which-was-it-crash-course-world-history-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-roman-empire-or-republic-or-which-was-it-crash-course-world-history-10/",
+      "description": "Investigate the Republic's transformation into imperial Rome and Julius Caesar's role in that change."
     },
     {
       "number": 11,
       "title": "Christianity from Judaism to Constantine",
       "videoId": "TG55ErfdaeY",
-      "sourceUrl": "https://thecrashcourse.com/courses/christianity-from-judaism-to-constantine-crash-course-world-history-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/christianity-from-judaism-to-constantine-crash-course-world-history-11/",
+      "description": "Trace Christianity's Jewish origins and its development within the Roman world."
     },
     {
       "number": 12,
       "title": "Fall of The Roman Empire…in the 15th Century",
       "videoId": "3PszVWZNWVA",
-      "sourceUrl": "https://thecrashcourse.com/courses/fall-of-the-roman-empire-in-the-15th-century-crash-course-world-history-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/fall-of-the-roman-empire-in-the-15th-century-crash-course-world-history-12/",
+      "description": "Follow Rome's eastern continuation in Constantinople long after the western empire's collapse."
     },
     {
       "number": 13,
       "title": "Islam, the Quran, and the Five Pillars",
       "videoId": "TpcbfxtdoI8",
-      "sourceUrl": "https://thecrashcourse.com/courses/islam-the-quran-and-the-five-pillars-all-without-a-flamewar-crash-course-world-history-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/islam-the-quran-and-the-five-pillars-all-without-a-flamewar-crash-course-world-history-13/",
+      "description": "Explore Islam's origins, the Quran, foundational practices, and the early Muslim community."
     },
     {
       "number": 14,
       "title": "The Dark Ages…How Dark Were They, Really?",
       "videoId": "QV7CanyzhZg",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-dark-ages-how-dark-were-they-really-crash-course-world-history-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-dark-ages-how-dark-were-they-really-crash-course-world-history-14/",
+      "description": "Compare medieval Europe's difficulties with cultural and intellectual activity elsewhere."
     },
     {
       "number": 15,
       "title": "The Crusades – Pilgrimage or Holy War?",
       "videoId": "X0zudTQelzI",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-crusades-pilgrimage-or-holy-war-crash-course-world-history-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-crusades-pilgrimage-or-holy-war-crash-course-world-history-15/",
+      "description": "Reconsider the motivations, outcomes, and destruction associated with the first four major Crusades."
     },
     {
       "number": 16,
       "title": "Mansa Musa and Islam in Africa",
       "videoId": "jvnU0v6hcUo",
-      "sourceUrl": "https://thecrashcourse.com/courses/mansa-musa-and-islam-in-africa-crash-course-world-history-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/mansa-musa-and-islam-in-africa-crash-course-world-history-16/",
+      "description": "Explore trade, Islamic connections, architecture, and powerful states in sub-Saharan Africa."
     },
     {
       "number": 17,
       "title": "Wait For It…The Mongols!",
       "videoId": "szxPar0BcMo",
-      "sourceUrl": "https://thecrashcourse.com/courses/wait-for-it-the-mongols-crash-course-world-history-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/wait-for-it-the-mongols-crash-course-world-history-17/",
+      "description": "Investigate how Mongol pastoral communities built an extraordinarily powerful and extensive empire."
     },
     {
       "number": 18,
       "title": "Int’l Commerce, Snorkeling Camels, and The Indian Ocean Trade",
       "videoId": "a6XtBLDmPA0",
-      "sourceUrl": "https://thecrashcourse.com/courses/intl-commerce-snorkeling-camels-and-the-indian-ocean-trade-crash-course-world-history-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/intl-commerce-snorkeling-camels-and-the-indian-ocean-trade-crash-course-world-history-18/",
+      "description": "Explore Indian Ocean commerce through maritime technology, monsoons, and exchanges of valuable goods."
     },
     {
       "number": 19,
       "title": "Venice and the Ottoman Empire",
       "videoId": "UN-II_jBzzo",
-      "sourceUrl": "https://thecrashcourse.com/courses/venice-and-the-ottoman-empire-crash-course-world-history-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/venice-and-the-ottoman-empire-crash-course-world-history-19/",
+      "description": "Examine how Venetian shipping expertise and Ottoman power supported mutually beneficial trade."
     },
     {
       "number": 20,
       "title": "Russia, the Kievan Rus, and the Mongols",
       "videoId": "etmRI2_9Q_A",
-      "sourceUrl": "https://thecrashcourse.com/courses/russia-the-kievan-rus-and-the-mongols-crash-course-world-history-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/russia-the-kievan-rus-and-the-mongols-crash-course-world-history-20/",
+      "description": "Trace changes from medieval Rus principalities toward Russia, including the influence of Mongol rule."
     },
     {
       "number": 21,
       "title": "Columbus, de Gama, and Zheng He! 15th Century Mariners",
       "videoId": "NjEGncridoQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/columbus-de-gama-and-zheng-he-15th-century-mariners-crash-course-world-history-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/columbus-de-gama-and-zheng-he-15th-century-mariners-crash-course-world-history-21/",
+      "description": "Compare Columbus, Vasco da Gama, and Zheng He within fifteenth-century maritime exploration."
     },
     {
       "number": 22,
       "title": "The Renaissance – Was it a Thing?",
       "videoId": "Vufba_ZcoR0",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-renaissance-was-it-a-thing-crash-course-world-history-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-renaissance-was-it-a-thing-crash-course-world-history-22/",
+      "description": "Ask whether changes in European learning constituted a sudden Renaissance or a longer cultural evolution."
     },
     {
       "number": 23,
       "title": "The Columbian Exchange",
       "videoId": "HQPA5oNpfM4",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-columbian-exchange-crash-course-world-history-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-columbian-exchange-crash-course-world-history-23/",
+      "description": "Explore the sweeping consequences of contact between the Americas and the wider world."
     },
     {
       "number": 24,
       "title": "The Atlantic Slave Trade",
       "videoId": "dnV_MTFEGIY",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-atlantic-slave-trade-crash-course-world-history-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-atlantic-slave-trade-crash-course-world-history-24/",
+      "description": "Trace slavery's changing forms and the development of racialized enslavement across the Atlantic."
     },
     {
       "number": 25,
       "title": "The Spanish Empire, Silver, & Runaway Inflation",
       "videoId": "rjhIzemLdos",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-spanish-empire-silver-runaway-inflation-crash-course-world-history-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-spanish-empire-silver-runaway-inflation-crash-course-world-history-25/",
+      "description": "Examine Spain's American conquests, silver wealth, inflation, and eventual imperial decline."
     },
     {
       "number": 26,
       "title": "The Seven Years War",
       "videoId": "j0qbzNHmfW0",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-seven-years-war-crash-course-world-history-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-seven-years-war-crash-course-world-history-26/",
+      "description": "Explore a conflict fought across five continents and the complications of defining its duration."
     },
     {
       "number": 27,
       "title": "The Amazing Life and Strange Death of Captain Cook",
       "videoId": "2yXNrLTddME",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-amazing-life-and-strange-death-of-captain-cook-crash-course-world-history-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-amazing-life-and-strange-death-of-captain-cook-crash-course-world-history-27/",
+      "description": "Follow James Cook's Pacific explorations, territorial claims, and death in Hawaii."
     },
     {
       "number": 28,
       "title": "Tea, Taxes, and The American Revolution",
       "videoId": "HlUiSBXQHCw",
-      "sourceUrl": "https://thecrashcourse.com/courses/tea-taxes-and-the-american-revolution-crash-course-world-history-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/tea-taxes-and-the-american-revolution-crash-course-world-history-28/",
+      "description": "Distinguish the American Revolution from its war while examining colonial grievances and political ideas."
     },
     {
       "number": 29,
       "title": "The French Revolution",
       "videoId": "lTTvKwCylFY",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-french-revolution-crash-course-world-history-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-french-revolution-crash-course-world-history-29/",
+      "description": "Compare French and American revolutionary experiences, including terror and renewed authoritarian rule."
     },
     {
       "number": 30,
       "title": "Haitian Revolutions",
       "videoId": "5A_o-nU5s2U",
-      "sourceUrl": "https://thecrashcourse.com/courses/haitian-revolutions-crash-course-world-history-30/"
+      "sourceUrl": "https://thecrashcourse.com/courses/haitian-revolutions-crash-course-world-history-30/",
+      "description": "Explore revolutionary ideas of freedom within a Caribbean plantation society dependent on enslaved labor."
     },
     {
       "number": 31,
       "title": "Latin American Revolutions",
       "videoId": "ZBw35Ze3bg8",
-      "sourceUrl": "https://thecrashcourse.com/courses/latin-american-revolutions-crash-course-world-history-31/"
+      "sourceUrl": "https://thecrashcourse.com/courses/latin-american-revolutions-crash-course-world-history-31/",
+      "description": "Trace nineteenth-century challenges to Spanish and Portuguese control across Latin America."
     },
     {
       "number": 32,
       "title": "Coal, Steam, and The Industrial Revolution",
       "videoId": "zhL5DCizj5c",
-      "sourceUrl": "https://thecrashcourse.com/courses/coal-steam-and-the-industrial-revolution-crash-course-world-history-32/"
+      "sourceUrl": "https://thecrashcourse.com/courses/coal-steam-and-the-industrial-revolution-crash-course-world-history-32/",
+      "description": "Investigate why industrialization transformed everyday lives so dramatically and where its development began."
     },
     {
       "number": 33,
       "title": "Capitalism and Socialism",
       "videoId": "B3u4EFTwprM",
-      "sourceUrl": "https://thecrashcourse.com/courses/capitalism-and-socialism-crash-course-world-history-33/"
+      "sourceUrl": "https://thecrashcourse.com/courses/capitalism-and-socialism-crash-course-world-history-33/",
+      "description": "Connect industrial capitalism, emerging socialist ideas, global companies, and consumer culture."
     },
     {
       "number": 34,
       "title": "Samurai, Daimyo, Matthew Perry, and Nationalism",
       "videoId": "Nosq94oCl_M",
-      "sourceUrl": "https://thecrashcourse.com/courses/samurai-daimyo-matthew-perry-and-nationalism-crash-course-world-history-34/"
+      "sourceUrl": "https://thecrashcourse.com/courses/samurai-daimyo-matthew-perry-and-nationalism-crash-course-world-history-34/",
+      "description": "Explore nationalism's role in reshaping empires, states, education, military service, and political belonging."
     },
     {
       "number": 35,
       "title": "Imperialism",
       "videoId": "alJaltUmrGo",
-      "sourceUrl": "https://thecrashcourse.com/courses/imperialism-crash-course-world-history-35/"
+      "sourceUrl": "https://thecrashcourse.com/courses/imperialism-crash-course-world-history-35/",
+      "description": "Examine nineteenth-century European expansion and the creation of colonial spheres in Asia and Africa."
     },
     {
       "number": 36,
       "title": "Archdukes, Cynicism, and World War I",
       "videoId": "_XPZQ0LAlR4",
-      "sourceUrl": "https://thecrashcourse.com/courses/archdukes-cynicism-and-world-war-i-crash-course-world-history-36/"
+      "sourceUrl": "https://thecrashcourse.com/courses/archdukes-cynicism-and-world-war-i-crash-course-world-history-36/",
+      "description": "Connect an archduke's assassination with a war of unprecedented international participation and scale."
     },
     {
       "number": 37,
       "title": "Communists, Nationalists, and China’s Revolutions",
       "videoId": "UUCEeC4f6ts",
-      "sourceUrl": "https://thecrashcourse.com/courses/communists-nationalists-and-chinas-revolutions-crash-course-world-history-37/"
+      "sourceUrl": "https://thecrashcourse.com/courses/communists-nationalists-and-chinas-revolutions-crash-course-world-history-37/",
+      "description": "Trace the collapse of dynastic rule and China's disruptive twentieth-century revolutionary struggles."
     },
     {
       "number": 38,
       "title": "World War II",
       "videoId": "Q78COTwT7nE",
-      "sourceUrl": "https://thecrashcourse.com/courses/world-war-ii-crash-course-world-history-38/"
+      "sourceUrl": "https://thecrashcourse.com/courses/world-war-ii-crash-course-world-history-38/",
+      "description": "Explore the origins, meaning, and historical significance of the Second World War."
     },
     {
       "number": 39,
       "title": "USA vs USSR Fight! The Cold War",
       "videoId": "y9HjvHZfCUI",
-      "sourceUrl": "https://thecrashcourse.com/courses/usa-vs-ussr-fight-the-cold-war-crash-course-world-history-39/"
+      "sourceUrl": "https://thecrashcourse.com/courses/usa-vs-ussr-fight-the-cold-war-crash-course-world-history-39/",
+      "description": "Examine the rivalry between the United States and Soviet Union after the Second World War."
     },
     {
       "number": 40,
       "title": "Decolonization and Nationalism Triumphant",
       "videoId": "T_sGTspaF4Y",
-      "sourceUrl": "https://thecrashcourse.com/courses/decolonization-and-nationalism-triumphant-crash-course-world-history-40/"
+      "sourceUrl": "https://thecrashcourse.com/courses/decolonization-and-nationalism-triumphant-crash-course-world-history-40/",
+      "description": "Explore the breakup of European colonial empires and the rise of independent nations."
     },
     {
       "number": 41,
       "title": "Globalization, Part 1 – The Upside",
       "videoId": "5SnR-e0S6Ic",
-      "sourceUrl": "https://thecrashcourse.com/courses/globalization-i-the-upside-crash-course-world-history-41/"
+      "sourceUrl": "https://thecrashcourse.com/courses/globalization-i-the-upside-crash-course-world-history-41/",
+      "description": "Follow a T-shirt's international production journey to understand global economic connections."
     },
     {
       "number": 42,
       "title": "Globalization, Part 2 – Good or Bad?",
       "videoId": "s_iwrt7D5OA",
-      "sourceUrl": "https://thecrashcourse.com/courses/globalization-ii-good-or-bad-crash-course-world-history-42/"
+      "sourceUrl": "https://thecrashcourse.com/courses/globalization-ii-good-or-bad-crash-course-world-history-42/",
+      "description": "Weigh globalization's gains in wealth against inequality, environmental damage, and other social consequences."
     }
   ]
 }

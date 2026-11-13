@@ -5,37 +5,43 @@
       "number": 1,
       "title": "Why Are US Politics Today So Divisive?",
       "videoId": "dsGoS_M7AW8",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-are-us-politics-today-so-divisive-crash-course-us-government-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-are-us-politics-today-so-divisive-crash-course-us-government-1/",
+      "description": "Trace party identities and ideological sorting to explore why American politics became increasingly polarized and personal."
     },
     {
       "number": 2,
       "title": "Why Does the US Only Have Two Major Parties?",
       "videoId": "HT8ikFog_pQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-does-the-us-only-have-two-major-parties-crash-course-us-government-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-does-the-us-only-have-two-major-parties-crash-course-us-government-2/",
+      "description": "Investigate institutional rules and voter behavior that help maintain a system dominated by two parties."
     },
     {
       "number": 3,
       "title": "Where Does Campaign Money Really Come From?",
       "videoId": "Y22FuMI7vXI",
-      "sourceUrl": "https://thecrashcourse.com/courses/where-does-campaign-money-really-come-from-crash-course-us-government-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/where-does-campaign-money-really-come-from-crash-course-us-government-3/",
+      "description": "Explore campaign donations, spending rules, super PACs, and the influence of less transparent political money."
     },
     {
       "number": 4,
       "title": "Why Don’t More People Vote?",
       "videoId": "xsxcuVjn3NA",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-dont-more-people-vote-crash-course-us-government-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-dont-more-people-vote-crash-course-us-government-4/",
+      "description": "Examine individual motivations and electoral systems that encourage participation or discourage people from voting."
     },
     {
       "number": 5,
       "title": "Is the Electoral College Broken?",
       "videoId": "9Q9WAe_aqPs",
-      "sourceUrl": "https://www.youtube.com/watch?v=9Q9WAe_aqPs"
+      "sourceUrl": "https://www.youtube.com/watch?v=9Q9WAe_aqPs",
+      "description": "Investigate the presidential elector system, criticisms of its operation, and proposals for changing it."
     },
     {
       "number": 6,
       "title": "How Big of a Problem is Voter Fraud?",
       "videoId": "2b-H-rxQ8m8",
-      "sourceUrl": "https://www.youtube.com/watch?v=2b-H-rxQ8m8"
+      "sourceUrl": "https://www.youtube.com/watch?v=2b-H-rxQ8m8",
+      "description": "Explore election safeguards, evidence about fraud, and the spread of misleading claims about voting."
     }
   ]
 }

@@ -5,241 +5,281 @@
       "number": 1,
       "title": "Intro to Psychology",
       "videoId": "vo4pMVb0R6M",
-      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-psychology-crash-course-psychology-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-psychology-crash-course-psychology-1/",
+      "description": "Introduce psychology's meaning, origins, and influential figures in its development."
     },
     {
       "number": 2,
       "title": "Psychological Research",
       "videoId": "hFV71QPvX2I",
-      "sourceUrl": "https://thecrashcourse.com/courses/psychological-research-crash-course-psychology-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/psychological-research-crash-course-psychology-2/",
+      "description": "Compare research methods and the practices psychologists use to limit experimental bias."
     },
     {
       "number": 3,
       "title": "The Chemical Mind",
       "videoId": "W4N-7AlzK7s",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-chemical-mind-crash-course-psychology-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-chemical-mind-crash-course-psychology-3/",
+      "description": "Explore neurons, chemical signaling, and the nervous system's role in bodily reactions."
     },
     {
       "number": 4,
       "title": "Meet Your Master – Getting to Know Your Brain",
       "videoId": "vHrmiy4W9C0",
-      "sourceUrl": "https://thecrashcourse.com/courses/meet-your-master-getting-to-know-your-brain-crash-course-psychology-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/meet-your-master-getting-to-know-your-brain-crash-course-psychology-4/",
+      "description": "Tour the brain's major structures and consider what injury reveals about their functions."
     },
     {
       "number": 5,
       "title": "Sensation & Perception",
       "videoId": "unWnZvXJH2o",
-      "sourceUrl": "https://thecrashcourse.com/courses/sensation-perception-crash-course-psychology-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/sensation-perception-crash-course-psychology-5/",
+      "description": "Distinguish sensory information from perception while exploring how vision works."
     },
     {
       "number": 6,
       "title": "Homunculus",
       "videoId": "fxZWtc0mYpQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/homunculus-crash-course-psychology-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/homunculus-crash-course-psychology-6/",
+      "description": "Use the sensory homunculus model to understand how the body is represented in the brain."
     },
     {
       "number": 7,
       "title": "Perceiving is Believing",
       "videoId": "n46umYA_4dM",
-      "sourceUrl": "https://thecrashcourse.com/courses/perceiving-is-believing-crash-course-psychology-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/perceiving-is-believing-crash-course-psychology-7/",
+      "description": "Explore how the mind turns sensory input into meaningful perceptions."
     },
     {
       "number": 8,
       "title": "Consciousness",
       "videoId": "jReX7qKU2yc",
-      "sourceUrl": "https://thecrashcourse.com/courses/consciousness-crash-course-psychology-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/consciousness-crash-course-psychology-8/",
+      "description": "Investigate consciousness, attention, and the risks of dividing focus while driving."
     },
     {
       "number": 9,
       "title": "To Sleep, Perchance to Dream",
       "videoId": "rMHus-0wFSo",
-      "sourceUrl": "https://thecrashcourse.com/courses/to-sleep-perchance-to-dream-crash-course-psychology-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/to-sleep-perchance-to-dream-crash-course-psychology-9/",
+      "description": "Explore brain activity during sleep and ways sleeping processes can malfunction."
     },
     {
       "number": 10,
       "title": "Altered States",
       "videoId": "9PW1fwKjo-Y",
-      "sourceUrl": "https://thecrashcourse.com/courses/altered-states-crash-course-psychology-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/altered-states-crash-course-psychology-10/",
+      "description": "Look beyond fictional portrayals to explore hypnosis and other altered experiences of consciousness."
     },
     {
       "number": 11,
       "title": "How to Train a Brain",
       "videoId": "qG2SwE_6uVM",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-to-train-a-brain-crash-course-psychology-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-train-a-brain-crash-course-psychology-11/",
+      "description": "Explore learned responses through Pavlov's work, Skinner's experiments, and other approaches to learning."
     },
     {
       "number": 12,
       "title": "The Bobo Beatdown",
       "videoId": "128Ts5r9NRE",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-bobo-beatdown-crash-course-psychology-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-bobo-beatdown-crash-course-psychology-12/",
+      "description": "Examine learning through observation using the famous Bobo doll experiment."
     },
     {
       "number": 13,
       "title": "How We Make Memories",
       "videoId": "bSycdIx-C48",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-we-make-memories-crash-course-psychology-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-we-make-memories-crash-course-psychology-13/",
+      "description": "Explore different processes for forming and recalling memories and what happens when they are damaged."
     },
     {
       "number": 14,
       "title": "Remembering and Forgetting",
       "videoId": "HVWbrNls-Kw",
-      "sourceUrl": "https://thecrashcourse.com/courses/remembering-and-forgetting-crash-course-psychology-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/remembering-and-forgetting-crash-course-psychology-14/",
+      "description": "Investigate forgetting, inaccurate recollections, and the risks of trusting memory uncritically."
     },
     {
       "number": 15,
       "title": "Cognition: How Your Mind Can Amaze and Betray You",
       "videoId": "R-sVnmmw6WY",
-      "sourceUrl": "https://thecrashcourse.com/courses/cognition-how-your-mind-can-amaze-and-betray-you-crash-course-psychology-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/cognition-how-your-mind-can-amaze-and-betray-you-crash-course-psychology-15/",
+      "description": "Explore thinking, communication, problem-solving, and the mind's unexpected complications."
     },
     {
       "number": 16,
       "title": "Language",
       "videoId": "s9shPouRWCs",
-      "sourceUrl": "https://thecrashcourse.com/courses/language-crash-course-psychology-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/language-crash-course-psychology-16/",
+      "description": "Investigate how brains produce language and make shared meaning possible."
     },
     {
       "number": 17,
       "title": "The Power of Motivation",
       "videoId": "9hdSLiHaJz8",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-power-of-motivation-crash-course-psychology-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-power-of-motivation-crash-course-psychology-17/",
+      "description": "Compare theories and evolutionary perspectives that explain why people act."
     },
     {
       "number": 18,
       "title": "The Growth of Knowledge",
       "videoId": "8nz2dtv--ok",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-growth-of-knowledge-crash-course-psychology-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-growth-of-knowledge-crash-course-psychology-18/",
+      "description": "Explore schemas, stages of cognitive development, and scaffolding in children's learning."
     },
     {
       "number": 19,
       "title": "Monkeys and Morality",
       "videoId": "YcQg1EshfIE",
-      "sourceUrl": "https://thecrashcourse.com/courses/monkeys-and-morality-crash-course-psychology-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/monkeys-and-morality-crash-course-psychology-19/",
+      "description": "Use developmental experiments to examine attachment, anxiety around separation, and emerging morality."
     },
     {
       "number": 20,
       "title": "Adolescence",
       "videoId": "PzyXGUCngoU",
-      "sourceUrl": "https://thecrashcourse.com/courses/adolescence-crash-course-psychology-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/adolescence-crash-course-psychology-20/",
+      "description": "Explore adolescence through the development of identity and individuality."
     },
     {
       "number": 21,
       "title": "Rorschach & Freudians",
       "videoId": "mUELAiHbCxc",
-      "sourceUrl": "https://thecrashcourse.com/courses/rorschach-freudians-crash-course-psychology-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/rorschach-freudians-crash-course-psychology-21/",
+      "description": "Consider personality theories and the appeal and controversy of Rorschach testing."
     },
     {
       "number": 22,
       "title": "Measuring Personality",
       "videoId": "sUrV6oZ3zsk",
-      "sourceUrl": "https://thecrashcourse.com/courses/measuring-personality-crash-course-psychology-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/measuring-personality-crash-course-psychology-22/",
+      "description": "Explore competing methods for describing personality and understanding the self."
     },
     {
       "number": 23,
       "title": "Controversy of Intelligence",
       "videoId": "9xTz3QjcloI",
-      "sourceUrl": "https://thecrashcourse.com/courses/controversy-of-intelligence-crash-course-psychology-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/controversy-of-intelligence-crash-course-psychology-23/",
+      "description": "Examine intelligence testing, different accounts of intelligence, and its troubling historical uses."
     },
     {
       "number": 24,
       "title": "Brains vs. Bias",
       "videoId": "75g4d5sF3xI",
-      "sourceUrl": "https://thecrashcourse.com/courses/brains-vs-bias-crash-course-psychology-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/brains-vs-bias-crash-course-psychology-24/",
+      "description": "Investigate bias in intelligence assessments and how it limits interpretation of test results."
     },
     {
       "number": 25,
       "title": "Feeling All the Feels",
       "videoId": "gAMbkJk6gnE",
-      "sourceUrl": "https://thecrashcourse.com/courses/feeling-all-the-feels-crash-course-psychology-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/feeling-all-the-feels-crash-course-psychology-25/",
+      "description": "Explore what emotions are and the roles they play in human life."
     },
     {
       "number": 26,
       "title": "Emotion, Stress and Health",
       "videoId": "4KbSRXP0wik",
-      "sourceUrl": "https://thecrashcourse.com/courses/emotion-stress-and-health-crash-course-psychology-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/emotion-stress-and-health-crash-course-psychology-26/",
+      "description": "Connect emotional responses and stress with their effects on physical health."
     },
     {
       "number": 27,
       "title": "Let’s Talk About Sex",
       "videoId": "Qymp_VaFo9M",
-      "sourceUrl": "https://thecrashcourse.com/courses/lets-talk-about-sex-crash-course-psychology-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/lets-talk-about-sex-crash-course-psychology-27/",
+      "description": "Explore sexuality, gender identity, hormones, and influential research into sexual behavior."
     },
     {
       "number": 28,
       "title": "Psychological Disorders",
       "videoId": "wuhJ-GkRRQc",
-      "sourceUrl": "https://thecrashcourse.com/courses/psychological-disorders-crash-course-psychology-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/psychological-disorders-crash-course-psychology-28/",
+      "description": "Trace changes in responses to psychological disorders and the people behind those developments."
     },
     {
       "number": 29,
       "title": "OCD & Anxiety Disorders",
       "videoId": "aX7jnVXXG5o",
-      "sourceUrl": "https://thecrashcourse.com/courses/ocd-anxiety-disorders-crash-course-psychology-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/ocd-anxiety-disorders-crash-course-psychology-29/",
+      "description": "Distinguish casual labels from the experiences of obsessive-compulsive conditions, anxiety, and panic."
     },
     {
       "number": 30,
       "title": "Depressive and Bipolar Disorders",
       "videoId": "ZwMlHkWKDwM",
-      "sourceUrl": "https://thecrashcourse.com/courses/depressive-and-bipolar-disorders-crash-course-psychology-30/"
+      "sourceUrl": "https://thecrashcourse.com/courses/depressive-and-bipolar-disorders-crash-course-psychology-30/",
+      "description": "Explore possible causes and lived effects of depressive and bipolar mood conditions."
     },
     {
       "number": 31,
       "title": "Trauma & Addiction",
       "videoId": "343ORgL3kIc",
-      "sourceUrl": "https://thecrashcourse.com/courses/trauma-addiction-crash-course-psychology-31/"
+      "sourceUrl": "https://thecrashcourse.com/courses/trauma-addiction-crash-course-psychology-31/",
+      "description": "Investigate trauma's effects on the brain, its relationship with addiction, and approaches to treatment."
     },
     {
       "number": 32,
       "title": "Schizophrenia & Dissociative Disorders",
       "videoId": "uxktavpRdzU",
-      "sourceUrl": "https://thecrashcourse.com/courses/schizophrenia-dissociative-disorders-crash-course-psychology-32/"
+      "sourceUrl": "https://thecrashcourse.com/courses/schizophrenia-dissociative-disorders-crash-course-psychology-32/",
+      "description": "Clarify differences between schizophrenia and dissociative conditions and address common misunderstandings."
     },
     {
       "number": 33,
       "title": "Eating and Body Dysmorphic Disorders",
       "videoId": "eMVyZ6Ax-74",
-      "sourceUrl": "https://thecrashcourse.com/courses/eating-and-body-dysmorphic-disorders-crash-course-psychology-33/"
+      "sourceUrl": "https://thecrashcourse.com/courses/eating-and-body-dysmorphic-disorders-crash-course-psychology-33/",
+      "description": "Introduce eating-related and body-image conditions and the importance of understanding them."
     },
     {
       "number": 34,
       "title": "Personality Disorders",
       "videoId": "4E1JiDFxFGk",
-      "sourceUrl": "https://thecrashcourse.com/courses/personality-disorders-crash-course-psychology-34/"
+      "sourceUrl": "https://thecrashcourse.com/courses/personality-disorders-crash-course-psychology-34/",
+      "description": "Explore personality-related conditions and their possible biological, psychological, and social influences."
     },
     {
       "number": 35,
       "title": "Getting Help – Psychotherapy",
       "videoId": "6nEL44QkL9w",
-      "sourceUrl": "https://thecrashcourse.com/courses/getting-help-psychotherapy-crash-course-psychology-35/"
+      "sourceUrl": "https://thecrashcourse.com/courses/getting-help-psychotherapy-crash-course-psychology-35/",
+      "description": "Learn what psychotherapy can involve, who provides it, and what seeking assistance may look like."
     },
     {
       "number": 36,
       "title": "Biomedical Treatments",
       "videoId": "w2efaHgJ93A",
-      "sourceUrl": "https://thecrashcourse.com/courses/biomedical-treatments-crash-course-psychology-36/"
+      "sourceUrl": "https://thecrashcourse.com/courses/biomedical-treatments-crash-course-psychology-36/",
+      "description": "Explore the development of biomedical approaches and how they can work alongside psychotherapy."
     },
     {
       "number": 37,
       "title": "Social Thinking",
       "videoId": "h6HLDV0T5Q8",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-thinking-crash-course-psychology-37/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-thinking-crash-course-psychology-37/",
+      "description": "Consider how situations and personal characteristics influence behavior, including a famous prison experiment."
     },
     {
       "number": 38,
       "title": "Social Influence",
       "videoId": "UGxGDdQnC1Y",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-influence-crash-course-psychology-38/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-influence-crash-course-psychology-38/",
+      "description": "Investigate obedience, groupthink, and social pressures that shape action and inaction."
     },
     {
       "number": 39,
       "title": "Prejudice & Discrimination",
       "videoId": "7P0iP2Zm6a4",
-      "sourceUrl": "https://thecrashcourse.com/courses/prejudice-discrimination-crash-course-psychology-39/"
+      "sourceUrl": "https://thecrashcourse.com/courses/prejudice-discrimination-crash-course-psychology-39/",
+      "description": "Examine psychological approaches to stereotyping, prejudiced beliefs, and discriminatory behavior."
     },
     {
       "number": 40,
       "title": "Aggression vs. Altruism",
       "videoId": "XoTx7Rt4dig",
-      "sourceUrl": "https://thecrashcourse.com/courses/aggression-v-altruism-crash-course-psychology-40/"
+      "sourceUrl": "https://thecrashcourse.com/courses/aggression-v-altruism-crash-course-psychology-40/",
+      "description": "Compare explanations for aggression and helping behavior, including exchange, frustration, and bystander effects."
     }
   ]
 }

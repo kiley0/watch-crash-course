@@ -5,175 +5,204 @@
       "number": 1,
       "title": "What is a Game?",
       "videoId": "QPqR2wOs8WI",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-game-crash-course-games-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-game-crash-course-games-1/",
+      "description": "Explore what makes an activity a game, who plays games, and how games affect people."
     },
     {
       "number": 2,
       "title": "Ancient Games",
       "videoId": "H1lv3cOmlzM",
-      "sourceUrl": "https://thecrashcourse.com/courses/ancient-games-crash-course-games-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/ancient-games-crash-course-games-2/",
+      "description": "From the ancient Egyptian game of Senet to the Aztec’s Patolli, games have been played since the beginning of civilization."
     },
     {
       "number": 3,
       "title": "The Dawn of Video Games",
       "videoId": "IGLdlkZozpI",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-dawn-of-video-games-crash-course-games-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-dawn-of-video-games-crash-course-games-3/",
+      "description": "Trace early video game history back to reprogrammable computers in the 1940s."
     },
     {
       "number": 4,
       "title": "Atari and the Business of Video Games",
       "videoId": "r8gHnuv7U_o",
-      "sourceUrl": "https://thecrashcourse.com/courses/atari-and-the-business-of-video-games-crash-course-games-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/atari-and-the-business-of-video-games-crash-course-games-4/",
+      "description": "In this episode of Crash Course Games, Andre Meadows talks about the rise of Atari, and with it, the rise of the video game industry."
     },
     {
       "number": 5,
       "title": "The First Home Consoles",
       "videoId": "npOPGrAcFLg",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-first-home-consoles-crash-course-games-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-first-home-consoles-crash-course-games-5/",
+      "description": "Explore how competition between consoles improved graphics, storytelling, and gameplay."
     },
     {
       "number": 6,
       "title": "The Video Game Crash of 1983",
       "videoId": "x4F_sZiAl7s",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-video-game-crash-of-1983-crash-course-games-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-video-game-crash-of-1983-crash-course-games-6/",
+      "description": "Trace how market saturation, rushed releases, and declining consumer confidence contributed to the 1983 American video game crash."
     },
     {
       "number": 7,
       "title": "Nintendo and a New Standard for Video Games",
       "videoId": "34zvOgLZOY4",
-      "sourceUrl": "https://thecrashcourse.com/courses/nintendo-and-a-new-standard-for-video-games-crash-course-games-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/nintendo-and-a-new-standard-for-video-games-crash-course-games-7/",
+      "description": "Discover how Nintendo used developer contracts to establish new expectations for video game quality."
     },
     {
       "number": 8,
       "title": "Sega and More Mature Video Games",
       "videoId": "MjWdhGRGL5E",
-      "sourceUrl": "https://thecrashcourse.com/courses/sega-and-more-mature-video-games-crash-course-games-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/sega-and-more-mature-video-games-crash-course-games-8/",
+      "description": "Explore the growth of mature game content and the development of the ESRB rating system."
     },
     {
       "number": 9,
       "title": "Playstation and More Immersive Video Games",
       "videoId": "yq2n11aPvog",
-      "sourceUrl": "https://thecrashcourse.com/courses/playstation-and-more-immersive-video-games-crash-course-games-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/playstation-and-more-immersive-video-games-crash-course-games-9/",
+      "description": "Explore PlayStation-era console competition, 3D graphics, CD-based storytelling, multiplayer games, and growing immersion."
     },
     {
       "number": 10,
       "title": "Microsoft and Connected Consoles",
       "videoId": "eE8Jac43RBo",
-      "sourceUrl": "https://thecrashcourse.com/courses/microsoft-and-connected-consoles-crash-course-games-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/microsoft-and-connected-consoles-crash-course-games-10/",
+      "description": "Today, we wrap up our discussion of the console wars by taking a look at Microsoft’s Xbox which was announced in 2001."
     },
     {
       "number": 11,
       "title": "Casual Gaming",
       "videoId": "fa-TFvPKpog",
-      "sourceUrl": "https://thecrashcourse.com/courses/casual-gaming-crash-course-games-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/casual-gaming-crash-course-games-11/",
+      "description": "Explore the growth of casual gaming as internet-connected devices became widespread."
     },
     {
       "number": 12,
       "title": "MMORPGs",
       "videoId": "YZ5j5fy-LiQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/mmorpgs-crash-course-games-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/mmorpgs-crash-course-games-12/",
+      "description": "Trace MMORPGs from early text adventures to persistent online communities and economies."
     },
     {
       "number": 13,
       "title": "Card Games",
       "videoId": "FfC4LPYxTrs",
-      "sourceUrl": "https://thecrashcourse.com/courses/card-games-crash-course-games-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/card-games-crash-course-games-13/",
+      "description": "We'll look at a wide variety of card games like Poker, Yu-Gi-Oh, Pokemon TCG, and Magic: The Gathering."
     },
     {
       "number": 14,
       "title": "Board Games",
       "videoId": "TVm4ckokD84",
-      "sourceUrl": "https://thecrashcourse.com/courses/board-games-crash-course-games-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/board-games-crash-course-games-14/",
+      "description": "Compare Monopoly and The Settlers of Catan to understand American and European approaches to board game design."
     },
     {
       "number": 15,
       "title": "Educational Games",
       "videoId": "ORSUg0C8qR8",
-      "sourceUrl": "https://thecrashcourse.com/courses/educational-games-crash-course-games-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/educational-games-crash-course-games-15/",
+      "description": "Explore games designed to teach useful skills, their long history, and examples of educational gaming successes."
     },
     {
       "number": 16,
       "title": "Psychology of Gaming",
       "videoId": "MYJBRWT7JGU",
-      "sourceUrl": "https://thecrashcourse.com/courses/psychology-of-gaming-crash-course-games-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/psychology-of-gaming-crash-course-games-16/",
+      "description": "Explore why people prefer different games and what those preferences reveal about players."
     },
     {
       "number": 17,
       "title": "The Olympics, FIFA, and Why We Love Sports",
       "videoId": "wWZIhgluQvw",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-olympics-fifa-and-why-we-love-sports-crash-course-games-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-olympics-fifa-and-why-we-love-sports-crash-course-games-17/",
+      "description": "John Green explores sports as games and the appeal of large international sporting competitions."
     },
     {
       "number": 18,
       "title": "Role-playing Games",
       "videoId": "qqOQPv2rv_I",
-      "sourceUrl": "https://thecrashcourse.com/courses/role-playing-games-crash-course-games-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/role-playing-games-crash-course-games-18/",
+      "description": "Explore role-playing games as interactive storytelling, their roots in wargaming, and the controversy surrounding Dungeons & Dragons."
     },
     {
       "number": 19,
       "title": "Game Design",
       "videoId": "TOQTZ6N_eVg",
-      "sourceUrl": "https://thecrashcourse.com/courses/game-design-crash-course-games-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/game-design-crash-course-games-19/",
+      "description": "Good game design is essential for a positive player experience whether it’s a board game, video game, or even dice game."
     },
     {
       "number": 20,
       "title": "PC Gaming",
       "videoId": "ADTTXRxVUcY",
-      "sourceUrl": "https://thecrashcourse.com/courses/pc-gaming-crash-course-games-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/pc-gaming-crash-course-games-20/",
+      "description": "Explore the development of gaming on personal computers."
     },
     {
       "number": 21,
       "title": "The Future of Virtual Reality",
       "videoId": "BfcBjJ3c9lg",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-virtual-reality-crash-course-games-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-virtual-reality-crash-course-games-21/",
+      "description": "Look back at the decades-long history of virtual reality games."
     },
     {
       "number": 22,
       "title": "Open World Games",
       "videoId": "0f6K1bzXCcs",
-      "sourceUrl": "https://thecrashcourse.com/courses/open-world-games-crash-course-games-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/open-world-games-crash-course-games-22/",
+      "description": "Explore open-world games, player-created stories, social interaction, and the hardware advances supporting their growth."
     },
     {
       "number": 23,
       "title": "Handhelds",
       "videoId": "ZEwbHWspFWY",
-      "sourceUrl": "https://thecrashcourse.com/courses/handhelds-crash-course-games-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/handhelds-crash-course-games-23/",
+      "description": "Examine the relationship between mobile games and dedicated handheld gaming systems."
     },
     {
       "number": 24,
       "title": "Input Devices",
       "videoId": "rR_mmsfIzzs",
-      "sourceUrl": "https://thecrashcourse.com/courses/input-devices-crash-course-games-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/input-devices-crash-course-games-24/",
+      "description": "Explore how increasingly complex video games have influenced improvements in game controllers."
     },
     {
       "number": 25,
       "title": "The History of Game Shows",
       "videoId": "7EcjYQj23QE",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-game-shows-crash-course-games-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-game-shows-crash-course-games-25/",
+      "description": "Investigate game shows and the ways they turn play into entertainment."
     },
     {
       "number": 26,
       "title": "LARP",
       "videoId": "SUYb29YV47w",
-      "sourceUrl": "https://thecrashcourse.com/courses/larp-crash-course-games-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/larp-crash-course-games-26/",
+      "description": "Explore live-action role-playing beyond its familiar foam-weapon stereotype."
     },
     {
       "number": 27,
       "title": "Gambling",
       "videoId": "DOhJX7SqJS8",
-      "sourceUrl": "https://thecrashcourse.com/courses/gambling-crash-course-games-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/gambling-crash-course-games-27/",
+      "description": "Trace gambling’s history, its connections with other games, and the appeal of uncertain outcomes."
     },
     {
       "number": 28,
       "title": "The Pokémon Phenomenon",
       "videoId": "x4lPCUGxx5o",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-pokemon-phenomenon-crash-course-games-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-pokemon-phenomenon-crash-course-games-28/",
+      "description": "Investigate the reasons behind Pokémon’s success rather than treating its popularity as an accident."
     },
     {
       "number": 29,
       "title": "The Future of Gaming",
       "videoId": "bMQprYPlK54",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-gaming-crash-course-games-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-gaming-crash-course-games-29/",
+      "description": "Conclude the series by considering what lies ahead for games."
     }
   ]
 }

@@ -19,6 +19,7 @@ export interface Course {
   reviewedAt: string;
 }
 export interface Episode {
+  description?: string;
   number: number;
   title: string;
   videoId: string;
@@ -159,6 +160,7 @@ export function parseDetail(value: unknown, course: Course): CourseDetail {
     return {
       number: index + 1,
       title: string(episode.title),
+      ...(episode.description === undefined ? {} : { description: string(episode.description) }),
       videoId,
       sourceUrl: episodeSource(episode.sourceUrl, videoId, course.collection),
     };

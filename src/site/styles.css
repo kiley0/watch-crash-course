@@ -611,39 +611,11 @@ select {
   color: var(--theme-muted, #5d6f60);
   margin: 28px 0 30px;
 }
-.course-hero {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 40px;
-  padding: 20px 0 48px;
-  border-bottom: 1px solid var(--line);
-}
-.course-hero h1 {
-  overflow-wrap: anywhere;
-  hyphens: auto;
-  font-size: var(--page-title);
-  line-height: 1.05;
-  margin-top: 16px;
-}
 .course-intro {
   font-size: 1.0625rem;
   color: var(--theme-muted, #586757);
   margin-top: 22px;
   max-width: 550px;
-}
-.course-facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 0.6875rem;
-  margin-top: 23px;
-}
-.course-facts span + span:before {
-  content: "·";
-  margin-right: 20px;
-}
-.course-hero .button {
-  margin-top: 30px;
 }
 .external-note {
   font-size: 0.625rem;
@@ -866,15 +838,6 @@ select {
     grid-template-columns: minmax(0, 1fr) 250px;
     gap: 26px;
   }
-  .course-facts {
-    gap: 12px;
-  }
-  .course-facts span + span:before {
-    margin-right: 12px;
-  }
-  .course-hero {
-    gap: 22px;
-  }
   .episode-action {
     font-size: 0;
   }
@@ -1070,20 +1033,8 @@ select {
   .footer-inner > a:not(.footer-brand) {
     font-size: 0.625rem;
   }
-  .course-hero {
-    grid-template-columns: 1fr;
-    padding-top: 5px;
-    gap: 25px;
-  }
   .course-intro {
     font-size: 1rem;
-  }
-  .course-facts {
-    gap: 10px;
-    font-size: 0.625rem;
-  }
-  .course-facts span + span:before {
-    margin-right: 10px;
   }
   .course-layout {
     grid-template-columns: 1fr;
@@ -1174,11 +1125,6 @@ select {
 .footer-inner abbr {
   text-decoration: none;
   white-space: nowrap;
-}
-.review-note {
-  margin-top: 22px;
-  color: var(--muted);
-  font-size: 0.75rem;
 }
 .surprise-button {
   border: 0;

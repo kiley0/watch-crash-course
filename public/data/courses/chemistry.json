@@ -5,277 +5,323 @@
       "number": 1,
       "title": "The Nucleus",
       "videoId": "FSyAehMdpyI",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-nucleus-crash-course-chemistry-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-nucleus-crash-course-chemistry-1/",
+      "description": "Explore atomic particles and the nucleus's role in determining the properties of matter."
     },
     {
       "number": 2,
       "title": "Unit Conversion & Significant Figures",
       "videoId": "hQpQ0hxVNTg",
-      "sourceUrl": "https://thecrashcourse.com/courses/unit-conversion-significant-figures-crash-course-chemistry-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/unit-conversion-significant-figures-crash-course-chemistry-2/",
+      "description": "Learn how shared units and careful precision help scientists communicate physical measurements."
     },
     {
       "number": 3,
       "title": "The Creation of Chemistry – The Fundamental Laws",
       "videoId": "QiiyvzZBKT8",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-creation-of-chemistry-the-fundamental-laws-crash-course-chemistry-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-creation-of-chemistry-the-fundamental-laws-crash-course-chemistry-3/",
+      "description": "Trace chemistry's development from alchemy through conservation of mass and knowledge of atoms and compounds."
     },
     {
       "number": 4,
       "title": "The Periodic Table",
       "videoId": "0RRVV4Diomg",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-periodic-table-crash-course-chemistry-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-periodic-table-crash-course-chemistry-4/",
+      "description": "Explore Mendeleev's work and learn to read the information organized in the periodic table."
     },
     {
       "number": 5,
       "title": "The Electron",
       "videoId": "rcKilE9CdaA",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-electron-crash-course-chemistry-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-electron-crash-course-chemistry-5/",
+      "description": "Connect electron arrangements and energy changes with patterns among chemical elements."
     },
     {
       "number": 6,
       "title": "Stoichiometry – Chemistry for Massive Creatures",
       "videoId": "UL1jmJaUkaQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/stoichiometry-chemistry-for-massive-creatures-crash-course-chemistry-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/stoichiometry-chemistry-for-massive-creatures-crash-course-chemistry-6/",
+      "description": "Learn how chemical proportions make reactions understandable at practical, measurable scales."
     },
     {
       "number": 7,
       "title": "Water and Solutions – for Dirty Laundry",
       "videoId": "AN4KifV12DA",
-      "sourceUrl": "https://thecrashcourse.com/courses/water-and-solutions-for-dirty-laundry-crash-course-chemistry-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/water-and-solutions-for-dirty-laundry-crash-course-chemistry-7/",
+      "description": "Explore water's importance as the setting for reactions in living organisms and Earth's environment."
     },
     {
       "number": 8,
       "title": "Acid-Base Reactions in Solution",
       "videoId": "ANi709MYnWg",
-      "sourceUrl": "https://thecrashcourse.com/courses/acid-base-reactions-in-solution-crash-course-chemistry-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/acid-base-reactions-in-solution-crash-course-chemistry-8/",
+      "description": "Investigate proton transfers and the rearrangement of atoms in acidic and basic solutions."
     },
     {
       "number": 9,
       "title": "Precipitation Reactions",
       "videoId": "IIu16dy3ThI",
-      "sourceUrl": "https://thecrashcourse.com/courses/precipitation-reactions-crash-course-chemistry-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/precipitation-reactions-crash-course-chemistry-9/",
+      "description": "Explore how dissolved ions combine into insoluble products and how to describe those reactions."
     },
     {
       "number": 10,
       "title": "Redox Reactions",
       "videoId": "lQ6FBA1HM3s",
-      "sourceUrl": "https://thecrashcourse.com/courses/redox-reactions-crash-course-chemistry-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/redox-reactions-crash-course-chemistry-10/",
+      "description": "Connect electron gains and losses with energy transfer in oxidation-reduction chemistry."
     },
     {
       "number": 11,
       "title": "How To Speak Chemistrian",
       "videoId": "mlRhLicNo8Q",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-to-speak-chemistrian-crash-course-chemistry-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-speak-chemistrian-crash-course-chemistry-11/",
+      "description": "Learn rules and language that make chemical ideas easier to name and discuss."
     },
     {
       "number": 12,
       "title": "The Ideal Gas Law",
       "videoId": "BxUS1K7xu30",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-ideal-gas-law-crash-course-chemistry-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-ideal-gas-law-crash-course-chemistry-12/",
+      "description": "Explore the history and mathematical relationships behind idealized gas behavior."
     },
     {
       "number": 13,
       "title": "Ideal Gas Problems",
       "videoId": "8SRAkXMu3d0",
-      "sourceUrl": "https://thecrashcourse.com/courses/ideal-gas-problems-crash-course-chemistry-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/ideal-gas-problems-crash-course-chemistry-13/",
+      "description": "Practice calculations with the ideal gas law while recognizing its assumptions about particle size and attraction."
     },
     {
       "number": 14,
       "title": "Real Gases",
       "videoId": "GIPrsWuSkQc",
-      "sourceUrl": "https://thecrashcourse.com/courses/real-gases-crash-course-chemistry-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/real-gases-crash-course-chemistry-14/",
+      "description": "Adjust gas models to account for occupied volume and interactions between real particles."
     },
     {
       "number": 15,
       "title": "Partial Pressures & Vapor Pressure",
       "videoId": "JbqtqCunYzA",
-      "sourceUrl": "https://thecrashcourse.com/courses/partial-pressures-vapor-pressure-crash-course-chemistry-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/partial-pressures-vapor-pressure-crash-course-chemistry-15/",
+      "description": "Explore mixed-gas pressures, vapor pressure, and experiments collecting gas over water."
     },
     {
       "number": 16,
       "title": "Passing Gases – Effusion, Diffusion and the Velocity of a Gas",
       "videoId": "TLRZAFU_9Kg",
-      "sourceUrl": "https://thecrashcourse.com/courses/passing-gases-effusion-diffusion-and-the-velocity-of-a-gas-crash-course-chemistry-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/passing-gases-effusion-diffusion-and-the-velocity-of-a-gas-crash-course-chemistry-16/",
+      "description": "Investigate molecular speed, diffusion, effusion, and the effects of concentration differences."
     },
     {
       "number": 17,
       "title": "Energy & Chemistry",
       "videoId": "GqtUWyDR1fg",
-      "sourceUrl": "https://thecrashcourse.com/courses/energy-chemistry-crash-course-chemistry-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/energy-chemistry-crash-course-chemistry-17/",
+      "description": "Connect chemical processes with thermodynamic energy through a mechanical demonstration."
     },
     {
       "number": 18,
       "title": "Enthalpy",
       "videoId": "SV7U4yAXL5I",
-      "sourceUrl": "https://thecrashcourse.com/courses/enthalpy-crash-course-chemistry-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/enthalpy-crash-course-chemistry-18/",
+      "description": "Explore enthalpy as a way of understanding energy associated with chemical bonds and changes."
     },
     {
       "number": 19,
       "title": "Calorimetry",
       "videoId": "JuWtBR-rDQk",
-      "sourceUrl": "https://thecrashcourse.com/courses/calorimetry-crash-course-chemistry-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/calorimetry-crash-course-chemistry-19/",
+      "description": "Learn ways to calculate enthalpy and measure it through experiments."
     },
     {
       "number": 20,
       "title": "Entropy – Embrace the Chaos!",
       "videoId": "ZsY4WcQOrfk",
-      "sourceUrl": "https://thecrashcourse.com/courses/entropy-embrace-the-chaos-crash-course-chemistry-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/entropy-embrace-the-chaos-crash-course-chemistry-20/",
+      "description": "Connect probability and disordered arrangements with entropy and thermodynamic behavior."
     },
     {
       "number": 21,
       "title": "Lab Techniques & Safety",
       "videoId": "VRWRmIEHr3A",
-      "sourceUrl": "https://thecrashcourse.com/courses/lab-techniques-safety-crash-course-chemistry-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/lab-techniques-safety-crash-course-chemistry-21/",
+      "description": "Explore protective equipment, chemical disposal, hazard information, and practical techniques for laboratory work."
     },
     {
       "number": 22,
       "title": "Atomic Hook-Ups – Types of Chemical Bonds",
       "videoId": "QXT4OVM4vXI",
-      "sourceUrl": "https://thecrashcourse.com/courses/atomic-hook-ups-types-of-chemical-bonds-crash-course-chemistry-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/atomic-hook-ups-types-of-chemical-bonds-crash-course-chemistry-22/",
+      "description": "Compare chemical bond types through attraction, charge, and distances between atoms."
     },
     {
       "number": 23,
       "title": "Polar & Non-Polar Molecules",
       "videoId": "PVL24HAesnc",
-      "sourceUrl": "https://thecrashcourse.com/courses/polar-non-polar-molecules-crash-course-chemistry-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/polar-non-polar-molecules-crash-course-chemistry-23/",
+      "description": "Explore how molecular structure and charge distribution distinguish polar from nonpolar substances."
     },
     {
       "number": 24,
       "title": "Bonding Models and Lewis Structures",
       "videoId": "a8LF7JEb0IA",
-      "sourceUrl": "https://thecrashcourse.com/courses/bonding-models-and-lewis-structures-crash-course-chemistry-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/bonding-models-and-lewis-structures-crash-course-chemistry-24/",
+      "description": "Use Lewis structures to consider both the usefulness and limitations of chemical models."
     },
     {
       "number": 25,
       "title": "Orbitals",
       "videoId": "cPDptc0wUYI",
-      "sourceUrl": "https://thecrashcourse.com/courses/orbitals-crash-course-chemistry-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/orbitals-crash-course-chemistry-25/",
+      "description": "Explore molecular shape, orbital hybridization, and the distinction between sigma and pi bonding."
     },
     {
       "number": 26,
       "title": "Liquids",
       "videoId": "BqQJPCdmIp8",
-      "sourceUrl": "https://thecrashcourse.com/courses/liquids-crash-course-chemistry-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/liquids-crash-course-chemistry-26/",
+      "description": "Connect liquid behavior with intermolecular attractions, viscosity, surface tension, and capillary effects."
     },
     {
       "number": 27,
       "title": "Solutions",
       "videoId": "9h2f1Bjr0p4",
-      "sourceUrl": "https://thecrashcourse.com/courses/solutions-crash-course-chemistry-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/solutions-crash-course-chemistry-27/",
+      "description": "Explore concentration measures, solvent interactions, and the behavior of dissolved gases."
     },
     {
       "number": 28,
       "title": "Equilibrium",
       "videoId": "g5wNg_dKsYY",
-      "sourceUrl": "https://thecrashcourse.com/courses/equilibrium-crash-course-chemistry-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/equilibrium-crash-course-chemistry-28/",
+      "description": "Investigate how concentration, pressure, and temperature influence chemical equilibrium."
     },
     {
       "number": 29,
       "title": "Equilibrium Equations",
       "videoId": "DP-vWN1yXrY",
-      "sourceUrl": "https://thecrashcourse.com/courses/equilibrium-equations-crash-course-chemistry-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/equilibrium-equations-crash-course-chemistry-29/",
+      "description": "Calculate equilibrium conditions and constants using organized reaction tables."
     },
     {
       "number": 30,
       "title": "pH and pOH",
       "videoId": "LS67vS10O5Y",
-      "sourceUrl": "https://thecrashcourse.com/courses/ph-and-poh-crash-course-chemistry-30/"
+      "sourceUrl": "https://thecrashcourse.com/courses/ph-and-poh-crash-course-chemistry-30/",
+      "description": "Connect water dissociation, acid strength, logarithms, and calculations of acidity and basicity."
     },
     {
       "number": 31,
       "title": "Buffers, the Acid Rain Slayer",
       "videoId": "8Fdt5WnYn1k",
-      "sourceUrl": "https://thecrashcourse.com/courses/buffers-the-acid-rain-slayer-crash-course-chemistry-31/"
+      "sourceUrl": "https://thecrashcourse.com/courses/buffers-the-acid-rain-slayer-crash-course-chemistry-31/",
+      "description": "Explore buffer composition, natural carbonate systems, titration, and resistance to acidity changes."
     },
     {
       "number": 32,
       "title": "Kinetics – Chemistry’s Demolition Derby",
       "videoId": "7qOFtL3VEBc",
-      "sourceUrl": "https://thecrashcourse.com/courses/kinetics-chemistrys-demolition-derby-crash-course-chemistry-32/"
+      "sourceUrl": "https://thecrashcourse.com/courses/kinetics-chemistrys-demolition-derby-crash-course-chemistry-32/",
+      "description": "Investigate reaction rates through collisions, activation barriers, mechanisms, and slow steps."
     },
     {
       "number": 33,
       "title": "Doing Solids",
       "videoId": "bzr-byiSXlA",
-      "sourceUrl": "https://thecrashcourse.com/courses/doing-solids-crash-course-chemistry-33/"
+      "sourceUrl": "https://thecrashcourse.com/courses/doing-solids-crash-course-chemistry-33/",
+      "description": "Compare solid structures and connect their properties with the bonds holding them together."
     },
     {
       "number": 34,
       "title": "Network Solids and Carbon",
       "videoId": "b_SXwfHQ774",
-      "sourceUrl": "https://thecrashcourse.com/courses/network-solids-and-carbon-crash-course-chemistry-34/"
+      "sourceUrl": "https://thecrashcourse.com/courses/network-solids-and-carbon-crash-course-chemistry-34/",
+      "description": "Explore carbon networks through graphite, diamond, sheets, and three-dimensional structures."
     },
     {
       "number": 35,
       "title": "Silicon – The Internet’s Favorite Element",
       "videoId": "kdy3RsZk7As",
-      "sourceUrl": "https://thecrashcourse.com/courses/silicon-the-internets-favorite-element-crash-course-chemistry-35/"
+      "sourceUrl": "https://thecrashcourse.com/courses/silicon-the-internets-favorite-element-crash-course-chemistry-35/",
+      "description": "Connect silicon's solid networks with semiconductors, diodes, transistors, and computer chips."
     },
     {
       "number": 36,
       "title": "Electrochemistry",
       "videoId": "IV4IUsholjg",
-      "sourceUrl": "https://thecrashcourse.com/courses/electrochemistry-crash-course-chemistry-36/"
+      "sourceUrl": "https://thecrashcourse.com/courses/electrochemistry-crash-course-chemistry-36/",
+      "description": "Explore reactions that power batteries and connect cell potential with electrolysis and plating."
     },
     {
       "number": 37,
       "title": "The History of Atomic Chemistry",
       "videoId": "thnDxFdkzZs",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-atomic-chemistry-crash-course-chemistry-37/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-atomic-chemistry-crash-course-chemistry-37/",
+      "description": "Trace thinkers whose work contributed to the modern understanding of atoms."
     },
     {
       "number": 38,
       "title": "Nuclear Chemistry",
       "videoId": "KWAsz59F8gA",
-      "sourceUrl": "https://thecrashcourse.com/courses/nuclear-chemistry-crash-course-chemistry-38/"
+      "sourceUrl": "https://thecrashcourse.com/courses/nuclear-chemistry-crash-course-chemistry-38/",
+      "description": "Explore isotopes, changes between elements, half-life calculations, radioactive decay, and fission."
     },
     {
       "number": 39,
       "title": "Nuclear Chemistry, Part 2 – Fusion and Fission",
       "videoId": "FU6y1XIADdg",
-      "sourceUrl": "https://thecrashcourse.com/courses/nuclear-chemistry-part-2-fusion-and-fission-crash-course-chemistry-39/"
+      "sourceUrl": "https://thecrashcourse.com/courses/nuclear-chemistry-part-2-fusion-and-fission-crash-course-chemistry-39/",
+      "description": "Compare splitting and combining nuclei, their energy changes, uses, and dangers."
     },
     {
       "number": 40,
       "title": "Hydrocarbon Power!",
       "videoId": "UloIw7dhnlQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/hydrocarbon-power-crash-course-chemistry-40/"
+      "sourceUrl": "https://thecrashcourse.com/courses/hydrocarbon-power-crash-course-chemistry-40/",
+      "description": "Introduce organic compounds through hydrocarbon structures, alkane properties, isomers, and naming."
     },
     {
       "number": 41,
       "title": "Alkenes & Alkynes",
       "videoId": "CEH3O6l1pbw",
-      "sourceUrl": "https://thecrashcourse.com/courses/alkenes-alkynes-crash-course-chemistry-41/"
+      "sourceUrl": "https://thecrashcourse.com/courses/alkenes-alkynes-crash-course-chemistry-41/",
+      "description": "Compare unsaturated hydrocarbons and reactions involving hydrogenation, halogenation, and polymer formation."
     },
     {
       "number": 42,
       "title": "Aromatics and Cyclic Compounds",
       "videoId": "kXFEex-dABU",
-      "sourceUrl": "https://thecrashcourse.com/courses/aromatics-and-cyclic-compounds-crash-course-chemistry-42/"
+      "sourceUrl": "https://thecrashcourse.com/courses/aromatics-and-cyclic-compounds-crash-course-chemistry-42/",
+      "description": "Explore cyclic and aromatic molecules, resonance, substituents, reactions, and practical uses."
     },
     {
       "number": 43,
       "title": "Hydrocarbon Derivatives",
       "videoId": "hlXc_eEtBHA",
-      "sourceUrl": "https://thecrashcourse.com/courses/hydrocarbon-derivatives-crash-course-chemistry-43/"
+      "sourceUrl": "https://thecrashcourse.com/courses/hydrocarbon-derivatives-crash-course-chemistry-43/",
+      "description": "Investigate functional groups and the ways they change hydrocarbon-derived compounds."
     },
     {
       "number": 44,
       "title": "Nomenclature",
       "videoId": "U7wavimfNFE",
-      "sourceUrl": "https://thecrashcourse.com/courses/nomenclature-crash-course-chemistry-44/"
+      "sourceUrl": "https://thecrashcourse.com/courses/nomenclature-crash-course-chemistry-44/",
+      "description": "Use systematic naming rules to describe carbon chains, functional priorities, and double-bond arrangements."
     },
     {
       "number": 45,
       "title": "Polymers",
       "videoId": "rHxxLYzJ8Sw",
-      "sourceUrl": "https://thecrashcourse.com/courses/polymers-crash-course-chemistry-45/"
+      "sourceUrl": "https://thecrashcourse.com/courses/polymers-crash-course-chemistry-45/",
+      "description": "Explore the development and varied everyday uses of large-chain molecular materials."
     },
     {
       "number": 46,
       "title": "The Global Carbon Cycle",
       "videoId": "aLuSi_6Ol8M",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-global-carbon-cycle-crash-course-chemistry-46/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-global-carbon-cycle-crash-course-chemistry-46/",
+      "description": "Follow carbon through global processes, including fixation and oxidation-reduction reactions."
     }
   ]
 }

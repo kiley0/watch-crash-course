@@ -5,91 +5,106 @@
       "number": 1,
       "title": "Solving Problems",
       "videoId": "A_QINscHY3Q",
-      "sourceUrl": "https://www.youtube.com/watch?v=A_QINscHY3Q"
+      "sourceUrl": "https://www.youtube.com/watch?v=A_QINscHY3Q",
+      "description": "Work through mathematical problems step by step and consider what it means to solve an equation."
     },
     {
       "number": 2,
       "title": "Word Problems",
       "videoId": "NjvqlajvK8I",
-      "sourceUrl": "https://www.youtube.com/watch?v=NjvqlajvK8I"
+      "sourceUrl": "https://www.youtube.com/watch?v=NjvqlajvK8I",
+      "description": "Use word problems to connect mathematical equations with visual thinking and everyday situations."
     },
     {
       "number": 3,
       "title": "Negative Numbers and Arithmetic",
       "videoId": "qxyA2VtoR8o",
-      "sourceUrl": "https://www.youtube.com/watch?v=qxyA2VtoR8o"
+      "sourceUrl": "https://www.youtube.com/watch?v=qxyA2VtoR8o",
+      "description": "Explore the history and practical uses of negative numbers."
     },
     {
       "number": 4,
       "title": "Understanding Fractions",
       "videoId": "Qd82Q7GqhSk",
-      "sourceUrl": "https://www.youtube.com/watch?v=Qd82Q7GqhSk"
+      "sourceUrl": "https://www.youtube.com/watch?v=Qd82Q7GqhSk",
+      "description": "Learn four key rules for manipulating fractions."
     },
     {
       "number": 5,
       "title": "Irrational Numbers",
       "videoId": "lE8CAj9P-Io",
-      "sourceUrl": "https://www.youtube.com/watch?v=lE8CAj9P-Io"
+      "sourceUrl": "https://www.youtube.com/watch?v=lE8CAj9P-Io",
+      "description": "Irrational numbers sound unnatural, but they can actually be found all around us in the simplest shapes."
     },
     {
       "number": 6,
       "title": "Exponents and Scientific Notation",
       "videoId": "ygh6_1UXHKs",
-      "sourceUrl": "https://www.youtube.com/watch?v=ygh6_1UXHKs"
+      "sourceUrl": "https://www.youtube.com/watch?v=ygh6_1UXHKs",
+      "description": "Explore negative and fractional exponents alongside familiar powers and scientific notation."
     },
     {
       "number": 7,
       "title": "Logarithms and Exponents",
       "videoId": "aUfrfeHCnGg",
-      "sourceUrl": "https://www.youtube.com/watch?v=aUfrfeHCnGg"
+      "sourceUrl": "https://www.youtube.com/watch?v=aUfrfeHCnGg",
+      "description": "In this episode of Study Hall: Algebra, James demystifies logarithms!"
     },
     {
       "number": 8,
       "title": "Polynomials and Imaginary Numbers",
       "videoId": "d1D-BIuJQtI",
-      "sourceUrl": "https://www.youtube.com/watch?v=d1D-BIuJQtI"
+      "sourceUrl": "https://www.youtube.com/watch?v=d1D-BIuJQtI",
+      "description": "Use the box method to multiply and factor polynomials."
     },
     {
       "number": 9,
       "title": "Quadratic Equations",
       "videoId": "zCUKjY7GOqU",
-      "sourceUrl": "https://www.youtube.com/watch?v=zCUKjY7GOqU"
+      "sourceUrl": "https://www.youtube.com/watch?v=zCUKjY7GOqU",
+      "description": "Understand the quadratic equation and ways to make working with it more manageable."
     },
     {
       "number": 10,
       "title": "What Does \"Graphing an Equation\" Mean?",
       "videoId": "QMidwulO93Q",
-      "sourceUrl": "https://www.youtube.com/watch?v=QMidwulO93Q"
+      "sourceUrl": "https://www.youtube.com/watch?v=QMidwulO93Q",
+      "description": "Learn what graphing an equation reveals and how to interpret the information on a graph."
     },
     {
       "number": 11,
       "title": "Graphing the Quadratic",
       "videoId": "oM7ydHBhAF4",
-      "sourceUrl": "https://www.youtube.com/watch?v=oM7ydHBhAF4"
+      "sourceUrl": "https://www.youtube.com/watch?v=oM7ydHBhAF4",
+      "description": "In this episode of Study Hall: Algebra, James talks about how graphing the Quadratic Equation works."
     },
     {
       "number": 12,
       "title": "Linear and Simultaneous Equations and Graphs",
       "videoId": "CAN5pTGtjvQ",
-      "sourceUrl": "https://www.youtube.com/watch?v=CAN5pTGtjvQ"
+      "sourceUrl": "https://www.youtube.com/watch?v=CAN5pTGtjvQ",
+      "description": "Use intersecting graphs to find shared solutions to simultaneous equations."
     },
     {
       "number": 13,
       "title": "All Kinds of Graphs",
       "videoId": "bTLoj05bD4I",
-      "sourceUrl": "https://www.youtube.com/watch?v=bTLoj05bD4I"
+      "sourceUrl": "https://www.youtube.com/watch?v=bTLoj05bD4I",
+      "description": "Extend graphing techniques, including symmetry and plotting points, to a wider range of algebraic relationships."
     },
     {
       "number": 14,
       "title": "Fitting Equations to Data",
       "videoId": "jEOdDa-6bVY",
-      "sourceUrl": "https://www.youtube.com/watch?v=jEOdDa-6bVY"
+      "sourceUrl": "https://www.youtube.com/watch?v=jEOdDa-6bVY",
+      "description": "Apply linear and quadratic graphing skills to find meaning in imperfect real-world data."
     },
     {
       "number": 15,
       "title": "Zero to Infinity",
       "videoId": "FWAiaCOSevY",
-      "sourceUrl": "https://www.youtube.com/watch?v=FWAiaCOSevY"
+      "sourceUrl": "https://www.youtube.com/watch?v=FWAiaCOSevY",
+      "description": "Explore the history and special properties of zero, including why division by zero causes problems."
     }
   ]
 }

@@ -5,91 +5,106 @@
       "number": 1,
       "title": "Physical and Chemical Changes",
       "videoId": "VWSqD2L8BLs",
-      "sourceUrl": "https://www.youtube.com/watch?v=VWSqD2L8BLs"
+      "sourceUrl": "https://www.youtube.com/watch?v=VWSqD2L8BLs",
+      "description": "Today, Will discusses the physical and chemical changes substances can undergo, as well as how to recognize which of those changes has taken place."
     },
     {
       "number": 2,
       "title": "Types of Chemical Reactions",
       "videoId": "Pv7JkI8d1Ng",
-      "sourceUrl": "https://www.youtube.com/watch?v=Pv7JkI8d1Ng"
+      "sourceUrl": "https://www.youtube.com/watch?v=Pv7JkI8d1Ng",
+      "description": "Explore different types of chemical reactions and why classifying them helps explain what is happening."
     },
     {
       "number": 3,
       "title": "Balancing Chemical Reactions",
       "videoId": "S68c4DINGHA",
-      "sourceUrl": "https://www.youtube.com/watch?v=S68c4DINGHA"
+      "sourceUrl": "https://www.youtube.com/watch?v=S68c4DINGHA",
+      "description": "So, in this episode of Study Hall: Chemistry, Will talks us through balancing chemical reactions and why alchemy just doesn't work."
     },
     {
       "number": 4,
       "title": "Reaction Predictions",
       "videoId": "WMBLmxUq-x4",
-      "sourceUrl": "https://www.youtube.com/watch?v=WMBLmxUq-x4"
+      "sourceUrl": "https://www.youtube.com/watch?v=WMBLmxUq-x4",
+      "description": "Use patterns and step-by-step reasoning to predict the products of chemical reactions."
     },
     {
       "number": 5,
       "title": "Solubility",
       "videoId": "L5zO2iJmNys",
-      "sourceUrl": "https://www.youtube.com/watch?v=L5zO2iJmNys"
+      "sourceUrl": "https://www.youtube.com/watch?v=L5zO2iJmNys",
+      "description": "Explore solubility and ways to understand how substances dissolve."
     },
     {
       "number": 6,
       "title": "Ionic Equations",
       "videoId": "yF0dwT81awA",
-      "sourceUrl": "https://www.youtube.com/watch?v=yF0dwT81awA"
+      "sourceUrl": "https://www.youtube.com/watch?v=yF0dwT81awA",
+      "description": "In this episode of Study Hall: Chemistry, Will walks us through the process of balancing ionic equations."
     },
     {
       "number": 7,
       "title": "What is The Mole?",
       "videoId": "90qXw0Htj-o",
-      "sourceUrl": "https://www.youtube.com/watch?v=90qXw0Htj-o"
+      "sourceUrl": "https://www.youtube.com/watch?v=90qXw0Htj-o",
+      "description": "In this episode of Study Hall: Chemistry, Will walks us through how the mole works, why it's important, and why it's sometimes confusing."
     },
     {
       "number": 8,
       "title": "Mole to Mass Problems",
       "videoId": "FWtaY4udtkQ",
-      "sourceUrl": "https://www.youtube.com/watch?v=FWtaY4udtkQ"
+      "sourceUrl": "https://www.youtube.com/watch?v=FWtaY4udtkQ",
+      "description": "Use dimensional analysis to connect mole calculations with appropriate units."
     },
     {
       "number": 9,
       "title": "Multi-Step Mole Problems",
       "videoId": "bSZ7Q1abFIg",
-      "sourceUrl": "https://www.youtube.com/watch?v=bSZ7Q1abFIg"
+      "sourceUrl": "https://www.youtube.com/watch?v=bSZ7Q1abFIg",
+      "description": "It's time to dig deep and get into Mole problems that may seem tricky or complex when you first look at them."
     },
     {
       "number": 10,
       "title": "Stoichiometry",
       "videoId": "MoRk5HwN6CM",
-      "sourceUrl": "https://www.youtube.com/watch?v=MoRk5HwN6CM"
+      "sourceUrl": "https://www.youtube.com/watch?v=MoRk5HwN6CM",
+      "description": "In this episode of Study Hall: Chemistry, Will shows us how Stoichiometry allows us to make great muffins!"
     },
     {
       "number": 11,
       "title": "Multi-Step Stoichiometry",
       "videoId": "shcNScCMcsA",
-      "sourceUrl": "https://www.youtube.com/watch?v=shcNScCMcsA"
+      "sourceUrl": "https://www.youtube.com/watch?v=shcNScCMcsA",
+      "description": "We use stoichiometry in tons of industries worldwide, including fermentation, metallurgy, and agriculture."
     },
     {
       "number": 12,
       "title": "Theoretical Percent Yields",
       "videoId": "IFRnk_MfzxM",
-      "sourceUrl": "https://www.youtube.com/watch?v=IFRnk_MfzxM"
+      "sourceUrl": "https://www.youtube.com/watch?v=IFRnk_MfzxM",
+      "description": "Explore why reaction outcomes differ from expectations and how limiting and excess reactants affect the results."
     },
     {
       "number": 13,
       "title": "Excess Reactants Left Over",
       "videoId": "EhLKLEJ-8xo",
-      "sourceUrl": "https://www.youtube.com/watch?v=EhLKLEJ-8xo"
+      "sourceUrl": "https://www.youtube.com/watch?v=EhLKLEJ-8xo",
+      "description": "Combine reaction balancing, mole calculations, and stoichiometry to determine how much excess reactant remains."
     },
     {
       "number": 14,
       "title": "Neutralization",
       "videoId": "totLI_3QQgI",
-      "sourceUrl": "https://www.youtube.com/watch?v=totLI_3QQgI"
+      "sourceUrl": "https://www.youtube.com/watch?v=totLI_3QQgI",
+      "description": "We’ve talked about acid-base reactions here before, but today we’ll use another term for them: neutralization reactions."
     },
     {
       "number": 15,
       "title": "Acids, Bases, and Buffers",
       "videoId": "IBb5J0tmKP8",
-      "sourceUrl": "https://www.youtube.com/watch?v=IBb5J0tmKP8"
+      "sourceUrl": "https://www.youtube.com/watch?v=IBb5J0tmKP8",
+      "description": "Explore strong and weak acids and bases, including buffers and why they matter."
     }
   ]
 }

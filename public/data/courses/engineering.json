@@ -5,277 +5,323 @@
       "number": 1,
       "title": "What is Engineering?",
       "videoId": "btGYcizV0iI",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-engineering-crash-course-engineering-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-engineering-crash-course-engineering-1/",
+      "description": "Introduce engineering's major disciplines and the kinds of problems they address."
     },
     {
       "number": 2,
       "title": "Civil Engineering",
       "videoId": "-xbtnz4wdaA",
-      "sourceUrl": "https://thecrashcourse.com/courses/civil-engineering-crash-course-engineering-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/civil-engineering-crash-course-engineering-2/",
+      "description": "Explore structural design, construction, city planning, transportation, and sanitation within civil engineering."
     },
     {
       "number": 3,
       "title": "Mechanical Engineering",
       "videoId": "A1V-QQ5wFU4",
-      "sourceUrl": "https://thecrashcourse.com/courses/mechanical-engineering-crash-course-engineering-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/mechanical-engineering-crash-course-engineering-3/",
+      "description": "Trace mechanical engineering from steam power through aircraft, robotics, and biomechanics."
     },
     {
       "number": 4,
       "title": "The History of Electrical Engineering",
       "videoId": "3nB1Ntku06w",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-electrical-engineering-crash-course-engineering-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-electrical-engineering-crash-course-engineering-4/",
+      "description": "Follow electrical engineering through telecommunications, power, lighting, and computers."
     },
     {
       "number": 5,
       "title": "The History of Chemical Engineering",
       "videoId": "aRKyJRAxjpM",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-chemical-engineering-crash-course-engineering-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-chemical-engineering-crash-course-engineering-5/",
+      "description": "Trace chemical engineering from early industrial chemistry to refining, renewable energy, biotechnology, and medicines."
     },
     {
       "number": 6,
       "title": "Biomedical & Industrial Engineering",
       "videoId": "O6lENrRANxY",
-      "sourceUrl": "https://thecrashcourse.com/courses/biomedical-industrial-engineering-crash-course-engineering-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/biomedical-industrial-engineering-crash-course-engineering-6/",
+      "description": "Explore the origins and fundamentals of industrial, biomedical, and biological engineering."
     },
     {
       "number": 7,
       "title": "The Law of Conservation",
       "videoId": "VxCORJ8dN3Y",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-law-of-conservation-crash-course-engineering-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-law-of-conservation-crash-course-engineering-7/",
+      "description": "Analyze conservation in systems through conversion, accumulation, generation, and consumption."
     },
     {
       "number": 8,
       "title": "Reversibility & Irreversibility",
       "videoId": "RKOPoJzqH94",
-      "sourceUrl": "https://thecrashcourse.com/courses/reversibility-irreversibility-crash-course-engineering-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reversibility-irreversibility-crash-course-engineering-8/",
+      "description": "Compare reversible and irreversible processes while using efficiency to assess heat and work."
     },
     {
       "number": 9,
       "title": "The First & Zeroth Laws of Thermodynamics",
       "videoId": "fSEFfWf2au0",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-first-zeroth-laws-of-thermodynamics-crash-course-engineering-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-first-zeroth-laws-of-thermodynamics-crash-course-engineering-9/",
+      "description": "Explore thermal equilibrium, energy conservation, and processes that simplify thermodynamic analysis."
     },
     {
       "number": 10,
       "title": "Why We Can’t Invent a Perfect Engine",
       "videoId": "2B81W6nNds0",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-we-cant-invent-a-perfect-engine-crash-course-engineering-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-we-cant-invent-a-perfect-engine-crash-course-engineering-10/",
+      "description": "Use the second thermodynamic law and Carnot's cycle to understand limits on engine efficiency."
     },
     {
       "number": 11,
       "title": "Heat Engines, Refrigerators, & Cycles",
       "videoId": "iZOXW5aaCZg",
-      "sourceUrl": "https://thecrashcourse.com/courses/heat-engines-refrigerators-cycles-crash-course-engineering-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/heat-engines-refrigerators-cycles-crash-course-engineering-11/",
+      "description": "Explore cycles in engines, refrigeration, and heat pumps alongside phase diagrams and energy resources."
     },
     {
       "number": 12,
       "title": "Stress, Strain & Quicksand",
       "videoId": "ouTJkNLepF0",
-      "sourceUrl": "https://thecrashcourse.com/courses/stress-strain-quicksand-crash-course-engineering-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/stress-strain-quicksand-crash-course-engineering-12/",
+      "description": "Investigate fluid behavior through viscosity, scale, transfers, stresses, and flow conditions."
     },
     {
       "number": 13,
       "title": "Fluid Flow & Equipment",
       "videoId": "bRrfsv9hiX4",
-      "sourceUrl": "https://thecrashcourse.com/courses/fluid-flow-equipment-crash-course-engineering-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/fluid-flow-equipment-crash-course-engineering-13/",
+      "description": "Apply Bernoulli's relationship between pressure and speed to flowing fluids and real equipment."
     },
     {
       "number": 14,
       "title": "Heat Transfer",
       "videoId": "YK7G6l_K6sA",
-      "sourceUrl": "https://thecrashcourse.com/courses/heat-transfer-crash-course-engineering-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/heat-transfer-crash-course-engineering-14/",
+      "description": "Compare conduction, convection, and radiation as mechanisms moving thermal energy."
     },
     {
       "number": 15,
       "title": "How Not to Set Your Pizza on Fire",
       "videoId": "B0CwRyBlt1s",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-not-to-set-your-pizza-on-fire-crash-course-engineering-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-not-to-set-your-pizza-on-fire-crash-course-engineering-15/",
+      "description": "Compare heat-exchanger designs and use calculations to select equipment for practical needs."
     },
     {
       "number": 16,
       "title": "Drugs, Dyes, & Mass Transfer",
       "videoId": "-YTC3A6dEGM",
-      "sourceUrl": "https://thecrashcourse.com/courses/drugs-dyes-mass-transfer-crash-course-engineering-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/drugs-dyes-mass-transfer-crash-course-engineering-16/",
+      "description": "Investigate molecular diffusion and the forces that drive material transfer using Fick's relationship."
     },
     {
       "number": 17,
       "title": "Mass Separation",
       "videoId": "YjuZs8PFIEU",
-      "sourceUrl": "https://thecrashcourse.com/courses/mass-separation-crash-course-engineering-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/mass-separation-crash-course-engineering-17/",
+      "description": "Compare distillation, solvent extraction, and reverse osmosis for separating substances."
     },
     {
       "number": 18,
       "title": "Reaching Breaking Point – Materials, Stresses, & Toughness",
       "videoId": "GpiBSFMFe-w",
-      "sourceUrl": "https://thecrashcourse.com/courses/reaching-breaking-point-materials-stresses-toughness-crash-course-engineering-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reaching-breaking-point-materials-stresses-toughness-crash-course-engineering-18/",
+      "description": "Use stress-strain relationships to compare elasticity, toughness, hardness, creep, and fatigue."
     },
     {
       "number": 19,
       "title": "Metals & Ceramics",
       "videoId": "NOK1nMiiTWU",
-      "sourceUrl": "https://thecrashcourse.com/courses/metals-ceramics-crash-course-engineering-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/metals-ceramics-crash-course-engineering-19/",
+      "description": "Explore the properties and applications of metals, alloys, ceramics, and related materials."
     },
     {
       "number": 20,
       "title": "The Polymer Explosion",
       "videoId": "XjDDHnByfuo",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-polymer-explosion-crash-course-engineering-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-polymer-explosion-crash-course-engineering-20/",
+      "description": "Trace polymer development and the varied uses of repeating molecular chains."
     },
     {
       "number": 21,
       "title": "Electrical Power, Conductors, & Your Dream Home",
       "videoId": "uTWHMchUlws",
-      "sourceUrl": "https://thecrashcourse.com/courses/electrical-power-conductors-your-dream-home-crash-course-engineering-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/electrical-power-conductors-your-dream-home-crash-course-engineering-21/",
+      "description": "Compare electrical conductors and insulators, including materials used to generate heat and light."
     },
     {
       "number": 22,
       "title": "Silicon, Semiconductors, & Solar Cells",
       "videoId": "ivWXuOd5SrI",
-      "sourceUrl": "https://thecrashcourse.com/courses/silicon-semiconductors-solar-cells-crash-course-engineering-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/silicon-semiconductors-solar-cells-crash-course-engineering-22/",
+      "description": "Explore doped silicon and how semiconductor junctions enable diodes, transistors, and solar cells."
     },
     {
       "number": 23,
       "title": "The Mighty Power of Nanomaterials",
       "videoId": "IkYimZBzguw",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-mighty-power-of-nanomaterials-crash-course-engineering-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-mighty-power-of-nanomaterials-crash-course-engineering-23/",
+      "description": "Investigate size-dependent properties of nanoscale materials and questions requiring further research."
     },
     {
       "number": 24,
       "title": "Biomaterials",
       "videoId": "-jw8osY5QJM",
-      "sourceUrl": "https://thecrashcourse.com/courses/biomaterials-crash-course-engineering-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/biomaterials-crash-course-engineering-24/",
+      "description": "Explore body-compatible materials, their structures and coatings, and the importance of testing safety."
     },
     {
       "number": 25,
       "title": "Cheese, Catastrophes, & Process Control",
       "videoId": "BT_JUbpZ1lQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/cheese-catastrophes-process-control-crash-course-engineering-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/cheese-catastrophes-process-control-crash-course-engineering-25/",
+      "description": "Use cheese production to compare feedback, feedforward, and combined process-control strategies."
     },
     {
       "number": 26,
       "title": "Skyscrapers, Statics, & Dynamics",
       "videoId": "xOkJFrXg8V0",
-      "sourceUrl": "https://thecrashcourse.com/courses/skyscrapers-statics-dynamics-crash-course-engineering-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/skyscrapers-statics-dynamics-crash-course-engineering-26/",
+      "description": "Analyze structures through forces, torque, equilibrium, and free-body diagrams."
     },
     {
       "number": 27,
       "title": "Engineering Ethics",
       "videoId": "5KZx81crb48",
-      "sourceUrl": "https://thecrashcourse.com/courses/engineering-ethics-crash-course-engineering-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/engineering-ethics-crash-course-engineering-27/",
+      "description": "Apply professional codes and ethical theories to real engineering dilemmas."
     },
     {
       "number": 28,
       "title": "Flirting With Disaster – The Importance of Safety",
       "videoId": "WavEcAsI2AY",
-      "sourceUrl": "https://thecrashcourse.com/courses/flirting-with-disaster-the-importance-of-safety-crash-course-engineering-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/flirting-with-disaster-the-importance-of-safety-crash-course-engineering-28/",
+      "description": "Compare workplace and public safety while exploring hazard analysis, alarms, and safety culture."
     },
     {
       "number": 29,
       "title": "Preventing Flint – Environmental Engineering",
       "videoId": "uHUO6PrsOzg",
-      "sourceUrl": "https://thecrashcourse.com/courses/preventing-flint-environmental-engineering-crash-course-engineering-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/preventing-flint-environmental-engineering-crash-course-engineering-29/",
+      "description": "Investigate engineering approaches to water, air, noise, and waste-related environmental problems."
     },
     {
       "number": 30,
       "title": "The Engineering Challenges of Renewable Energy",
       "videoId": "4k5gyYAAEEU",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-engineering-challenges-of-renewable-energy-crash-course-engineering-30/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-engineering-challenges-of-renewable-energy-crash-course-engineering-30/",
+      "description": "Compare renewable technologies and the practical challenges of adopting them more widely."
     },
     {
       "number": 31,
       "title": "The Future of Clean Energy",
       "videoId": "v6uRuNboy4A",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-clean-energy-crash-course-engineering-31/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-clean-energy-crash-course-engineering-31/",
+      "description": "Explore biomass, hydrogen fuel cells, nuclear power, and proposed future energy sources."
     },
     {
       "number": 32,
       "title": "Why It’s So Hard To Make Better Batteries",
       "videoId": "A5GgBTFSUu4",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-its-so-hard-to-make-better-batteries-crash-course-engineering-32/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-its-so-hard-to-make-better-batteries-crash-course-engineering-32/",
+      "description": "Investigate battery discharge, recharging, voltage changes, and efforts to improve performance."
     },
     {
       "number": 33,
       "title": "How Engineering Robots Works",
       "videoId": "uNfUAJBuZ0s",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-engineering-robots-works-crash-course-engineering-33/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-engineering-robots-works-crash-course-engineering-33/",
+      "description": "Explore how sensors, moving components, and computers let robots perform tasks."
     },
     {
       "number": 34,
       "title": "To The Moon & Mars – Aerospace Engineering",
       "videoId": "UvtYn2j78gw",
-      "sourceUrl": "https://thecrashcourse.com/courses/to-the-moon-mars-aerospace-engineering-crash-course-engineering-34/"
+      "sourceUrl": "https://thecrashcourse.com/courses/to-the-moon-mars-aerospace-engineering-crash-course-engineering-34/",
+      "description": "Compare engineering for aircraft and spacecraft, including propulsion and human survival in space."
     },
     {
       "number": 35,
       "title": "Computer Engineering & the End of Moore’s Law",
       "videoId": "04ht0kSJ0I4",
-      "sourceUrl": "https://thecrashcourse.com/courses/computer-engineering-the-end-of-moores-law-crash-course-engineering-35/"
+      "sourceUrl": "https://thecrashcourse.com/courses/computer-engineering-the-end-of-moores-law-crash-course-engineering-35/",
+      "description": "Distinguish hardware and software while exploring compact computers and computer-assisted design and manufacturing."
     },
     {
       "number": 36,
       "title": "How to Engineer Health – Drug Discovery & Delivery",
       "videoId": "gIkMNn-A_Y4",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-to-engineer-health-drug-discovery-delivery-crash-course-engineering-36/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-engineer-health-drug-discovery-delivery-crash-course-engineering-36/",
+      "description": "Explore drug discovery, targeted delivery, disease detection, and synthetic biology."
     },
     {
       "number": 37,
       "title": "Smart Tattoos & Tiny Robots",
       "videoId": "EyYdZYqTLFU",
-      "sourceUrl": "https://thecrashcourse.com/courses/smart-tattoos-tiny-robots-crash-course-engineering-37/"
+      "sourceUrl": "https://thecrashcourse.com/courses/smart-tattoos-tiny-robots-crash-course-engineering-37/",
+      "description": "Investigate implantable medical devices and challenges involving compatibility, power, connectivity, packaging, and delivery."
     },
     {
       "number": 38,
       "title": "Changing the Blueprints of Life – Genetic Engineering",
       "videoId": "FY_ZUEKWhBc",
-      "sourceUrl": "https://thecrashcourse.com/courses/changing-the-blueprints-of-life-genetic-engineering-crash-course-engineering-38/"
+      "sourceUrl": "https://thecrashcourse.com/courses/changing-the-blueprints-of-life-genetic-engineering-crash-course-engineering-38/",
+      "description": "Trace genetic intervention from selective breeding to DNA editing and optogenetics."
     },
     {
       "number": 39,
       "title": "Mass-Producing Ice Cream with Food Engineering",
       "videoId": "MH4GgKsf7-U",
-      "sourceUrl": "https://thecrashcourse.com/courses/mass-producing-ice-cream-with-food-engineering-crash-course-engineering-39/"
+      "sourceUrl": "https://thecrashcourse.com/courses/mass-producing-ice-cream-with-food-engineering-crash-course-engineering-39/",
+      "description": "Explore how processing, packaging, safety, and thermodynamics address the challenges of perishable foods."
     },
     {
       "number": 40,
       "title": "How the Leaning Tower of Pisa Was Saved",
       "videoId": "5mkeoVpTaMA",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-the-leaning-tower-of-pisa-was-saved-crash-course-engineering-40/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-the-leaning-tower-of-pisa-was-saved-crash-course-engineering-40/",
+      "description": "Investigate foundations, soil properties, load-bearing capacity, and responses to earthquake stresses."
     },
     {
       "number": 41,
       "title": "Why Moving People is Complicated",
       "videoId": "erYf6NNw8Ec",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-moving-people-is-complicated-crash-course-engineering-41/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-moving-people-is-complicated-crash-course-engineering-41/",
+      "description": "Explore transportation design through signaling, traffic patterns, user behavior, and system improvements."
     },
     {
       "number": 42,
       "title": "YouTube Couldn’t Exist Without Communications & Signal Processing",
       "videoId": "VjuFaPAIOHw",
-      "sourceUrl": "https://thecrashcourse.com/courses/youtube-couldnt-exist-without-communications-signal-processing-crash-course-engineering-42/"
+      "sourceUrl": "https://thecrashcourse.com/courses/youtube-couldnt-exist-without-communications-signal-processing-crash-course-engineering-42/",
+      "description": "Trace communication and signal processing through codes, limited bandwidth, noise, and digital systems."
     },
     {
       "number": 43,
       "title": "How Seawater Sabotages Ships",
       "videoId": "J9A55q7AR6E",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-seawater-sabotages-ships-crash-course-engineering-43/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-seawater-sabotages-ships-crash-course-engineering-43/",
+      "description": "Investigate marine design challenges including corrosion, organisms, and transferring large structures into water."
     },
     {
       "number": 44,
       "title": "Building a Desalination Plant from Scratch",
       "videoId": "ke5jUHe4fII",
-      "sourceUrl": "https://thecrashcourse.com/courses/building-a-desalination-plant-from-scratch-crash-course-engineering-44/"
+      "sourceUrl": "https://thecrashcourse.com/courses/building-a-desalination-plant-from-scratch-crash-course-engineering-44/",
+      "description": "Follow design synthesis, small-scale testing, and iterative improvement through a desalination project."
     },
     {
       "number": 45,
       "title": "How To Become An Engineer",
       "videoId": "77xMVKOEZ5g",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-to-become-an-engineer-crash-course-engineering-45/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-become-an-engineer-crash-course-engineering-45/",
+      "description": "Explore educational steps and possible career paths for becoming an engineer."
     },
     {
       "number": 46,
       "title": "The Biggest Problems We’re Facing Today & The Future of Engineering",
       "videoId": "Fzq_yuj-oZM",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-biggest-problems-were-facing-today-the-future-of-engineering-crash-course-engineering-46/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-biggest-problems-were-facing-today-the-future-of-engineering-crash-course-engineering-46/",
+      "description": "Apply the course's ideas to major current problems and consider engineering's possible future directions."
     }
   ]
 }

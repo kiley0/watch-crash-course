@@ -5,73 +5,85 @@
       "number": 1,
       "title": "Introduction to Media Literacy",
       "videoId": "AD7N-1Mj-DU",
-      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-media-literacy-crash-course-media-literacy-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-media-literacy-crash-course-media-literacy-1/",
+      "description": "Jay introduces media literacy and the questions that help us navigate a world saturated with media."
     },
     {
       "number": 2,
       "title": "History of Media Literacy, Part 1",
       "videoId": "oXf0F4GYzWQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/history-of-media-literacy-part-1-crash-course-media-literacy-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/history-of-media-literacy-part-1-crash-course-media-literacy-2/",
+      "description": "Trace media literacy’s history from Ancient Greece through printing, newspapers, and yellow journalism."
     },
     {
       "number": 3,
       "title": "History of Media Literacy, Part 2",
       "videoId": "9iUjvNtgWAs",
-      "sourceUrl": "https://thecrashcourse.com/courses/history-of-media-literacy-part-2-crash-course-media-literacy-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/history-of-media-literacy-part-2-crash-course-media-literacy-3/",
+      "description": "Follow the arrival of film, television, and other screens, alongside the new approaches to media literacy they inspired."
     },
     {
       "number": 4,
       "title": "Media & the Mind",
       "videoId": "TAdkzxB4WFo",
-      "sourceUrl": "https://thecrashcourse.com/courses/media-the-mind-crash-course-media-literacy-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/media-the-mind-crash-course-media-literacy-4/",
+      "description": "You are constantly surrounded by media, so the question is: how does your brain handle all of that?"
     },
     {
       "number": 5,
       "title": "Media & Money",
       "videoId": "QpYrSLiIoKo",
-      "sourceUrl": "https://thecrashcourse.com/courses/media-money-crash-course-media-literacy-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/media-money-crash-course-media-literacy-5/",
+      "description": "Media isn’t just movies and newspapers and TV shows, it’s also a part of society that involves a lot of money."
     },
     {
       "number": 6,
       "title": "Influence & Persuasion",
       "videoId": "VXhLmkrN0-I",
-      "sourceUrl": "https://thecrashcourse.com/courses/influence-persuasion-crash-course-media-literacy-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/influence-persuasion-crash-course-media-literacy-6/",
+      "description": "Explore how advertising persuades audiences and how it differs from public relations and propaganda."
     },
     {
       "number": 7,
       "title": "Online Advertising",
       "videoId": "cmRcoJZRXEY",
-      "sourceUrl": "https://thecrashcourse.com/courses/online-advertising-crash-course-media-literacy-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/online-advertising-crash-course-media-literacy-7/",
+      "description": "In this episode of Crash Course Media Literacy, Jay talks about how online advertising works and why companies want to know everything you're looking at."
     },
     {
       "number": 8,
       "title": "Media Ownership",
       "videoId": "DvSTlxJsKzE",
-      "sourceUrl": "https://thecrashcourse.com/courses/media-ownership-crash-course-media-literacy-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/media-ownership-crash-course-media-literacy-8/",
+      "description": "Explore media ownership, industry mergers, and why understanding their relationships matters for media literacy."
     },
     {
       "number": 9,
       "title": "Media Policy & You",
       "videoId": "TVaZnxYKKdM",
-      "sourceUrl": "https://thecrashcourse.com/courses/media-policy-you-crash-course-media-literacy-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/media-policy-you-crash-course-media-literacy-9/",
+      "description": "Copyright and other media regulations have always been a bit tricky, but the internet made all of that infinitely more complicated."
     },
     {
       "number": 10,
       "title": "The Dark(er) Side of Media",
       "videoId": "rR7j11Wpjiw",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-darker-side-of-media-crash-course-media-literacy-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-darker-side-of-media-crash-course-media-literacy-10/",
+      "description": "Examine propaganda, misinformation, and disinformation and why recognizing them matters for media literacy."
     },
     {
       "number": 11,
       "title": "Media Skills",
       "videoId": "Be-A-sCIMpg",
-      "sourceUrl": "https://thecrashcourse.com/courses/media-skills-crash-course-media-literacy-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/media-skills-crash-course-media-literacy-11/",
+      "description": "Now that you have a solid understanding of the media landscape, it’s time to equip you with the essential skills for navigating it."
     },
     {
       "number": 12,
       "title": "Future Literacies",
       "videoId": "Q_aXzpeam0s",
-      "sourceUrl": "https://thecrashcourse.com/courses/future-literacies-crash-course-media-literacy-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/future-literacies-crash-course-media-literacy-12/",
+      "description": "Consider how media literacy skills can adapt to future technologies and a changing media landscape."
     }
   ]
 }

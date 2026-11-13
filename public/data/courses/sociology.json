@@ -5,265 +5,309 @@
       "number": 1,
       "title": "What Is Sociology?",
       "videoId": "YnCJU6PaCio",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-sociology-crash-course-sociology-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-sociology-crash-course-sociology-1/",
+      "description": "Introduce the sociological perspective and its origins in concerns about social problems."
     },
     {
       "number": 2,
       "title": "Major Sociological Paradigms",
       "videoId": "DbTt_ySTjaY",
-      "sourceUrl": "https://thecrashcourse.com/courses/major-sociological-paradigms-crash-course-sociology-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/major-sociological-paradigms-crash-course-sociology-2/",
+      "description": "Compare sociology's three major theoretical frameworks and their relative strengths and limitations."
     },
     {
       "number": 3,
       "title": "Sociology & the Scientific Method",
       "videoId": "ZIwyNIdgJBE",
-      "sourceUrl": "https://thecrashcourse.com/courses/sociology-the-scientific-method-crash-course-sociology-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/sociology-the-scientific-method-crash-course-sociology-3/",
+      "description": "Contrast empirical, interpretive, and critical approaches to investigating social life."
     },
     {
       "number": 4,
       "title": "Sociology Research Methods",
       "videoId": "QwhK-iEyXYA",
-      "sourceUrl": "https://thecrashcourse.com/courses/sociology-research-methods-crash-course-sociology-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/sociology-research-methods-crash-course-sociology-4/",
+      "description": "Follow sociological research from questions and hypotheses through data collection and analysis."
     },
     {
       "number": 5,
       "title": "Émile Durkheim on Suicide & Society",
       "videoId": "IZfGGF-YYzY",
-      "sourceUrl": "https://thecrashcourse.com/courses/emile-durkheim-on-suicide-society-crash-course-sociology-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/emile-durkheim-on-suicide-society-crash-course-sociology-5/",
+      "description": "Explore Durkheim's social facts, shared consciousness, and approach to studying social connections."
     },
     {
       "number": 6,
       "title": "Karl Marx & Conflict Theory",
       "videoId": "gR3igiwaeyc",
-      "sourceUrl": "https://thecrashcourse.com/courses/karl-marx-conflict-theory-crash-course-sociology-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/karl-marx-conflict-theory-crash-course-sociology-6/",
+      "description": "Connect Marx's historical materialism and class struggles with later conflict theories and hegemony."
     },
     {
       "number": 7,
       "title": "Dubois & Race Conflict",
       "videoId": "-wny0OAz3g8",
-      "sourceUrl": "https://thecrashcourse.com/courses/dubois-race-conflict-crash-course-sociology-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/dubois-race-conflict-crash-course-sociology-7/",
+      "description": "Explore Du Bois's work on race, double consciousness, racial formation, and social inequality."
     },
     {
       "number": 8,
       "title": "Harriet Martineau & Gender Conflict Theory",
       "videoId": "Wg9FWxpZeJ8",
-      "sourceUrl": "https://thecrashcourse.com/courses/harriet-martineau-gender-conflict-theory-crash-course-sociology-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/harriet-martineau-gender-conflict-theory-crash-course-sociology-8/",
+      "description": "Examine Martineau's contributions alongside feminist movements, gender conflict, and intersectionality."
     },
     {
       "number": 9,
       "title": "Max Weber & Modernity",
       "videoId": "69VF7mT4nRU",
-      "sourceUrl": "https://thecrashcourse.com/courses/max-weber-modernity-crash-course-sociology-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/max-weber-modernity-crash-course-sociology-9/",
+      "description": "Explore Weber's account of rationalization, bureaucracy, legitimacy, and changes accompanying modern society."
     },
     {
       "number": 10,
       "title": "Symbols, Values, & Norms",
       "videoId": "kGrVhM_Gi8k",
-      "sourceUrl": "https://thecrashcourse.com/courses/symbols-values-norms-crash-course-sociology-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/symbols-values-norms-crash-course-sociology-10/",
+      "description": "Investigate material and nonmaterial culture through language, symbols, values, beliefs, and social rules."
     },
     {
       "number": 11,
       "title": "Cultures, Subcultures, and Countercultures",
       "videoId": "RV50AV7-Iwc",
-      "sourceUrl": "https://thecrashcourse.com/courses/cultures-subcultures-and-countercultures-crash-course-sociology-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/cultures-subcultures-and-countercultures-crash-course-sociology-11/",
+      "description": "Compare cultural categories and use sociological theories to interpret their social significance."
     },
     {
       "number": 12,
       "title": "How We Got Here",
       "videoId": "BsRSL3duSko",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-we-got-here-crash-course-sociology-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-we-got-here-crash-course-sociology-12/",
+      "description": "Classify societies through technology and compare foundational explanations of social change and solidarity."
     },
     {
       "number": 13,
       "title": "Social Development",
       "videoId": "WbBm_YLwowc",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-development-crash-course-sociology-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-development-crash-course-sociology-13/",
+      "description": "Explore how social interaction, care, heredity, and environment shape individual development."
     },
     {
       "number": 14,
       "title": "Socialization",
       "videoId": "K-RvJQxqVQc",
-      "sourceUrl": "https://thecrashcourse.com/courses/socialization-crash-course-sociology-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/socialization-crash-course-sociology-14/",
+      "description": "Examine socialization through families, schools, peers, media, and institutions that reshape identity."
     },
     {
       "number": 15,
       "title": "Social Interaction & Performance",
       "videoId": "UUukBV82P9A",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-interaction-performance-crash-course-sociology-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-interaction-performance-crash-course-sociology-15/",
+      "description": "Use statuses, roles, and performance to understand everyday interaction and constructed social realities."
     },
     {
       "number": 16,
       "title": "Social Groups",
       "videoId": "_wFZ5Dbj8DA",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-groups-crash-course-sociology-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-groups-crash-course-sociology-16/",
+      "description": "Explore group membership, leadership, conformity, networks, and the dynamics between individuals and groups."
     },
     {
       "number": 17,
       "title": "Formal Organizations",
       "videoId": "YDuBh7VbGgU",
-      "sourceUrl": "https://thecrashcourse.com/courses/formal-organizations-crash-course-sociology-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/formal-organizations-crash-course-sociology-17/",
+      "description": "Examine bureaucracies and how organizations respond to environments and the consequences of rationalization."
     },
     {
       "number": 18,
       "title": "Deviance",
       "videoId": "BGq9zW9w3Fw",
-      "sourceUrl": "https://thecrashcourse.com/courses/deviance-crash-course-sociology-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/deviance-crash-course-sociology-18/",
+      "description": "Compare biological, psychological, and sociological explanations for behavior labeled deviant."
     },
     {
       "number": 19,
       "title": "Theory & Deviance",
       "videoId": "06IS_X7hWWI",
-      "sourceUrl": "https://thecrashcourse.com/courses/theory-deviance-crash-course-sociology-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/theory-deviance-crash-course-sociology-19/",
+      "description": "Use major sociological frameworks to examine deviance's functions, meanings, and relationship with power."
     },
     {
       "number": 20,
       "title": "Crime",
       "videoId": "zBodqwAlW3A",
-      "sourceUrl": "https://thecrashcourse.com/courses/crime-crash-course-sociology-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/crime-crash-course-sociology-20/",
+      "description": "Examine crime definitions and arrest statistics while considering the limitations of official data."
     },
     {
       "number": 21,
       "title": "Social Stratification",
       "videoId": "SlkIKCMt-Fs",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-stratification-crash-course-sociology-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-stratification-crash-course-sociology-21/",
+      "description": "Compare open and closed social hierarchies, including class-based and caste-based systems."
     },
     {
       "number": 22,
       "title": "Why is there Social Stratification?",
       "videoId": "RtxtI5IGrfw",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-is-there-social-stratification-crash-course-sociology-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-is-there-social-stratification-crash-course-sociology-22/",
+      "description": "Explore explanations for hierarchy, the role of ideology, and inequality in everyday interaction."
     },
     {
       "number": 23,
       "title": "Social Stratification in the US",
       "videoId": "DeiHz5tzlws",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-stratification-in-the-us-crash-course-sociology-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-stratification-in-the-us-crash-course-sociology-23/",
+      "description": "Investigate the challenges of defining social class in the United States."
     },
     {
       "number": 24,
       "title": "Social Class & Poverty in the US",
       "videoId": "c8PEv5SV4sU",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-class-poverty-in-the-us-crash-course-sociology-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-class-poverty-in-the-us-crash-course-sociology-24/",
+      "description": "Compare broad class groupings and examine the experience of poverty in American society."
     },
     {
       "number": 25,
       "title": "The Impacts of Social Class",
       "videoId": "0a21mndoORE",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-impacts-of-social-class-crash-course-sociology-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-impacts-of-social-class-crash-course-sociology-25/",
+      "description": "Connect class differences in beliefs, daily life, and health with inequality across generations."
     },
     {
       "number": 26,
       "title": "Social Mobility",
       "videoId": "GjuV-XdYHhA",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-mobility-crash-course-sociology-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-mobility-crash-course-sociology-26/",
+      "description": "Compare forms of social mobility and examine how opportunities vary by class, race, and gender."
     },
     {
       "number": 27,
       "title": "Global Stratification & Poverty",
       "videoId": "6rts_PWIVTU",
-      "sourceUrl": "https://thecrashcourse.com/courses/global-stratification-poverty-crash-course-sociology-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/global-stratification-poverty-crash-course-sociology-27/",
+      "description": "Examine income-based country classifications and the consequences and explanations of worldwide poverty."
     },
     {
       "number": 28,
       "title": "Theories of Global Stratification",
       "videoId": "b350ljkYWrU",
-      "sourceUrl": "https://thecrashcourse.com/courses/theories-of-global-stratification-crash-course-sociology-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/theories-of-global-stratification-crash-course-sociology-28/",
+      "description": "Contrast modernization and dependency theories, including colonial legacies and the capitalist world economy."
     },
     {
       "number": 29,
       "title": "Economic Systems & the Labor Market",
       "videoId": "wslCc0Di978",
-      "sourceUrl": "https://thecrashcourse.com/courses/economic-systems-the-labor-market-crash-course-sociology-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/economic-systems-the-labor-market-crash-course-sociology-29/",
+      "description": "Compare economic sectors, historical transformations, capitalism, and socialism."
     },
     {
       "number": 30,
       "title": "Politics",
       "videoId": "TCs_hyI15R8",
-      "sourceUrl": "https://thecrashcourse.com/courses/politics-crash-course-sociology-30/"
+      "sourceUrl": "https://thecrashcourse.com/courses/politics-crash-course-sociology-30/",
+      "description": "Explore authority, political systems, and sociological explanations of who holds power."
     },
     {
       "number": 31,
       "title": "Sex & Sexuality",
       "videoId": "Kqt-_ILgv5c",
-      "sourceUrl": "https://thecrashcourse.com/courses/sex-sexuality-crash-course-sociology-31/"
+      "sourceUrl": "https://thecrashcourse.com/courses/sex-sexuality-crash-course-sociology-31/",
+      "description": "Apply sociology's major theoretical perspectives to sexuality and sexual orientations."
     },
     {
       "number": 32,
       "title": "Gender Stratification",
       "videoId": "Yb1_4FPtzrI",
-      "sourceUrl": "https://thecrashcourse.com/courses/gender-stratification-crash-course-sociology-32/"
+      "sourceUrl": "https://thecrashcourse.com/courses/gender-stratification-crash-course-sociology-32/",
+      "description": "Explore gender socialization and its relationship with unequal educational, economic, and social outcomes."
     },
     {
       "number": 33,
       "title": "Theories of Gender",
       "videoId": "CquRz_cceH8",
-      "sourceUrl": "https://thecrashcourse.com/courses/theories-of-gender-crash-course-sociology-33/"
+      "sourceUrl": "https://thecrashcourse.com/courses/theories-of-gender-crash-course-sociology-33/",
+      "description": "Compare functionalist, interactionist, and conflict explanations of gender's place in society."
     },
     {
       "number": 34,
       "title": "Race & Ethnicity",
       "videoId": "7myLgdZhzjo",
-      "sourceUrl": "https://thecrashcourse.com/courses/race-ethnicity-crash-course-sociology-34/"
+      "sourceUrl": "https://thecrashcourse.com/courses/race-ethnicity-crash-course-sociology-34/",
+      "description": "Distinguish race from ethnicity and explore how these categories change across societies and time."
     },
     {
       "number": 35,
       "title": "Racial/Ethnic Prejudice & Discrimination",
       "videoId": "gSddUPkVD24",
-      "sourceUrl": "https://thecrashcourse.com/courses/racial-ethnic-prejudice-discrimination-crash-course-sociology-35/"
+      "sourceUrl": "https://thecrashcourse.com/courses/racial-ethnic-prejudice-discrimination-crash-course-sociology-35/",
+      "description": "Investigate prejudice, stereotypes, institutional racism, and different forms of interaction between racial groups."
     },
     {
       "number": 36,
       "title": "Age & Aging",
       "videoId": "kJ18whKduFo",
-      "sourceUrl": "https://thecrashcourse.com/courses/age-aging-crash-course-sociology-36/"
+      "sourceUrl": "https://thecrashcourse.com/courses/age-aging-crash-course-sociology-36/",
+      "description": "Explore biological, psychological, and cultural dimensions of growing older."
     },
     {
       "number": 37,
       "title": "Theories About Family & Marriage",
       "videoId": "yaeiCEro0iU",
-      "sourceUrl": "https://thecrashcourse.com/courses/theories-about-family-marriage-crash-course-sociology-37/"
+      "sourceUrl": "https://thecrashcourse.com/courses/theories-about-family-marriage-crash-course-sociology-37/",
+      "description": "Compare family forms, marriage practices, residence patterns, descent, and sociological explanations of family life."
     },
     {
       "number": 38,
       "title": "Stages of Family Life",
       "videoId": "eWTz3KBCxfg",
-      "sourceUrl": "https://www.youtube.com/watch?v=eWTz3KBCxfg"
+      "sourceUrl": "https://www.youtube.com/watch?v=eWTz3KBCxfg",
+      "description": "Explore family transitions and changing American patterns of marriage, childbearing, and household structure."
     },
     {
       "number": 39,
       "title": "Religion",
       "videoId": "pIgb-3e8CWA",
-      "sourceUrl": "https://www.youtube.com/watch?v=pIgb-3e8CWA"
+      "sourceUrl": "https://www.youtube.com/watch?v=pIgb-3e8CWA",
+      "description": "Compare interpretations of religion's sacred meanings, social cohesion, inequality, and patterns of practice."
     },
     {
       "number": 40,
       "title": "Education In Society",
       "videoId": "S294zRodS_4",
-      "sourceUrl": "https://www.youtube.com/watch?v=S294zRodS_4"
+      "sourceUrl": "https://www.youtube.com/watch?v=S294zRodS_4",
+      "description": "Explore education's history, organization, social functions, and self-fulfilling expectations in classrooms."
     },
     {
       "number": 41,
       "title": "Schools & Social Inequality",
       "videoId": "hYMk3Bk08NA",
-      "sourceUrl": "https://www.youtube.com/watch?v=hYMk3Bk08NA"
+      "sourceUrl": "https://www.youtube.com/watch?v=hYMk3Bk08NA",
+      "description": "Use conflict theory to examine funding differences, cultural capital, and disadvantages within American schools."
     },
     {
       "number": 42,
       "title": "Health & Medicine",
       "videoId": "8NGlENS1qgo",
-      "sourceUrl": "https://www.youtube.com/watch?v=8NGlENS1qgo"
+      "sourceUrl": "https://www.youtube.com/watch?v=8NGlENS1qgo",
+      "description": "Introduce medical sociology and society's influence on ideas about illness and well-being."
     },
     {
       "number": 43,
       "title": "Population Health",
       "videoId": "D9SWRByzDSo",
-      "sourceUrl": "https://www.youtube.com/watch?v=D9SWRByzDSo"
+      "sourceUrl": "https://www.youtube.com/watch?v=D9SWRByzDSo",
+      "description": "Compare population health indicators and individual, environmental, and social sources of health differences."
     },
     {
       "number": 44,
       "title": "The Structure & Cost of US Health Care",
       "videoId": "KriEIJ0ubh0",
-      "sourceUrl": "https://www.youtube.com/watch?v=KriEIJ0ubh0"
+      "sourceUrl": "https://www.youtube.com/watch?v=KriEIJ0ubh0",
+      "description": "Examine American health-care access, payment arrangements, insurance, and factors that raise costs."
     }
   ]
 }

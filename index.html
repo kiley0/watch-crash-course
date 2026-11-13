@@ -68,11 +68,12 @@
               And for you, if you want to track your progress. It's free, there's no user accounts,
               everything is saved locally in your web browser only.
             </p>
-            <a class="notebook-cta" href="#courses"
-              >Browse courses
-              <svg class="icon" aria-hidden="true" focusable="false">
-                <use href="./icons.svg#arrow-up-right"></use></svg
-            ></a>
+            <a class="notebook-cta" href="#courses">
+              <span class="mini-bookshelf" aria-hidden="true"
+                ><span></span><span></span><span></span><span></span><span></span
+              ></span>
+              <span>Browse Courses</span>
+            </a>
             <p class="notebook-maker">Made by a Nerdfighter who watches a lot of Crash Course.</p>
             <div class="notebook-page-footer">
               <span>No account. Free forever.</span><span aria-hidden="true">01</span>
@@ -101,8 +102,7 @@
                     class="chapter-watch"
                     :href="course.continueHref"
                     :aria-label="course.nextEpisodeLabel + ' of ' + course.title"
-                    ><svg class="icon" aria-hidden="true" focusable="false">
-                      <use href="./icons.svg#play"></use></svg
+                    ><span class="chapter-play-icon" aria-hidden="true">▶</span
                     ><span x-text="course.nextEpisodeLabel"></span
                   ></a>
                 </article>
@@ -158,8 +158,7 @@
                   class="chapter-watch"
                   aria-label="Watch episode 1 of Astronomy"
                   href="./watch.html?course=astronomy&amp;video=0rHUDWjR5gg"
-                  ><svg class="icon" aria-hidden="true" focusable="false">
-                    <use href="./icons.svg#play"></use></svg
+                  ><span class="chapter-play-icon" aria-hidden="true">▶</span
                   ><span>Watch episode 1</span></a
                 >
               </article>
@@ -182,8 +181,7 @@
                   class="chapter-watch"
                   aria-label="Watch episode 1 of Philosophy"
                   href="./watch.html?course=philosophy&amp;video=1A_CAkYt3GY"
-                  ><svg class="icon" aria-hidden="true" focusable="false">
-                    <use href="./icons.svg#play"></use></svg
+                  ><span class="chapter-play-icon" aria-hidden="true">▶</span
                   ><span>Watch episode 1</span></a
                 >
               </article>
@@ -221,8 +219,7 @@
                   class="chapter-watch"
                   aria-label="Watch episode 1 of Botany"
                   href="./watch.html?course=botany&amp;video=2th5lAd-77A"
-                  ><svg class="icon" aria-hidden="true" focusable="false">
-                    <use href="./icons.svg#play"></use></svg
+                  ><span class="chapter-play-icon" aria-hidden="true">▶</span
                   ><span>Watch episode 1</span></a
                 >
               </article>

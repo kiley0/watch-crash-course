@@ -1,9 +1,11 @@
+import { bookSpread } from "./book-spread";
+import { captureBookPage, animateBookTurn } from "./book-turn";
 import { pageTitle } from "../../site/presentation/page-title";
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
+import "./chapter-link.css";
 import "./course.css";
 import { chooseThoughtBubble } from "./thought-bubbles";
-import { progressPizza } from "./progress-pizza";
 import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
 import { isCourseId, collectionLabel, libraryUrl } from "../domain/course";
 import { matchesQuery } from "../domain/search";
@@ -22,6 +24,8 @@ interface EpisodeLink extends Episode {
 }
 Alpine.data("coursePage", () => {
   let stopRefreshOnRestore = () => {};
+  let turnController: AbortController | undefined;
+  let destroyed = false;
   return {
     thought: chooseThoughtBubble(),
     get thoughtUrl(): string {
@@ -106,21 +110,100 @@ Alpine.data("coursePage", () => {
     get sourceDescription(): string {
       return `All ${this.course.episodeCount} numbered episodes, in order. Previews and extras aren’t counted as lessons.`;
     },
-    get continueUrl(): string {
-      const id = this.summary?.continueVideoId;
-      return id ? watchUrl(this.course.id, id) : libraryUrl(this.course);
-    },
-    get continueLabel(): string {
-      if (this.summary?.isComplete) return "Watch the course again";
-      return this.summary?.lastActivityAt ? "Continue learning" : "Start with episode 1";
-    },
     get completionLabel(): string {
       return this.summary
         ? `${this.summary.completed} of ${this.summary.total} episodes completed`
         : "";
     },
-    get pizza() {
-      return progressPizza(this.episodes.map((episode) => episode.status === "Completed"));
+    spread: 0,
+    turn: "",
+    get bookmarkStart(): number {
+      return Math.max(
+        0,
+        this.episodes.findIndex((episode) => episode.videoId === this.currentEpisode.videoId),
+      );
+    },
+    get pages() {
+      return bookSpread(this.episodes.length, this.bookmarkStart, this.spread);
+    },
+    get leftEpisodes(): EpisodeLink[] {
+      return this.episodes.slice(...this.pages.left);
+    },
+    get bookmarkEpisodes(): EpisodeLink[] {
+      return this.episodes.slice(...this.pages.right);
+    },
+    get canTurnForward(): boolean {
+      return this.pages.hasNext;
+    },
+    get rightPageLabel(): string {
+      return this.bookmarkEpisodes
+        .map((episode) => episode.displayNumber)
+        .filter((_, index, episodes) => index === 0 || index === episodes.length - 1)
+        .join("–");
+    },
+    get spreadLabel(): string {
+      const visible = [...this.leftEpisodes, ...this.bookmarkEpisodes];
+      const first = visible[0]?.number;
+      const last = visible.at(-1)?.number;
+      if (first === undefined) return "Opening your course…";
+      const range = first === last ? String(first) : `${first}–${last}`;
+      return `${this.pages.spread ? (first === last ? "Episode" : "Episodes") : "Contents and episodes"} ${range}`;
+    },
+    async turnSpread(direction: "forward" | "backward") {
+      if (
+        destroyed ||
+        this.turn ||
+        (direction === "forward" ? !this.canTurnForward : !this.pages.spread)
+      )
+        return;
+      const forward = direction === "forward";
+      const book = document.querySelector<HTMLElement>(".course-book");
+      const animate =
+        book &&
+        typeof book.animate === "function" &&
+        window.matchMedia("(min-width: 650px) and (prefers-reduced-motion: no-preference)").matches;
+      const leftSelector = this.pages.spread ? ".course-chapter-left" : ".course-contents";
+      const rightSelector = ".course-chapter:not(.course-chapter-left)";
+      const front = animate ? captureBookPage(book, forward ? rightSelector : leftSelector) : null;
+      const stationary = animate
+        ? captureBookPage(book, forward ? leftSelector : rightSelector)
+        : null;
+      const controller = new AbortController();
+      turnController = controller;
+      this.turn = direction;
+      try {
+        this.spread = this.pages.spread + (forward ? 1 : -1);
+        await Alpine.nextTick();
+        if (controller.signal.aborted) return;
+        const back = animate
+          ? captureBookPage(book, forward ? ".course-chapter-left" : rightSelector)
+          : null;
+        if (book && front && back)
+          await animateBookTurn(book, front, back, stationary, forward, controller.signal);
+      } finally {
+        this.turn = "";
+        turnController = undefined;
+      }
+    },
+    nextSpread() {
+      return this.turnSpread("forward");
+    },
+    previousSpread() {
+      return this.turnSpread("backward");
+    },
+    get currentEpisode(): EpisodeLink {
+      return (
+        this.episodes.find((episode) => episode.videoId === this.summary?.continueVideoId) ??
+        this.episodes[0] ?? {
+          number: 1,
+          displayNumber: "01",
+          title: "",
+          videoId: "",
+          sourceUrl: "",
+          href: "",
+          status: "Not started",
+        }
+      );
     },
     get completionPercent(): number {
       return this.summary?.percent ?? 0;
@@ -145,9 +228,6 @@ Alpine.data("coursePage", () => {
     get empty(): boolean {
       return this.filteredEpisodes.length === 0;
     },
-    get showReviewNote(): boolean {
-      return !this.query.trim();
-    },
     get resultLabel(): string {
       return `${this.filteredEpisodes.length} of ${this.episodes.length} episodes`;
     },
@@ -159,10 +239,13 @@ Alpine.data("coursePage", () => {
       await this.load();
     },
     destroy() {
+      destroyed = true;
+      turnController?.abort();
       stopRefreshOnRestore();
     },
     async refreshProgress() {
       if (!this.ready) return;
+      const previousBookmark = this.summary?.continueVideoId;
       const records = await progressStore.refresh();
       const byId = new Map(records.map((record) => [record.videoId, record]));
       this.episodes = this.episodes.map((episode) => ({
@@ -173,6 +256,10 @@ Alpine.data("coursePage", () => {
         this.episodes.map((episode) => episode.videoId),
         records,
       );
+      if (previousBookmark !== this.summary.continueVideoId) {
+        turnController?.abort();
+        this.spread = 0;
+      }
       this.storageWarning = progressStore.warning;
       this.completionMessage = "";
     },
@@ -195,6 +282,7 @@ Alpine.data("coursePage", () => {
         }
         const detail = await loadDetail(course);
         this.course = course;
+        this.spread = 0;
         const records = await Promise.all(
           detail.episodes.map((episode) => progressStore.load(episode.videoId)),
         );

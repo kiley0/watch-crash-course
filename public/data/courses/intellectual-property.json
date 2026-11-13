@@ -5,43 +5,50 @@
       "number": 1,
       "title": "Introduction to IP",
       "videoId": "RQOJgEA5e1k",
-      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-intellectual-property-crash-course-ip-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-intellectual-property-crash-course-ip-1/",
+      "description": "We're going to discuss the three major elements of IP: Copyright, Patents, and Trademarks."
     },
     {
       "number": 2,
       "title": "Copyright Basics",
       "videoId": "Tamoj84j64I",
-      "sourceUrl": "https://thecrashcourse.com/courses/copyright-basics-crash-course-intellectual-property-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/copyright-basics-crash-course-intellectual-property-2/",
+      "description": "In this episode of Crash Course Intellectual Property, Stan Muller teaches you the basics of copyright in the United States."
     },
     {
       "number": 3,
       "title": "Copyright, Exceptions, and Fair Use",
       "videoId": "Q_9O8J9skL0",
-      "sourceUrl": "https://thecrashcourse.com/courses/copyright-exceptions-and-fair-use-crash-course-intellectual-property-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/copyright-exceptions-and-fair-use-crash-course-intellectual-property-3/",
+      "description": "Explore copyright enforcement, its exceptions, and the complexity of applying fair use."
     },
     {
       "number": 4,
       "title": "Patents, Novelty, and Trolls",
       "videoId": "RrN7IxvAJto",
-      "sourceUrl": "https://thecrashcourse.com/courses/patents-novelty-and-trolls-crash-course-intellectual-property-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/patents-novelty-and-trolls-crash-course-intellectual-property-4/",
+      "description": "So, patents have some similarities to copyright, in that they grant a limited monopoly to people who invent things."
     },
     {
       "number": 5,
       "title": "Trademarks and Avoiding Consumer Confusion",
       "videoId": "3gWaAJR5L18",
-      "sourceUrl": "https://thecrashcourse.com/courses/trademarks-and-avoiding-consumer-confusion-crash-course-intellectual-property-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/trademarks-and-avoiding-consumer-confusion-crash-course-intellectual-property-5/",
+      "description": "In which Stan Muller teaches you about our third branch of Intellectual Property, trademarks."
     },
     {
       "number": 6,
       "title": "International IP Law",
       "videoId": "0pgEPKAKrtQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/international-ip-law-crash-course-intellectual-property-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/international-ip-law-crash-course-intellectual-property-6/",
+      "description": "Stan Muller teaches you how intellectual property law functions internationally."
     },
     {
       "number": 7,
       "title": "IP Problems, YouTube, and the Future",
       "videoId": "MCodRWoavoc",
-      "sourceUrl": "https://thecrashcourse.com/courses/ip-problems-youtube-and-the-future-crash-course-intellectual-property-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/ip-problems-youtube-and-the-future-crash-course-intellectual-property-7/",
+      "description": "Explore problems in intellectual property law, its application to YouTube, and possible future changes."
     }
   ]
 }

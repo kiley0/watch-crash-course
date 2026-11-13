@@ -5,61 +5,71 @@
       "number": 1,
       "title": "What is Public Health?",
       "videoId": "5aww-Bpgkf4",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-public-health-crash-course-public-health-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-public-health-crash-course-public-health-1/",
+      "description": "Well, public health is an approach to preventing disease, prolonging life, and promoting health for literally everyone."
     },
     {
       "number": 2,
       "title": "How Your Biology Affects Your Health",
       "videoId": "SzsifG0UvTM",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-your-biology-affects-your-health-crash-course-public-health-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-your-biology-affects-your-health-crash-course-public-health-2/",
+      "description": "Explore how biological determinants, including age, genes, and sex, influence health."
     },
     {
       "number": 3,
       "title": "How the Environment Affects Your Health",
       "videoId": "g3vf0I_j9kk",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-the-environment-affects-your-health-crash-course-public-health-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-the-environment-affects-your-health-crash-course-public-health-3/",
+      "description": "Examine the influence of environmental conditions on health."
     },
     {
       "number": 4,
       "title": "How Society Affects Your Health",
       "videoId": "CcdSeqqMR5M",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-society-affects-your-health-crash-course-public-health-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-society-affects-your-health-crash-course-public-health-4/",
+      "description": "Explore how social systems, sanitation, and access to nutritious food shape health."
     },
     {
       "number": 5,
       "title": "Stress is Bad for Your Health",
       "videoId": "rKaG9VaM0pw",
-      "sourceUrl": "https://thecrashcourse.com/courses/stress-is-bad-for-your-health-crash-course-public-health-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/stress-is-bad-for-your-health-crash-course-public-health-5/",
+      "description": "Examine the different ways stress influences health."
     },
     {
       "number": 6,
       "title": "Intro to Epidemiology",
       "videoId": "_luU3I03JwE",
-      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-epidemiology-crash-course-public-health-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/intro-to-epidemiology-crash-course-public-health-6/",
+      "description": "Explore approaches to conducting epidemiological research."
     },
     {
       "number": 7,
       "title": "Which Healthcare System is Best?",
       "videoId": "vxvhGj9fA3g",
-      "sourceUrl": "https://thecrashcourse.com/courses/which-healthcare-system-is-best-crash-course-public-health-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/which-healthcare-system-is-best-crash-course-public-health-7/",
+      "description": "Compare the different ways countries organize and provide healthcare."
     },
     {
       "number": 8,
       "title": "Health and Policy",
       "videoId": "Z08sh4PN8Lc",
-      "sourceUrl": "https://thecrashcourse.com/courses/health-and-policy-crash-course-public-health-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/health-and-policy-crash-course-public-health-8/",
+      "description": "Explore how public policies, from seatbelt requirements to land-use rules, influence health even when they are not labeled health policies."
     },
     {
       "number": 9,
       "title": "Global Health",
       "videoId": "2rfRk_mTf7M",
-      "sourceUrl": "https://thecrashcourse.com/courses/global-health-crash-course-public-health-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/global-health-crash-course-public-health-9/",
+      "description": "Examine public health challenges and successes across the world."
     },
     {
       "number": 10,
       "title": "The Future of Public Health",
       "videoId": "VvRr0oL6s_E",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-public-health-crash-course-public-health-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-public-health-crash-course-public-health-10/",
+      "description": "Consider possible futures for public health using plans and approaches already being developed."
     }
   ]
 }

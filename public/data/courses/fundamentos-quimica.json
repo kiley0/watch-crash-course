@@ -5,67 +5,78 @@
       "number": 1,
       "title": "El núcleo",
       "videoId": "G7wUMpsB5k8",
-      "sourceUrl": "https://thecrashcourse.com/courses/el-nucleo-crash-course-fundamentos-de-quimica-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/el-nucleo-crash-course-fundamentos-de-quimica-1/",
+      "description": "Explora cómo las partículas atómicas y las propiedades del núcleo permiten explicar la materia."
     },
     {
       "number": 2,
       "title": "Conversión de unidades y cifras significativas",
       "videoId": "aMrxhohbkVA",
-      "sourceUrl": "https://thecrashcourse.com/courses/conversion-de-unidades-y-cifras-significativas-crash-course-fundamentos-de-quimica-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/conversion-de-unidades-y-cifras-significativas-crash-course-fundamentos-de-quimica-2/",
+      "description": "Aprende a expresar medidas con unidades compartidas y a comunicar resultados con precisión."
     },
     {
       "number": 3,
       "title": "La creación de la química",
       "videoId": "Kp3rmne3xC8",
-      "sourceUrl": "https://thecrashcourse.com/courses/la-creacion-de-la-quimica-crash-course-fundamentos-de-quimica-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/la-creacion-de-la-quimica-crash-course-fundamentos-de-quimica-3/",
+      "description": "Recorre el paso de la alquimia a la química mediante la conservación de la materia y el estudio atómico."
     },
     {
       "number": 4,
       "title": "La tabla periódica",
       "videoId": "AmOl0v_3jsc",
-      "sourceUrl": "https://thecrashcourse.com/courses/la-tabla-periodica-crash-course-fundamentos-de-quimica-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/la-tabla-periodica-crash-course-fundamentos-de-quimica-4/",
+      "description": "Descubre la historia de Mendeléiev y cómo interpretar la información de la tabla periódica."
     },
     {
       "number": 5,
       "title": "El electrón",
       "videoId": "N5apS0tE67c",
-      "sourceUrl": "https://thecrashcourse.com/courses/el-electron-crash-course-fundamentos-de-quimica-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/el-electron-crash-course-fundamentos-de-quimica-5/",
+      "description": "Relaciona orbitales, configuraciones electrónicas e ionización con los patrones de los elementos."
     },
     {
       "number": 6,
       "title": "Estequiometría",
       "videoId": "dZoMgEhNKKg",
-      "sourceUrl": "https://thecrashcourse.com/courses/estequiometria-crash-course-fundamentos-de-quimica-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/estequiometria-crash-course-fundamentos-de-quimica-6/",
+      "description": "Aprende cómo la estequiometría conecta cantidades observables con partículas extremadamente pequeñas."
     },
     {
       "number": 7,
       "title": "Agua y soluciones",
       "videoId": "g1QuPCaiXz8",
-      "sourceUrl": "https://thecrashcourse.com/courses/agua-y-soluciones-crash-course-fundamentos-de-quimica-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/agua-y-soluciones-crash-course-fundamentos-de-quimica-7/",
+      "description": "Explora la polaridad del agua, los electrolitos, la concentración molar y la dilución de soluciones."
     },
     {
       "number": 8,
       "title": "Reacciones ácido-base en solución",
       "videoId": "Or2h02mqvD4",
-      "sourceUrl": "https://thecrashcourse.com/courses/reacciones-acido-base-en-solucion-crash-course-fundamentos-de-quimica-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reacciones-acido-base-en-solucion-crash-course-fundamentos-de-quimica-8/",
+      "description": "Investiga el intercambio de protones y la reorganización de átomos en reacciones de ácidos y bases."
     },
     {
       "number": 9,
       "title": "Reacciones de precipitación",
       "videoId": "w_EEk317jnk",
-      "sourceUrl": "https://thecrashcourse.com/courses/reacciones-de-precipitacion-crash-course-fundamentos-de-quimica-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reacciones-de-precipitacion-crash-course-fundamentos-de-quimica-9/",
+      "description": "Examina cómo los iones disueltos pueden formar precipitados y cómo representar estas reacciones."
     },
     {
       "number": 10,
       "title": "Reacciones Rédox",
       "videoId": "B-2h7u665AM",
-      "sourceUrl": "https://thecrashcourse.com/courses/reacciones-redox-crash-course-fundamentos-de-quimica-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reacciones-redox-crash-course-fundamentos-de-quimica-10/",
+      "description": "Relaciona la ganancia y pérdida de electrones con las transferencias de energía de las reacciones químicas."
     },
     {
       "number": 11,
       "title": "Cómo hablar en quimiqués",
       "videoId": "4DKNv-8EUBI",
-      "sourceUrl": "https://thecrashcourse.com/courses/como-hablar-en-quimiques-crash-course-fundamentos-de-quimica-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/como-hablar-en-quimiques-crash-course-fundamentos-de-quimica-11/",
+      "description": "Aprende reglas sencillas para leer y nombrar compuestos químicos."
     }
   ]
 }

@@ -5,277 +5,323 @@
       "number": 1,
       "title": "What is Philosophy?",
       "videoId": "1A_CAkYt3GY",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-philosophy-crash-course-philosophy-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-philosophy-crash-course-philosophy-1/",
+      "description": "Introduce philosophy's Greek roots, major branches, and use of logic to evaluate worldviews."
     },
     {
       "number": 2,
       "title": "How to Argue – Philosophical Reasoning",
       "videoId": "NKEhdsnKKHs",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-to-argue-philosophical-reasoning-crash-course-philosophy-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-argue-philosophical-reasoning-crash-course-philosophy-2/",
+      "description": "Learn how deductive reasoning builds arguments and where those arguments can fail."
     },
     {
       "number": 3,
       "title": "How to Argue – Induction & Abduction",
       "videoId": "-wrCpLJ1XAw",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-to-argue-induction-abduction-crash-course-philosophy-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-to-argue-induction-abduction-crash-course-philosophy-3/",
+      "description": "Compare inductive and abductive reasoning, counterarguments, and Socratic questioning."
     },
     {
       "number": 4,
       "title": "Leonardo DiCaprio & The Nature of Reality",
       "videoId": "IV-8YsyghbU",
-      "sourceUrl": "https://thecrashcourse.com/courses/leonardo-dicaprio-the-nature-of-reality-crash-course-philosophy-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/leonardo-dicaprio-the-nature-of-reality-crash-course-philosophy-4/",
+      "description": "Use Plato's cave story to investigate appearances, reality, and philosophical discovery."
     },
     {
       "number": 5,
       "title": "Cartesian Skepticism – Neo, Meet Rene",
       "videoId": "MLKrmw906TM",
-      "sourceUrl": "https://thecrashcourse.com/courses/cartesian-skepticism-neo-meet-rene-crash-course-philosophy-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/cartesian-skepticism-neo-meet-rene-crash-course-philosophy-5/",
+      "description": "Explore skepticism and questions about reality through Descartes and a modern film analogy."
     },
     {
       "number": 6,
       "title": "Locke, Berkeley, & Empiricism",
       "videoId": "5C-s4JrymKM",
-      "sourceUrl": "https://thecrashcourse.com/courses/locke-berkeley-empiricism-crash-course-philosophy-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/locke-berkeley-empiricism-crash-course-philosophy-6/",
+      "description": "Compare Locke's and Berkeley's approaches to experience, perception, and the qualities of objects."
     },
     {
       "number": 7,
       "title": "The Meaning of Knowledge",
       "videoId": "kXhJ3hHK9hQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-meaning-of-knowledge-crash-course-philosophy-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-meaning-of-knowledge-crash-course-philosophy-7/",
+      "description": "Examine belief, justification, and the challenges Gettier cases pose to defining knowledge."
     },
     {
       "number": 8,
       "title": "Karl Popper, Science, and Pseudoscience",
       "videoId": "-X8Xfl0JdTQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/karl-popper-science-and-pseudoscience-crash-course-philosophy-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/karl-popper-science-and-pseudoscience-crash-course-philosophy-8/",
+      "description": "Explore Popper's distinction between scientific testing and approaches that seek only confirmation."
     },
     {
       "number": 9,
       "title": "Anselm and the Argument for God",
       "videoId": "FmTsS5xFA6k",
-      "sourceUrl": "https://thecrashcourse.com/courses/anselm-and-the-argument-for-god-crash-course-philosophy-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/anselm-and-the-argument-for-god-crash-course-philosophy-9/",
+      "description": "Consider Anselm's case for God's existence and philosophical objections to it."
     },
     {
       "number": 10,
       "title": "Aquinas and the Cosmological Arguments",
       "videoId": "TgisehuGOyY",
-      "sourceUrl": "https://thecrashcourse.com/courses/aquinas-and-the-cosmological-arguments-crash-course-philosophy-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/aquinas-and-the-cosmological-arguments-crash-course-philosophy-10/",
+      "description": "Examine the first four arguments Aquinas offered for God's existence."
     },
     {
       "number": 11,
       "title": "Intelligent Design",
       "videoId": "7e9v_fsZB6A",
-      "sourceUrl": "https://thecrashcourse.com/courses/intelligent-design-crash-course-philosophy-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/intelligent-design-crash-course-philosophy-11/",
+      "description": "Explore Aquinas's design argument and the debate it generated."
     },
     {
       "number": 12,
       "title": "What is God Like?",
       "videoId": "gs_gY1K1AMU",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-god-like-crash-course-philosophy-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-god-like-crash-course-philosophy-12/",
+      "description": "Investigate puzzles raised by claims that God is all-powerful, all-knowing, eternal, and perfectly good."
     },
     {
       "number": 13,
       "title": "The Problem of Evil",
       "videoId": "9AzNEG1GB-k",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-problem-of-evil-crash-course-philosophy-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-problem-of-evil-crash-course-philosophy-13/",
+      "description": "Consider why evil presents a major challenge to traditional claims about God."
     },
     {
       "number": 14,
       "title": "Anti-Vaxxers, Conspiracy Theories & Epistemic Responsibility",
       "videoId": "AYkhlXronNk",
-      "sourceUrl": "https://thecrashcourse.com/courses/anti-vaxxers-conspiracy-theories-epistemic-responsibility-crash-course-philosophy-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/anti-vaxxers-conspiracy-theories-epistemic-responsibility-crash-course-philosophy-14/",
+      "description": "Examine people's responsibility for their beliefs through examples involving religion, ships, and vaccination."
     },
     {
       "number": 15,
       "title": "Indiana Jones & Pascal’s Wager",
       "videoId": "S93jMOqF-oE",
-      "sourceUrl": "https://thecrashcourse.com/courses/indiana-jones-pascals-wager-crash-course-philosophy-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/indiana-jones-pascals-wager-crash-course-philosophy-15/",
+      "description": "Compare pragmatic belief, Pascal's wager, fideism, and Kierkegaard's account of faith."
     },
     {
       "number": 16,
       "title": "Existentialism",
       "videoId": "YaDvRdLMkHs",
-      "sourceUrl": "https://thecrashcourse.com/courses/existentialism-crash-course-philosophy-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/existentialism-crash-course-philosophy-16/",
+      "description": "Contrast essentialism with existentialist approaches to creating meaning, including Sartre's ideas."
     },
     {
       "number": 17,
       "title": "Perspectives on Death",
       "videoId": "mjQwedC1WzI",
-      "sourceUrl": "https://thecrashcourse.com/courses/perspectives-on-death-crash-course-philosophy-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/perspectives-on-death-crash-course-philosophy-17/",
+      "description": "Compare philosophical responses to death and whether fearing it is rational."
     },
     {
       "number": 18,
       "title": "Batman & Identity",
       "videoId": "-TFCMK4i2lo",
-      "sourceUrl": "https://thecrashcourse.com/courses/batman-identity-crash-course-philosophy-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/batman-identity-crash-course-philosophy-18/",
+      "description": "Explore identity through shared properties, differences, and the distinction between essential and accidental features."
     },
     {
       "number": 19,
       "title": "Personal Identity",
       "videoId": "trqDnLNRuSc",
-      "sourceUrl": "https://thecrashcourse.com/courses/personal-identity-crash-course-philosophy-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/personal-identity-crash-course-philosophy-19/",
+      "description": "Compare bodily and memory-based accounts of what makes someone the same person over time."
     },
     {
       "number": 20,
       "title": "Arguments Against Personal Identity",
       "videoId": "17WiQ_tNld4",
-      "sourceUrl": "https://thecrashcourse.com/courses/arguments-against-personal-identity-crash-course-philosophy-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/arguments-against-personal-identity-crash-course-philosophy-20/",
+      "description": "Consider Hume's bundle account and Parfit's psychological connections as alternatives to fixed personal identity."
     },
     {
       "number": 21,
       "title": "Personhood",
       "videoId": "GxM9BZeRrUI",
-      "sourceUrl": "https://thecrashcourse.com/courses/personhood-crash-course-philosophy-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/personhood-crash-course-philosophy-21/",
+      "description": "Examine genetic, mental, social, and sentience-based criteria for determining personhood."
     },
     {
       "number": 22,
       "title": "Where Does Your Mind Reside?",
       "videoId": "3SJROTXnmus",
-      "sourceUrl": "https://thecrashcourse.com/courses/where-does-your-mind-reside-crash-course-philosophy-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/where-does-your-mind-reside-crash-course-philosophy-22/",
+      "description": "Explore the mind-body problem through physicalism, dualism, and the limits of explanation."
     },
     {
       "number": 23,
       "title": "Artificial Intelligence & Personhood",
       "videoId": "39EdqUbj92U",
-      "sourceUrl": "https://thecrashcourse.com/courses/artificial-intelligence-personhood-crash-course-philosophy-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/artificial-intelligence-personhood-crash-course-philosophy-23/",
+      "description": "Investigate machine intelligence through Turing's test, Searle's Chinese Room, and definitions of strong AI."
     },
     {
       "number": 24,
       "title": "Determinism vs Free Will",
       "videoId": "vCGtkDzELAI",
-      "sourceUrl": "https://thecrashcourse.com/courses/determinism-vs-free-will-crash-course-philosophy-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/determinism-vs-free-will-crash-course-philosophy-24/",
+      "description": "Compare libertarian accounts of free action with hard determinism."
     },
     {
       "number": 25,
       "title": "Compatibilism",
       "videoId": "KETTtiprINU",
-      "sourceUrl": "https://thecrashcourse.com/courses/compatibilism-crash-course-philosophy-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/compatibilism-crash-course-philosophy-25/",
+      "description": "Explore whether internally motivated actions can remain free in a causally determined world."
     },
     {
       "number": 26,
       "title": "Language & Meaning",
       "videoId": "zmwgmt7wcv8",
-      "sourceUrl": "https://thecrashcourse.com/courses/language-meaning-crash-course-philosophy-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/language-meaning-crash-course-philosophy-26/",
+      "description": "Investigate how language gains meaning through reference, shared practices, and philosophical thought experiments."
     },
     {
       "number": 27,
       "title": "Netflix & Chill",
       "videoId": "G30m6XDBTh4",
-      "sourceUrl": "https://thecrashcourse.com/courses/netflix-chill-crash-course-philosophy-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/netflix-chill-crash-course-philosophy-27/",
+      "description": "Explore implied meaning, cooperative conversation, Grice's maxims, and actions performed through speech."
     },
     {
       "number": 28,
       "title": "How Words Can Harm",
       "videoId": "1ESU5ONMMxs",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-words-can-harm-crash-course-philosophy-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-words-can-harm-crash-course-philosophy-28/",
+      "description": "Consider how words harm through hate speech, metaphor, and the distinction between using and mentioning language."
     },
     {
       "number": 29,
       "title": "Nonexistent Objects & Imaginary Worlds",
       "videoId": "Y7v2kESrqDQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/nonexistent-objects-imaginary-worlds-crash-course-philosophy-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/nonexistent-objects-imaginary-worlds-crash-course-philosophy-29/",
+      "description": "Ask how claims about imaginary things can be meaningful or true."
     },
     {
       "number": 30,
       "title": "Aesthetic Appreciation",
       "videoId": "NZ5duzln2wI",
-      "sourceUrl": "https://thecrashcourse.com/courses/aesthetic-appreciation-crash-course-philosophy-30/"
+      "sourceUrl": "https://thecrashcourse.com/courses/aesthetic-appreciation-crash-course-philosophy-30/",
+      "description": "Examine definitions of art, aesthetic judgment, personal taste, and the possibility of developing appreciation."
     },
     {
       "number": 31,
       "title": "Aesthetics",
       "videoId": "gDL4Zf2yEa4",
-      "sourceUrl": "https://thecrashcourse.com/courses/aesthetics-crash-course-philosophy-31/"
+      "sourceUrl": "https://thecrashcourse.com/courses/aesthetics-crash-course-philosophy-31/",
+      "description": "Explore the relationship between artistic value, morality, emotional release, and responses to fiction."
     },
     {
       "number": 32,
       "title": "Metaethics",
       "videoId": "FOoffXFpAlU",
-      "sourceUrl": "https://thecrashcourse.com/courses/metaethics-crash-course-philosophy-32/"
+      "sourceUrl": "https://thecrashcourse.com/courses/metaethics-crash-course-philosophy-32/",
+      "description": "Compare approaches to moral reality, cultural differences, and subjective ethical judgment."
     },
     {
       "number": 33,
       "title": "Divine Command Theory",
       "videoId": "wRHBwxC8b8I",
-      "sourceUrl": "https://thecrashcourse.com/courses/divine-command-theory-crash-course-philosophy-33/"
+      "sourceUrl": "https://thecrashcourse.com/courses/divine-command-theory-crash-course-philosophy-33/",
+      "description": "Explore morality grounded in divine commands and the challenge posed by the Euthyphro dilemma."
     },
     {
       "number": 34,
       "title": "Natural Law Theory",
       "videoId": "r_UfYY7aWKo",
-      "sourceUrl": "https://thecrashcourse.com/courses/natural-law-theory-crash-course-philosophy-34/"
+      "sourceUrl": "https://thecrashcourse.com/courses/natural-law-theory-crash-course-philosophy-34/",
+      "description": "Consider Aquinas's natural-law ethics and Hume's objection to deriving obligations from facts."
     },
     {
       "number": 35,
       "title": "Kant & Categorical Imperatives",
       "videoId": "8bIys6JoEDw",
-      "sourceUrl": "https://thecrashcourse.com/courses/kant-categorical-imperatives-crash-course-philosophy-35/"
+      "sourceUrl": "https://thecrashcourse.com/courses/kant-categorical-imperatives-crash-course-philosophy-35/",
+      "description": "Explore Kant's duties, universal principles, autonomy, and requirement to treat people as ends."
     },
     {
       "number": 36,
       "title": "Utilitarianism",
       "videoId": "-a739VjqdSI",
-      "sourceUrl": "https://thecrashcourse.com/courses/utilitarianism-crash-course-philosophy-36/"
+      "sourceUrl": "https://thecrashcourse.com/courses/utilitarianism-crash-course-philosophy-36/",
+      "description": "Compare act and rule utilitarianism and explore how the principle of utility guides moral choices."
     },
     {
       "number": 37,
       "title": "Contractarianism",
       "videoId": "2Co6pNvd9mc",
-      "sourceUrl": "https://thecrashcourse.com/courses/contractarianism-crash-course-philosophy-37/"
+      "sourceUrl": "https://thecrashcourse.com/courses/contractarianism-crash-course-philosophy-37/",
+      "description": "Explore social agreements, Hobbes's imagined natural condition, and incentives illustrated by the Prisoner's Dilemma."
     },
     {
       "number": 38,
       "title": "Aristotle & Virtue Theory",
       "videoId": "PrvtOWEXDIQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/aristotle-virtue-theory-crash-course-philosophy-38/"
+      "sourceUrl": "https://thecrashcourse.com/courses/aristotle-virtue-theory-crash-course-philosophy-38/",
+      "description": "Examine Aristotle's virtues, moderation between extremes, moral exemplars, and human flourishing."
     },
     {
       "number": 39,
       "title": "Moral Luck",
       "videoId": "DpDSPVv8lUE",
-      "sourceUrl": "https://thecrashcourse.com/courses/moral-luck-crash-course-philosophy-39/"
+      "sourceUrl": "https://thecrashcourse.com/courses/moral-luck-crash-course-philosophy-39/",
+      "description": "Distinguish causal responsibility from moral blame when similar decisions produce different outcomes."
     },
     {
       "number": 40,
       "title": "What Is Justice?",
       "videoId": "H0CTHVCkm90",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-justice-crash-course-philosophy-40/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-justice-crash-course-philosophy-40/",
+      "description": "Compare accounts of justice, fair distribution, and the purposes of punishment."
     },
     {
       "number": 41,
       "title": "Discrimination",
       "videoId": "RsldtV4jWA0",
-      "sourceUrl": "https://thecrashcourse.com/courses/discrimination-crash-course-philosophy-41/"
+      "sourceUrl": "https://thecrashcourse.com/courses/discrimination-crash-course-philosophy-41/",
+      "description": "Consider difficult discrimination cases and the philosophical arguments for judging them."
     },
     {
       "number": 42,
       "title": "Non-Human Animals",
       "videoId": "y3-BX-jN_Ac",
-      "sourceUrl": "https://thecrashcourse.com/courses/non-human-animals-crash-course-philosophy-42/"
+      "sourceUrl": "https://thecrashcourse.com/courses/non-human-animals-crash-course-philosophy-42/",
+      "description": "Apply ethical reasoning to animals through Singer, Cohen, and consideration of interests."
     },
     {
       "number": 43,
       "title": "Family Obligations",
       "videoId": "p7cOwQQDI7o",
-      "sourceUrl": "https://thecrashcourse.com/courses/family-obligations-crash-course-philosophy-43/"
+      "sourceUrl": "https://thecrashcourse.com/courses/family-obligations-crash-course-philosophy-43/",
+      "description": "Explore obligations between parents and children, proposed parenting licenses, and care-centered ethics."
     },
     {
       "number": 44,
       "title": "Poverty & Our Response To It",
       "videoId": "D5sknLy7Smo",
-      "sourceUrl": "https://thecrashcourse.com/courses/poverty-our-response-to-it-crash-course-philosophy-44/"
+      "sourceUrl": "https://thecrashcourse.com/courses/poverty-our-response-to-it-crash-course-philosophy-44/",
+      "description": "Compare Singer's duties toward people in poverty with Hardin's limited-resource argument."
     },
     {
       "number": 45,
       "title": "Assisted Death & The Value of Life",
       "videoId": "3IsloHmKvWA",
-      "sourceUrl": "https://thecrashcourse.com/courses/assisted-death-the-value-of-life-crash-course-philosophy-45/"
+      "sourceUrl": "https://thecrashcourse.com/courses/assisted-death-the-value-of-life-crash-course-philosophy-45/",
+      "description": "Examine competing values in debates over assisted dying, euthanasia, and some abortion cases."
     },
     {
       "number": 46,
       "title": "What Is A Good Life?",
       "videoId": "Ra1Dmz-5HjU",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-good-life-crash-course-philosophy-46/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-good-life-crash-course-philosophy-46/",
+      "description": "Compare philosophical pictures of living well, including flourishing, existential meaning, and thought experiments."
     }
   ]
 }

@@ -5,187 +5,218 @@
       "number": 1,
       "title": "Monty Hall Problem Explained",
       "videoId": "CJbEOMuMWUM",
-      "sourceUrl": "https://www.youtube.com/watch?v=CJbEOMuMWUM"
+      "sourceUrl": "https://www.youtube.com/watch?v=CJbEOMuMWUM",
+      "description": "Introduce statistics as a way of using observations and data to understand the world."
     },
     {
       "number": 2,
       "title": "Introduction to Statistics",
       "videoId": "TVARPjU4tyw",
-      "sourceUrl": "https://www.youtube.com/watch?v=TVARPjU4tyw"
+      "sourceUrl": "https://www.youtube.com/watch?v=TVARPjU4tyw",
+      "description": "Statistics is humanity's best toolkit for distilling data about lots of stuff into reliable and comprehensible conclusions about everything from cookies to climate change."
     },
     {
       "number": 3,
       "title": "Why Are There So Many Data Types?",
       "videoId": "Sxi5-D2fd50",
-      "sourceUrl": "https://www.youtube.com/watch?v=Sxi5-D2fd50"
+      "sourceUrl": "https://www.youtube.com/watch?v=Sxi5-D2fd50",
+      "description": "A lot of planning and work go into collecting data to make sure that we can actually answer questions that interest us."
     },
     {
       "number": 4,
       "title": "How to Identify Dependent & Independent Variables",
       "videoId": "_EWbZbSIqXc",
-      "sourceUrl": "https://www.youtube.com/watch?v=_EWbZbSIqXc"
+      "sourceUrl": "https://www.youtube.com/watch?v=_EWbZbSIqXc",
+      "description": "Use dependent and independent variables to investigate cause, effect, and relationships in data."
     },
     {
       "number": 5,
       "title": "What Kind of Data Do You Really Need?",
       "videoId": "tqX8Xxo-UE0",
-      "sourceUrl": "https://www.youtube.com/watch?v=tqX8Xxo-UE0"
+      "sourceUrl": "https://www.youtube.com/watch?v=tqX8Xxo-UE0",
+      "description": "Compare types of data and consider how measurement precision affects statistical analysis."
     },
     {
       "number": 6,
       "title": "How to Organize Data in a Table",
       "videoId": "6-jjT-JnAP8",
-      "sourceUrl": "https://www.youtube.com/watch?v=6-jjT-JnAP8"
+      "sourceUrl": "https://www.youtube.com/watch?v=6-jjT-JnAP8",
+      "description": "Explore how tables organize complex data into rows and columns to make information easier to understand."
     },
     {
       "number": 7,
       "title": "What Is A Histogram?",
       "videoId": "rzQAcMJ5DHY",
-      "sourceUrl": "https://www.youtube.com/watch?v=rzQAcMJ5DHY"
+      "sourceUrl": "https://www.youtube.com/watch?v=rzQAcMJ5DHY",
+      "description": "Use histograms to examine distributions and understand the shape and characteristics of data."
     },
     {
       "number": 8,
       "title": "How to Tell a Story with Data",
       "videoId": "n_NDPcWWI-0",
-      "sourceUrl": "https://www.youtube.com/watch?v=n_NDPcWWI-0"
+      "sourceUrl": "https://www.youtube.com/watch?v=n_NDPcWWI-0",
+      "description": "Choose graph types and visual styles that communicate data clearly and honestly."
     },
     {
       "number": 9,
       "title": "What is a Central Tendency?",
       "videoId": "t4NK4rWthU4",
-      "sourceUrl": "https://www.youtube.com/watch?v=t4NK4rWthU4"
+      "sourceUrl": "https://www.youtube.com/watch?v=t4NK4rWthU4",
+      "description": "Calculating a “central tendency”, like an average, is one of the most powerful ways we can meaningfully represent data."
     },
     {
       "number": 10,
       "title": "Descriptive Statistics and Outliers",
       "videoId": "fy4XVSx5Aqc",
-      "sourceUrl": "https://www.youtube.com/watch?v=fy4XVSx5Aqc"
+      "sourceUrl": "https://www.youtube.com/watch?v=fy4XVSx5Aqc",
+      "description": "Examine typical data, unusual observations, and outliers to understand what a dataset may reveal."
     },
     {
       "number": 11,
       "title": "Why Normal Distributions Are So Common",
       "videoId": "XFX0aQiPVfo",
-      "sourceUrl": "https://www.youtube.com/watch?v=XFX0aQiPVfo"
+      "sourceUrl": "https://www.youtube.com/watch?v=XFX0aQiPVfo",
+      "description": "There’s a deep mathematical reason for this conspiracy of normal distributions everywhere, which has made waves throughout history: the central limit theorem."
     },
     {
       "number": 12,
       "title": "What is the Empirical Rule?",
       "videoId": "hKq58idz_Oo",
-      "sourceUrl": "https://www.youtube.com/watch?v=hKq58idz_Oo"
+      "sourceUrl": "https://www.youtube.com/watch?v=hKq58idz_Oo",
+      "description": "Explore the empirical rule and how normal distributions help us interpret everyday data."
     },
     {
       "number": 13,
       "title": "How to calculate Z-Scores",
       "videoId": "R36y-XJE1u0",
-      "sourceUrl": "https://www.youtube.com/watch?v=R36y-XJE1u0"
+      "sourceUrl": "https://www.youtube.com/watch?v=R36y-XJE1u0",
+      "description": "Standardize measurements to make comparisons across different units, scales, and distributions."
     },
     {
       "number": 14,
       "title": "The guardrails of statistics: Confidence Intervals",
       "videoId": "xEAFokqTgKI",
-      "sourceUrl": "https://www.youtube.com/watch?v=xEAFokqTgKI"
+      "sourceUrl": "https://www.youtube.com/watch?v=xEAFokqTgKI",
+      "description": "Distributions and confidence intervals give us guardrails for measuring precisely how certain we ought to be in the statistics we do."
     },
     {
       "number": 15,
       "title": "Types of Probability Distributions",
       "videoId": "e3htNFuIzVA",
-      "sourceUrl": "https://www.youtube.com/watch?v=e3htNFuIzVA"
+      "sourceUrl": "https://www.youtube.com/watch?v=e3htNFuIzVA",
+      "description": "Explore probability as a tool for understanding uncertainty, predicting outcomes, and managing risk."
     },
     {
       "number": 16,
       "title": "What is Conditional Probability?",
       "videoId": "toxX5L3CJx0",
-      "sourceUrl": "https://www.youtube.com/watch?v=toxX5L3CJx0"
+      "sourceUrl": "https://www.youtube.com/watch?v=toxX5L3CJx0",
+      "description": "To disentangle what influences what, we need the tools to calculate complex probabilities."
     },
     {
       "number": 17,
       "title": "How To Use Probability Distributions",
       "videoId": "To4DAZjDzCQ",
-      "sourceUrl": "https://www.youtube.com/watch?v=To4DAZjDzCQ"
+      "sourceUrl": "https://www.youtube.com/watch?v=To4DAZjDzCQ",
+      "description": "Explore how sampling distributions and test statistics distinguish typical outcomes from unlikely ones."
     },
     {
       "number": 18,
       "title": "What Is Hypothesis Testing? ",
       "videoId": "Yq8v9VJUe58",
-      "sourceUrl": "https://www.youtube.com/watch?v=Yq8v9VJUe58"
+      "sourceUrl": "https://www.youtube.com/watch?v=Yq8v9VJUe58",
+      "description": "Use the null hypothesis to approach uncertain conclusions with skepticism and make better-informed decisions."
     },
     {
       "number": 19,
       "title": "P-value Hypothesis Testing",
       "videoId": "hiRwA4WAxd0",
-      "sourceUrl": "https://www.youtube.com/watch?v=hiRwA4WAxd0"
+      "sourceUrl": "https://www.youtube.com/watch?v=hiRwA4WAxd0",
+      "description": "Examine errors in hypothesis testing and how understanding different mistakes can support better decisions."
     },
     {
       "number": 20,
       "title": "One and Two Tailed Tests Explained",
       "videoId": "XfYTry4SnT0",
-      "sourceUrl": "https://www.youtube.com/watch?v=XfYTry4SnT0"
+      "sourceUrl": "https://www.youtube.com/watch?v=XfYTry4SnT0",
+      "description": "Compare one- and two-tailed tests when investigating differences between groups."
     },
     {
       "number": 21,
       "title": "How to Run an Independent t-Test",
       "videoId": "CBY7u99yZYc",
-      "sourceUrl": "https://www.youtube.com/watch?v=CBY7u99yZYc"
+      "sourceUrl": "https://www.youtube.com/watch?v=CBY7u99yZYc",
+      "description": "Use independent t-tests to assess whether groups differ significantly."
     },
     {
       "number": 22,
       "title": "How to Calculate Cohen’s D",
       "videoId": "cyPKyIwmgvA",
-      "sourceUrl": "https://www.youtube.com/watch?v=cyPKyIwmgvA"
+      "sourceUrl": "https://www.youtube.com/watch?v=cyPKyIwmgvA",
+      "description": "Explore how comparing related groups can reveal statistical relationships and help distinguish meaningful results from chance."
     },
     {
       "number": 23,
       "title": "What is a Chi-Square test?",
       "videoId": "hgcQBEOd8yk",
-      "sourceUrl": "https://www.youtube.com/watch?v=hgcQBEOd8yk"
+      "sourceUrl": "https://www.youtube.com/watch?v=hgcQBEOd8yk",
+      "description": "And the chi-square test is exactly what we need in hypothesis testing to measure how well a model fits reality."
     },
     {
       "number": 24,
       "title": "Chi Square: Independence and Homogeneity",
       "videoId": "gm_Tr72bwDw",
-      "sourceUrl": "https://www.youtube.com/watch?v=gm_Tr72bwDw"
+      "sourceUrl": "https://www.youtube.com/watch?v=gm_Tr72bwDw",
+      "description": "The chi-square test of independence makes short work of uncovering the hidden relationships between two different categories or groups."
     },
     {
       "number": 25,
       "title": "F Distribution and the Sum of Squares",
       "videoId": "1W1X5vVHrSY",
-      "sourceUrl": "https://www.youtube.com/watch?v=1W1X5vVHrSY"
+      "sourceUrl": "https://www.youtube.com/watch?v=1W1X5vVHrSY",
+      "description": "Use the F statistic and F distribution to investigate variation within and between groups."
     },
     {
       "number": 26,
       "title": "What is ANOVA?",
       "videoId": "qP7rqPeQGBI",
-      "sourceUrl": "https://www.youtube.com/watch?v=qP7rqPeQGBI"
+      "sourceUrl": "https://www.youtube.com/watch?v=qP7rqPeQGBI",
+      "description": "Explore how analysis of variance investigates relationships between numerical measurements and groups."
     },
     {
       "number": 27,
       "title": "How to Use Repeated Measures ANOVA",
       "videoId": "O7IhKY4fTks",
-      "sourceUrl": "https://www.youtube.com/watch?v=O7IhKY4fTks"
+      "sourceUrl": "https://www.youtube.com/watch?v=O7IhKY4fTks",
+      "description": "Use repeated-measures ANOVA to compare groups while controlling for variation between individual subjects."
     },
     {
       "number": 28,
       "title": "Understanding the Correlation Coefficient",
       "videoId": "oLkx0S0b1R4",
-      "sourceUrl": "https://www.youtube.com/watch?v=oLkx0S0b1R4"
+      "sourceUrl": "https://www.youtube.com/watch?v=oLkx0S0b1R4",
+      "description": "Correlation is everywhere, from parking issues when your favorite Swedish restaurant is packed to fertilizer usage and crop yields."
     },
     {
       "number": 29,
       "title": "Intro to Simple Linear Regression",
       "videoId": "eS-i_HgLNjE",
-      "sourceUrl": "https://www.youtube.com/watch?v=eS-i_HgLNjE"
+      "sourceUrl": "https://www.youtube.com/watch?v=eS-i_HgLNjE",
+      "description": "Explore how regression quantifies relationships between two measurements and when it can be used."
     },
     {
       "number": 30,
       "title": "How to Use Multiple Linear Regression",
       "videoId": "AaTgBtBnEXw",
-      "sourceUrl": "https://www.youtube.com/watch?v=AaTgBtBnEXw"
+      "sourceUrl": "https://www.youtube.com/watch?v=AaTgBtBnEXw",
+      "description": "This episode will show you how to do multiple linear regression, without falling into traps!"
     },
     {
       "number": 31,
       "title": "Which Stats Can You Trust?",
       "videoId": "SLiYq7OZ8jc",
-      "sourceUrl": "https://www.youtube.com/watch?v=SLiYq7OZ8jc"
+      "sourceUrl": "https://www.youtube.com/watch?v=SLiYq7OZ8jc",
+      "description": "Examine ethical uses of statistics and learn to question misleading data and statistical claims."
     }
   ]
 }

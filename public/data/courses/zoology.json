@@ -5,85 +5,99 @@
       "number": 1,
       "title": "What is an Animal?",
       "videoId": "zgM0F6UmC70",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-an-animal-crash-course-zoology-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-an-animal-crash-course-zoology-1/",
+      "description": "Explore what makes an organism an animal and why drawing that boundary is more complicated than it first appears."
     },
     {
       "number": 2,
       "title": "What's the Most \"Animal\" Animal?",
       "videoId": "lDMfsb09Hw4",
-      "sourceUrl": "https://thecrashcourse.com/courses/whats-the-most-animal-animal-crash-course-zoology-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/whats-the-most-animal-animal-crash-course-zoology-2/",
+      "description": "Compare familiar animals with the wider animal kingdom and reconsider which creatures best represent animal life."
     },
     {
       "number": 3,
       "title": "Diversity of Bodies & Sizes (but mostly crabs)",
       "videoId": "C118ADYpEqo",
-      "sourceUrl": "https://thecrashcourse.com/courses/diversity-of-bodies-sizes-but-mostly-crabs-crash-course-zoology-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/diversity-of-bodies-sizes-but-mostly-crabs-crash-course-zoology-3/",
+      "description": "Compare animal growth, body plans, and skeletons, including the evolutionary similarities behind very different-looking animals."
     },
     {
       "number": 4,
       "title": "How & What Animals Eat",
       "videoId": "aJKkUFR4eDA",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-what-animals-eat-crash-course-zoology-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-what-animals-eat-crash-course-zoology-4/",
+      "description": "Explore how animal diets shape bodies and habitats, from carnivores and herbivores to organisms with unusual food sources."
     },
     {
       "number": 5,
       "title": "Brainy & Brainless Animals",
       "videoId": "_r9kSA3s2fQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/brainy-brainless-animals-crash-course-zoology-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/brainy-brainless-animals-crash-course-zoology-5/",
+      "description": "Compare animal nervous systems and discover why a small, simple brain can sometimes be more useful than a complex one."
     },
     {
       "number": 6,
       "title": "How Animals See",
       "videoId": "r4FT1YOjv6s",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-animals-see-crash-course-zoology-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-animals-see-crash-course-zoology-6/",
+      "description": "One of the most common adaptations seen in the animal kingdom is vision."
     },
     {
       "number": 7,
       "title": "How Animals Hear",
       "videoId": "KN5Bjh54uB8",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-animals-hear-crash-course-zoology-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-animals-hear-crash-course-zoology-7/",
+      "description": "Explore how animals detect sound and use vibrations to understand their surroundings."
     },
     {
       "number": 8,
       "title": "Ancestral & Weird Senses",
       "videoId": "jszmqmOcrlM",
-      "sourceUrl": "https://thecrashcourse.com/courses/ancestral-weird-senses-crash-course-zoology-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/ancestral-weird-senses-crash-course-zoology-8/",
+      "description": "Investigate smell, taste, and animals’ abilities to detect electric and magnetic fields."
     },
     {
       "number": 9,
       "title": "Reproduction",
       "videoId": "poLyJDVjKlM",
-      "sourceUrl": "https://thecrashcourse.com/courses/reproduction-crash-course-zoology-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reproduction-crash-course-zoology-9/",
+      "description": "Look beyond animal offspring to the genes and reproductive processes behind the next generation."
     },
     {
       "number": 10,
       "title": "Animals Working Together",
       "videoId": "_1g9ip9Y7n4",
-      "sourceUrl": "https://thecrashcourse.com/courses/animals-working-together-crash-course-zoology-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/animals-working-together-crash-course-zoology-10/",
+      "description": "Compare complex animal social relationships and cooperative behavior with human interactions."
     },
     {
       "number": 11,
       "title": "Parasites",
       "videoId": "uliiNX1gni8",
-      "sourceUrl": "https://thecrashcourse.com/courses/parasites-crash-course-zoology-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/parasites-crash-course-zoology-11/",
+      "description": "Nearly every environment on Earth — and that includes animals — is home to some kind of parasite."
     },
     {
       "number": 12,
       "title": "Phylogenetic Mysteries",
       "videoId": "cVaw7nF72Aw",
-      "sourceUrl": "https://thecrashcourse.com/courses/phylogenic-mysteries-crash-course-zoology-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/phylogenic-mysteries-crash-course-zoology-12/",
+      "description": "Use evolutionary relationships to investigate puzzles in animal classification."
     },
     {
       "number": 13,
       "title": "What is a Species?",
       "videoId": "gmERYByX7_s",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-species-crash-course-zoology-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-species-crash-course-zoology-13/",
+      "description": "Examine competing ways scientists define species and why animal diversity makes classification difficult."
     },
     {
       "number": 14,
       "title": "Frontiers in Zoology",
       "videoId": "rH63obMflyo",
-      "sourceUrl": "https://thecrashcourse.com/courses/frontiers-in-zoology-crash-course-zoology-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/frontiers-in-zoology-crash-course-zoology-14/",
+      "description": "Explore opportunities to participate in zoology and help study animal life."
     }
   ]
 }

@@ -5,31 +5,36 @@
       "number": 1,
       "title": "The History of AI Explained",
       "videoId": "UFJQV5Jb0pY",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-ai-explained-crash-course-futures-of-ai-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-history-of-ai-explained-crash-course-futures-of-ai-1/",
+      "description": "Trace AI’s development and explore how benchmarks and scaling laws inform expectations about its future capabilities."
     },
     {
       "number": 2,
       "title": "How could AI transform society?",
       "videoId": "t6xLo1XYZZs",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-could-ai-transform-society-crash-course-futures-of-ai-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-could-ai-transform-society-crash-course-futures-of-ai-2/",
+      "description": "Explore possible social and economic consequences of more capable AI, including both hopeful and harmful futures."
     },
     {
       "number": 3,
       "title": "How close are we to the worst case scenario?",
       "videoId": "KwHS2t2ML9g",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-close-are-we-to-the-worst-case-scenario-crash-course-futures-of-ai-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-close-are-we-to-the-worst-case-scenario-crash-course-futures-of-ai-3/",
+      "description": "In this episode, we’ll explore how humans (and computers) make progress, and try to find out just how powerful AI could become."
     },
     {
       "number": 4,
       "title": "The Alignment Problem Explained",
       "videoId": "Sp3aCsQUsDc",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-alignment-problem-explained-crash-course-futures-of-ai-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-alignment-problem-explained-crash-course-futures-of-ai-4/",
+      "description": "In this episode, we explore how powerful AI could end up causing us harm, regardless of what it’s programmed for."
     },
     {
       "number": 5,
       "title": "How Should AI Be Governed?",
       "videoId": "iNdZFKfExZ8",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-should-ai-be-governed-crash-course-futures-of-ai-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-should-ai-be-governed-crash-course-futures-of-ai-5/",
+      "description": "Explore approaches to governing AI, from laboratory policies to international agreements, and the challenges of coordinating responsible development."
     }
   ]
 }

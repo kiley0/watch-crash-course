@@ -1,5 +1,6 @@
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
+import "./chapter-link.css";
 import "./catalog.css";
 import "./notebook-hero.css";
 import { createCatalogPage } from "./catalog-component";

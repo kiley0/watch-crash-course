@@ -5,73 +5,85 @@
       "number": 1,
       "title": "What is Climate Change?",
       "videoId": "9PFhrpyWV-w",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-climate-change-crash-course-climate-energy-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-climate-change-crash-course-climate-energy-1/",
+      "description": "Distinguish weather from climate and compare earlier climate shifts with today's fossil-fuel-driven warming."
     },
     {
       "number": 2,
       "title": "Why Do We Release So Much Gas?",
       "videoId": "Q26Z4JWVZvk",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-do-we-release-so-much-gas-crash-course-climate-energy-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-do-we-release-so-much-gas-crash-course-climate-energy-2/",
+      "description": "Connect energy use and emissions with unequal responsibility for and exposure to climate impacts."
     },
     {
       "number": 3,
       "title": "Can We Make Electricity Without Fossil Fuels?",
       "videoId": "pT7vRUGeEtA",
-      "sourceUrl": "https://thecrashcourse.com/courses/can-we-make-electricity-without-fossil-fuels-crash-course-climate-energy-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-make-electricity-without-fossil-fuels-crash-course-climate-energy-3/",
+      "description": "Compare low-carbon electricity options and the advantages and limitations of different energy technologies."
     },
     {
       "number": 4,
       "title": "How Can We Store Renewable Energy?",
       "videoId": "rDkaZWirNME",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-can-we-store-renewable-energy-crash-course-climate-energy-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-can-we-store-renewable-energy-crash-course-climate-energy-4/",
+      "description": "Explore the practical problems of producing, distributing, and storing renewable electricity."
     },
     {
       "number": 5,
       "title": "Can We Keep Warm and Stay Cool Without Fossil Fuels?",
       "videoId": "3yH5TuLYRcs",
-      "sourceUrl": "https://thecrashcourse.com/courses/can-we-keep-warm-and-stay-cool-without-fossil-fuels-crash-course-climate-energy-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-keep-warm-and-stay-cool-without-fossil-fuels-crash-course-climate-energy-5/",
+      "description": "Investigate ways to reduce emissions from the systems used to heat and cool buildings."
     },
     {
       "number": 6,
       "title": "Can We Gas Up… Without Gas?",
       "videoId": "1-YtC3nwWwU",
-      "sourceUrl": "https://thecrashcourse.com/courses/can-we-gas-up-without-gas-crash-course-climate-energy-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-gas-up-without-gas-crash-course-climate-energy-6/",
+      "description": "Compare electric vehicles and approaches to reducing emissions from larger transportation systems."
     },
     {
       "number": 7,
       "title": "Can We Capture Greenhouse Gases?",
       "videoId": "bjIXPPlg1TQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/can-we-capture-greenhouse-gases-crash-course-climate-energy-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-capture-greenhouse-gases-crash-course-climate-energy-7/",
+      "description": "Explore accounting for emissions across production, reducing them, and capturing unavoidable greenhouse gases."
     },
     {
       "number": 8,
       "title": "How Will Climate Change Continue to Affect Us?",
       "videoId": "eVUuwHGLIYo",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-will-climate-change-continue-to-affect-us-crash-course-climate-energy-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-will-climate-change-continue-to-affect-us-crash-course-climate-energy-8/",
+      "description": "Examine present climate impacts and possible future consequences for ecosystems and communities."
     },
     {
       "number": 9,
       "title": "Are Natural Disasters Actually Natural?",
       "videoId": "7ODrQW0vSmA",
-      "sourceUrl": "https://thecrashcourse.com/courses/are-natural-disasters-actually-natural-crash-course-climate-energy-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/are-natural-disasters-actually-natural-crash-course-climate-energy-9/",
+      "description": "Connect unequal climate harms with social structures and the work of environmental-justice advocates."
     },
     {
       "number": 10,
       "title": "How Do Countries Work Together on Climate Change?",
       "videoId": "Z5YvjG4lTpQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-do-countries-work-together-on-climate-change-crash-course-climate-energy-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-countries-work-together-on-climate-change-crash-course-climate-energy-10/",
+      "description": "Explore international institutions and examples of successful and unsuccessful cooperation on climate policy."
     },
     {
       "number": 11,
       "title": "The Hidden Price of Climate Change",
       "videoId": "ML70W4O6F4E",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-hidden-price-of-climate-change-crash-course-climate-energy-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-hidden-price-of-climate-change-crash-course-climate-energy-11/",
+      "description": "Investigate why dependence on fossil fuels persists and how governments and energy companies influence it."
     },
     {
       "number": 12,
       "title": "How Can We Respond to Climate Change?",
       "videoId": "3p51wKUuwOU",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-can-we-respond-to-climate-change-crash-course-climate-energy-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-can-we-respond-to-climate-change-crash-course-climate-energy-12/",
+      "description": "Explore actions governments, businesses, and communities can take to limit further warming."
     }
   ]
 }

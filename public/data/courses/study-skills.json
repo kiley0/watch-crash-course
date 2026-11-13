@@ -5,61 +5,71 @@
       "number": 1,
       "title": "Taking Notes",
       "videoId": "E7CwqNHn_Ns",
-      "sourceUrl": "https://thecrashcourse.com/courses/taking-notes-crash-course-study-skills-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/taking-notes-crash-course-study-skills-1/",
+      "description": "Thomas Frank covers preparing for class and choosing a note-taking approach that supports recall and later review."
     },
     {
       "number": 2,
       "title": "Reading Assignments",
       "videoId": "WAIUkjsZ5xQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/reading-assignments-crash-course-study-skills-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reading-assignments-crash-course-study-skills-2/",
+      "description": "Learn how to prioritize assigned reading and approach a large reading workload with a practical strategy."
     },
     {
       "number": 3,
       "title": "Memory",
       "videoId": "SZbdK9e9bxs",
-      "sourceUrl": "https://thecrashcourse.com/courses/memory-crash-course-study-skills-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/memory-crash-course-study-skills-3/",
+      "description": "Explore how memory operates and adapt your study habits to its strengths and constraints."
     },
     {
       "number": 4,
       "title": "Planning & Organization",
       "videoId": "0AKAuRby7n8",
-      "sourceUrl": "https://thecrashcourse.com/courses/planning-organization-crash-course-study-skills-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/planning-organization-crash-course-study-skills-4/",
+      "description": "Build a planning and organization system that helps you use your available study time effectively."
     },
     {
       "number": 5,
       "title": "Focus & Concentration",
       "videoId": "L_2JaFnkZ4o",
-      "sourceUrl": "https://thecrashcourse.com/courses/focus-concentration-crash-course-study-skills-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/focus-concentration-crash-course-study-skills-5/",
+      "description": "Understand study distractions and develop habits that strengthen your ability to stay focused."
     },
     {
       "number": 6,
       "title": "Procrastination",
       "videoId": "x2y_SLOvOvw",
-      "sourceUrl": "https://thecrashcourse.com/courses/procrastination-crash-course-study-skills-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/procrastination-crash-course-study-skills-6/",
+      "description": "Explore ways to overcome the urge to put off studying, writing, and other important work."
     },
     {
       "number": 7,
       "title": "Studying for Exams",
       "videoId": "mLhwdITTrfE",
-      "sourceUrl": "https://thecrashcourse.com/courses/studying-for-exams-crash-course-study-skills-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/studying-for-exams-crash-course-study-skills-7/",
+      "description": "Thomas Frank introduces effective exam preparation strategies as an alternative to last-minute cramming."
     },
     {
       "number": 8,
       "title": "Test Anxiety",
       "videoId": "t-9cqaRJMP4",
-      "sourceUrl": "https://thecrashcourse.com/courses/test-anxiety-crash-course-study-skills-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/test-anxiety-crash-course-study-skills-8/",
+      "description": "Learn ways to manage exam-related fear and arrive on test day feeling calmer and more confident."
     },
     {
       "number": 9,
       "title": "Papers & Essays",
       "videoId": "KlgR1q3UQZE",
-      "sourceUrl": "https://thecrashcourse.com/courses/papers-essays-crash-course-study-skills-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/papers-essays-crash-course-study-skills-9/",
+      "description": "Find a starting point for research papers, organize your writing process, and avoid getting stuck in endless research."
     },
     {
       "number": 10,
       "title": "Exercise",
       "videoId": "SQONLdb1gow",
-      "sourceUrl": "https://thecrashcourse.com/courses/exercise-crash-course-study-skills-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/exercise-crash-course-study-skills-10/",
+      "description": "The final lesson connects physical well-being with learning, explaining why caring for your body also supports your brain."
     }
   ]
 }

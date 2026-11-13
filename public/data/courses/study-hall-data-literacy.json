@@ -5,91 +5,106 @@
       "number": 1,
       "title": "What are Data and Data Literacy",
       "videoId": "yhO_t-c3yJY",
-      "sourceUrl": "https://www.youtube.com/watch?v=yhO_t-c3yJY"
+      "sourceUrl": "https://www.youtube.com/watch?v=yhO_t-c3yJY",
+      "description": "Introduce data-analysis vocabulary and the habits involved in interpreting information critically."
     },
     {
       "number": 2,
       "title": "Misconceptions in Data Analysis",
       "videoId": "nd_oOOXeN3A",
-      "sourceUrl": "https://www.youtube.com/watch?v=nd_oOOXeN3A"
+      "sourceUrl": "https://www.youtube.com/watch?v=nd_oOOXeN3A",
+      "description": "In this episode of Study Hall: Data Literacy, Jessica walks us through misconceptions in Data!"
     },
     {
       "number": 3,
       "title": "Visualizing Data",
       "videoId": "YDT5ZPcMZWM",
-      "sourceUrl": "https://www.youtube.com/watch?v=YDT5ZPcMZWM"
+      "sourceUrl": "https://www.youtube.com/watch?v=YDT5ZPcMZWM",
+      "description": "Compare data visualizations and examine how chart clutter can confuse or distort a story."
     },
     {
       "number": 4,
       "title": "How to Collect Data",
       "videoId": "zGFuj9tF33Q",
-      "sourceUrl": "https://www.youtube.com/watch?v=zGFuj9tF33Q"
+      "sourceUrl": "https://www.youtube.com/watch?v=zGFuj9tF33Q",
+      "description": "Explore ways to collect information and build useful datasets."
     },
     {
       "number": 5,
       "title": "Data in the News",
       "videoId": "3Vt6K-hx09A",
-      "sourceUrl": "https://www.youtube.com/watch?v=3Vt6K-hx09A"
+      "sourceUrl": "https://www.youtube.com/watch?v=3Vt6K-hx09A",
+      "description": "Explore how journalists acquire, organize, interpret, and scrutinize data to report stories responsibly and protect the public."
     },
     {
       "number": 6,
       "title": "Data in Sports",
       "videoId": "rUjpCXCkJig",
-      "sourceUrl": "https://www.youtube.com/watch?v=rUjpCXCkJig"
+      "sourceUrl": "https://www.youtube.com/watch?v=rUjpCXCkJig",
+      "description": "In this episode, Jessica walks us through how data works in the world of sports."
     },
     {
       "number": 7,
       "title": "Election Data",
       "videoId": "IQSzVGM13Mo",
-      "sourceUrl": "https://www.youtube.com/watch?v=IQSzVGM13Mo"
+      "sourceUrl": "https://www.youtube.com/watch?v=IQSzVGM13Mo",
+      "description": "In this episode of Study Hall: Data Literacy, Jessica talks about how we can sort out all of this election data."
     },
     {
       "number": 8,
       "title": "Health Data",
       "videoId": "gaiTBQIppXk",
-      "sourceUrl": "https://www.youtube.com/watch?v=gaiTBQIppXk"
+      "sourceUrl": "https://www.youtube.com/watch?v=gaiTBQIppXk",
+      "description": "In this episode of Study Hall: Data Literacy, Jessica talks us through how we should be thinking about data in health."
     },
     {
       "number": 9,
       "title": "Social Media Data",
       "videoId": "qjLpTovhKEw",
-      "sourceUrl": "https://www.youtube.com/watch?v=qjLpTovhKEw"
+      "sourceUrl": "https://www.youtube.com/watch?v=qjLpTovhKEw",
+      "description": "In this episode of Study Hall: Data Literacy, Jessica talks to us about how data works in Social Media."
     },
     {
       "number": 10,
       "title": "Data Privacy",
       "videoId": "N9I7smAOspM",
-      "sourceUrl": "https://www.youtube.com/watch?v=N9I7smAOspM"
+      "sourceUrl": "https://www.youtube.com/watch?v=N9I7smAOspM",
+      "description": "Examine how companies use personal information and the tradeoffs involved in data privacy."
     },
     {
       "number": 11,
       "title": "Securing Data",
       "videoId": "AO3PB9vezUw",
-      "sourceUrl": "https://www.youtube.com/watch?v=AO3PB9vezUw"
+      "sourceUrl": "https://www.youtube.com/watch?v=AO3PB9vezUw",
+      "description": "In this episode of Study Hall: Data Literacy, Jessica talks to us about common ways data is stolen and other ways we can protect ourselves."
     },
     {
       "number": 12,
       "title": "Credible Research",
       "videoId": "16X2ZUacmDw",
-      "sourceUrl": "https://www.youtube.com/watch?v=16X2ZUacmDw"
+      "sourceUrl": "https://www.youtube.com/watch?v=16X2ZUacmDw",
+      "description": "Evaluate information sources and consider what makes research trustworthy."
     },
     {
       "number": 13,
       "title": "Data Mistakes",
       "videoId": "HQ4dboRW7tM",
-      "sourceUrl": "https://www.youtube.com/watch?v=HQ4dboRW7tM"
+      "sourceUrl": "https://www.youtube.com/watch?v=HQ4dboRW7tM",
+      "description": "In this episode of Study Hall: Data Literacy, Jessica shows us how we can both find errors and see when data is fraudulent."
     },
     {
       "number": 14,
       "title": "Data Context - Why It Matters",
       "videoId": "oYcG5OxkMZU",
-      "sourceUrl": "https://www.youtube.com/watch?v=oYcG5OxkMZU"
+      "sourceUrl": "https://www.youtube.com/watch?v=oYcG5OxkMZU",
+      "description": "Explore why data literacy matters to everyday communication and understanding."
     },
     {
       "number": 15,
       "title": "Finding Your Own Data",
       "videoId": "HMYpfwItUiY",
-      "sourceUrl": "https://www.youtube.com/watch?v=HMYpfwItUiY"
+      "sourceUrl": "https://www.youtube.com/watch?v=HMYpfwItUiY",
+      "description": "Plan your own data collection by identifying questions and challenging your assumptions."
     }
   ]
 }

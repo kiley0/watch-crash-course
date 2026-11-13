@@ -5,277 +5,323 @@
       "number": 1,
       "title": "Introduction to Astronomy",
       "videoId": "0rHUDWjR5gg",
-      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-astronomy-crash-course-astronomy-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-astronomy-crash-course-astronomy-1/",
+      "description": "Phil Plait introduces astronomy and the kinds of questions it investigates."
     },
     {
       "number": 2,
       "title": "Naked Eye Observations",
       "videoId": "L-Wtlev6suc",
-      "sourceUrl": "https://thecrashcourse.com/courses/naked-eye-observations-crash-course-astronomy-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/naked-eye-observations-crash-course-astronomy-2/",
+      "description": "Discover celestial sights that can be observed outdoors without a telescope."
     },
     {
       "number": 3,
       "title": "Cycles in the Sky",
       "videoId": "01QWC-rZcfE",
-      "sourceUrl": "https://thecrashcourse.com/courses/cycles-in-the-sky-crash-course-astronomy-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/cycles-in-the-sky-crash-course-astronomy-3/",
+      "description": "Explore repeating patterns visible in the sky and the phenomena behind them."
     },
     {
       "number": 4,
       "title": "Moon Phases",
       "videoId": "AQ5vty8f9Xc",
-      "sourceUrl": "https://thecrashcourse.com/courses/moon-phases-crash-course-astronomy-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/moon-phases-crash-course-astronomy-4/",
+      "description": "Learn why the Moon changes appearance and how its phases are named."
     },
     {
       "number": 5,
       "title": "Eclipses",
       "videoId": "PRgua7xceDA",
-      "sourceUrl": "https://thecrashcourse.com/courses/eclipses-crash-course-astronomy-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/eclipses-crash-course-astronomy-5/",
+      "description": "Phil Plait explains eclipses and their place in observing the sky."
     },
     {
       "number": 6,
       "title": "Telescopes",
       "videoId": "mYhy7eaazIk",
-      "sourceUrl": "https://thecrashcourse.com/courses/telescopes-crash-course-astronomy-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/telescopes-crash-course-astronomy-6/",
+      "description": "Explore telescope operation and considerations when choosing astronomical equipment."
     },
     {
       "number": 7,
       "title": "The Gravity of the Situation",
       "videoId": "TRAbZxQHlVw",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-gravity-of-the-situation-crash-course-astronomy-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-gravity-of-the-situation-crash-course-astronomy-7/",
+      "description": "Investigate gravity's effects throughout the universe."
     },
     {
       "number": 8,
       "title": "Tides",
       "videoId": "KlWpFLfLFBI",
-      "sourceUrl": "https://thecrashcourse.com/courses/tides-crash-course-astronomy-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/tides-crash-course-astronomy-8/",
+      "description": "Connect gravitational tides with the locking of planets and moons."
     },
     {
       "number": 9,
       "title": "Introduction to the Solar System",
       "videoId": "TKM0P3XlMNA",
-      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-the-solar-system-crash-course-astronomy-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-the-solar-system-crash-course-astronomy-9/",
+      "description": "Trace the solar system's transformation from a gas cloud into planets and other bodies."
     },
     {
       "number": 10,
       "title": "The Sun",
       "videoId": "b22HKFMIfWo",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-sun-crash-course-astronomy-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-sun-crash-course-astronomy-10/",
+      "description": "Explore the Sun's interior, magnetic activity, eruptions, and effects on Earth."
     },
     {
       "number": 11,
       "title": "The Earth",
       "videoId": "w-9gDALvMF4",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-earth-crash-course-astronomy-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-earth-crash-course-astronomy-11/",
+      "description": "Begin a tour of the solar system's planets with Earth itself."
     },
     {
       "number": 12,
       "title": "The Moon",
       "videoId": "mCzchPx3yF8",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-moon-crash-course-astronomy-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-moon-crash-course-astronomy-12/",
+      "description": "Tour the Moon's surface and interior while exploring ideas about its origin."
     },
     {
       "number": 13,
       "title": "Mercury",
       "videoId": "P3GkZe3nRQ0",
-      "sourceUrl": "https://thecrashcourse.com/courses/mercury-crash-course-astronomy-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/mercury-crash-course-astronomy-13/",
+      "description": "Explore Mercury's cratered surface, extreme conditions, and hidden ice deposits."
     },
     {
       "number": 14,
       "title": "Venus",
       "videoId": "ZFUgy3crCYY",
-      "sourceUrl": "https://thecrashcourse.com/courses/venus-crash-course-astronomy-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/venus-crash-course-astronomy-14/",
+      "description": "Investigate Venus's intense heat, greenhouse effect, and volcanic activity."
     },
     {
       "number": 15,
       "title": "Mars",
       "videoId": "I-88YWx71gE",
-      "sourceUrl": "https://thecrashcourse.com/courses/mars-crash-course-astronomy-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/mars-crash-course-astronomy-15/",
+      "description": "Examine Mars's landscape and interior while considering its history and possible future exploration."
     },
     {
       "number": 16,
       "title": "Jupiter",
       "videoId": "Xwn8fQSW7-8",
-      "sourceUrl": "https://thecrashcourse.com/courses/jupiter-crash-course-astronomy-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/jupiter-crash-course-astronomy-16/",
+      "description": "Explore Jupiter's atmosphere, long-lived storm, internal heat, and unusual deep interior."
     },
     {
       "number": 17,
       "title": "Jupiter’s Moons",
       "videoId": "HaFaf7vbgpE",
-      "sourceUrl": "https://thecrashcourse.com/courses/jupiters-moons-crash-course-astronomy-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/jupiters-moons-crash-course-astronomy-17/",
+      "description": "Compare Jupiter's major moons and the distinct worlds they represent."
     },
     {
       "number": 18,
       "title": "Saturn",
       "videoId": "E8GNde5nCSg",
-      "sourceUrl": "https://thecrashcourse.com/courses/saturn-crash-course-astronomy-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/saturn-crash-course-astronomy-18/",
+      "description": "Explore Saturn's icy rings, gravitational gaps, and remarkable moons."
     },
     {
       "number": 19,
       "title": "Uranus & Neptune",
       "videoId": "1hIwD17Crko",
-      "sourceUrl": "https://thecrashcourse.com/courses/uranus-neptune-crash-course-astronomy-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/uranus-neptune-crash-course-astronomy-19/",
+      "description": "Compare the interiors, atmospheres, rotation, rings, and moons of the two ice giants."
     },
     {
       "number": 20,
       "title": "Asteroids",
       "videoId": "auxpcdQimCs",
-      "sourceUrl": "https://thecrashcourse.com/courses/asteroids-crash-course-astronomy-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/asteroids-crash-course-astronomy-20/",
+      "description": "Investigate asteroid locations, composition, and origins."
     },
     {
       "number": 21,
       "title": "Comets",
       "videoId": "yB9HHyPpKds",
-      "sourceUrl": "https://thecrashcourse.com/courses/comets-crash-course-astronomy-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/comets-crash-course-astronomy-21/",
+      "description": "Explore how icy bodies release gas and dust as they approach the Sun."
     },
     {
       "number": 22,
       "title": "The Oort Cloud",
       "videoId": "ZJscxTyI__s",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-oort-cloud-crash-course-astronomy-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-oort-cloud-crash-course-astronomy-22/",
+      "description": "Travel beyond Neptune to the reservoirs of icy objects that can supply comets."
     },
     {
       "number": 23,
       "title": "Meteors",
       "videoId": "TuDfZ2Md5x8",
-      "sourceUrl": "https://thecrashcourse.com/courses/meteors-crash-course-astronomy-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/meteors-crash-course-astronomy-23/",
+      "description": "Distinguish meteoroids, meteors, and meteorites while exploring showers and impacts."
     },
     {
       "number": 24,
       "title": "Light",
       "videoId": "jjy-eqWM38g",
-      "sourceUrl": "https://thecrashcourse.com/courses/light-crash-course-astronomy-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/light-crash-course-astronomy-24/",
+      "description": "Use light's wavelengths and spectra to learn about distant objects' physical properties."
     },
     {
       "number": 25,
       "title": "Distances",
       "videoId": "CWMh61yutjU",
-      "sourceUrl": "https://thecrashcourse.com/courses/distances-crash-course-astronomy-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/distances-crash-course-astronomy-25/",
+      "description": "Trace methods astronomers developed to measure distances across space."
     },
     {
       "number": 26,
       "title": "Stars",
       "videoId": "ld75W1dz-h0",
-      "sourceUrl": "https://thecrashcourse.com/courses/stars-crash-course-astronomy-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/stars-crash-course-astronomy-26/",
+      "description": "Classify stars using spectra, temperature, luminosity, and the Hertzsprung-Russell diagram."
     },
     {
       "number": 27,
       "title": "Exoplanets",
       "videoId": "7ATtD8x7vV0",
-      "sourceUrl": "https://thecrashcourse.com/courses/exoplanets-crash-course-astronomy-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/exoplanets-crash-course-astronomy-27/",
+      "description": "Explore methods for finding planets around other stars, including transits and stellar motion."
     },
     {
       "number": 28,
       "title": "Brown Dwarfs",
       "videoId": "4zKVx29_A1w",
-      "sourceUrl": "https://thecrashcourse.com/courses/brown-dwarfs-crash-course-astronomy-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/brown-dwarfs-crash-course-astronomy-28/",
+      "description": "Explore brown dwarfs and how their masses compare with giant planets and small stars."
     },
     {
       "number": 29,
       "title": "Low Mass Stars",
       "videoId": "jfvMtCHv1q4",
-      "sourceUrl": "https://thecrashcourse.com/courses/low-mass-stars-crash-course-astronomy-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/low-mass-stars-crash-course-astronomy-29/",
+      "description": "Follow how lower-mass stars consume fuel and change as they age."
     },
     {
       "number": 30,
       "title": "White Dwarfs & Planetary Nebulae",
       "videoId": "Mj06h8BeeOA",
-      "sourceUrl": "https://thecrashcourse.com/courses/white-dwarfs-planetary-nebulae-crash-course-astronomy-30/"
+      "sourceUrl": "https://thecrashcourse.com/courses/white-dwarfs-planetary-nebulae-crash-course-astronomy-30/",
+      "description": "Explore the dense remnants and glowing gas clouds left by dying lower-mass stars."
     },
     {
       "number": 31,
       "title": "High Mass Stars",
       "videoId": "PWx9DurgPn8",
-      "sourceUrl": "https://thecrashcourse.com/courses/high-mass-stars-crash-course-astronomy-31/"
+      "sourceUrl": "https://thecrashcourse.com/courses/high-mass-stars-crash-course-astronomy-31/",
+      "description": "Trace heavy-element formation and explosive collapse in massive stars."
     },
     {
       "number": 32,
       "title": "Neutron Stars",
       "videoId": "RrMvUL8HFlM",
-      "sourceUrl": "https://thecrashcourse.com/courses/neutron-stars-crash-course-astronomy-32/"
+      "sourceUrl": "https://thecrashcourse.com/courses/neutron-stars-crash-course-astronomy-32/",
+      "description": "Investigate dense stellar remnants, pulsars, and the powerful magnetic fields of magnetars."
     },
     {
       "number": 33,
       "title": "Black Holes",
       "videoId": "qZWPBKULkdQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/black-holes-crash-course-astronomy-33/"
+      "sourceUrl": "https://thecrashcourse.com/courses/black-holes-crash-course-astronomy-33/",
+      "description": "Explore black-hole formation, possible endings, and extreme tidal stretching."
     },
     {
       "number": 34,
       "title": "Binary and Multiple Stars",
       "videoId": "pIFiCLhJmig",
-      "sourceUrl": "https://thecrashcourse.com/courses/binary-and-multiple-stars-crash-course-astronomy-34/"
+      "sourceUrl": "https://thecrashcourse.com/courses/binary-and-multiple-stars-crash-course-astronomy-34/",
+      "description": "Learn how connected star systems form, remain bound, interact, and sometimes explode."
     },
     {
       "number": 35,
       "title": "Star Clusters",
       "videoId": "an4rgJ3O21A",
-      "sourceUrl": "https://thecrashcourse.com/courses/star-clusters-crash-course-astronomy-35/"
+      "sourceUrl": "https://thecrashcourse.com/courses/star-clusters-crash-course-astronomy-35/",
+      "description": "Compare collections of stars held together by gravity and how those collections evolve."
     },
     {
       "number": 36,
       "title": "Nebulae",
       "videoId": "W8UI7F43_Yk",
-      "sourceUrl": "https://thecrashcourse.com/courses/nebulae-crash-course-astronomy-36/"
+      "sourceUrl": "https://thecrashcourse.com/courses/nebulae-crash-course-astronomy-36/",
+      "description": "Explore clouds of gas and dust, their colors, and the different ways they become visible."
     },
     {
       "number": 37,
       "title": "The Milky Way",
       "videoId": "tj_QPnO8vpQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-milky-way-crash-course-astronomy-37/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-milky-way-crash-course-astronomy-37/",
+      "description": "Tour the Milky Way's disk, spiral structure, central region, and star-forming environments."
     },
     {
       "number": 38,
       "title": "Galaxies, Part 1",
       "videoId": "I82ADyJC7wE",
-      "sourceUrl": "https://thecrashcourse.com/courses/galaxies-part-1-crash-course-astronomy-38/"
+      "sourceUrl": "https://thecrashcourse.com/courses/galaxies-part-1-crash-course-astronomy-38/",
+      "description": "Compare galaxy shapes and explore how collisions can drive their growth."
     },
     {
       "number": 39,
       "title": "Galaxies, Part 2",
       "videoId": "_O2sg-PGhEg",
-      "sourceUrl": "https://thecrashcourse.com/courses/galaxies-part-2-crash-course-astronomy-39/"
+      "sourceUrl": "https://thecrashcourse.com/courses/galaxies-part-2-crash-course-astronomy-39/",
+      "description": "Explore active galactic centers and how galaxies gather into groups, clusters, and larger structures."
     },
     {
       "number": 40,
       "title": "Gamma-Ray Bursts",
       "videoId": "Z2zA9nPFN5A",
-      "sourceUrl": "https://thecrashcourse.com/courses/gamma-ray-bursts-crash-course-astronomy-40/"
+      "sourceUrl": "https://thecrashcourse.com/courses/gamma-ray-bursts-crash-course-astronomy-40/",
+      "description": "Trace the discovery of gamma-ray bursts and investigate their different stellar origins."
     },
     {
       "number": 41,
       "title": "Dark Matter",
       "videoId": "9W3RsaWuCuE",
-      "sourceUrl": "https://thecrashcourse.com/courses/dark-matter-crash-course-astronomy-41/"
+      "sourceUrl": "https://thecrashcourse.com/courses/dark-matter-crash-course-astronomy-41/",
+      "description": "Examine indirect evidence for unseen matter through its gravitational effects on cosmic structures."
     },
     {
       "number": 42,
       "title": "The Big Bang, Cosmology Part 1",
       "videoId": "9B7Ix2VQEGo",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-big-bang-cosmology-part-1-crash-course-astronomy-42/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-big-bang-cosmology-part-1-crash-course-astronomy-42/",
+      "description": "Use galactic redshifts and expansion to reconstruct the universe's beginning."
     },
     {
       "number": 43,
       "title": "Dark Energy & Cosmology, Part 2",
       "videoId": "gzLM6ltw3l0",
-      "sourceUrl": "https://thecrashcourse.com/courses/dark-energy-cosmology-part-2-crash-course-astronomy-43/"
+      "sourceUrl": "https://thecrashcourse.com/courses/dark-energy-cosmology-part-2-crash-course-astronomy-43/",
+      "description": "Explore the mysterious influence accelerating cosmic expansion and its implications for the future."
     },
     {
       "number": 44,
       "title": "A Brief History of the Universe",
       "videoId": "IGCVTSQw7WU",
-      "sourceUrl": "https://thecrashcourse.com/courses/a-brief-history-of-the-universe-crash-course-astronomy-44/"
+      "sourceUrl": "https://thecrashcourse.com/courses/a-brief-history-of-the-universe-crash-course-astronomy-44/",
+      "description": "Reconstruct the universe's earliest minutes using physical evidence and theory."
     },
     {
       "number": 45,
       "title": "Deep Time",
       "videoId": "jDF-N3A60DE",
-      "sourceUrl": "https://thecrashcourse.com/courses/deep-time-crash-course-astronomy-45/"
+      "sourceUrl": "https://thecrashcourse.com/courses/deep-time-crash-course-astronomy-45/",
+      "description": "Explore possible far-future outcomes for stars, matter, and black holes over immense cosmic timescales."
     },
     {
       "number": 46,
       "title": "Everything, The Universe…And Life",
       "videoId": "mgdq6DOTU3M",
-      "sourceUrl": "https://thecrashcourse.com/courses/everything-the-universe-and-life-crash-course-astronomy-46/"
+      "sourceUrl": "https://thecrashcourse.com/courses/everything-the-universe-and-life-crash-course-astronomy-46/",
+      "description": "Revisit astronomy's major questions and the possibilities they open for understanding life and the universe."
     }
   ]
 }

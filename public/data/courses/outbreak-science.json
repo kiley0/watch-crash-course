@@ -5,91 +5,106 @@
       "number": 1,
       "title": "What Is Outbreak Science?",
       "videoId": "_qAzXb7mA2g",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-outbreak-science-crash-course-outbreak-science-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-outbreak-science-crash-course-outbreak-science-1/",
+      "description": "Introduce infectious disease and the concepts needed to understand outbreaks, from microscopic processes to their effects on society."
     },
     {
       "number": 2,
       "title": "How Do Outbreaks Start?",
       "videoId": "40cyYqqQmJ4",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-do-outbreaks-start-crash-course-outbreak-science-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-outbreaks-start-crash-course-outbreak-science-2/",
+      "description": "You may not realize it, but your body is like a fortress, designed to defend you from tiny foreign invaders known as pathogens."
     },
     {
       "number": 3,
       "title": "Why Do We Have Fewer Outbreaks? Epidemiological Transition",
       "videoId": "ATK_qlg6tTY",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-do-we-have-fewer-outbreaks-epidemiological-transition-crash-course-outbreak-science-03/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-do-we-have-fewer-outbreaks-epidemiological-transition-crash-course-outbreak-science-03/",
+      "description": "Explore epidemiological transition and how societies have improved their responses to infectious diseases over time."
     },
     {
       "number": 4,
       "title": "Why Do Outbreaks Affect People Unequally?",
       "videoId": "vc7xQs0MCLY",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-do-outbreaks-affect-people-unequally-crash-course-outbreak-science-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-do-outbreaks-affect-people-unequally-crash-course-outbreak-science-4/",
+      "description": "Investigate how inequalities within and between communities shape people’s risk during outbreaks."
     },
     {
       "number": 5,
       "title": "The Weaponization of Outbreaks",
       "videoId": "JjIgNfURISY",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-weaponization-of-outbreaks-crash-course-outbreak-science-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-weaponization-of-outbreaks-crash-course-outbreak-science-5/",
+      "description": "Examine historical uses of outbreaks to deliberately harm people and lessons for preventing biological attacks."
     },
     {
       "number": 6,
       "title": "How Do We Know We’re Sick?",
       "videoId": "toEnT4C2uNI",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-know-were-sick-crash-course-outbreak-science-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-know-were-sick-crash-course-outbreak-science-6/",
+      "description": "Use symptoms and diagnostic tests to investigate hypothetical patients’ illnesses and understand how diagnosis helps limit disease spread."
     },
     {
       "number": 7,
       "title": "How Does the Healthcare System Work During Outbreaks?",
       "videoId": "wbtpOhIP9Bc",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-does-the-healthcare-system-work-during-outbreaks-crash-course-outbreak-science-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-the-healthcare-system-work-during-outbreaks-crash-course-outbreak-science-7/",
+      "description": "Explore how healthcare facilities respond to outbreaks, including staffing, resources, and costs."
     },
     {
       "number": 8,
       "title": "How Do We Investigate Outbreaks? Epidemiology",
       "videoId": "vk6e0pCbh1k",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-investigate-outbreaks-epidemiology-crash-course-outbreak-science-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-investigate-outbreaks-epidemiology-crash-course-outbreak-science-8/",
+      "description": "Explore how epidemiology tracks relationships between people and infectious disease to investigate and help stop outbreaks."
     },
     {
       "number": 9,
       "title": "Can We Predict An Outbreak’s Future? – Modeling",
       "videoId": "0nLxb3ms28A",
-      "sourceUrl": "https://thecrashcourse.com/courses/can-we-predict-an-outbreaks-future-modeling-crash-course-outbreak-science-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/can-we-predict-an-outbreaks-future-modeling-crash-course-outbreak-science-9/",
+      "description": "Use models and simulations to investigate how outbreaks might unfold under different conditions."
     },
     {
       "number": 10,
       "title": "How Does Public Health Tackle Outbreaks?",
       "videoId": "zN58Uj1pxg4",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-does-public-health-tackle-outbreaks-crash-course-outbreak-science-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-public-health-tackle-outbreaks-crash-course-outbreak-science-10/",
+      "description": "Public health activities are all the ways society coordinates to deliver better health to people."
     },
     {
       "number": 11,
       "title": "How Can Cooperation End an Outbreak?",
       "videoId": "fXt42GzI1FU",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-can-cooperation-end-an-outbreak-crash-course-outbreak-science-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-can-cooperation-end-an-outbreak-crash-course-outbreak-science-11/",
+      "description": "In 1959, the WHO set out to eradicate smallpox, an ambitious goal that was achieved by 1980."
     },
     {
       "number": 12,
       "title": "How Can Infrastructure Help Us Stop Outbreaks?",
       "videoId": "k0WGXeWPb1M",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-can-infrastructure-help-us-stop-outbreaks-crash-course-outbreak-science-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-can-infrastructure-help-us-stop-outbreaks-crash-course-outbreak-science-12/",
+      "description": "Explore sanitation technologies, including toilets, and their role in preventing outbreaks."
     },
     {
       "number": 13,
       "title": "What Is Outbreak Culture?",
       "videoId": "EuSGImH2pG8",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-outbreak-culture-crash-course-outbreak-science-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-outbreak-culture-crash-course-outbreak-science-13/",
+      "description": "Culture determines how we collaborate and use the resources at our disposal in the face of an outbreak."
     },
     {
       "number": 14,
       "title": "How do Outbreaks End? Vaccines and Recovery",
       "videoId": "0nSjN8GVJQM",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-do-outbreaks-end-vaccines-and-recovery-crash-course-outbreak-science-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-outbreaks-end-vaccines-and-recovery-crash-course-outbreak-science-14/",
+      "description": "Explore vaccines and other outbreak-response tools, along with recovery work after an outbreak ends."
     },
     {
       "number": 15,
       "title": "How Are We All Part of Ending Outbreaks?",
       "videoId": "Dpah15G3LSA",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-are-we-all-part-of-ending-outbreaks-crash-course-outbreak-science-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-are-we-all-part-of-ending-outbreaks-crash-course-outbreak-science-15/",
+      "description": "Because outbreak science is an interdisciplinary field, everyone has a role to play in ending outbreaks, including you!"
     }
   ]
 }

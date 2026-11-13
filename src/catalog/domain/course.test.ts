@@ -32,6 +32,18 @@ describe("curated catalog contracts", () => {
       expect(detail.episodes).toHaveLength(course.episodeCount);
     }
   });
+  it("publishes an episode description throughout the curated catalog", () => {
+    for (const course of parseCatalog(catalog)) {
+      const detail = parseDetail(
+        courseFiles[`../../../public/data/courses/${course.id}.json`],
+        course,
+      );
+      const missing = detail.episodes
+        .filter((episode) => !episode.description?.trim())
+        .map((episode) => episode.number);
+      expect(missing, `${course.id} episodes missing descriptions`).toEqual([]);
+    }
+  });
   it("keeps complete curated series anchored to their verified endpoints", () => {
     for (const [id, count, first, last] of [
       ["world-history", 42, "Yocja_N5s1I", "s_iwrt7D5OA"],
@@ -289,5 +301,20 @@ it("requires a matching canonical YouTube source for Study Hall lessons", () => 
     const copy = structuredClone(detail);
     copy.episodes[0]!.sourceUrl = sourceUrl;
     expect(() => parseDetail(copy, course)).toThrow("Study Hall episode source");
+  }
+});
+
+it("preserves optional episode descriptions and rejects invalid supplied values", () => {
+  const course = parseCatalog(catalog).find((course) => course.id === "study-skills")!;
+  const raw = structuredClone(courseFiles[`../../../public/data/courses/${course.id}.json`]) as {
+    episodes: { description?: unknown }[];
+  };
+  const detail = parseDetail(raw, course);
+  expect(detail.episodes.every((episode) => typeof episode.description === "string")).toBe(true);
+  delete raw.episodes[0]!.description;
+  expect(parseDetail(raw, course).episodes[0]!.description).toBeUndefined();
+  for (const invalid of ["", "  ", null, 42]) {
+    raw.episodes[0]!.description = invalid;
+    expect(() => parseDetail(raw, course)).toThrow();
   }
 });

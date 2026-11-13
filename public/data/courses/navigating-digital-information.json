@@ -5,61 +5,71 @@
       "number": 1,
       "title": "Introduction to Navigating Digital Information",
       "videoId": "pLlv2o6UfTU",
-      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-crash-course-navigating-digital-information-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-crash-course-navigating-digital-information-1/",
+      "description": "Introduce strategies for finding reliable information amid the Internet's misleading and false claims."
     },
     {
       "number": 2,
       "title": "The Facts about Fact Checking",
       "videoId": "EZsaA0w_0z0",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-facts-about-fact-checking-crash-course-navigating-digital-information-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-facts-about-fact-checking-crash-course-navigating-digital-information-2/",
+      "description": "Check authorship, motives, and supporting evidence while distinguishing useful skepticism from cynicism."
     },
     {
       "number": 3,
       "title": "Check Yourself with Lateral Reading",
       "videoId": "GoQG6Tin-1E",
-      "sourceUrl": "https://thecrashcourse.com/courses/check-yourself-with-lateral-reading-crash-course-navigating-digital-information-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/check-yourself-with-lateral-reading-crash-course-navigating-digital-information-3/",
+      "description": "Open additional sources while reading to verify claims and understand unfamiliar websites."
     },
     {
       "number": 4,
       "title": "Who Can You Trust?",
       "videoId": "o93pM-b97HI",
-      "sourceUrl": "https://thecrashcourse.com/courses/who-can-you-trust-crash-course-navigating-digital-information-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/who-can-you-trust-crash-course-navigating-digital-information-4/",
+      "description": "Evaluate authority, expertise, credibility, and viewpoint when choosing online sources."
     },
     {
       "number": 5,
       "title": "Using Wikipedia",
       "videoId": "ih4dY9i9JKE",
-      "sourceUrl": "https://thecrashcourse.com/courses/using-wikipedia-crash-course-navigating-digital-information-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/using-wikipedia-crash-course-navigating-digital-information-5/",
+      "description": "Use Wikipedia for orientation, cross-checking, and locating reliable original sources while recognizing its limitations."
     },
     {
       "number": 6,
       "title": "Evaluating Evidence",
       "videoId": "hxhbOvR2TGk",
-      "sourceUrl": "https://thecrashcourse.com/courses/evaluating-evidence-crash-course-navigating-digital-information-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/evaluating-evidence-crash-course-navigating-digital-information-6/",
+      "description": "Distinguish strong supporting evidence from weak material or facts that do not establish a claim."
     },
     {
       "number": 7,
       "title": "Evaluating Photos & Videos",
       "videoId": "p7uvqb8fcdA",
-      "sourceUrl": "https://thecrashcourse.com/courses/evaluating-photos-videos-crash-course-navigating-digital-information-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/evaluating-photos-videos-crash-course-navigating-digital-information-7/",
+      "description": "Check visual media through context, outside sources, and verification rather than trusting appearances alone."
     },
     {
       "number": 8,
       "title": "Data & Infographics",
       "videoId": "OiND50qfCek",
-      "sourceUrl": "https://thecrashcourse.com/courses/data-infographics-crash-course-navigating-digital-information-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/data-infographics-crash-course-navigating-digital-information-8/",
+      "description": "Critically assess numbers and graphics that can quickly inform people or mislead them."
     },
     {
       "number": 9,
       "title": "Click Restraint",
       "videoId": "5tw44SkkXQg",
-      "sourceUrl": "https://thecrashcourse.com/courses/click-restraint-crash-course-navigating-digital-information-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/click-restraint-crash-course-navigating-digital-information-9/",
+      "description": "Resist impulsive clicks and examine search results before equating freshness or ranking with accuracy."
     },
     {
       "number": 10,
       "title": "Social Media",
       "videoId": "M5YKW6fhlss",
-      "sourceUrl": "https://thecrashcourse.com/courses/social-media-crash-course-navigating-digital-information-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/social-media-crash-course-navigating-digital-information-10/",
+      "description": "Explore how social feeds operate and influence opinions, communities, purchasing, and behavior beyond the screen."
     }
   ]
 }

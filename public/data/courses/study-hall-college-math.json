@@ -5,181 +5,211 @@
       "number": 1,
       "title": "The Building Blocks of Math: Sets",
       "videoId": "ovu51n3qjeU",
-      "sourceUrl": "https://www.youtube.com/watch?v=ovu51n3qjeU"
+      "sourceUrl": "https://www.youtube.com/watch?v=ovu51n3qjeU",
+      "description": "Introduce set theory as a way to recognize patterns, organize ideas, and ask precise mathematical questions."
     },
     {
       "number": 2,
       "title": "Sets and Subsets",
       "videoId": "ZcfEh0gtFIs",
-      "sourceUrl": "https://www.youtube.com/watch?v=ZcfEh0gtFIs"
+      "sourceUrl": "https://www.youtube.com/watch?v=ZcfEh0gtFIs",
+      "description": "Set theory provides the tools to organize all kinds of people, things, concepts, and ideas into categories within categories."
     },
     {
       "number": 3,
       "title": "Set Operations",
       "videoId": "Dzn2vGNUfZI",
-      "sourceUrl": "https://www.youtube.com/watch?v=Dzn2vGNUfZI"
+      "sourceUrl": "https://www.youtube.com/watch?v=Dzn2vGNUfZI",
+      "description": "In this episode, we discuss set operations and the ways math and set theory help in creating new, precise ideas."
     },
     {
       "number": 4,
       "title": "Visualizing Sets with Venn Diagrams",
       "videoId": "aCuQCCG4chs",
-      "sourceUrl": "https://www.youtube.com/watch?v=aCuQCCG4chs"
+      "sourceUrl": "https://www.youtube.com/watch?v=aCuQCCG4chs",
+      "description": "Visualizing how different sets fit together using a few simple circles is often easier than trying to keep track of the data in our heads."
     },
     {
       "number": 5,
       "title": "The Fundamental Counting Principle",
       "videoId": "shxAos6JqG4",
-      "sourceUrl": "https://www.youtube.com/watch?v=shxAos6JqG4"
+      "sourceUrl": "https://www.youtube.com/watch?v=shxAos6JqG4",
+      "description": "In this episode, we discuss the fundamental principle of counting and how different cultures innovated counting to fit their own needs."
     },
     {
       "number": 6,
       "title": "Permutations and Factorials!",
       "videoId": "e28WnaMQ0ts",
-      "sourceUrl": "https://www.youtube.com/watch?v=e28WnaMQ0ts"
+      "sourceUrl": "https://www.youtube.com/watch?v=e28WnaMQ0ts",
+      "description": "In this episode, we discuss how through math, we can make sense of all the possibilities using the concept of permutations."
     },
     {
       "number": 7,
       "title": "Combinations: The Math of Picking and Choosing",
       "videoId": "T7zVU3dbMgw",
-      "sourceUrl": "https://www.youtube.com/watch?v=T7zVU3dbMgw"
+      "sourceUrl": "https://www.youtube.com/watch?v=T7zVU3dbMgw",
+      "description": "In this episode, we discuss combinations and how this process can cut through big numbers and give us practical answers."
     },
     {
       "number": 8,
       "title": "Basic Probability",
       "videoId": "GoN_Y12L2yE",
-      "sourceUrl": "https://www.youtube.com/watch?v=GoN_Y12L2yE"
+      "sourceUrl": "https://www.youtube.com/watch?v=GoN_Y12L2yE",
+      "description": "Explore mathematical probability and methods for describing how likely events are to occur."
     },
     {
       "number": 9,
       "title": "Probability Rules",
       "videoId": "ZRtk8qyxgP8",
-      "sourceUrl": "https://www.youtube.com/watch?v=ZRtk8qyxgP8"
+      "sourceUrl": "https://www.youtube.com/watch?v=ZRtk8qyxgP8",
+      "description": "In this episode, we discuss rules that will help us find the probability of things happening when we combine events."
     },
     {
       "number": 10,
       "title": "Dependent and Independent Probabilities",
       "videoId": "k0HX5tx5hHI",
-      "sourceUrl": "https://www.youtube.com/watch?v=k0HX5tx5hHI"
+      "sourceUrl": "https://www.youtube.com/watch?v=k0HX5tx5hHI",
+      "description": "In this episode, we discuss independent, dependent, and conditional probabilities and all the ways outcomes can be influenced by the relationship between events!"
     },
     {
       "number": 11,
       "title": "Adjusting Your Expectations",
       "videoId": "hS0zpwQxEho",
-      "sourceUrl": "https://www.youtube.com/watch?v=hS0zpwQxEho"
+      "sourceUrl": "https://www.youtube.com/watch?v=hS0zpwQxEho",
+      "description": "Use expected value to compare possible outcomes and understand long-run expectations when making choices."
     },
     {
       "number": 12,
       "title": "Data Visualization",
       "videoId": "NOmvFSvSsoQ",
-      "sourceUrl": "https://www.youtube.com/watch?v=NOmvFSvSsoQ"
+      "sourceUrl": "https://www.youtube.com/watch?v=NOmvFSvSsoQ",
+      "description": "In this episode, we discuss how we can get the deeper meaning behind data by visualizing the information we have available to us."
     },
     {
       "number": 13,
       "title": "Measure of Central Tendency",
       "videoId": "MF6ij7tckI0",
-      "sourceUrl": "https://www.youtube.com/watch?v=MF6ij7tckI0"
+      "sourceUrl": "https://www.youtube.com/watch?v=MF6ij7tckI0",
+      "description": "Use measures of central tendency to interpret large datasets and uncover deeper insights."
     },
     {
       "number": 14,
       "title": "Measures of Dispersion",
       "videoId": "mLu3LqEyqdU",
-      "sourceUrl": "https://www.youtube.com/watch?v=mLu3LqEyqdU"
+      "sourceUrl": "https://www.youtube.com/watch?v=mLu3LqEyqdU",
+      "description": "In this episode, we discuss measures of dispersion and how this tool can give us more insight into our sets of data."
     },
     {
       "number": 15,
       "title": "Theory Theater",
       "videoId": "zUnyPc5vpqU",
-      "sourceUrl": "https://www.youtube.com/watch?v=zUnyPc5vpqU"
+      "sourceUrl": "https://www.youtube.com/watch?v=zUnyPc5vpqU",
+      "description": "Explore standard normal distributions and how they connect statistical data with probability."
     },
     {
       "number": 16,
       "title": "Not-so Normal: Non-Standard Normal Distributions",
       "videoId": "WNKNb0poOqs",
-      "sourceUrl": "https://www.youtube.com/watch?v=WNKNb0poOqs"
+      "sourceUrl": "https://www.youtube.com/watch?v=WNKNb0poOqs",
+      "description": "In this episode, we discuss Non-Standard Normal Distributions and how we can lean on simpler concepts we already understand to solve more unusual ones."
     },
     {
       "number": 17,
       "title": "What do I Owe? - Calculating Interest in Finance",
       "videoId": "MsP2cThksio",
-      "sourceUrl": "https://www.youtube.com/watch?v=MsP2cThksio"
+      "sourceUrl": "https://www.youtube.com/watch?v=MsP2cThksio",
+      "description": "In this episode, we dive into the world of finance and discuss interest and its effect on each of our financial decisions."
     },
     {
       "number": 18,
       "title": "How Money Reproduces: Compound Interest",
       "videoId": "eObdtFOCBBk",
-      "sourceUrl": "https://www.youtube.com/watch?v=eObdtFOCBBk"
+      "sourceUrl": "https://www.youtube.com/watch?v=eObdtFOCBBk",
+      "description": "Explore compound interest and how it affects borrowing, saving, and investing."
     },
     {
       "number": 19,
       "title": "Compound Interest on Different Timescales",
       "videoId": "6ezGO0kN6yM",
-      "sourceUrl": "https://www.youtube.com/watch?v=6ezGO0kN6yM"
+      "sourceUrl": "https://www.youtube.com/watch?v=6ezGO0kN6yM",
+      "description": "In this episode, we discuss compound interest and the ways in which time affects it."
     },
     {
       "number": 20,
       "title": "How to Save Money with Annuities",
       "videoId": "Hqrcidm7sQs",
-      "sourceUrl": "https://www.youtube.com/watch?v=Hqrcidm7sQs"
+      "sourceUrl": "https://www.youtube.com/watch?v=Hqrcidm7sQs",
+      "description": "Explore annuity savings, how regular contributions build value, and their role in planning for retirement."
     },
     {
       "number": 21,
       "title": "Amortized Loans",
       "videoId": "s2GvWyXVkE4",
-      "sourceUrl": "https://www.youtube.com/watch?v=s2GvWyXVkE4"
+      "sourceUrl": "https://www.youtube.com/watch?v=s2GvWyXVkE4",
+      "description": "In this episode, we discuss how amortized loans work and the extra costs that come with it through interest."
     },
     {
       "number": 22,
       "title": "Amortized Loans, Down Payments, and Amortization Schedules",
       "videoId": "OH_FqX6y-XU",
-      "sourceUrl": "https://www.youtube.com/watch?v=OH_FqX6y-XU"
+      "sourceUrl": "https://www.youtube.com/watch?v=OH_FqX6y-XU",
+      "description": "Explore amortized loans, down payments, and repayment schedules as tools for tracking borrowing costs."
     },
     {
       "number": 23,
       "title": "Changing Units with Dimensional Analysis",
       "videoId": "xduM9WX88zg",
-      "sourceUrl": "https://www.youtube.com/watch?v=xduM9WX88zg"
+      "sourceUrl": "https://www.youtube.com/watch?v=xduM9WX88zg",
+      "description": "In this episode, we discuss Dimensional Analysis, a toolkit math provides for dealing with all the different choices of units and conversions."
     },
     {
       "number": 24,
       "title": "Finding Your Way Around Perimeter",
       "videoId": "sRW1LvzyVzk",
-      "sourceUrl": "https://www.youtube.com/watch?v=sRW1LvzyVzk"
+      "sourceUrl": "https://www.youtube.com/watch?v=sRW1LvzyVzk",
+      "description": "In this episode, we discuss perimeters and the tools that can help us find the distance around any shape."
     },
     {
       "number": 25,
       "title": "Tackling Complex Shapes",
       "videoId": "zwV9mMqlgzY",
-      "sourceUrl": "https://www.youtube.com/watch?v=zwV9mMqlgzY"
+      "sourceUrl": "https://www.youtube.com/watch?v=zwV9mMqlgzY",
+      "description": "Explore how calculating area helps us understand and plan for the space objects occupy."
     },
     {
       "number": 26,
       "title": "From Soda Cans to Spheres - Surface Areas",
       "videoId": "9vVZyiQtmNI",
-      "sourceUrl": "https://www.youtube.com/watch?v=9vVZyiQtmNI"
+      "sourceUrl": "https://www.youtube.com/watch?v=9vVZyiQtmNI",
+      "description": "Whether it’s painting, constructing, wrapping things or even just designing a soda can, understanding surface areas is essential to designing the world around us."
     },
     {
       "number": 27,
       "title": "Cutting the Carbon From Building Blocks - Volumes",
       "videoId": "QRSSlyJWm58",
-      "sourceUrl": "https://www.youtube.com/watch?v=QRSSlyJWm58"
+      "sourceUrl": "https://www.youtube.com/watch?v=QRSSlyJWm58",
+      "description": "Use volume to describe how much space three-dimensional objects occupy."
     },
     {
       "number": 28,
       "title": "All About Similar Triangles",
       "videoId": "EWhG4OV_MvY",
-      "sourceUrl": "https://www.youtube.com/watch?v=EWhG4OV_MvY"
+      "sourceUrl": "https://www.youtube.com/watch?v=EWhG4OV_MvY",
+      "description": "We can use triangles to describe spatial relationships all around us, from the way we lay out cities to redesigning attics!"
     },
     {
       "number": 29,
       "title": "Right Angled Triangles and Pythagoras",
       "videoId": "U0vjR6Fxesk",
-      "sourceUrl": "https://www.youtube.com/watch?v=U0vjR6Fxesk"
+      "sourceUrl": "https://www.youtube.com/watch?v=U0vjR6Fxesk",
+      "description": "Explore right triangles and their relationships to everyday spatial problems."
     },
     {
       "number": 30,
       "title": "Trigonometry",
       "videoId": "GltOrM94EtA",
-      "sourceUrl": "https://www.youtube.com/watch?v=GltOrM94EtA"
+      "sourceUrl": "https://www.youtube.com/watch?v=GltOrM94EtA",
+      "description": "In this episode, we discuss the world of trigonometry and the mathematical functions it uses to describe the relationship between sides and angles."
     }
   ]
 }

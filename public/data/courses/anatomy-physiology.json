@@ -5,283 +5,330 @@
       "number": 1,
       "title": "Introduction to Anatomy & Physiology",
       "videoId": "uBGl2BujkPQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-anatomy-physiology-crash-course-ap-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-anatomy-physiology-crash-course-ap-1/",
+      "description": "In this episode of Crash Course, Hank introduces you to the complex history and terminology of Anatomy & Physiology."
     },
     {
       "number": 2,
       "title": "Tissues, Part 1",
       "videoId": "i5tR3csCWYo",
-      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-1-crash-course-ap-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-1-crash-course-ap-2/",
+      "description": "Explore the history of histology and the varieties and roles of tissues in the human body."
     },
     {
       "number": 3,
       "title": "Tissues, Part 2 – Epithelial Tissue",
       "videoId": "lUe_RI_m-Vg",
-      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-2-epithelial-tissue-crash-course-ap-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-2-epithelial-tissue-crash-course-ap-3/",
+      "description": "Hank examines the structures and jobs of epithelial tissue."
     },
     {
       "number": 4,
       "title": "Tissues, Part 3 – Connective Tissues",
       "videoId": "D-SzmURNBH0",
-      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-3-connective-tissues-crash-course-ap-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-3-connective-tissues-crash-course-ap-4/",
+      "description": "In this episode of Crash Course Anatomy & Physiology, Hank Green continues our exploration of tissues, with an introduction to your connective tissues."
     },
     {
       "number": 5,
       "title": "Tissues, Part 4 – Types of Connective Tissues",
       "videoId": "Jvtb0a2RXaY",
-      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-4-types-of-connective-tissues-crash-course-ap-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/tissues-part-4-types-of-connective-tissues-crash-course-ap-5/",
+      "description": "Compare connective tissue types and learn why some are easier to damage than others."
     },
     {
       "number": 6,
       "title": "The Integumentary System, Part 1 – Skin Deep",
       "videoId": "Orumw-PyNjw",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-integumentary-system-part-1-skin-deep-crash-course-ap-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-integumentary-system-part-1-skin-deep-crash-course-ap-6/",
+      "description": "In this episode of Crash Course Anatomy & Physiology, Hank Green teaches you about your body's biggest organ - your skin."
     },
     {
       "number": 7,
       "title": "The Integumentary System, Part 2 – Skin Deeper",
       "videoId": "EN-x-zXXVwQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-integumentary-system-part-2-skin-deeper-crash-course-ap-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-integumentary-system-part-2-skin-deeper-crash-course-ap-7/",
+      "description": "Explore how the integumentary system protects the body and connects it with the surrounding world."
     },
     {
       "number": 8,
       "title": "The Nervous System, Part 1",
       "videoId": "qPix_X-9t7E",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-part-1-crash-course-ap-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-part-1-crash-course-ap-8/",
+      "description": "In this episode of Crash Course Anatomy & Physiology, Hank kicks off our look around MISSION CONTROL: the nervous system."
     },
     {
       "number": 9,
       "title": "The Nervous System, Part 2 – Action! Potential!",
       "videoId": "OZG8M_ldA1M",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-part-2-action-potential-crash-course-ap-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-part-2-action-potential-crash-course-ap-9/",
+      "description": "Explore how ion channels and electrical changes in neurons generate the action potentials that carry nervous-system signals."
     },
     {
       "number": 10,
       "title": "The Nervous System, Part 3 – Synapses!",
       "videoId": "VitFvNvRIIY",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-part-3-synapses-crash-course-ap-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-nervous-system-part-3-synapses-crash-course-ap-10/",
+      "description": "Hank Green continues our tour of the nervous system with a look at synapses and the stuff cocaine does to your body."
     },
     {
       "number": 11,
       "title": "Central Nervous System",
       "videoId": "q8NtmDrb_qo",
-      "sourceUrl": "https://thecrashcourse.com/courses/central-nervous-system-crash-course-ap-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/central-nervous-system-crash-course-ap-11/",
+      "description": "In this episode, we'll explore how your brain develops and how important location is for each of your brain's many functions."
     },
     {
       "number": 12,
       "title": "Peripheral Nervous System",
       "videoId": "QY9NTVh-Awo",
-      "sourceUrl": "https://thecrashcourse.com/courses/peripheral-nervous-system-crash-course-ap-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/peripheral-nervous-system-crash-course-ap-12/",
+      "description": "Examine peripheral nerves, sensory and motor divisions, reflex arcs, and how the brain interprets pain."
     },
     {
       "number": 13,
       "title": "Autonomic Nervous System",
       "videoId": "71pCilo8k4M",
-      "sourceUrl": "https://thecrashcourse.com/courses/autonomic-nervous-system-crash-course-ap-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/autonomic-nervous-system-crash-course-ap-13/",
+      "description": "In this episode of Crash Course Anatomy & Physiology, Hank Green takes you on a tour of your two-part autonomic nervous system."
     },
     {
       "number": 14,
       "title": "Sympathetic Nervous System",
       "videoId": "0IDgBlCHVsA",
-      "sourceUrl": "https://thecrashcourse.com/courses/sympathetic-nervous-system-crash-course-ap-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/sympathetic-nervous-system-crash-course-ap-14/",
+      "description": "Hank explains sympathetic nervous system functions and the terminology used to describe them."
     },
     {
       "number": 15,
       "title": "Parasympathetic Nervous System",
       "videoId": "qqU-VjqjczE",
-      "sourceUrl": "https://thecrashcourse.com/courses/parasympathetic-nervous-system-crash-course-ap-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/parasympathetic-nervous-system-crash-course-ap-15/",
+      "description": "Explore the parasympathetic nervous system’s role in resting and digestion, with mnemonic aids for learning its anatomy."
     },
     {
       "number": 16,
       "title": "Taste & Smell",
       "videoId": "mFm3yA1nslE",
-      "sourceUrl": "https://thecrashcourse.com/courses/taste-smell-crash-course-ap-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/taste-smell-crash-course-ap-16/",
+      "description": "Learn how chemoreceptors translate chemical stimuli into the senses of taste and smell."
     },
     {
       "number": 17,
       "title": "Hearing & Balance",
       "videoId": "Ie2j7GpC4JU",
-      "sourceUrl": "https://thecrashcourse.com/courses/hearing-balance-crash-course-ap-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/hearing-balance-crash-course-ap-17/",
+      "description": "Hank Green continues the journey through sensory systems with a look at how your sense of hearing works."
     },
     {
       "number": 18,
       "title": "Vision",
       "videoId": "o0DYP-u1rNM",
-      "sourceUrl": "https://thecrashcourse.com/courses/vision-crash-course-ap-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/vision-crash-course-ap-18/",
+      "description": "Explore eye anatomy, how vision works, and how optical illusions can trick visual perception."
     },
     {
       "number": 19,
       "title": "The Skeletal System",
       "videoId": "rDGqkMHPDqE",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-skeletal-system-crash-course-ap-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-skeletal-system-crash-course-ap-19/",
+      "description": "Hank explains the skeletal system and why astronauts Scott Kelly and Mikhail Kornienko are out in space studying it."
     },
     {
       "number": 20,
       "title": "Joints",
       "videoId": "DLxYDoN634c",
-      "sourceUrl": "https://thecrashcourse.com/courses/joints-crash-course-ap-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/joints-crash-course-ap-20/",
+      "description": "Compare the axial and appendicular skeleton and explore joint classifications and the movements joints enable."
     },
     {
       "number": 21,
       "title": "Muscles, Part 1 – Muscle Cells",
       "videoId": "Ktv-CaOt6UQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/muscles-part-1-muscle-cells-crash-course-ap-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/muscles-part-1-muscle-cells-crash-course-ap-21/",
+      "description": "We're kicking off our exploration of muscles with a look at the complex and important relationship between actin and myosin."
     },
     {
       "number": 22,
       "title": "Muscles, Part 2 – Organismal Level",
       "videoId": "I80Xx7pA9hQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/muscles-part-2-organismal-level-crash-course-ap-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/muscles-part-2-organismal-level-crash-course-ap-22/",
+      "description": "Hank calls in a friend to do his push-ups for him today to explain how skeletal muscles work together to create and reverse movements."
     },
     {
       "number": 23,
       "title": "Endocrine System, Part 1 – Glands & Hormones",
       "videoId": "eWHH9je2zG4",
-      "sourceUrl": "https://thecrashcourse.com/courses/endocrine-system-part-1-glands-hormones-crash-course-ap-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/endocrine-system-part-1-glands-hormones-crash-course-ap-23/",
+      "description": "Hank begins teaching you about your endocrine system by explaining how it uses glands to produce hormones."
     },
     {
       "number": 24,
       "title": "Endocrine System, Part 2 – Hormone Cascades",
       "videoId": "SCV_m91mN-Q",
-      "sourceUrl": "https://thecrashcourse.com/courses/endocrine-system-part-2-hormone-cascades-crash-course-ap-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/endocrine-system-part-2-hormone-cascades-crash-course-ap-24/",
+      "description": "In the second half of our look at the endocrine system, Hank discusses chemical homeostasis and hormone cascades."
     },
     {
       "number": 25,
       "title": "The Heart, Part 1 – Under Pressure",
       "videoId": "X9ZZ6tcxArI",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-heart-part-1-under-pressure-crash-course-ap-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-heart-part-1-under-pressure-crash-course-ap-25/",
+      "description": "Explore how the heart’s chambers and valves circulate blood and what systolic and diastolic blood pressure measurements mean."
     },
     {
       "number": 26,
       "title": "The Heart, Part 2 – Heart Throbs",
       "videoId": "FLBMwcvOaEo",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-heart-part-2-heart-throbs-crash-course-ap-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-heart-part-2-heart-throbs-crash-course-ap-26/",
+      "description": "Trace the heart’s electrical conduction system and learn how pacemaker cells and defibrillators affect its rhythm."
     },
     {
       "number": 27,
       "title": "Blood Vessels, Part 1 – Form and Function",
       "videoId": "v43ej5lCeBo",
-      "sourceUrl": "https://thecrashcourse.com/courses/blood-vessels-part-1-form-and-function-crash-course-ap-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/blood-vessels-part-1-form-and-function-crash-course-ap-27/",
+      "description": "In this episode of Crash Course Anatomy & Physiology, Hank explains your blood vessels and their basic three-layer structure."
     },
     {
       "number": 28,
       "title": "Blood Vessels, Part 2",
       "videoId": "ZVklPwGALpI",
-      "sourceUrl": "https://thecrashcourse.com/courses/blood-vessels-part-2-crash-course-ap-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/blood-vessels-part-2-crash-course-ap-28/",
+      "description": "Learn how blood pressure works, what elevated pressure means, and how it affects health."
     },
     {
       "number": 29,
       "title": "Blood, Part 1 – True Blood",
       "videoId": "HQWlcSp9Sls",
-      "sourceUrl": "https://thecrashcourse.com/courses/blood-part-1-true-blood-crash-course-ap-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/blood-part-1-true-blood-crash-course-ap-29/",
+      "description": "Explore blood cells, platelets, plasma, clotting, and how antigens determine blood type."
     },
     {
       "number": 30,
       "title": "Blood, Part 2 – There Will Be Blood",
       "videoId": "9-XoM2144tk",
-      "sourceUrl": "https://thecrashcourse.com/courses/blood-part-2-there-will-be-blood-crash-course-ap-30/"
+      "sourceUrl": "https://thecrashcourse.com/courses/blood-part-2-there-will-be-blood-crash-course-ap-30/",
+      "description": "Explore red blood cells and hemoglobin, then examine how blood doping works and why it is dangerous."
     },
     {
       "number": 31,
       "title": "Respiratory System, Part 1",
       "videoId": "bHZsvBdUC2I",
-      "sourceUrl": "https://thecrashcourse.com/courses/respiratory-system-part-1-crash-course-ap-31/"
+      "sourceUrl": "https://thecrashcourse.com/courses/respiratory-system-part-1-crash-course-ap-31/",
+      "description": "Explore respiratory anatomy and the diffusion and bulk flow processes that make breathing possible."
     },
     {
       "number": 32,
       "title": "Respiratory System, Part 2",
       "videoId": "Cqt4LjHnMEA",
-      "sourceUrl": "https://thecrashcourse.com/courses/respiratory-system-part-2-crash-course-ap-32/"
+      "sourceUrl": "https://thecrashcourse.com/courses/respiratory-system-part-2-crash-course-ap-32/",
+      "description": "In part 2 of our look at your respiratory system, Hank explains how your blood cells exchange oxygen and CO2 to maintain homeostasis."
     },
     {
       "number": 33,
       "title": "Digestive System, Part 1",
       "videoId": "yIoTRGfcMqM",
-      "sourceUrl": "https://thecrashcourse.com/courses/digestive-system-part-1-crash-course-ap-33/"
+      "sourceUrl": "https://thecrashcourse.com/courses/digestive-system-part-1-crash-course-ap-33/",
+      "description": "Follow food through the digestive system, from ingestion and breakdown to nutrient absorption and elimination."
     },
     {
       "number": 34,
       "title": "Digestive System, Part 2",
       "videoId": "pqgcEIaXGME",
-      "sourceUrl": "https://thecrashcourse.com/courses/digestive-system-part-2-crash-course-ap-34/"
+      "sourceUrl": "https://thecrashcourse.com/courses/digestive-system-part-2-crash-course-ap-34/",
+      "description": "Explore mechanical and chemical digestion in the mouth and stomach and the phases that regulate stomach activity."
     },
     {
       "number": 35,
       "title": "Digestive System, Part 3",
       "videoId": "jGme7BRkpuQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/digestive-system-part-3-crash-course-ap-35/"
+      "sourceUrl": "https://thecrashcourse.com/courses/digestive-system-part-3-crash-course-ap-35/",
+      "description": "Follow chemical digestion through the small intestine and examine contributions from the liver, gallbladder, pancreas, and large intestine."
     },
     {
       "number": 36,
       "title": "Metabolism & Nutrition, Part 1",
       "videoId": "fR3NxCR9z2U",
-      "sourceUrl": "https://thecrashcourse.com/courses/metabolism-nutrition-part-1-crash-course-ap-36/"
+      "sourceUrl": "https://thecrashcourse.com/courses/metabolism-nutrition-part-1-crash-course-ap-36/",
+      "description": "Explore essential nutrients and compare the energy demands of anabolic and catabolic reactions."
     },
     {
       "number": 37,
       "title": "Metabolism & Nutrition, Part 2",
       "videoId": "kb146Y1igTQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/metabolism-nutrition-part-2-crash-course-ap-37/"
+      "sourceUrl": "https://thecrashcourse.com/courses/metabolism-nutrition-part-2-crash-course-ap-37/",
+      "description": "Explore cellular respiration, ATP, glycogenesis, and insulin’s role in regulating blood sugar."
     },
     {
       "number": 38,
       "title": "Urinary System, Part 1",
       "videoId": "l128tW1H5a8",
-      "sourceUrl": "https://thecrashcourse.com/courses/urinary-system-part-1-crash-course-ap-38/"
+      "sourceUrl": "https://thecrashcourse.com/courses/urinary-system-part-1-crash-course-ap-38/",
+      "description": "Explore kidney anatomy and how nephrons filter waste, recover nutrients, and balance water and salts while producing urine."
     },
     {
       "number": 39,
       "title": "Urinary System, Part 2",
       "videoId": "DlqyyyvTI3k",
-      "sourceUrl": "https://thecrashcourse.com/courses/urinary-system-part-2-crash-course-ap-39/"
+      "sourceUrl": "https://thecrashcourse.com/courses/urinary-system-part-2-crash-course-ap-39/",
+      "description": "Explore how the urinary system regulates filtration, stores and excretes urine, and coordinates urination through the nervous system."
     },
     {
       "number": 40,
       "title": "Reproductive System, Part 1 – Female Reproductive System",
       "videoId": "RFDatCchpus",
-      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-1-female-reproductive-system-crash-course-ap-40/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-1-female-reproductive-system-crash-course-ap-40/",
+      "description": "Explore how reproductive hormones regulate egg development, ovulation, and the ovarian and menstrual cycles."
     },
     {
       "number": 41,
       "title": "Reproductive System, Part 2 – Male Reproductive System",
       "videoId": "-XQcnO4iX_U",
-      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-2-male-reproductive-system-crash-course-ap-41/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-2-male-reproductive-system-crash-course-ap-41/",
+      "description": "Hank also explains how sperm mature, and how they leave the body on a tide of glandular secretions during ejaculation."
     },
     {
       "number": 42,
       "title": "Reproductive System, Part 3 – Sex & Fertilization",
       "videoId": "SUdAEGXLO-8",
-      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-3-sex-fertilization-crash-course-ap-42/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-3-sex-fertilization-crash-course-ap-42/",
+      "description": "Explore the human sexual response, fertilization, and how contraception can prevent pregnancy."
     },
     {
       "number": 43,
       "title": "Reproductive System, Part 4 – Pregnancy & Development",
       "videoId": "BtsSbZ85yiQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-4-pregnancy-development-crash-course-ap-43/"
+      "sourceUrl": "https://thecrashcourse.com/courses/reproductive-system-part-4-pregnancy-development-crash-course-ap-43/",
+      "description": "Trace prenatal development from zygote to fetus, changes in the pregnant body, and the hormonal sequence leading to labor."
     },
     {
       "number": 44,
       "title": "Lymphatic System",
       "videoId": "I7orwMgTQ5I",
-      "sourceUrl": "https://www.youtube.com/watch?v=I7orwMgTQ5I"
+      "sourceUrl": "https://www.youtube.com/watch?v=I7orwMgTQ5I",
+      "description": "Hank describes the structure and function of your lymphatic system and how it supports your cardiovascular and immune systems."
     },
     {
       "number": 45,
       "title": "Immune System, Part 1",
       "videoId": "GIJK3dwCWCw",
-      "sourceUrl": "https://thecrashcourse.com/courses/immune-system-part-1-crash-course-ap-45/"
+      "sourceUrl": "https://thecrashcourse.com/courses/immune-system-part-1-crash-course-ap-45/",
+      "description": "Explore immune defenses, including physical barriers, phagocytes, natural killer cells, and inflammation."
     },
     {
       "number": 46,
       "title": "Immune System, Part 2",
       "videoId": "2DFN4IBZ3rI",
-      "sourceUrl": "https://thecrashcourse.com/courses/immune-system-part-2-crash-course-ap-46/"
+      "sourceUrl": "https://thecrashcourse.com/courses/immune-system-part-2-crash-course-ap-46/",
+      "description": "In the penultimate episode of Crash Course Anatomy & Physiology, Hank explains your adaptive immune system."
     },
     {
       "number": 47,
       "title": "Immune System, Part 3",
       "videoId": "rd2cf5hValM",
-      "sourceUrl": "https://thecrashcourse.com/courses/immune-system-part-3-crash-course-ap-47/"
+      "sourceUrl": "https://thecrashcourse.com/courses/immune-system-part-3-crash-course-ap-47/",
+      "description": "Explore how T cells coordinate the cellular immune response and what happens when immune defenses cause autoimmune disease."
     }
   ]
 }

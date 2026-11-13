@@ -5,91 +5,106 @@
       "number": 1,
       "title": "What is Botany?",
       "videoId": "2th5lAd-77A",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-botany-crash-course-botany-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-botany-crash-course-botany-1/",
+      "description": "In this episode of Crash Course Botany, we’ll find out what botanists study and how knowledge of plants can help you navigate everyday life."
     },
     {
       "number": 2,
       "title": "What Are Plants Made Of?",
       "videoId": "9AEzixu_xZk",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-are-plants-made-of-crash-course-botany-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-are-plants-made-of-crash-course-botany-2/",
+      "description": "Explore plant organs, including roots, stems, and leaves, and how they build a plant."
     },
     {
       "number": 3,
       "title": "Plant Cells & Hormones",
       "videoId": "y9BLCfcUcFg",
-      "sourceUrl": "https://thecrashcourse.com/courses/plant-cells-hormones-crash-course-botany-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/plant-cells-hormones-crash-course-botany-3/",
+      "description": "Compare plant and animal cells and explore the distinctive features of plant cells."
     },
     {
       "number": 4,
       "title": "What Do These Creepy Plant Mouths Do? (Plant Tissues)",
       "videoId": "pqosCR6J2qo",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-do-these-creepy-plant-mouths-do-plant-tissues-crash-course-botany-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-do-these-creepy-plant-mouths-do-plant-tissues-crash-course-botany-4/",
+      "description": "Look inside plants under a microscope to examine tissues and the structures that make up plant anatomy."
     },
     {
       "number": 5,
       "title": "Photosynthesis and Cellular Respiration",
       "videoId": "WzOrF5W4l3Q",
-      "sourceUrl": "https://thecrashcourse.com/courses/photosynthesis-and-cellular-respiration-crash-course-botany-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/photosynthesis-and-cellular-respiration-crash-course-botany-5/",
+      "description": "Explore photosynthesis and cellular respiration, their importance for life, and their potential contributions to a greener future."
     },
     {
       "number": 6,
       "title": "How Did Plants Evolve?",
       "videoId": "ciGqnGFWqBs",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-did-plants-evolve-crash-course-botany-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-did-plants-evolve-crash-course-botany-6/",
+      "description": "Trace the origins of plants, the forces shaping their evolution, and evidence of Earth before plants appeared."
     },
     {
       "number": 7,
       "title": "How Do We Categorize Plants?",
       "videoId": "rrLZPDGNr6w",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-categorize-plants-crash-course-botany-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-categorize-plants-crash-course-botany-7/",
+      "description": "In this episode of Crash Course Botany, we’ll explore how taxonomy and systematics help us understand what plants are and where they come from."
     },
     {
       "number": 8,
       "title": "Why These Plants Don’t Need Seeds (Moss & Ferns)",
       "videoId": "usKrCTtArNc",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-these-plants-dont-need-seeds-moss-ferns-crash-course-botany-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-these-plants-dont-need-seeds-moss-ferns-crash-course-botany-8/",
+      "description": "Explore bryophytes and seedless vascular plants, including mosses and ferns, and their place in plant evolution."
     },
     {
       "number": 9,
       "title": "Why Flowers Exist (Gymnosperms & Angiosperms)",
       "videoId": "tnIi9fzXPXk",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-flowers-exist-gymnosperms-angiosperms-crash-course-botany-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-flowers-exist-gymnosperms-angiosperms-crash-course-botany-9/",
+      "description": "You couldn’t go a day without interacting with gymnosperms and angiosperms, the two most prominent groups of plants on the planet."
     },
     {
       "number": 10,
       "title": "What Do Pea Plants Have To Do With Your Eye Color? (Mendelian Genetics)",
       "videoId": "Ox4bHA9fGGY",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-do-pea-plants-have-to-do-with-your-eye-color-mendelian-genetics-crash-course-botany-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-do-pea-plants-have-to-do-with-your-eye-color-mendelian-genetics-crash-course-botany-10/",
+      "description": "Discover how Mendel’s pea experiments established principles of inheritance and helped lay the foundations of genetics."
     },
     {
       "number": 11,
       "title": "GMOs are Nothing New (Plant Breeding & Gene Editing)",
       "videoId": "5ryUVuISxzg",
-      "sourceUrl": "https://thecrashcourse.com/courses/gmos-are-nothing-new-plant-breeding-gene-editing-crash-course-botany-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/gmos-are-nothing-new-plant-breeding-gene-editing-crash-course-botany-11/",
+      "description": "Trace plant genetic manipulation from selective breeding to gene editing, including questions about genetically modified crops."
     },
     {
       "number": 12,
       "title": "The Secret Social Lives of Plants (Population & Community Ecology)",
       "videoId": "b8avl_V8Jbo",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-secret-social-lives-of-plants-population-community-ecology-crash-course-botany-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-secret-social-lives-of-plants-population-community-ecology-crash-course-botany-12/",
+      "description": "Explore interactions among plants, populations, and communities and how ecology can guide conservation."
     },
     {
       "number": 13,
       "title": "How We ALL Get Our Energy (Plants & Ecosystems)",
       "videoId": "oZtUFJAJ3lU",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-we-all-get-our-energy-plants-ecosystems-crash-course-botany-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-we-all-get-our-energy-plants-ecosystems-crash-course-botany-13/",
+      "description": "Examine how plants form the foundations of ecosystems and support interactions between organisms and their environments."
     },
     {
       "number": 14,
       "title": "Can Planting Trees Fix Climate Change? (Plants & Biomes)",
       "videoId": "FlkHfAWadaM",
-      "sourceUrl": "https://thecrashcourse.com/courses/can-planting-trees-fix-climate-change-plants-biomes-crash-course-botany-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/can-planting-trees-fix-climate-change-plants-biomes-crash-course-botany-14/",
+      "description": "Explore plants’ ecological roles in Earth’s biomes and how climate change affects deserts, savannas, tropical forests, and other environments."
     },
     {
       "number": 15,
       "title": "The Future of Botany",
       "videoId": "eLt9itd3KhA",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-botany-crash-course-botany-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-future-of-botany-crash-course-botany-15/",
+      "description": "Explore unresolved plant mysteries, connections between Western science and traditional knowledge, and possibilities for gardening on the Moon."
     }
   ]
 }

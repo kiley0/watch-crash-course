@@ -5,301 +5,351 @@
       "number": 1,
       "title": "What is Geography?",
       "videoId": "93LLwiMjDko",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-geography-crash-course-geography-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-geography-crash-course-geography-1/",
+      "description": "Use the banana trade to uncover the broader histories and connections behind geographic facts."
     },
     {
       "number": 2,
       "title": "What is a Map?",
       "videoId": "iHEMOdRo5u8",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-map-crash-course-geography-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-map-crash-course-geography-2/",
+      "description": "Compare map types, projections, and the decisions cartographers make when representing the world."
     },
     {
       "number": 3,
       "title": "What is space and how do we study it?",
       "videoId": "mtq2PG67w4E",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-space-and-how-do-we-study-it-crash-course-geography-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-space-and-how-do-we-study-it-crash-course-geography-3/",
+      "description": "Explore different understandings of geographic space and tools for investigating it."
     },
     {
       "number": 4,
       "title": "What is Physical Geography?",
       "videoId": "vlVVaZhRAEA",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-physical-geography-crash-course-geography-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-physical-geography-crash-course-geography-4/",
+      "description": "Introduce environmental processes and the relationship between physical landscapes and human activity."
     },
     {
       "number": 5,
       "title": "How Does the Earth Move?",
       "videoId": "ljjLV-5Sa98",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-does-the-earth-move-crash-course-geography-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-the-earth-move-crash-course-geography-5/",
+      "description": "Connect Earth's origins, rotation, tilt, and orbit with patterns that shape its environments."
     },
     {
       "number": 6,
       "title": "What Does the Atmosphere Do?",
       "videoId": "11ZI9aqurfA",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-does-the-atmosphere-do-crash-course-geography-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-does-the-atmosphere-do-crash-course-geography-6/",
+      "description": "Explore atmospheric layers, incoming sunlight, and the protective and warming effects of the air around Earth."
     },
     {
       "number": 7,
       "title": "How Does Air Temperature Shape a Place?",
       "videoId": "OrhQmxK7s5A",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-does-air-temperature-shape-a-place-crash-course-geography-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-air-temperature-shape-a-place-crash-course-geography-7/",
+      "description": "Use Siberia to investigate how temperature shapes communities, economies, and landscapes."
     },
     {
       "number": 8,
       "title": "Where Does Wind Come From?",
       "videoId": "ao_-OjDQwfk",
-      "sourceUrl": "https://thecrashcourse.com/courses/where-does-wind-come-from-crash-course-geography-8/"
+      "sourceUrl": "https://thecrashcourse.com/courses/where-does-wind-come-from-crash-course-geography-8/",
+      "description": "Explore wind formation, global pressure patterns, and the deflection caused by Earth's rotation."
     },
     {
       "number": 9,
       "title": "How Do Oceans Circulate?",
       "videoId": "xa6SdvFA3w0",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-do-oceans-circulate-crash-course-geography-9/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-oceans-circulate-crash-course-geography-9/",
+      "description": "Follow discarded plastic to investigate ocean currents, circulation, and the movement of nutrients and goods."
     },
     {
       "number": 10,
       "title": "What is a Cloud?",
       "videoId": "EK_UOLsN72Q",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-cloud-crash-course-geography-10/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-cloud-crash-course-geography-10/",
+      "description": "Investigate cloud formation, rainfall, humidity, and what clouds reveal about weather patterns."
     },
     {
       "number": 11,
       "title": "How Can Rain Create Conflict? Precipitation and Water Use",
       "videoId": "68G1ikYRNxg",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-can-rain-create-conflict-precipitation-and-water-use-crash-course-geography-11/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-can-rain-create-conflict-precipitation-and-water-use-crash-course-geography-11/",
+      "description": "Connect rainfall and population with conflicts over water across the American West and Great Plains."
     },
     {
       "number": 12,
       "title": "What Are the Different Types of Cyclones?",
       "videoId": "06ke7hr1m_Q",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-are-the-different-types-of-cyclones-crash-course-geography-12/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-are-the-different-types-of-cyclones-crash-course-geography-12/",
+      "description": "Compare the formation and impacts of tropical cyclones and large midlatitude weather systems."
     },
     {
       "number": 13,
       "title": "How do we Classify Climates?",
       "videoId": "xiGhLGFkJjo",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-classify-climates-crash-course-geography-13/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-classify-climates-crash-course-geography-13/",
+      "description": "Follow the potato's history while exploring climate classification and human adaptation."
     },
     {
       "number": 14,
       "title": "What is Climate Change?",
       "videoId": "tMwFNMfjFuU",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-climate-change-crash-course-geography-14/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-climate-change-crash-course-geography-14/",
+      "description": "Compare natural and human influences on long-term weather patterns and recent global warming."
     },
     {
       "number": 15,
       "title": "What Are Ecosystems?",
       "videoId": "KQF9WdZrH_c",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-are-ecosystems-crash-course-geography-15/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-are-ecosystems-crash-course-geography-15/",
+      "description": "Explore ecosystem energy, nutrient cycling, and the patterns that distinguish major biomes."
     },
     {
       "number": 16,
       "title": "Population & Food",
       "videoId": "Hvc1P5edKTc",
-      "sourceUrl": "https://thecrashcourse.com/courses/population-food-crash-course-geography-16/"
+      "sourceUrl": "https://thecrashcourse.com/courses/population-food-crash-course-geography-16/",
+      "description": "Connect food chains, consumption patterns, population growth, and Earth's capacity to support people."
     },
     {
       "number": 17,
       "title": "What is Soil (and Why is it Important)?",
       "videoId": "udseIcrUxvA",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-soil-and-why-is-it-important-crash-course-geography-17/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-soil-and-why-is-it-important-crash-course-geography-17/",
+      "description": "Explore soil ingredients, layers, and environmental differences that support ecosystems and agriculture."
     },
     {
       "number": 18,
       "title": "What Are Rocks and How Do They Form?",
       "videoId": "7Bxw4kkeHJ8",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-are-rocks-and-how-do-they-form-crash-course-geography-18/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-are-rocks-and-how-do-they-form-crash-course-geography-18/",
+      "description": "Follow granite through the rock cycle to uncover geological stories spanning millions of years."
     },
     {
       "number": 19,
       "title": "The Plate Tectonics Revolution",
       "videoId": "7CPv0NSIG2M",
-      "sourceUrl": "https://thecrashcourse.com/courses/the-plate-tectonics-revolution-crash-course-geography-19/"
+      "sourceUrl": "https://thecrashcourse.com/courses/the-plate-tectonics-revolution-crash-course-geography-19/",
+      "description": "Trace the evidence and international scientific work behind the theory of moving plates."
     },
     {
       "number": 20,
       "title": "How Does the Earth Create Different Landforms?",
       "videoId": "1gMU7zfDqfg",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-does-the-earth-create-different-landforms-crash-course-geography-20/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-the-earth-create-different-landforms-crash-course-geography-20/",
+      "description": "Explore how changing landforms influence settlement, cultural meaning, and people's sense of place."
     },
     {
       "number": 21,
       "title": "What are Volcanoes?",
       "videoId": "cnKoTlUaqAs",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-are-volcanoes-crash-course-geography-21/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-are-volcanoes-crash-course-geography-21/",
+      "description": "Compare volcanic types and patterns of eruptions around the world."
     },
     {
       "number": 22,
       "title": "What is Weathering?",
       "videoId": "pmF41T52nJs",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-weathering-crash-course-geography-22/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-weathering-crash-course-geography-22/",
+      "description": "Distinguish mechanical, biological, and chemical processes that break rock into sediment."
     },
     {
       "number": 23,
       "title": "How Rivers Shape the Landscape",
       "videoId": "CDEj62HGNkk",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-rivers-shape-the-landscape-crash-course-geography-23/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-rivers-shape-the-landscape-crash-course-geography-23/",
+      "description": "Follow the Zambezi to examine river features, changing channels, waterfalls, and deltas."
     },
     {
       "number": 24,
       "title": "Why Does Jakarta Flood So Easily?",
       "videoId": "HDvS2rQZXMc",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-does-jakarta-flood-so-easily-crash-course-geography-24/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-does-jakarta-flood-so-easily-crash-course-geography-24/",
+      "description": "Investigate Jakarta's flooding and the protective and filtering roles of mangroves and wetlands."
     },
     {
       "number": 25,
       "title": "Groundwater and the Israeli-Palestinian Conflict",
       "videoId": "Hzntl-YJe04",
-      "sourceUrl": "https://thecrashcourse.com/courses/groundwater-and-the-israeli-palestinian-conflict-crash-course-geography-25/"
+      "sourceUrl": "https://thecrashcourse.com/courses/groundwater-and-the-israeli-palestinian-conflict-crash-course-geography-25/",
+      "description": "Explore how groundwater access and political boundaries complicate relations between Israelis and Palestinians."
     },
     {
       "number": 26,
       "title": "What are Glaciers?",
       "videoId": "mkt-0ZuTKXU",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-are-glaciers-crash-course-geography-26/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-are-glaciers-crash-course-geography-26/",
+      "description": "Investigate glaciers as landscape-shaping forces and records of changing climates."
     },
     {
       "number": 27,
       "title": "Natural Hazards",
       "videoId": "-FBq5lE1Kz0",
-      "sourceUrl": "https://thecrashcourse.com/courses/natural-hazards-crash-course-geography-27/"
+      "sourceUrl": "https://thecrashcourse.com/courses/natural-hazards-crash-course-geography-27/",
+      "description": "Distinguish physical hazards from human disasters and examine how geographers assess their impacts."
     },
     {
       "number": 28,
       "title": "What is Human Geography?",
       "videoId": "4y2nndDs8m4",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-human-geography-crash-course-geography-28/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-human-geography-crash-course-geography-28/",
+      "description": "Explore human-environment relationships through place names, political power, and changing perceptions of space."
     },
     {
       "number": 29,
       "title": "Race, Ethnicity, and the Cultural Landscape",
       "videoId": "lVGJxaogu5A",
-      "sourceUrl": "https://thecrashcourse.com/courses/race-ethnicity-and-the-cultural-landscape-crash-course-geography-29/"
+      "sourceUrl": "https://thecrashcourse.com/courses/race-ethnicity-and-the-cultural-landscape-crash-course-geography-29/",
+      "description": "Investigate cultural landscapes and the relationships among ethnicity, racial categories, and power."
     },
     {
       "number": 30,
       "title": "How Does Language Move?",
       "videoId": "QJmF8E_UQUQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-does-language-move-crash-course-geography-30/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-language-move-crash-course-geography-30/",
+      "description": "Explore language as an identity marker and a way that cultural traits travel."
     },
     {
       "number": 31,
       "title": "How Did Religion Spread Along the Silk Road?",
       "videoId": "4SWe3bFYcOA",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-did-religion-spread-along-the-silk-road-crash-course-geography-31/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-did-religion-spread-along-the-silk-road-crash-course-geography-31/",
+      "description": "Follow religious beliefs along the Silk Roads to examine how trade routes spread ideas."
     },
     {
       "number": 32,
       "title": "Where and Why Do People Move?",
       "videoId": "5Z55k7CqZ0c",
-      "sourceUrl": "https://thecrashcourse.com/courses/where-and-why-do-people-move-crash-course-geography-32/"
+      "sourceUrl": "https://thecrashcourse.com/courses/where-and-why-do-people-move-crash-course-geography-32/",
+      "description": "Use the Indian diaspora to compare voluntary and forced movement and its wider geographic effects."
     },
     {
       "number": 33,
       "title": "How Populations Grow and Change",
       "videoId": "JpAiBg0hrfQ",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-populations-grow-and-change-crash-course-geography-33/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-populations-grow-and-change-crash-course-geography-33/",
+      "description": "Explore population change, resource limits, and competing accounts of how societies support growing numbers."
     },
     {
       "number": 34,
       "title": "How Does Disease Move?",
       "videoId": "DaHTOFphlMY",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-does-disease-move-crash-course-geography-34/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-disease-move-crash-course-geography-34/",
+      "description": "Learn how medical geographers track illness and environmental exposures across landscapes."
     },
     {
       "number": 35,
       "title": "Tyranny of the Map",
       "videoId": "xDi-Lo0xOr8",
-      "sourceUrl": "https://thecrashcourse.com/courses/tyranny-of-the-map-crash-course-geography-35/"
+      "sourceUrl": "https://thecrashcourse.com/courses/tyranny-of-the-map-crash-course-geography-35/",
+      "description": "Examine how imposed boundaries can conflict with communities and produce lasting political tensions."
     },
     {
       "number": 36,
       "title": "What Holds a Country Together or Tears it Apart?",
       "videoId": "RwWy30m4G2c",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-holds-a-country-together-or-tears-it-apart-crash-course-geography-36/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-holds-a-country-together-or-tears-it-apart-crash-course-geography-36/",
+      "description": "Compare Latin American examples to explore forces that unite countries or pull them apart."
     },
     {
       "number": 37,
       "title": "What are the Patterns of Border Conflicts?",
       "videoId": "CgaZGbzFK1s",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-are-the-patterns-of-border-conflicts-crash-course-geography-37/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-are-the-patterns-of-border-conflicts-crash-course-geography-37/",
+      "description": "Read changing borders and territorial shapes as evidence of conflict and shifting power."
     },
     {
       "number": 38,
       "title": "Capitalism, Communism, & Political Economies",
       "videoId": "X2ZIDALAkXo",
-      "sourceUrl": "https://thecrashcourse.com/courses/capitalism-communism-political-economies-crash-course-geography-38/"
+      "sourceUrl": "https://thecrashcourse.com/courses/capitalism-communism-political-economies-crash-course-geography-38/",
+      "description": "Trace Bulgaria and Germany to investigate how political systems shape economic outcomes."
     },
     {
       "number": 39,
       "title": "Colonialism",
       "videoId": "RzHbL0ByeLY",
-      "sourceUrl": "https://thecrashcourse.com/courses/colonialism-crash-course-geography-39/"
+      "sourceUrl": "https://thecrashcourse.com/courses/colonialism-crash-course-geography-39/",
+      "description": "Explore lasting effects of colonial domination and the power to shape cultural narratives."
     },
     {
       "number": 40,
       "title": "What is a “Developed” Country?",
       "videoId": "gzYzmbQYTI4",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-developed-country-crash-course-geography-40/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-a-developed-country-crash-course-geography-40/",
+      "description": "Question wealth-centered definitions of development and consider sustainability, history, and well-being."
     },
     {
       "number": 41,
       "title": "Agribusiness, GMOs, and their Role in Development",
       "videoId": "VJEpCjD14hw",
-      "sourceUrl": "https://thecrashcourse.com/courses/agribusiness-gmos-and-their-role-in-development-crash-course-geography-41/"
+      "sourceUrl": "https://thecrashcourse.com/courses/agribusiness-gmos-and-their-role-in-development-crash-course-geography-41/",
+      "description": "Investigate genetically modified cotton and its relationship with India's agricultural crisis."
     },
     {
       "number": 42,
       "title": "Why is There Uneven Access to Food?",
       "videoId": "dRd9CloivY8",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-is-there-uneven-access-to-food-crash-course-geography-42/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-is-there-uneven-access-to-food-crash-course-geography-42/",
+      "description": "Connect unequal food access with historical exchanges and changes in agricultural technology."
     },
     {
       "number": 43,
       "title": "How Do We Produce Food?",
       "videoId": "xx_Cu7Le3ZY",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-produce-food-crash-course-geography-43/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-do-we-produce-food-crash-course-geography-43/",
+      "description": "Compare subsistence, smaller-scale, and industrial farming through agricultural history in the Philippines."
     },
     {
       "number": 44,
       "title": "Mineral Extraction",
       "videoId": "wQhFQFeYdJU",
-      "sourceUrl": "https://thecrashcourse.com/courses/mineral-extraction-crash-course-geography-44/"
+      "sourceUrl": "https://thecrashcourse.com/courses/mineral-extraction-crash-course-geography-44/",
+      "description": "Use mineral extraction in the Democratic Republic of the Congo to examine interconnected geographic impacts."
     },
     {
       "number": 45,
       "title": "Why are People Moving to Cities?",
       "videoId": "ON4oIKza7bw",
-      "sourceUrl": "https://thecrashcourse.com/courses/why-are-people-moving-to-cities-crash-course-geography-45/"
+      "sourceUrl": "https://thecrashcourse.com/courses/why-are-people-moving-to-cities-crash-course-geography-45/",
+      "description": "Investigate migration toward cities and the historical structures that influence urban patterns."
     },
     {
       "number": 46,
       "title": "How are Cities Organized?",
       "videoId": "hDaW8KIeTNw",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-are-cities-organized-crash-course-geography-46/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-are-cities-organized-crash-course-geography-46/",
+      "description": "Compare models of urban organization and the historical development of districts and communities."
     },
     {
       "number": 47,
       "title": "What is Urban Planning?",
       "videoId": "iFPokf8mwPk",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-is-urban-planning-crash-course-geography-47/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-is-urban-planning-crash-course-geography-47/",
+      "description": "Explore how city planning combines economic, environmental, and social priorities in shaping people's lives."
     },
     {
       "number": 48,
       "title": "How did Detroit Become the Motor City? (Industrial Geography)",
       "videoId": "yhVU0mNm4VM",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-did-detroit-become-the-motor-city-industrial-geography-crash-course-geography-48/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-did-detroit-become-the-motor-city-industrial-geography-crash-course-geography-48/",
+      "description": "Trace the American automotive industry through transport networks, resource access, and industrial location."
     },
     {
       "number": 49,
       "title": "Sustainable Cities",
       "videoId": "ZMn-bCdThEg",
-      "sourceUrl": "https://thecrashcourse.com/courses/sustainable-cities-crash-course-geography-49/"
+      "sourceUrl": "https://thecrashcourse.com/courses/sustainable-cities-crash-course-geography-49/",
+      "description": "Explore environmental planning and how sustainable-city ambitions intersect with existing communities."
     },
     {
       "number": 50,
       "title": "Geographies of the Future",
       "videoId": "T_vLXgj2pvo",
-      "sourceUrl": "https://thecrashcourse.com/courses/geographies-of-the-future-crash-course-geography-50/"
+      "sourceUrl": "https://thecrashcourse.com/courses/geographies-of-the-future-crash-course-geography-50/",
+      "description": "Revisit space, place, and human-environment connections while considering digital worlds and future geography."
     }
   ]
 }

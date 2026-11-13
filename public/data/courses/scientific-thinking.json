@@ -5,43 +5,50 @@
       "number": 1,
       "title": "Introduction to Cognitive Bias",
       "videoId": "d2r7Bk1NlgU",
-      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-cognitive-bias-crash-course-scientific-thinking-1/"
+      "sourceUrl": "https://thecrashcourse.com/courses/introduction-to-cognitive-bias-crash-course-scientific-thinking-1/",
+      "description": "Recognize how biased thinking shapes perception and how scientific methods can challenge it."
     },
     {
       "number": 2,
       "title": "Statistical Thinking in Science",
       "videoId": "Lw4oMXTEAkw",
-      "sourceUrl": "https://thecrashcourse.com/courses/statistical-thinking-in-science-crash-course-scientific-thinking-2/"
+      "sourceUrl": "https://thecrashcourse.com/courses/statistical-thinking-in-science-crash-course-scientific-thinking-2/",
+      "description": "Use statistics to interpret everyday claims, assess uncertainty, and make better-informed judgments."
     },
     {
       "number": 3,
       "title": "How Does Science Really Work? The Myth of the Great Experiment",
       "videoId": "ba1YKP28RKY",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-does-science-really-work-the-myth-of-the-great-experiment-crash-course-scientific-thinking-3/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-does-science-really-work-the-myth-of-the-great-experiment-crash-course-scientific-thinking-3/",
+      "description": "Look beyond the lone-genius story to understand experiments, collaboration, and difficult study design."
     },
     {
       "number": 4,
       "title": "Peer Review and the Quest for Truth",
       "videoId": "qsgjKBvxnYA",
-      "sourceUrl": "https://thecrashcourse.com/courses/peer-review-and-the-quest-for-truth-crash-course-scientific-thinking-4/"
+      "sourceUrl": "https://thecrashcourse.com/courses/peer-review-and-the-quest-for-truth-crash-course-scientific-thinking-4/",
+      "description": "Explore peer review as a way for science to examine and correct its own claims."
     },
     {
       "number": 5,
       "title": "How Scientists Build Consensus",
       "videoId": "9wSAeV0xX0M",
-      "sourceUrl": "https://thecrashcourse.com/courses/how-scientists-build-consensus-crash-course-scientific-thinking-5/"
+      "sourceUrl": "https://thecrashcourse.com/courses/how-scientists-build-consensus-crash-course-scientific-thinking-5/",
+      "description": "Understand how researchers reach agreement while uncertainty remains within well-studied topics."
     },
     {
       "number": 6,
       "title": "Evaluating Sources & Fact Checking",
       "videoId": "Fm0MpfKIs5w",
-      "sourceUrl": "https://thecrashcourse.com/courses/evaluating-sources-fact-checking-crash-course-scientific-thinking-6/"
+      "sourceUrl": "https://thecrashcourse.com/courses/evaluating-sources-fact-checking-crash-course-scientific-thinking-6/",
+      "description": "Practice evaluating sources and checking scientific claims before accepting media coverage."
     },
     {
       "number": 7,
       "title": "What Happens When Science Clashes with the Public?",
       "videoId": "NaMcw8_10Yg",
-      "sourceUrl": "https://thecrashcourse.com/courses/what-happens-when-science-clashes-with-the-public-crash-course-scientific-thinking-7/"
+      "sourceUrl": "https://thecrashcourse.com/courses/what-happens-when-science-clashes-with-the-public-crash-course-scientific-thinking-7/",
+      "description": "Explore conflicts between research findings, public attitudes, personal values, and corporate interests."
     }
   ]
 }
