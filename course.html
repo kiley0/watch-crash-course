@@ -84,8 +84,9 @@
         <div class="course-book">
           <section
             class="episodes-section course-book-page course-contents"
-            aria-labelledby="contents-title"
-            x-show="pages.spread === 0"
+            :aria-labelledby="mobileLayout ? null : 'contents-title'"
+            :aria-label="mobileLayout ? 'Course progress' : null"
+            x-show="mobileLayout || pages.spread === 0"
           >
             <div class="section-heading">
               <div>
@@ -148,6 +149,15 @@
                   Nice work. There’s always something new to notice on a second reading.
                 </p>
               </div>
+              <div class="chapter-links" x-show="mobileLayout && hasCourseActivity">
+                <a
+                  class="chapter-watch"
+                  :href="currentEpisode.href"
+                  :aria-label="resumeLabel + ': ' + currentEpisode.title"
+                  ><span class="chapter-play-icon" aria-hidden="true">▶</span
+                  ><span x-text="resumeLabel">Pick up where you left off</span></a
+                >
+              </div>
               <div class="course-complete-action">
                 <button
                   type="button"
@@ -173,7 +183,7 @@
           <section
             class="course-book-page course-chapter course-chapter-left"
             aria-label="Previous page of episodes"
-            x-show="pages.spread > 0"
+            x-show="!mobileLayout && pages.spread > 0"
           >
             <p class="book-running-head">
               <span x-text="course.title"></span><span>CHAPTERS</span>
@@ -198,16 +208,23 @@
           </section>
           <section
             class="course-book-page course-chapter"
-            :aria-label="pages.spread === 0 ? 'Episodes at your bookmark' : 'Next page of episodes'"
+            :aria-label="mobileLayout ? 'All episodes' : pages.spread === 0 ? 'Episodes at your bookmark' : 'Next page of episodes'"
           >
             <p class="book-running-head">
               <span x-text="course.title"></span
-              ><span x-text="pages.spread === 0 ? 'YOUR BOOKMARK' : 'CHAPTERS'"></span>
+              ><span
+                x-text="mobileLayout ? 'ALL EPISODES' : pages.spread === 0 ? 'YOUR BOOKMARK' : 'CHAPTERS'"
+              ></span>
             </p>
-            <template x-for="episode in bookmarkEpisodes" :key="episode.videoId">
+            <template x-for="episode in chapterEpisodes" :key="episode.videoId">
               <article class="bookmark-episode">
                 <p class="chapter-number">Chapter <span x-text="episode.displayNumber"></span></p>
                 <h2 x-text="episode.title"></h2>
+                <p
+                  class="chapter-progress-status"
+                  x-show="mobileLayout && episode.status !== 'Not started'"
+                  x-text="episode.status"
+                ></p>
                 <div class="chapter-description" x-show="episode.description">
                   <p x-text="episode.description"></p>
                 </div>
@@ -221,7 +238,7 @@
                 </div>
               </article>
             </template>
-            <p class="end-of-course" x-show="bookmarkEpisodes.length === 0">End of this course.</p>
+            <p class="end-of-course" x-show="chapterEpisodes.length === 0">End of this course.</p>
             <p class="book-page-footer">
               <span x-text="collectionName"></span><span x-text="rightPageLabel"></span>
             </p>

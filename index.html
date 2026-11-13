@@ -50,52 +50,62 @@
         </div>
         <div class="curiosity-notebook">
           <div class="notebook-page notebook-intro">
-            <p class="notebook-running-head">WATCH CRASH COURSE <span>01 / ABOUT</span></p>
-            <h1 id="notebook-title">Knowledge weighs nothing,<br /><em>carry all you can.</em></h1>
-            <p class="notebook-citation">
-              — From the <a href="https://crashcoursecoin.com/">Crash Course Coin</a>
-            </p>
-            <p class="notebook-description">
-              Hey! Did you know there's an official Crash Course website? Check it out here:
-              <a href="https://thecrashcourse.com/">thecrashcourse.com</a>
-            </p>
-            <p class="notebook-description">
-              This is an unofficial, fan-made site. I made it so that I could track my progress as I
-              watch Crash Course videos. And for my kids, so they can track their progress and pick
-              up where they left off.
-            </p>
-            <p class="notebook-description">
-              And for you, if you want to track your progress. It's free, there's no user accounts,
-              everything is saved locally in your web browser only.
-            </p>
-            <a class="notebook-cta" href="#courses">
-              <span class="mini-bookshelf" aria-hidden="true"
-                ><span></span><span></span><span></span><span></span><span></span
-              ></span>
-              <span>Browse Courses</span>
-            </a>
-            <p class="notebook-maker">Made by a Nerdfighter who watches a lot of Crash Course.</p>
+            <p class="notebook-running-head">WATCH CRASH COURSE <span>01 / PREFACE</span></p>
+            <div class="notebook-frontispiece">
+              <p class="notebook-edition">A little library for a curious mind</p>
+              <h1 id="notebook-title">
+                Knowledge weighs nothing,<br /><em>carry all you can.</em>
+              </h1>
+              <p class="notebook-citation">
+                — From the <a href="https://crashcoursecoin.com/">Crash Course Coin</a>
+              </p>
+              <span class="notebook-ornament" aria-hidden="true">✳</span>
+            </div>
+            <div class="notebook-preface">
+              <h2>A note from the maker</h2>
+              <p class="notebook-description">
+                Hey! I made this little library so my kids and I could track our progress through
+                Crash Course and pick up where we left off. And for you, if you’d like to join us.
+              </p>
+              <p class="notebook-description">
+                It’s free, with no accounts. Your progress stays right here in your browser.
+              </p>
+              <p class="notebook-maker">Made by a Nerdfighter who watches a lot of Crash Course.</p>
+            </div>
+            <a class="notebook-cta" href="#courses"
+              >Browse courses <span aria-hidden="true">→</span></a
+            >
             <div class="notebook-page-footer">
               <span>No account. Free forever.</span><span aria-hidden="true">01</span>
             </div>
           </div>
           <div class="notebook-page notebook-discoveries">
             <p class="notebook-running-head">
-              <span
-                x-text="hasHeroCourses ? 'CONTINUE WATCHING & EXPLORE' : 'A FEW COURSES TO START WITH'"
-                >A FEW COURSES TO START WITH</span
+              <span x-text="hasHeroCourses ? 'YOUR BOOKMARK & BEYOND' : 'THE OPENING CHAPTER'"
+                >THE OPENING CHAPTER</span
               >
-              <span>02 / COURSES</span>
+              <span>02 / DISCOVER</span>
             </p>
+            <header class="notebook-chapter-heading">
+              <p
+                class="notebook-chapter-label"
+                x-text="hasHeroCourses ? 'Pick up the thread' : 'Begin anywhere'"
+              >
+                Begin anywhere
+              </p>
+              <h2 x-text="hasHeroCourses ? 'There’s more to discover.' : 'Let curiosity lead.'">
+                Let curiosity lead.
+              </h2>
+            </header>
             <div class="notebook-episode-entries">
               <template x-for="(course, index) in heroCourses" :key="course.id">
                 <article class="chapter-entry" :data-hero-slot="index + 1">
                   <p class="chapter-kicker">
                     Continue watching · <span x-text="course.title"></span>
                   </p>
-                  <h2 class="chapter-title">
+                  <h3 class="chapter-title">
                     <a :href="course.continueHref" x-text="course.nextEpisodeTitle"></a>
-                  </h2>
+                  </h3>
                   <p class="chapter-prose" x-text="course.description"></p>
                   <p class="chapter-progress" x-text="course.progressLabel"></p>
                   <a
@@ -113,11 +123,11 @@
                 :data-hero-slot="starterSlot('astronomy')"
               >
                 <p class="chapter-kicker">Explore · Astronomy</p>
-                <h2 class="chapter-title">
+                <h3 class="chapter-title">
                   <a href="./watch.html?course=astronomy&amp;video=0rHUDWjR5gg"
                     >Introduction to Astronomy</a
                   >
-                </h2>
+                </h3>
                 <figure class="chapter-figure">
                   <svg
                     class="orbit-sketch"
@@ -168,11 +178,11 @@
                 :data-hero-slot="starterSlot('philosophy')"
               >
                 <p class="chapter-kicker">Explore · Philosophy</p>
-                <h2 class="chapter-title">
+                <h3 class="chapter-title">
                   <a href="./watch.html?course=philosophy&amp;video=1A_CAkYt3GY"
                     >What is Philosophy?</a
                   >
-                </h2>
+                </h3>
                 <p class="chapter-prose">
                   Knowledge, reality, and how to live: philosophy begins by asking what we mean and
                   examining our reasons.
@@ -191,9 +201,9 @@
                 :data-hero-slot="starterSlot('botany')"
               >
                 <p class="chapter-kicker">Explore · Botany</p>
-                <h2 class="chapter-title">
+                <h3 class="chapter-title">
                   <a href="./watch.html?course=botany&amp;video=2th5lAd-77A">What is Botany?</a>
-                </h2>
+                </h3>
                 <figure class="chapter-figure">
                   <svg
                     class="plant-sketch"
@@ -233,7 +243,10 @@
           </div>
         </div>
         <div class="notebook-colophon">
-          <p>Unofficial &amp; fan-made. Not affiliated with or endorsed by Crash Course.</p>
+          <p>
+            Unofficial &amp; fan-made. Not affiliated with or endorsed by Crash Course. Visit the
+            official <a href="https://thecrashcourse.com/">Crash Course website</a>.
+          </p>
           <a href="https://github.com/kiley0/watch-crash-course">Source code on GitHub</a>
         </div>
       </section>

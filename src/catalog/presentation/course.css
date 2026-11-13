@@ -276,6 +276,14 @@
   font-size: 0.8rem;
   margin-bottom: 6px;
 }
+.bookmark-episode .chapter-progress-status {
+  margin-block-start: 10px;
+  color: var(--muted);
+  font:
+    italic 0.8rem/1.5 Georgia,
+    serif;
+}
+
 .bookmark-episode .chapter-description {
   margin-top: 10px;
 }
@@ -334,8 +342,19 @@
     border-inline-end: 0;
     border-bottom: 1px solid var(--line);
   }
-  .course-contents .episode-list {
-    max-block-size: 280px;
+  /* Read every chapter in order instead of turning spreads. */
+  .course-contents > :not(.contents-progress),
+  .course-book .page-turn,
+  .spread-status {
+    display: none;
+  }
+  .course-contents .contents-progress {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .course-book-page {
+    padding-inline: 24px;
   }
   .course-chapter {
     border-radius: 0 0 8px 5px;

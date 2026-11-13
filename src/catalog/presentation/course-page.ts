@@ -26,6 +26,8 @@ Alpine.data("coursePage", () => {
   let stopRefreshOnRestore = () => {};
   let turnController: AbortController | undefined;
   let destroyed = false;
+  const mobileMedia = window.matchMedia("(width < 650px)");
+  let stopLayoutListener = () => {};
   return {
     thought: chooseThoughtBubble(),
     get thoughtUrl(): string {
@@ -115,6 +117,7 @@ Alpine.data("coursePage", () => {
         ? `${this.summary.completed} of ${this.summary.total} episodes completed`
         : "";
     },
+    mobileLayout: mobileMedia.matches,
     spread: 0,
     turn: "",
     get bookmarkStart(): number {
@@ -132,11 +135,14 @@ Alpine.data("coursePage", () => {
     get bookmarkEpisodes(): EpisodeLink[] {
       return this.episodes.slice(...this.pages.right);
     },
+    get chapterEpisodes(): EpisodeLink[] {
+      return this.mobileLayout ? this.episodes : this.bookmarkEpisodes;
+    },
     get canTurnForward(): boolean {
       return this.pages.hasNext;
     },
     get rightPageLabel(): string {
-      return this.bookmarkEpisodes
+      return this.chapterEpisodes
         .map((episode) => episode.displayNumber)
         .filter((_, index, episodes) => index === 0 || index === episodes.length - 1)
         .join("–");
@@ -152,6 +158,7 @@ Alpine.data("coursePage", () => {
     async turnSpread(direction: "forward" | "backward") {
       if (
         destroyed ||
+        this.mobileLayout ||
         this.turn ||
         (direction === "forward" ? !this.canTurnForward : !this.pages.spread)
       )
@@ -205,6 +212,12 @@ Alpine.data("coursePage", () => {
         }
       );
     },
+    get resumeLabel(): string {
+      return this.courseComplete ? "Watch again" : "Pick up where you left off";
+    },
+    get hasCourseActivity(): boolean {
+      return (this.summary?.lastActivityAt ?? 0) > 0;
+    },
     get completionPercent(): number {
       return this.summary?.percent ?? 0;
     },
@@ -235,6 +248,12 @@ Alpine.data("coursePage", () => {
       this.query = "";
     },
     async init() {
+      const updateLayout = () => {
+        this.mobileLayout = mobileMedia.matches;
+        turnController?.abort();
+      };
+      mobileMedia.addEventListener("change", updateLayout);
+      stopLayoutListener = () => mobileMedia.removeEventListener("change", updateLayout);
       stopRefreshOnRestore = refreshOnRestore(() => this.refreshProgress());
       await this.load();
     },
@@ -242,6 +261,7 @@ Alpine.data("coursePage", () => {
       destroyed = true;
       turnController?.abort();
       stopRefreshOnRestore();
+      stopLayoutListener();
     },
     async refreshProgress() {
       if (!this.ready) return;

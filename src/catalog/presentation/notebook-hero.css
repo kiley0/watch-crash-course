@@ -1,4 +1,4 @@
-/* The landing page's open notebook; shared hero styles still serve Study Hall. */
+/* The landing page’s clothbound opening spread. */
 .notebook-hero {
   padding-block: 32px 18px;
 }
@@ -38,7 +38,7 @@
 }
 .notebook-page {
   min-inline-size: 0;
-  padding: 28px 38px 20px;
+  padding: 28px 42px 22px;
   display: flex;
   flex-direction: column;
   background-color: var(--notebook-paper);
@@ -58,91 +58,100 @@
 }
 .notebook-hero h1 {
   font:
-    normal clamp(2.7rem, 4.1vw, 3.9rem)/1.08 Georgia,
+    normal clamp(2.5rem, 1.2rem + 3vw, 3.65rem)/1.12 Georgia,
     "Times New Roman",
     serif;
-  letter-spacing: -0.055em;
-  margin-block: 38px 0;
+  letter-spacing: -0.045em;
+  margin-block: 22px 0;
+  text-wrap: balance;
 }
 .notebook-hero h1 em {
   color: var(--book-history-spine, #925333);
   font-weight: normal;
 }
+.notebook-frontispiece {
+  text-align: center;
+  padding-block: 38px 24px;
+}
+.notebook-edition {
+  color: var(--muted);
+  font:
+    italic 0.85rem/1.6 Georgia,
+    serif;
+}
+.notebook-ornament {
+  display: block;
+  margin-block-start: 24px;
+  color: var(--book-history-spine, #925333);
+  font:
+    1.5rem/1 Georgia,
+    serif;
+}
+.notebook-preface {
+  max-inline-size: 42ch;
+  margin-inline: auto;
+}
+.notebook-preface h2 {
+  font:
+    normal 1.3rem/1.3 Georgia,
+    serif;
+  text-align: center;
+  margin: 0 0 18px;
+}
+.notebook-chapter-heading {
+  padding-block: 28px 0;
+  text-align: center;
+}
+.notebook-chapter-label {
+  color: var(--book-history-spine, #925333);
+  font:
+    italic 0.9rem/1.5 Georgia,
+    serif;
+}
+.notebook-chapter-heading h2 {
+  font:
+    normal clamp(1.8rem, 1.2rem + 1.5vw, 2.5rem)/1.15 Georgia,
+    serif;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+  margin: 10px 0 0;
+}
+.notebook-chapter-heading::after {
+  content: "";
+  display: block;
+  inline-size: 52px;
+  block-size: 4px;
+  border-block: 1px solid var(--line);
+  margin: 20px auto 0;
+}
 .notebook-description {
   max-inline-size: 45ch;
-  margin-block: 25px 24px;
-  color: var(--muted);
-  font-size: 0.9rem;
+  margin-block: 14px 0;
+  color: var(--ink);
+  font:
+    0.95rem/1.75 Georgia,
+    serif;
+  text-wrap: pretty;
 }
 .notebook-cta {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 12px;
-  align-self: start;
-  padding-block: 12px;
+  gap: 18px;
+  align-self: center;
+  padding-block: 14px;
+  margin-block: 12px 22px;
+  min-block-size: 44px;
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
-}
-.mini-bookshelf {
-  display: flex;
-  align-items: end;
-  gap: 2px;
-  inline-size: 65px;
-  block-size: 34px;
-  padding-inline: 4px;
-  border-bottom: 3px solid var(--book-history-spine, #925333);
-  box-shadow: 0 2px 0 var(--line);
-  flex-shrink: 0;
-}
-.mini-bookshelf > span {
-  display: block;
-  inline-size: 9px;
-  block-size: 26px;
-  border: 1px solid var(--book-green-spine, #476343);
-  border-radius: 2px 2px 0 0;
-  background:
-    linear-gradient(
-      180deg,
-      transparent 12%,
-      #fff8 13% 16%,
-      transparent 17% 76%,
-      #fff8 77% 80%,
-      transparent 81%
-    ),
-    var(--theme-green, #c6d9b8);
-  box-shadow: inset 2px 0 0 #0002;
-}
-.mini-bookshelf > span:nth-child(2) {
-  block-size: 30px;
-  background-color: var(--theme-peach, #f2cfb8);
-  border-color: var(--book-history-spine, #925333);
-}
-.mini-bookshelf > span:nth-child(3) {
-  block-size: 24px;
-  background-color: var(--theme-purple, #dcd7ef);
-  border-color: var(--book-science-spine, #63528c);
-}
-.mini-bookshelf > span:nth-child(4) {
-  block-size: 28px;
-  background-color: var(--theme-gold, #f2dfa9);
-  border-color: var(--book-humanities-spine, #826226);
-}
-.mini-bookshelf > span:nth-child(5) {
-  block-size: 25px;
-  background-color: var(--theme-blue, #bfded7);
-  border-color: var(--book-math-spine, #35695c);
-  transform: rotate(-9deg);
-  transform-origin: bottom left;
-  margin-inline-start: 3px;
 }
 .notebook-cta:hover,
 .notebook-cta:focus-visible {
   color: var(--book-history-spine, #925333);
 }
 .notebook-maker {
-  margin-block: 26px 30px;
+  margin-block: 18px 0;
   font:
     italic 0.85rem/1.6 Georgia,
     serif;
@@ -171,7 +180,7 @@
     display: none;
   }
 }
-@media (width < 720px) {
+@media (width < 900px) {
   .notebook-hero {
     padding-block-start: 22px;
   }
@@ -191,7 +200,7 @@
   }
   .notebook-hero h1 {
     margin-block-start: 28px;
-    font-size: clamp(2.5rem, 9vw, 3.6rem);
+    font-size: clamp(2.25rem, 1.25rem + 5vw, 3.6rem);
   }
   .notebook-description {
     max-inline-size: none;
@@ -219,10 +228,6 @@
   line-height: 1.5;
 }
 
-.notebook-description + .notebook-description {
-  margin-block-start: 0;
-}
-
 /* Cloth boards extend beyond the paper, with a shallow stack of page edges. */
 .curiosity-notebook::before {
   content: "";
@@ -248,7 +253,7 @@
   border-start-end-radius: 8px;
   border-end-end-radius: 8px;
 }
-@media (width >= 721px) {
+@media (width >= 900px) {
   .curiosity-notebook::after {
     content: "";
     position: absolute;
@@ -267,7 +272,7 @@
     pointer-events: none;
   }
 }
-@media (width < 721px) {
+@media (width < 900px) {
   .curiosity-notebook {
     margin-inline: 5px;
   }
@@ -300,16 +305,15 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 28px;
-  row-gap: 26px;
+  row-gap: 24px;
   margin-block: 28px 32px;
+  flex: 1;
 }
 .chapter-entry {
   min-inline-size: 0;
   border-block-start: 1px solid var(--line);
   padding-block-start: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  display: block;
 }
 .chapter-entry[data-hero-slot="1"] {
   grid-column: 1 / -1;
@@ -341,7 +345,7 @@
   text-decoration-thickness: 1px;
 }
 .chapter-entry[data-hero-slot="1"] .chapter-title {
-  font-size: clamp(1.7rem, 2.2vw, 2rem);
+  font-size: clamp(1.7rem, 1.2rem + 1vw, 2rem);
   margin-block: 10px 18px;
 }
 .chapter-prose {
@@ -374,7 +378,7 @@
   clear: both;
 }
 .chapter-figure {
-  align-self: center;
+  display: none;
   margin: 0 0 12px;
   color: var(--muted);
   text-align: center;
@@ -391,6 +395,7 @@
   margin-block-start: 3px;
 }
 .chapter-entry[data-hero-slot="1"] .chapter-figure {
+  display: block;
   float: right;
   inline-size: 40%;
   margin: 0 0 12px 18px;
@@ -403,8 +408,29 @@
     column-gap: 20px;
   }
 }
-@media (width < 380px) {
+
+@media (width < 900px) {
+  .notebook-frontispiece {
+    padding-block: 30px 22px;
+  }
+  .notebook-hero h1 {
+    margin-block-start: 20px;
+  }
+  .notebook-preface {
+    max-inline-size: 45ch;
+  }
+  .notebook-episode-entries {
+    column-gap: 22px;
+  }
+  .chapter-title {
+    font-size: 1.25rem;
+  }
+}
+@media (width < 480px) {
   .notebook-episode-entries {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .chapter-entry[data-hero-slot="1"] .chapter-prose {
+    font-size: 1rem;
   }
 }
