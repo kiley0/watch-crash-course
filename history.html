@@ -34,7 +34,7 @@
           <a href="./index.html#courses">Crash Course</a>
           <a href="./study-hall.html">Study Hall</a>
           <a href="./history.html" aria-current="page">Your history</a
-          ><a href="./settings.html">Settings</a><a href="./about.html">About the project</a>
+          ><a href="./settings.html">Settings</a><a href="./about.html">About</a>
         </nav>
         <a class="fan-badge" href="./about.html"
           ><strong>Unofficial · Fan-made</strong
@@ -45,11 +45,8 @@
 
     <main id="main" class="wrap history-main" x-data="historyPage">
       <header class="history-intro">
-        <span class="eyebrow">A FEW IDEAS YOU’VE CARRIED WITH YOU</span>
-        <h1>Your learning history.</h1>
-        <p>
-          A little trail of curiosity. Your latest saved place for each episode, most recent first.
-        </p>
+        <h1>Your learning history</h1>
+        <p x-text="viewingSummary" role="status">Calculating your viewing history…</p>
       </header>
       <noscript
         ><p class="notice">
@@ -71,67 +68,130 @@
           Try course details again
         </button>
       </div>
-      <div x-cloak x-show="metadataLoading" class="history-note" role="status">
-        Adding course names to your saved records…
+      <div class="history-layout" x-cloak>
+        <aside class="history-catalog" aria-labelledby="catalog-heading">
+          <div class="history-section-heading">
+            <h2 id="catalog-heading">All courses</h2>
+            <span
+              class="catalog-heading-count"
+              role="status"
+              x-show="!loading && !metadataLoading"
+              x-text="catalogResultLabel"
+            ></span>
+          </div>
+          <p class="result-count" role="status" x-show="loading || metadataLoading">
+            Opening the catalog…
+          </p>
+          <nav
+            class="catalog-contents"
+            aria-label="Complete course catalog"
+            tabindex="0"
+            x-show="catalogCourses.length > 0"
+          >
+            <template x-for="collection in catalogCollections" :key="collection.id">
+              <details class="catalog-collection" open>
+                <summary :aria-label="collection.title + ', ' + collection.progressLabel">
+                  <span x-text="collection.title"></span
+                  ><span class="catalog-count" x-text="collection.countLabel"></span>
+                </summary>
+                <template x-for="topic in collection.topics" :key="topic.title">
+                  <details class="catalog-topic" open>
+                    <summary :aria-label="topic.title + ', ' + topic.progressLabel">
+                      <span x-text="topic.title"></span
+                      ><span class="catalog-count" x-text="topic.countLabel"></span>
+                    </summary>
+                    <template x-for="course in topic.courses" :key="course.id">
+                      <details class="catalog-course">
+                        <summary :aria-label="course.title + ', ' + course.progressLabel">
+                          <span x-text="course.title"></span
+                          ><span class="catalog-count" x-text="course.countLabel"></span>
+                        </summary>
+                        <a class="catalog-course-link" :href="'./course.html?id=' + course.id"
+                          >Course overview
+                          <svg class="icon" aria-hidden="true" focusable="false">
+                            <use href="./icons.svg#arrow-up-right"></use></svg
+                        ></a>
+                        <p class="history-note" x-show="course.unavailable">
+                          Episodes couldn’t load. Use “Try course details again” above.
+                        </p>
+                        <ol class="catalog-episodes">
+                          <template x-for="episode in course.episodes" :key="episode.videoId"
+                            ><li>
+                              <a
+                                :href="episode.href"
+                                :class="episode.watched ? 'catalog-episode-watched' : ''"
+                                :aria-label="episode.displayNumber + '. ' + episode.title + (episode.watched ? ', ' + episode.activityLabel : '')"
+                                ><span class="catalog-episode-marker" aria-hidden="true"
+                                  ><svg
+                                    class="icon catalog-episode-check"
+                                    x-show="episode.watched"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                  >
+                                    <use href="./icons.svg#circle-check"></use></svg></span
+                                ><span
+                                  class="catalog-episode-number"
+                                  x-text="episode.displayNumber"
+                                ></span
+                                ><span x-text="episode.title"></span
+                              ></a></li
+                          ></template>
+                        </ol>
+                      </details>
+                    </template>
+                  </details>
+                </template>
+                <p
+                  class="history-note catalog-no-matches"
+                  x-show="!loading && !metadataLoading && collection.courses.length === 0"
+                >
+                  No courses in this collection.
+                </p>
+              </details>
+            </template>
+          </nav>
+        </aside>
+        <section class="history-timeline" aria-labelledby="timeline-heading">
+          <div class="history-section-heading">
+            <h2 id="timeline-heading">Recently played</h2>
+          </div>
+          <div class="empty-state" x-cloak x-show="empty">
+            <span aria-hidden="true">✦</span>
+            <h2 x-text="emptyHeading">A good place for a beginning.</h2>
+            <p x-text="emptyMessage"></p>
+            <a class="button button-dark" href="./index.html#courses">Explore courses</a>
+          </div>
+          <ol class="history-list">
+            <template x-for="entry in entries" :key="entry.videoId"
+              ><li class="history-entry">
+                <div>
+                  <span class="eyebrow" x-text="entry.context"></span>
+                  <h3><a :href="entry.href" x-text="entry.title"></a></h3>
+                  <p>
+                    Last activity <time :datetime="entry.isoDate" x-text="entry.dateLabel"></time> ·
+                    <span x-text="entry.positionLabel"></span>
+                  </p>
+                </div>
+                <a
+                  class="history-play"
+                  :href="entry.href"
+                  :aria-label="entry.linkLabel + ': ' + entry.title"
+                  ><svg class="icon" aria-hidden="true"><use href="./icons.svg#play"></use></svg
+                  ><span x-text="entry.linkLabel"></span
+                ></a></li
+            ></template>
+          </ol>
+          <details class="quiet-discovery history-note" x-cloak x-show="hasEntries">
+            <summary>About this history</summary>
+            <p>
+              This is your latest saved place for each video, including episodes you marked complete
+              yourself. Resetting an episode removes it from this list. Watching directly on YouTube
+              won’t update your history here.
+            </p>
+          </details>
+        </section>
       </div>
-      <search aria-label="Learning history" class="filter-bar" x-cloak x-show="hasEntries">
-        <label class="search-control"
-          ><span class="search-control-label">Search history</span
-          ><span class="search-field"
-            ><span aria-hidden="true"
-              ><svg class="icon" aria-hidden="true" focusable="false">
-                <use href="./icons.svg#search"></use></svg></span
-            ><input
-              type="search"
-              placeholder="Find an episode or course…"
-              x-model.debounce.250ms="query" /></span></label
-        ><label class="subject-field"
-          ><span>Status</span
-          ><select aria-label="Filter history by status" x-model="status">
-            <option value="all">All episodes</option>
-            <option value="in-progress">In progress</option>
-            <option value="completed">Completed</option>
-          </select></label
-        >
-      </search>
-      <p x-cloak x-show="hasEntries" class="result-count" role="status" x-text="resultLabel"></p>
-      <div class="empty-state" x-cloak x-show="empty">
-        <span aria-hidden="true">✦</span>
-        <h2 x-text="emptyHeading">A good place for a beginning.</h2>
-        <p x-text="emptyMessage"></p>
-        <a class="button button-dark" href="./index.html#courses">Explore courses</a>
-      </div>
-      <div class="empty-state" x-cloak x-show="noMatches">
-        <h2>No matching episodes.</h2>
-        <p>Try another subject, title, or video ID.</p>
-        <button type="button" class="button button-dark" @click="resetFilters">
-          Clear filters
-        </button>
-      </div>
-      <ol class="history-list">
-        <template x-for="entry in filteredEntries" :key="entry.videoId"
-          ><li class="history-entry">
-            <div>
-              <span class="eyebrow" x-text="entry.context"></span>
-              <h2 x-text="entry.title"></h2>
-              <p>
-                Last activity <time :datetime="entry.isoDate" x-text="entry.dateLabel"></time> ·
-                <span x-text="entry.positionLabel"></span>
-              </p>
-              <span class="tag" x-text="entry.status"></span>
-            </div>
-            <a class="button button-dark" :href="entry.href" x-text="entry.linkLabel"></a></li
-        ></template>
-      </ol>
-      <details class="quiet-discovery history-note" x-cloak x-show="hasEntries">
-        <summary>About this history</summary>
-        <p>
-          This is your latest saved place for each video, including episodes you marked complete
-          yourself. Resetting an episode removes it from this list. Watching directly on YouTube
-          won’t update your history here.
-        </p>
-      </details>
-      <p class="history-note">
+      <p class="history-note history-privacy">
         Your progress stays in this browser.
         <a href="./settings.html">Back up or restore your data</a> ·
         <a href="./about.html#privacy">About progress &amp; privacy</a>.

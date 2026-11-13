@@ -366,6 +366,8 @@
   border-radius: 5px 0 0 5px;
 }
 .page-turn {
+  display: grid;
+  place-items: center;
   position: absolute;
   z-index: 2;
   inset-block: 0;
@@ -452,4 +454,9 @@
   font:
     italic 0.9rem/1.6 Georgia,
     serif;
+}
+
+.page-turn .icon {
+  inline-size: 18px;
+  block-size: 18px;
 }

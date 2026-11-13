@@ -34,7 +34,7 @@
           <a href="./index.html#courses">Crash Course</a>
           <a href="./study-hall.html">Study Hall</a>
           <a href="./history.html">Your history</a>
-          <a href="./settings.html">Settings</a><a href="./about.html">About the project</a>
+          <a href="./settings.html">Settings</a><a href="./about.html">About</a>
         </nav>
         <a class="fan-badge" href="./about.html"
           ><strong>Unofficial · Fan-made</strong
@@ -233,7 +233,9 @@
             :aria-disabled="pages.spread === 0 || turn !== ''"
             aria-label="Turn to previous pages"
           >
-            <span aria-hidden="true">‹</span>
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="./icons.svg#arrow-left"></use>
+            </svg>
           </button>
           <button
             type="button"
@@ -242,7 +244,9 @@
             :aria-disabled="!canTurnForward || turn !== ''"
             aria-label="Turn to next pages"
           >
-            <span aria-hidden="true">›</span>
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="./icons.svg#arrow-right"></use>
+            </svg>
           </button>
         </div>
         <p class="spread-status" role="status" aria-live="polite" x-text="spreadLabel"></p>
