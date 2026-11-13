@@ -1,7 +1,10 @@
+import { readPlaybackSpeed, savePlaybackSpeed } from "./playback-speed";
 import { playerHost } from "../domain/player-mode";
 import type { PlayerMode } from "../domain/player-mode";
 
 interface YouTubePlayer {
+  setPlaybackRate(rate: number): void;
+  getAvailablePlaybackRates(): number[];
   getCurrentTime(): number;
   getDuration(): number;
   getVideoUrl(): string;
@@ -20,6 +23,7 @@ interface YouTubeApi {
       events: {
         onReady(event: { target: YouTubePlayer }): void;
         onStateChange(event: { data: number }): void;
+        onPlaybackRateChange(event: { data: number }): void;
         onError(event: { data: number }): void;
       };
     },
@@ -81,6 +85,8 @@ export function createYouTubePlayer(
   let ready = false;
   let disposed = false;
   let startAt = 0;
+  const preferredSpeed = readPlaybackSpeed();
+  let speedRestored = false;
   const isCurrentVideo = () => {
     try {
       return new URL(player?.getVideoUrl() ?? "").searchParams.get("v") === videoId;
@@ -121,6 +127,14 @@ export function createYouTubePlayer(
           },
           onStateChange(event) {
             if (disposed || !ready) return;
+            if (!speedRestored && isCurrentVideo() && (event.data === 5 || event.data === 1)) {
+              const rates = player!.getAvailablePlaybackRates();
+              // Rates can be unavailable at cue time; retry when playback starts.
+              if (rates.length) {
+                speedRestored = true;
+                if (rates.includes(preferredSpeed)) player!.setPlaybackRate(preferredSpeed);
+              }
+            }
             stopTimer();
             if (event.data === 1 || event.data === 3) onPlayingChange(true);
             if (event.data === 1) {
@@ -145,6 +159,10 @@ export function createYouTubePlayer(
               active = false;
               onPlayingChange(false);
             }
+          },
+          onPlaybackRateChange(event) {
+            if (!disposed && ready && speedRestored && isCurrentVideo())
+              savePlaybackSpeed(event.data);
           },
           onError(event) {
             if (disposed) return;

@@ -4,9 +4,12 @@ function playerFixture(mode?: "standard" | "privacy-enhanced") {
   let callbacks: {
     onReady: (event: { target: typeof player }) => void;
     onStateChange: (event: { data: number }) => void;
+    onPlaybackRateChange: (event: { data: number }) => void;
     onError: (event: { data: number }) => void;
   };
   const player = {
+    setPlaybackRate: vi.fn(),
+    getAvailablePlaybackRates: vi.fn(() => [0.5, 1, 1.5, 2]),
     getCurrentTime: vi.fn(() => 20),
     getDuration: vi.fn(() => 100),
     getVideoUrl: vi.fn(() => "https://www.youtube.com/watch?v=E7CwqNHn_Ns"),
@@ -53,6 +56,7 @@ function playerFixture(mode?: "standard" | "privacy-enhanced") {
     constructor,
     ready: () => callbacks.onReady({ target: player }),
     state: (data: number) => callbacks.onStateChange({ data }),
+    rate: (data: number) => callbacks.onPlaybackRateChange({ data }),
     fail: (data: number) => callbacks.onError({ data }),
   };
 }
@@ -244,3 +248,44 @@ it.each([
     view.session.destroy();
   },
 );
+
+it("restores speed after cueing, saves changes, and ignores late events", async () => {
+  const storage = { getItem: vi.fn(() => "1.5"), setItem: vi.fn() };
+  vi.stubGlobal("localStorage", storage);
+  const view = playerFixture();
+  await view.session.start(0);
+  view.ready();
+  view.rate(1); // Cueing can reset YouTube's speed; do not overwrite the preference.
+  expect(storage.setItem).not.toHaveBeenCalled();
+  view.state(5);
+  expect(view.player.setPlaybackRate).toHaveBeenCalledWith(1.5);
+  view.rate(2);
+  expect(storage.setItem).toHaveBeenLastCalledWith("watch-crash-course-playback-speed", "2");
+  view.session.destroy();
+  view.rate(1);
+  expect(storage.setItem).toHaveBeenCalledTimes(1);
+});
+
+it("retries restoring speed when rates are not yet available at cue time", async () => {
+  vi.stubGlobal("localStorage", { getItem: () => "1.5", setItem: vi.fn() });
+  const view = playerFixture();
+  view.player.getAvailablePlaybackRates.mockReturnValueOnce([]);
+  await view.session.start(0);
+  view.ready();
+  view.state(5);
+  expect(view.player.setPlaybackRate).not.toHaveBeenCalled();
+  view.state(1);
+  expect(view.player.setPlaybackRate).toHaveBeenCalledWith(1.5);
+  view.session.destroy();
+});
+it("keeps an unsupported saved speed for later episodes without forcing it on this video", async () => {
+  const storage = { getItem: () => "1.75", setItem: vi.fn() };
+  vi.stubGlobal("localStorage", storage);
+  const view = playerFixture();
+  await view.session.start(0);
+  view.ready();
+  view.state(5);
+  expect(view.player.setPlaybackRate).not.toHaveBeenCalled();
+  expect(storage.setItem).not.toHaveBeenCalled();
+  view.session.destroy();
+});
