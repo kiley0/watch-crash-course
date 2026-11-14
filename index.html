@@ -65,16 +65,16 @@
               <span class="notebook-ornament" aria-hidden="true">✳</span>
             </div>
             <div class="notebook-preface">
-              <h2>Hey there, glad you're here</h2>
               <p class="notebook-description">
                 Hi! I made this website because I love watching Crash Course, but I found it hard to
                 pick up where I left off and track my progress to see all the courses I've watched.
               </p>
               <p class="notebook-description">
-                This site is free to use, the code is open source, and it's privacy-first. There are
-                no user accounts or ads. All of your watch history and progress is saved locally in
-                your web browser. Basic page-view and video-start counts help me improve the site;
-                you can <a href="./settings.html">turn analytics off in Settings</a>.
+                This site is free to use, it's my gift back to the Crash Course community. It's
+                privacy-first; there are no servers, no database, no user accounts, no ads, no
+                cookies. The code is open source (you can check it out
+                <a href="https://github.com/kiley0/watch-crash-course">here</a>). Enjoy, and go
+                learn something!
               </p>
               <p class="notebook-maker">Made by a Nerdfighter who watches a lot of Crash Course.</p>
             </div>
@@ -101,7 +101,7 @@
                 >
                   <p class="chapter-kicker">
                     <span x-show="course.summary.lastActivityAt > 0">Continue watching · </span
-                    ><span x-text="course.title"></span>
+                    ><a :href="course.href" x-text="course.title"></a>
                   </p>
                   <h2 class="chapter-title">
                     <a :href="course.recommendationHref" x-text="course.nextEpisodeTitle"></a>
@@ -218,7 +218,6 @@
             <span class="eyebrow">THE COURSE LIBRARY</span>
             <h2>Thanks, Thought Bubble.</h2>
           </div>
-          <p>For your unironic enthusiasm.</p>
         </div>
         <search aria-label="Crash Course courses" class="filter-bar">
           <label class="search-control"
@@ -442,8 +441,7 @@
             <svg class="icon" aria-hidden="true" focusable="false">
               <use href="./icons.svg#external-link"></use></svg
           ></a>
-          and <a href="https://www.youtube.com/@studyhall">Study Hall</a>.<br />No accounts. Just
-          curiosity.
+          and <a href="https://www.youtube.com/@studyhall">Study Hall</a>.<br />
           <abbr title="Don’t forget to be awesome">DFTBA.</abbr>
         </p>
         <a href="./settings.html">Settings</a>

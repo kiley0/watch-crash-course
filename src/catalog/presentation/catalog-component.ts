@@ -1,5 +1,6 @@
 import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
 import { matchesQuery } from "../domain/search";
+import { fitHeroDescriptions } from "./hero-descriptions";
 import { findShelfSurprise } from "./shelf-surprises";
 import { coursesInCollection } from "../domain/course";
 import type { Collection, Course, CourseDetail } from "../domain/course";
@@ -31,6 +32,8 @@ interface CourseCard extends Course {
 }
 export function createCatalogPage(collection: Collection) {
   let stopRefreshOnRestore = () => {};
+  let stopHeroDescriptions = () => {};
+  let destroyed = false;
   let refreshVersion = 0;
   const details = new Map<string, CourseDetail>();
   return {
@@ -145,9 +148,16 @@ export function createCatalogPage(collection: Collection) {
     async init() {
       stopRefreshOnRestore = refreshOnRestore(() => this.refreshProgress());
       await this.load();
+      const book =
+        collection === "crash-course"
+          ? document.querySelector<HTMLElement>(".curiosity-notebook")
+          : null;
+      if (book && !destroyed) stopHeroDescriptions = fitHeroDescriptions(book);
     },
     destroy() {
+      destroyed = true;
       stopRefreshOnRestore();
+      stopHeroDescriptions();
       refreshVersion++;
     },
     async load() {
