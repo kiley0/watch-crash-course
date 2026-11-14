@@ -1,10 +1,9 @@
-import { bookSpread } from "./book-spread";
-import { captureBookPage, animateBookTurn } from "./book-turn";
 import { pageTitle } from "../../site/presentation/page-title";
 import Alpine from "@alpinejs/csp";
 import "../../site/styles.css";
 import "./chapter-link.css";
 import "./course.css";
+import { lastWatchedLabel } from "./last-watched-label";
 import { chooseThoughtBubble } from "./thought-bubbles";
 import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
 import { isCourseId, collectionLabel, libraryUrl } from "../domain/course";
@@ -12,22 +11,48 @@ import { matchesQuery } from "../domain/search";
 import { watchUrl } from "../../playback/presentation/watch-links";
 import { completeCourse } from "../../learning/application/complete-course";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
+import { recommendedEpisode } from "../../learning/domain/recommended-episode";
 import { summarizeCourse } from "../../learning/domain/course-summary";
 import type { CourseSummary } from "../../learning/domain/course-summary";
-import { progressStatus } from "../../learning/domain/progress";
+import type { VideoProgress } from "../../learning/domain/progress";
+import { timeLabel } from "../../learning/presentation/progress-labels";
+import { progressStatus, resumePosition } from "../../learning/domain/progress";
 import { refreshOnRestore } from "../../site/reload-on-restore";
 import type { Course, Episode } from "../domain/course";
 interface EpisodeLink extends Episode {
   href: string;
   displayNumber: string;
   status: string;
+  lastWatchRelativeDate: string;
+  lastWatchDate: string;
+  lastWatchDateTime: string;
+  watchedDate: string;
+  watchedDateTime: string;
+  resumeAt: string;
+}
+function episodeProgress(record: VideoProgress | null) {
+  const hasActivity = record && (record.completed || record.position > 0);
+  const date = hasActivity
+    ? new Intl.DateTimeFormat(undefined, {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      }).format(record.lastWatchedAt)
+    : "";
+  const dateTime = hasActivity ? new Date(record.lastWatchedAt).toISOString() : "";
+  const position = resumePosition(record);
+  return {
+    status: progressStatus(record),
+    resumeAt: position > 0 ? timeLabel(position) : "",
+    lastWatchRelativeDate: hasActivity ? lastWatchedLabel(record.lastWatchedAt) : "",
+    lastWatchDate: date,
+    lastWatchDateTime: dateTime,
+    watchedDate: record?.completed ? date : "",
+    watchedDateTime: record?.completed ? dateTime : "",
+  };
 }
 Alpine.data("coursePage", () => {
   let stopRefreshOnRestore = () => {};
-  let turnController: AbortController | undefined;
-  let destroyed = false;
-  const mobileMedia = window.matchMedia("(width < 650px)");
-  let stopLayoutListener = () => {};
   return {
     thought: chooseThoughtBubble(),
     get thoughtUrl(): string {
@@ -75,11 +100,15 @@ Alpine.data("coursePage", () => {
         );
         this.episodes = this.episodes.map((episode, index) => ({
           ...episode,
-          status: progressStatus(records[index] ?? null),
+          ...episodeProgress(records[index] ?? null),
         }));
         this.summary = summarizeCourse(
           this.episodes.map((episode) => episode.videoId),
           records,
+        );
+        this.recommendedVideoId = recommendedEpisode(
+          this.episodes.map((episode) => episode.videoId),
+          records.filter((record) => record !== null),
         );
         this.storageWarning = progressStore.warning;
         this.completionMessage = this.storageWarning
@@ -93,12 +122,18 @@ Alpine.data("coursePage", () => {
       }
       await Alpine.nextTick(() => document.getElementById("course-completion-message")?.focus());
     },
+    recommendedVideoId: null as string | null,
     summary: null as CourseSummary | null,
+    get hasFeaturedEpisode(): boolean {
+      return this.hasCourseActivity && this.recommendedVideoId !== null;
+    },
+    get featuredButtonLabel(): string {
+      return this.currentEpisode.resumeAt
+        ? `Resume at ${this.currentEpisode.resumeAt}`
+        : "Continue learning";
+    },
     get ready(): boolean {
       return !this.loading && !this.error;
-    },
-    get episodeLabel(): string {
-      return `${this.episodes.length} episodes`;
     },
     get reviewLabel(): string {
       if (!this.course.reviewedAt) return "";
@@ -114,93 +149,12 @@ Alpine.data("coursePage", () => {
     },
     get completionLabel(): string {
       return this.summary
-        ? `${this.summary.completed} of ${this.summary.total} episodes completed`
+        ? `${this.summary.completed} of ${this.summary.total} episodes watched`
         : "";
-    },
-    mobileLayout: mobileMedia.matches,
-    spread: 0,
-    turn: "",
-    get bookmarkStart(): number {
-      return Math.max(
-        0,
-        this.episodes.findIndex((episode) => episode.videoId === this.currentEpisode.videoId),
-      );
-    },
-    get pages() {
-      return bookSpread(this.episodes.length, this.bookmarkStart, this.spread);
-    },
-    get leftEpisodes(): EpisodeLink[] {
-      return this.episodes.slice(...this.pages.left);
-    },
-    get bookmarkEpisodes(): EpisodeLink[] {
-      return this.episodes.slice(...this.pages.right);
-    },
-    get chapterEpisodes(): EpisodeLink[] {
-      return this.mobileLayout ? this.episodes : this.bookmarkEpisodes;
-    },
-    get canTurnForward(): boolean {
-      return this.pages.hasNext;
-    },
-    get rightPageLabel(): string {
-      return this.chapterEpisodes
-        .map((episode) => episode.displayNumber)
-        .filter((_, index, episodes) => index === 0 || index === episodes.length - 1)
-        .join("–");
-    },
-    get spreadLabel(): string {
-      const visible = [...this.leftEpisodes, ...this.bookmarkEpisodes];
-      const first = visible[0]?.number;
-      const last = visible.at(-1)?.number;
-      if (first === undefined) return "Opening your course…";
-      const range = first === last ? String(first) : `${first}–${last}`;
-      return `${this.pages.spread ? (first === last ? "Episode" : "Episodes") : "Contents and episodes"} ${range}`;
-    },
-    async turnSpread(direction: "forward" | "backward") {
-      if (
-        destroyed ||
-        this.mobileLayout ||
-        this.turn ||
-        (direction === "forward" ? !this.canTurnForward : !this.pages.spread)
-      )
-        return;
-      const forward = direction === "forward";
-      const book = document.querySelector<HTMLElement>(".course-book");
-      const animate =
-        book &&
-        typeof book.animate === "function" &&
-        window.matchMedia("(min-width: 650px) and (prefers-reduced-motion: no-preference)").matches;
-      const leftSelector = this.pages.spread ? ".course-chapter-left" : ".course-contents";
-      const rightSelector = ".course-chapter:not(.course-chapter-left)";
-      const front = animate ? captureBookPage(book, forward ? rightSelector : leftSelector) : null;
-      const stationary = animate
-        ? captureBookPage(book, forward ? leftSelector : rightSelector)
-        : null;
-      const controller = new AbortController();
-      turnController = controller;
-      this.turn = direction;
-      try {
-        this.spread = this.pages.spread + (forward ? 1 : -1);
-        await Alpine.nextTick();
-        if (controller.signal.aborted) return;
-        const back = animate
-          ? captureBookPage(book, forward ? ".course-chapter-left" : rightSelector)
-          : null;
-        if (book && front && back)
-          await animateBookTurn(book, front, back, stationary, forward, controller.signal);
-      } finally {
-        this.turn = "";
-        turnController = undefined;
-      }
-    },
-    nextSpread() {
-      return this.turnSpread("forward");
-    },
-    previousSpread() {
-      return this.turnSpread("backward");
     },
     get currentEpisode(): EpisodeLink {
       return (
-        this.episodes.find((episode) => episode.videoId === this.summary?.continueVideoId) ??
+        this.episodes.find((episode) => episode.videoId === this.recommendedVideoId) ??
         this.episodes[0] ?? {
           number: 1,
           displayNumber: "01",
@@ -209,11 +163,14 @@ Alpine.data("coursePage", () => {
           sourceUrl: "",
           href: "",
           status: "Not started",
+          lastWatchRelativeDate: "",
+          lastWatchDate: "",
+          lastWatchDateTime: "",
+          watchedDate: "",
+          watchedDateTime: "",
+          resumeAt: "",
         }
       );
-    },
-    get resumeLabel(): string {
-      return this.courseComplete ? "Watch again" : "Pick up where you left off";
     },
     get hasCourseActivity(): boolean {
       return (this.summary?.lastActivityAt ?? 0) > 0;
@@ -235,7 +192,7 @@ Alpine.data("coursePage", () => {
     },
     get filteredEpisodes(): EpisodeLink[] {
       return this.episodes.filter((episode) =>
-        matchesQuery(this.query, episode.title, String(episode.number)),
+        matchesQuery(this.query, episode.title, episode.description ?? "", String(episode.number)),
       );
     },
     get empty(): boolean {
@@ -248,38 +205,28 @@ Alpine.data("coursePage", () => {
       this.query = "";
     },
     async init() {
-      const updateLayout = () => {
-        this.mobileLayout = mobileMedia.matches;
-        turnController?.abort();
-      };
-      mobileMedia.addEventListener("change", updateLayout);
-      stopLayoutListener = () => mobileMedia.removeEventListener("change", updateLayout);
       stopRefreshOnRestore = refreshOnRestore(() => this.refreshProgress());
       await this.load();
     },
     destroy() {
-      destroyed = true;
-      turnController?.abort();
       stopRefreshOnRestore();
-      stopLayoutListener();
     },
     async refreshProgress() {
       if (!this.ready) return;
-      const previousBookmark = this.summary?.continueVideoId;
       const records = await progressStore.refresh();
       const byId = new Map(records.map((record) => [record.videoId, record]));
       this.episodes = this.episodes.map((episode) => ({
         ...episode,
-        status: progressStatus(byId.get(episode.videoId) ?? null),
+        ...episodeProgress(byId.get(episode.videoId) ?? null),
       }));
       this.summary = summarizeCourse(
         this.episodes.map((episode) => episode.videoId),
         records,
       );
-      if (previousBookmark !== this.summary.continueVideoId) {
-        turnController?.abort();
-        this.spread = 0;
-      }
+      this.recommendedVideoId = recommendedEpisode(
+        this.episodes.map((episode) => episode.videoId),
+        records,
+      );
       this.storageWarning = progressStore.warning;
       this.completionMessage = "";
     },
@@ -302,7 +249,6 @@ Alpine.data("coursePage", () => {
         }
         const detail = await loadDetail(course);
         this.course = course;
-        this.spread = 0;
         const records = await Promise.all(
           detail.episodes.map((episode) => progressStore.load(episode.videoId)),
         );
@@ -314,8 +260,12 @@ Alpine.data("coursePage", () => {
           ...episode,
           displayNumber: String(episode.number).padStart(2, "0"),
           href: watchUrl(course.id, episode.videoId),
-          status: progressStatus(records[index] ?? null),
+          ...episodeProgress(records[index] ?? null),
         }));
+        this.recommendedVideoId = recommendedEpisode(
+          this.episodes.map((episode) => episode.videoId),
+          records.filter((record) => record !== null),
+        );
         this.storageWarning = progressStore.warning;
         document.title = pageTitle(course.title);
       } catch {

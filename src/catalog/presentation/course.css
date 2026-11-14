@@ -1,14 +1,131 @@
-.course-complete-action {
-  margin-top: 16px;
+@font-face {
+  font-family: "Kalam";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/kalam-latin-400.woff2") format("woff2");
 }
-.course-complete-action .text-button {
-  font-size: 0.75rem;
+@font-face {
+  font-family: "Kalam";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/kalam-latin-700.woff2") format("woff2");
+}
+
+.course-heading {
+  text-align: center;
+  padding-block: 24px 32px;
+}
+.course-heading h1 {
+  font:
+    normal clamp(2.8rem, 6vw, 4.8rem)/1.05 Georgia,
+    serif;
+  letter-spacing: -0.05em;
+  margin: 14px 0;
+  overflow-wrap: anywhere;
+}
+.course-heading > p {
+  color: var(--muted);
+  font:
+    italic 1rem/1.6 Georgia,
+    serif;
+}
+.course-heading .course-intro {
+  margin: 20px auto 0;
+  font-style: normal;
+  max-width: 680px;
+}
+.course-heading .course-progress {
+  margin: 24px auto;
+  text-align: start;
 }
 .course-complete-action p {
   font-size: 0.8125rem;
   color: var(--muted);
 }
-
+.course-episodes .section-heading {
+  align-items: center;
+  gap: 16px;
+}
+.course-episodes .episode-search {
+  max-width: 600px;
+}
+.episode-notecards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+.episode-notecards > li {
+  min-width: 0;
+  display: flex;
+}
+.episode-notecard {
+  flex: 1;
+  min-width: 0;
+  font-size-adjust: from-font;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  --card-inset: 28px;
+  padding: 0 var(--card-inset) 20px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background-color: var(--theme-surface, #fffdf8);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0 calc(1.8rem - 1px),
+    color-mix(in srgb, #58a6cf 24%, transparent) calc(1.8rem - 1px) 1.8rem
+  );
+  box-shadow: 0 3px 6px #0000000a;
+}
+.notecard-meta {
+  align-self: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 calc(-1 * var(--card-inset)) 20px;
+  padding: 20px var(--card-inset) 12px;
+  border-bottom: 1px solid color-mix(in srgb, #df777d 65%, transparent);
+  background: var(--theme-surface, #fffdf8);
+  color: var(--muted);
+  font:
+    0.9375rem/1.5 "Kalam",
+    "Segoe Print",
+    cursive;
+}
+.episode-notecard h3,
+.featured-episode h2 {
+  font:
+    700 clamp(1.5rem, 2.5vw, 2rem)/1.3 "Kalam",
+    "Segoe Print",
+    cursive;
+  letter-spacing: 0;
+  margin: 0 0 14px;
+  overflow-wrap: anywhere;
+}
+.notecard-description {
+  color: var(--muted);
+  font:
+    1.125rem/1.6 "Kalam",
+    "Segoe Print",
+    cursive;
+  margin: 0 0 20px;
+}
+.episode-notecard .chapter-watch {
+  margin-top: auto;
+  min-height: 44px;
+}
+.episode-notecard-current {
+  border-color: var(--theme-muted, #6b8759);
+}
+.course-colophon {
+  margin-block: 32px;
+}
 .thought-quote {
   margin: 20px 0 16px;
 }
@@ -27,291 +144,6 @@
   line-height: 1.6;
 }
 
-.course-book-heading {
-  text-align: center;
-  padding-block: 24px 32px;
-}
-.course-book-heading h1 {
-  font:
-    normal clamp(2.8rem, 6vw, 4.8rem)/1.05 Georgia,
-    serif;
-  letter-spacing: -0.05em;
-  margin: 14px 0;
-  overflow-wrap: anywhere;
-}
-.course-book-heading > p {
-  color: var(--muted);
-  font:
-    italic 1rem/1.6 Georgia,
-    serif;
-}
-.course-book {
-  --paper: var(--theme-surface, #fffdf8);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  position: relative;
-  isolation: isolate;
-  margin: 8px 9px 28px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-bottom: 5px double var(--line);
-  border-radius: 5px 8px 8px 5px;
-  box-shadow:
-    0 3px 0 var(--paper),
-    0 4px 0 var(--line),
-    0 7px 0 var(--paper),
-    0 8px 0 var(--line),
-    0 16px 25px -12px #0005;
-}
-.course-book::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: -7px -9px -14px;
-  border-radius: 9px 12px 12px 9px;
-  border: 1px solid #203e36;
-  background: repeating-linear-gradient(0deg, #ffffff09 0 1px, transparent 1px 3px), #35554a;
-}
-.course-book::after {
-  content: "";
-  position: absolute;
-  inset-block: 0;
-  inset-inline-start: calc(50% - 18px);
-  inline-size: 36px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #00000009 35%,
-    #00000020 50%,
-    #00000008 65%,
-    transparent
-  );
-  pointer-events: none;
-}
-.course-book-page {
-  min-inline-size: 0;
-  padding: 30px 38px 22px;
-  background-color: var(--paper);
-}
-.course-contents {
-  border-inline-end: 1px solid var(--line);
-  border-radius: 5px 0 0 5px;
-  background-image: linear-gradient(90deg, transparent 92%, #22363108);
-}
-.course-contents .section-heading {
-  display: block;
-  text-align: center;
-  margin: 4px 0 26px;
-}
-.course-contents h2 {
-  font:
-    normal 2.7rem/1.15 Georgia,
-    serif;
-  margin: 14px 0 12px;
-  letter-spacing: -0.04em;
-}
-.course-contents .section-heading::after {
-  content: "";
-  display: block;
-  inline-size: 52px;
-  margin: 20px auto 0;
-  border-block: 1px solid var(--line);
-  block-size: 4px;
-}
-.course-contents .episode-total {
-  font:
-    italic 0.8rem/1.5 Georgia,
-    serif;
-  color: var(--muted);
-}
-.course-contents .episode-search {
-  margin: 0;
-}
-.course-contents .search-control-label {
-  font:
-    italic 0.75rem/1.5 Georgia,
-    serif;
-  color: var(--muted);
-}
-.course-contents .search-field {
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid var(--line);
-  border-radius: 0;
-}
-.course-contents .search-field input {
-  font:
-    italic 0.85rem/1.6 Georgia,
-    serif;
-  background: transparent;
-}
-.course-contents .result-count {
-  font:
-    italic 0.7rem/1.5 Georgia,
-    serif;
-  color: var(--muted);
-  margin-block: 10px 20px;
-}
-.course-contents .episode-list {
-  max-block-size: 490px;
-  overflow-y: auto;
-  padding: 4px;
-  scrollbar-gutter: stable;
-  border: 0;
-}
-.course-contents .episode-list li {
-  border: 0;
-}
-.course-contents .episode-link {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: baseline;
-  gap: 12px;
-  padding: 13px 8px;
-  border-radius: 0;
-  background: transparent;
-  border-inline-start: 2px solid transparent;
-}
-.course-contents .episode-link:hover {
-  background: var(--theme-gold, #f0efdf);
-  transform: none;
-}
-.course-contents .episode-link[aria-current="step"] {
-  border-inline-start-color: var(--book-history-spine, #925333);
-  color: var(--book-history-spine, #925333);
-}
-.course-contents .episode-number {
-  display: block;
-  font:
-    normal 1rem/1.6 Georgia,
-    serif;
-  font-variant-numeric: tabular-nums;
-  background: none;
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  min-inline-size: 0;
-  min-block-size: 0;
-}
-.course-contents .episode-copy {
-  display: grid;
-  grid-template-columns: auto minmax(16px, 1fr);
-  align-items: baseline;
-  gap: 0 10px;
-}
-.course-contents .episode-copy::after {
-  content: "";
-  grid-column: 2;
-  grid-row: 1;
-  border-bottom: 1px dotted var(--muted);
-  opacity: 0.5;
-}
-.course-contents .episode-copy h3 {
-  grid-column: 1;
-  margin: 0;
-  font:
-    normal 1.05rem/1.6 Georgia,
-    serif;
-  letter-spacing: 0;
-}
-.course-contents .episode-progress {
-  grid-column: 1 / -1;
-  font:
-    italic 0.7rem/1.6 Georgia,
-    serif;
-}
-.contents-progress {
-  margin: 24px 8px 0;
-  padding-block-start: 20px;
-  border-top: 1px solid var(--line);
-}
-.contents-progress .course-progress {
-  font-size: 0.75rem;
-}
-.course-chapter {
-  display: flex;
-  flex-direction: column;
-  border-radius: 0 8px 8px 0;
-}
-.book-running-head,
-.book-page-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  color: var(--muted);
-  font:
-    0.6rem/1.6 ui-monospace,
-    monospace;
-  letter-spacing: 0.06em;
-}
-.book-running-head {
-  margin: 0 0 30px;
-  padding-bottom: 13px;
-  border-bottom: 1px solid var(--line);
-}
-.chapter-number {
-  color: var(--book-history-spine, #925333);
-  font:
-    italic 1rem/1.5 Georgia,
-    serif;
-  margin: 0 0 10px;
-}
-.course-chapter h2 {
-  font:
-    normal clamp(1.8rem, 3vw, 2.6rem)/1.15 Georgia,
-    serif;
-  letter-spacing: -0.035em;
-  margin: 0;
-  text-wrap: balance;
-}
-.bookmark-episode {
-  padding-block: 0 22px;
-  margin-block-end: 22px;
-  border-bottom: 1px solid var(--line);
-}
-.course-chapter .bookmark-episode h2 {
-  font-size: clamp(1.4rem, 1rem + 1vw, 1.9rem);
-}
-.bookmark-episode .chapter-number {
-  font-size: 0.8rem;
-  margin-bottom: 6px;
-}
-.bookmark-episode .chapter-progress-status {
-  margin-block-start: 10px;
-  color: var(--muted);
-  font:
-    italic 0.8rem/1.5 Georgia,
-    serif;
-}
-
-.bookmark-episode .chapter-description {
-  margin-top: 10px;
-}
-.chapter-links {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px 20px;
-  margin-top: 14px;
-}
-.book-page-footer {
-  margin-block: auto 0;
-  padding-top: 22px;
-}
-.course-colophon {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin: 36px 8px;
-}
-.course-colophon .course-intro {
-  font-size: 0.875rem;
-  margin: 0;
-}
-.course-colophon .fan-disclosure {
-  margin: 0;
-  align-self: center;
-}
 .course-notes {
   display: block;
 }
@@ -323,159 +155,109 @@
 .course-notes .learn-note {
   grid-row: span 3;
 }
-@media (width < 800px) {
-  .course-book-page {
-    padding: 24px 32px;
-  }
-  .book-running-head {
-    flex-wrap: wrap;
-  }
-}
+
 @media (width < 650px) {
-  .course-book {
+  .episode-notecards {
     grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
   }
-  .course-book::after {
-    display: none;
+  .episode-notecard {
+    --card-inset: 20px;
   }
-  .course-contents {
-    border-inline-end: 0;
-    border-bottom: 1px solid var(--line);
+  .course-heading {
+    padding-top: 18px;
   }
-  /* Read every chapter in order instead of turning spreads. */
-  .course-contents > :not(.contents-progress),
-  .course-book .page-turn,
-  .spread-status {
-    display: none;
-  }
-  .course-contents .contents-progress {
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-  .course-book-page {
-    padding-inline: 24px;
-  }
-  .course-chapter {
-    border-radius: 0 0 8px 5px;
-  }
-  .course-colophon,
   .course-notes .course-aside {
     grid-template-columns: minmax(0, 1fr);
     gap: 20px;
   }
-  .course-book-heading {
-    padding-top: 18px;
-  }
 }
 
-.chapter-description {
-  margin-block-start: 18px;
+.featured-episode {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
 }
-.chapter-description p {
-  margin: 0;
-  color: var(--muted);
-  font:
-    0.9rem/1.7 Georgia,
-    serif;
+.featured-episode .notecard-link {
+  max-inline-size: min(35rem, calc((100% - 24px) / 2));
 }
 
-.course-chapter-left {
-  border-inline-end: 1px solid var(--line);
-  border-radius: 5px 0 0 5px;
-}
-.page-turn {
-  display: grid;
-  place-items: center;
-  position: absolute;
-  z-index: 2;
-  inset-block: 0;
-  inline-size: 24px;
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  cursor: pointer;
-  font:
-    1.7rem Georgia,
-    serif;
-  padding: 0;
-}
-.page-turn-next {
-  inset-inline-end: 0;
-}
-.page-turn-back {
-  inset-inline-start: 0;
-}
-.page-turn:hover:not([aria-disabled="true"]),
-.page-turn:focus-visible {
-  background: color-mix(in srgb, var(--ink) 7%, transparent);
-  color: var(--ink);
-}
-.page-turn[aria-disabled="true"] {
-  opacity: 0.2;
-  cursor: default;
-}
-.spread-status {
-  text-align: center;
-  color: var(--muted);
-  font:
-    italic 0.75rem/1.5 Georgia,
-    serif;
-}
-.turning-leaf {
-  position: absolute;
-  z-index: 3;
-  inset-block: 0;
-  inline-size: 50%;
-  transform-style: preserve-3d;
-  pointer-events: none;
-}
-.turning-leaf-forward {
-  inset-inline-start: 50%;
-  transform-origin: left center;
-}
-.turning-leaf-back {
-  inset-inline-start: 0;
-  transform-origin: right center;
-}
-.turning-leaf > .course-book-page {
-  position: absolute;
-  inset: 0;
-  margin: 0;
-  backface-visibility: hidden;
-  background-color: var(--paper);
-  box-shadow: 0 8px 24px #0003;
-}
-.turning-leaf .leaf-back {
-  transform: rotateY(180deg);
+.course-complete-action {
+  margin-inline-start: auto;
+  text-align: end;
 }
 @media (width < 650px) {
-  .turning-leaf {
-    display: none;
+  .featured-episode .notecard-link {
+    max-inline-size: 35rem;
+  }
+  .course-episodes .section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .course-complete-action .text-button {
+    font-size: 0.8125rem;
   }
 }
-
-.stationary-page {
-  position: absolute;
-  z-index: 2;
-  inset-block: 0;
-  inline-size: 50%;
-  pointer-events: none;
+.featured-episode .episode-notecard {
+  border-color: var(--theme-muted, #6b8759);
 }
-.stationary-page-left {
-  inset-inline-start: 0;
-}
-.stationary-page-right {
-  inset-inline-start: 50%;
-}
-.end-of-course {
-  color: var(--muted);
-  font:
-    italic 0.9rem/1.6 Georgia,
-    serif;
+.featured-episode .button {
+  gap: 12px;
 }
 
-.page-turn .icon {
-  inline-size: 18px;
-  block-size: 18px;
+.notecard-meta time {
+  font-size: 0.8125rem;
+}
+
+.notecard-link {
+  max-inline-size: 35rem;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.notecard-link:hover .episode-notecard {
+  box-shadow: 0 4px 12px #0000001a;
+}
+.notecard-link:focus-visible {
+  outline: 3px solid var(--theme-focus, #356db5);
+  outline-offset: 4px;
+}
+
+.notecard-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+.watched-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 7px;
+  border-radius: 5px;
+  background: color-mix(in srgb, #6b9859 18%, transparent);
+}
+.watched-label .icon {
+  inline-size: 15px;
+  block-size: 15px;
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .notecard-link {
+    transition: transform 180ms ease;
+  }
+  .episode-notecard {
+    transition: box-shadow 180ms ease;
+  }
+  .notecard-link:hover {
+    transform: translateY(-5px) rotate(-0.6deg);
+  }
+  .notecard-link:hover .episode-notecard {
+    box-shadow: 0 9px 18px #0000001a;
+  }
 }

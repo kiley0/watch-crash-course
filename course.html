@@ -73,202 +73,169 @@
       </div>
       <div x-cloak x-show="ready">
         <p class="notice" x-show="storageWarning" x-text="storageWarning" role="status"></p>
-        <header class="course-book-heading">
+        <header class="course-heading">
           <span class="eyebrow"
             ><span x-text="collectionName"></span> · <span x-text="course.subject"></span
             ><span x-show="course.series"> · <span x-text="course.series"></span></span
           ></span>
           <h1 x-text="course.title"></h1>
           <p>With <span x-text="course.host"></span></p>
-        </header>
-        <div class="course-book">
-          <section
-            class="episodes-section course-book-page course-contents"
-            :aria-labelledby="mobileLayout ? null : 'contents-title'"
-            :aria-label="mobileLayout ? 'Course progress' : null"
-            x-show="mobileLayout || pages.spread === 0"
-          >
-            <div class="section-heading">
-              <div>
-                <h2 id="contents-title">Contents</h2>
-              </div>
-              <span class="episode-total" x-text="episodeLabel"></span>
-            </div>
-            <search aria-label="Course episodes">
-              <label class="search-control episode-search"
-                ><span class="search-control-label">Find a chapter</span
-                ><span class="search-field"
-                  ><span aria-hidden="true"
-                    ><svg class="icon" aria-hidden="true" focusable="false">
-                      <use href="./icons.svg#search"></use></svg></span
-                  ><input
-                    type="search"
-                    placeholder="Search the contents…"
-                    x-model.debounce.250ms="query" /></span
-              ></label>
-            </search>
-            <p class="result-count" role="status" aria-live="polite" x-text="resultLabel"></p>
-            <ol class="episode-list">
-              <template x-for="episode in filteredEpisodes" :key="episode.videoId"
-                ><li>
-                  <a
-                    class="episode-link"
-                    :href="episode.href"
-                    :aria-current="episode.videoId === currentEpisode.videoId ? 'step' : null"
-                    ><span class="episode-copy"
-                      ><h3 x-text="episode.title"></h3>
-                      <span
-                        class="episode-progress"
-                        x-show="episode.status !== 'Not started'"
-                        x-text="episode.status"
-                      ></span></span
-                    ><span class="episode-number" x-text="episode.displayNumber"></span
-                  ></a></li
-              ></template>
-            </ol>
-            <div class="empty-state" x-show="empty">
-              <h3>No matching episodes.</h3>
-              <p>Try a different topic or clear your search.</p>
-              <button type="button" class="text-button" @click="clearSearch">
-                Show all episodes
-                <svg class="icon" aria-hidden="true" focusable="false">
-                  <use href="./icons.svg#arrow-right"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="contents-progress">
-              <div class="course-progress course-progress-overview">
-                <span x-text="completionLabel"></span>
-                <progress
-                  max="100"
-                  value="0"
-                  :value="completionPercent"
-                  :aria-label="completionLabel"
-                ></progress>
-                <p x-show="courseComplete">
-                  Nice work. There’s always something new to notice on a second reading.
-                </p>
-              </div>
-              <div class="chapter-links" x-show="mobileLayout && hasCourseActivity">
-                <a
-                  class="chapter-watch"
-                  :href="currentEpisode.href"
-                  :aria-label="resumeLabel + ': ' + currentEpisode.title"
-                  ><span class="chapter-play-icon" aria-hidden="true">▶</span
-                  ><span x-text="resumeLabel">Pick up where you left off</span></a
-                >
-              </div>
-              <div class="course-complete-action">
-                <button
-                  type="button"
-                  class="text-button"
-                  @click="markCourseComplete"
-                  :disabled="markingComplete"
-                  x-show="!courseComplete"
-                  :aria-busy="markingComplete"
-                  x-text="markCompleteLabel"
-                >
-                  Mark course complete
-                </button>
-                <p
-                  id="course-completion-message"
-                  tabindex="-1"
-                  role="status"
-                  x-show="completionMessage"
-                  x-text="completionMessage"
-                ></p>
-              </div>
-            </div>
-          </section>
-          <section
-            class="course-book-page course-chapter course-chapter-left"
-            aria-label="Previous page of episodes"
-            x-show="!mobileLayout && pages.spread > 0"
-          >
-            <p class="book-running-head">
-              <span x-text="course.title"></span><span>CHAPTERS</span>
+          <div class="course-progress course-progress-overview">
+            <span x-text="completionLabel"></span>
+            <progress
+              max="100"
+              value="0"
+              :value="completionPercent"
+              :aria-label="completionLabel"
+            ></progress>
+            <p x-show="courseComplete">
+              Nice work. There’s always something new to notice on a second reading.
             </p>
-            <template x-for="episode in leftEpisodes" :key="episode.videoId">
-              <article class="bookmark-episode">
-                <p class="chapter-number">Chapter <span x-text="episode.displayNumber"></span></p>
-                <h2 x-text="episode.title"></h2>
-                <div class="chapter-description" x-show="episode.description">
-                  <p x-text="episode.description"></p>
-                </div>
-                <div class="chapter-links">
-                  <a
-                    class="chapter-watch"
-                    :href="episode.href"
-                    :aria-label="'Play ' + episode.title"
-                    ><span class="chapter-play-icon" aria-hidden="true">▶</span> Play episode</a
-                  >
-                </div>
-              </article>
-            </template>
-          </section>
-          <section
-            class="course-book-page course-chapter"
-            :aria-label="mobileLayout ? 'All episodes' : pages.spread === 0 ? 'Episodes at your bookmark' : 'Next page of episodes'"
-          >
-            <p class="book-running-head">
-              <span x-text="course.title"></span
-              ><span
-                x-text="mobileLayout ? 'ALL EPISODES' : pages.spread === 0 ? 'YOUR BOOKMARK' : 'CHAPTERS'"
-              ></span>
-            </p>
-            <template x-for="episode in chapterEpisodes" :key="episode.videoId">
-              <article class="bookmark-episode">
-                <p class="chapter-number">Chapter <span x-text="episode.displayNumber"></span></p>
-                <h2 x-text="episode.title"></h2>
-                <p
-                  class="chapter-progress-status"
-                  x-show="mobileLayout && episode.status !== 'Not started'"
-                  x-text="episode.status"
-                ></p>
-                <div class="chapter-description" x-show="episode.description">
-                  <p x-text="episode.description"></p>
-                </div>
-                <div class="chapter-links">
-                  <a
-                    class="chapter-watch"
-                    :href="episode.href"
-                    :aria-label="'Play ' + episode.title"
-                    ><span class="chapter-play-icon" aria-hidden="true">▶</span> Play episode</a
-                  >
-                </div>
-              </article>
-            </template>
-            <p class="end-of-course" x-show="chapterEpisodes.length === 0">End of this course.</p>
-            <p class="book-page-footer">
-              <span x-text="collectionName"></span><span x-text="rightPageLabel"></span>
-            </p>
-          </section>
-          <button
-            type="button"
-            class="page-turn page-turn-back"
-            @click="previousSpread"
-            :aria-disabled="pages.spread === 0 || turn !== ''"
-            aria-label="Turn to previous pages"
-          >
-            <svg class="icon" aria-hidden="true" focusable="false">
-              <use href="./icons.svg#arrow-left"></use>
-            </svg>
-          </button>
-          <button
-            type="button"
-            class="page-turn page-turn-next"
-            @click="nextSpread"
-            :aria-disabled="!canTurnForward || turn !== ''"
-            aria-label="Turn to next pages"
-          >
-            <svg class="icon" aria-hidden="true" focusable="false">
-              <use href="./icons.svg#arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-        <p class="spread-status" role="status" aria-live="polite" x-text="spreadLabel"></p>
-        <div class="course-colophon">
+          </div>
           <p class="course-intro" x-text="course.description"></p>
+        </header>
+
+        <section
+          class="featured-episode"
+          aria-labelledby="featured-episode-title"
+          x-show="hasFeaturedEpisode"
+        >
+          <a
+            class="notecard-link"
+            :href="currentEpisode.href"
+            :aria-label="featuredButtonLabel + ': ' + currentEpisode.title"
+            :aria-describedby="currentEpisode.lastWatchDate ? 'featured-last-watched' : null"
+          >
+            <article class="episode-notecard">
+              <header class="notecard-meta">
+                <span>Episode <span x-text="currentEpisode.displayNumber"></span></span>
+                <span
+                  id="featured-last-watched"
+                  class="notecard-status"
+                  x-show="currentEpisode.lastWatchDate"
+                  >Last watched
+                  <time
+                    :datetime="currentEpisode.lastWatchDateTime"
+                    :title="currentEpisode.lastWatchDate"
+                    x-text="currentEpisode.lastWatchRelativeDate"
+                  ></time
+                ></span>
+              </header>
+              <h2 id="featured-episode-title" x-text="currentEpisode.title"></h2>
+              <p
+                class="notecard-description"
+                x-show="currentEpisode.description"
+                x-text="currentEpisode.description"
+              ></p>
+              <span class="button button-dark"
+                ><span class="chapter-play-icon" aria-hidden="true">▶</span
+                ><span x-text="featuredButtonLabel"></span
+              ></span></article
+          ></a>
+        </section>
+        <section class="course-episodes" aria-labelledby="episodes-title">
+          <div class="section-heading">
+            <h2 id="episodes-title">Episodes</h2>
+            <div class="course-complete-action">
+              <button
+                type="button"
+                class="text-button"
+                @click="markCourseComplete"
+                :disabled="markingComplete"
+                x-show="!courseComplete"
+                :aria-busy="markingComplete"
+                x-text="markCompleteLabel"
+              >
+                Mark course complete
+              </button>
+              <p
+                id="course-completion-message"
+                tabindex="-1"
+                role="status"
+                x-show="completionMessage"
+                x-text="completionMessage"
+              ></p>
+            </div>
+          </div>
+          <search aria-label="Course episodes">
+            <label class="search-control episode-search"
+              ><span class="search-control-label">Search episodes</span
+              ><span class="search-field">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="./icons.svg#search"></use>
+                </svg>
+                <input
+                  type="search"
+                  placeholder="Find an episode or topic…"
+                  x-model.debounce.250ms="query"
+                /> </span
+            ></label>
+          </search>
+          <p class="result-count" role="status" x-text="resultLabel"></p>
+          <ol class="episode-notecards" role="list">
+            <template x-for="episode in filteredEpisodes" :key="episode.videoId">
+              <li>
+                <a
+                  class="notecard-link"
+                  :href="episode.href"
+                  :aria-label="'Play episode ' + episode.number + ': ' + episode.title"
+                  :aria-describedby="episode.status !== 'Not started' ? 'episode-status-' + episode.videoId : null"
+                >
+                  <article
+                    class="episode-notecard"
+                    :class="hasFeaturedEpisode && episode.videoId === currentEpisode.videoId ? 'episode-notecard-current' : ''"
+                  >
+                    <header class="notecard-meta">
+                      <span>Episode <span x-text="episode.displayNumber"></span></span
+                      ><span
+                        class="notecard-status"
+                        :id="'episode-status-' + episode.videoId"
+                        x-show="episode.status !== 'Not started'"
+                        ><span :class="episode.status === 'Completed' ? 'watched-label' : ''"
+                          ><svg
+                            class="icon"
+                            x-show="episode.status === 'Completed'"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <use href="./icons.svg#circle-check"></use></svg
+                          ><span
+                            x-text="episode.status === 'Completed' ? 'Watched' : episode.status"
+                          ></span></span
+                        >&#32;<time
+                          x-show="episode.watchedDate"
+                          :datetime="episode.watchedDateTime"
+                          x-text="episode.watchedDate"
+                        ></time
+                      ></span>
+                    </header>
+                    <h3 x-text="episode.title"></h3>
+                    <p
+                      class="notecard-description"
+                      x-show="episode.description"
+                      x-text="episode.description"
+                    ></p>
+                    <span class="chapter-watch"
+                      ><span class="chapter-play-icon" aria-hidden="true">▶</span> Play
+                      episode</span
+                    >
+                  </article></a
+                >
+              </li>
+            </template>
+          </ol>
+          <div class="empty-state" x-show="empty">
+            <h3>No matching episodes.</h3>
+            <p>Try a different topic or clear your search.</p>
+            <button type="button" class="text-button" @click="clearSearch">
+              Show all episodes
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="./icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+        <div class="course-colophon">
           <p class="fan-disclosure" x-text="fanDisclosure"></p>
         </div>
         <div class="course-layout course-notes">

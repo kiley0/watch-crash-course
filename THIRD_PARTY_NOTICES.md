@@ -14,4 +14,6 @@ Full license texts are retained in [`public/licenses/`](public/licenses/) and pu
 | [localForage](https://github.com/localForage/localForage) | [Apache-2.0](public/licenses/localForage-Apache-2.0.txt), including [lie](public/licenses/lie-MIT.txt) and [immediate](public/licenses/immediate-MIT.txt) MIT notices  |
 | [Lucide icons](https://github.com/lucide-icons/lucide)    | [ISC and Feather MIT notices](public/licenses/Lucide-LICENSE.txt); selected static icons are in `public/icons.svg`, with no icon runtime                               |
 
+| [Kalam font](https://github.com/google/fonts/tree/main/ofl/kalam) | [SIL Open Font License 1.1](public/licenses/Kalam-OFL.txt); locally hosted Latin regular and bold WOFF2 files from Fontsource |
+
 Development-tool licenses are distributed with their packages. YouTube’s player/API and GoatCounter’s optional analytics script are externally hosted services, not project code covered by our MIT license.

@@ -628,75 +628,8 @@ select {
   gap: 48px;
   padding-block: 46px 70px;
 }
-.episodes-section .section-heading {
-  gap: 10px;
-  align-items: center;
-}
-.episode-total {
-  font-size: 0.6875rem;
-  white-space: nowrap;
-}
 .episode-search {
   margin-bottom: 18px;
-}
-.episode-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-top: 1px solid var(--line);
-}
-.episode-list li {
-  border-bottom: 1px solid var(--line);
-}
-.episode-link {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  text-decoration: none;
-  padding: 22px 10px;
-  border-radius: 8px;
-}
-.episode-link:hover {
-  background: var(--theme-gold, #f0efdf);
-  transform: translateX(3px);
-}
-.episode-number {
-  display: grid;
-  place-items: center;
-  flex-shrink: 0;
-  min-width: 2.5rem;
-  min-height: 2.6875rem;
-  border: 1px solid var(--line, #c7d3bb);
-  border-radius: 12px;
-  background: var(--theme-green, #e7eddb);
-  font-weight: 800;
-  font-size: 0.8125rem;
-}
-.episode-kicker {
-  font-size: 0.5rem;
-  letter-spacing: 0.12em;
-  font-weight: 700;
-  color: var(--theme-muted, #667a63);
-  display: block;
-  margin-bottom: 6px;
-}
-.episode-copy {
-  flex: 1;
-  min-width: 0;
-  overflow-wrap: anywhere;
-}
-.episode-copy h3 {
-  font-size: 1.1875rem;
-  letter-spacing: -0.025em;
-}
-.episode-action {
-  font-size: 0.6875rem;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.episode-action span {
-  font-size: 1.1875rem;
-  margin-left: 8px;
 }
 .learn-note {
   background: var(--theme-purple, #e7e9f6);
@@ -837,12 +770,6 @@ select {
   .course-layout {
     grid-template-columns: minmax(0, 1fr) 250px;
     gap: 26px;
-  }
-  .episode-action {
-    font-size: 0;
-  }
-  .episode-action span {
-    font-size: 1.375rem;
   }
   .about-grid {
     gap: 35px;
@@ -1041,27 +968,6 @@ select {
     padding-top: 30px;
     gap: 30px;
   }
-  .episodes-section .section-heading {
-    display: flex;
-  }
-  .episode-link {
-    padding: 20px 0;
-    gap: 12px;
-  }
-  .episode-copy h3 {
-    font-size: 1rem;
-  }
-  .episode-kicker {
-    font-size: 0.4375rem;
-  }
-  .episode-number {
-    min-width: 2.125rem;
-    min-height: 2.375rem;
-    font-size: 0.75rem;
-  }
-  .episode-action span {
-    margin-left: 0;
-  }
   .course-aside {
     display: grid;
     grid-template-columns: 1fr;
@@ -1103,7 +1009,6 @@ select {
     transition: none !important;
     animation: none !important;
   }
-  .episode-link:hover,
   .button:hover {
     transform: none;
   }
@@ -1323,15 +1228,6 @@ select {
   width: 20px;
   height: 20px;
 }
-.episode-action {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.episode-action .icon {
-  width: 17px;
-  height: 17px;
-}
 .hero-footnote .icon {
   width: 13px;
   height: 13px;
@@ -1370,13 +1266,6 @@ select {
   margin-top: 9px;
 }
 
-/* Local progress labels complement episode titles without relying on color. */
-.episode-progress {
-  display: block;
-  margin-top: 5px;
-  font-size: 0.75rem;
-  color: var(--muted);
-}
 .button:disabled {
   cursor: default;
   opacity: 0.6;
