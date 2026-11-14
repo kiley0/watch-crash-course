@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it, vi } from "vite-plus/test";
 import catalog from "../../../public/data/courses.json";
 import { parseCatalog } from "../domain/course";
 import detail from "../../../public/data/courses/study-skills.json";
-import { loadCatalog, loadDetail } from "./static-catalog";
+import { loadCatalog, loadDetail, loadCourseSearch } from "./static-catalog";
 
 describe("catalog loading", () => {
   afterEach(() => {
@@ -33,6 +33,19 @@ describe("catalog loading", () => {
     );
     fetcher.mockResolvedValue({ ok: true, json: async () => ({ ...detail, courseId: "other" }) });
     await expect(loadDetail(course)).rejects.toThrow("do not match");
+  });
+  it("loads the collection's episode-search index and rejects malformed entries", async () => {
+    vi.stubGlobal("document", { baseURI: "https://example.com/library/index.html" });
+    const fetcher = vi
+      .fn()
+      .mockResolvedValue({ ok: true, json: async () => ({ botany: "chloroplasts" }) });
+    vi.stubGlobal("fetch", fetcher);
+    expect(await loadCourseSearch("crash-course")).toEqual({ botany: "chloroplasts" });
+    expect(String(fetcher.mock.calls[0]?.[0])).toBe(
+      "https://example.com/library/data/course-search/crash-course.json",
+    );
+    fetcher.mockResolvedValue({ ok: true, json: async () => ({ botany: ["invalid"] }) });
+    await expect(loadCourseSearch("crash-course")).rejects.toThrow("search index");
   });
   it("aborts a stalled response body and releases its timer", async () => {
     vi.useFakeTimers();

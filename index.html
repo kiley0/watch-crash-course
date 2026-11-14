@@ -82,14 +82,12 @@
               >Browse courses <span aria-hidden="true">→</span></a
             >
             <div class="notebook-page-footer">
-              <span>No account. Free forever.</span><span aria-hidden="true">01</span>
+              <span>I'll see you on Tuesday</span><span aria-hidden="true">01</span>
             </div>
           </div>
           <div class="notebook-page notebook-discoveries">
             <p class="notebook-running-head">
-              <span x-text="hasHeroCourses ? 'YOUR BOOKMARK & BEYOND' : 'THE OPENING CHAPTER'"
-                >THE OPENING CHAPTER</span
-              >
+              <span>WATCH CRASH COURSE</span>
               <span>02 / DISCOVER</span>
             </p>
             <div class="notebook-episode-entries">
@@ -229,7 +227,8 @@
               ><input
                 type="search"
                 placeholder="Find a course, topic, or host…"
-                x-model.debounce.250ms="query" /></span></label
+                :value="query"
+                @input.debounce.250ms="searchCourses" /></span></label
           ><label class="subject-field"
             ><span>Subject</span
             ><select aria-label="Filter by subject" x-model="subject">
@@ -274,6 +273,7 @@
           ></a>
         </div>
         <div x-cloak x-show="ready">
+          <p class="notice" x-show="searchWarning" x-text="searchWarning" role="status"></p>
           <p class="result-count" role="status" aria-live="polite" x-text="resultLabel"></p>
           <div class="library-shelves">
             <template x-for="shelf in shelves" :key="shelf.subject">

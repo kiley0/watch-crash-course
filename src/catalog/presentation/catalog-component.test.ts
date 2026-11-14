@@ -2,7 +2,7 @@ import { beforeEach, expect, it, vi } from "vite-plus/test";
 import catalog from "../../../public/data/courses.json";
 import { parseCatalog, parseDetail } from "../domain/course";
 import { updateProgress } from "../../learning/domain/progress";
-import { loadDetail } from "../infrastructure/static-catalog";
+import { loadDetail, loadCourseSearch } from "../infrastructure/static-catalog";
 import { createCatalogPage } from "./catalog-component";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
 vi.mock("../../learning/infrastructure/browser-progress", () => ({
@@ -14,6 +14,7 @@ const files = import.meta.glob("../../../public/data/courses/*.json", {
 });
 vi.mock("../infrastructure/static-catalog", () => ({
   loadCatalog: async () => parseCatalog(catalog),
+  loadCourseSearch: vi.fn(async () => ({}) as Record<string, string>),
   loadDetail: vi.fn(async (course: ReturnType<typeof parseCatalog>[number]) =>
     parseDetail(files[`../../../public/data/courses/${course.id}.json`], course),
   ),
@@ -21,6 +22,7 @@ vi.mock("../infrastructure/static-catalog", () => ({
 beforeEach(() => {
   vi.spyOn(progressStore, "refresh").mockResolvedValue([]);
   vi.mocked(loadDetail).mockClear();
+  vi.mocked(loadCourseSearch).mockReset().mockResolvedValue({});
 });
 it("combines collection, search, subject and progress filters without leaking recent courses", async () => {
   const records = [
@@ -314,4 +316,87 @@ it("keeps an empty Study Hall visit metadata-only because it has no recommendati
   expect(loadDetail).not.toHaveBeenCalled();
   expect(page.heroSuggestions).toEqual([]);
   expect(page.courses).toHaveLength(15);
+});
+
+it("searches episode descriptions alongside course metadata and keeps subject/progress filters", async () => {
+  vi.mocked(loadCourseSearch).mockResolvedValue({ botany: "An episode about hidden fern biology" });
+  const page = createCatalogPage("crash-course");
+  await page.load();
+  expect(loadCourseSearch).not.toHaveBeenCalled();
+  page.query = "botany hidden fern";
+  await page.loadEpisodeSearch();
+  expect(page.filteredCourses.map((course) => course.id)).toEqual(["botany"]);
+  page.subject = "History";
+  expect(page.filteredCourses).toEqual([]);
+  page.subject = "Science";
+  page.progress = "completed";
+  expect(page.filteredCourses).toEqual([]);
+  page.progress = "not-started";
+  expect(page.filteredCourses.map((course) => course.id)).toEqual(["botany"]);
+  page.query = "hidden";
+  await page.loadEpisodeSearch();
+  expect(loadCourseSearch).toHaveBeenCalledTimes(1);
+  expect(loadCourseSearch).toHaveBeenCalledWith("crash-course");
+});
+it("announces episode-search loading, retains course search on failure, and retries", async () => {
+  const page = createCatalogPage("study-hall");
+  await page.load();
+  let fail!: (error: Error) => void;
+  vi.mocked(loadCourseSearch).mockImplementationOnce(
+    () =>
+      new Promise((_resolve, reject) => {
+        fail = reject;
+      }),
+  );
+  page.query = "unknown episode topic";
+  const pending = page.loadEpisodeSearch();
+  expect(page.resultLabel).toContain("Searching");
+  expect(page.empty).toBe(false);
+  fail(new Error("offline"));
+  await pending;
+  expect(page.searchWarning).toContain("course details");
+  page.query = "algebra";
+  expect(page.filteredCourses.length).toBeGreaterThan(0);
+  await page.loadEpisodeSearch();
+  expect(page.searchWarning).toBe("");
+  expect(loadCourseSearch).toHaveBeenCalledWith("study-hall");
+});
+
+it("restores normal results immediately when a search is cleared during an index request", async () => {
+  const page = createCatalogPage("crash-course");
+  await page.load();
+  let finish!: (index: Record<string, string>) => void;
+  vi.mocked(loadCourseSearch).mockImplementationOnce(
+    () =>
+      new Promise((resolve) => {
+        finish = resolve;
+      }),
+  );
+  page.query = "episode keyword";
+  const pending = page.loadEpisodeSearch();
+  page.resetFilters();
+  expect(page.resultLabel).toBe("56 courses to explore");
+  finish({ botany: "episode keyword" });
+  await pending;
+  expect(page.searchLoaded).toBe(true);
+  page.query = "episode keyword";
+  expect(page.filteredCourses.map((course) => course.id)).toEqual(["botany"]);
+});
+it("does not show a stale search warning after clearing a failed pending search", async () => {
+  const page = createCatalogPage("crash-course");
+  await page.load();
+  let fail!: (error: Error) => void;
+  vi.mocked(loadCourseSearch).mockImplementationOnce(
+    () =>
+      new Promise((_resolve, reject) => {
+        fail = reject;
+      }),
+  );
+  page.query = "episode keyword";
+  const pending = page.loadEpisodeSearch();
+  page.resetFilters();
+  fail(new Error("offline"));
+  await pending;
+  expect(page.searchWarning).toBe("");
+  expect(page.resultLabel).toBe("56 courses to explore");
 });

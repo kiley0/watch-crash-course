@@ -150,7 +150,8 @@
               ><input
                 type="search"
                 placeholder="Find a course, topic, or host…"
-                x-model.debounce.250ms="query" /></span></label
+                :value="query"
+                @input.debounce.250ms="searchCourses" /></span></label
           ><label class="subject-field"
             ><span>Subject</span
             ><select aria-label="Filter by subject" x-model="subject">
@@ -195,6 +196,7 @@
           ></a>
         </div>
         <div x-cloak x-show="ready">
+          <p class="notice" x-show="searchWarning" x-text="searchWarning" role="status"></p>
           <p class="result-count" role="status" aria-live="polite" x-text="resultLabel"></p>
           <div class="library-shelves">
             <template x-for="shelf in shelves" :key="shelf.subject">

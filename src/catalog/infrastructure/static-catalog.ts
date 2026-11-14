@@ -1,5 +1,6 @@
 import { parseCatalog, parseDetail } from "../domain/course";
-import type { Course, CourseDetail } from "../domain/course";
+import { parseCourseSearch } from "../domain/search";
+import type { Collection, Course, CourseDetail } from "../domain/course";
 
 async function fetchJson(path: string): Promise<unknown> {
   const controller = new AbortController();
@@ -17,4 +18,8 @@ export async function loadCatalog(): Promise<Course[]> {
 }
 export async function loadDetail(course: Course): Promise<CourseDetail> {
   return parseDetail(await fetchJson(`./data/courses/${course.id}.json`), course);
+}
+
+export async function loadCourseSearch(collection: Collection): Promise<Record<string, string>> {
+  return parseCourseSearch(await fetchJson(`./data/course-search/${collection}.json`));
 }

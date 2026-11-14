@@ -1,10 +1,11 @@
 import { defineConfig, loadEnv } from "vite-plus";
+import { catalogSearchIndex } from "./src/catalog/infrastructure/search-build";
 import { sharingMetadata } from "./src/site/infrastructure/sharing-build";
 
 export default defineConfig({
   base: "./",
   appType: "mpa",
-  plugins: [sharingMetadata()],
+  plugins: [sharingMetadata(), catalogSearchIndex()],
   build: {
     rolldownOptions: {
       input: [

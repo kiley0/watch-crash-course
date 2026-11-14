@@ -1,4 +1,4 @@
-import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
+import { loadCatalog, loadDetail, loadCourseSearch } from "../infrastructure/static-catalog";
 import { matchesQuery } from "../domain/search";
 import { fitHeroDescriptions } from "./hero-descriptions";
 import { findShelfSurprise } from "./shelf-surprises";
@@ -40,6 +40,10 @@ export function createCatalogPage(collection: Collection) {
     courses: [] as CourseCard[],
     randomCourseIds: [] as string[],
     query: "",
+    episodeSearch: {} as Record<string, string>,
+    searchLoading: false,
+    searchLoaded: false,
+    searchWarning: "",
     subject: "all",
     progress: "all",
     loading: true,
@@ -64,6 +68,7 @@ export function createCatalogPage(collection: Collection) {
             course.host,
             course.description,
             course.series ?? "",
+            this.episodeSearch[course.id] ?? "",
           ),
       );
     },
@@ -125,11 +130,13 @@ export function createCatalogPage(collection: Collection) {
         .filter((shelf) => shelf.courses.length > 0);
     },
     get empty(): boolean {
-      return this.filteredCourses.length === 0;
+      return !(this.searchLoading && this.query.trim()) && this.filteredCourses.length === 0;
     },
     get resultLabel(): string {
       const count = this.filteredCourses.length;
-      return `${count} ${count === 1 ? "course" : "courses"} to explore`;
+      return this.searchLoading && this.query.trim()
+        ? "Searching course and episode descriptions…"
+        : `${count} ${count === 1 ? "course" : "courses"} to explore`;
     },
     get emptyHeading(): string {
       return findShelfSurprise(this.query)?.heading ?? "No courses found. Keep exploring!";
@@ -140,8 +147,31 @@ export function createCatalogPage(collection: Collection) {
         "Try a subject like “history” or “science,” a course title, or a host’s name."
       );
     },
+    async searchCourses(event: Event) {
+      this.query = (event.target as HTMLInputElement).value;
+      if (!this.query.trim()) this.searchWarning = "";
+      await this.loadEpisodeSearch();
+    },
+    async loadEpisodeSearch() {
+      if (!this.query.trim() || this.searchLoaded || this.searchLoading || destroyed) return;
+      this.searchLoading = true;
+      this.searchWarning = "";
+      try {
+        const index = await loadCourseSearch(collection);
+        if (destroyed) return;
+        this.episodeSearch = index;
+        this.searchLoaded = true;
+      } catch {
+        if (!destroyed && this.query.trim())
+          this.searchWarning =
+            "Episode descriptions couldn’t load. Results still include course details. Try typing your search again to retry.";
+      } finally {
+        this.searchLoading = false;
+      }
+    },
     resetFilters() {
       this.query = "";
+      this.searchWarning = "";
       this.subject = "all";
       this.progress = "all";
     },
