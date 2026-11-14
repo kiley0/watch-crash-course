@@ -1,5 +1,7 @@
+import { exportProgress } from "../../data/presentation/export-progress";
 import { progressStore } from "../infrastructure/browser-progress";
 import type { VideoProgress } from "../domain/progress";
+import { learningTimeLabel } from "./learning-time-label";
 import { historyEntries } from "./history-entries";
 import type { HistoryEntry, HistoryMetadata } from "./history-entries";
 import { loadCatalog, loadDetail } from "../../catalog/infrastructure/static-catalog";
@@ -24,6 +26,21 @@ export function createHistoryPage() {
   let records: VideoProgress[] = [];
   let known = new Map<string, HistoryMetadata>();
   return {
+    exporting: false,
+    exportMessage: "",
+    async downloadHistory(format: "csv" | "json") {
+      if (this.exporting || this.loading) return;
+      this.exporting = true;
+      this.exportMessage = "";
+      try {
+        this.exportMessage = (await exportProgress(format)).message;
+      } catch (error) {
+        this.exportMessage =
+          error instanceof Error ? error.message : "Your progress couldn’t be downloaded.";
+      } finally {
+        this.exporting = false;
+      }
+    },
     entries: [] as HistoryEntry[],
     catalogCourses: [] as CatalogCourse[],
     get catalogCollections() {
@@ -104,7 +121,10 @@ export function createHistoryPage() {
       const percentage = new Intl.NumberFormat(undefined, { maximumFractionDigits: 1 }).format(
         percent,
       );
-      return `You have watched ${count} ${count === 1 ? "episode" : "episodes"} across ${courses} ${courses === 1 ? "course" : "courses"}, a total of ${percent > 0 && percent < 0.1 ? "<0.1" : percentage}% of all episodes.`;
+      const seconds = this.entries
+        .filter((entry) => catalogVideos.has(entry.videoId))
+        .reduce((sum, entry) => sum + entry.position, 0);
+      return `You have watched ${count} ${count === 1 ? "episode" : "episodes"} across ${courses} ${courses === 1 ? "course" : "courses"} for a total of ${learningTimeLabel(seconds)} of learning time. That's ${percent > 0 && percent < 0.1 ? "<0.1" : percentage}% of all episodes.`;
     },
     get catalogResultLabel(): string {
       return `${this.catalogCourses.length} courses · 2 collections`;

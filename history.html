@@ -47,6 +47,25 @@
       <header class="history-intro">
         <h1>Your learning history</h1>
         <p x-text="viewingSummary" role="status">Calculating your viewing history…</p>
+        <div class="history-export-actions" x-cloak>
+          <button
+            type="button"
+            class="text-button"
+            @click="downloadHistory('csv')"
+            :disabled="loading || exporting"
+          >
+            Export CSV
+          </button>
+          <button
+            type="button"
+            class="text-button"
+            @click="downloadHistory('json')"
+            :disabled="loading || exporting"
+          >
+            Export JSON
+          </button>
+        </div>
+        <p role="status" x-text="exportMessage" x-show="exportMessage" x-cloak></p>
       </header>
       <noscript
         ><p class="notice">
@@ -153,7 +172,7 @@
         </aside>
         <section class="history-timeline" aria-labelledby="timeline-heading">
           <div class="history-section-heading">
-            <h2 id="timeline-heading">Recently played</h2>
+            <h2 id="timeline-heading">Your episode history</h2>
           </div>
           <div class="empty-state" x-cloak x-show="empty">
             <span aria-hidden="true">✦</span>
@@ -165,12 +184,10 @@
             <template x-for="entry in entries" :key="entry.videoId"
               ><li class="history-entry">
                 <div>
-                  <span class="eyebrow" x-text="entry.context"></span>
+                  <p><time :datetime="entry.isoDate" x-text="entry.dateLabel"></time></p>
                   <h3><a :href="entry.href" x-text="entry.title"></a></h3>
-                  <p>
-                    Last activity <time :datetime="entry.isoDate" x-text="entry.dateLabel"></time> ·
-                    <span x-text="entry.positionLabel"></span>
-                  </p>
+                  <span class="eyebrow" x-text="entry.context"></span>
+                  <p x-show="entry.positionLabel" x-text="entry.positionLabel"></p>
                 </div>
                 <a
                   class="history-play"
@@ -187,6 +204,10 @@
               This is your latest saved place for each video, including episodes you marked complete
               yourself. Resetting an episode removes it from this list. Watching directly on YouTube
               won’t update your history here.
+            </p>
+            <p>
+              Learning time adds up your saved playback positions, once per video. Repeat viewing
+              time and episodes marked complete without playback aren’t added.
             </p>
           </details>
         </section>

@@ -1,3 +1,4 @@
+import { exportProgress } from "../../data/presentation/export-progress";
 import { beforeEach, expect, it, vi } from "vite-plus/test";
 import catalog from "../../../public/data/courses.json";
 import studySkills from "../../../public/data/courses/study-skills.json";
@@ -21,6 +22,7 @@ vi.mock("../infrastructure/browser-progress", () => ({
     },
   },
 }));
+vi.mock("../../data/presentation/export-progress", () => ({ exportProgress: vi.fn() }));
 vi.mock("../../site/reload-on-restore", () => ({ refreshOnRestore: () => () => {} }));
 const courses = parseCatalog(catalog).filter((course) =>
   ["study-skills", "study-hall-programming"].includes(course.id),
@@ -42,7 +44,7 @@ it("loads both catalog collections and their episodes even with no viewing histo
   await page.init();
   expect(page.empty).toBe(true);
   expect(page.viewingSummary).toBe(
-    "You have watched 0 episodes across 0 courses, a total of 0% of all episodes.",
+    "You have watched 0 episodes across 0 courses for a total of 0 seconds of learning time. That's 0% of all episodes.",
   );
   expect(page.catalogCollections.map((collection) => collection.courses.length)).toEqual([1, 1]);
   expect(page.catalogCourses.reduce((sum, course) => sum + course.episodes.length, 0)).toBe(38);
@@ -61,7 +63,7 @@ it("shows newest-first history alongside the full catalog", async () => {
     studySkills.episodes[0]!.videoId,
   ]);
   expect(page.viewingSummary).toBe(
-    "You have watched 2 episodes across 2 courses, a total of 5.3% of all episodes.",
+    "You have watched 2 episodes across 2 courses for a total of 0 seconds of learning time. That's 5.3% of all episodes.",
   );
   expect(page.catalogCollections.map((collection) => collection.courses.length)).toEqual([1, 1]);
   expect(page.entries).toHaveLength(2);
@@ -195,6 +197,57 @@ it("shows a nonzero percentage for a single watched episode in a large catalog",
     },
   ];
   expect(page.viewingSummary).toBe(
-    "You have watched 1 episode across 1 course, a total of <0.1% of all episodes.",
+    "You have watched 1 episode across 1 course for a total of 0 seconds of learning time. That's <0.1% of all episodes.",
   );
+});
+
+it("totals saved playback time once per video and ignores history outside the catalog", async () => {
+  vi.spyOn(progressStore, "list").mockResolvedValue([
+    updateProgress(
+      null,
+      studySkills.episodes[0]!.videoId,
+      { type: "playback", position: 3675, duration: 4000 },
+      100,
+    ),
+    updateProgress(
+      null,
+      programming.episodes[0]!.videoId,
+      { type: "playback", position: 45, duration: 600, ended: true },
+      200,
+    ),
+    updateProgress(null, "abcdefghijk", { type: "playback", position: 900, duration: 1000 }, 300),
+  ]);
+  const page = createHistoryPage();
+  await page.init();
+  expect(page.viewingSummary).toBe(
+    "You have watched 2 episodes across 2 courses for a total of 1 hour and 2 minutes of learning time. That's 5.3% of all episodes.",
+  );
+});
+
+it("prevents duplicate exports and recovers after an export failure", async () => {
+  const page = createHistoryPage();
+  await page.init();
+  let rejectExport!: (error: Error) => void;
+  vi.mocked(exportProgress)
+    .mockReset()
+    .mockReturnValueOnce(
+      new Promise((_, reject) => {
+        rejectExport = reject;
+      }),
+    );
+  const downloading = page.downloadHistory("csv");
+  expect(page.exporting).toBe(true);
+  await page.downloadHistory("json");
+  expect(exportProgress).toHaveBeenCalledTimes(1);
+  rejectExport(new Error("Saved data couldn’t be read."));
+  await downloading;
+  expect(page.exporting).toBe(false);
+  expect(page.exportMessage).toBe("Saved data couldn’t be read.");
+  vi.mocked(exportProgress).mockResolvedValueOnce({
+    backup: { format: "watch-crash-course", version: 1, exportedAt: 1, videos: [] },
+    message: "JSON backup download started.",
+  });
+  await page.downloadHistory("json");
+  expect(page.exportMessage).toBe("JSON backup download started.");
+  expect(page.exporting).toBe(false);
 });

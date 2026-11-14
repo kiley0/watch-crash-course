@@ -1,5 +1,5 @@
 import type { VideoProgress } from "../domain/progress";
-import { progressStatus } from "../domain/progress";
+import { progressStatus, resumePosition } from "../domain/progress";
 import { viewingHistory } from "../domain/course-summary";
 import { timeLabel } from "./progress-labels";
 import { videoUrl } from "../../playback/presentation/youtube-links";
@@ -34,7 +34,9 @@ export function historyEntries(
       linkLabel: known
         ? record.completed
           ? "Watch again"
-          : "Continue watching"
+          : resumePosition(record) > 0
+            ? `Resume at ${timeLabel(resumePosition(record))}`
+            : "Play episode"
         : "Open on YouTube",
       dateLabel: dateFormat.format(record.lastWatchedAt),
       isoDate: new Date(record.lastWatchedAt).toISOString(),
@@ -43,7 +45,7 @@ export function historyEntries(
         ? record.completionSource === "manual"
           ? "Marked complete by you"
           : "Video finished"
-        : `Resume at ${timeLabel(record.position)}`,
+        : "",
     };
   });
 }
