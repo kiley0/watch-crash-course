@@ -67,11 +67,11 @@ it("supports completed courses and distinguishes original series from College Fo
   expect(page.filteredCourses).toHaveLength(4);
 });
 
-it("renders metadata without downloading episode details when progress is empty", async () => {
+it("downloads only the five suggested course details when progress is empty", async () => {
   const page = createCatalogPage("crash-course");
   await page.load();
   expect(page.ready).toBe(true);
-  expect(loadDetail).not.toHaveBeenCalled();
+  expect(loadDetail).toHaveBeenCalledTimes(5);
   expect(page.courses).toHaveLength(56);
   expect(
     page.courses.every(
@@ -175,7 +175,7 @@ it("does not let an older enrichment overwrite refreshed progress", async () => 
   expect(page.recentCourses).toEqual([]);
 });
 
-it("shows up to three unfinished courses in the hero, newest first, independent of catalog filters", async () => {
+it("shows up to five unfinished courses in the hero, newest first, independent of catalog filters", async () => {
   const ids = ["world-history", "psychology", "astronomy", "philosophy", "botany", "study-skills"];
   const courses = parseCatalog(catalog);
   const records = ids.map((id, index) => {
@@ -191,6 +191,8 @@ it("shows up to three unfinished courses in the hero, newest first, independent 
     "study-skills",
     "botany",
     "philosophy",
+    "astronomy",
+    "psychology",
   ]);
   const botany = page.heroCourses[1]!;
   expect(botany.nextEpisodeTitle).toBe("What Are Plants Made Of?");
@@ -232,38 +234,84 @@ it("resumes a partly watched episode even with no completed lessons", async () =
   );
 });
 
-it("fills remaining hero slots with starters without repeating an active course", async () => {
+it("suggests five distinct random courses with real first episodes and stable visit ordering", async () => {
   const page = createCatalogPage("crash-course");
   await page.load();
-  expect(page.heroStarterIds).toEqual(["astronomy", "philosophy", "botany"]);
-  const records = [
+  const ids = page.heroSuggestions.map((course) => course.id);
+  expect(new Set(ids).size).toBe(5);
+  for (const suggestion of page.heroSuggestions) {
+    const detail = parseDetail(
+      files[`../../../public/data/courses/${suggestion.id}.json`],
+      suggestion,
+    );
+    expect(suggestion.nextEpisodeTitle).toBe(detail.episodes[0]!.title);
+    expect(suggestion.recommendationHref).toContain(`video=${detail.episodes[0]!.videoId}`);
+    expect(suggestion.nextEpisodeLabel).toBe("Watch episode 1");
+  }
+  page.query = "nothing matches";
+  await page.refreshProgress();
+  expect(page.heroSuggestions.map((course) => course.id)).toEqual(ids);
+  vi.spyOn(progressStore, "refresh").mockResolvedValue([
     updateProgress(null, "0rHUDWjR5gg", { type: "complete" }, 100),
-    updateProgress(null, "1A_CAkYt3GY", { type: "complete" }, 200),
-    updateProgress(null, "2th5lAd-77A", { type: "complete" }, 300),
-  ];
-  for (const count of [1, 2, 3]) {
-    vi.spyOn(progressStore, "refresh").mockResolvedValue(records.slice(0, count));
-    await page.refreshProgress();
-    expect(page.heroCourses.length + page.heroStarterIds.length).toBe(3);
-    expect(page.heroStarterIds).toEqual(["astronomy", "philosophy", "botany"].slice(count));
+  ]);
+  await page.refreshProgress();
+  expect(page.heroSuggestions).toHaveLength(5);
+  expect(page.heroSuggestions[0]!.id).toBe("astronomy");
+  expect(new Set(page.heroSuggestions.map((course) => course.id)).size).toBe(5);
+});
+
+it("follows a course's newest completion instead of an older unfinished episode", async () => {
+  const course = parseCatalog(catalog).find((item) => item.id === "big-history")!;
+  const detail = parseDetail(files["../../../public/data/courses/big-history.json"], course);
+  vi.spyOn(progressStore, "refresh").mockResolvedValue([
+    updateProgress(
+      null,
+      detail.episodes[0]!.videoId,
+      { type: "playback", position: 42, duration: 600 },
+      100,
+    ),
+    updateProgress(null, detail.episodes[7]!.videoId, { type: "complete" }, 200),
+  ]);
+  const page = createCatalogPage("crash-course");
+  await page.load();
+  expect(page.heroSuggestions[0]).toEqual(
+    expect.objectContaining({
+      id: "big-history",
+      nextEpisodeTitle: detail.episodes[8]!.title,
+      nextEpisodeLabel: "Watch episode 9",
+      recommendationHref: `./watch.html?course=big-history&video=${detail.episodes[8]!.videoId}`,
+    }),
+  );
+});
+
+it("replaces an unavailable random recommendation without downloading the entire catalog", async () => {
+  const failingId = parseCatalog(catalog).find(
+    (course) => course.collection === "crash-course",
+  )!.id;
+  const detailLoader = vi.mocked(loadDetail).getMockImplementation()!;
+  const random = vi.spyOn(Math, "random").mockReturnValue(0.999);
+  vi.mocked(loadDetail).mockImplementation(async (course) => {
+    if (course.id === failingId) throw new Error("Unavailable course");
+    return detailLoader(course);
+  });
+  try {
+    const page = createCatalogPage("crash-course");
+    await page.load();
+    expect(page.heroSuggestions).toHaveLength(5);
+    expect(page.heroSuggestions.some((course) => course.id === failingId)).toBe(false);
+    expect(loadDetail).toHaveBeenCalledTimes(6);
+    expect(page.courses).toHaveLength(56);
+    expect(page.error).toBe("");
+  } finally {
+    random.mockRestore();
+    vi.mocked(loadDetail).mockImplementation(detailLoader);
   }
 });
 
-it("keeps static starter lesson titles and watch URLs aligned with the catalog", async () => {
-  const { default: html } = await import("../../../index.html?raw");
-  const starters = [
-    ...html.matchAll(
-      /<article\s+class="chapter-entry"\s+x-show="show\w+Starter"[\s\S]*?<\/article>/g,
-    ),
-  ];
-  expect(starters).toHaveLength(3);
-  for (const [article] of starters) {
-    const link = article.match(/href="\.\/watch\.html\?course=([^&]+)&amp;video=([^"]+)"/)!;
-    const course = parseCatalog(catalog).find((item) => item.id === link[1])!;
-    const detail = parseDetail(files[`../../../public/data/courses/${course.id}.json`], course);
-    const first = detail.episodes[0]!;
-    expect(link[2]).toBe(first.videoId);
-    expect(article).toContain(first.title);
-    expect(article.match(/href="\.\/watch\.html[^"]+"/g)).toEqual([link[0], link[0]]);
-  }
+it("keeps an empty Study Hall visit metadata-only because it has no recommendation hero", async () => {
+  const page = createCatalogPage("study-hall");
+  await page.load();
+  expect(loadDetail).not.toHaveBeenCalled();
+  expect(page.heroSuggestions).toEqual([]);
+  expect(page.courses).toHaveLength(15);
 });

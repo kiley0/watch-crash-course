@@ -9,6 +9,7 @@ import {
   mostRecentUnfinished,
   summarizeCourse,
 } from "../../learning/domain/course-summary";
+import { recommendedEpisode } from "../../learning/domain/recommended-episode";
 import { resumePosition } from "../../learning/domain/progress";
 import { timeLabel } from "../../learning/presentation/progress-labels";
 import type { CourseSummary } from "../../learning/domain/course-summary";
@@ -23,6 +24,8 @@ interface CourseCard extends Course {
   continueHref: string;
   continueLabel: string;
   continueDetail: string;
+  recommendationHref: string;
+  recommendationDescription: string;
   nextEpisodeTitle: string;
   nextEpisodeLabel: string;
 }
@@ -32,6 +35,7 @@ export function createCatalogPage(collection: Collection) {
   const details = new Map<string, CourseDetail>();
   return {
     courses: [] as CourseCard[],
+    randomCourseIds: [] as string[],
     query: "",
     subject: "all",
     progress: "all",
@@ -70,29 +74,27 @@ export function createCatalogPage(collection: Collection) {
       return this.courses
         .filter(
           (course) =>
-            courseProgressStatus(course.summary) === "in-progress" &&
-            course.summary?.continueVideoId,
+            courseProgressStatus(course.summary) === "in-progress" && course.recommendationHref,
         )
         .toSorted((a, b) => b.summary!.lastActivityAt - a.summary!.lastActivityAt)
-        .slice(0, 3);
+        .slice(0, 5);
     },
     get heroStarterIds(): string[] {
-      const active = this.heroCourses;
-      return ["astronomy", "philosophy", "botany"]
-        .filter((id) => !active.some((course) => course.id === id))
-        .slice(0, 3 - active.length);
+      return this.randomCourseIds
+        .filter((id) => {
+          const course = this.courses.find((item) => item.id === id);
+          return (
+            !!course?.recommendationHref && courseProgressStatus(course.summary) === "not-started"
+          );
+        })
+        .slice(0, 5 - this.heroCourses.length);
     },
-    get showAstronomyStarter(): boolean {
-      return this.heroStarterIds.includes("astronomy");
-    },
-    get showPhilosophyStarter(): boolean {
-      return this.heroStarterIds.includes("philosophy");
-    },
-    get showBotanyStarter(): boolean {
-      return this.heroStarterIds.includes("botany");
-    },
-    starterSlot(id: string): number {
-      return this.heroCourses.length + this.heroStarterIds.indexOf(id) + 1;
+    get heroSuggestions(): CourseCard[] {
+      const starters = this.heroStarterIds.flatMap((id) => {
+        const course = this.courses.find((item) => item.id === id);
+        return course?.nextEpisodeTitle ? [course] : [];
+      });
+      return [...this.heroCourses, ...starters];
     },
     get hasHeroCourses(): boolean {
       return this.heroCourses.length > 0;
@@ -153,6 +155,13 @@ export function createCatalogPage(collection: Collection) {
       this.error = "";
       try {
         const catalog = coursesInCollection(await loadCatalog(), collection);
+        // Shuffle once per visit so reactive updates and filters do not reshuffle the page.
+        const shuffled = collection === "crash-course" ? [...catalog] : [];
+        for (let index = shuffled.length - 1; index > 0; index--) {
+          const target = Math.floor(Math.random() * (index + 1));
+          [shuffled[index], shuffled[target]] = [shuffled[target]!, shuffled[index]!];
+        }
+        this.randomCourseIds = shuffled.map((course) => course.id);
         this.courses = catalog.map((course) => ({
           ...course,
           href: `./course.html?id=${encodeURIComponent(course.id)}`,
@@ -163,6 +172,8 @@ export function createCatalogPage(collection: Collection) {
           continueHref: `./course.html?id=${encodeURIComponent(course.id)}`,
           continueLabel: "Continue learning",
           continueDetail: "",
+          recommendationHref: "",
+          recommendationDescription: "",
           nextEpisodeTitle: "",
           nextEpisodeLabel: "",
         }));
@@ -181,76 +192,106 @@ export function createCatalogPage(collection: Collection) {
       if (version !== refreshVersion) return;
       this.storageWarning = progressStore.warning;
       this.resumeVideoId = null;
-      await Promise.all(
-        this.courses.map(async (course, index) => {
-          let summary: CourseSummary | null = null;
-          let continueDetail = "";
-          let nextEpisodeTitle = "";
-          let nextEpisodeLabel = "";
-          try {
-            if (records.length === 0) {
-              // With no records, every course is unstarted regardless of membership.
-              summary = {
-                total: course.episodeCount,
-                completed: 0,
-                percent: 0,
-                lastActivityAt: 0,
-                continueVideoId: null,
-                isComplete: false,
-              };
-            } else {
-              // Check every membership: a video can belong to more than one course.
-              const detail = details.get(course.id) ?? (await loadDetail(course));
-              details.set(course.id, detail);
-              summary = summarizeCourse(
-                detail.episodes.map((episode) => episode.videoId),
-                records,
-              );
-              const episode = detail.episodes.find(
-                (item) => item.videoId === summary?.continueVideoId,
-              );
-              const position = resumePosition(
-                records.find((record) => record.videoId === episode?.videoId) ?? null,
-              );
-              nextEpisodeTitle = episode?.title ?? "";
-              nextEpisodeLabel = episode
-                ? `${position > 0 ? "Resume" : "Watch"} episode ${episode.number}`
-                : "";
-              continueDetail = summary.isComplete
-                ? "Revisit the course from the beginning."
-                : episode
-                  ? position > 0
-                    ? `Resume ${episode.title} at ${timeLabel(position)}.`
-                    : `Up next: ${episode.title}.`
-                  : "";
-            }
-          } catch {
-            /* An unavailable detail file must not hide the course shelf. */
+      const enrichCourse = async (
+        course: CourseCard,
+        index: number,
+        loadRecommendation = false,
+      ) => {
+        let summary: CourseSummary | null = null;
+        let continueDetail = "";
+        let recommendationHref = "";
+        let recommendationDescription = "";
+        let nextEpisodeTitle = "";
+        let nextEpisodeLabel = "";
+        try {
+          if (records.length === 0) {
+            // With no records, every course is unstarted regardless of membership.
+            summary = {
+              total: course.episodeCount,
+              completed: 0,
+              percent: 0,
+              lastActivityAt: 0,
+              continueVideoId: null,
+              isComplete: false,
+            };
           }
-          if (version !== refreshVersion) return;
-          this.courses[index] = {
-            ...course,
-            summary,
-            percent: summary?.percent ?? 0,
-            progressLabel: summary
-              ? `${summary.completed} of ${summary.total} completed`
-              : "Progress unavailable",
-            continueHref: summary?.continueVideoId
-              ? watchUrl(course.id, summary.continueVideoId)
-              : course.href,
-            continueLabel: summary?.isComplete ? "Watch again" : "Continue learning",
-            continueDetail,
-            nextEpisodeTitle,
-            nextEpisodeLabel,
-          };
-          this.resumeVideoId = mostRecentUnfinished(
-            records,
-            this.courses.flatMap((item) =>
-              item.summary?.continueVideoId ? [item.summary.continueVideoId] : [],
-            ),
-          );
-        }),
-      );
+          if (
+            records.length > 0 ||
+            loadRecommendation ||
+            this.randomCourseIds.slice(0, 5).includes(course.id)
+          ) {
+            // Check every membership: a video can belong to more than one course.
+            const detail = details.get(course.id) ?? (await loadDetail(course));
+            details.set(course.id, detail);
+            summary = summarizeCourse(
+              detail.episodes.map((episode) => episode.videoId),
+              records,
+            );
+            const episode = detail.episodes.find(
+              (item) => item.videoId === summary?.continueVideoId,
+            );
+            const position = resumePosition(
+              records.find((record) => record.videoId === episode?.videoId) ?? null,
+            );
+            const recommendedId = recommendedEpisode(
+              detail.episodes.map((entry) => entry.videoId),
+              records,
+            );
+            const recommendation = detail.episodes.find((item) => item.videoId === recommendedId);
+            const recommendationPosition = resumePosition(
+              records.find((record) => record.videoId === recommendation?.videoId) ?? null,
+            );
+            recommendationHref = recommendation ? watchUrl(course.id, recommendation.videoId) : "";
+            recommendationDescription = recommendation?.description ?? course.description;
+            nextEpisodeTitle = recommendation?.title ?? "";
+            nextEpisodeLabel = recommendation
+              ? `${recommendationPosition > 0 ? "Resume" : "Watch"} episode ${recommendation.number}`
+              : "";
+            continueDetail = summary.isComplete
+              ? "Revisit the course from the beginning."
+              : episode
+                ? position > 0
+                  ? `Resume ${episode.title} at ${timeLabel(position)}.`
+                  : `Up next: ${episode.title}.`
+                : "";
+          }
+        } catch {
+          /* An unavailable detail file must not hide the course shelf. */
+        }
+        if (version !== refreshVersion) return;
+        this.courses[index] = {
+          ...course,
+          summary,
+          percent: summary?.percent ?? 0,
+          progressLabel: summary
+            ? `${summary.completed} of ${summary.total} completed`
+            : "Progress unavailable",
+          continueHref: summary?.continueVideoId
+            ? watchUrl(course.id, summary.continueVideoId)
+            : course.href,
+          continueLabel: summary?.isComplete ? "Watch again" : "Continue learning",
+          continueDetail,
+          recommendationHref,
+          recommendationDescription,
+          nextEpisodeTitle,
+          nextEpisodeLabel,
+        };
+        this.resumeVideoId = mostRecentUnfinished(
+          records,
+          this.courses.flatMap((item) =>
+            item.summary?.continueVideoId ? [item.summary.continueVideoId] : [],
+          ),
+        );
+      };
+      await Promise.all(this.courses.map((course, index) => enrichCourse(course, index)));
+      // Replace unavailable random picks without downloading every detail on a new visit.
+      if (records.length === 0) {
+        for (const id of this.randomCourseIds.slice(5)) {
+          if (version !== refreshVersion || this.heroSuggestions.length >= 5) break;
+          const index = this.courses.findIndex((course) => course.id === id);
+          await enrichCourse(this.courses[index]!, index, true);
+        }
+      }
     },
   };
 }

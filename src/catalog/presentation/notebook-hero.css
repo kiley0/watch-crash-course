@@ -98,32 +98,6 @@
   text-align: center;
   margin: 0 0 18px;
 }
-.notebook-chapter-heading {
-  padding-block: 28px 0;
-  text-align: center;
-}
-.notebook-chapter-label {
-  color: var(--book-history-spine, #925333);
-  font:
-    italic 0.9rem/1.5 Georgia,
-    serif;
-}
-.notebook-chapter-heading h2 {
-  font:
-    normal clamp(1.8rem, 1.2rem + 1.5vw, 2.5rem)/1.15 Georgia,
-    serif;
-  letter-spacing: -0.035em;
-  text-wrap: balance;
-  margin: 10px 0 0;
-}
-.notebook-chapter-heading::after {
-  content: "";
-  display: block;
-  inline-size: 52px;
-  block-size: 4px;
-  border-block: 1px solid var(--line);
-  margin: 20px auto 0;
-}
 .notebook-description {
   max-inline-size: 45ch;
   margin-block: 14px 0;
@@ -305,15 +279,25 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 28px;
-  row-gap: 24px;
-  margin-block: 28px 32px;
-  flex: 1;
+  row-gap: 20px;
+  margin-block: 24px;
+  align-content: start;
 }
 .chapter-entry {
   min-inline-size: 0;
   border-block-start: 1px solid var(--line);
   padding-block-start: 15px;
   display: block;
+}
+.chapter-entry-compact .chapter-prose {
+  display: none;
+}
+.chapter-entry-compact .chapter-title {
+  font-size: 1.15rem;
+  margin-block: 8px;
+}
+.chapter-entry-compact .chapter-progress {
+  margin-block-end: 6px;
 }
 .chapter-entry[data-hero-slot="1"] {
   grid-column: 1 / -1;
@@ -376,32 +360,6 @@
 }
 .chapter-watch {
   clear: both;
-}
-.chapter-figure {
-  display: none;
-  margin: 0 0 12px;
-  color: var(--muted);
-  text-align: center;
-}
-.chapter-figure svg {
-  display: block;
-  inline-size: 100%;
-  block-size: 68px;
-}
-.chapter-figure figcaption {
-  font:
-    italic 0.65rem/1.5 Georgia,
-    serif;
-  margin-block-start: 3px;
-}
-.chapter-entry[data-hero-slot="1"] .chapter-figure {
-  display: block;
-  float: right;
-  inline-size: 40%;
-  margin: 0 0 12px 18px;
-}
-.chapter-entry[data-hero-slot="1"] .chapter-figure svg {
-  block-size: 95px;
 }
 @media (width < 1000px) {
   .notebook-episode-entries {

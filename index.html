@@ -52,7 +52,10 @@
           <div class="notebook-page notebook-intro">
             <p class="notebook-running-head">WATCH CRASH COURSE <span>01 / PREFACE</span></p>
             <div class="notebook-frontispiece">
-              <p class="notebook-edition">A little library for a curious mind</p>
+              <p class="notebook-edition">
+                Find the official Crash Course website at
+                <a href="https://thecrashcourse.com/">thecrashcourse.com</a>
+              </p>
               <h1 id="notebook-title">
                 Knowledge weighs nothing,<br /><em>carry all you can.</em>
               </h1>
@@ -62,13 +65,16 @@
               <span class="notebook-ornament" aria-hidden="true">✳</span>
             </div>
             <div class="notebook-preface">
-              <h2>A note from the maker</h2>
+              <h2>Hey there, glad you're here</h2>
               <p class="notebook-description">
-                Hey! I made this little library so my kids and I could track our progress through
-                Crash Course and pick up where we left off. And for you, if you’d like to join us.
+                Hi! I made this website because I love watching Crash Course, but I found it hard to
+                pick up where I left off and track my progress to see all the courses I've watched.
               </p>
               <p class="notebook-description">
-                It’s free, with no accounts. Your progress stays right here in your browser.
+                This site is free to use, the code is open source, and it's privacy-first. There are
+                no user accounts or ads. All of your watch history and progress is saved locally in
+                your web browser. Basic page-view and video-start counts help me improve the site;
+                you can <a href="./settings.html">turn analytics off in Settings</a>.
               </p>
               <p class="notebook-maker">Made by a Nerdfighter who watches a lot of Crash Course.</p>
             </div>
@@ -86,153 +92,35 @@
               >
               <span>02 / DISCOVER</span>
             </p>
-            <header class="notebook-chapter-heading">
-              <p
-                class="notebook-chapter-label"
-                x-text="hasHeroCourses ? 'Pick up the thread' : 'Begin anywhere'"
-              >
-                Begin anywhere
-              </p>
-              <h2 x-text="hasHeroCourses ? 'There’s more to discover.' : 'Let curiosity lead.'">
-                Let curiosity lead.
-              </h2>
-            </header>
             <div class="notebook-episode-entries">
-              <template x-for="(course, index) in heroCourses" :key="course.id">
-                <article class="chapter-entry" :data-hero-slot="index + 1">
+              <template x-for="(course, index) in heroSuggestions" :key="course.id">
+                <article
+                  class="chapter-entry"
+                  :class="index >= 3 ? 'chapter-entry-compact' : ''"
+                  :data-hero-slot="index + 1"
+                >
                   <p class="chapter-kicker">
-                    Continue watching · <span x-text="course.title"></span>
+                    <span x-show="course.summary.lastActivityAt > 0">Continue watching · </span
+                    ><span x-text="course.title"></span>
                   </p>
-                  <h3 class="chapter-title">
-                    <a :href="course.continueHref" x-text="course.nextEpisodeTitle"></a>
-                  </h3>
-                  <p class="chapter-prose" x-text="course.description"></p>
-                  <p class="chapter-progress" x-text="course.progressLabel"></p>
+                  <h2 class="chapter-title">
+                    <a :href="course.recommendationHref" x-text="course.nextEpisodeTitle"></a>
+                  </h2>
+                  <p class="chapter-prose" x-text="course.recommendationDescription"></p>
+                  <p
+                    class="chapter-progress"
+                    x-show="course.summary.lastActivityAt > 0"
+                    x-text="course.progressLabel"
+                  ></p>
                   <a
                     class="chapter-watch"
-                    :href="course.continueHref"
+                    :href="course.recommendationHref"
                     :aria-label="course.nextEpisodeLabel + ' of ' + course.title"
                     ><span class="chapter-play-icon" aria-hidden="true">▶</span
-                    ><span x-text="course.nextEpisodeLabel"></span
-                  ></a>
+                    ><span x-text="course.nextEpisodeLabel"></span>
+                  </a>
                 </article>
               </template>
-              <article
-                class="chapter-entry"
-                x-show="showAstronomyStarter"
-                :data-hero-slot="starterSlot('astronomy')"
-              >
-                <p class="chapter-kicker">Explore · Astronomy</p>
-                <h3 class="chapter-title">
-                  <a href="./watch.html?course=astronomy&amp;video=0rHUDWjR5gg"
-                    >Introduction to Astronomy</a
-                  >
-                </h3>
-                <figure class="chapter-figure">
-                  <svg
-                    class="orbit-sketch"
-                    viewBox="0 0 260 130"
-                    fill="none"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <ellipse
-                      cx="130"
-                      cy="65"
-                      rx="112"
-                      ry="38"
-                      transform="rotate(-17 130 65)"
-                      stroke-width="1.4"
-                    />
-                    <ellipse
-                      cx="130"
-                      cy="65"
-                      rx="75"
-                      ry="25"
-                      transform="rotate(-17 130 65)"
-                      stroke-dasharray="3 5"
-                    />
-                    <circle cx="130" cy="65" r="19" stroke-width="1.8" />
-                    <path d="m130 35 1-8m-1 76v-8m29-30h9m-76 0h9m8-22-6-6m48 50 6 6" />
-                    <circle cx="225" cy="29" r="7" fill="currentColor" />
-                    <circle cx="61" cy="89" r="4" fill="currentColor" />
-                  </svg>
-                  <figcaption>Fig. 1 — Orbits</figcaption>
-                </figure>
-                <p class="chapter-prose">
-                  The night sky is a view into our universe. Begin with planets, stars, and the
-                  distances between them.
-                </p>
-                <a
-                  class="chapter-watch"
-                  aria-label="Watch episode 1 of Astronomy"
-                  href="./watch.html?course=astronomy&amp;video=0rHUDWjR5gg"
-                  ><span class="chapter-play-icon" aria-hidden="true">▶</span
-                  ><span>Watch episode 1</span></a
-                >
-              </article>
-              <article
-                class="chapter-entry"
-                x-show="showPhilosophyStarter"
-                :data-hero-slot="starterSlot('philosophy')"
-              >
-                <p class="chapter-kicker">Explore · Philosophy</p>
-                <h3 class="chapter-title">
-                  <a href="./watch.html?course=philosophy&amp;video=1A_CAkYt3GY"
-                    >What is Philosophy?</a
-                  >
-                </h3>
-                <p class="chapter-prose">
-                  Knowledge, reality, and how to live: philosophy begins by asking what we mean and
-                  examining our reasons.
-                </p>
-                <a
-                  class="chapter-watch"
-                  aria-label="Watch episode 1 of Philosophy"
-                  href="./watch.html?course=philosophy&amp;video=1A_CAkYt3GY"
-                  ><span class="chapter-play-icon" aria-hidden="true">▶</span
-                  ><span>Watch episode 1</span></a
-                >
-              </article>
-              <article
-                class="chapter-entry"
-                x-show="showBotanyStarter"
-                :data-hero-slot="starterSlot('botany')"
-              >
-                <p class="chapter-kicker">Explore · Botany</p>
-                <h3 class="chapter-title">
-                  <a href="./watch.html?course=botany&amp;video=2th5lAd-77A">What is Botany?</a>
-                </h3>
-                <figure class="chapter-figure">
-                  <svg
-                    class="plant-sketch"
-                    viewBox="0 0 120 110"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <path
-                      d="M58 106Q65 55 56 12M60 77Q23 80 22 49Q52 47 60 77ZM61 58Q96 57 100 29Q70 29 61 58ZM58 36Q31 30 39 5Q60 16 58 36Z"
-                    />
-                    <path d="m60 77-29-20m30 1 30-22M58 36 43 14" />
-                  </svg>
-                  <figcaption>Fig. 2 — Leaves &amp; stem</figcaption>
-                </figure>
-                <p class="chapter-prose">
-                  Plants turn sunlight into food. Learn how they grow, reproduce, and sustain the
-                  ecosystems around us.
-                </p>
-                <a
-                  class="chapter-watch"
-                  aria-label="Watch episode 1 of Botany"
-                  href="./watch.html?course=botany&amp;video=2th5lAd-77A"
-                  ><span class="chapter-play-icon" aria-hidden="true">▶</span
-                  ><span>Watch episode 1</span></a
-                >
-              </article>
             </div>
             <div class="notebook-page-footer">
               <span
