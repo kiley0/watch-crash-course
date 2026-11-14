@@ -9,6 +9,7 @@ import { loadCatalog, loadDetail } from "../infrastructure/static-catalog";
 import { isCourseId, collectionLabel, libraryUrl } from "../domain/course";
 import { matchesQuery } from "../domain/search";
 import { watchUrl } from "../../playback/presentation/watch-links";
+import { resetCourse } from "../../learning/application/reset-course";
 import { completeCourse } from "../../learning/application/complete-course";
 import { progressStore } from "../../learning/infrastructure/browser-progress";
 import { recommendedEpisode } from "../../learning/domain/recommended-episode";
@@ -85,12 +86,62 @@ Alpine.data("coursePage", () => {
     canRetry: false,
     storageWarning: "",
     markingComplete: false,
+    resettingHistory: false,
+    resetPending: false,
+    requestResetHistory() {
+      if (this.markingComplete || this.resettingHistory || !this.ready) return;
+      this.completionMessage = "";
+      this.resetPending = true;
+      return Alpine.nextTick(() => document.getElementById("confirm-course-reset")?.focus());
+    },
+    cancelResetHistory() {
+      this.resetPending = false;
+      return Alpine.nextTick(() => document.getElementById("reset-course-history")?.focus());
+    },
+    async resetWatchHistory() {
+      if (!this.resetPending || this.resettingHistory || this.markingComplete || !this.ready)
+        return;
+      this.resettingHistory = true;
+      this.completionMessage = "";
+      try {
+        const records = await resetCourse(
+          this.episodes.map((episode) => episode.videoId),
+          progressStore,
+        );
+        const activeRecords = records.filter((record) => record !== null);
+        const byId = new Map(activeRecords.map((record) => [record.videoId, record]));
+        this.episodes = this.episodes.map((episode) => ({
+          ...episode,
+          ...episodeProgress(byId.get(episode.videoId) ?? null),
+        }));
+        const ids = this.episodes.map((episode) => episode.videoId);
+        this.summary = summarizeCourse(ids, activeRecords);
+        this.recommendedVideoId = recommendedEpisode(ids, activeRecords);
+        this.storageWarning = progressStore.warning;
+        this.resetPending = false;
+        this.completionMessage = this.storageWarning
+          ? "Watch history reset in this tab."
+          : "Watch history reset.";
+      } catch {
+        this.completionMessage = "We couldn’t reset the watch history. Please try again.";
+      } finally {
+        this.resettingHistory = false;
+      }
+      await Alpine.nextTick(() => document.getElementById("course-completion-message")?.focus());
+    },
     completionMessage: "",
     get markCompleteLabel(): string {
       return this.markingComplete ? "Marking complete…" : "Mark course complete";
     },
     async markCourseComplete() {
-      if (this.markingComplete || this.courseComplete || !this.ready) return;
+      if (
+        this.markingComplete ||
+        this.resettingHistory ||
+        this.resetPending ||
+        this.courseComplete ||
+        !this.ready
+      )
+        return;
       this.markingComplete = true;
       this.completionMessage = "";
       try {
@@ -174,9 +225,6 @@ Alpine.data("coursePage", () => {
     },
     get hasCourseActivity(): boolean {
       return (this.summary?.lastActivityAt ?? 0) > 0;
-    },
-    get completionPercent(): number {
-      return this.summary?.percent ?? 0;
     },
     get courseComplete(): boolean {
       return this.summary?.isComplete ?? false;

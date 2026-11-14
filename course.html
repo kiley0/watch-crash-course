@@ -80,19 +80,45 @@
           ></span>
           <h1 x-text="course.title"></h1>
           <p>With <span x-text="course.host"></span></p>
-          <div class="course-progress course-progress-overview">
+          <p class="course-intro" x-text="course.description"></p>
+          <div class="course-progress">
             <span x-text="completionLabel"></span>
-            <progress
-              max="100"
-              value="0"
-              :value="completionPercent"
-              :aria-label="completionLabel"
-            ></progress>
+            <ol class="episode-progress-cards" role="list" aria-label="Episode watch progress">
+              <template x-for="episode in episodes" :key="episode.videoId">
+                <li>
+                  <a
+                    class="episode-progress-card"
+                    :class="episode.status === 'Completed' ? 'episode-progress-card-watched' : episode.status === 'In progress' ? 'episode-progress-card-started' : ''"
+                    :href="episode.href"
+                    :aria-label="'Episode ' + episode.number + ': ' + episode.title + '. ' + (episode.status === 'Completed' ? 'Watched ' + episode.watchedDate : episode.status)"
+                    :title="episode.title"
+                    :aria-current="hasFeaturedEpisode && episode.videoId === currentEpisode.videoId ? 'step' : null"
+                  >
+                    <span x-text="episode.displayNumber"></span>
+                    <svg
+                      class="icon"
+                      x-show="episode.status === 'Completed'"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use href="./icons.svg#circle-check"></use>
+                    </svg>
+                    <svg
+                      class="icon"
+                      x-show="episode.status === 'In progress'"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use href="./icons.svg#circle-dashed"></use>
+                    </svg>
+                  </a>
+                </li>
+              </template>
+            </ol>
             <p x-show="courseComplete">
               Nice work. There’s always something new to notice on a second reading.
             </p>
           </div>
-          <p class="course-intro" x-text="course.description"></p>
         </header>
 
         <section
@@ -141,13 +167,51 @@
                 type="button"
                 class="text-button"
                 @click="markCourseComplete"
-                :disabled="markingComplete"
+                :disabled="markingComplete || resettingHistory || resetPending"
                 x-show="!courseComplete"
                 :aria-busy="markingComplete"
                 x-text="markCompleteLabel"
               >
                 Mark course complete
               </button>
+              <button
+                id="reset-course-history"
+                type="button"
+                class="text-button"
+                @click="requestResetHistory"
+                :disabled="markingComplete || resettingHistory"
+                :aria-expanded="resetPending"
+                aria-controls="course-reset-confirmation"
+              >
+                Reset watch history
+              </button>
+              <div
+                id="course-reset-confirmation"
+                class="course-reset-confirmation"
+                x-show="resetPending"
+              >
+                <p>
+                  Reset watch history for this course? All episodes will be unwatched. Episodes
+                  shared with other courses will also reset.
+                </p>
+                <button
+                  id="confirm-course-reset"
+                  type="button"
+                  class="text-button"
+                  @click="resetWatchHistory"
+                  :disabled="resettingHistory"
+                  :aria-busy="resettingHistory"
+                  x-text="resettingHistory ? 'Resetting…' : 'Reset watch history'"
+                ></button>
+                <button
+                  type="button"
+                  class="text-button"
+                  @click="cancelResetHistory"
+                  :disabled="resettingHistory"
+                >
+                  Cancel
+                </button>
+              </div>
               <p
                 id="course-completion-message"
                 tabindex="-1"
@@ -186,19 +250,30 @@
                     :class="hasFeaturedEpisode && episode.videoId === currentEpisode.videoId ? 'episode-notecard-current' : ''"
                   >
                     <header class="notecard-meta">
-                      <span>Episode <span x-text="episode.displayNumber"></span></span
+                      <span class="notecard-episode-number"
+                        ><span class="chapter-play-icon" aria-hidden="true">▶</span
+                        ><span>Episode <span x-text="episode.displayNumber"></span></span></span
                       ><span
                         class="notecard-status"
                         :id="'episode-status-' + episode.videoId"
                         x-show="episode.status !== 'Not started'"
-                        ><span :class="episode.status === 'Completed' ? 'watched-label' : ''"
+                        ><span
+                          :class="episode.status === 'Completed' ? 'watched-label' : episode.status === 'In progress' ? 'in-progress-label' : ''"
                           ><svg
                             class="icon"
                             x-show="episode.status === 'Completed'"
                             aria-hidden="true"
                             focusable="false"
                           >
-                            <use href="./icons.svg#circle-check"></use></svg
+                            <use href="./icons.svg#circle-check"></use>
+                          </svg>
+                          <svg
+                            class="icon"
+                            x-show="episode.status === 'In progress'"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <use href="./icons.svg#circle-dashed"></use></svg
                           ><span
                             x-text="episode.status === 'Completed' ? 'Watched' : episode.status"
                           ></span></span
@@ -214,13 +289,8 @@
                       class="notecard-description"
                       x-show="episode.description"
                       x-text="episode.description"
-                    ></p>
-                    <span class="chapter-watch"
-                      ><span class="chapter-play-icon" aria-hidden="true">▶</span> Play
-                      episode</span
-                    >
-                  </article></a
-                >
+                    ></p></article
+                ></a>
               </li>
             </template>
           </ol>

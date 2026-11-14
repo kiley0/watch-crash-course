@@ -1273,26 +1273,12 @@ select {
 }
 
 /* Derived course completion and recently active courses. */
-.course-progress {
-  margin-top: 18px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--muted);
-}
-.course-progress progress,
 .recent-course progress {
   display: block;
   width: 100%;
   height: 12px;
   margin-top: 9px;
   accent-color: var(--theme-muted, #6b8759);
-}
-.course-progress-overview {
-  max-width: 430px;
-}
-.course-progress-overview p {
-  font-size: 0.875rem;
-  font-weight: 500;
 }
 .continue-learning {
   margin-bottom: 52px;
@@ -1329,7 +1315,6 @@ select {
 }
 
 /* A determinate, rounded track: an unstarted course should never look like a loader. */
-.course-progress progress,
 .recent-course progress {
   appearance: none;
   border: 0;

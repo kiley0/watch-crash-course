@@ -205,3 +205,57 @@ it("updates every card and removes the feature after marking the course complete
   expect(mocks.focusCompletion).toHaveBeenCalledOnce();
   page.destroy();
 });
+
+it("resets history only after confirmation and refreshes card states", async () => {
+  mocks.loadProgress.mockImplementation(async (id: string) =>
+    id === episodes[0]!.videoId ? updateProgress(null, id, { type: "complete" }, 100) : null,
+  );
+  const page = mocks.factory!();
+  await page.init();
+  await page.resetWatchHistory();
+  expect(mocks.updateProgress).not.toHaveBeenCalled();
+  mocks.updateProgress.mockImplementation(async (id: string) =>
+    updateProgress(null, id, { type: "reset" }, 300),
+  );
+  await page.requestResetHistory();
+  await page.resetWatchHistory();
+  expect(page.completionLabel).toBe("0 of 16 episodes watched");
+  expect(page.hasFeaturedEpisode).toBe(false);
+  expect(
+    page.episodes.every((episode: { status: string }) => episode.status === "Not started"),
+  ).toBe(true);
+  expect(page.resetPending).toBe(false);
+  expect(page.completionMessage).toBe("Watch history reset.");
+  expect(mocks.refreshProgress).not.toHaveBeenCalled();
+  page.destroy();
+});
+
+it("keeps reset and whole-course completion mutually exclusive and supports canceling", async () => {
+  const page = mocks.factory!();
+  await page.init();
+  await page.requestResetHistory();
+  await page.markCourseComplete();
+  expect(mocks.updateProgress).not.toHaveBeenCalled();
+  await page.cancelResetHistory();
+  expect(page.resetPending).toBe(false);
+  page.markingComplete = true;
+  await page.requestResetHistory();
+  expect(page.resetPending).toBe(false);
+  page.destroy();
+});
+
+it("retains visible history and allows retry when resetting fails", async () => {
+  mocks.loadProgress.mockImplementation(async (id: string) =>
+    id === episodes[0]!.videoId ? updateProgress(null, id, { type: "complete" }, 100) : null,
+  );
+  const page = mocks.factory!();
+  await page.init();
+  mocks.updateProgress.mockRejectedValue(new Error("reset failed"));
+  await page.requestResetHistory();
+  await page.resetWatchHistory();
+  expect(page.resettingHistory).toBe(false);
+  expect(page.resetPending).toBe(true);
+  expect(page.completionLabel).toBe("1 of 16 episodes watched");
+  expect(page.completionMessage).toBe("We couldn’t reset the watch history. Please try again.");
+  page.destroy();
+});
