@@ -78,8 +78,56 @@
         </header>
         <p class="notice" x-show="storageWarning" x-text="storageWarning" role="status"></p>
         <section class="player-shell" aria-label="Video player">
-          <!-- Stable container: never put the player inside an x-if or x-for. -->
-          <div id="player-container" class="player-container"></div>
+          <div class="player-stage" :class="showCompletionOverlay ? 'is-finished' : ''">
+            <!-- Stable container: never put the player inside an x-if or x-for. -->
+            <div
+              id="player-container"
+              class="player-container"
+              tabindex="-1"
+              :inert="showCompletionOverlay"
+            ></div>
+            <section
+              class="playback-finished"
+              x-cloak
+              x-show="showCompletionOverlay"
+              aria-labelledby="playback-finished-title"
+              @keydown.escape="dismissCompletion"
+            >
+              <div class="playback-finished-content">
+                <p class="eyebrow">ONE MORE IDEA TO CARRY</p>
+                <h2 id="playback-finished-title" tabindex="-1">Congrats, you finished!</h2>
+                <p class="finished-episode" x-text="episode.title"></p>
+                <p x-show="isLastEpisode">That’s the last episode in this course. Nice work!</p>
+                <a
+                  class="button button-orange"
+                  x-show="hasNext"
+                  :href="nextUrl"
+                  :aria-label="'Continue to next episode: ' + nextTitle"
+                  @click="saveBeforeNavigation"
+                  >Continue to next episode <span aria-hidden="true">→</span></a
+                >
+                <p class="finished-next" x-show="hasNext" x-text="nextTitle"></p>
+                <a
+                  class="button button-orange"
+                  x-show="isLastEpisode"
+                  :href="courseUrl"
+                  @click="saveBeforeNavigation"
+                  >Back to course</a
+                >
+                <div class="finished-secondary">
+                  <button type="button" class="button" @click="restartEpisode">
+                    Restart this episode
+                  </button>
+                  <a class="button" x-show="hasNext" :href="courseUrl" @click="saveBeforeNavigation"
+                    >Back to course</a
+                  >
+                </div>
+                <button type="button" class="text-button" @click="dismissCompletion">
+                  Back to video
+                </button>
+              </div>
+            </section>
+          </div>
           <div class="player-feedback" x-show="playerStarted">
             <p role="status" x-text="playerStatus"></p>
             <button class="text-button" x-show="canResume" @click="startBeginning">
@@ -118,7 +166,7 @@
           id="lesson-complete"
           tabindex="-1"
           class="lesson-complete"
-          x-show="isCompleted"
+          x-show="isCompleted && !showCompletionOverlay"
           aria-label="Episode completed"
         >
           <div>

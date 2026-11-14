@@ -146,3 +146,73 @@
 .completion-reset .text-button {
   margin: 0;
 }
+
+/* Keep the end screen outside the stable YouTube mount, over the video only. */
+.player-stage {
+  position: relative;
+}
+.player-stage.is-finished {
+  min-block-size: 25rem;
+}
+.playback-finished {
+  position: absolute;
+  inset: 0;
+  z-index: 22;
+  display: grid;
+  place-items: start center;
+  overflow: auto;
+  padding: clamp(20px, 4vw, 48px);
+  background: var(--theme-surface, #fffdf8);
+  color: var(--ink);
+  text-align: center;
+}
+.playback-finished-content {
+  max-inline-size: 46rem;
+  min-inline-size: 0;
+  margin-block: auto;
+}
+.playback-finished h2 {
+  font:
+    normal clamp(1.8rem, 1.2rem + 2vw, 3rem)/1.15 Georgia,
+    serif;
+  margin-block: 12px;
+  text-wrap: balance;
+}
+.finished-episode {
+  font:
+    italic 1rem/1.6 Georgia,
+    serif;
+  margin-block: 12px 24px;
+}
+.playback-finished .button {
+  max-inline-size: 100%;
+  white-space: normal;
+}
+.finished-next {
+  margin-block: 12px 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.finished-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-block: 20px;
+}
+.finished-secondary .button {
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+}
+.playback-finished .text-button {
+  min-block-size: 32px;
+}
+@media (width < 650px) {
+  .player-stage.is-finished {
+    min-block-size: 32rem;
+  }
+  .finished-secondary {
+    flex-direction: column;
+  }
+}

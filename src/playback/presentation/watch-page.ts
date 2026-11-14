@@ -31,6 +31,7 @@ Alpine.data("watchPage", () => {
   let disposed = false;
   let suspended = false;
   let playCounted = false;
+  let playbackRevision = 0;
   const visibility = () => {
     if (document.hidden) session?.save();
   };
@@ -71,6 +72,7 @@ Alpine.data("watchPage", () => {
     playerError: "",
     playerStatus: "",
     resetPending: false,
+    showCompletionOverlay: false,
     get ready(): boolean {
       return !this.loading && !this.error;
     },
@@ -209,8 +211,10 @@ Alpine.data("watchPage", () => {
       this.storageWarning = progressStore.warning;
     },
     async startPlayer(seconds: number) {
+      playbackRevision++;
       session?.destroy();
       watchingMode?.setPlaying(false);
+      this.showCompletionOverlay = false;
       this.playerStarted = true;
       this.playerError = "";
       this.playerStatus = "Opening YouTube…";
@@ -220,7 +224,15 @@ Alpine.data("watchPage", () => {
         container,
         this.episode.videoId,
         (sample) => {
-          void this.record({ type: "playback", ...sample });
+          // destroy() emits one final sample during pagehide; keep that save even
+          // though this page must no longer change focus or show an end screen.
+          const revision = playbackRevision;
+          void this.record({ type: "playback", ...sample }).then(() => {
+            // Offer navigation only after saving completion. A replay started
+            // during that save must not be covered by the previous end screen.
+            if (!disposed && !suspended && sample.ended && revision === playbackRevision)
+              void this.finishPlayback();
+          });
         },
         (message) => {
           if (!disposed) this.playerStatus = message;
@@ -233,7 +245,11 @@ Alpine.data("watchPage", () => {
           }
         },
         () => {
-          if (!disposed) watchingMode?.setPlaying(true);
+          if (!disposed) {
+            playbackRevision++;
+            this.showCompletionOverlay = false;
+            watchingMode?.setPlaying(true);
+          }
           if (!disposed && !playCounted) {
             playCounted = true;
             trackVideoPlay(this.course.id, this.episode.videoId);
@@ -262,6 +278,30 @@ Alpine.data("watchPage", () => {
     async startBeginning() {
       await this.startPlayer(0);
     },
+    async finishPlayback() {
+      this.showCompletionOverlay = true;
+      watchingMode?.setPlaying(false);
+      const player = document.querySelector<HTMLElement>("#player-container");
+      // Wait for fullscreen to close before focusing a sibling of the iframe.
+      // Browsers may otherwise restore focus to the iframe after our focus move.
+      if (document.fullscreenElement && player?.contains(document.fullscreenElement)) {
+        try {
+          await document.exitFullscreen();
+        } catch {
+          // The controls remain available after the user exits fullscreen.
+        }
+      }
+      if (!disposed && !suspended && this.showCompletionOverlay)
+        focusAfterUpdate("playback-finished-title");
+    },
+    dismissCompletion() {
+      this.showCompletionOverlay = false;
+      focusAfterUpdate("player-container");
+    },
+    async restartEpisode() {
+      await this.startBeginning();
+      focusAfterUpdate("player-container");
+    },
     async markComplete() {
       await this.record({ type: "complete" });
       focusAfterUpdate("lesson-complete");
@@ -275,6 +315,7 @@ Alpine.data("watchPage", () => {
       focusAfterUpdate(this.isCompleted ? "reset-completed-episode" : "reset-episode");
     },
     async reset() {
+      this.showCompletionOverlay = false;
       session?.startOver();
       await this.record({ type: "reset" });
       this.resetPending = false;
