@@ -267,12 +267,6 @@ export function createCatalogPage(collection: Collection) {
               detail.episodes.map((episode) => episode.videoId),
               records,
             );
-            const episode = detail.episodes.find(
-              (item) => item.videoId === summary?.continueVideoId,
-            );
-            const position = resumePosition(
-              records.find((record) => record.videoId === episode?.videoId) ?? null,
-            );
             const recommendedId = recommendedEpisode(
               detail.episodes.map((entry) => entry.videoId),
               records,
@@ -289,10 +283,10 @@ export function createCatalogPage(collection: Collection) {
               : "";
             continueDetail = summary.isComplete
               ? "Revisit the course from the beginning."
-              : episode
-                ? position > 0
-                  ? `Resume ${episode.title} at ${timeLabel(position)}.`
-                  : `Up next: ${episode.title}.`
+              : recommendation
+                ? recommendationPosition > 0
+                  ? `Resume ${recommendation.title} at ${timeLabel(recommendationPosition)}.`
+                  : `Up next: ${recommendation.title}.`
                 : "";
           }
         } catch {
@@ -306,9 +300,9 @@ export function createCatalogPage(collection: Collection) {
           progressLabel: summary
             ? `${summary.completed} of ${summary.total} completed`
             : "Progress unavailable",
-          continueHref: summary?.continueVideoId
-            ? watchUrl(course.id, summary.continueVideoId)
-            : course.href,
+          continueHref:
+            recommendationHref ||
+            (summary?.continueVideoId ? watchUrl(course.id, summary.continueVideoId) : course.href),
           continueLabel: summary?.isComplete ? "Watch again" : "Continue learning",
           continueDetail,
           recommendationHref,

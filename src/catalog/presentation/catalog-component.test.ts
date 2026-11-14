@@ -400,3 +400,23 @@ it("does not show a stale search warning after clearing a failed pending search"
   expect(page.searchWarning).toBe("");
   expect(page.resultLabel).toBe("56 courses to explore");
 });
+
+it("uses the course-page recommendation for continue learning after newer completion", async () => {
+  const course = parseCatalog(catalog).find((item) => item.id === "big-history")!;
+  const detail = parseDetail(files["../../../public/data/courses/big-history.json"], course);
+  vi.spyOn(progressStore, "refresh").mockResolvedValue([
+    updateProgress(
+      null,
+      detail.episodes[0]!.videoId,
+      { type: "playback", position: 45, duration: 600 },
+      100,
+    ),
+    updateProgress(null, detail.episodes[7]!.videoId, { type: "complete" }, 200),
+  ]);
+  const page = createCatalogPage("crash-course");
+  await page.load();
+  const card = page.courses.find((item) => item.id === course.id)!;
+  expect(card.continueHref).toBe(card.recommendationHref);
+  expect(card.continueHref).toContain(`video=${detail.episodes[8]!.videoId}`);
+  expect(card.continueDetail).toBe(`Up next: ${detail.episodes[8]!.title}.`);
+});
